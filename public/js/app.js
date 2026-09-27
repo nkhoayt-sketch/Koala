@@ -668,14 +668,8 @@ class App {
 
     // 3. Populate N2 Picker Modal
     if (this.n2PickerReadyList && this.n2Exams.length > 0) {
-      // Exams with full 101 questions & audio standardized (2022 - 2025)
-      const readyExamIds = [
-        'n2-2025-12', 'n2-2025-07',
-        'n2-2024-12', 'n2-2024-07',
-        'n2-2023-12', 'n2-2023-07',
-        'n2-2022-12', 'n2-2022-07'
-      ];
-      const readyExams = this.n2Exams.filter(e => readyExamIds.includes(e.id) || (e.totalQuestions === 101 && e.listeningCount === 30));
+      // All standardized exams with full question set & audio (2010 - 2025)
+      const readyExams = this.n2Exams.filter(e => e.standardized || e.available);
       this.n2PickerReadyList.innerHTML = readyExams.map(exam => {
         const history = storage.getExamHistoryRecord(exam.id);
         const isDone = !!history;
@@ -701,7 +695,7 @@ class App {
                 `}
               </div>
               <p class="text-xs text-slate-600 font-medium leading-relaxed">
-                101 câu hỏi • Đầy đủ Từ vựng, Đọc hiểu & Nghe hiểu (kèm Audio 🎧)
+                ${exam.totalQuestions} câu hỏi • Đầy đủ Từ vựng, Đọc hiểu (Split-View) & Nghe hiểu (kèm Audio 🎧)
               </p>
             </div>
             <button type="button" class="btn-picker-select-exam shrink-0 px-4 py-2 rounded-xl bg-gradient-to-r from-rose-600 via-rose-700 to-red-600 hover:from-rose-700 hover:to-red-700 active:scale-95 text-white text-xs font-bold shadow-md shadow-rose-300/60 transition flex items-center justify-center gap-1.5 cursor-pointer" data-exam-id="${exam.id}">
@@ -724,13 +718,13 @@ class App {
     }
 
     if (this.n2PickerOtherList && this.n2Exams.length > 0) {
-      const readyExamIds = [
-        'n2-2025-12', 'n2-2025-07',
-        'n2-2024-12', 'n2-2024-07',
-        'n2-2023-12', 'n2-2023-07',
-        'n2-2022-12', 'n2-2022-07'
-      ];
-      const otherExams = this.n2Exams.filter(e => !readyExamIds.includes(e.id) && !(e.totalQuestions === 101 && e.listeningCount === 30));
+      const otherExams = this.n2Exams.filter(e => !e.standardized && !e.available);
+      if (otherExams.length === 0) {
+        const otherSectionContainer = this.n2PickerOtherList.closest('div');
+        if (otherSectionContainer) {
+          otherSectionContainer.classList.add('hidden');
+        }
+      }
       this.n2PickerOtherList.innerHTML = otherExams.map(exam => {
         const history = storage.getExamHistoryRecord(exam.id);
         const isDone = !!history;
