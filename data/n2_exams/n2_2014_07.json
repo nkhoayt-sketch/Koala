@@ -26,9 +26,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "ガソリンの値段が<u>大幅</u>に上がった。",
       "options": [
-        "ガソリンの値段が大幅に上がった。 １ おおはば",
+        "おおはば",
         "おおふく",
         "だいはば",
         "だいふく"
@@ -95,7 +95,7 @@
         "きずみやすい",
         "きすみやすい",
         "いだみやすい",
-        "いたみやすい 問題 2 ____の言葉を漢字で書くとき、最もよいものを１・２・３・４から一つ選びなさい。"
+        "いたみやすい"
       ],
       "answer": 1,
       "explanation": "【正解】4 (いたみやすい 問題 2 ____の言葉を漢字で書くとき、最もよいものを１・２・３・４から一つ選びなさい。)\n\n• Giải thích kiến thức và ngữ cảnh câu 5 trong đề thi JLPT N2 07/2014."
@@ -170,12 +170,12 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題2: 表記",
       "instruction": "＿＿の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "A 社の製品のほうが機能の面では<u>おとって</u>いると思う。",
       "options": [
-        "0 A 社の製品のほうが機能の面ではおとっていると思う。 １ 悪って",
+        "悪って",
         "負って",
         "劣って",
-        "乏って 問題 3 （ ）に入れるのに最もよいものを、1・2・3・4・から一つ選びなさい。"
+        "乏って"
       ],
       "answer": 3,
       "explanation": "【正解】3 (劣って)\n\n• Giải thích kiến thức và ngữ cảnh câu 10 trong đề thi JLPT N2 07/2014."
@@ -186,9 +186,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題3: 語形成",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "歴史小説家西村氏の代表的な作品を収めた作品 ( ) が発行された。",
       "options": [
-        "歴史小説家西村氏の代表的な作品を収めた作品 ( ) が発行された。 １ 集",
+        "集",
         "族",
         "部",
         "団"
@@ -205,7 +205,7 @@
       "question": "",
       "options": [
         "",
-        "ここから駅まで行くなら、線路 ( ) の道を行くのが一番早いですよ。 １ 付き ２ 並び",
+        "ここから駅まで行くなら、線路 ( ) の道を行くのが一番早いですよ。",
         "沿い",
         "従い"
       ],
@@ -218,12 +218,12 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題3: 語形成",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "田中先生は、子どもの英語教育に関する ( ) 問題について研究している。",
       "options": [
-        "田中先生は、子どもの英語教育に関する ( ) 問題について研究している。 １ 総",
+        "総",
         "複",
         "数",
-        "諸 <<<PAGE_2>>>"
+        "諸"
       ],
       "answer": 2,
       "explanation": "【正解】4 (諸 <<<PAGE_2>>>)\n\n• Giải thích kiến thức và ngữ cảnh câu 13 trong đề thi JLPT N2 07/2014."
@@ -234,9 +234,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題3: 語形成",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "大きな図書館に行きたいが、遠いのでけっこう電車 ( ) がかかる。",
       "options": [
-        "大きな図書館に行きたいが、遠いのでけっこう電車 ( ) がかかる。 １ 金",
+        "金",
         "賃",
         "料",
         "財"
@@ -250,12 +250,12 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題3: 語形成",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "町は朝からお祭りムード ( ) だった。",
       "options": [
-        "5 町は朝からお祭りムード ( ) だった。 １ 一例",
+        "一例",
         "一面",
         "一種",
-        "一色 間題 4 （ ）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。"
+        "一色"
       ],
       "answer": 1,
       "explanation": "【正解】4 (一色 間題 4 （ ）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。)\n\n• Giải thích kiến thức và ngữ cảnh câu 15 trong đề thi JLPT N2 07/2014."
@@ -266,9 +266,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題4: 文脈規定",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "子どものいたずらにいちいち ( ) を立てても仕方がない。",
       "options": [
-        "6 子どものいたずらにいちいち ( ) を立てても仕方がない。 １ 気",
+        "気",
         "頭",
         "腹",
         "心"
@@ -282,9 +282,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題4: 文脈規定",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "A 社が開発した商品管理システムは評価が高く、多くの会社に ( ) されている。",
       "options": [
-        "7 A 社が開発した商品管理システムは評価が高く、多くの会社に ( ) されている。 １ 導入",
+        "導入",
         "引用",
         "吸収",
         "移行"
@@ -314,9 +314,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題4: 文脈規定",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "自転車のタイヤが ( ) して、空気が抜けていた。",
       "options": [
-        "9 自転車のタイヤが ( ) して、空気が抜けていた。 １ ストライキ",
+        "ストライキ",
         "パンク",
         "ダウン",
         "ミス"
@@ -346,9 +346,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題4: 文脈規定",
       "instruction": "（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "山口さんは柔道をしているので、がっしりした ( ) をしている。",
       "options": [
-        "山口さんは柔道をしているので、がっしりした ( ) をしている。 １ 体格",
+        "体格",
         "姿勢",
         "格好",
         "容姿"
@@ -367,7 +367,7 @@
         "かかわり合う",
         "割り込む",
         "引っかかる",
-        "差し支える 題題 5 ____の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。"
+        "差し支える"
       ],
       "answer": 3,
       "explanation": "【正解】4 (差し支える 題題 5 ____の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。)\n\n• Giải thích kiến thức và ngữ cảnh câu 22 trong đề thi JLPT N2 07/2014."
@@ -378,7 +378,7 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題5: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
-      "question": "文字のサイズをそろえてください。",
+      "question": "文字のサイズを<u>そろえて</u>ください。",
       "options": [
         "大きくして",
         "同じにして",
@@ -394,7 +394,7 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題5: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
-      "question": "中野氏は、古い工場が取り壊されて空いた土地を買いしめたそうだ。",
+      "question": "中野氏は、古い工場が取り壊されて空いた土地を<u>買いしめた</u>そうだ。",
       "options": [
         "無理に買った",
         "安く買った",
@@ -410,7 +410,7 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題5: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
-      "question": "出発間際に、妹から電話がかかってきた。",
+      "question": "出発<u>間際</u>に、妹から電話がかかってきた。",
       "options": [
         "直前",
         "直後",
@@ -426,12 +426,12 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題5: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
-      "question": "薬を飲んだらたちまち痛みが治まった。",
+      "question": "薬を飲んだら<u>たちまち</u>痛みが治まった。",
       "options": [
         "すっかり",
         "やっと",
         "すぐに",
-        "たしかに <<<PAGE_3>>>"
+        "たしかに"
       ],
       "answer": 3,
       "explanation": "【正解】3 (すぐに)\n\n• Giải thích kiến thức và ngữ cảnh câu 26 trong đề thi JLPT N2 07/2014."
@@ -442,7 +442,7 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題5: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
-      "question": "もうお勘定は済ましました。",
+      "question": "もう<u>お勘定</u>は済ましました。",
       "options": [
         "料理は注文しました",
         "店員は呼びました",
@@ -506,9 +506,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題6: 用法",
       "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "【】",
+      "question": "こつこつ",
       "options": [
-        "こつこつ １ 何度も説明を聞いていたら、こつこつとわかってきた。",
+        "何度も説明を聞いていたら、こつこつとわかってきた。",
         "料理が熱くて、舌をやけどしそうなので、こつこつと食べた。",
         "朝は涼しかったが、昼になってこつこつと気温が上がり始めた。",
         "資格をとるために、この一年間、毎日こつこつと勉強をしてきた。"
@@ -666,9 +666,9 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題7: 文法形式の判断",
       "instruction": "次の文の（   ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "(歌の練習で) 先生「最初は、緊張して大きな声で歌えないと思います。でも、（ ）だんだん大きな声で 歌えるようになりますよ。」",
       "options": [
-        "(歌の練習で) 先生「最初は、緊張して大きな声で歌えないと思います。でも、（ ）だんだん大きな声で 歌えるようになりますよ。」 １ 練習していくうちに",
+        "練習していくうちに",
         "練習してでも",
         "練習するのに対して",
         "練習するのに比べて"
@@ -883,7 +883,7 @@
         "なると言えるでしょうか",
         "なっているとよかったのです",
         "なるといいですね",
-        "なってほしかったのでしょう <<<PAGE_7>>> 読解 問題１0 次の（１）から（５）の文章を読んで、後の問いに対する答えとして最もよいものを、１・２・３・ ４から一つ選びなさい。"
+        "なってほしかったのでしょう  読解"
       ],
       "answer": 0,
       "explanation": "【正解】3 (なるといいですね)\n\n• Giải thích kiến thức và ngữ cảnh câu 54 trong đề thi JLPT N2 07/2014.",
@@ -917,7 +917,7 @@
         "町づくり事業のホームページに対する市民の意見",
         "町づくり事業に対する市民の評価",
         "広場づくりに対する市民の意見",
-        "広場づくりに対する市民の評価 <<<PAGE_8>>> （３） 以下は、ある会社の経理担当者が書いたメールである。 宛先： shimamoto_haruka@b-denki.co.jp 件名：エアコン代金支払いの遅れについて 送信日時：2014 年 6 月 13 日 11: 28 B 電気株式会社 経理部 島本春香様 いつもお世話になっております。 エアコン代金の支払いの遅れに関するメールを確かに受け取りました。 今回の遅れに関しましては、すでに貴社経理部長の内田様にお願いをし、20 日まで支払いを 待ってくださるとのお返事をいただいております。 お手数をおかけして申し訳ございませんが、内田様にご確認くださいますよう、よろしくお 願い申し上げます。 以上、取り急ぎお返事申し上げます。 株式会社池波 経理部 戸川幸一 togawa-k@ikenami.co.jp"
+        "広場づくりに対する市民の評価  （３） 以下は、ある会社の経理担当者が書いたメールである。 宛先： shimamoto_haruka@b-denki.co.jp 件名：エアコン代金支払いの遅れについて 送信日時："
       ],
       "answer": 0,
       "explanation": "【正解】3 (広場づくりに対する市民の意見)\n\n• Giải thích kiến thức và ngữ cảnh câu 56 trong đề thi JLPT N2 07/2014.",
@@ -933,7 +933,7 @@
       "options": [
         "支払いの遅れは内田様に了解してもらっている。",
         "支払いの遅れで迷惑をかけて申し訳ない。",
-        "支払いの期日を 20 日まで延ばしてもらいたい。",
+        "支払いの期日を",
         "支払いの期日について内田様に確認を取りたい。"
       ],
       "answer": 2,
@@ -997,12 +997,12 @@
       "sectionGroup": "reading",
       "section": "問題11: 中文読解",
       "instruction": "次の文章を読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "②それではダメだとあるが、なぜか。",
       "options": [
-        "②それではダメだとあるが、なぜか。 1 反発する気持ちを表現しなくなるから。",
+        "反発する気持ちを表現しなくなるから。",
         "反発する気持ちが生まれるだけだから。",
         "疑問が大きくなってしまうだけだから。",
-        "疑問を持たなくなってしまうから。 <<<PAGE_11>>>"
+        "疑問を持たなくなってしまうから。"
       ],
       "answer": 2,
       "explanation": "【正解】2 (反発する気持ちが生まれるだけだから。)\n\n• Giải thích kiến thức và ngữ cảnh câu 61 trong đề thi JLPT N2 07/2014.",
@@ -1167,9 +1167,9 @@
       "sectionGroup": "reading",
       "section": "問題13: 長文読解",
       "instruction": "次の文章を読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "",
+      "question": "過去の対戦に対して、筆者はどのような態度をとっているか。",
       "options": [
-        "過去の対戦に対して、筆者はどのような態度をとっているか。 1 思い返して次につなげる。",
+        "思い返して次につなげる。",
         "負けた対戦は思い返さない。",
         "役に立つ対戦だけを思い返す。",
         "必要がなければ思い返さない。"
@@ -1220,9 +1220,9 @@
       "instruction": "下のページを読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "商品を購入する際に、送料と手数料を払わなくてもいいのは次の 4 人のうち誰か。 \n名前 \n一回の注金額 \n(税込) \n届け先数 届け先/日時 支払方法 \nヘサル 3,",
       "options": [
-        "50 円 1 指定する 現金振り込み 山田 4,",
-        "00 円 1 指定しない クレジットカード ジョンソン 6,",
-        "00 円 1 指定する 現金振り込み シン 10,500 円 1 指定しない 代金引換 １ へサルさん ２ 山田さん ３ ジョンソンさん",
+        "指定する 現金振り込み 山田 4,",
+        "",
+        "",
         "シンさん"
       ],
       "answer": 2,
@@ -1238,7 +1238,7 @@
       "question": "返品・交換をしたい人が注意しなければならないことはどれか。",
       "options": [
         "連絡は、商品を返送する前か返送直後にする。",
-        "返送は、商品到着後 14 日以内に行う。",
+        "返送は、商品到着後",
         "商品は、返品理由を書いた納品書と一緒に返送する。",
         "返送料は、 返品・交換理由にかかわらず自身が負担する。"
       ],
@@ -1250,7 +1250,7 @@
       "id": "n2-201407-q76",
       "number": 76,
       "sectionGroup": "listening",
-      "section": "聴解 問題1: 課題理解",
+      "section": "聴解 - 問題1: 課題理解",
       "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "女の人はこの後まず何をしなければなりませんか。",
       "options": [
@@ -1261,13 +1261,15 @@
       ],
       "answer": 3,
       "script": "レストランで男の人がアルバイトの女の人に仕事の説明をしています。女の人はこの後まず何をしなけれ\nばなりませんか。 \n問い 女の人はこの後まず何をしなければなりませんか。（正解:4）",
-      "explanation": "【正解】4 (店の中をそうじする)\n\n• Giải thích nội dung bài nghe câu 76 (聴解 問題1: 課題理解) trong đề thi JLPT N2."
+      "explanation": "【正解】4 (店の中をそうじする)\n\n• Giải thích nội dung bài nghe câu 76 (聴解 問題1: 課題理解) trong đề thi JLPT N2.",
+      "questionNumber": "1番",
+      "title": "問題1 - 1番"
     },
     {
       "id": "n2-201407-q77",
       "number": 77,
       "sectionGroup": "listening",
-      "section": "聴解 問題1: 課題理解",
+      "section": "聴解 - 問題1: 課題理解",
       "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "女の人はまず何をしなければなりませんか。",
       "options": [
@@ -1278,13 +1280,15 @@
       ],
       "answer": 1,
       "script": "会社で女の人と男の人が話しています。女の人はまず何をしなければなりませんか。 \n\n\n \n問い 女の人はまず何をしなければなりませんか。（正解:4）",
-      "explanation": "【正解】4 (話し合いの報告書を作成する)\n\n• Giải thích nội dung bài nghe câu 77 (聴解 問題1: 課題理解) trong đề thi JLPT N2."
+      "explanation": "【正解】4 (話し合いの報告書を作成する)\n\n• Giải thích nội dung bài nghe câu 77 (聴解 問題1: 課題理解) trong đề thi JLPT N2.",
+      "questionNumber": "2番",
+      "title": "問題1 - 2番"
     },
     {
       "id": "n2-201407-q78",
       "number": 78,
       "sectionGroup": "listening",
-      "section": "聴解 問題1: 課題理解",
+      "section": "聴解 - 問題1: 課題理解",
       "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "学生は今週中に何をしなければなりませんか。",
       "options": [
@@ -1295,13 +1299,15 @@
       ],
       "answer": 2,
       "script": "先生が学生に授業の課題について説明しています。学生は今週中に何をしなければなりませんか。 \n問い 学生は今週中に何をしなければなりませんか。（正解:3）",
-      "explanation": "【正解】3 (先生にテーマを知らせる)\n\n• Giải thích nội dung bài nghe câu 78 (聴解 問題1: 課題理解) trong đề thi JLPT N2."
+      "explanation": "【正解】3 (先生にテーマを知らせる)\n\n• Giải thích nội dung bài nghe câu 78 (聴解 問題1: 課題理解) trong đề thi JLPT N2.",
+      "questionNumber": "3番",
+      "title": "問題1 - 3番"
     },
     {
       "id": "n2-201407-q79",
       "number": 79,
       "sectionGroup": "listening",
-      "section": "聴解 問題1: 課題理解",
+      "section": "聴解 - 問題1: 課題理解",
       "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "男の人は会場をどのようにしますか。",
       "options": [
@@ -1312,13 +1318,15 @@
       ],
       "answer": 0,
       "script": "会社で、女の人と男の人が話しています。男の人は会場をどのようにしますか。 \n問い 男の人は会場をどのようにしますか。（正解:3）",
-      "explanation": "【正解】3 (3)\n\n• Giải thích nội dung bài nghe câu 79 (聴解 問題1: 課題理解) trong đề thi JLPT N2."
+      "explanation": "【正解】3 (3)\n\n• Giải thích nội dung bài nghe câu 79 (聴解 問題1: 課題理解) trong đề thi JLPT N2.",
+      "questionNumber": "4番",
+      "title": "問題1 - 4番"
     },
     {
       "id": "n2-201407-q80",
       "number": 80,
       "sectionGroup": "listening",
-      "section": "聴解 問題1: 課題理解",
+      "section": "聴解 - 問題1: 課題理解",
       "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "女の職員は何をしなければなりませんか。",
       "options": [
@@ -1329,13 +1337,15 @@
       ],
       "answer": 2,
       "script": "市役所で男の職員と女の職員が話しています。女の職員は何をしなければなりませんか。 \n\n\n \n問い 女の職員は何をしなければなりませんか。 （正解:3）",
-      "explanation": "【正解】3 (新聞や雑誌に案内を出す)\n\n• Giải thích nội dung bài nghe câu 80 (聴解 問題1: 課題理解) trong đề thi JLPT N2."
+      "explanation": "【正解】3 (新聞や雑誌に案内を出す)\n\n• Giải thích nội dung bài nghe câu 80 (聴解 問題1: 課題理解) trong đề thi JLPT N2.",
+      "questionNumber": "5番",
+      "title": "問題1 - 5番"
     },
     {
       "id": "n2-201407-q81",
       "number": 81,
       "sectionGroup": "listening",
-      "section": "聴解 問題2: ポイント理解",
+      "section": "聴解 - 問題2: ポイント理解",
       "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "女の学生はどうしてアルバイトをやめますか。",
       "options": [
@@ -1346,13 +1356,15 @@
       ],
       "answer": 1,
       "script": "アルバイト先で女の学生と男の学生が話しています。女の学生はどうしてアルバイトを辞めますか。 \n問い 女の学生はどうしてアルバイトをやめますか。（正解:2）",
-      "explanation": "【正解】2 (勉強の時間を増やしたいから)\n\n• Giải thích nội dung bài nghe câu 81 (聴解 問題2: ポイント理解) trong đề thi JLPT N2."
+      "explanation": "【正解】2 (勉強の時間を増やしたいから)\n\n• Giải thích nội dung bài nghe câu 81 (聴解 問題2: ポイント理解) trong đề thi JLPT N2.",
+      "questionNumber": "1番",
+      "title": "問題2 - 1番"
     },
     {
       "id": "n2-201407-q82",
       "number": 82,
       "sectionGroup": "listening",
-      "section": "聴解 問題2: ポイント理解",
+      "section": "聴解 - 問題2: ポイント理解",
       "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "男の人は新入社員のどんなところに驚",
       "options": [
@@ -1363,13 +1375,15 @@
       ],
       "answer": 2,
       "script": "会社で、男の人と女の人が新入社員について話しています。男の人は新入社員のどんなところに驚いた\nと言っていますか。 \n問い 男の人は新入社員のどんなところに驚\nおどろ\nいたと言っていますか。（正解:3）",
-      "explanation": "【正解】3 (すぐに成果を出しているところ)\n\n• Giải thích nội dung bài nghe câu 82 (聴解 問題2: ポイント理解) trong đề thi JLPT N2."
+      "explanation": "【正解】3 (すぐに成果を出しているところ)\n\n• Giải thích nội dung bài nghe câu 82 (聴解 問題2: ポイント理解) trong đề thi JLPT N2.",
+      "questionNumber": "2番",
+      "title": "問題2 - 2番"
     },
     {
       "id": "n2-201407-q83",
       "number": 83,
       "sectionGroup": "listening",
-      "section": "聴解 問題2: ポイント理解",
+      "section": "聴解 - 問題2: ポイント理解",
       "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "女の学生はどんなパソコンを買いたいと言っていますか。",
       "options": [
@@ -1380,13 +1394,15 @@
       ],
       "answer": 3,
       "script": "女の学生が男の学生が話しています。女の学生はどんなパソコンを買いたいと言っていますか。 \n問い 女の学生はどんなパソコンを買いたいと言っていますか。（正解:4）",
-      "explanation": "【正解】4 (デザインがよいパソコン)\n\n• Giải thích nội dung bài nghe câu 83 (聴解 問題2: ポイント理解) trong đề thi JLPT N2."
+      "explanation": "【正解】4 (デザインがよいパソコン)\n\n• Giải thích nội dung bài nghe câu 83 (聴解 問題2: ポイント理解) trong đề thi JLPT N2.",
+      "questionNumber": "3番",
+      "title": "問題2 - 3番"
     },
     {
       "id": "n2-201407-q84",
       "number": 84,
       "sectionGroup": "listening",
-      "section": "聴解 問題2: ポイント理解",
+      "section": "聴解 - 問題2: ポイント理解",
       "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "男の人は新しい仕事の、どんなところがいいと言っていますか。",
       "options": [
@@ -1397,13 +1413,15 @@
       ],
       "answer": 0,
       "script": "女の人と男の人が話しています。男の人は新しい仕事のどんなところがいいと言っていますか。 \n問い 男の人は新しい仕事の、どんなところがいいと言っていますか。（正解:1）",
-      "explanation": "【正解】1 (人のためになっていると感じられるところ)\n\n• Giải thích nội dung bài nghe câu 84 (聴解 問題2: ポイント理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (人のためになっていると感じられるところ)\n\n• Giải thích nội dung bài nghe câu 84 (聴解 問題2: ポイント理解) trong đề thi JLPT N2.",
+      "questionNumber": "4番",
+      "title": "問題2 - 4番"
     },
     {
       "id": "n2-201407-q85",
       "number": 85,
       "sectionGroup": "listening",
-      "section": "聴解 問題2: ポイント理解",
+      "section": "聴解 - 問題2: ポイント理解",
       "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "このレストランの人気が出たのは、どうしてですか。",
       "options": [
@@ -1414,13 +1432,15 @@
       ],
       "answer": 2,
       "script": "テレビでアナウンサーがあるレストランについて話しています。このレストランの人気が出たのは、どうしてです\nか。 \n問い このレストランの人気が出たのは、どうしてですか。（正解:3）",
-      "explanation": "【正解】3 (客へのていねいな対応に力を入れたから)\n\n• Giải thích nội dung bài nghe câu 85 (聴解 問題2: ポイント理解) trong đề thi JLPT N2."
+      "explanation": "【正解】3 (客へのていねいな対応に力を入れたから)\n\n• Giải thích nội dung bài nghe câu 85 (聴解 問題2: ポイント理解) trong đề thi JLPT N2.",
+      "questionNumber": "5番",
+      "title": "問題2 - 5番"
     },
     {
       "id": "n2-201407-q86",
       "number": 86,
       "sectionGroup": "listening",
-      "section": "聴解 問題2: ポイント理解",
+      "section": "聴解 - 問題2: ポイント理解",
       "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選んでください。",
       "question": "女の人はどうして、アルバイトの人数を増やしたいと言ってますか。",
       "options": [
@@ -1431,13 +1451,15 @@
       ],
       "answer": 1,
       "script": "会社で、女の人と課長が話しています。女の人は、どうして、アルバイトの人数を増やしたいと言っていま\nすか。 \n\n\n \n問い 女の人はどうして、アルバイトの人数を増やしたいと言ってますか。（正解:2）",
-      "explanation": "【正解】2 (早くぶんせきを始めたいから)\n\n• Giải thích nội dung bài nghe câu 86 (聴解 問題2: ポイント理解) trong đề thi JLPT N2."
+      "explanation": "【正解】2 (早くぶんせきを始めたいから)\n\n• Giải thích nội dung bài nghe câu 86 (聴解 問題2: ポイント理解) trong đề thi JLPT N2.",
+      "questionNumber": "6番",
+      "title": "問題2 - 6番"
     },
     {
       "id": "n2-201407-q87",
       "number": 87,
       "sectionGroup": "listening",
-      "section": "聴解 問題3: 概要理解",
+      "section": "聴解 - 問題3: 概要理解",
       "instruction": "問題3では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選んでください。",
       "question": "留守番電話のメッセージを聞いています。",
       "options": [
@@ -1448,13 +1470,15 @@
       ],
       "answer": 0,
       "script": "留守番電話のメッセージを聞いています。 \n \n女の人が伝えたいことは何ですか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 87 (聴解 問題3: 概要理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 87 (聴解 問題3: 概要理解) trong đề thi JLPT N2.",
+      "questionNumber": "1番",
+      "title": "問題3 - 1番"
     },
     {
       "id": "n2-201407-q88",
       "number": 88,
       "sectionGroup": "listening",
-      "section": "聴解 問題3: 概要理解",
+      "section": "聴解 - 問題3: 概要理解",
       "instruction": "問題3では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選んでください。",
       "question": "ツアーガイドが城の前で話しています。",
       "options": [
@@ -1465,13 +1489,15 @@
       ],
       "answer": 0,
       "script": "ツアーガイドが城の前で話しています。 \n\n\n \nツアーガイドは主に何について話していますか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 88 (聴解 問題3: 概要理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 88 (聴解 問題3: 概要理解) trong đề thi JLPT N2.",
+      "questionNumber": "2番",
+      "title": "問題3 - 2番"
     },
     {
       "id": "n2-201407-q89",
       "number": 89,
       "sectionGroup": "listening",
-      "section": "聴解 問題3: 概要理解",
+      "section": "聴解 - 問題3: 概要理解",
       "instruction": "問題3では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選んでください。",
       "question": "テレビのニュースで、 アナウンサーが話しています。",
       "options": [
@@ -1482,13 +1508,15 @@
       ],
       "answer": 0,
       "script": "テレビのニュースで、 アナウンサーが話しています。 \n  \nアナウンサーは何について話していますか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 89 (聴解 問題3: 概要理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 89 (聴解 問題3: 概要理解) trong đề thi JLPT N2.",
+      "questionNumber": "3番",
+      "title": "問題3 - 3番"
     },
     {
       "id": "n2-201407-q90",
       "number": 90,
       "sectionGroup": "listening",
-      "section": "聴解 問題3: 概要理解",
+      "section": "聴解 - 問題3: 概要理解",
       "instruction": "問題3では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選んでください。",
       "question": "ラジオで女の人が話しています。",
       "options": [
@@ -1499,13 +1527,15 @@
       ],
       "answer": 0,
       "script": "ラジオで女の人が話しています。 \n \n女の人は主に何について話していますか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 90 (聴解 問題3: 概要理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 90 (聴解 問題3: 概要理解) trong đề thi JLPT N2.",
+      "questionNumber": "4番",
+      "title": "問題3 - 4番"
     },
     {
       "id": "n2-201407-q91",
       "number": 91,
       "sectionGroup": "listening",
-      "section": "聴解 問題3: 概要理解",
+      "section": "聴解 - 問題3: 概要理解",
       "instruction": "問題3では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選んでください。",
       "question": "テレビで女のアナウンサーが男の人にインタビューをしています。",
       "options": [
@@ -1516,13 +1546,15 @@
       ],
       "answer": 0,
       "script": "テレビで女のアナウンサーが男の人にインタビューをしています。 \n男の人は何について話していますか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 91 (聴解 問題3: 概要理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 91 (聴解 問題3: 概要理解) trong đề thi JLPT N2.",
+      "questionNumber": "5番",
+      "title": "問題3 - 5番"
     },
     {
       "id": "n2-201407-q92",
       "number": 92,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "課長、あのう、体調が優れなくて、午後から休ませていただけないでしょうか。",
       "options": [
@@ -1532,13 +1564,15 @@
       ],
       "answer": 0,
       "script": "課長、あのう、体調が優れなくて、午後から休ませていただけないでしょうか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 92 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 92 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "1番",
+      "title": "問題4 - 1番"
     },
     {
       "id": "n2-201407-q93",
       "number": 93,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "田中さん、どうしたの？しょんぼりして。",
       "options": [
@@ -1548,13 +1582,15 @@
       ],
       "answer": 0,
       "script": "田中さん、どうしたの？しょんぼりして。 \n。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 93 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 93 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "2番",
+      "title": "問題4 - 2番"
     },
     {
       "id": "n2-201407-q94",
       "number": 94,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "忙しいから、ちょっと手を貸してくれない？",
       "options": [
@@ -1564,13 +1600,15 @@
       ],
       "answer": 0,
       "script": "忙しいから、ちょっと手を貸してくれない？",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 94 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 94 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "3番",
+      "title": "問題4 - 3番"
     },
     {
       "id": "n2-201407-q95",
       "number": 95,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "君の研究発表、なかなかの評判だったよ。",
       "options": [
@@ -1580,13 +1618,15 @@
       ],
       "answer": 0,
       "script": "君の研究発表、なかなかの評判だったよ。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 95 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 95 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "4番",
+      "title": "問題4 - 4番"
     },
     {
       "id": "n2-201407-q96",
       "number": 96,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "こないだ注文した新しいプリンター、早く届かないかな。",
       "options": [
@@ -1596,13 +1636,15 @@
       ],
       "answer": 0,
       "script": "こないだ注文した新しいプリンター、早く届かないかな。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 96 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 96 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "5番",
+      "title": "問題4 - 5番"
     },
     {
       "id": "n2-201407-q97",
       "number": 97,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "昨日、サークルの集まりがあったんだけど、風邪引いたことにして、休んだんだ。",
       "options": [
@@ -1612,13 +1654,15 @@
       ],
       "answer": 0,
       "script": "昨日、サークルの集まりがあったんだけど、風邪引いたことにして、休んだんだ。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 97 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 97 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "6番",
+      "title": "問題4 - 6番"
     },
     {
       "id": "n2-201407-q98",
       "number": 98,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "あ、テレビでサッカーやってる。宿題早く終わらせとけばよかった。",
       "options": [
@@ -1628,13 +1672,15 @@
       ],
       "answer": 0,
       "script": "あ、テレビでサッカーやってる。宿題早く終わらせとけばよかった。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 98 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 98 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "7番",
+      "title": "問題4 - 7番"
     },
     {
       "id": "n2-201407-q99",
       "number": 99,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "山田君、山田君の机、いつ見てもごちゃごちゃしてるね。",
       "options": [
@@ -1644,13 +1690,15 @@
       ],
       "answer": 0,
       "script": "山田君、山田君の机、いつ見てもごちゃごちゃしてるね。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 99 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 99 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "8番",
+      "title": "問題4 - 8番"
     },
     {
       "id": "n2-201407-q100",
       "number": 100,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "すみません、細かいお金がないんですが、こちらで崩",
       "options": [
@@ -1660,13 +1708,15 @@
       ],
       "answer": 0,
       "script": "すみません、細かいお金がないんですが、こちらで崩\nくず\nしてもらえませんか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 100 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 100 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "9番",
+      "title": "問題4 - 9番"
     },
     {
       "id": "n2-201407-q101",
       "number": 101,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "今日は担当",
       "options": [
@@ -1676,13 +1726,15 @@
       ],
       "answer": 0,
       "script": "今日は担当\nた ん と う\nの者がおりませんので、明日お越しいただけませんでしょうか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 101 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 101 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "10番",
+      "title": "問題4 - 10番"
     },
     {
       "id": "n2-201407-q102",
       "number": 102,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "課長、今日の新商品の説明会、思ってた以上に人が集まりましたね。",
       "options": [
@@ -1692,13 +1744,15 @@
       ],
       "answer": 0,
       "script": "課長、今日の新商品の説明会、思ってた以上に人が集まりましたね。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 102 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 102 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "11番",
+      "title": "問題4 - 11番"
     },
     {
       "id": "n2-201407-q103",
       "number": 103,
       "sectionGroup": "listening",
-      "section": "聴解 問題4: 即時応答",
+      "section": "聴解 - 問題4: 即時応答",
       "instruction": "問題4では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
       "question": "佐藤君、今日は１日、販売のイベントであちこち飛び回らせちゃったね。",
       "options": [
@@ -1708,13 +1762,15 @@
       ],
       "answer": 0,
       "script": "佐藤君、今日は１日、販売のイベントであちこち飛び回らせちゃったね。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 103 (聴解 問題4: 即時応答) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 103 (聴解 問題4: 即時応答) trong đề thi JLPT N2.",
+      "questionNumber": "12番",
+      "title": "問題4 - 12番"
     },
     {
       "id": "n2-201407-q104",
       "number": 104,
       "sectionGroup": "listening",
-      "section": "聴解 問題5: 統合理解",
+      "section": "聴解 - 問題5: 統合理解",
       "instruction": "問題5では、長めの話を聞きます。この問題には練習はありません。メモをとってもかまいません。",
       "question": "大学で男の学生と女の学生が授業案内を見ながら、授業について話しています。",
       "options": [
@@ -1725,13 +1781,15 @@
       ],
       "answer": 0,
       "script": "大学で男の学生と女の学生が授業案内を見ながら、授業について話しています。 \n\n \n女の学生はどの授業を受けることにしましたか。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 104 (聴解 問題5: 統合理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 104 (聴解 問題5: 統合理解) trong đề thi JLPT N2.",
+      "questionNumber": "1番",
+      "title": "問題5 - 1番"
     },
     {
       "id": "n2-201407-q105",
       "number": 105,
       "sectionGroup": "listening",
-      "section": "聴解 問題5: 統合理解",
+      "section": "聴解 - 問題5: 統合理解",
       "instruction": "問題5では、長めの話を聞きます。この問題には練習はありません。メモをとってもかまいません。",
       "question": "パン屋で、店長と店員二人が､ 駐車場について話しています。",
       "options": [
@@ -1742,13 +1800,15 @@
       ],
       "answer": 0,
       "script": "パン屋で、店長と店員二人が､ 駐車場について話しています。",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 105 (聴解 問題5: 統合理解) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 105 (聴解 問題5: 統合理解) trong đề thi JLPT N2.",
+      "questionNumber": "2番",
+      "title": "問題5 - 2番"
     },
     {
       "id": "n2-201407-q106",
       "number": 106,
       "sectionGroup": "listening",
-      "section": "聴解 問題5: 統合理解",
+      "section": "聴解 - 問題5: 統合理解",
       "instruction": "問題5では、長めの話を聞きます。この問題には練習はありません。メモをとってもかまいません。",
       "question": "質問1：男の人と女の人は最初にどの会場へ行きますか。  1",
       "options": [
@@ -1759,13 +1819,15 @@
       ],
       "answer": 0,
       "script": "イベント会場のアナウンスを聞いて、 夫婦が話しています。\n\n質問1：男の人と女の人は最初にどの会場へ行きますか。  1",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 106 (聴解 問題5) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 106 (聴解 問題5) trong đề thi JLPT N2.",
+      "questionNumber": "3番 (質問1)",
+      "title": "問題5 - 3番 (質問1)"
     },
     {
       "id": "n2-201407-q107",
       "number": 107,
       "sectionGroup": "listening",
-      "section": "聴解 問題5: 統合理解",
+      "section": "聴解 - 問題5: 統合理解",
       "instruction": "問題5では、長めの話を聞きます。この問題には練習はありません。メモをとってもかまいません。",
       "question": "質問2：もし時間があれば、男の人は一人でどの会場へ行きますか｡  3",
       "options": [
@@ -1776,7 +1838,9 @@
       ],
       "answer": 0,
       "script": "イベント会場のアナウンスを聞いて、 夫婦が話しています。\n\n質問2：もし時間があれば、男の人は一人でどの会場へ行きますか｡  3",
-      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 107 (聴解 問題5) trong đề thi JLPT N2."
+      "explanation": "【正解】1 (1)\n\n• Giải thích nội dung bài nghe câu 107 (聴解 問題5) trong đề thi JLPT N2.",
+      "questionNumber": "3番 (質問2)",
+      "title": "問題5 - 3番 (質問2)"
     }
   ]
 }

@@ -864,10 +864,16 @@ export class QuizEngine {
 
         <!-- Choukai Sub-Header: Mondai & Audio Track Info -->
         ${q.sectionGroup === 'listening' ? `
-          <div class="flex flex-wrap items-center gap-2 mb-3.5 px-3 py-1.5 rounded-xl bg-amber-50/90 border border-amber-200/80 text-xs font-semibold text-amber-900 w-fit">
-            <span>🎧</span>
-            <span>${q.section || '聴解'}</span>
-            ${q.questionNumber ? `<span class="text-amber-400">•</span><span class="font-bold text-amber-700 bg-amber-200/70 px-1.5 py-0.5 rounded-md">${q.questionNumber}</span>` : ''}
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50/90 border border-amber-200/80 text-xs font-semibold text-amber-900">
+              <span>🎧</span>
+              <span>${q.section || '聴解'}</span>
+            </div>
+            ${q.questionNumber ? `
+              <span class="inline-flex items-center px-3 py-1 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white text-xs font-black tracking-wide shadow-sm shadow-amber-400/30">
+                【 質問 ${q.questionNumber} 】
+              </span>
+            ` : ''}
           </div>
         ` : ''}
 

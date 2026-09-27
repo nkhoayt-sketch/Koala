@@ -1,14 +1,11 @@
-import sys, os, re, pypdf
+import glob, json
 
-sys.stdout.reconfigure(encoding='utf-8')
-
-for folder in ['15. N2 7-2024', '14. N2 7-2023']:
-    fpath = os.path.join('N2_DE_CAC_NAM', folder)
-    pdfs = [f for f in os.listdir(fpath) if f.endswith('.pdf') and 'script' not in f.lower()]
-    reader = pypdf.PdfReader(os.path.join(fpath, pdfs[0]))
-    for p_idx in range(len(reader.pages)):
-        txt = reader.pages[p_idx].extract_text() or ''
-        if '問題 5' in txt or '問題５' in txt:
-            print(f"=== {folder} Page {p_idx+1} ===")
-            print('\n'.join(txt.split('\n')[:25]))
-            break
+for f in sorted(glob.glob('public/data/n2_exams/20*.json'))[4:9]:
+    d = json.load(open(f, encoding='utf-8'))
+    m5 = [q for q in d['questions'] if '問題5' in q.get('section', '')]
+    print(f)
+    for q in m5:
+        ans_idx = q.get('answer', 0)
+        opts = q.get('options', [])
+        ans_opt = opts[ans_idx] if ans_idx < len(opts) else ''
+        print(f"  Q{q['number']}: {q['question']} -> Ans: {ans_opt}")
