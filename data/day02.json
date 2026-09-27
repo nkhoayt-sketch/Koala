@@ -1,0 +1,525 @@
+{
+  "day": 2,
+  "title": "第2日: 文字・語彙・文法",
+  "proverb": "二足の草鞋（にそくのわらじ）: be engaged in two jobs at the same time",
+  "description": "Trọn bộ 45 câu hỏi thực tế trong sách '20日で合格 N1 文字・語彙・文法' (Trang 14 đến Trang 21) với đầy đủ 問題 1 đến 問題 7.",
+  "totalQuestions": 45,
+  "questions": [
+    {
+      "id": "d02-q01",
+      "number": 1,
+      "section": "問題1: 漢字読み",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "やることはやったのだから、結果を<u>焦らず</u>に待つ。",
+      "options": ["たまらず", "さわらず", "あせらず", "よらず"],
+      "answer": 2,
+      "explanation": "【正解】3 (あせらず)\n\n• 焦る（あせる）：Sốt ruột, nôn nóng, hấp tấp.\n• Các từ còn lại: 堪らない (たまらない - không chịu nổi), 触る (さわる - chạm vào), 依る/拠る (よる - dựa vào/do).\n\n【Dịch nghĩa】\nNhững gì cần làm thì cũng đã làm rồi, hãy bình tĩnh chờ đợi kết quả mà không việc gì phải sốt ruột."
+    },
+    {
+      "id": "d02-q02",
+      "number": 2,
+      "section": "問題1: 漢字読み",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "学問を続けるためには、体を<u>鍛える</u>ことも大切だ。",
+      "options": ["きたえる", "ふまえる", "こしらえる", "となえる"],
+      "answer": 0,
+      "explanation": "【正解】1 (きたえる)\n\n• 鍛える（きたえる）：Rèn luyện (thân thể), tôi luyện (kỹ năng/ý chí).\n• 踏まえる (ふまえる - dựa trên), 拵える (こしらえる - chế tạo), 唱える (となえる - xướng lên/đưa ra).\n\n【Dịch nghĩa】\nĐể tiếp tục con đường học vấn thì việc rèn luyện thân thể cũng rất quan trọng."
+    },
+    {
+      "id": "d02-q03",
+      "number": 3,
+      "section": "問題1: 漢字読み",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "若い頃は野球選手を<u>志したが</u>、夢はかなわなかった。",
+      "options": ["めざしたが", "とざしたが", "ふりかざしたが", "こころざしたが"],
+      "answer": 3,
+      "explanation": "【正解】4 (こころざしたが)\n\n• 志す（こころざす）：Nuôi chí, ấp ủ ước mơ, hướng đến mục tiêu (nghề nghiệp, lý tưởng).\n• 目指す (めざす - nhắm tới), 閉ざす (とざす - khép lại), 振りかざす (ふりかざす - vung lên/lấy cớ).\n\n【Dịch nghĩa】\nThời còn trẻ tôi từng nuôi chí trở thành cầu thủ bóng chày, nhưng giấc mơ đã không thành hiện thực."
+    },
+    {
+      "id": "d02-q04",
+      "number": 4,
+      "section": "問題1: 漢字読み",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "通貨を<u>偽造する</u>と、非常に重い罪になる。",
+      "options": ["きそう", "きぞう", "ぎそう", "ぎぞう"],
+      "answer": 3,
+      "explanation": "【正解】4 (ぎぞう)\n\n• 偽造（ぎぞう）：Làm giả, ngụy tạo (tiền tệ, tài liệu, giấy tờ).\n• Chú ý âm Hán Nhật: 偽 đọc là 「ぎ」 (như 偽造: ぎぞう, 偽善: ぎぜん), 造 đọc là 「ぞう」.\n\n【Dịch nghĩa】\nLàm giả tiền tệ là hành vi phạm tội đặc biệt nghiêm trọng."
+    },
+    {
+      "id": "d02-q05",
+      "number": 5,
+      "section": "問題1: 漢字読み",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "裁判をせずに和解するためには、どちらかが<u>譲歩する</u>しかない。",
+      "options": ["じょうほ", "じょうふ", "じょうぼ", "じょうぶ"],
+      "answer": 0,
+      "explanation": "【正解】1 (じょうほ)\n\n• 譲歩（じょうほ）：Nhượng bộ, nhường bước để đạt thỏa hiệp.\n• Chú ý âm Hán Nhật: 譲 đọc là 「じょう」 (譲渡: じょうと), 歩 đọc là 「ほ」 (散歩: さんぽ, 進歩: しんぽ).\n\n【Dịch nghĩa】\nĐể hòa giải mà không cần đưa ra tòa án xét xử thì chỉ có cách một trong hai bên phải nhượng bộ."
+    },
+    {
+      "id": "d02-q06",
+      "number": 6,
+      "section": "問題1: 漢字読み",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "疲労が<u>蓄積している</u>のか、なかなかやる気が出ない。",
+      "options": ["たくせき", "ちくせき", "たくづみ", "ちくづみ"],
+      "answer": 1,
+      "explanation": "【正解】2 (ちくせき)\n\n• 蓄積（ちくせき）：Tích tụ, tích lũy dồn nén (mệt mỏi, căng thẳng, tư bản).\n• Chú ý: 蓄 đọc là 「ちく」 (như 貯蓄: ちょちく, 蓄電: ちくでん).\n\n【Dịch nghĩa】\nChắc do sự mệt mỏi tích tụ dồn nén bấy lâu nay nên tôi mãi vẫn chưa thể lấy lại hứng khởi làm việc."
+    },
+    {
+      "id": "d02-q07",
+      "number": 7,
+      "section": "問題2: 文脈規定",
+      "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "あの18世紀の建物の（ ）は、ロココ式と言うそうだ。",
+      "options": ["外観", "外家", "外面", "外形"],
+      "answer": 0,
+      "explanation": "【正解】1 (外観 - がいかん)\n\n• 外観（がいかん）：Ngoại quan, dáng vẻ bên ngoài của công trình kiến trúc, tòa nhà.\n• 外面（がいめん/そとづら - vẻ bề ngoài/mặt ngoài), 外形（がいけい - hình thể bên ngoài).\n\n【Dịch nghĩa】\nNghe nói diện mạo bên ngoài của tòa nhà thế kỷ 18 đó được thiết kế theo phong cách Rococo."
+    },
+    {
+      "id": "d02-q08",
+      "number": 8,
+      "section": "問題2: 文脈規定",
+      "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "今、苦労していることが、将来の活躍の原（ ）となるだろう。",
+      "options": ["勢力", "活力", "精力", "動力"],
+      "answer": 3,
+      "explanation": "【正解】4 (動力 - 原動力: げんどうりょく)\n\n• 原動力（げんどうりょく）：Động lực gốc rễ, nguồn động lực thúc đẩy phát triển hay thành công.\n• Ghép tạo từ: 原動力 (lực đẩy/động lực), 活力 (sức sống), 精力 (tinh lực), 勢力 (thế lực).\n\n【Dịch nghĩa】\nNhững gian khổ ở hiện tại sẽ trở thành nguồn động lực thúc đẩy cho sự bứt phá tỏa sáng trong tương lai."
+    },
+    {
+      "id": "d02-q09",
+      "number": 9,
+      "section": "問題2: 文脈規定",
+      "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "緊急事態に（ ）するために、社長が自らアメリカへ飛んだ。",
+      "options": ["処置", "処理", "処分", "対処"],
+      "answer": 3,
+      "explanation": "【正解】4 (対処 - たいしょ)\n\n• 「〜に対処する」: Ứng phó, đối phó xử lý tình thế/khẩn cấp. Đi cùng trợ từ 「に」.\n• 処置 (しょち - xử trí y tế/biện pháp), 処理 (しょり - xử lý công việc/dữ liệu/rác thải), 処分 (しょぶん - xử phạt/thanh lý).\n\n【Dịch nghĩa】\nĐể trực tiếp ứng phó với tình trạng khẩn cấp, chính giám đốc đã đích thân bay sang Mỹ."
+    },
+    {
+      "id": "d02-q10",
+      "number": 10,
+      "section": "問題2: 文脈規定",
+      "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "親友の彼女が先に結婚したことに、（ ）穏やかではなかった。",
+      "options": ["腹心", "内心", "胸", "内"],
+      "answer": 1,
+      "explanation": "【正解】2 (内心 - ないしん)\n\n• 内心（ないしん）：Trong thâm tâm, trong lòng (cụm thành ngữ cố định:「内心穏やかではない」: trong lòng không hề bình yên, cảm xúc xáo trộn).\n• 腹心（ふくしん - tâm phúc/thân tín).\n\n【Dịch nghĩa】\nThấy cô bạn thân kết hôn trước mình, trong thâm tâm cô ấy không khỏi xao xuyến bồn chồn."
+    },
+    {
+      "id": "d02-q11",
+      "number": 11,
+      "section": "問題2: 文脈規定",
+      "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "プロとしての（ ）心があるからこそ、単価の安い仕事はできない。",
+      "options": ["誇り", "自慢", "自信", "自負"],
+      "answer": 3,
+      "explanation": "【正解】4 (自負 - 自負心: じふしん)\n\n• 自負心（じふしん）：Lòng tự tôn nghề nghiệp, niềm kiêu hãnh/tự hào về năng lực của bản thân.\n• 誇り (dùng riêng 「誇り」 chứ không ghép 誇り心), 自慢 (khoe khoang), 自信 (tự tin).\n\n【Dịch nghĩa】\nChính vì có lòng tự hào kiêu hãnh của một người làm nghề chuyên nghiệp mà tôi không thể nhận những công việc giá rẻ mạt được."
+    },
+    {
+      "id": "d02-q12",
+      "number": 12,
+      "section": "問題2: 文脈規定",
+      "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "それほど（ ）保護に育てたつもりはなかったが、息子はわがままだ。",
+      "options": ["重", "大", "強", "過"],
+      "answer": 3,
+      "explanation": "【正解】4 (過 - 過保護: かほご)\n\n• 過保護（かほご）：Bảo bọc quá mức, nuông chiều con cái thái quá.\n• Tiền tố 「過」 mang nghĩa quá mức: 過保護, 過密, 過労, 過剰.\n\n【Dịch nghĩa】\nTôi vốn không hề có ý nuông chiều bao bọc con quá mức, thế nhưng đứa con trai lại rất ích kỷ bướng bỉnh."
+    },
+    {
+      "id": "d02-q13",
+      "number": 13,
+      "section": "問題2: 文脈規定",
+      "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "小学生がおぼれている小犬を助けたという、人間（ ）あふれる話を聞いた。",
+      "options": ["技", "流", "味", "感"],
+      "answer": 2,
+      "explanation": "【正解】3 (味 - 人間味: にんげんみ)\n\n• 人間味（にんげんみ）：Tính người, tình người, sự ấm áp đầy nhân tính.\n• Hậu tố 「味」 (み) chỉ tính chất, hương vị: 人間味, 哀愁味, 真味.\n\n【Dịch nghĩa】\nTôi đã nghe một câu chuyện chan chứa tình người kể về việc em học sinh tiểu học đã cứu một chú cún con bị đuối nước."
+    },
+    {
+      "id": "d02-q14",
+      "number": 14,
+      "section": "問題3: 言い換え類義",
+      "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "question": "娘の誕生日にごちそうを<u>うんと</u>作ってあげた。",
+      "options": ["本当に", "心から", "少々", "たくさん"],
+      "answer": 3,
+      "explanation": "【正解】4 (たくさん)\n\n• うんと：Nhiều, cực kỳ nhiều (= たくさん, 大量に).\n\n【Dịch nghĩa】\nVào ngày sinh nhật con gái, tôi đã nấu thật nhiều món ăn ngon cho con."
+    },
+    {
+      "id": "d02-q15",
+      "number": 15,
+      "section": "問題3: 言い換え類義",
+      "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "question": "日頃批判している上司が手助けしてくれて、<u>きまり悪い</u>思いをした。",
+      "options": ["恐ろしい", "やましい", "気恥ずかしい", "気難しい"],
+      "answer": 2,
+      "explanation": "【正解】3 (気恥ずかしい)\n\n• きまり悪い（きまりわるい）：Ngượng ngùng, xấu hổ, bối rối vì tình huống trớ trêu (= 気恥ずかしい, 照れくさい).\n• やましい (cắn rứt lương tâm), 気難しい (khó tính).\n\n【Dịch nghĩa】\nNgười sếp mà ngày thường tôi hay chỉ trích lại dang tay giúp đỡ khiến tôi cảm thấy vô cùng ngượng ngùng, xấu hổ."
+    },
+    {
+      "id": "d02-q16",
+      "number": 16,
+      "section": "問題3: 言い換え類義",
+      "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "question": "日本語には目上の人の労を<u>いたわる</u>表現はない。",
+      "options": ["ねぎらう", "みまう", "したう", "しのぶ"],
+      "answer": 0,
+      "explanation": "【正解】1 (ねぎらう)\n\n• 労をいたわる（労を労う: ろうをねぎらう）：Cảm thông, tán dương và an ủi sự vất vả khó nhọc của người khác.\n• Lưu ý: 「労う」 và 「いたわる」 chỉ dùng cho người ngang hàng hoặc cấp dưới, không dùng cho cấp trên.\n\n【Dịch nghĩa】\nTrong tiếng Nhật không có cách diễn đạt nào để an ủi, cảm ơn sự vất vả khó nhọc của bề trên cả."
+    },
+    {
+      "id": "d02-q17",
+      "number": 17,
+      "section": "問題3: 言い換え類義",
+      "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "question": "デパ地下の<u>一角</u>に、新たに輸入野菜が並んでいた。",
+      "options": ["ケース", "サイド", "コース", "コーナー"],
+      "answer": 3,
+      "explanation": "【正解】4 (コーナー)\n\n• 一角（いっかく）：Một góc, khu vực gian hàng (= コーナー, エリア).\n\n【Dịch nghĩa】\nTại một góc tầng hầm bách hóa, các loại rau củ nhập khẩu mới nhập đã được bày bán."
+    },
+    {
+      "id": "d02-q18",
+      "number": 18,
+      "section": "問題3: 言い換え類義",
+      "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "question": "他人を<u>誹謗</u>する前に、自分の姿勢を正すべきだ。",
+      "options": ["報復", "因縁", "苦情", "中傷"],
+      "answer": 3,
+      "explanation": "【正解】4 (中傷)\n\n• 誹謗（ひぼう）：Phỉ báng, nói xấu, bôi nhọ danh dự (= 中傷: ちゅうしょう, thường dùng trong cụm 誹謗中傷).\n• 報復 (ほうふく - trả thù), 因縁 (いんねん - duyên cớ/bắt bẻ), 苦情 (くじょう - phàn nàn/khiếu nại).\n\n【Dịch nghĩa】\nTrước khi phỉ báng dèm pha người khác thì nên tự chấn chỉnh lại tác phong của chính mình."
+    },
+    {
+      "id": "d02-q19",
+      "number": 19,
+      "section": "問題3: 言い換え類義",
+      "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "question": "販売員の説明は前回と内容が<u>前後している</u>。",
+      "options": [
+        "だいたい合っている",
+        "順序が逆になっている",
+        "前半が消えている",
+        "まったく違っている"
+      ],
+      "answer": 1,
+      "explanation": "【正解】2 (順序が逆になっている)\n\n• 前後する（ぜんごする）：Bị đảo lộn thứ tự trước sau (= 順序が逆になっている).\n\n【Dịch nghĩa】\nLời giải thích của nhân viên bán hàng có nội dung bị đảo lộn thứ tự trước sau so với lần trước."
+    },
+    {
+      "id": "d02-q20",
+      "number": 20,
+      "section": "問題4: 用法",
+      "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "がっちり",
+      "options": [
+        "田中氏とはがっちり手を切ったので、もう会うことはないだろう。",
+        "12時がっちりに列車は出発し、ひたすらモスクワを目指した。",
+        "アメフト部の彼は、さすがにがっちりした体格だ。",
+        "防犯カメラの映像に犯人らしき男ががっちり映っていた。"
+      ],
+      "answer": 2,
+      "explanation": "【正解】3 (アメフト部の彼は、さすがにがっちりした体格だ。)\n\n• がっちり：Vạm vỡ, rắn rỏi chắc nịch (về vóc dáng: がっちりした体格); hoặc chắc chắn, chặt chẽ (về tiền bạc: がっちり貯める).\n• Câu 1 sửa thành: きっぱり手を切った (cắt đứt dứt khoát).\n• Câu 2 sửa thành: 12時きっかりに / ちょうどに (đúng chuẩn 12h).\n• Câu 4 sửa thành: はっきりと映っていた (hiển thị rõ nét).\n\n【Dịch nghĩa】\nCậu ấy ở đội bóng bầu dục nên thân hình quả nhiên vô cùng vạm vỡ, rắn chắc."
+    },
+    {
+      "id": "d02-q21",
+      "number": 21,
+      "section": "問題4: 用法",
+      "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "遺跡",
+      "options": [
+        "ペルーのマチュピチュは、インカ時代の都市遺跡として有名だ。",
+        "この遺跡には江戸時代の有名な俳人の句が刻まれている。",
+        "ライトアップされた東京タワーの遺跡にすっかり魅了された。",
+        "先の大戦で破壊された自然が、今は遺跡となって残されている。"
+      ],
+      "answer": 0,
+      "explanation": "【正解】1 (ペルーのマチュピチュは、インカ時代の都市遺跡として有名だ。)\n\n• 遺跡（いせき）：Di tích khảo cổ, tàn tích thành quách công trình cổ đại xưa kia để lại.\n• Câu 2 dùng: 石碑 (せきひ - bia đá khắc thơ).\n• Câu 3 dùng: 姿 / 景観 (dáng vẻ/cảnh đêm Tokyo Tower).\n• Câu 4 dùng: 爪痕 / 傷跡 (vết sẹo tàn phá của chiến tranh).\n\n【Dịch nghĩa】\nMachu Picchu ở Peru rất nổi tiếng với tư cách là di tích thành thị cổ thời đế chế Inca."
+    },
+    {
+      "id": "d02-q22",
+      "number": 22,
+      "section": "問題4: 用法",
+      "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "サイレン",
+      "options": [
+        "訪問販売員が玄関のサイレンを鳴らしたが、応対しなかった。",
+        "最近の犯罪サイレンは、強烈なわさびの匂いが出るものがある。",
+        "聴解試験の時にパトカーのサイレンが鳴り、答えがわからなかった。",
+        "テレビで緊急地震速報のサイレンが流れ、慌ててガスの火を消した。"
+      ],
+      "answer": 2,
+      "explanation": "【正解】3 (聴解試験の時にパトカーのサイレンが鳴り、答えがわからなかった。)\n\n• サイレン（siren）：Còi báo động, còi hú cấp cứu (dùng cho xe cảnh sát, xe cứu hỏa: パトカーのサイレン).\n• Câu 1 dùng: チャイム / インターホン (chuông cửa).\n• Câu 2 dùng: 防犯スプレー / 防犯グッズ (xịt chống tội phạm).\n• Câu 4 dùng: アラーム音 / チャイム (âm báo tin khẩn).\n\n【Dịch nghĩa】\nĐúng lúc thi nghe thì còi xe cảnh sát hú inh ỏi khiến tôi không thể nghe ra đáp án."
+    },
+    {
+      "id": "d02-q23",
+      "number": 23,
+      "section": "問題4: 用法",
+      "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "潤う",
+      "options": [
+        "うちの飼い犬はもう老犬で、すっかり潤い始めた。",
+        "さすがに潤い続ける青木君は、試験でトップを独走している。",
+        "春になって天気が潤えば、一斉に桜が咲くだろう。",
+        "会社から臨時のボーナスが出て、家計が潤った。"
+      ],
+      "answer": 3,
+      "explanation": "【正解】4 (会社から臨時のボーナスが出て、家計が潤った。)\n\n• 潤う（うるおう）：Ẩm ướt; nghĩa bóng là: Dồi dào, sung túc tài chính (家計が潤う - kinh tế gia đình dư dả, 懐が潤う).\n• Câu 1 dùng: 衰え始めた (bắt đầu suy yếu).\n• Câu 2 dùng: 勝ち続ける / 好調を保つ.\n• Câu 3 dùng: 暖かくなれば (thời tiết ấm lên).\n\n【Dịch nghĩa】\nĐược công ty thưởng một khoản tiền đột xuất nên tài chính gia đình trở nên dư dả hẳn lên."
+    },
+    {
+      "id": "d02-q24",
+      "number": 24,
+      "section": "問題4: 用法",
+      "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "ぐったり",
+      "options": [
+        "初めてフルマラソンを完走した中田君は、ゴール直後ぐったり喜んだ。",
+        "頂上から下山した人々がぐったりしているのを見て、登るのが恐くなった。",
+        "数年前に行方不明になった同級生に、先日町でぐったり出会った。",
+        "あの二人は恋人ゆえに、いつもぐったりしていて楽しそうだ。"
+      ],
+      "answer": 1,
+      "explanation": "【正解】2 (頂上から下山した人々がぐったりしているのを見て、登るのが恐くなった。)\n\n• ぐったり：Mệt lả, kiệt sức rã rời, mềm nhũn người do quá mệt.\n• Câu 1 dùng: 心底喜んだ / 大いに喜んだ.\n• Câu 3 dùng: ばったり出会った (tình cờ chạm trán).\n• Câu 4 dùng: べったり (quấn quýt bên nhau).\n\n【Dịch nghĩa】\nThấy những người leo xuống từ đỉnh núi mệt mỏi rã rời rũ rượi cả người, tôi đâm ra sợ hãi không dám leo nữa."
+    },
+    {
+      "id": "d02-q25",
+      "number": 25,
+      "section": "問題4: 用法",
+      "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "やきもち",
+      "options": [
+        "いつかやきもちを晴らそうと思って、チャンスを待ち続けた。",
+        "人間である以上、他人にやきもちを焼くのは自然な感情だ。",
+        "あんなやきもちに満ちていると、誤解されてしまうだろう。",
+        "友人たちみんなからやきもちを食って、大変な目にあった。"
+      ],
+      "answer": 1,
+      "explanation": "【正解】2 (人間である以上、他人にやきもちを焼くのは自然な感情だ。)\n\n• やきもち：Lòng ghen tuông, đố kỵ (luôn đi cùng quán dụng ngữ:「やきもちを焼く」: ghen tị/ghen tuông).\n• Câu 1 dùng: 恨みを晴らす (giải tỏa mối hận).\n• Câu 4 dùng: 反感を買う / 怒りを買う (chuốc lấy phản cảm/tức giận).\n\n【Dịch nghĩa】\nĐã là con người thì việc nảy sinh lòng ghen ghét đố kỵ với người khác cũng là một cảm xúc tự nhiên."
+    },
+    {
+      "id": "d02-q26",
+      "number": 26,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "タレントが選挙に出たが、議席が取れるか、取れないか（ ）だろう。",
+      "options": ["といったところ", "だけのことはある", "きらいがある", "までもない"],
+      "answer": 0,
+      "explanation": "【正解】1 (といったところ)\n\n• Ngữ pháp:「〜といったところだ」: Đại khái ở mức... / Cùng lắm cũng chỉ cỡ... (đưa ra ước lượng chừng mực).\n• Nghĩa câu: Nghệ sĩ ra tranh cử thì kết quả cùng lắm cũng chỉ ở mức không biết có lấy nổi ghế hay không.\n\n【Dịch nghĩa】\nNgôi sao đó ra tranh cử, nhưng khả năng cũng chỉ cùng lắm ở mức không biết có giành nổi một ghế hay không thôi."
+    },
+    {
+      "id": "d02-q27",
+      "number": 27,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "国際間の貿易不均衡は、為替レートの変動に影響せ（ ）。",
+      "options": ["ずにおく", "ずにすむ", "ざるを得ない", "ざることない"],
+      "answer": 2,
+      "explanation": "【正解】3 (ざるを得ない)\n\n• Ngữ pháp: V-nai (bỏ ない) + 「ざるを得ない」 (động từ する → せざるを得ない): Đành phải, buộc phải, tất yếu dẫn tới...\n\n【Dịch nghĩa】\nSự mất cân bằng thương mại quốc tế tất yếu buộc lòng phải gây ảnh hưởng đến sự biến động của tỷ giá hối đoái."
+    },
+    {
+      "id": "d02-q28",
+      "number": 28,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "南大東島付近で台風が発生する（ ）、一気に北上を始めた。",
+      "options": ["上で", "こそ", "とは", "や"],
+      "answer": 3,
+      "explanation": "【正解】4 (や)\n\n• Ngữ pháp:「V-る + や / や否や」: Vừa mới... thì ngay lập tức... (hành động phía sau xảy ra gần như tức thời).\n\n【Dịch nghĩa】\nCơn bão vừa mới hình thành gần đảo Minamidaito một cái là ngay lập tức bắt đầu di chuyển nhanh lên phía bắc."
+    },
+    {
+      "id": "d02-q29",
+      "number": 29,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "戦略を十分に立て（ ）ことが、かえって心の隙を作ってしまった。",
+      "options": ["てある", "ていく", "てくる", "てもつ"],
+      "answer": 0,
+      "explanation": "【正解】1 (てある)\n\n• Ngữ pháp: Tha động từ + 「てある」: Biểu thị trạng thái đã được chuẩn bị sẵn từ trước. 「十分に立ててあること」: Việc chiến lược đã được vạch ra chu tất sẵn từ trước.\n\n【Dịch nghĩa】\nChính việc chiến lược đã được chuẩn bị quá kỹ lưỡng lại vô tình tạo ra tâm lý chủ quan, sơ hở."
+    },
+    {
+      "id": "d02-q30",
+      "number": 30,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "『山月記』を書いた中島敦の短い一生を考えると寂しい（ ）。",
+      "options": ["始末だ", "限りだ", "極まる", "に至る"],
+      "answer": 1,
+      "explanation": "【正解】2 (限りだ)\n\n• Ngữ pháp: A-い / A-な + 「限りだ」: Cực kỳ..., vô cùng... (diễn tả cảm xúc tột cùng của người nói: 寂しい限りだ, うらやましい限りだ).\n\n【Dịch nghĩa】\nCứ ngẫm về cuộc đời ngắn ngủi của nhà văn Nakajima Atsushi - tác giả truyện 'Sơn Nguyệt Ký' - mà thấy vô cùng xót xa buồn bã."
+    },
+    {
+      "id": "d02-q31",
+      "number": 31,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "新人女優の泣く（ ）演技が不自然で、カットがかかった。",
+      "options": ["まいとする", "といえども", "からこそ", "ものなら"],
+      "answer": 0,
+      "explanation": "【正解】1 (まいとする)\n\n• Ngữ pháp:「V-まいとする」: Cố gắng để không làm V (泣くまいとする: cố gắng nén để không bật khóc).\n\n【Dịch nghĩa】\nDiễn xuất cố nén không khóc của nữ diễn viên tân binh nhìn không tự nhiên nên đạo diễn đã hô cắt cảnh."
+    },
+    {
+      "id": "d02-q32",
+      "number": 32,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "時代劇映画の傑作は『七人の侍』（ ）右に出るものはない。",
+      "options": ["をめぐって", "をもって", "をおいて", "をはじめ"],
+      "answer": 2,
+      "explanation": "【正解】3 (をおいて)\n\n• Ngữ pháp:「N + をおいて〜ない」: Ngoài N ra thì không ai / không cái gì có thể sánh kịp (quán dụng:「〜をおいて右に出るものはない」: ngoài... ra không ai vượt qua được).\n\n【Dịch nghĩa】\nKiệt tác điện ảnh phim cổ trang thì ngoài tác phẩm 'Bảy võ sĩ đạo' ra không có bộ phim nào sánh kịp."
+    },
+    {
+      "id": "d02-q33",
+      "number": 33,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "（ラーメン屋で）\nA「この券売機、2千円札は大丈夫ですか。」\nB「申し訳ありませんが、（ ）。」",
+      "options": [
+        "ご利用になりません",
+        "ご利用になれません",
+        "ご利用にされません",
+        "ご利用になされません"
+      ],
+      "answer": 1,
+      "explanation": "【正解】2 (ご利用になれません)\n\n• Kính ngữ: Dạng khả năng tôn kính của động từ 利用する là 「ご利用になれる」, phủ định là 「ご利用になれません」 (Quý khách không sử dụng được ạ).\n\n【Dịch nghĩa】\n(Tại quán mì ramen)\nA: 'Máy bán vé này có dùng được tờ 2 nghìn yên không?'\nB: 'Rất xin lỗi quý khách, máy không hỗ trợ sử dụng loại tiền này ạ.'"
+    },
+    {
+      "id": "d02-q34",
+      "number": 34,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "ルーブル美術館へ行ったら「モナリザ」の絵を見（ ）ことはできない。",
+      "options": ["ずにすむ", "ずにはいられない", "ずにはすまない", "ずにかねる"],
+      "answer": 0,
+      "explanation": "【正解】1 (ずにすむ)\n\n• Ngữ pháp:「〜ずに済む」: Không cần làm V cũng xong. Ở đây đi cùng phủ định「見ずにすむことはできない」: Không thể nào có chuyện tới bảo tàng Louvre mà lại bỏ qua không ngắm bức tranh Mona Lisa (chắc chắn phải ngắm).\n\n【Dịch nghĩa】\nMột khi đã cất công đến viện bảo tàng Louvre thì không thể nào lại bỏ qua mà không ngắm bức họa Mona Lisa được."
+    },
+    {
+      "id": "d02-q35",
+      "number": 35,
+      "section": "問題5: 文の文法1",
+      "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "（社員寮で）\nA「緒方さん、昨晩倒れちゃったそうだよ。」\nB「我慢強い人（ ）悪化させてしまったかも。」",
+      "options": [
+        "だけでかえって",
+        "だけにかえって",
+        "のみでかえって",
+        "のみにかえって"
+      ],
+      "answer": 1,
+      "explanation": "【正解】2 (だけにかえって)\n\n• Ngữ pháp:「〜だけに（かえって）」: Chính vì... nên lại càng... (do tính cách chịu đựng tốt nên chính vì thế lại càng âm thầm chịu đựng dẫn tới bệnh tình chuyển biến xấu hơn).\n\n【Dịch nghĩa】\n(Tại ký túc xá nhân viên)\nA: 'Nghe nói anh Ogata tối qua ngất xỉu đấy.'\nB: 'Chính vì anh ấy là người hay chịu đựng giỏi nên có khi lại càng làm bệnh tình trở nên trầm trọng hơn mất rồi.'"
+    },
+    {
+      "id": "d02-q36",
+      "number": 36,
+      "section": "問題6: 文の組み立て",
+      "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
+      "question": "メディア・アートは＿＿ ＿＿ ＿★＿ ＿＿ 作品を指す。",
+      "options": ["依拠しない媒体を", "使って", "物質性に", "表現する"],
+      "answer": 1,
+      "explanation": "【正解】2 (使って)\n\n• Trật tự ghép câu:\n  メディア・アートは (3 物質性に) → (1 依拠しない媒体を) → (2 使って ★) → (4 表現する) 作品を指す。\n\n• Câu hoàn chỉnh:\n  「メディア・アートは、物質性に依拠しない媒体を使って表現する作品を指す。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [2].\n\n【Dịch nghĩa】\nNghệ thuật truyền thông (Media Art) chỉ những tác phẩm biểu đạt thông qua việc sử dụng các chất liệu trung gian không phụ thuộc vào tính vật thể."
+    },
+    {
+      "id": "d02-q37",
+      "number": 37,
+      "section": "問題6: 文の組み立て",
+      "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
+      "question": "宇宙空間＿＿ ＿＿ ＿★＿ ＿＿ ことになっている。",
+      "options": ["における活動は", "規制される", "準拠して", "国際法に"],
+      "answer": 2,
+      "explanation": "【正解】3 (準拠して)\n\n• Trật tự ghép câu:\n  宇宙空間 (1 における活動は) → (4 国際法に) → (3 準拠して ★) → (2 規制される) ことになっている。\n\n• Câu hoàn chỉnh:\n  「宇宙空間における活動は、国際法に準拠して規制されることになっている。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [3].\n\n【Dịch nghĩa】\nCác hoạt động trong không gian vũ trụ được quy định phải tuân thủ căn cứ theo luật pháp quốc tế."
+    },
+    {
+      "id": "d02-q38",
+      "number": 38,
+      "section": "問題6: 文の組み立て",
+      "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
+      "question": "天然ガスは＿＿ ＿＿ ＿★＿ ＿＿ に使用される。",
+      "options": [
+        "肥料などの製造",
+        "使用されるほか",
+        "広く燃料として",
+        "化学原料として"
+      ],
+      "answer": 3,
+      "explanation": "【正解】4 (化学原料として)\n\n• Trật tự ghép câu:\n  天然ガスは (3 広く燃料として) → (2 使用されるほか) → (4 化学原料として ★) → (1 肥料などの製造) に使用される。\n\n• Câu hoàn chỉnh:\n  「天然ガスは広く燃料として使用されるほか、化学原料として肥料などの製造に使用される。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [4].\n\n【Dịch nghĩa】\nKhí thiên nhiên ngoài việc được sử dụng rộng rãi làm nhiên liệu thì còn được dùng làm nguyên liệu hóa học để sản xuất phân bón."
+    },
+    {
+      "id": "d02-q39",
+      "number": 39,
+      "section": "問題6: 文の組み立て",
+      "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
+      "question": "日本の酒税法では＿＿ ＿＿ ＿★＿ ＿＿ いる。",
+      "options": [
+        "アルコールを含む飲料を",
+        "1%以上の",
+        "分けて",
+        "酒類として10種類に"
+      ],
+      "answer": 3,
+      "explanation": "【正解】4 (酒類として10種類に)\n\n• Trật tự ghép câu:\n  日本の酒税法では (2 1%以上の) → (1 アルコールを含む飲料を) → (4 酒類として10種類に ★) → (3 分けて) いる。\n\n• Câu hoàn chỉnh:\n  「日本の酒税法では、1%以上のアルコールを含む飲料を酒類として10種類に分けている。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [4].\n\n【Dịch nghĩa】\nTrong luật thuế rượu của Nhật Bản, đồ uống chứa từ 1% cồn trở lên được phân chia thành 10 chủng loại đồ uống có cồn."
+    },
+    {
+      "id": "d02-q40",
+      "number": 40,
+      "section": "問題6: 文の組み立て",
+      "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
+      "question": "中国やヨーロッパの＿＿ ＿＿ ＿★＿ ＿＿ を呼んだ。",
+      "options": [
+        "からくり人形は",
+        "影響を受けて",
+        "大坂で人気",
+        "近世に発達した"
+      ],
+      "answer": 0,
+      "explanation": "【正解】1 (からくり人形は)\n\n• Trật tự ghép câu:\n  中国やヨーロッパの (2 影響を受けて) → (4 近世に発達した) → (1 からくり人形は ★) → (3 大坂で人気) を呼んだ。\n\n• Câu hoàn chỉnh:\n  「中国やヨーロッパの影響を受けて近世に発達したからくり人形は、大坂で人気を呼んだ。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [1].\n\n【Dịch nghĩa】\nBúp bê cơ khí Karakuri phát triển vào thời cận đại chịu ảnh hưởng từ Trung Quốc và châu Âu đã tạo nên cơn sốt rất được yêu thích tại Osaka."
+    },
+    {
+      "id": "d02-q41",
+      "number": 41,
+      "section": "問題7: 文章の文法",
+      "passage": "回復しつつある世界経済に、日本もしっかりと支えられている。2009年10月～12月期の国内総生産（GDP）の実質成長率は年率換算で4.6%増となり、不況下でも景気が徐々に上向いている様子を確認できた。\nデフレで名目GDPの伸びは年率0.9%にとどまり、回復を実感するにはほど遠い。だが実質GDPが3四半期連続で増え、名目もプラスに転じたことは明るい兆しだ。\n輸出では、世界の景気回復をリードしている中国などアジア向けが全体を押し上げている。米国や欧州向けも自動車などが復調した。\n同じ時期に、中国は前年同期比実質10.7%の高成長を記録。米国も前期比の年率換算が5.7%、欧州のユーロ圏16カ国は同0.4%で、それぞれ2四半期連続のプラス成長だった。回復に向かう各国の足並みがそろい【41】、日本への波及効果も大きくなってきたようだ。\n内需は家電製品のエコポイント、エコカー減税などで個人消費の【42-a】が続いた。景気の足を引っ張ってきた住宅建設も、【42-b】幅が縮まった。\n動向が注目される設備投資は、7四半期ぶりにプラスに転じた。自動車、パソコン、IT（情報技術）関連ソフトウエアなどの分野が息を吹き返し【43】。手放しで楽観はできないが、心強い動きだ。\n年明け後も、為替相場や株価の水準はおおむね安定している。米国経済の先行きに対する懸念や、中国政府の引き締めの動きなど不安な要素はあるが、それでも日本経済が景気の「二番底」に陥る危険性は【44】とみていいだろう。\nだが、自律回復といえるほどの力強さはない。生産はピークの8割、機械受注は7割にとどまっている。09年の雇用者報酬は過去最大の落ち込みで、失業率も5%を超えたままだ。景気対策の効果は、やがて落ちてくる。\n鳩山政権は、昨年末にまとめた成長戦略の基本方針を早期にしっかり肉付けし、民間の設備投資や雇用拡大の意欲を引き出す必要がある。\n環境など先端技術分野をさらに伸ばす。医療、福祉、介護をはじめとするサービス産業をテコ入れし、雇用と所得を底上げする。貿易自由化を進展させ、企業の新興国市場への参入を大いに刺激しなければならない。\n09年の名目GDPで日本と中国の差は詰まり、ことし中の逆転は必至だ。日本は高度な技術を生かした多様な付加価値で勝負する知識集約型資本主義への脱皮が一段と【45】。\n経済成長のエンジンの役割を担う企業は、政府の支援を待っているいとまはない。新しいビジネスチャンスを積極的につかむことで、自律回復への道を切り開きたい。\n（「朝日新聞」2010年2月16日付）",
+      "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【41】から【45】の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "question": "【41】に入る最も適当なものはどれか。",
+      "options": ["たびに", "につれ", "かぎり", "としても"],
+      "answer": 1,
+      "explanation": "【正解】2 (につれ)\n\n• Ngữ pháp:「〜につれ（て）」: Cùng với việc... thì... kéo theo tương ứng (cùng với bước tiến phục hồi đồng điệu của các quốc gia thì hiệu ứng lan tỏa tích cực tới Nhật Bản cũng ngày một lớn).\n\n【Dịch nghĩa】\nCùng với việc nhịp độ hồi phục của các nước dần đồng điệu, dường như hiệu ứng lan tỏa tới Nhật Bản cũng ngày một lớn hơn."
+    },
+    {
+      "id": "d02-q42",
+      "number": 42,
+      "section": "問題7: 文章の文法",
+      "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【42】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
+      "question": "【42】に入る組み合わせとして最も適当なものはどれか。",
+      "options": [
+        "a 減少 ／ b 拡大",
+        "a 拡大 ／ b 減少",
+        "a 減少 ／ b 膨大",
+        "a 膨大 ／ b 減少"
+      ],
+      "answer": 1,
+      "explanation": "【正解】2 (a 拡大 ／ b 減少)\n\n• Ngữ cảnh bài đọc: Cầu nội địa được duy trì nhờ sự mở rộng tăng trưởng tiêu dùng cá nhân (a: 拡大), trong khi mức độ sụt giảm của lĩnh vực xây dựng nhà ở đã được thu hẹp lại (b: 減少幅が縮まった).\n\n【Dịch nghĩa】\nCầu nội địa ghi nhận sự gia tăng tiêu dùng cá nhân nhờ các chính sách điểm sinh thái và giảm thuế xe tiết kiệm năng lượng, còn ngành xây dựng nhà ở vốn kìm hãm đà tăng trưởng thì mức độ giảm sút cũng đã thu hẹp lại."
+    },
+    {
+      "id": "d02-q43",
+      "number": 43,
+      "section": "問題7: 文章の文法",
+      "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【43】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
+      "question": "【43】に入る最も適当なものはどれか。",
+      "options": ["てしまった", "ただろうか", "てしまう", "つつある"],
+      "answer": 3,
+      "explanation": "【正解】4 (つつある)\n\n• Ngữ pháp:「V-ます (bỏ ます) + つつある」: Đang dần dần... (các ngành công nghệ ô tô, máy tính, phần mềm IT đang dần hồi sinh lấy lại sinh khí).\n\n【Dịch nghĩa】\nCác lĩnh vực liên quan như ô tô, máy vi tính và phần mềm công nghệ thông tin (IT) đang dần lấy lại sinh khí."
+    },
+    {
+      "id": "d02-q44",
+      "number": 44,
+      "section": "問題7: 文章の文法",
+      "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【44】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
+      "question": "【44】に入る最も適当なものはどれか。",
+      "options": ["薄らいできた", "安らいできた", "平らいできた", "乾らいできた"],
+      "answer": 0,
+      "explanation": "【正解】1 (薄らいできた)\n\n• Quán dụng ngữ:「薄らぐ（うすらぐ）」: Nhạt dần, vơi bớt, giảm bớt (nguy cơ nền kinh tế rơi vào 'đáy kép / suy thoái đôi' đã vơi bớt đi).\n\n【Dịch nghĩa】\nCó thể nhận định rằng nguy cơ nền kinh tế Nhật Bản rơi vào khủng hoảng đáy kép đã dần vơi bớt."
+    },
+    {
+      "id": "d02-q45",
+      "number": 45,
+      "section": "問題7: 文章の文法",
+      "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【44】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
+      "question": "【45】に入る最も適当なものはどれか。",
+      "options": ["求める", "求めさせる", "求められる", "求めさせられる"],
+      "answer": 2,
+      "explanation": "【正解】3 (求められる)\n\n• Thể bị động mang tính xã hội:「〜が求められる」: Được đòi hỏi, được yêu cầu cấp thiết (Nhật Bản được yêu cầu phải lột xác chuyển mình mạnh mẽ hơn nữa sang chủ nghĩa tư bản thâm dụng tri thức).\n\n【Dịch nghĩa】\nNhật Bản càng được đòi hỏi phải lột xác chuyển mình mạnh mẽ hơn nữa sang nền kinh tế tư bản tri thức cạnh tranh bằng các giá trị gia tăng đa dạng."
+    }
+  ]
+}

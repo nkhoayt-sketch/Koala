@@ -1,0 +1,27 @@
+# Dependencies & Build Cache
+node_modules/
+.cache/
+dist/
+build/
+
+# Raw Source Archives and PDFs (>1.4GB raw exam booklets & archives)
+N2_DE_CAC_NAM/
+*.pdf
+*.rar
+*.zip
+*.7z
+
+# Executables & Logs
+cloudflared.exe
+*.log
+tunnel.log
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Duplicate static assets
+public/data/audio/
+
