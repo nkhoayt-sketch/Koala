@@ -11,7 +11,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "一度や二度の失敗で<u>懲りる</u>ようではだめだ。",
-      "options": ["おりる", "こりる", "かりる", "たりる"],
+      "options": [
+        "おりる",
+        "こりる",
+        "かりる",
+        "たりる"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (こりる)\n\n• 懲りる（こりる）：Nản lòng, sáng mắt ra / rút kinh nghiệm sau thất bại.\n• Các từ còn lại: 降りる (おりる - xuống xe), 借りる (かりる - vay mượn), 足りる (たりる - đủ).\n\n【Dịch nghĩa】\nNếu mới chỉ thất bại một hai lần mà đã nản lòng chùn bước thì không được đâu."
     },
@@ -21,7 +26,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "事故車がバスの行く手を<u>遮っていた</u>。",
-      "options": ["ふさがって", "とどこおって", "ただよって", "さえぎって"],
+      "options": [
+        "ふさがって",
+        "とどこおって",
+        "ただよって",
+        "さえぎって"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (さえぎって)\n\n• 遮る（さえぎる）：Chắn ngang, cản trở, chặn đường (lối đi, ánh sáng, tầm nhìn).\n• 塞がる（ふさがる - bị bít tắc, kẹt), 滞る（とどこおる - đình trệ), 漂う（ただよう - trôi nổi, thoang thoảng).\n\n【Dịch nghĩa】\nChiếc xe gặp tai nạn đã chắn ngang đường đi của xe buýt."
     },
@@ -31,7 +41,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "仕送りの授業料が旅行代に<u>化けて</u>しまった。",
-      "options": ["こけて", "とけて", "どけて", "ばけて"],
+      "options": [
+        "こけて",
+        "とけて",
+        "どけて",
+        "ばけて"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (ばけて)\n\n• 化ける（ばける）：Biến hình, biến tướng thành... (ở đây dùng nghĩa bóng: tiền học phí bố mẹ gửi lên đã bị đem tiêu biến thành tiền đi du lịch).\n• 転ける（こける - ngã), 溶ける/解ける (とける - tan ra), 退ける (どける - dẹp sang một bên).\n\n【Dịch nghĩa】\nKhoản tiền học phí bố mẹ gửi lên đã bị biến thành tiền đi du lịch mất rồi."
     },
@@ -41,7 +56,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "あの遊園地は乗り物が少なくて、全体的に<u>貧弱</u>な感じがする。",
-      "options": ["ひんじゃく", "びんじゃく", "ひんよわ", "びんよわ"],
+      "options": [
+        "ひんじゃく",
+        "びんじゃく",
+        "ひんよわ",
+        "びんよわ"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (ひんじゃく)\n\n• 貧弱（ひんじゃく）：Nghèo nàn, xơ xác, gầy gò, đơn điệu thiếu thốn.\n• Cần chú ý âm Hán Nhật: 貧 đọc là 「ひん」 (như 貧困: ひんこん, 貧血: ひんけつ), 弱 đọc là 「じゃく」.\n\n【Dịch nghĩa】\nKhu vui chơi giải trí đó có rất ít trò chơi nên nhìn tổng thể mang lại cảm giác nghèo nàn, đơn điệu."
     },
@@ -51,7 +71,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "同一犯なのか、盗みの手口が<u>酷似</u>している。",
-      "options": ["ごくに", "こくに", "こくじ", "こくし"],
+      "options": [
+        "ごくに",
+        "こくに",
+        "こくじ",
+        "こくし"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (こくじ)\n\n• 酷似（こくじ）：Rất giống nhau, giống nhau như tạc (mặt mày, thủ đoạn phạm tội).\n• Chú ý chữ 「似」 trong từ ghép âm On đọc là 「じ」 (ví dụ: 類似 - るいじ, 近似 - きんじ).\n\n【Dịch nghĩa】\nKhông biết có phải cùng một thủ phạm hay không mà thủ đoạn trộm cắp giống hệt nhau như tạc."
     },
@@ -61,7 +86,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "最近は<u>巧妙</u>な手口の犯罪が増えている。",
-      "options": ["きょうみょう", "こうみょう", "しょうみょう", "とうみょう"],
+      "options": [
+        "きょうみょう",
+        "こうみょう",
+        "しょうみょう",
+        "とうみょう"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (こうみょう)\n\n• 巧妙（こうみょう）：Tinh vi, tài tình, khéo léo (kỹ thuật, thủ đoạn, phương pháp).\n• Chữ 巧 đọc âm On là 「こう」 (ví dụ: 技巧 - ぎこう, 巧緻 - こうち).\n\n【Dịch nghĩa】\nGần đây các vụ án tội phạm với thủ đoạn tinh vi đang ngày càng gia tăng."
     },
@@ -71,7 +101,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "あの人の（　）つきから見て、スポーツ選手に間違いない。",
-      "options": ["身", "体", "骨身", "肉体"],
+      "options": [
+        "身",
+        "体",
+        "骨身",
+        "肉体"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (体)\n\n• 体つき（からだつき）：Vóc dáng, dáng người, thể hình.\n• Cụm từ thông dụng: 体つき (dáng người), 顔つき (nét mặt), 目つき (ánh mắt).\n\n【Dịch nghĩa】\nNhìn qua vóc dáng của người đó thì chắc chắn là một vận động viên thể thao rồi."
     },
@@ -81,7 +116,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "あの会社では毎年3月に定期（　）が行われる。",
-      "options": ["検挙", "検診", "検事", "検討"],
+      "options": [
+        "検挙",
+        "検診",
+        "検事",
+        "検討"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (検診)\n\n• 定期検診（ていきけんしん）：Khám sức khỏe định kỳ.\n• 1. 検挙（けんきょ - bắt giữ tội phạm), 3. 検事（けんじ - kiểm sát viên), 4. 検討（けんとう - xem xét, cân nhắc).\n\n【Dịch nghĩa】\nỞ công ty đó, việc khám sức khỏe định kỳ được tổ chức vào tháng 3 hàng năm."
     },
@@ -91,7 +131,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "大統領の（　）目的は、日本との漁業協定を結ぶことにあった。",
-      "options": ["訪日", "滞日", "在日", "駐日"],
+      "options": [
+        "訪日",
+        "滞日",
+        "在日",
+        "駐日"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (訪日)\n\n• 訪日目的（ほうにちもくてき）：Mục đích chuyến thăm Nhật Bản.\n• 2. 滞日 (ở lại/lưu trú tại Nhật), 3. 在日 (cư trú tại Nhật), 4. 駐日 (thường trú ngoại giao tại Nhật, ví dụ: 駐日大使).\n\n【Dịch nghĩa】\nMục đích chuyến thăm Nhật Bản của Tổng thống là ký kết hiệp định đánh cá với Nhật Bản."
     },
@@ -101,7 +146,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "この布団はふわふわで、寝（　）がいい。",
-      "options": ["心地", "気分", "心持ち", "気持ち"],
+      "options": [
+        "心地",
+        "気分",
+        "心持ち",
+        "気持ち"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (心地)\n\n• 寝心地（ねごこち）：Cảm giác khi nằm ngủ (thoải mái, êm ái). Đi với hậu tố 〜心地: 乗り心地 (cảm giác ngồi xe), 居心地 (cảm giác ở lại), 座り心地 (cảm giác ngồi ghế).\n\n【Dịch nghĩa】\nChiếc chăn nệm này mềm xốp nằm êm ái dễ chịu vô cùng."
     },
@@ -111,7 +161,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "いきなりバス路線が廃止され、住民たちの（　）をかった。",
-      "options": ["悪意", "反感", "悪気", "敵意"],
+      "options": [
+        "悪意",
+        "反感",
+        "悪気",
+        "敵意"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (反感)\n\n• 反感を買う（はんかんをかう）：Chuốc lấy sự bất bình, phản đối, ác cảm từ tập thể.\n• 1. 悪意 (ác ý), 3. 悪気 (ý xấu, thường dùng: 悪気はない), 4. 敵意 (thù địch).\n\n【Dịch nghĩa】\nTuyến xe buýt đột ngột bị bãi bỏ đã chuốc lấy làn sóng bất bình phản đối của cư dân."
     },
@@ -121,7 +176,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "名士が多いこの町は、立派な（　）玄関を構えている家が多い。",
-      "options": ["壁", "門", "表", "窓"],
+      "options": [
+        "壁",
+        "門",
+        "表",
+        "窓"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (表)\n\n• 表玄関（おもてげんかん）：Cửa trước, cổng chính phía mặt tiền của ngôi nhà.\n• Danh từ 名士（めいし）：Người có danh tiếng, quý tộc, nhân sĩ.\n\n【Dịch nghĩa】\nThị trấn có nhiều người danh tiếng này có rất nhiều ngôi nhà sở hữu cửa sảnh chính rất bề thế, khang trang."
     },
@@ -131,7 +191,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "娘はまだ幼稚園児だが、好奇（　）がとても旺盛だ。",
-      "options": ["情", "感", "気", "心"],
+      "options": [
+        "情",
+        "感",
+        "気",
+        "心"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (心)\n\n• 好奇心（こうきしん）：Lòng hiếu kỳ, sự tò mò muốn tìm hiểu.\n• Cụm từ cố định: 「好奇心旺盛（こうきしんおうせい）」: Tràn đầy tính hiếu kỳ và ham khám phá.\n\n【Dịch nghĩa】\nCon gái tôi tuy mới học mẫu giáo nhưng tính hiếu kỳ, thích khám phá thế giới xung quanh vô cùng mạnh mẽ."
     },
@@ -141,7 +206,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "線路に転落した人を救った彼は、<u>あたかも</u>無関係の人のようにふるまった。",
-      "options": ["やたら", "まるで", "むしろ", "せめて"],
+      "options": [
+        "やたら",
+        "まるで",
+        "むしろ",
+        "せめて"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (まるで)\n\n• あたかも ＝ まるで: Cứ như thể là, y hệt như là (thường đi với 〜ようだ / 〜かのようだ).\n• 1. やたら (vô tội vạ, bừa bãi), 3. むしろ (thà rằng, ngược lại), 4. せめて (ít nhất thì, tối thiểu).\n\n【Dịch nghĩa】\nNgười đàn ông cứu người bị rơi xuống đường ray đã thản nhiên cư xử cứ như thể mình là người ngoài cuộc hoàn toàn không liên quan."
     },
@@ -151,7 +221,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "ドラマ出演をきっかけに、5歳の少女が国民的な<u>人気者</u>になった。",
-      "options": ["スター", "モデル", "ガイド", "メンバー"],
+      "options": [
+        "スター",
+        "モデル",
+        "ガイド",
+        "メンバー"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (スター)\n\n• 人気者（にんきもの）＝ スター (Star - ngôi sao được công chúng hâm mộ, mến mộ).\n• 2. モデル (người mẫu), 3. ガイド (hướng dẫn viên), 4. メンバー (thành viên).\n\n【Dịch nghĩa】\nNhờ bước đệm tham gia bộ phim truyền hình, bé gái 5 tuổi đã trở thành một ngôi sao được cả quốc dân yêu mến."
     },
@@ -161,7 +236,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "先輩に借金を頼むなんて、そんな<u>厚かましい</u>お願いはできない。",
-      "options": ["いたましい", "はなはだしい", "ずうずうしい", "けたたましい"],
+      "options": [
+        "いたましい",
+        "はなはだしい",
+        "ずうずうしい",
+        "けたたましい"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (ずうずうしい)\n\n• 厚かましい（あつかましい）＝ ずうずうしい: Mặt dày, trơ trẽn, không biết ngượng khi đòi hỏi.\n• 1. 痛ましい (đau xót, thương tâm), 2. 甚だしい (kinh khủng, quá mức), 4. けたたましい (ầm ĩ, inh ỏi).\n\n【Dịch nghĩa】\nĐi hỏi vay tiền đàn anh ư, lời thỉnh cầu trơ trẽn mặt dày đến thế tôi không thể nào mở miệng được."
     },
@@ -171,7 +251,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "雨ばかりの<u>うっとうしい</u>天気が続くと、気分まで暗くなる。",
-      "options": ["せわしい", "ややこしい", "おもくるしい", "やかましい"],
+      "options": [
+        "せわしい",
+        "ややこしい",
+        "おもくるしい",
+        "やかましい"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (おもくるしい)\n\n• うっとうしい ＝ 重苦しい（おもくるしい）: U ám, nặng nề, khó chịu, ngột ngạt.\n• 1. 忙しい (bận rộn hối hả), 2. ややこしい (phức tạp, rắc rối), 4. 喧しい (ồn ào, om sòm).\n\n【Dịch nghĩa】\nThời tiết mưa dầm dề u ám nặng nề cứ kéo dài khiến cho cả tâm trạng cũng chùng xuống ủ rũ theo."
     },
@@ -181,7 +266,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "気に入ったシャツだったが、何回も洗濯して色が少し<u>おちた</u>。",
-      "options": ["よわった", "にじんだ", "いたんだ", "あせた"],
+      "options": [
+        "よわった",
+        "にじんだ",
+        "いたんだ",
+        "あせた"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (あせた)\n\n• 色がおちる ＝ 色があせる（褪せる）: Bị phai màu, bạc màu theo thời gian.\n• 1. 弱った (yếu đi), 2. 滲んだ (nhòe, lem màu mực), 3. 傷んだ (hư hỏng sợi vải).\n\n【Dịch nghĩa】\nChiếc áo sơ mi yêu thích của tôi sau nhiều lần giặt đã bị phai màu đi đôi chút."
     },
@@ -191,7 +281,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "日本は外国産の米の輸入を<u>抑制している</u>。",
-      "options": ["かなり広げている", "おさえとどめている", "完全に止めている", "少しゆるめている"],
+      "options": [
+        "かなり広げている",
+        "おさえとどめている",
+        "完全に止めている",
+        "少しゆるめている"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (おさえとどめている)\n\n• 抑制する（よくせいする）＝ 抑えとどめる: Kiềm chế, kìm hãm, hạn chế trong mức độ kiểm soát.\n• Không phải hoàn toàn dừng lại (完全に止めている) mà là kìm chế số lượng nhập khẩu.\n\n【Dịch nghĩa】\nNhật Bản đang thực hiện chính sách kìm chế, hạn chế lượng gạo nhập khẩu từ nước ngoài."
     },
@@ -291,7 +386,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "700人以上いる国会議員を減らし（　）という声がある。",
-      "options": ["てあげる", "てくれる", "てもらう", "てほしい"],
+      "options": [
+        "てあげる",
+        "てくれる",
+        "てもらう",
+        "てほしい"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (てほしい)\n\n• Ngữ pháp:「V-てほしい」 biểu thị nguyện vọng người nói mong muốn một đối tượng khác thực hiện hành động. Ở đây người dân mong muốn nhà nước cắt giảm bớt số lượng nghị sĩ quốc hội.\n\n【Dịch nghĩa】\nCó nhiều ý kiến nguyện vọng mong muốn cắt giảm bớt số nghị sĩ quốc hội hiện đang có trên 700 người."
     },
@@ -301,7 +401,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "価格の値下げ合戦は、デフレを助長している（　）であろう。",
-      "options": ["に難くない", "に過ぎない", "に堪えない", "に限らない"],
+      "options": [
+        "に難くない",
+        "に過ぎない",
+        "に堪えない",
+        "に限らない"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (に過ぎない)\n\n• Ngữ pháp N1:「〜にすぎない」: Chẳng qua chỉ là... / Không hơn không kém (đánh giá mức độ hạn chế).\n• 1. 〜に難くない (không khó để hình dung), 3. 〜に堪えない (vô cùng xúc động/không nỡ nhìn), 4. 〜に限らない (không chỉ riêng...).\n\n【Dịch nghĩa】\nCuộc chiến đua nhau hạ giá sản phẩm chẳng qua chỉ đang tiếp tay thúc đẩy thêm tình trạng giảm phát mà thôi."
     },
@@ -311,7 +416,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "欧米で導入されているサマータイムは、アジアではまだ導入せ（　）国が多い。",
-      "options": ["ざるを得ない", "ずにいる", "ずにはおかない", "ずにはすまない"],
+      "options": [
+        "ざるを得ない",
+        "ずにいる",
+        "ずにはおかない",
+        "ずにはすまない"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (ずにいる)\n\n• Ngữ pháp N1:「V-ずにいる」: Vẫn chưa làm gì, cứ duy trì tình trạng không làm hành động đó kéo dài.\n• Cấu trúc: 導入する → 導入せずにいる (vẫn chưa đưa vào triển khai).\n• 1. ざるを得ない (buộc phải làm), 3. ずにはおかない (nhất định sẽ làm tới cùng), 4. ずにはすまない (không thể không làm theo lẽ thường).\n\n【Dịch nghĩa】\nQuy ước giờ mùa hè vốn được áp dụng ở Âu Mỹ thì tại khu vực châu Á vẫn còn nhiều quốc gia chưa đưa vào sử dụng."
     },
@@ -321,7 +431,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "徳川幕府が永遠に鎖国政策をとり続けるなど不可能（　）。",
-      "options": ["に決まっていた", "にかかわった", "にこたえた", "にしていた"],
+      "options": [
+        "に決まっていた",
+        "にかかわった",
+        "にこたえた",
+        "にしていた"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (に決まっていた)\n\n• Ngữ pháp:「〜に決まっている」: Chắc chắn là, không thể khác được (suy đoán chắc chắn dựa trên logic tất yếu).\n\n【Dịch nghĩa】\nViệc Mạc phủ Tokugawa tiếp tục duy trì chính sách bế quan tỏa cảng vĩnh viễn là một điều chắc chắn không thể nào xảy ra."
     },
@@ -331,7 +446,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "彼は文章を磨くために、夏目漱石の小説を読む（　）らしい。",
-      "options": ["というものだ", "に過ぎない", "ようにしている", "ものがある"],
+      "options": [
+        "というものだ",
+        "に過ぎない",
+        "ようにしている",
+        "ものがある"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (ようにしている)\n\n• Ngữ pháp:「V-るようにしている」: Luôn nỗ lực duy trì một thói quen hoặc hành động đều đặn vì mục tiêu nào đó.\n\n【Dịch nghĩa】\nĐể trau dồi và mài giũa ngòi bút của mình, nghe nói anh ấy luôn cố gắng tạo thói quen đọc các tiểu thuyết của Natsume Soseki."
     },
@@ -341,7 +461,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "父親が演出家だったから、彼女は劇団に入った（　）。",
-      "options": ["ことだ", "わけだ", "ものだ", "べきだ"],
+      "options": [
+        "ことだ",
+        "わけだ",
+        "ものだ",
+        "べきだ"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (わけだ)\n\n• Ngữ pháp:「〜わけだ」: Thảo nào mà, hèn chi mà (lý giải nguyên nhân logic khi đã biết rõ lý do nền tảng phía trước).\n\n【Dịch nghĩa】\nVì có người bố là đạo diễn dàn dựng sân khấu, hèn chi mà cô ấy lại quyết định gia nhập đoàn kịch."
     },
@@ -351,7 +476,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "愛好家が増えて、江戸時代の浮世絵は高くなる（　）。",
-      "options": ["ためだ", "ほどだ", "ところだ", "一方だ"],
+      "options": [
+        "ためだ",
+        "ほどだ",
+        "ところだ",
+        "一方だ"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (一方だ)\n\n• Ngữ pháp N1:「V-る一方だ（いっぽうだ）」: Ngày càng có chiều hướng biến đổi liên tục không dừng theo một hướng (ở đây là giá tranh ngày càng tăng cao).\n\n【Dịch nghĩa】\nSố lượng người yêu thích sưu tầm ngày một nhiều, các bức tranh Ukiyo-e thời Edo ngày càng trở nên đắt đỏ hơn."
     },
@@ -361,7 +491,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "（会社のオフィスで）\nA「部長、展覧会のポスターを後ほど（　）。」\nB「あ、そう。刷り上がったらすぐに見せて。」",
-      "options": ["ご覧に入れます", "ご覧に入ります", "ご覧に差し入れます", "ご覧に差し上げます"],
+      "options": [
+        "ご覧に入れます",
+        "ご覧に入ります",
+        "ご覧に差し入れます",
+        "ご覧に差し上げます"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (ご覧に入れます)\n\n• Kính ngữ N1:「ご覧に入れる（ごらんにいれる）」 là khiêm nhường ngữ đặc biệt của động từ 「見せる / お見せする」 (trình cho cấp trên/khách hàng xem).\n\n【Dịch nghĩa】\n(Tại văn phòng công ty)\nNhân viên: \"Thưa Trưởng phòng, lát nữa tôi xin phép được trình áp phích triển lãm cho ngài xem ạ.\"\nTrưởng phòng: \"À thế à. In xong bản thảo thì mang ngay qua đây cho tôi xem nhé.\""
     },
@@ -371,7 +506,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "あの監督の新作映画は、絵巻物の（　）絢爛だった。",
-      "options": ["ほど", "ずくめ", "まじき", "ごとき"],
+      "options": [
+        "ほど",
+        "ずくめ",
+        "まじき",
+        "ごとき"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (ごとき)\n\n• Ngữ pháp N1:「N ＋ のごとき / のごとく」: Tựa như là, giống hệt như là (lối so sánh trang trọng trong văn học).\n• 絢爛（けんらん）: Rực rỡ, lộng lẫy, tráng lệ.\n\n【Dịch nghĩa】\nBộ phim điện ảnh mới của vị đạo diễn đó tráng lệ rực rỡ tựa như một cuộn tranh cuộn truyền thống thời xưa."
     },
@@ -381,7 +521,12 @@
       "section": "問題5: 文法形式の判断",
       "instruction": "次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "（動物園で）\nA「パンダ見たさに、子どもたちが次から次へと（　）で、大変だったわね。」\nB「いやあ、子どもだけじゃなく大人もたくさんいたよ。」",
-      "options": ["来ると来ると", "来るに来るに", "来るから来るから", "来るわ来るわ"],
+      "options": [
+        "来ると来ると",
+        "来るに来るに",
+        "来るから来るから",
+        "来るわ来るわ"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (来るわ来るわ)\n\n• Cụm từ thành ngữ khẩu ngữ:「V-るわ V-るわ」 biểu thị sự việc xảy ra dồn dập, đông đảo gây kinh ngạc (ở đây chỉ lượng người kéo tới ùn ùn hết đợt này đến đợt khác).\n\n【Dịch nghĩa】\n(Ở sở thú)\nA: \"Vì háo hức muốn ngắm gấu trúc mà lũ trẻ hết tốp này đến tốp khác ùn ùn kéo đến, vất vả thật đấy nhỉ.\"\nB: \"Đâu chỉ có trẻ con, người lớn cũng chen chúc đông nghẹt kìa.\""
     },
@@ -467,7 +612,12 @@
       "passage": "給食を実施している小中学校などで米飯給食が広がっている。国公立の99.9%が行い、回数も2007年度に全国平均で週3回となった。文部科学省の先月の発表では、08年度はさらに週3.1回に増えている。\n第2次大戦後、コッペパンと脱脂粉乳を中心に始まった学校給食は、すっかり様相を変えた。改正された学校給食法が昨春施行され、給食の目的自体も、「栄養改善」から「食育」へ、やっと転換した。\n米飯給食が正式に登場したのは1976年だ。余ったコメを食べてほしいという狙いがあった。いまや日本の伝統的な食生活を学び、食材について考える絶好の教材【41】。\n米飯給食の週5回完全実施をしている学校は全国でまだ5%だ。そのなかで新潟県三条市は03年、米飯を原則にすることとし、08年からは月に1、2回あったパンやめんもやめた。\n「子どもがご飯に飽きて食べ残しが増える」と心配する声もあった。だが食べ残しの量を調べると、今年度は03年度より小学校で8.8ポイント、中学校で9.2ポイント少なくなった。子どもたちも受け入れているのだろう。\n「身土不二」という言葉がある。人間の体と土とは一体だという意味だ。明治時代に軍医の石塚左玄らが起こした「食養運動」のスローガンに使われ、「自分の住む土地の四里（16キロ）四方以内でとれた旬のものを食べる」ことを理想とした。\n地元の魚や野菜を食べる「地産地消」に通じる考え方だ。給食でコメを【42-a】にすれば、おかずも【42-b】が増え、地元でとれる野菜や魚介類をより多く利用することにつながる。\n輸入食材ではなく身近なものを選べば、輸送時に排出される二酸化炭素の量を抑えようという「フードマイレージ」の考え方にもかなう。給食を地場農産物の利用などを学ぶ機会とするためにも、【43】以上に地場食材を使っていきたい。\n文科省は85年に米飯給食の実施の目標を「週3回程度」と決めた。それが達成されたことから、昨年からは「週3回以上」【44】。「週4回」とならなかったのは、「設備負担が増える」という自治体や「打撃を受ける」というパン業界からの反対が強かったためだ。\n地産地消を考えるなら、米粉を使ったパンを導入するなど、工夫の余地もまだあるだろう。\n1人当たりのコメ消費量は、昨年度59キロである。消費が最も多かった半世紀近く前の半分だ。食料自給率も65年度の73%から昨年度は41%になった。100%を超える米仏などとは対照的に、先進国の中では最低水準だ。\nコメ離れに苦しむ農家や食料自給率のことを【45】、食育である。\n（「朝日新聞」2010年2月15日付）",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【41】から【45】の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "【41】に入る最も適当なものはどれか。",
-      "options": ["ではどうか", "ではならない", "ではいられない", "ではないか"],
+      "options": [
+        "ではどうか",
+        "ではならない",
+        "ではいられない",
+        "ではないか"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (ではないか)\n\n• Ngữ pháp:「〜ではないか」: Chẳng phải là... hay sao (lối nói khẳng định quan điểm mạnh mẽ của tác giả trong văn nghị luận).\n• Dịch nghĩa: Giờ đây, chẳng phải bữa ăn cơm ở trường chính là một giáo trình tuyệt vời để các em học sinh tìm hiểu về văn hóa ẩm thực truyền thống và suy ngẫm về nguồn nguyên liệu hay sao."
     },
@@ -484,7 +634,8 @@
         "a 主食 ／ b 和食"
       ],
       "answer": 3,
-      "explanation": "【正解】4 (a 主食 ／ b 和食)\n\n• Ngữ cảnh bài đọc: Khi lấy cơm làm món chính (a: 主食 - しゅしょく), thì các món ăn phụ đi kèm cũng sẽ tăng các món thuần Nhật (b: 和食 - わしょく), từ đó thúc đẩy việc tiêu thụ rau củ và cá tươi tại chính địa phương.\n\n• Dịch nghĩa: Nếu đưa cơm thành món chính trong khẩu phần ăn, các món ăn kèm kiểu Nhật cũng sẽ tăng lên..."
+      "explanation": "【正解】4 (a 主食 ／ b 和食)\n\n• Ngữ cảnh bài đọc: Khi lấy cơm làm món chính (a: 主食 - しゅしょく), thì các món ăn phụ đi kèm cũng sẽ tăng các món thuần Nhật (b: 和食 - わしょく), từ đó thúc đẩy việc tiêu thụ rau củ và cá tươi tại chính địa phương.\n\n• Dịch nghĩa: Nếu đưa cơm thành món chính trong khẩu phần ăn, các món ăn kèm kiểu Nhật cũng sẽ tăng lên...",
+      "passage": "給食を実施している小中学校などで米飯給食が広がっている。国公立の99.9%が行い、回数も2007年度に全国平均で週3回となった。文部科学省の先月の発表では、08年度はさらに週3.1回に増えている。\n第2次大戦後、コッペパンと脱脂粉乳を中心に始まった学校給食は、すっかり様相を変えた。改正された学校給食法が昨春施行され、給食の目的自体も、「栄養改善」から「食育」へ、やっと転換した。\n米飯給食が正式に登場したのは1976年だ。余ったコメを食べてほしいという狙いがあった。いまや日本の伝統的な食生活を学び、食材について考える絶好の教材【41】。\n米飯給食の週5回完全実施をしている学校は全国でまだ5%だ。そのなかで新潟県三条市は03年、米飯を原則にすることとし、08年からは月に1、2回あったパンやめんもやめた。\n「子どもがご飯に飽きて食べ残しが増える」と心配する声もあった。だが食べ残しの量を調べると、今年度は03年度より小学校で8.8ポイント、中学校で9.2ポイント少なくなった。子どもたちも受け入れているのだろう。\n「身土不二」という言葉がある。人間の体と土とは一体だという意味だ。明治時代に軍医の石塚左玄らが起こした「食養運動」のスローガンに使われ、「自分の住む土地の四里（16キロ）四方以内でとれた旬のものを食べる」ことを理想とした。\n地元の魚や野菜を食べる「地産地消」に通じる考え方だ。給食でコメを【42-a】にすれば、おかずも【42-b】が増え、地元でとれる野菜や魚介類をより多く利用することにつながる。\n輸入食材ではなく身近なものを選べば、輸送時に排出される二酸化炭素の量を抑えようという「フードマイレージ」の考え方にもかなう。給食を地場農産物の利用などを学ぶ機会とするためにも、【43】以上に地場食材を使っていきたい。\n文科省は85年に米飯給食の実施の目標を「週3回程度」と決めた。それが達成されたことから、昨年からは「週3回以上」【44】。「週4回」とならなかったのは、「設備負担が増える」という自治体や「打撃を受ける」というパン業界からの反対が強かったためだ。\n地産地消を考えるなら、米粉を使ったパンを導入するなど、工夫の余地もまだあるだろう。\n1人当たりのコメ消費量は、昨年度59キロである。消費が最も多かった半世紀近く前の半分だ。食料自給率も65年度の73%から昨年度は41%になった。100%を超える米仏などとは対照的に、先進国の中では最低水準だ。\nコメ離れに苦しむ農家や食料自給率のことを【45】、食育である。\n（「朝日新聞」2010年2月15日付）"
     },
     {
       "id": "d01-q43",
@@ -492,9 +643,15 @@
       "section": "問題7: 文章の文法",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【43】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
       "question": "【43】に入る最も適当なものはどれか。",
-      "options": ["これまで", "ここまで", "それまで", "そこまで"],
+      "options": [
+        "これまで",
+        "ここまで",
+        "それまで",
+        "そこまで"
+      ],
       "answer": 0,
-      "explanation": "【正解】1 (これまで)\n\n• Cụm từ:「これまで以上に」: Hơn bao giờ hết / nhiều hơn so với trước đây.\n\n• Dịch nghĩa: Để biến bữa ăn học đường thành cơ hội học tập về nông sản quê hương, chúng ta càng mong muốn tăng cường sử dụng nguồn nguyên liệu địa phương nhiều hơn bao giờ hết."
+      "explanation": "【正解】1 (これまで)\n\n• Cụm từ:「これまで以上に」: Hơn bao giờ hết / nhiều hơn so với trước đây.\n\n• Dịch nghĩa: Để biến bữa ăn học đường thành cơ hội học tập về nông sản quê hương, chúng ta càng mong muốn tăng cường sử dụng nguồn nguyên liệu địa phương nhiều hơn bao giờ hết.",
+      "passage": "給食を実施している小中学校などで米飯給食が広がっている。国公立の99.9%が行い、回数も2007年度に全国平均で週3回となった。文部科学省の先月の発表では、08年度はさらに週3.1回に増えている。\n第2次大戦後、コッペパンと脱脂粉乳を中心に始まった学校給食は、すっかり様相を変えた。改正された学校給食法が昨春施行され、給食の目的自体も、「栄養改善」から「食育」へ、やっと転換した。\n米飯給食が正式に登場したのは1976年だ。余ったコメを食べてほしいという狙いがあった。いまや日本の伝統的な食生活を学び、食材について考える絶好の教材【41】。\n米飯給食の週5回完全実施をしている学校は全国でまだ5%だ。そのなかで新潟県三条市は03年、米飯を原則にすることとし、08年からは月に1、2回あったパンやめんもやめた。\n「子どもがご飯に飽きて食べ残しが増える」と心配する声もあった。だが食べ残しの量を調べると、今年度は03年度より小学校で8.8ポイント、中学校で9.2ポイント少なくなった。子どもたちも受け入れているのだろう。\n「身土不二」という言葉がある。人間の体と土とは一体だという意味だ。明治時代に軍医の石塚左玄らが起こした「食養運動」のスローガンに使われ、「自分の住む土地の四里（16キロ）四方以内でとれた旬のものを食べる」ことを理想とした。\n地元の魚や野菜を食べる「地産地消」に通じる考え方だ。給食でコメを【42-a】にすれば、おかずも【42-b】が増え、地元でとれる野菜や魚介類をより多く利用することにつながる。\n輸入食材ではなく身近なものを選べば、輸送時に排出される二酸化炭素の量を抑えようという「フードマイレージ」の考え方にもかなう。給食を地場農産物の利用などを学ぶ機会とするためにも、【43】以上に地場食材を使っていきたい。\n文科省は85年に米飯給食の実施の目標を「週3回程度」と決めた。それが達成されたことから、昨年からは「週3回以上」【44】。「週4回」とならなかったのは、「設備負担が増える」という自治体や「打撃を受ける」というパン業界からの反対が強かったためだ。\n地産地消を考えるなら、米粉を使ったパンを導入するなど、工夫の余地もまだあるだろう。\n1人当たりのコメ消費量は、昨年度59キロである。消費が最も多かった半世紀近く前の半分だ。食料自給率も65年度の73%から昨年度は41%になった。100%を超える米仏などとは対照的に、先進国の中では最低水準だ。\nコメ離れに苦しむ農家や食料自給率のことを【45】、食育である。\n（「朝日新聞」2010年2月15日付）"
     },
     {
       "id": "d01-q44",
@@ -502,9 +659,15 @@
       "section": "問題7: 文章の文法",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【44】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
       "question": "【44】に入る最も適当なものはどれか。",
-      "options": ["にきている", "にみている", "にしている", "にやっている"],
+      "options": [
+        "にきている",
+        "にみている",
+        "にしている",
+        "にやっている"
+      ],
       "answer": 2,
-      "explanation": "【正解】3 (にしている)\n\n• Cụm từ: Quy định thành một mức cố định: 「〜にしている」 (Bộ Giáo dục đã điều chỉnh và ấn định mục tiêu thành \"từ 3 lần một tuần trở lên\").\n\n• Dịch nghĩa: Do mục tiêu trước đó đã hoàn thành, kể từ năm ngoái Bộ Giáo dục đã quyết định đặt mục tiêu mới thành \"từ 3 lần/tuần trở lên\"."
+      "explanation": "【正解】3 (にしている)\n\n• Cụm từ: Quy định thành một mức cố định: 「〜にしている」 (Bộ Giáo dục đã điều chỉnh và ấn định mục tiêu thành \"từ 3 lần một tuần trở lên\").\n\n• Dịch nghĩa: Do mục tiêu trước đó đã hoàn thành, kể từ năm ngoái Bộ Giáo dục đã quyết định đặt mục tiêu mới thành \"từ 3 lần/tuần trở lên\".",
+      "passage": "給食を実施している小中学校などで米飯給食が広がっている。国公立の99.9%が行い、回数も2007年度に全国平均で週3回となった。文部科学省の先月の発表では、08年度はさらに週3.1回に増えている。\n第2次大戦後、コッペパンと脱脂粉乳を中心に始まった学校給食は、すっかり様相を変えた。改正された学校給食法が昨春施行され、給食の目的自体も、「栄養改善」から「食育」へ、やっと転換した。\n米飯給食が正式に登場したのは1976年だ。余ったコメを食べてほしいという狙いがあった。いまや日本の伝統的な食生活を学び、食材について考える絶好の教材【41】。\n米飯給食の週5回完全実施をしている学校は全国でまだ5%だ。そのなかで新潟県三条市は03年、米飯を原則にすることとし、08年からは月に1、2回あったパンやめんもやめた。\n「子どもがご飯に飽きて食べ残しが増える」と心配する声もあった。だが食べ残しの量を調べると、今年度は03年度より小学校で8.8ポイント、中学校で9.2ポイント少なくなった。子どもたちも受け入れているのだろう。\n「身土不二」という言葉がある。人間の体と土とは一体だという意味だ。明治時代に軍医の石塚左玄らが起こした「食養運動」のスローガンに使われ、「自分の住む土地の四里（16キロ）四方以内でとれた旬のものを食べる」ことを理想とした。\n地元の魚や野菜を食べる「地産地消」に通じる考え方だ。給食でコメを【42-a】にすれば、おかずも【42-b】が増え、地元でとれる野菜や魚介類をより多く利用することにつながる。\n輸入食材ではなく身近なものを選べば、輸送時に排出される二酸化炭素の量を抑えようという「フードマイレージ」の考え方にもかなう。給食を地場農産物の利用などを学ぶ機会とするためにも、【43】以上に地場食材を使っていきたい。\n文科省は85年に米飯給食の実施の目標を「週3回程度」と決めた。それが達成されたことから、昨年からは「週3回以上」【44】。「週4回」とならなかったのは、「設備負担が増える」という自治体や「打撃を受ける」というパン業界からの反対が強かったためだ。\n地産地消を考えるなら、米粉を使ったパンを導入するなど、工夫の余地もまだあるだろう。\n1人当たりのコメ消費量は、昨年度59キロである。消費が最も多かった半世紀近く前の半分だ。食料自給率も65年度の73%から昨年度は41%になった。100%を超える米仏などとは対照的に、先進国の中では最低水準だ。\nコメ離れに苦しむ農家や食料自給率のことを【45】、食育である。\n（「朝日新聞」2010年2月15日付）"
     },
     {
       "id": "d01-q45",
@@ -512,9 +675,15 @@
       "section": "問題7: 文章の文法",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【45】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
       "question": "【45】に入る最も適当なものはどれか。",
-      "options": ["考えるので", "考えるのも", "考えるのに", "考えるのを"],
+      "options": [
+        "考えるので",
+        "考えるのも",
+        "考えるのに",
+        "考えるのを"
+      ],
       "answer": 1,
-      "explanation": "【正解】2 (考えるのも)\n\n• Cấu trúc: 「〜のことを考えるのも、食育である。」: Trợ từ 「も」 mang nghĩa nhấn mạnh tính bao hàm: Việc cùng suy ngẫm cho nỗi khó khăn của người nông dân và bài toán tự cung tự cấp lương thực của quốc gia CŨNG CHÍNH LÀ một phần của việc giáo dục ăn uống (食育).\n\n• Dịch nghĩa: Cùng suy ngẫm thấu hiểu cho những người nông dân đang chật vật trước xu hướng giảm tiêu thụ gạo và bài toán an ninh lương thực quốc gia, đó cũng chính là ý nghĩa của giáo dục ăn uống."
+      "explanation": "【正解】2 (考えるのも)\n\n• Cấu trúc: 「〜のことを考えるのも、食育である。」: Trợ từ 「も」 mang nghĩa nhấn mạnh tính bao hàm: Việc cùng suy ngẫm cho nỗi khó khăn của người nông dân và bài toán tự cung tự cấp lương thực của quốc gia CŨNG CHÍNH LÀ một phần của việc giáo dục ăn uống (食育).\n\n• Dịch nghĩa: Cùng suy ngẫm thấu hiểu cho những người nông dân đang chật vật trước xu hướng giảm tiêu thụ gạo và bài toán an ninh lương thực quốc gia, đó cũng chính là ý nghĩa của giáo dục ăn uống.",
+      "passage": "給食を実施している小中学校などで米飯給食が広がっている。国公立の99.9%が行い、回数も2007年度に全国平均で週3回となった。文部科学省の先月の発表では、08年度はさらに週3.1回に増えている。\n第2次大戦後、コッペパンと脱脂粉乳を中心に始まった学校給食は、すっかり様相を変えた。改正された学校給食法が昨春施行され、給食の目的自体も、「栄養改善」から「食育」へ、やっと転換した。\n米飯給食が正式に登場したのは1976年だ。余ったコメを食べてほしいという狙いがあった。いまや日本の伝統的な食生活を学び、食材について考える絶好の教材【41】。\n米飯給食の週5回完全実施をしている学校は全国でまだ5%だ。そのなかで新潟県三条市は03年、米飯を原則にすることとし、08年からは月に1、2回あったパンやめんもやめた。\n「子どもがご飯に飽きて食べ残しが増える」と心配する声もあった。だが食べ残しの量を調べると、今年度は03年度より小学校で8.8ポイント、中学校で9.2ポイント少なくなった。子どもたちも受け入れているのだろう。\n「身土不二」という言葉がある。人間の体と土とは一体だという意味だ。明治時代に軍医の石塚左玄らが起こした「食養運動」のスローガンに使われ、「自分の住む土地の四里（16キロ）四方以内でとれた旬のものを食べる」ことを理想とした。\n地元の魚や野菜を食べる「地産地消」に通じる考え方だ。給食でコメを【42-a】にすれば、おかずも【42-b】が増え、地元でとれる野菜や魚介類をより多く利用することにつながる。\n輸入食材ではなく身近なものを選べば、輸送時に排出される二酸化炭素の量を抑えようという「フードマイレージ」の考え方にもかなう。給食を地場農産物の利用などを学ぶ機会とするためにも、【43】以上に地場食材を使っていきたい。\n文科省は85年に米飯給食の実施の目標を「週3回程度」と決めた。それが達成されたことから、昨年からは「週3回以上」【44】。「週4回」とならなかったのは、「設備負担が増える」という自治体や「打撃を受ける」というパン業界からの反対が強かったためだ。\n地産地消を考えるなら、米粉を使ったパンを導入するなど、工夫の余地もまだあるだろう。\n1人当たりのコメ消費量は、昨年度59キロである。消費が最も多かった半世紀近く前の半分だ。食料自給率も65年度の73%から昨年度は41%になった。100%を超える米仏などとは対照的に、先進国の中では最低水準だ。\nコメ離れに苦しむ農家や食料自給率のことを【45】、食育である。\n（「朝日新聞」2010年2月15日付）"
     }
   ]
 }

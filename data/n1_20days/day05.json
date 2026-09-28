@@ -11,7 +11,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "ゴミ焼却場建設問題の解決を<u>図る</u>ため、住民たちの話し合いが行われた。",
-      "options": ["とる", "もる", "かかる", "はかる"],
+      "options": [
+        "とる",
+        "もる",
+        "かかる",
+        "はかる"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (はかる)\n\n• 図る（はかる）：Mưu cầu, nhằm mục đích, nỗ lực đạt được giải pháp (解決を図る - nỗ lực tìm kiếm giải pháp giải quyết vấn đề).\n• 取る (とる), 盛る (もる), 掛かる (かかる).\n\n【Dịch nghĩa】\nNhằm nỗ lực tìm kiếm giải pháp cho bài toán xây dựng khu lò thiêu rác, một buổi đối thoại thảo luận giữa những người dân đã được tổ chức."
     },
@@ -21,7 +26,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "そんな小さいミスを気に<u>病む</u>ことはない。",
-      "options": ["しむ", "やむ", "たたむ", "びょうむ"],
+      "options": [
+        "しむ",
+        "やむ",
+        "たたむ",
+        "びょうむ"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (やむ)\n\n• 気に病む（きにやむ）：Bận tâm lao lực, phiền lòng trăn trở vì lo lắng (気に病むことはない: không việc gì phải quá bận lòng lo âu).\n• 畳む (たたむ), 病 âm On là 「びょう」 nhưng động từ đọc là 「やむ」.\n\n【Dịch nghĩa】\nMột sai sót nhỏ nhặt như vậy thì không việc gì phải bận lòng lo âu cả."
     },
@@ -31,7 +41,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "娘が髪をお下げに<u>垂らしている</u>姿は、昔の姉にそっくりだ。",
-      "options": ["さらして", "こらして", "たらして", "ちらして"],
+      "options": [
+        "さらして",
+        "こらして",
+        "たらして",
+        "ちらして"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (たらして)\n\n• 垂らす（たらす）：Buông thõng, để rủ xuống (髪をお下げに垂らす: buông thõng hai bím tóc tết rủ xuống bờ vai).\n• 晒す (さらす - phơi bày), 凝らす (こらす - tập trung cao độ), 散らす (ちらす - rải rác/phân tán).\n\n【Dịch nghĩa】\nHình ảnh con gái buông lọn tóc thắt bím rủ xuống trông giống hệt như người chị gái tôi ngày xưa."
     },
@@ -41,7 +56,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "人気アイドルグループに女の子が押し寄せて、<u>窒息する</u>ほどだったらしい。",
-      "options": ["ちそく", "しそく", "ちっそく", "しっそく"],
+      "options": [
+        "ちそく",
+        "しそく",
+        "ちっそく",
+        "しっそく"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (ちっそく)\n\n• 窒息（ちっそく）：Ngạt thở, nghẹt thở vì chen chúc đông nghẹt (窒息する).\n• Chú ý biến âm xúc âm: 窒 đọc là 「ちつ」 ghép với 息 「そく」 tạo thành âm ngắt 「ちっそく」.\n\n【Dịch nghĩa】\nCác bạn nữ ùa tới vây quanh nhóm thần tượng đông đến mức nghe nói suýt ngạt thở."
     },
@@ -51,7 +71,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "彼女は恋人からプレゼントをもらって、思わず<u>微笑</u>を浮かべた。",
-      "options": ["びしょう", "びしょ", "みしょう", "みしょ"],
+      "options": [
+        "びしょう",
+        "びしょ",
+        "みしょう",
+        "みしょ"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (びしょう)\n\n• 微笑（びしょう）：Nụ cười mỉm, nụ cười hé nở trên môi (微笑を浮かべる).\n• Âm On: 微 đọc là 「び」 (như 微妙: びみょう, 微生物: びせいぶつ), 笑 đọc là 「しょう」.\n\n【Dịch nghĩa】\nĐược người yêu tặng quà, cô ấy bất giác nở một nụ cười mỉm hạnh phúc."
     },
@@ -61,7 +86,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "課長は頭がかたくて<u>融通</u>のきかない人だ。",
-      "options": ["ゆうずう", "ゆうつう", "ようずう", "ようつう"],
+      "options": [
+        "ゆうずう",
+        "ゆうつう",
+        "ようずう",
+        "ようつう"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (ゆうずう)\n\n• 融通（ゆうずう）：Khả năng tùy cơ ứng biến, tính linh hoạt uyển chuyển (quán dụng:「融通がきかない」: cứng nhắc, cổ hủ không biết biến báo).\n• Chú ý âm đọc: 融 đọc là 「ゆう」, 通 đọc biến âm đục là 「ずう」.\n\n【Dịch nghĩa】\nTrưởng phòng là người có đầu óc cứng nhắc và chẳng biết linh hoạt xoay xở gì cả."
     },
@@ -71,7 +101,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "彼は離婚したが、子どもの（ ）費は送り続けた。",
-      "options": ["養育", "育児", "子育て", "飼育"],
+      "options": [
+        "養育",
+        "育児",
+        "子育て",
+        "飼育"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (養育 - 養育費: よういくひ)\n\n• 養育費（よういくひ）：Tiền cấp dưỡng nuôi con (thuật ngữ pháp lý dùng khi ly hôn).\n• 育児 (chăm sóc nuôi nấng con mọn), 飼育 (chăn nuôi gia súc động vật).\n\n【Dịch nghĩa】\nTuy đã ly hôn nhưng anh ấy vẫn đều đặn gửi tiền cấp dưỡng nuôi con."
     },
@@ -81,7 +116,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "入学試験の出題に（ ）があり、採点の対象外になった。",
-      "options": ["誤り", "失態", "事故", "被害"],
+      "options": [
+        "誤り",
+        "失態",
+        "事故",
+        "被害"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (誤り - あやまり)\n\n• 出題の誤り（しゅつだいのあやまり）：Lỗi sai trong đề thi, sai sót ở khâu ra đề.\n• 失態 (thất thố, hành vi vụng về bẽ bàng), 事故 (sự cố/tai nạn), 被害 (thiệt hại).\n\n【Dịch nghĩa】\nDo có sai sót trong khâu ra đề thi đầu vào nên câu hỏi đó đã được đưa ra ngoài phạm vi tính điểm."
     },
@@ -91,7 +131,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "時計修理の（ ）を磨いた彼は、独立して店を構えた。",
-      "options": ["技師", "技官", "技能", "技芸"],
+      "options": [
+        "技師",
+        "技官",
+        "技能",
+        "技芸"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (技能 - ぎのう)\n\n• 技能を磨く（ぎのうをみがく）：Rèn giũa kỹ năng, trau dồi tay nghề chuyên môn.\n• 技師 (kỹ sư), 技官 (công chức phụ trách kỹ thuật), 技芸 (nghệ thuật biểu diễn).\n\n【Dịch nghĩa】\nSau khi rèn giũa tay nghề sửa chữa đồng hồ điêu luyện, anh ấy đã tách ra tự lập và mở cửa tiệm riêng."
     },
@@ -101,7 +146,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "日本人の寿命が延びて、（ ）教育が盛んになっている。",
-      "options": ["一生", "生涯", "人生", "一生徒"],
+      "options": [
+        "一生",
+        "生涯",
+        "人生",
+        "一生徒"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (生涯 - 生涯教育: しょうがいきょういく)\n\n• 生涯教育（しょうがいきょういく）：Giáo dục trọn đời, học tập suốt đời (thuật ngữ chính sách xã hội).\n• 一生 (cả một đời người: 一生のお願い), 人生 (đời người, nhân sinh).\n\n【Dịch nghĩa】\nKhi tuổi thọ trung bình của người Nhật tăng lên, mô hình giáo dục trọn đời ngày càng trở nên thịnh hành."
     },
@@ -111,7 +161,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "今月は友だちと会う機会が多く、（ ）代がかさんだ。",
-      "options": ["食通", "飲用", "食卓", "飲食"],
+      "options": [
+        "食通",
+        "飲用",
+        "食卓",
+        "飲食"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (飲食 - 飲食代: いんしょくだい)\n\n• 飲食代（いんしょくだい）：Tiền ăn uống, chi phí ăn uống tụ tập bạn bè (cụm:「費用がかさむ」: chi phí đội lên nhiều).\n• 食通 (người sành ăn), 飲用 (nước dùng để uống), 食卓 (bàn ăn).\n\n【Dịch nghĩa】\nTháng này có nhiều dịp gặp gỡ tụ tập bạn bè nên chi phí ăn uống đã bị đội lên rất nhiều."
     },
@@ -121,7 +176,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "出世願望は少しはあったが、（ ）社員のまま定年を迎えた。",
-      "options": ["単", "低", "弱", "平"],
+      "options": [
+        "単",
+        "低",
+        "弱",
+        "平"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (平 - 平社員: ひらしゃいん)\n\n• 平社員（ひらしゃいん）：Nhân viên bình thường, nhân viên quèn không nắm giữ chức vụ quản lý nào.\n• Tiền tố 平: 平社員, 平日, 平服.\n\n【Dịch nghĩa】\nTuy cũng có đôi chút khát vọng thăng tiến, nhưng rốt cuộc ông ấy vẫn đón tuổi nghỉ hưu với tư cách là một nhân viên bình thường."
     },
@@ -131,7 +191,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "政治家の橘川氏は穏健（ ）として有名だった。",
-      "options": ["族", "家", "派", "流"],
+      "options": [
+        "族",
+        "家",
+        "派",
+        "流"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (派 - 穏健派: おんけんは)\n\n• 穏健派（おんけんは）：Phái ôn hòa (trái ngược với 強硬派 - phái cứng rắn cứng đầu).\n• Hậu tố 派: 穏健派, 保守派, 革新派.\n\n【Dịch nghĩa】\nChính trị gia Kitsukawa rất nổi tiếng với tư cách là một người thuộc phái ôn hòa."
     },
@@ -141,7 +206,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "母が故郷の食べ物を送ってくれ、親のありがたさを<u>しみじみ</u>思う。",
-      "options": ["つくづく", "しきりに", "ほとほと", "たっぷり"],
+      "options": [
+        "つくづく",
+        "しきりに",
+        "ほとほと",
+        "たっぷり"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (つくづく)\n\n• しみじみ：Sâu sắc, thấm thía tận đáy lòng (= つくづく: つくづく思う/感じる).\n• しきりに (liên tục/dồn dập), ほとほと (thực sự ngán ngẩm), たっぷり (đầy ắp/dồi dào).\n\n【Dịch nghĩa】\nMẹ gửi đồ ăn ở quê lên cho khiến tôi thấm thía tận đáy lòng sự bao la ấm áp của tình thương cha mẹ."
     },
@@ -151,7 +221,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "<u>着々と</u>進められていた高速道路建設が、予算削減でストップすることになった。",
-      "options": ["日進月歩", "一日千秋", "一歩一歩", "十中八九"],
+      "options": [
+        "日進月歩",
+        "一日千秋",
+        "一歩一歩",
+        "十中八九"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (一歩一歩)\n\n• 着々と（ちゃくちゃくと）：Vững chắc từng bước một, tiến triển đều đặn theo đúng kế hoạch (= 一歩一歩: いっぽいっぽ).\n• 日進月歩 (tiến bộ vượt bậc), 一日千秋 (dài như một ngày bằng ngàn năm trông đợi), 十中八九 (mười phần chắc tám chín).\n\n【Dịch nghĩa】\nDự án xây dựng đường cao tốc vốn đang được xúc tiến vững chắc từng bước thì nay phải dừng lại do bị cắt giảm ngân sách."
     },
@@ -161,7 +236,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "この絵から漁民たちの<u>たくましい</u>生活力が感じられる。",
-      "options": ["苦しい", "力強い", "激しい", "厳しい"],
+      "options": [
+        "苦しい",
+        "力強い",
+        "激しい",
+        "厳しい"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (力強い)\n\n• たくましい（逞しい）：Kiên cường dẻo dai, mạnh mẽ tràn trề sức sống (= 力強い: ちからづよい).\n• 苦しい (khổ sở), 激しい (mãnh liệt), 厳しい (khắt khe).\n\n【Dịch nghĩa】\nTừ bức họa này có thể cảm nhận được sức sống kiên cường và đầy mạnh mẽ của những người dân chài."
     },
@@ -171,7 +251,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "ことばの勉強は<u>たやすい</u>と思ったほうが実力は伸びる。",
-      "options": ["従順", "平坦", "単調", "容易"],
+      "options": [
+        "従順",
+        "平坦",
+        "単調",
+        "容易"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (容易)\n\n• たやすい（容易い）：Dễ dàng, không có gì là khó khăn phức tạp (= 容易: ようい).\n• 従順 (ngoan ngoãn phục tùng), 平坦 (bằng phẳng), 単調 (đơn điệu).\n\n【Dịch nghĩa】\nHọc ngôn ngữ nếu cứ nghĩ nó đơn giản dễ dàng thì năng lực thực tế sẽ càng tiến bộ nhanh hơn."
     },
@@ -181,7 +266,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "動物学者がニホンザルの<u>行動様式</u>を調べていた。",
-      "options": ["テンション", "タッチ", "パターン", "プレイ"],
+      "options": [
+        "テンション",
+        "タッチ",
+        "パターン",
+        "プレイ"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (パターン)\n\n• 行動様式（こうどうようしき）：Mô thức hành vi, khuôn mẫu hoạt động lặp đi lặp lại (= パターン / pattern).\n• テンション (tinh thần/cảm xúc hưng phấn), タッチ (chạm/phong cách nét vẽ), プレイ (trò chơi/lối chơi).\n\n【Dịch nghĩa】\nNhà động vật học đang nghiên cứu khuôn mẫu hành vi của loài khỉ tuyết Nhật Bản."
     },
@@ -296,7 +386,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "政権交代で官僚政治が終わった（ ）、大きな変化は見られなかった。",
-      "options": ["としたら", "というと", "と思いきや", "とばかりに"],
+      "options": [
+        "としたら",
+        "というと",
+        "と思いきや",
+        "とばかりに"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (と思いきや)\n\n• Ngữ pháp:「〜と思いきや」: Cứ ngỡ là... thế nhưng ai dè đâu / hóa ra không phải vậy (cứ ngỡ việc thay đổi chính quyền sẽ chấm dứt được chế độ quan liêu, ai dè thực tế chẳng có chuyển biến lớn nào).\n\n【Dịch nghĩa】\nCứ ngỡ rằng sự chuyển giao chính quyền sẽ chấm dứt nền chính trị quan liêu, ai dè đâu chẳng thấy có bất kỳ sự thay đổi lớn nào."
     },
@@ -306,7 +401,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "日本の超高齢社会と少子化は、経済活動の低下を招く（ ）。",
-      "options": ["に相違ない", "に先立つ", "にとどまる", "に応じない"],
+      "options": [
+        "に相違ない",
+        "に先立つ",
+        "にとどまる",
+        "に応じない"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (に相違ない)\n\n• Ngữ pháp:「〜に相違ない（にそういない）」: Chắc chắn là... / Không còn nghi ngờ gì nữa (xã hội siêu già hóa và mức sinh thấp chắc chắn sẽ kéo theo sự sụt giảm của hoạt động kinh tế).\n\n【Dịch nghĩa】\nTình trạng già hóa dân số trầm trọng và tỷ lệ sinh sụt giảm của Nhật Bản chắc chắn sẽ dẫn tới sự suy thoái trong các hoạt động kinh tế."
     },
@@ -316,7 +416,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "昔の学者は正確な日本地図を作ら（ ）ため、全国を歩いた。",
-      "options": ["んばかりの", "んじゃない", "んだった", "んとする"],
+      "options": [
+        "んばかりの",
+        "んじゃない",
+        "んだった",
+        "んとする"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (んとする)\n\n• Ngữ pháp: V-nai (bỏ ない) + 「んとする」: Toan làm / Có ý chí quyết tâm làm điều gì đó (dạng văn viết cổ:「作らんとするため」 = 作ろうとするため: vì muốn vẽ nên tấm bản đồ chính xác).\n\n【Dịch nghĩa】\nCác học giả ngày xưa vì mang ý chí muốn vẽ nên tấm bản đồ Nhật Bản chính xác tuyệt đối mà đã đi bộ khắp cả nước."
     },
@@ -326,7 +431,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "幕府の政策（ ）、日本は開国しなければならなかっただろう。",
-      "options": ["について", "そばから", "からには", "いかんによらず"],
+      "options": [
+        "について",
+        "そばから",
+        "からには",
+        "いかんによらず"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (いかんによらず)\n\n• Ngữ pháp:「N + （の）いかんによらず / いかんにかかわらず」: Bất kể N có thế nào đi chăng nữa (bất kể chính sách bế quan của Mạc phủ ra sao, Nhật Bản thời đó tất yếu cũng buộc lòng phải mở cửa).\n\n【Dịch nghĩa】\nBất kể chính sách của Mạc phủ thời đó có ra sao đi chăng nữa, thì Nhật Bản lúc bấy giờ cũng tất yếu phải mở cửa giao thương."
     },
@@ -336,7 +446,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "綿密な取材と創作意欲（ ）、井上靖の『敦煌』は書かれた。",
-      "options": ["のみならず", "とが相まって", "はもとより", "をめぐって"],
+      "options": [
+        "のみならず",
+        "とが相まって",
+        "はもとより",
+        "をめぐって"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (とが相まって)\n\n• Ngữ pháp:「AとBとが相まって（あいまって）」: Sự kết hợp, cộng hưởng hòa quyện giữa A và B (công tác lấy tư liệu tỉ mỉ kết hợp hài hòa cùng bầu nhiệt huyết sáng tác cháy bỏng đã tạo nên kiệt tác Đôn Hoàng).\n\n【Dịch nghĩa】\nNhờ sự kết hợp nhuần nhuyễn giữa công tác đi thực tế lấy tư liệu tỉ mỉ cùng niềm đam mê sáng tác cháy bỏng mà tác phẩm 'Đôn Hoàng' của Inoue Yasushi đã ra đời."
     },
@@ -346,7 +461,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "何回もリハーサルし（ ）ことが、舞台俳優たちを落ち着かせる。",
-      "options": ["ておる", "てならない", "てもみない", "ておく"],
+      "options": [
+        "ておる",
+        "てならない",
+        "てもみない",
+        "ておく"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (ておく)\n\n• Ngữ pháp:「V-ておく」: Làm sẵn, chuẩn bị trước một hành động nhằm phục vụ mục đích sau này (việc đã diễn tập chuẩn bị trước nhiều lần giúp các diễn viên trên sân khấu giữ được sự bình tĩnh).\n\n【Dịch nghĩa】\nViệc đã chăm chỉ diễn tập trước thật nhiều lần chính là điều giúp cho các diễn viên kịch giữ được sự bình tĩnh trên sân khấu."
     },
@@ -356,7 +476,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "イタリアの美術館展（ ）、東京都美術館は改築工事に入った。",
-      "options": ["をもって", "を皮切りに", "からして", "に基づき"],
+      "options": [
+        "をもって",
+        "を皮切りに",
+        "からして",
+        "に基づき"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (をもって)\n\n• Ngữ pháp:「〜をもって」: Lấy thời điểm / sự kiện nào đó làm cột mốc kết thúc, khép lại (lấy buổi triển lãm mỹ thuật Ý làm sự kiện cuối cùng rồi bảo tàng chính thức đóng cửa để đại trùng tu).\n\n【Dịch nghĩa】\nLấy buổi triển lãm bảo tàng mỹ thuật Ý làm sự kiện cuối cùng khép lại, Bảo tàng Mỹ thuật Tokyo đã chính thức bước vào giai đoạn thi công cải tạo."
     },
@@ -381,7 +506,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "戦争が悲惨であれ（ ）、反戦映画が多く生まれたのだ。",
-      "options": ["ばほど", "ばさえ", "ばこそ", "ばのみ"],
+      "options": [
+        "ばほど",
+        "ばさえ",
+        "ばこそ",
+        "ばのみ"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (ばこそ)\n\n• Ngữ pháp:「〜ばこそ」: Chính vì... nên mới... (nhấn mạnh nguyên nhân lý do cốt lõi: Chính vì chiến tranh khốc liệt bi thảm đến nhường ấy nên mới có rất nhiều bộ phim phản chiến ra đời).\n\n【Dịch nghĩa】\nChính vì chiến tranh mang tính chất quá đỗi bi thảm và khốc liệt, nên mới có biết bao bộ phim điện ảnh phản chiến được sinh ra."
     },
@@ -421,7 +551,12 @@
       "section": "問題6: 文の組み立て",
       "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
       "question": "中国はロシア、アメリカ＿＿ ＿＿ ＿★＿ ＿＿ 驚かせた。",
-      "options": ["達成し", "世界を", "についで", "有人宇宙飛行を"],
+      "options": [
+        "達成し",
+        "世界を",
+        "についで",
+        "有人宇宙飛行を"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (達成し)\n\n• Trật tự ghép câu:\n  中国はロシア、アメリカ (3 についで) → (4 有人宇宙飛行を) → (1 達成し ★) → (2 世界を) 驚かせた。\n\n• Câu hoàn chỉnh:\n  「中国はロシア、アメリカについで有人宇宙飛行を達成し、世界を驚かせた。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [1].\n\n【Dịch nghĩa】\nTrung Quốc đã trở thành quốc gia tiếp theo sau Nga và Mỹ hoàn thành chuyến bay có người lái vào không gian, khiến cả thế giới phải ngỡ ngàng."
     },
@@ -446,7 +581,12 @@
       "section": "問題6: 文の組み立て",
       "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
       "question": "無理な＿＿ ＿＿ ＿★＿ ＿＿ につながる。",
-      "options": ["CO2削減", "追い越しを", "運転が", "しないような"],
+      "options": [
+        "CO2削減",
+        "追い越しを",
+        "運転が",
+        "しないような"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (運転が)\n\n• Trật tự ghép câu:\n  無理な (2 追い越しを) → (4 しないような) → (3 運転が ★) → (1 CO2削減) につながる。\n\n• Câu hoàn chỉnh:\n  「無理な追い越しをしないような運転が、CO2削減につながる。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [3].\n\n【Dịch nghĩa】\nPhong cách lái xe điềm đạm không cố vượt ẩu sẽ góp phần giảm thiểu lượng khí thải CO2 ra môi trường."
     },
@@ -494,7 +634,8 @@
         "送られていくなら"
       ],
       "answer": 0,
-      "explanation": "【正解】1 (出てしまえば)\n\n• Ngữ pháp:「V-てしまえば」: Một khi đã... (nếu những người có thu nhập cao một khi đã bỏ ra nước ngoài thì năng lực cạnh tranh của quốc gia sẽ sụt giảm).\n\n【Dịch nghĩa】\n'Nếu những người có thu nhập cao một khi đã chuyển ra nước ngoài sinh sống thì sức cạnh tranh của đất nước sẽ bị giảm sút. Cần phải cắt giảm lãng phí và hạ thấp thuế hơn nữa.'"
+      "explanation": "【正解】1 (出てしまえば)\n\n• Ngữ pháp:「V-てしまえば」: Một khi đã... (nếu những người có thu nhập cao một khi đã bỏ ra nước ngoài thì năng lực cạnh tranh của quốc gia sẽ sụt giảm).\n\n【Dịch nghĩa】\n'Nếu những người có thu nhập cao một khi đã chuyển ra nước ngoài sinh sống thì sức cạnh tranh của đất nước sẽ bị giảm sút. Cần phải cắt giảm lãng phí và hạ thấp thuế hơn nữa.'",
+      "passage": "お金持ちを悩ませる相続税や贈与税、資産にかかる富裕税をそっくり【41】国がある。「福祉国家」で知られるスウェーデンだ。\n首都ストックホルムに近いダンデリード市の高級住宅街に住むペーテル・ファッレニウスさん（61）は、世界的な産業機械メーカー、ABB（本社・スイス）の副社長を務めた。当時は月収約25万クローナ（約275万円）。富裕税を払った。だが、2007年に富裕税は廃止。「当然だ」とファッレニウスさんはいう。「高額所得者が国外に【42】、国の競争力が落ちる。無駄を省いて、もっと税金を下げるべきだ」\n子どもは7人。04年に実現した相続税と贈与税廃止も歓迎だ。「ずっと高い税金を払ってきた。【43-a】徴収されるのはたまらない。【43-b】サービスは受けられない」\n相続税と贈与税はなぜ廃止されたのか。当時の社会民主労働党政権の財務相だったペール・ヌーデルさん（49）は「中小企業では負担が重く、事業を引き継げない場合が多かった」と振り返る。相続税と贈与税が国の税収に占める割合も計約0.2%で、歳入に大穴があくほどではなかった。\n産業界も廃止を働きかけた。経緯を聞くため経済団体のスウェーデン企業連盟を訪ねると、エコノミストのヨーハン・ファルさん（45）は、スウェーデン生まれの二つの国際企業を例に挙げて、税金が企業を国外に追いやる可能性を強調した。\nおしゃれなデザインの家具で知られるイケア。現在、グループ持ち株会社はオランダにある。三角パックの紙容器を広めたテトラパックも本社はスイスだ。両社とも、創業家はスウェーデンを離れたとされる。ファルさんはいう。「税金が理由で移転したのだろう。相続税は経済活動にブレーキをかける」\n資本も資産も自由に世界を駆け回る。一方で税金は国ごとにかかる。ストックホルム大のペーテル・メルツ教授は「経済のグローバル化で資産を国外に移すのが簡単になり、金持ちから税金を取るのが難しくなっている」と話す。どうせ取れないなら、せめて【44】。スウェーデンはそう割り切った。\n実は相続税がない国は多い。カナダ、オーストラリア、ニュージーランド、イタリア、スイスが廃止。英国も生前贈与を利用すれば実質的に相続税を払わなくて済む制度がある。米国は息子のブッシュ政権が税率を【45-a】が、現政権は従来より低い税率で【45-b】。中国やインド、タイなどにはそもそもない。\n元国税庁長官の渡辺裕泰・早稲田大教授は「海外では、相続税は不公平な税と考えられている」と断言する。大金持ちは専門家に頼んで、把握が難しい金融資産に変えたり、国外に逃げ出したりする。払うのは大都市に土地を持つような中産階級や小金持ちだけ。「米国では、払いたい人が払う『ボランタリータックス（自発的な税金）』と揶揄される」\n（「朝日新聞」2012年7月2日付）"
     },
     {
       "id": "d05-q43",
@@ -509,7 +650,8 @@
         "a 死ななくても ／ b 死ねば"
       ],
       "answer": 2,
-      "explanation": "【正解】3 (a 死んでも ／ b 死ねば)\n\n• Ý nghĩa câu nói của nhân vật: Dù có chết đi chăng nữa mà vẫn bị thu thuế (a: 死んでも) thì không thể chịu nổi, trong khi nếu chết đi (b: 死ねば) thì bản thân người đó đâu còn được hưởng dịch vụ phúc lợi công cộng nào nữa đâu.\n\n【Dịch nghĩa】\n'Cả đời tôi đã phải nộp mức thuế rất cao rồi. Dù đến lúc chết đi mà vẫn còn bị thu thuế thừa kế thì không thể nào chịu nổi. Mà một khi đã chết thì đâu còn được hưởng thụ dịch vụ công cộng nào nữa.'"
+      "explanation": "【正解】3 (a 死んでも ／ b 死ねば)\n\n• Ý nghĩa câu nói của nhân vật: Dù có chết đi chăng nữa mà vẫn bị thu thuế (a: 死んでも) thì không thể chịu nổi, trong khi nếu chết đi (b: 死ねば) thì bản thân người đó đâu còn được hưởng dịch vụ phúc lợi công cộng nào nữa đâu.\n\n【Dịch nghĩa】\n'Cả đời tôi đã phải nộp mức thuế rất cao rồi. Dù đến lúc chết đi mà vẫn còn bị thu thuế thừa kế thì không thể nào chịu nổi. Mà một khi đã chết thì đâu còn được hưởng thụ dịch vụ công cộng nào nữa.'",
+      "passage": "お金持ちを悩ませる相続税や贈与税、資産にかかる富裕税をそっくり【41】国がある。「福祉国家」で知られるスウェーデンだ。\n首都ストックホルムに近いダンデリード市の高級住宅街に住むペーテル・ファッレニウスさん（61）は、世界的な産業機械メーカー、ABB（本社・スイス）の副社長を務めた。当時は月収約25万クローナ（約275万円）。富裕税を払った。だが、2007年に富裕税は廃止。「当然だ」とファッレニウスさんはいう。「高額所得者が国外に【42】、国の競争力が落ちる。無駄を省いて、もっと税金を下げるべきだ」\n子どもは7人。04年に実現した相続税と贈与税廃止も歓迎だ。「ずっと高い税金を払ってきた。【43-a】徴収されるのはたまらない。【43-b】サービスは受けられない」\n相続税と贈与税はなぜ廃止されたのか。当時の社会民主労働党政権の財務相だったペール・ヌーデルさん（49）は「中小企業では負担が重く、事業を引き継げない場合が多かった」と振り返る。相続税と贈与税が国の税収に占める割合も計約0.2%で、歳入に大穴があくほどではなかった。\n産業界も廃止を働きかけた。経緯を聞くため経済団体のスウェーデン企業連盟を訪ねると、エコノミストのヨーハン・ファルさん（45）は、スウェーデン生まれの二つの国際企業を例に挙げて、税金が企業を国外に追いやる可能性を強調した。\nおしゃれなデザインの家具で知られるイケア。現在、グループ持ち株会社はオランダにある。三角パックの紙容器を広めたテトラパックも本社はスイスだ。両社とも、創業家はスウェーデンを離れたとされる。ファルさんはいう。「税金が理由で移転したのだろう。相続税は経済活動にブレーキをかける」\n資本も資産も自由に世界を駆け回る。一方で税金は国ごとにかかる。ストックホルム大のペーテル・メルツ教授は「経済のグローバル化で資産を国外に移すのが簡単になり、金持ちから税金を取るのが難しくなっている」と話す。どうせ取れないなら、せめて【44】。スウェーデンはそう割り切った。\n実は相続税がない国は多い。カナダ、オーストラリア、ニュージーランド、イタリア、スイスが廃止。英国も生前贈与を利用すれば実質的に相続税を払わなくて済む制度がある。米国は息子のブッシュ政権が税率を【45-a】が、現政権は従来より低い税率で【45-b】。中国やインド、タイなどにはそもそもない。\n元国税庁長官の渡辺裕泰・早稲田大教授は「海外では、相続税は不公平な税と考えられている」と断言する。大金持ちは専門家に頼んで、把握が難しい金融資産に変えたり、国外に逃げ出したりする。払うのは大都市に土地を持つような中産階級や小金持ちだけ。「米国では、払いたい人が払う『ボランタリータックス（自発的な税金）』と揶揄される」\n（「朝日新聞」2012年7月2日付）"
     },
     {
       "id": "d05-q44",
@@ -524,7 +666,8 @@
         "逃げ出すようにしない"
       ],
       "answer": 2,
-      "explanation": "【正解】3 (逃げ出されないようにしよう)\n\n• Thể bị động gián tiếp (被害受身) + thể ý chí:「逃げ出されないようにしよう」: Quyết tâm hành động để tránh không bị các nhà tư bản tẩu tán tài sản tháo chạy ra nước ngoài.\n\n【Dịch nghĩa】\nNếu đằng nào cũng không thể thu được thuế từ giới siêu giàu, thì chí ít hãy làm sao để không bị các doanh nghiệp và dòng vốn tháo chạy ra khỏi đất nước."
+      "explanation": "【正解】3 (逃げ出されないようにしよう)\n\n• Thể bị động gián tiếp (被害受身) + thể ý chí:「逃げ出されないようにしよう」: Quyết tâm hành động để tránh không bị các nhà tư bản tẩu tán tài sản tháo chạy ra nước ngoài.\n\n【Dịch nghĩa】\nNếu đằng nào cũng không thể thu được thuế từ giới siêu giàu, thì chí ít hãy làm sao để không bị các doanh nghiệp và dòng vốn tháo chạy ra khỏi đất nước.",
+      "passage": "お金持ちを悩ませる相続税や贈与税、資産にかかる富裕税をそっくり【41】国がある。「福祉国家」で知られるスウェーデンだ。\n首都ストックホルムに近いダンデリード市の高級住宅街に住むペーテル・ファッレニウスさん（61）は、世界的な産業機械メーカー、ABB（本社・スイス）の副社長を務めた。当時は月収約25万クローナ（約275万円）。富裕税を払った。だが、2007年に富裕税は廃止。「当然だ」とファッレニウスさんはいう。「高額所得者が国外に【42】、国の競争力が落ちる。無駄を省いて、もっと税金を下げるべきだ」\n子どもは7人。04年に実現した相続税と贈与税廃止も歓迎だ。「ずっと高い税金を払ってきた。【43-a】徴収されるのはたまらない。【43-b】サービスは受けられない」\n相続税と贈与税はなぜ廃止されたのか。当時の社会民主労働党政権の財務相だったペール・ヌーデルさん（49）は「中小企業では負担が重く、事業を引き継げない場合が多かった」と振り返る。相続税と贈与税が国の税収に占める割合も計約0.2%で、歳入に大穴があくほどではなかった。\n産業界も廃止を働きかけた。経緯を聞くため経済団体のスウェーデン企業連盟を訪ねると、エコノミストのヨーハン・ファルさん（45）は、スウェーデン生まれの二つの国際企業を例に挙げて、税金が企業を国外に追いやる可能性を強調した。\nおしゃれなデザインの家具で知られるイケア。現在、グループ持ち株会社はオランダにある。三角パックの紙容器を広めたテトラパックも本社はスイスだ。両社とも、創業家はスウェーデンを離れたとされる。ファルさんはいう。「税金が理由で移転したのだろう。相続税は経済活動にブレーキをかける」\n資本も資産も自由に世界を駆け回る。一方で税金は国ごとにかかる。ストックホルム大のペーテル・メルツ教授は「経済のグローバル化で資産を国外に移すのが簡単になり、金持ちから税金を取るのが難しくなっている」と話す。どうせ取れないなら、せめて【44】。スウェーデンはそう割り切った。\n実は相続税がない国は多い。カナダ、オーストラリア、ニュージーランド、イタリア、スイスが廃止。英国も生前贈与を利用すれば実質的に相続税を払わなくて済む制度がある。米国は息子のブッシュ政権が税率を【45-a】が、現政権は従来より低い税率で【45-b】。中国やインド、タイなどにはそもそもない。\n元国税庁長官の渡辺裕泰・早稲田大教授は「海外では、相続税は不公平な税と考えられている」と断言する。大金持ちは専門家に頼んで、把握が難しい金融資産に変えたり、国外に逃げ出したりする。払うのは大都市に土地を持つような中産階級や小金持ちだけ。「米国では、払いたい人が払う『ボランタリータックス（自発的な税金）』と揶揄される」\n（「朝日新聞」2012年7月2日付）"
     },
     {
       "id": "d05-q45",
@@ -539,7 +682,8 @@
         "a ゼロにした ／ b 復活させた"
       ],
       "answer": 3,
-      "explanation": "【正解】4 (a ゼロにした ／ b 復活させた)\n\n• Ngữ cảnh bài đọc: Nước Mỹ dưới thời chính quyền Tổng thống Bush (con) đã đưa mức thuế này về mức 0 (a: ゼロにした), nhưng chính quyền hiện tại lại khôi phục lại sắc thuế này (b: 復活させた) với mức thuế suất thấp hơn trước.\n\n【Dịch nghĩa】\nNước Mỹ dưới thời chính quyền Bush (con) từng đưa mức thuế suất về bằng 0, nhưng chính quyền đương nhiệm đã khôi phục lại loại thuế này với mức thuế suất thấp hơn trước đây."
+      "explanation": "【正解】4 (a ゼロにした ／ b 復活させた)\n\n• Ngữ cảnh bài đọc: Nước Mỹ dưới thời chính quyền Tổng thống Bush (con) đã đưa mức thuế này về mức 0 (a: ゼロにした), nhưng chính quyền hiện tại lại khôi phục lại sắc thuế này (b: 復活させた) với mức thuế suất thấp hơn trước.\n\n【Dịch nghĩa】\nNước Mỹ dưới thời chính quyền Bush (con) từng đưa mức thuế suất về bằng 0, nhưng chính quyền đương nhiệm đã khôi phục lại loại thuế này với mức thuế suất thấp hơn trước đây.",
+      "passage": "お金持ちを悩ませる相続税や贈与税、資産にかかる富裕税をそっくり【41】国がある。「福祉国家」で知られるスウェーデンだ。\n首都ストックホルムに近いダンデリード市の高級住宅街に住むペーテル・ファッレニウスさん（61）は、世界的な産業機械メーカー、ABB（本社・スイス）の副社長を務めた。当時は月収約25万クローナ（約275万円）。富裕税を払った。だが、2007年に富裕税は廃止。「当然だ」とファッレニウスさんはいう。「高額所得者が国外に【42】、国の競争力が落ちる。無駄を省いて、もっと税金を下げるべきだ」\n子どもは7人。04年に実現した相続税と贈与税廃止も歓迎だ。「ずっと高い税金を払ってきた。【43-a】徴収されるのはたまらない。【43-b】サービスは受けられない」\n相続税と贈与税はなぜ廃止されたのか。当時の社会民主労働党政権の財務相だったペール・ヌーデルさん（49）は「中小企業では負担が重く、事業を引き継げない場合が多かった」と振り返る。相続税と贈与税が国の税収に占める割合も計約0.2%で、歳入に大穴があくほどではなかった。\n産業界も廃止を働きかけた。経緯を聞くため経済団体のスウェーデン企業連盟を訪ねると、エコノミストのヨーハン・ファルさん（45）は、スウェーデン生まれの二つの国際企業を例に挙げて、税金が企業を国外に追いやる可能性を強調した。\nおしゃれなデザインの家具で知られるイケア。現在、グループ持ち株会社はオランダにある。三角パックの紙容器を広めたテトラパックも本社はスイスだ。両社とも、創業家はスウェーデンを離れたとされる。ファルさんはいう。「税金が理由で移転したのだろう。相続税は経済活動にブレーキをかける」\n資本も資産も自由に世界を駆け回る。一方で税金は国ごとにかかる。ストックホルム大のペーテル・メルツ教授は「経済のグローバル化で資産を国外に移すのが簡単になり、金持ちから税金を取るのが難しくなっている」と話す。どうせ取れないなら、せめて【44】。スウェーデンはそう割り切った。\n実は相続税がない国は多い。カナダ、オーストラリア、ニュージーランド、イタリア、スイスが廃止。英国も生前贈与を利用すれば実質的に相続税を払わなくて済む制度がある。米国は息子のブッシュ政権が税率を【45-a】が、現政権は従来より低い税率で【45-b】。中国やインド、タイなどにはそもそもない。\n元国税庁長官の渡辺裕泰・早稲田大教授は「海外では、相続税は不公平な税と考えられている」と断言する。大金持ちは専門家に頼んで、把握が難しい金融資産に変えたり、国外に逃げ出したりする。払うのは大都市に土地を持つような中産階級や小金持ちだけ。「米国では、払いたい人が払う『ボランタリータックス（自発的な税金）』と揶揄される」\n（「朝日新聞」2012年7月2日付）"
     }
   ]
 }

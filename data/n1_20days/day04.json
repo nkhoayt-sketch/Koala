@@ -11,7 +11,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "雨に<u>煙って</u>、裏山がかすんで見えた。",
-      "options": ["しめって", "かかって", "しけって", "けむって"],
+      "options": [
+        "しめって",
+        "かかって",
+        "しけって",
+        "けむって"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (けむって)\n\n• 煙る（けむる）：Mờ mịt trong khói bụi hoặc mưa giăng mờ mịt (雨に煙る - cảnh núi mờ ảo trong mưa giăng).\n• 湿る (しめる - ẩm ướt), 湿気る (しける - ẩm mốc), 掛かる (かかる).\n\n【Dịch nghĩa】\nTrong làn mưa giăng mờ mịt, ngọn núi phía sau nhà hiện lên thấp thoáng mờ ảo."
     },
@@ -21,7 +26,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "剣術の先生が一番弟子に極意を<u>授けた</u>。",
-      "options": ["さずけた", "あずけた", "とどけた", "たむけた"],
+      "options": [
+        "さずけた",
+        "あずけた",
+        "とどけた",
+        "たむけた"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (さずけた)\n\n• 授ける（さずける）：Truyền thụ, trao tặng, ban truyền (極意を授ける - truyền thụ bí kíp/tuyệt kỹ võ thuật).\n• 預ける (あずける - gửi gắm), 届ける (とどける - chuyển phát), 手向ける (たむける - dâng hoa viếng).\n\n【Dịch nghĩa】\nThầy dạy kiếm thuật đã truyền thụ bí kíp tuyệt đỉnh cho người đệ tử ruột của mình."
     },
@@ -31,7 +41,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "帰国した留学生を<u>慕って</u>、この春その国へ行くことを決意した。",
-      "options": ["ひたって", "したって", "あたって", "わたって"],
+      "options": [
+        "ひたって",
+        "したって",
+        "あたって",
+        "わたって"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (したって)\n\n• 慕う（したう）：Kính yêu, ngưỡng mộ, quyến luyến thương mến (留学生を慕って).\n• 浸る (ひたる - chìm đắm trong cảm xúc/nước), 当たる (あたる - va chạm), 渡る (わたる - băng qua).\n\n【Dịch nghĩa】\nVì yêu mến và ngưỡng mộ người bạn du học sinh đã về nước, tôi đã quyết định mùa xuân này sẽ sang đất nước ấy."
     },
@@ -41,7 +56,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "今年の夏は<u>余暇</u>を利用して美術館巡りをしたい。",
-      "options": ["よさ", "よた", "よか", "よは"],
+      "options": [
+        "よさ",
+        "よた",
+        "よか",
+        "よは"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (よか)\n\n• 余暇（よか）：Thời gian rảnh rỗi, thời gian nghỉ ngơi thư nhàn.\n• Chữ 暇 trong âm On đọc là 「か」 (như 休暇: きゅうか, 余暇: よか).\n\n【Dịch nghĩa】\nMùa hè năm nay tôi muốn tận dụng thời gian rảnh rỗi để đi tham quan một vòng các viện bảo tàng mỹ thuật."
     },
@@ -51,7 +71,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "他人の生活にいたずらに<u>干渉する</u>ものではない。",
-      "options": ["かしょう", "かいしょう", "かっしょう", "かんしょう"],
+      "options": [
+        "かしょう",
+        "かいしょう",
+        "かっしょう",
+        "かんしょう"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (かんしょう)\n\n• 干渉（かんしょう）：Can thiệp, xen vào chuyện riêng tư người khác (干渉する).\n• Âm On: 干 đọc là 「かん」 (như 干ばつ: かんばつ), 渉 đọc là 「しょう」 (như 交渉: こうしょう).\n\n【Dịch nghĩa】\nKhông nên can thiệp một cách vô cớ vào đời sống riêng tư của người khác."
     },
@@ -61,7 +86,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "部下に<u>指図する</u>のも、思いやりが必要だ。",
-      "options": ["さしず", "ゆびず", "しず", "しと"],
+      "options": [
+        "さしず",
+        "ゆびず",
+        "しず",
+        "しと"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (さしず)\n\n• 指図（さしず）：Chỉ thị, chỉ đạo, sai bảo cấp dưới (指図する).\n• Chú ý biến âm đặc biệt: 指 đọc là 「さし」, 図 đọc là 「ず」.\n\n【Dịch nghĩa】\nKhi chỉ thị sai bảo cấp dưới thì sự thấu hiểu chu đáo cũng là điều vô cùng cần thiết."
     },
@@ -71,7 +101,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "紛争地域に大勢いる（ ）不全の子どもたちを助けたい。",
-      "options": ["成長", "生長", "生育", "発育"],
+      "options": [
+        "成長",
+        "生長",
+        "生育",
+        "発育"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (発育 - 発育不全: はついくふぜん)\n\n• 発育不全（はついくふぜん）：Chậm phát triển thể chất, suy dinh dưỡng (chuyên dùng cho sự phát triển thể chất của trẻ nhỏ).\n• 成長 (sự trưởng thành chung), 生長 (dùng cho thực vật cây cỏ).\n\n【Dịch nghĩa】\nTôi muốn giúp đỡ các em nhỏ bị suy dinh dưỡng còi cọc hiện đang có rất đông tại các vùng chiến sự xung đột."
     },
@@ -81,7 +116,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "政治家の不正（ ）を見逃してはならない。",
-      "options": ["行い", "行動", "行為", "動作"],
+      "options": [
+        "行い",
+        "行動",
+        "行為",
+        "動作"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (行為 - 不正行為: ふせいこうい)\n\n• 不正行為（ふせいこうい）：Hành vi bất chính, gian lận, vi phạm pháp luật hoặc quy chuẩn đạo đức.\n• 行動 (hành động thường nhật), 動作 (động tác cử chỉ cơ thể).\n\n【Dịch nghĩa】\nTuyệt đối không được bỏ qua nhắm mắt làm ngơ trước những hành vi bất chính của các chính trị gia."
     },
@@ -91,7 +131,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "地震の被災地に（ ）物資が次々と届けられた。",
-      "options": ["救世", "救援", "救済", "救災"],
+      "options": [
+        "救世",
+        "救援",
+        "救済",
+        "救災"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (救援 - 救援物資: きゅうえんぶっし)\n\n• 救援物資（きゅうえんぶっし）：Hàng hóa tiếp tế, đồ cứu trợ khẩn cấp gửi đến vùng thiên tai.\n• 救済 (cứu tế hỗ trợ tài chính chính sách), 救世 (cứu thế/cứu rỗi nhân loại).\n\n【Dịch nghĩa】\nCác chuyến hàng cứu trợ tiếp tế đã liên tục được chuyển tới vùng chịu thiệt hại sau trận động đất."
     },
@@ -101,7 +146,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "今は無理をせずに、治療に（ ）するつもりだ。",
-      "options": ["専念", "没頭", "夢中", "熱中"],
+      "options": [
+        "専念",
+        "没頭",
+        "夢中",
+        "熱中"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (専念 - せんねん)\n\n• 専念する（せんねん）：Chuyên tâm, dồn toàn bộ tâm trí sức lực vào một mục tiêu (治療に専念する - chuyên tâm điều trị bệnh).\n• 没頭 (vùi đầu nghiên cứu/nghệ thuật), 夢中 (say sưa đam mê), 熱中 (say mê làm việc say đắm).\n\n【Dịch nghĩa】\nBây giờ tôi dự định sẽ không gắng gượng làm quá sức mà dồn hết tâm trí để chuyên tâm chữa bệnh."
     },
@@ -111,7 +161,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "大学教授の森山氏に知事選の出馬を（ ）したが断られた。",
-      "options": ["要約", "要求", "要請", "請求"],
+      "options": [
+        "要約",
+        "要求",
+        "要請",
+        "請求"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (要請 - ようせい)\n\n• 出馬を要請する（しゅつばをようせいする）：Đưa ra lời thỉnh cầu, tha thiết đề nghị ai đó đứng ra tranh cử.\n• 要約 (tóm tắt ý chính), 要求 (yêu cầu đòi hỏi), 請求 (đòi tiền/gửi hóa đơn).\n\n【Dịch nghĩa】\nChúng tôi đã tha thiết thỉnh cầu giáo sư Moriyama ra tranh cử chức thị trưởng nhưng đã bị ông từ chối."
     },
@@ -121,7 +176,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "アメリカのクイズ番組をそのまま真似して、（ ）芝居もいいところだ。",
-      "options": ["犬", "猫", "豚", "猿"],
+      "options": [
+        "犬",
+        "猫",
+        "豚",
+        "猿"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (猿 - 猿芝居: さるしばい)\n\n• 猿芝居（さるしばい）：Trò hề vụng về, bắt chước kệch cỡm nông cạn, màn kịch lừa bịp dễ dàng bị lật tẩy.\n• Thành ngữ:「猿芝居もいいところだ」: Đúng là một trò hề bắt chước rẻ tiền lộ liễu.\n\n【Dịch nghĩa】\nBắt chước y hệt chương trình trò chơi truyền hình của Mỹ thì đúng thật là một trò hề lố bịch lộ liễu."
     },
@@ -131,7 +191,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "病院が閉鎖され、この村には小さな診療（ ）しかなくなった。",
-      "options": ["所", "場", "処", "棟"],
+      "options": [
+        "所",
+        "場",
+        "処",
+        "棟"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (所 - 診療所: しんりょうじょ)\n\n• 診療所（しんりょうじょ）：Trạm xá, phòng khám tư nhân quy mô nhỏ.\n• Hậu tố 所: 診療所, 事務所, 案内所.\n\n【Dịch nghĩa】\nBệnh viện đã bị đóng cửa nên giờ đây trong ngôi làng này chỉ còn lại một trạm y tế nhỏ."
     },
@@ -141,7 +206,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "新製品の開発計画が<u>ことごとく</u>取り上げられず、彼は少々落ち込んでいる。",
-      "options": ["ほとんど", "おおかた", "かなり", "みな"],
+      "options": [
+        "ほとんど",
+        "おおかた",
+        "かなり",
+        "みな"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (みな)\n\n• ことごとく（悉く）：Tất cả, toàn bộ không chừa cái nào (= みな, すべて).\n• ほとんど (hầu như), おおかた (phần lớn), かなり (khá là).\n\n【Dịch nghĩa】\nToàn bộ kế hoạch phát triển sản phẩm mới đều không có cái nào được thông qua xem xét khiến anh ấy có phần suy sụp."
     },
@@ -151,7 +221,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "<u>そそっかしい</u>妹は、弟の弁当を持って学校へ行った。",
-      "options": ["あわて者", "かわり者", "いたずら者", "なまけ者"],
+      "options": [
+        "あわて者",
+        "かわり者",
+        "いたずら者",
+        "なまけ者"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (あわて者)\n\n• そそっかしい：Tính hấp tấp, đoảng, cuống quýt thiếu cẩn thận (= あわて者: あわてもの).\n• かわり者 (kẻ lập dị quái đản), いたずら者 (đứa nghịch ngợm), なまけ者 (kẻ lười biếng).\n\n【Dịch nghĩa】\nĐứa em gái tính tình hấp tấp đoảng vị đã cầm nhầm hộp cơm trưa của em trai mang đến trường."
     },
@@ -161,7 +236,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "彼女は古傷を<u>かばって</u>プレーを続けた結果、かえって引退を早めてしまった。",
-      "options": ["すくって", "まもって", "たすけて", "ささえて"],
+      "options": [
+        "すくって",
+        "まもって",
+        "たすけて",
+        "ささえて"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (まもって)\n\n• かばう（庇う）：Che chở, bảo vệ vết thương để tránh bị va chạm nặng thêm (= まもって).\n• すくう (vớt lên/cứu rỗi), たすける (giúp đỡ), ささえる (nâng đỡ/chống đỡ).\n\n【Dịch nghĩa】\nCô ấy nén và che chắn cho vết thương cũ để tiếp tục thi đấu, kết quả là lại càng đẩy nhanh thời điểm phải giải nghệ sớm hơn."
     },
@@ -171,7 +251,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "デパート8階にある特設の<u>安売り</u>会場に、客が殺到した。",
-      "options": ["インスタント", "シングル", "サービス", "バーゲン"],
+      "options": [
+        "インスタント",
+        "シングル",
+        "サービス",
+        "バーゲン"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (バーゲン)\n\n• 安売り（やすうり）：Đợt bán hạ giá, chương trình giảm giá lớn (= バーゲン / bargain).\n• インスタント (ăn liền/ngay lập tức), シングル (đơn/độc thân), サービス (dịch vụ).\n\n【Dịch nghĩa】\nKhách hàng đã đổ xô chen chúc tới khu vực bán hàng đại hạ giá đặc biệt được bố trí tại tầng 8 trung tâm bách hóa."
     },
@@ -181,7 +266,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "この問題は<u>該当する</u>答えが見当たらない。",
-      "options": ["あてこする", "あてつける", "あてはまる", "あてこむ"],
+      "options": [
+        "あてこする",
+        "あてつける",
+        "あてはまる",
+        "あてこむ"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (あてはまる)\n\n• 該当する（がいとうする）：Phù hợp, ứng nghiệm, đúng với tiêu chuẩn (= あてはまる).\n• あてこする (châm chọc mỉa mai), あてつける (cố tình làm trước mặt để trêu tức), あてこむ (trông mong/tính toán trước).\n\n【Dịch nghĩa】\nCâu hỏi này tôi không tìm thấy câu trả lời nào tương ứng thích hợp cả."
     },
@@ -296,7 +386,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "政治と金の問題をなくすには、企業献金をなくす（ ）。",
-      "options": ["始末だ", "ことだ", "ほどだ", "次第だ"],
+      "options": [
+        "始末だ",
+        "ことだ",
+        "ほどだ",
+        "次第だ"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (ことだ)\n\n• Ngữ pháp: V-る / V-ない + 「ことだ」: Lời khuyên cách tốt nhất là nên... (để chấm dứt nạn tiền bạc trong chính trị thì cách tốt nhất là loại bỏ tiền quyên góp của doanh nghiệp).\n\n【Dịch nghĩa】\nĐể chấm dứt các bê bối về mối liên kết giữa chính trị và tiền bạc, cách tốt nhất là phải triệt bỏ các khoản tài trợ của doanh nghiệp."
     },
@@ -306,7 +401,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "同僚の派遣社員が次々と解雇され、悔しく（ ）。",
-      "options": ["てやまない", "ていない", "てはいけない", "てならない"],
+      "options": [
+        "てやまない",
+        "ていない",
+        "てはいけない",
+        "てならない"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (てならない)\n\n• Ngữ pháp: A-くて + 「ならない」: Cảm xúc trào dâng không kìm nén nổi (悔しくてならない: uất ức khôn nguôi, buồn bực khôn cùng).\n\n【Dịch nghĩa】\nNhìn những đồng nghiệp phái cử lần lượt bị sa thải, tôi cảm thấy vô cùng uất ức và xót xa khôn nguôi."
     },
@@ -316,7 +416,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "桜の開花予想は、そう簡単に当たる（ ）。",
-      "options": ["ものではない", "ものがある", "わけにもいかない", "よりほかない"],
+      "options": [
+        "ものではない",
+        "ものがある",
+        "わけにもいかない",
+        "よりほかない"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (ものではない)\n\n• Ngữ pháp:「〜ものではない」: Không thể nào / Làm sao mà dễ dàng... (dự báo ngày hoa anh đào nở làm sao mà dễ chuẩn xác đến thế được).\n\n【Dịch nghĩa】\nDự báo thời điểm hoa anh đào nở không phải là việc có thể dễ dàng đoán trúng đâu."
     },
@@ -326,7 +431,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "江戸時代、日本に開港を迫ったのはアメリカだ（ ）。",
-      "options": ["ってもいい", "っていない", "ったっけ", "ったらたい"],
+      "options": [
+        "ってもいい",
+        "っていない",
+        "ったっけ",
+        "ったらたい"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (ったっけ)\n\n• Ngữ pháp:「〜だっけ / だったっけ」: Hồi tưởng, hỏi xác nhận lại một kiến thức/sự kiện trong quá khứ mà mình nhớ mang máng (Thời Edo, nước thúc ép Nhật Bản mở cửa cảng là nước Mỹ có phải không nhỉ?).\n\n【Dịch nghĩa】\nVào thời kỳ Edo, quốc gia đã ép buộc Nhật Bản phải mở cửa giao thương là nước Mỹ có phải không nhỉ?"
     },
@@ -336,7 +446,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "活字離れが指摘されて久しいが、森鴎外さえ読まれない（ ）。",
-      "options": ["始末だ", "までだ", "限りだ", "はずだ"],
+      "options": [
+        "始末だ",
+        "までだ",
+        "限りだ",
+        "はずだ"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (始末だ)\n\n• Ngữ pháp:「〜始末だ（しまつだ）」: Đến nông nỗi... / Rốt cuộc dẫn tới kết cục tồi tệ là... (xu hướng xa rời sách báo đã kéo dài, nay đến nỗi ngay cả đại văn hào Mori Ogai cũng chẳng ai đọc nữa).\n\n【Dịch nghĩa】\nHiện tượng xa rời sách báo in đã được cảnh báo từ lâu, nay bi đát đến nông nỗi ngay cả tác phẩm của Mori Ogai cũng chẳng còn ai đọc nữa."
     },
@@ -346,7 +461,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "春（ ）季節になると、決まって思い出す芝居がある。",
-      "options": ["めく", "いかん", "気味", "ぶる"],
+      "options": [
+        "めく",
+        "いかん",
+        "気味",
+        "ぶる"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (めく - 春めく: はるめく)\n\n• Ngữ pháp: N + 「めく」: Mang hơi hướng, đậm nét (春めく: ngập tràn hơi thở mùa xuân, 謎めく: đầy vẻ bí ẩn).\n\n【Dịch nghĩa】\nCứ mỗi độ đất trời bước vào thời khắc ngập tràn hơi thở mùa xuân, tôi lại nhớ đến một vở kịch xưa."
     },
@@ -356,7 +476,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "エルミタージュ美術館は、日本の国立博物館（ ）大きさだ。",
-      "options": ["までのことだ", "どころではない", "に越したことはない", "極まりない"],
+      "options": [
+        "までのことだ",
+        "どころではない",
+        "に越したことはない",
+        "極まりない"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (どころではない)\n\n• Ngữ pháp:「〜どころではない」: Không chỉ đơn thuần ở mức... mà còn vượt xa gấp bội phần (độ rộng lớn của viện bảo tàng Hermitage thì bảo tàng quốc gia của Nhật Bản không thể nào sánh bằng được).\n\n【Dịch nghĩa】\nViện bảo tàng Hermitage sở hữu quy mô rộng lớn đến mức viện bảo tàng quốc gia của Nhật Bản hoàn toàn không thể sánh kịp."
     },
@@ -381,7 +506,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "3D映画の人気（ ）、アカデミー賞を取ったのは地味な作品だった。",
-      "options": ["を問わず", "をよそに", "を限りに", "を込めて"],
+      "options": [
+        "を問わず",
+        "をよそに",
+        "を限りに",
+        "を込めて"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (をよそに)\n\n• Ngữ pháp:「N + をよそに」: Bất chấp, mặc kệ, ngoài dự kiến của sự chú ý chung quanh (bất chấp cơn sốt phim 3D bùng nổ khắp nơi, bộ phim giành tượng vàng Oscar lại là một tác phẩm rất đỗi bình dị).\n\n【Dịch nghĩa】\nBỏ ngoài tai cơn sốt phim 3D đang làm mưa làm gió, tác phẩm giành giải Oscar lại là một bộ phim mang phong cách vô cùng giản dị mộc mạc."
     },
@@ -421,7 +551,12 @@
       "section": "問題6: 文の組み立て",
       "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
       "question": "原子ロケットは＿＿ ＿＿ ＿★＿ ＿＿ 以下に短縮できる。",
-      "options": ["3分の1", "7ヵ月から", "飛行時間を", "火星への"],
+      "options": [
+        "3分の1",
+        "7ヵ月から",
+        "飛行時間を",
+        "火星への"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (7ヵ月から)\n\n• Trật tự ghép câu:\n  原子ロケットは (4 火星への) → (3 飛行時間を) → (2 7ヵ月から ★) → (1 3分の1) 以下に短縮できる。\n\n• Câu hoàn chỉnh:\n  「原子ロケットは、火星への飛行時間を7ヵ月から3分の1以下に短縮できる。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [2].\n\n【Dịch nghĩa】\nTên lửa hạt nhân có thể rút ngắn thời gian bay tới sao Hỏa từ 7 tháng xuống còn chưa đầy 1/3."
     },
@@ -461,7 +596,12 @@
       "section": "問題6: 文の組み立て",
       "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
       "question": "電気自動車は電動モーターの＿＿ ＿＿ ＿★＿ ＿＿ 自動車だ。",
-      "options": ["繰り返し", "充電を", "走行する", "ながら"],
+      "options": [
+        "繰り返し",
+        "充電を",
+        "走行する",
+        "ながら"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (ながら)\n\n• Trật tự ghép câu:\n  電気自動車は電動モーターの (2 充電を) → (1 繰り返し) → (4 ながら ★) → (3 走行する) 自動車だ。\n\n• Câu hoàn chỉnh:\n  「電気自動車は電動モーターの充電を繰り返しながら走行する自動車だ。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [4].\n\n【Dịch nghĩa】\nXe ô tô điện là loại phương tiện vận hành bằng cách vừa chạy vừa liên tục nạp điện cho mô tơ điện."
     },
@@ -472,7 +612,12 @@
       "passage": "働く人の健康を守るために、職場は原則として禁煙にする。\n他人のたばこの煙を吸う、いわゆる受動喫煙による健康被害をどうすれば妨げるかを検討している厚生労働省の有識者検討会が、こんな考え方を報告書の案の中心に据えた。\n4月にもまとめる報告書を受けて、労働政策審議会が労働安全衛生法にどう盛り込むか、議論するという。\n今度こそ、受動喫煙による健康被害を確実に防ぐための法整備を実現させてほしい。受動喫煙の防止をうたう健康増進法は【41】、努力義務にとどまっている。\n「たばこの煙にさらされることからの保護」を求めるたばこ規制枠組み条約（FCTC）が発効して今月末で5年。そのガイドラインは、受動喫煙を防ぐための法整備も求めている。\n鳩山政権が誕生して、たばこ値上げなどの政策がやっと動き出した。民間のシンクタンク、日本医療政策機構の世論調査によると、現政権の医療政策の中で、たばこ増税は、事業仕分け、医師数の増加に続いて高い評価を得た。たばこ対策のいっそうの推進が、国民の期待に応える道だ。\n報告書案はまず、受動喫煙による健康への影響は、科学的な証拠によって明白であることが世界的に認められているとした。\nそのうえで、それを防ぐには、一般の事務所や工場は全面【42-a】とするか、煙のもれない【42-b】室以外では禁煙にすることを提案している。\n飲食店などはどうか。従業員の健康を守るには、一般の事務所と同様の原則が必要だ。しかし、成人男性の喫煙率が【43】3割以上あり、客の喫煙を一律に禁止するのは難しいと飲食店などには抵抗が強い。それを考慮して、換気の徹底などによって、可能な限り従業員の受動喫煙を防止することを求めるにとどめている。\nだが、成人人口の8割近くはたばこを吸わず、喫煙者の7、8割は禁煙を望んでいることにも目を【44】。\n海外に目を転じれば、たばこと酒は切り離せないと思われていた国々でも政治の指導力で着実に禁煙が進む。\n英国はブレア政権が1997年に禁煙への取り組みを宣言、10年後の2007年に衛生法が施行されてパブなども禁煙となった。\n台湾でも昨年、たばこ煙害防止法が施行され、公共の場からあっというまに煙が消えた。今や、ホテルも禁煙ルームだけだ。\n世界で【45】禁煙が進めば、煙たい日本は、禁煙が進む外国からの観光客に文字通り煙たがられる。\n何より、受動喫煙を確実に防いですべての国民の命を守らなければならない。職場の全面禁煙を目標に掲げて一歩を踏み出すときだ。\n（「朝日新聞」2010年2月19日付）",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【41】から【45】の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "【41】に入る最も適当なものはどれか。",
-      "options": ["あるものの", "あるもので", "あるものに", "あるものを"],
+      "options": [
+        "あるものの",
+        "あるもので",
+        "あるものに",
+        "あるものを"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (あるものの)\n\n• Ngữ pháp:「〜ものの」: Mặc dù... nhưng (luật Xúc tiến Sức khỏe dù có điều khoản ngăn ngừa hút thuốc thụ động nhưng thực tế mới chỉ dừng lại ở nghĩa vụ nỗ lực mang tính khuyến khích).\n\n【Dịch nghĩa】\nLuật Tăng cường Sức khỏe đề cao việc ngăn ngừa hút thuốc thụ động tuy có tồn tại, nhưng thực tế mới chỉ dừng lại ở mức quy định nghĩa vụ nỗ lực."
     },
@@ -489,7 +634,8 @@
         "a 喫煙 ／ b 禁煙"
       ],
       "answer": 2,
-      "explanation": "【正解】3 (a 禁煙 ／ b 喫煙)\n\n• Ngữ cảnh: Đề xuất các văn phòng, nhà xưởng thực hiện cấm hút thuốc hoàn toàn (a: 全面禁煙), hoặc cấm hút thuốc ngoại trừ phòng hút thuốc chuyên biệt có hệ thống chặn khói thoát ra (b: 喫煙室).\n\n【Dịch nghĩa】\nĐể ngăn ngừa điều đó, bản báo cáo đề xuất các văn phòng và nhà xưởng thông thường phải cấm hút thuốc toàn diện, hoặc chỉ được phép hút thuốc trong phòng hút thuốc chuyên dụng kín khói."
+      "explanation": "【正解】3 (a 禁煙 ／ b 喫煙)\n\n• Ngữ cảnh: Đề xuất các văn phòng, nhà xưởng thực hiện cấm hút thuốc hoàn toàn (a: 全面禁煙), hoặc cấm hút thuốc ngoại trừ phòng hút thuốc chuyên biệt có hệ thống chặn khói thoát ra (b: 喫煙室).\n\n【Dịch nghĩa】\nĐể ngăn ngừa điều đó, bản báo cáo đề xuất các văn phòng và nhà xưởng thông thường phải cấm hút thuốc toàn diện, hoặc chỉ được phép hút thuốc trong phòng hút thuốc chuyên dụng kín khói.",
+      "passage": "働く人の健康を守るために、職場は原則として禁煙にする。\n他人のたばこの煙を吸う、いわゆる受動喫煙による健康被害をどうすれば妨げるかを検討している厚生労働省の有識者検討会が、こんな考え方を報告書の案の中心に据えた。\n4月にもまとめる報告書を受けて、労働政策審議会が労働安全衛生法にどう盛り込むか、議論するという。\n今度こそ、受動喫煙による健康被害を確実に防ぐための法整備を実現させてほしい。受動喫煙の防止をうたう健康増進法は【41】、努力義務にとどまっている。\n「たばこの煙にさらされることからの保護」を求めるたばこ規制枠組み条約（FCTC）が発効して今月末で5年。そのガイドラインは、受動喫煙を防ぐための法整備も求めている。\n鳩山政権が誕生して、たばこ値上げなどの政策がやっと動き出した。民間のシンクタンク、日本医療政策機構の世論調査によると、現政権の医療政策の中で、たばこ増税は、事業仕分け、医師数の増加に続いて高い評価を得た。たばこ対策のいっそうの推進が、国民の期待に応える道だ。\n報告書案はまず、受動喫煙による健康への影響は、科学的な証拠によって明白であることが世界的に認められているとした。\nそのうえで、それを防ぐには、一般の事務所や工場は全面【42-a】とするか、煙のもれない【42-b】室以外では禁煙にすることを提案している。\n飲食店などはどうか。従業員の健康を守るには、一般の事務所と同様の原則が必要だ。しかし、成人男性の喫煙率が【43】3割以上あり、客の喫煙を一律に禁止するのは難しいと飲食店などには抵抗が強い。それを考慮して、換気の徹底などによって、可能な限り従業員の受動喫煙を防止することを求めるにとどめている。\nだが、成人人口の8割近くはたばこを吸わず、喫煙者の7、8割は禁煙を望んでいることにも目を【44】。\n海外に目を転じれば、たばこと酒は切り離せないと思われていた国々でも政治の指導力で着実に禁煙が進む。\n英国はブレア政権が1997年に禁煙への取り組みを宣言、10年後の2007年に衛生法が施行されてパブなども禁煙となった。\n台湾でも昨年、たばこ煙害防止法が施行され、公共の場からあっというまに煙が消えた。今や、ホテルも禁煙ルームだけだ。\n世界で【45】禁煙が進めば、煙たい日本は、禁煙が進む外国からの観光客に文字通り煙たがられる。\n何より、受動喫煙を確実に防いですべての国民の命を守らなければならない。職場の全面禁煙を目標に掲げて一歩を踏み出すときだ。\n（「朝日新聞」2010年2月19日付）"
     },
     {
       "id": "d04-q43",
@@ -497,9 +643,15 @@
       "section": "問題7: 文章の文法",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【43】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
       "question": "【43】に入る最も適当なものはどれか。",
-      "options": ["依然と", "依然とした", "依然として", "依然としても"],
+      "options": [
+        "依然と",
+        "依然とした",
+        "依然として",
+        "依然としても"
+      ],
       "answer": 2,
-      "explanation": "【正解】3 (依然として)\n\n• Phó từ:「依然として（いぜんとして）」: Vẫn cứ như cũ, vẫn duy trì ở mức cao (tỷ lệ hút thuốc ở nam giới trưởng thành vẫn ở mức trên 30%).\n\n【Dịch nghĩa】\nTuy nhiên, tỷ lệ hút thuốc của nam giới trưởng thành hiện vẫn duy trì ở mức trên 30%."
+      "explanation": "【正解】3 (依然として)\n\n• Phó từ:「依然として（いぜんとして）」: Vẫn cứ như cũ, vẫn duy trì ở mức cao (tỷ lệ hút thuốc ở nam giới trưởng thành vẫn ở mức trên 30%).\n\n【Dịch nghĩa】\nTuy nhiên, tỷ lệ hút thuốc của nam giới trưởng thành hiện vẫn duy trì ở mức trên 30%.",
+      "passage": "働く人の健康を守るために、職場は原則として禁煙にする。\n他人のたばこの煙を吸う、いわゆる受動喫煙による健康被害をどうすれば妨げるかを検討している厚生労働省の有識者検討会が、こんな考え方を報告書の案の中心に据えた。\n4月にもまとめる報告書を受けて、労働政策審議会が労働安全衛生法にどう盛り込むか、議論するという。\n今度こそ、受動喫煙による健康被害を確実に防ぐための法整備を実現させてほしい。受動喫煙の防止をうたう健康増進法は【41】、努力義務にとどまっている。\n「たばこの煙にさらされることからの保護」を求めるたばこ規制枠組み条約（FCTC）が発効して今月末で5年。そのガイドラインは、受動喫煙を防ぐための法整備も求めている。\n鳩山政権が誕生して、たばこ値上げなどの政策がやっと動き出した。民間のシンクタンク、日本医療政策機構の世論調査によると、現政権の医療政策の中で、たばこ増税は、事業仕分け、医師数の増加に続いて高い評価を得た。たばこ対策のいっそうの推進が、国民の期待に応える道だ。\n報告書案はまず、受動喫煙による健康への影響は、科学的な証拠によって明白であることが世界的に認められているとした。\nそのうえで、それを防ぐには、一般の事務所や工場は全面【42-a】とするか、煙のもれない【42-b】室以外では禁煙にすることを提案している。\n飲食店などはどうか。従業員の健康を守るには、一般の事務所と同様の原則が必要だ。しかし、成人男性の喫煙率が【43】3割以上あり、客の喫煙を一律に禁止するのは難しいと飲食店などには抵抗が強い。それを考慮して、換気の徹底などによって、可能な限り従業員の受動喫煙を防止することを求めるにとどめている。\nだが、成人人口の8割近くはたばこを吸わず、喫煙者の7、8割は禁煙を望んでいることにも目を【44】。\n海外に目を転じれば、たばこと酒は切り離せないと思われていた国々でも政治の指導力で着実に禁煙が進む。\n英国はブレア政権が1997年に禁煙への取り組みを宣言、10年後の2007年に衛生法が施行されてパブなども禁煙となった。\n台湾でも昨年、たばこ煙害防止法が施行され、公共の場からあっというまに煙が消えた。今や、ホテルも禁煙ルームだけだ。\n世界で【45】禁煙が進めば、煙たい日本は、禁煙が進む外国からの観光客に文字通り煙たがられる。\n何より、受動喫煙を確実に防いですべての国民の命を守らなければならない。職場の全面禁煙を目標に掲げて一歩を踏み出すときだ。\n（「朝日新聞」2010年2月19日付）"
     },
     {
       "id": "d04-q44",
@@ -507,9 +659,15 @@
       "section": "問題7: 文章の文法",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【44】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
       "question": "【44】に入る最も適当なものはどれか。",
-      "options": ["開けたい", "奪いたい", "回したい", "向けたい"],
+      "options": [
+        "開けたい",
+        "奪いたい",
+        "回したい",
+        "向けたい"
+      ],
       "answer": 3,
-      "explanation": "【正解】4 (向けたい)\n\n• Quán dụng ngữ:「目を向ける（めをむける）」: Hướng sự chú ý / để mắt quan tâm tới (nhưng chúng ta cũng cần phải hướng mắt để tâm tới thực tế là có tới gần 80% dân số trưởng thành không hút thuốc).\n\n【Dịch nghĩa】\nThế nhưng, chúng ta cũng cần phải hướng sự chú ý tới thực tế là gần 80% người trưởng thành không hề hút thuốc, và 70-80% người hút thuốc đều bày tỏ mong muốn cai thuốc."
+      "explanation": "【正解】4 (向けたい)\n\n• Quán dụng ngữ:「目を向ける（めをむける）」: Hướng sự chú ý / để mắt quan tâm tới (nhưng chúng ta cũng cần phải hướng mắt để tâm tới thực tế là có tới gần 80% dân số trưởng thành không hút thuốc).\n\n【Dịch nghĩa】\nThế nhưng, chúng ta cũng cần phải hướng sự chú ý tới thực tế là gần 80% người trưởng thành không hề hút thuốc, và 70-80% người hút thuốc đều bày tỏ mong muốn cai thuốc.",
+      "passage": "働く人の健康を守るために、職場は原則として禁煙にする。\n他人のたばこの煙を吸う、いわゆる受動喫煙による健康被害をどうすれば妨げるかを検討している厚生労働省の有識者検討会が、こんな考え方を報告書の案の中心に据えた。\n4月にもまとめる報告書を受けて、労働政策審議会が労働安全衛生法にどう盛り込むか、議論するという。\n今度こそ、受動喫煙による健康被害を確実に防ぐための法整備を実現させてほしい。受動喫煙の防止をうたう健康増進法は【41】、努力義務にとどまっている。\n「たばこの煙にさらされることからの保護」を求めるたばこ規制枠組み条約（FCTC）が発効して今月末で5年。そのガイドラインは、受動喫煙を防ぐための法整備も求めている。\n鳩山政権が誕生して、たばこ値上げなどの政策がやっと動き出した。民間のシンクタンク、日本医療政策機構の世論調査によると、現政権の医療政策の中で、たばこ増税は、事業仕分け、医師数の増加に続いて高い評価を得た。たばこ対策のいっそうの推進が、国民の期待に応える道だ。\n報告書案はまず、受動喫煙による健康への影響は、科学的な証拠によって明白であることが世界的に認められているとした。\nそのうえで、それを防ぐには、一般の事務所や工場は全面【42-a】とするか、煙のもれない【42-b】室以外では禁煙にすることを提案している。\n飲食店などはどうか。従業員の健康を守るには、一般の事務所と同様の原則が必要だ。しかし、成人男性の喫煙率が【43】3割以上あり、客の喫煙を一律に禁止するのは難しいと飲食店などには抵抗が強い。それを考慮して、換気の徹底などによって、可能な限り従業員の受動喫煙を防止することを求めるにとどめている。\nだが、成人人口の8割近くはたばこを吸わず、喫煙者の7、8割は禁煙を望んでいることにも目を【44】。\n海外に目を転じれば、たばこと酒は切り離せないと思われていた国々でも政治の指導力で着実に禁煙が進む。\n英国はブレア政権が1997年に禁煙への取り組みを宣言、10年後の2007年に衛生法が施行されてパブなども禁煙となった。\n台湾でも昨年、たばこ煙害防止法が施行され、公共の場からあっというまに煙が消えた。今や、ホテルも禁煙ルームだけだ。\n世界で【45】禁煙が進めば、煙たい日本は、禁煙が進む外国からの観光客に文字通り煙たがられる。\n何より、受動喫煙を確実に防いですべての国民の命を守らなければならない。職場の全面禁煙を目標に掲げて一歩を踏み出すときだ。\n（「朝日新聞」2010年2月19日付）"
     },
     {
       "id": "d04-q45",
@@ -517,9 +675,15 @@
       "section": "問題7: 文章の文法",
       "instruction": "文章を読んで、文章全体の趣旨を踏まえて、【45】に入る最も適当なものを、1・2・3・4から一つ選びなさい。",
       "question": "【45】に入る最も適当なものはどれか。",
-      "options": ["これさえ", "これだけ", "これしか", "これなら"],
+      "options": [
+        "これさえ",
+        "これだけ",
+        "これしか",
+        "これなら"
+      ],
       "answer": 1,
-      "explanation": "【正解】2 (これだけ)\n\n• Phó từ / Chỉ từ:「これだけ〜ば」: Một khi đã diễn ra ở quy mô/mức độ rộng lớn như thế này (trên thế giới phong trào cấm thuốc lá đã lan rộng mạnh mẽ đến mức độ này mà Nhật Bản vẫn nồng nặc khói thuốc thì khách du lịch quốc tế sẽ rất khó chịu).\n\n【Dịch nghĩa】\nKhi phong trào cấm hút thuốc đã tiến triển mạnh mẽ trên thế giới đến mức độ như thế này, một nước Nhật nồng nặc khói thuốc sẽ thực sự bị các du khách nước ngoài xa lánh ngột ngạt."
+      "explanation": "【正解】2 (これだけ)\n\n• Phó từ / Chỉ từ:「これだけ〜ば」: Một khi đã diễn ra ở quy mô/mức độ rộng lớn như thế này (trên thế giới phong trào cấm thuốc lá đã lan rộng mạnh mẽ đến mức độ này mà Nhật Bản vẫn nồng nặc khói thuốc thì khách du lịch quốc tế sẽ rất khó chịu).\n\n【Dịch nghĩa】\nKhi phong trào cấm hút thuốc đã tiến triển mạnh mẽ trên thế giới đến mức độ như thế này, một nước Nhật nồng nặc khói thuốc sẽ thực sự bị các du khách nước ngoài xa lánh ngột ngạt.",
+      "passage": "働く人の健康を守るために、職場は原則として禁煙にする。\n他人のたばこの煙を吸う、いわゆる受動喫煙による健康被害をどうすれば妨げるかを検討している厚生労働省の有識者検討会が、こんな考え方を報告書の案の中心に据えた。\n4月にもまとめる報告書を受けて、労働政策審議会が労働安全衛生法にどう盛り込むか、議論するという。\n今度こそ、受動喫煙による健康被害を確実に防ぐための法整備を実現させてほしい。受動喫煙の防止をうたう健康増進法は【41】、努力義務にとどまっている。\n「たばこの煙にさらされることからの保護」を求めるたばこ規制枠組み条約（FCTC）が発効して今月末で5年。そのガイドラインは、受動喫煙を防ぐための法整備も求めている。\n鳩山政権が誕生して、たばこ値上げなどの政策がやっと動き出した。民間のシンクタンク、日本医療政策機構の世論調査によると、現政権の医療政策の中で、たばこ増税は、事業仕分け、医師数の増加に続いて高い評価を得た。たばこ対策のいっそうの推進が、国民の期待に応える道だ。\n報告書案はまず、受動喫煙による健康への影響は、科学的な証拠によって明白であることが世界的に認められているとした。\nそのうえで、それを防ぐには、一般の事務所や工場は全面【42-a】とするか、煙のもれない【42-b】室以外では禁煙にすることを提案している。\n飲食店などはどうか。従業員の健康を守るには、一般の事務所と同様の原則が必要だ。しかし、成人男性の喫煙率が【43】3割以上あり、客の喫煙を一律に禁止するのは難しいと飲食店などには抵抗が強い。それを考慮して、換気の徹底などによって、可能な限り従業員の受動喫煙を防止することを求めるにとどめている。\nだが、成人人口の8割近くはたばこを吸わず、喫煙者の7、8割は禁煙を望んでいることにも目を【44】。\n海外に目を転じれば、たばこと酒は切り離せないと思われていた国々でも政治の指導力で着実に禁煙が進む。\n英国はブレア政権が1997年に禁煙への取り組みを宣言、10年後の2007年に衛生法が施行されてパブなども禁煙となった。\n台湾でも昨年、たばこ煙害防止法が施行され、公共の場からあっというまに煙が消えた。今や、ホテルも禁煙ルームだけだ。\n世界で【45】禁煙が進めば、煙たい日本は、禁煙が進む外国からの観光客に文字通り煙たがられる。\n何より、受動喫煙を確実に防いですべての国民の命を守らなければならない。職場の全面禁煙を目標に掲げて一歩を踏み出すときだ。\n（「朝日新聞」2010年2月19日付）"
     }
   ]
 }

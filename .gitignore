@@ -14,7 +14,9 @@ N2_DE_CAC_NAM/
 # Executables & Logs
 cloudflared.exe
 *.log
+!process.log
 tunnel.log
+scratch/
 
 # System files
 .DS_Store

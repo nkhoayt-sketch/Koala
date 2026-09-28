@@ -11,7 +11,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "あの作家は亡くなるまで平和主義に<u>徹していた</u>。",
-      "options": ["てっして", "たっして", "ほっして", "りっして"],
+      "options": [
+        "てっして",
+        "たっして",
+        "ほっして",
+        "りっして"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (てっして)\n\n• 徹する（てっする）：Quán triệt, thấm nhuần sâu sắc, trung thành tận tụy với tôn chỉ / chủ nghĩa (平和主義に徹する, 夜を徹して: thức trắng thâu đêm).\n• Các âm khác: 達して (たっして - đạt tới), 欲して (ほっして - mong muốn), 律して (りっして - ước thúc/kỷ luật).\n\n【Dịch nghĩa】\nNhà văn đó cho tới lúc qua đời vẫn luôn một lòng quán triệt theo chủ nghĩa hòa bình."
     },
@@ -21,7 +26,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "一郎君は家業に<u>励む</u>父親の姿を見て育った。",
-      "options": ["いさむ", "いそしむ", "りきむ", "はげむ"],
+      "options": [
+        "いさむ",
+        "いそしむ",
+        "りきむ",
+        "はげむ"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (はげむ)\n\n• 励む（はげむ）：Cần mẫn, miệt mài, nỗ lực phấn đấu (家業に励む - cần mẫn lo toan nghề gia truyền).\n• Các từ còn lại: 勇む (いさむ - hăng hái/phấn chấn), 勤しむ (いそしむ - chăm chỉ làm việc), 力む (りきむ - gồng sức/lấy hơi).\n\n【Dịch nghĩa】\nIchiro đã lớn lên khi từng ngày chứng kiến hình bóng người cha miệt mài chăm lo cho công việc gia đình."
     },
@@ -31,7 +41,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "そんな軽装で冬山に<u>挑む</u>のは危険すぎる。",
-      "options": ["のぞむ", "おしむ", "いどむ", "すごむ"],
+      "options": [
+        "のぞむ",
+        "おしむ",
+        "いどむ",
+        "すごむ"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (いどむ)\n\n• 挑む（いどむ）：Thử thách, đương đầu, chinh phục thử thách hiểm trở (冬山に挑む - chinh phục núi tuyết mùa đông).\n• 臨む/望む (のぞむ - đối diện/hướng tới), 惜しむ (おしむ - tiếc nuối), 凄む (すごむ - đe dọa/hù dọa).\n\n【Dịch nghĩa】\nĂn mặc sơ sài nhẹ nhàng như vậy mà đi chinh phục núi tuyết mùa đông thì quá nguy hiểm."
     },
@@ -41,7 +56,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "古い工場の天井から雨が<u>滴</u>となって落ちていた。",
-      "options": ["つぶ", "たま", "しみず", "しずく"],
+      "options": [
+        "つぶ",
+        "たま",
+        "しみず",
+        "しずく"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (しずく)\n\n• 滴（しずく）：Giọt chất lỏng, giọt nước rơi rớt (雨の滴, 涙の滴).\n• 粒 (つぶ - hạt, hạt cát, giọt li ti), 玉 (たま - viên ngọc/quả bóng), 清水 (しみず - dòng nước mát trong).\n\n【Dịch nghĩa】\nTừng giọt nước mưa đọng lại nhỏ giọt rơi xuống từ trần của nhà xưởng cũ."
     },
@@ -51,7 +71,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "希望をかなえるまでは、自分に<u>妥協</u>しないことだ。",
-      "options": ["じきょう", "だきょう", "どきょう", "ぜっきょう"],
+      "options": [
+        "じきょう",
+        "だきょう",
+        "どきょう",
+        "ぜっきょう"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (だきょう)\n\n• 妥協（だきょう）：Thỏa hiệp, nhượng bộ, dễ dãi buông xuôi tiêu chuẩn (妥協しない - không được tự thỏa hiệp với bản thân).\n• Chú ý âm On: 妥 đọc là 「だ」 (như 妥当: だとう, 妥協: だきょう).\n\n【Dịch nghĩa】\nCho đến khi biến được nguyện vọng thành hiện thực, tuyệt đối không được tự thỏa hiệp dễ dãi với chính mình."
     },
@@ -61,7 +86,12 @@
       "section": "問題1: 漢字読み",
       "instruction": "＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "渡辺監督の作品はどれも<u>心理描写</u>が抜群だ。",
-      "options": ["もしや", "びょうしゃ", "じっしゃ", "じょうしゃ"],
+      "options": [
+        "もしや",
+        "びょうしゃ",
+        "じっしゃ",
+        "じょうしゃ"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (びょうしゃ)\n\n• 描写（びょうしゃ）：Miêu tả, khắc họa (心理描写: しんりびょうしゃ - miêu tả tâm lý nhân vật).\n• Chữ 描 âm On đọc là 「びょう」 (như 描画: びょうが), 写 đọc là 「しゃ」 (như 写真: しゃしん).\n\n【Dịch nghĩa】\nTất cả các tác phẩm của đạo diễn Watanabe đều có nghệ thuật khắc họa tâm lý nhân vật vô cùng xuất chúng."
     },
@@ -71,7 +101,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "父は重い（ ）に冒されていたが、弱音をはかなかった。",
-      "options": ["病状", "病身", "病", "病体"],
+      "options": [
+        "病状",
+        "病身",
+        "病",
+        "病体"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (病 - やまい)\n\n• Quán dụng từ vựng:「病に冒される（やまいに侵される／冒される）」: Mắc bệnh hiểm nghèo, bị bạo bệnh hủy hoại sức khỏe.\n• 病状 (びょうじょう - tình trạng bệnh tình), 病身 (びょうしん - thân hình gầy yếu ốm bệnh).\n\n【Dịch nghĩa】\nCha tôi tuy bị căn bệnh hiểm nghèo tàn phá sức khỏe nhưng ông chưa từng hé răng than vãn một lời mềm yếu nào."
     },
@@ -81,7 +116,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "交番の手配写真によく似た（ ）の男が立っていた。",
-      "options": ["人相", "顔面", "表情", "面影"],
+      "options": [
+        "人相",
+        "顔面",
+        "表情",
+        "面影"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (人相 - にんそう)\n\n• 人相（にんそう）：Nhân tướng, diện mạo khuôn mặt theo đặc điểm nhận dạng (thường dùng trong điều tra tội phạm: 人相書き, 人相写真).\n• 顔面 (がんめん - cơ mặt/bề mặt khuôn mặt), 表情 (ひょうじょう - biểu cảm nét mặt), 面影 (おもかげ - hình bóng/dấu vết xưa).\n\n【Dịch nghĩa】\nCó một người đàn ông với diện mạo nhân dạng rất giống bức ảnh truy nã dán ở đồn cảnh sát đang đứng đó."
     },
@@ -91,7 +131,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "誤字や脱字がないか、一字一句（ ）する必要がある。",
-      "options": ["指配り", "手配り", "目配り", "見配り"],
+      "options": [
+        "指配り",
+        "手配り",
+        "目配り",
+        "見配り"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (目配り - めくばり)\n\n• 目配りする（めくばり）：Đưa mắt quan sát, để mắt soi xét kỹ càng từng chi tiết nhỏ.\n• 手配り (てくばり - bố trí/chuẩn bị sắp đặt nhân sự).\n\n【Dịch nghĩa】\nCần phải để mắt soi xét kỹ từng câu từng chữ xem có bị nhầm hay sót chữ nào không."
     },
@@ -101,7 +146,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "作家として生計が立てられるようになり、ようやく（ ）を遂げた。",
-      "options": ["真意", "本意", "真心", "本心"],
+      "options": [
+        "真意",
+        "本意",
+        "真心",
+        "本心"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (本意 - ほんい)\n\n• 本意を遂げる（ほんいをとげる）：Toại nguyện mục tiêu đời mình, đạt được tâm nguyện vốn có bấy lâu.\n• 真意 (ý định thực sự ẩn giấu), 真心 (lòng chân thành), 本心 (bản tâm, suy nghĩ thật lòng).\n\n【Dịch nghĩa】\nĐã có thể kiếm sống trang trải bằng nghề nhà văn, cuối cùng tôi cũng đã toại nguyện được tâm nguyện đời mình."
     },
@@ -111,7 +161,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "人に（ ）をかけすぎるのは、本人のためにならないだろう。",
-      "options": ["愛着", "情け", "友情", "友愛"],
+      "options": [
+        "愛着",
+        "情け",
+        "友情",
+        "友愛"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (情け - なさけ)\n\n• 「情けをかける（なさけをかける）」: Bố thí lòng trắc ẩn, rủ lòng thương hại giúp đỡ người khác.\n• 愛着 (quyến luyến/gắn bó đồ vật: 愛着がある), 友情 (tình bạn), 友愛 (tình bằng hữu hữu ái).\n\n【Dịch nghĩa】\nBan phát sự thương hại quá mức cho người khác thì chỉ e không tốt cho tương lai của chính người đó."
     },
@@ -121,7 +176,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "家族で宇宙旅行というのも（ ）未来には実現するであろう。",
-      "options": ["近", "遠", "先", "新"],
+      "options": [
+        "近",
+        "遠",
+        "先",
+        "新"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (近 - 近未来: きんみらい)\n\n• 近未来（きんみらい）：Tương lai gần (thời kỳ tương lai không xa phía trước).\n• Ghép từ vựng: 近未来, 遠未来 (hiếm dùng), 先 (đứng sau danh từ: 旅先, 就職先).\n\n【Dịch nghĩa】\nViệc cả gia đình cùng đi du lịch vũ trụ có lẽ cũng sẽ trở thành hiện thực trong một tương lai không xa."
     },
@@ -131,7 +191,12 @@
       "section": "問題2: 文脈規定",
       "instruction": "（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "駅の西口に出るには、歩道（ ）を渡ると便利だ。",
-      "options": ["路", "通", "線", "橋"],
+      "options": [
+        "路",
+        "通",
+        "線",
+        "橋"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (橋 - 歩道橋: ほどうきょう)\n\n• 歩道橋（ほどうきょう）：Cầu vượt bộ hành bắc qua đường cho người đi bộ.\n• 道路 (đường sá), 通り (con phố), 沿線/路線 (tuyến đường tàu).\n\n【Dịch nghĩa】\nĐể sang phía cổng tây nhà ga, đi qua cây cầu vượt bộ hành sẽ rất tiện lợi."
     },
@@ -141,7 +206,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "4年生は論文のレジュメを<u>おのおの</u>の事務局に提出すること。",
-      "options": ["各自", "各位", "各員", "各氏"],
+      "options": [
+        "各自",
+        "各位",
+        "各員",
+        "各氏"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (各自)\n\n• おのおの（各々）：Từng người, mỗi một người (= 各自: かくじ).\n• 各位 (quý vị/các vị - dùng trong văn thư xưng hô tập thể), 各氏 (các quý ông/quý bà).\n\n【Dịch nghĩa】\nSinh viên năm thứ tư phải nộp bản tóm tắt luận văn đến văn phòng khoa của từng người."
     },
@@ -151,7 +221,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "無職の男との結婚は、娘に<u>きっぱり</u>あきらめさせた。",
-      "options": ["覚悟", "断固", "決意", "無心"],
+      "options": [
+        "覚悟",
+        "断固",
+        "決意",
+        "無心"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (断固)\n\n• きっぱり：Dứt khoát, kiên quyết không dây dưa (= 断固: だんこ, 思い切って).\n• 覚悟 (sự chuẩn bị tâm lý sẵn sàng đối mặt), 決意 (quyết tâm).\n\n【Dịch nghĩa】\nTôi đã bắt con gái phải dứt khoát từ bỏ ý định kết hôn với người đàn ông không có nghề nghiệp đó."
     },
@@ -161,7 +236,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "自分の弱点を教えてくれるのは、友人よりむしろ<u>けむたい</u>と思っている人だ。",
-      "options": ["いたましい", "とぼしい", "けわしい", "うっとうしい"],
+      "options": [
+        "いたましい",
+        "とぼしい",
+        "けわしい",
+        "うっとうしい"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (うっとうしい)\n\n• けむたい（煙たい）：Ngột ngạt khó chịu, cảm thấy phiền toái kiêng dè vì hay bị để ý soi xét (= うっとうしい, 煙たい存在).\n• いたましい (thương tâm/đau lòng), とぼしい (nghèo nàn/thiếu thốn), けわしい (hiểm trở/gay gắt).\n\n【Dịch nghĩa】\nNgười chỉ ra điểm yếu cho bản thân thường là người mà ta cảm thấy khó chịu phiền hà hơn là bạn bè thân thiết."
     },
@@ -171,7 +251,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "健闘むなしく敗れたカーリングチームは、<u>すがすがしい</u>印象を残した。",
-      "options": ["かろやかな", "ほがらかな", "さわやかな", "しとやかな"],
+      "options": [
+        "かろやかな",
+        "ほがらかな",
+        "さわやかな",
+        "しとやかな"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (さわやかな)\n\n• すがすがしい（清々しい）：Trong trẻo, tươi sáng, nhẹ nhõm thanh thản cao thượng (= さわやかな).\n• かろやか (nhẹ nhàng/uyển chuyển), ほがらか (vui vẻ/hồ hởi), しとやか (thục nữ/dịu dàng đoan trang).\n\n【Dịch nghĩa】\nĐội bi đá trên băng dù đã chiến đấu kiên cường nhưng tiếc là thất bại, tuy vậy họ vẫn để lại một ấn tượng vô cùng đẹp đẽ và thanh thản."
     },
@@ -181,7 +266,12 @@
       "section": "問題3: 言い換え類義",
       "instruction": "＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
       "question": "この学校の<u>規則</u>では、オートバイ通学は禁止されている。",
-      "options": ["エチケット", "ルール", "マナー", "ガード"],
+      "options": [
+        "エチケット",
+        "ルール",
+        "マナー",
+        "ガード"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (ルール)\n\n• 規則（きそく）：Quy định, quy tắc, nội quy trường học (= ルール / rule).\n• エチケット (phép lịch sự xã giao), マナー (tác phong cư xử).\n\n【Dịch nghĩa】\nTheo nội quy của trường học này thì việc đi xe máy đến trường bị cấm."
     },
@@ -296,7 +386,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "参議院は衆議院と違い、議会が途中で解散される（ ）。",
-      "options": ["しかない", "次第だ", "ことはない", "ものがない"],
+      "options": [
+        "しかない",
+        "次第だ",
+        "ことはない",
+        "ものがない"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (ことはない)\n\n• Ngữ pháp:「〜ことはない」: Tuyệt đối không bao giờ có chuyện... (Viện thứ dân/Thượng viện khác với Hạ viện ở chỗ không bao giờ bị giải tán giữa chừng).\n\n【Dịch nghĩa】\nThượng viện khác với Hạ viện ở điểm là tuyệt đối không bao giờ có chuyện nghị viện bị giải tán giữa chừng."
     },
@@ -306,7 +401,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "財源がないまま新しい政策を続けても、うまくいく（ ）。",
-      "options": ["までもない", "はずがない", "というものだ", "といったらたい"],
+      "options": [
+        "までもない",
+        "はずがない",
+        "というものだ",
+        "といったらたい"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (はずがない)\n\n• Ngữ pháp:「〜はずがない」: Chắc chắn không thể nào... / Làm sao có lý nào... (không có nguồn thu tài chính mà cứ tiếp tục chính sách mới thì làm sao mà suôn sẻ được).\n\n【Dịch nghĩa】\nNếu cứ tiếp tục triển khai các chính sách mới trong tình trạng không có ngân sách thì chắc chắn không thể nào thành công tốt đẹp được."
     },
@@ -316,7 +416,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "日本は火山が多く、一度噴火したら大きな被害を出し（ ）。",
-      "options": ["かねない", "つつある", "極まる", "恐れがある"],
+      "options": [
+        "かねない",
+        "つつある",
+        "極まる",
+        "恐れがある"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (かねない)\n\n• Ngữ pháp: V-ます (bỏ ます) + 「かねない」: Rất có thể sẽ dẫn tới hậu quả tiêu cực nghiêm trọng (大きな被害を直ちに出しかねない).\n• Chú ý: 「恐れがある」 thường đi trước bởi thể từ điển V-る (出す恐れがある).\n\n【Dịch nghĩa】\nNhật Bản có rất nhiều núi lửa, một khi núi lửa phun trào thì hoàn toàn có thể gây ra những thảm họa thiệt hại nặng nề."
     },
@@ -326,7 +431,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "京都（ ）奈良（ ）、歴史的建造物が多い。",
-      "options": ["につけ／につけ", "といい／といい", "なり／なり", "やら／やら"],
+      "options": [
+        "につけ／につけ",
+        "といい／といい",
+        "なり／なり",
+        "やら／やら"
+      ],
       "answer": 1,
       "explanation": "【正解】2 (といい／といい)\n\n• Ngữ pháp:「N1 といい N2 といい」: Dù là N1 hay N2 thì cũng đều... (đưa ra các ví dụ tiêu biểu mang cùng đặc trưng, thường dùng khi đánh giá nhận xét).\n\n【Dịch nghĩa】\nDù là Kyoto hay Nara thì cũng đều có rất nhiều công trình kiến trúc lịch sử."
     },
@@ -336,7 +446,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "樋口一葉が長生きしていたら、どれほどの作品を書いたか想像（ ）できない。",
-      "options": ["ほど", "ゆえ", "つつ", "だに"],
+      "options": [
+        "ほど",
+        "ゆえ",
+        "つつ",
+        "だに"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (だに)\n\n• Ngữ pháp:「〜だにしない / だにできない」: Thậm chí ngay cả... cũng không (cụm quán dụng:「想像だにできない」: ngay cả tưởng tượng cũng không thể nào mường tượng nổi).\n\n【Dịch nghĩa】\nNếu nữ văn sĩ Higuchi Ichiyo mà sống thọ thì không thể nào tưởng tượng nổi bà sẽ còn để lại cho đời biết bao tác phẩm tuyệt tác nữa."
     },
@@ -346,7 +461,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "モスクワで見た舞台の再演が東京で決まり、懐かしく（ ）。",
-      "options": ["てやまない", "ていかない", "てはならない", "てたまらない"],
+      "options": [
+        "てやまない",
+        "ていかない",
+        "てはならない",
+        "てたまらない"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (てたまらない)\n\n• Ngữ pháp: A-い (bỏ い) + 「くてたまらない」: Vô cùng, hết sức, không kìm nén được cảm xúc dâng trào (懐かしくてたまらない: cồn cào hoài niệm không sao kìm lòng được).\n\n【Dịch nghĩa】\nVở kịch tôi từng xem tại Moscow nay được quyết định tái diễn tại Tokyo, khiến tôi cảm thấy bồi hồi hoài niệm khôn xiết."
     },
@@ -356,7 +476,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "印象派のような絵が描きたくても、素人には描ける（ ）。",
-      "options": ["といったらたい", "限りはない", "わけがない", "きわまりない"],
+      "options": [
+        "といったらたい",
+        "限りはない",
+        "わけがない",
+        "きわまりない"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (わけがない)\n\n• Ngữ pháp:「〜わけがない」: Tuyệt đối không thể nào / Làm sao mà có thể... (vẽ được những bức tranh như trường phái ấn tượng thì người nghiệp dư làm sao mà vẽ nổi).\n\n【Dịch nghĩa】\nDù có muốn vẽ những bức tranh như trường phái ấn tượng đi chăng nữa, thì dân nghiệp dư làm sao mà vẽ nổi cơ chứ."
     },
@@ -381,7 +506,12 @@
       "section": "問題5: 文の文法1",
       "instruction": "次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "これで映画が完成した（ ）には、何かが足りないようだった。",
-      "options": ["ものとする", "ばかり", "に至らず", "ところ"],
+      "options": [
+        "ものとする",
+        "ばかり",
+        "に至らず",
+        "ところ"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (ものとする)\n\n• Ngữ pháp:「〜ものとするには」: Để coi như là / Nếu xem như đã... thì vẫn còn thiếu điều gì đó.\n\n【Dịch nghĩa】\nNếu coi như bộ phim đã được hoàn tất ở mức này, thì dường như vẫn còn cảm thấy thiếu thốn điều gì đó."
     },
@@ -406,7 +536,12 @@
       "section": "問題6: 文の組み立て",
       "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
       "question": "サイバーテロは＿＿ ＿＿ ＿★＿ ＿＿ を与える行為だ。",
-      "options": ["利用して", "ネットワークを", "損害", "情報通信の"],
+      "options": [
+        "利用して",
+        "ネットワークを",
+        "損害",
+        "情報通信の"
+      ],
       "answer": 0,
       "explanation": "【正解】1 (利用して)\n\n• Trật tự ghép câu:\n  サイバーテロは (4 情報通信の) → (2 ネットワークを) → (1 利用して ★) → (3 損害) を与える行為だ。\n\n• Câu hoàn chỉnh:\n  「サイバーテロは、情報通信のネットワークを利用して損害を与える行為だ。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [1].\n\n【Dịch nghĩa】\nKhủng bố không gian mạng là hành vi lợi dụng mạng lưới truyền thông thông tin để gây ra thiệt hại."
     },
@@ -416,7 +551,12 @@
       "section": "問題6: 文の組み立て",
       "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
       "question": "日本人の＿＿ ＿＿ ＿★＿ ＿＿ 地上に帰還した。",
-      "options": ["成功させ", "宇宙飛行士が", "宇宙での", "ミッションを"],
+      "options": [
+        "成功させ",
+        "宇宙飛行士が",
+        "宇宙での",
+        "ミッションを"
+      ],
       "answer": 3,
       "explanation": "【正解】4 (ミッションを)\n\n• Trật tự ghép câu:\n  日本人の (2 宇宙飛行士が) → (3 宇宙での) → (4 ミッションを ★) → (1 成功させ) 地上に帰還した。\n\n• Câu hoàn chỉnh:\n  「日本人の宇宙飛行士が宇宙でのミッションを成功させ、地上に帰還した。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [4].\n\n【Dịch nghĩa】\nNhà du hành vũ trụ người Nhật Bản đã hoàn thành thắng lợi sứ mệnh ngoài không gian và trở về mặt đất an toàn."
     },
@@ -441,7 +581,12 @@
       "section": "問題6: 文の組み立て",
       "instruction": "次の文の ＿＿ に入る最もよいものを、1・2・3・4から一つ選びなさい。（★に入るものはどれか）",
       "question": "遺伝子組み換え作物は＿＿ ＿＿ ＿★＿ ＿＿ などが懸念されている。",
-      "options": ["健康への影響", "安全性に対し", "声があり", "疑問視する"],
+      "options": [
+        "健康への影響",
+        "安全性に対し",
+        "声があり",
+        "疑問視する"
+      ],
       "answer": 2,
       "explanation": "【正解】3 (声があり)\n\n• Trật tự ghép câu:\n  遺伝子組み換え作物は (2 安全性に対し) → (4 疑問視する) → (3 声があり ★) → (1 健康への影響) などが懸念されている。\n\n• Câu hoàn chỉnh:\n  「遺伝子組み換え作物は、安全性に対し疑問視する声があり、健康への影響などが懸念されている。」\n\n• Vị trí ngôi sao ★ là vị trí thứ 3, tương ứng với phương án [3].\n\n【Dịch nghĩa】\nCây trồng biến đổi gen đang có những luồng ý kiến đặt dấu hỏi về tính an toàn và người ta lo ngại về ảnh hưởng của nó đối với sức khỏe con người."
     },
@@ -489,7 +634,8 @@
         "貼り付けることとか"
       ],
       "answer": 0,
-      "explanation": "【正解】1 (貼り付けたりするのも)\n\n• Cấu trúc: Liệt kê hành động gây cản trở thoát nhiệt:「上部に物を置いたり、マグネットでたくさんのメモを貼り付けたりするのも、放熱を妨げる」 (việc để đồ lên nóc tủ hoặc dán quá nhiều giấy nhớ bằng nam châm cũng cản trở quá trình tản nhiệt).\n\n【Dịch nghĩa】\nViệc đặt đồ vật lên nóc tủ lạnh hay dán nhiều giấy ghi chú bằng nam châm cũng sẽ cản trở quá trình tản nhiệt của tủ."
+      "explanation": "【正解】1 (貼り付けたりするのも)\n\n• Cấu trúc: Liệt kê hành động gây cản trở thoát nhiệt:「上部に物を置いたり、マグネットでたくさんのメモを貼り付けたりするのも、放熱を妨げる」 (việc để đồ lên nóc tủ hoặc dán quá nhiều giấy nhớ bằng nam châm cũng cản trở quá trình tản nhiệt).\n\n【Dịch nghĩa】\nViệc đặt đồ vật lên nóc tủ lạnh hay dán nhiều giấy ghi chú bằng nam châm cũng sẽ cản trở quá trình tản nhiệt của tủ.",
+      "passage": "省エネの夏。資源エネルギー庁の調査では、家庭での機器別の消費電力割合を比較すると、冷蔵庫は14%で最も大きい。どんな節電策が【41】。\n日本消費生活アドバイザー・コンサルタント協会理事の大石美奈子さんは「まずは置き場所。壁にぴったりつけないでください」と話す。隙間がないと、庫内で奪った熱を放熱しにくくなり、無駄に電力を使う。5ミリ～1センチ以上離すのが一般的だが、製品ごとに異なるので説明書で確認を。上部に物を置いたり、マグネットでたくさんのメモを【42】放熱を妨げるという。\nドアの開閉の回数や時間を少なくできるかもポイント。整理整頓は欠かせない。「整理してあれば、パッと取り出してすぐ閉められる」と大石さん。その上で「トレーやカゴを活用しては」と提案する。【43-a】、朝食用の納豆や漬物の器をひとつのトレーに入れるなど、食事ごとに使うものを【43-b】、すぐ取り出せる。もちろん、庫内の詰め込みすぎは禁物だ。\n盲点となりがちだが、節電効果が大きいのが自動製氷機の扱いと「設定温度」の切り替え。「自動製氷機を使わなければ、消費電力を抑えられる」と大石さん。電力使用が集中する昼間は避け、夜中に【44】。三菱電機によると、自動製氷する製氷室を使わないと、冷蔵庫の消費電力を約8%減らせるという。\nさらに大石さんは、庫内の設定温度は「夏でも『中』で大丈夫」という。パナソニックによると「『強』は、買い物に行った直後に冷えていない物をたくさん入れるときや常温の飲み物を早く冷やしたいときに使えます」と説明する。\n効果について意見が分かれるのは、冷気が外に漏れないよう庫内にかけるカーテンだ。東京都江戸川区の「省エネガイドブック」は「非常に効果がある」と推奨。区内計330世帯でモニター実験した結果、年間で1世帯あたり2990円分の省エネ効果があった。ただ、日本電機工業会は「冷蔵庫はカーテンの設置を想定して製造されておらず、省エネ効果や鮮度保全は保証できない」と指摘。大石さんは①庫内の物を取り出しづらくなり、【45-a】ドアを開けている時間が【45-b】いないか②ドアポケットを使うなら、カーテンをつけてもポケットに十分冷気があたっているか、に注意が必要と指摘。製品によっては温度センサーなどが誤検知する恐れがあり「メーカーに確認を」と話す。\n（「朝日新聞」2012年6月30日付）"
     },
     {
       "id": "d03-q43",
@@ -504,7 +650,8 @@
         "a きっと ／ b まとめるだろうから"
       ],
       "answer": 2,
-      "explanation": "【正解】3 (a 例えば ／ b まとめておけば)\n\n• Ngữ cảnh ví dụ cụ thể: Chẳng hạn (a: 例えば), nếu gom sẵn các món đồ ăn cùng vào một khay (b: まとめておけば) thì sẽ lấy ra rất nhanh.\n\n【Dịch nghĩa】\nChẳng hạn như, nếu gom sẵn đồ ăn sáng như natto và dưa muối vào chung một chiếc khay thì khi dùng chỉ việc lấy cả khay ra rất nhanh gọn."
+      "explanation": "【正解】3 (a 例えば ／ b まとめておけば)\n\n• Ngữ cảnh ví dụ cụ thể: Chẳng hạn (a: 例えば), nếu gom sẵn các món đồ ăn cùng vào một khay (b: まとめておけば) thì sẽ lấy ra rất nhanh.\n\n【Dịch nghĩa】\nChẳng hạn như, nếu gom sẵn đồ ăn sáng như natto và dưa muối vào chung một chiếc khay thì khi dùng chỉ việc lấy cả khay ra rất nhanh gọn.",
+      "passage": "省エネの夏。資源エネルギー庁の調査では、家庭での機器別の消費電力割合を比較すると、冷蔵庫は14%で最も大きい。どんな節電策が【41】。\n日本消費生活アドバイザー・コンサルタント協会理事の大石美奈子さんは「まずは置き場所。壁にぴったりつけないでください」と話す。隙間がないと、庫内で奪った熱を放熱しにくくなり、無駄に電力を使う。5ミリ～1センチ以上離すのが一般的だが、製品ごとに異なるので説明書で確認を。上部に物を置いたり、マグネットでたくさんのメモを【42】放熱を妨げるという。\nドアの開閉の回数や時間を少なくできるかもポイント。整理整頓は欠かせない。「整理してあれば、パッと取り出してすぐ閉められる」と大石さん。その上で「トレーやカゴを活用しては」と提案する。【43-a】、朝食用の納豆や漬物の器をひとつのトレーに入れるなど、食事ごとに使うものを【43-b】、すぐ取り出せる。もちろん、庫内の詰め込みすぎは禁物だ。\n盲点となりがちだが、節電効果が大きいのが自動製氷機の扱いと「設定温度」の切り替え。「自動製氷機を使わなければ、消費電力を抑えられる」と大石さん。電力使用が集中する昼間は避け、夜中に【44】。三菱電機によると、自動製氷する製氷室を使わないと、冷蔵庫の消費電力を約8%減らせるという。\nさらに大石さんは、庫内の設定温度は「夏でも『中』で大丈夫」という。パナソニックによると「『強』は、買い物に行った直後に冷えていない物をたくさん入れるときや常温の飲み物を早く冷やしたいときに使えます」と説明する。\n効果について意見が分かれるのは、冷気が外に漏れないよう庫内にかけるカーテンだ。東京都江戸川区の「省エネガイドブック」は「非常に効果がある」と推奨。区内計330世帯でモニター実験した結果、年間で1世帯あたり2990円分の省エネ効果があった。ただ、日本電機工業会は「冷蔵庫はカーテンの設置を想定して製造されておらず、省エネ効果や鮮度保全は保証できない」と指摘。大石さんは①庫内の物を取り出しづらくなり、【45-a】ドアを開けている時間が【45-b】いないか②ドアポケットを使うなら、カーテンをつけてもポケットに十分冷気があたっているか、に注意が必要と指摘。製品によっては温度センサーなどが誤検知する恐れがあり「メーカーに確認を」と話す。\n（「朝日新聞」2012年6月30日付）"
     },
     {
       "id": "d03-q44",
@@ -519,7 +666,8 @@
         "使わされるという手はある"
       ],
       "answer": 0,
-      "explanation": "【正解】1 (使うという手もある)\n\n• Quán dụng:「〜という手もある」: Cũng có một phương án/cách thức là... (tránh dùng giờ cao điểm ban ngày mà chọn bật chế độ làm đá tự động vào ban đêm).\n\n【Dịch nghĩa】\nTránh sử dụng vào ban ngày khi nhu cầu điện đạt đỉnh, mà cũng có một giải pháp hữu hiệu là cho máy làm đá hoạt động vào ban đêm."
+      "explanation": "【正解】1 (使うという手もある)\n\n• Quán dụng:「〜という手もある」: Cũng có một phương án/cách thức là... (tránh dùng giờ cao điểm ban ngày mà chọn bật chế độ làm đá tự động vào ban đêm).\n\n【Dịch nghĩa】\nTránh sử dụng vào ban ngày khi nhu cầu điện đạt đỉnh, mà cũng có một giải pháp hữu hiệu là cho máy làm đá hoạt động vào ban đêm.",
+      "passage": "省エネの夏。資源エネルギー庁の調査では、家庭での機器別の消費電力割合を比較すると、冷蔵庫は14%で最も大きい。どんな節電策が【41】。\n日本消費生活アドバイザー・コンサルタント協会理事の大石美奈子さんは「まずは置き場所。壁にぴったりつけないでください」と話す。隙間がないと、庫内で奪った熱を放熱しにくくなり、無駄に電力を使う。5ミリ～1センチ以上離すのが一般的だが、製品ごとに異なるので説明書で確認を。上部に物を置いたり、マグネットでたくさんのメモを【42】放熱を妨げるという。\nドアの開閉の回数や時間を少なくできるかもポイント。整理整頓は欠かせない。「整理してあれば、パッと取り出してすぐ閉められる」と大石さん。その上で「トレーやカゴを活用しては」と提案する。【43-a】、朝食用の納豆や漬物の器をひとつのトレーに入れるなど、食事ごとに使うものを【43-b】、すぐ取り出せる。もちろん、庫内の詰め込みすぎは禁物だ。\n盲点となりがちだが、節電効果が大きいのが自動製氷機の扱いと「設定温度」の切り替え。「自動製氷機を使わなければ、消費電力を抑えられる」と大石さん。電力使用が集中する昼間は避け、夜中に【44】。三菱電機によると、自動製氷する製氷室を使わないと、冷蔵庫の消費電力を約8%減らせるという。\nさらに大石さんは、庫内の設定温度は「夏でも『中』で大丈夫」という。パナソニックによると「『強』は、買い物に行った直後に冷えていない物をたくさん入れるときや常温の飲み物を早く冷やしたいときに使えます」と説明する。\n効果について意見が分かれるのは、冷気が外に漏れないよう庫内にかけるカーテンだ。東京都江戸川区の「省エネガイドブック」は「非常に効果がある」と推奨。区内計330世帯でモニター実験した結果、年間で1世帯あたり2990円分の省エネ効果があった。ただ、日本電機工業会は「冷蔵庫はカーテンの設置を想定して製造されておらず、省エネ効果や鮮度保全は保証できない」と指摘。大石さんは①庫内の物を取り出しづらくなり、【45-a】ドアを開けている時間が【45-b】いないか②ドアポケットを使うなら、カーテンをつけてもポケットに十分冷気があたっているか、に注意が必要と指摘。製品によっては温度センサーなどが誤検知する恐れがあり「メーカーに確認を」と話す。\n（「朝日新聞」2012年6月30日付）"
     },
     {
       "id": "d03-q45",
@@ -534,7 +682,8 @@
         "a かえって ／ b 長くなって"
       ],
       "answer": 3,
-      "explanation": "【正解】4 (a かえって ／ b 長くなって)\n\n• Ngữ cảnh trái ngược ngoài mong muốn: Rèm chắn khiến khó lấy đồ, ngược lại (a: かえって) thời gian mở cửa tủ lạnh lại bị kéo dài ra (b: 長くなって) thì sẽ gây phản tác dụng tốn điện hơn.\n\n【Dịch nghĩa】\nCần lưu ý xem rèm che có làm việc lấy đồ trong tủ trở nên bất tiện và ngược lại làm cho thời gian mở cửa tủ lạnh bị kéo dài thêm hay không."
+      "explanation": "【正解】4 (a かえって ／ b 長くなって)\n\n• Ngữ cảnh trái ngược ngoài mong muốn: Rèm chắn khiến khó lấy đồ, ngược lại (a: かえって) thời gian mở cửa tủ lạnh lại bị kéo dài ra (b: 長くなって) thì sẽ gây phản tác dụng tốn điện hơn.\n\n【Dịch nghĩa】\nCần lưu ý xem rèm che có làm việc lấy đồ trong tủ trở nên bất tiện và ngược lại làm cho thời gian mở cửa tủ lạnh bị kéo dài thêm hay không.",
+      "passage": "省エネの夏。資源エネルギー庁の調査では、家庭での機器別の消費電力割合を比較すると、冷蔵庫は14%で最も大きい。どんな節電策が【41】。\n日本消費生活アドバイザー・コンサルタント協会理事の大石美奈子さんは「まずは置き場所。壁にぴったりつけないでください」と話す。隙間がないと、庫内で奪った熱を放熱しにくくなり、無駄に電力を使う。5ミリ～1センチ以上離すのが一般的だが、製品ごとに異なるので説明書で確認を。上部に物を置いたり、マグネットでたくさんのメモを【42】放熱を妨げるという。\nドアの開閉の回数や時間を少なくできるかもポイント。整理整頓は欠かせない。「整理してあれば、パッと取り出してすぐ閉められる」と大石さん。その上で「トレーやカゴを活用しては」と提案する。【43-a】、朝食用の納豆や漬物の器をひとつのトレーに入れるなど、食事ごとに使うものを【43-b】、すぐ取り出せる。もちろん、庫内の詰め込みすぎは禁物だ。\n盲点となりがちだが、節電効果が大きいのが自動製氷機の扱いと「設定温度」の切り替え。「自動製氷機を使わなければ、消費電力を抑えられる」と大石さん。電力使用が集中する昼間は避け、夜中に【44】。三菱電機によると、自動製氷する製氷室を使わないと、冷蔵庫の消費電力を約8%減らせるという。\nさらに大石さんは、庫内の設定温度は「夏でも『中』で大丈夫」という。パナソニックによると「『強』は、買い物に行った直後に冷えていない物をたくさん入れるときや常温の飲み物を早く冷やしたいときに使えます」と説明する。\n効果について意見が分かれるのは、冷気が外に漏れないよう庫内にかけるカーテンだ。東京都江戸川区の「省エネガイドブック」は「非常に効果がある」と推奨。区内計330世帯でモニター実験した結果、年間で1世帯あたり2990円分の省エネ効果があった。ただ、日本電機工業会は「冷蔵庫はカーテンの設置を想定して製造されておらず、省エネ効果や鮮度保全は保証できない」と指摘。大石さんは①庫内の物を取り出しづらくなり、【45-a】ドアを開けている時間が【45-b】いないか②ドアポケットを使うなら、カーテンをつけてもポケットに十分冷気があたっているか、に注意が必要と指摘。製品によっては温度センサーなどが誤検知する恐れがあり「メーカーに確認を」と話す。\n（「朝日新聞」2012年6月30日付）"
     }
   ]
 }
