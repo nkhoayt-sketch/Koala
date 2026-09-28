@@ -670,27 +670,33 @@
       <div class="flex-1 overflow-y-auto p-5 sm:p-6 space-y-5">
         
         <!-- History Review Banner (shown if exam was previously completed) -->
-        <div id="pretest-history-banner" class="hidden p-4 rounded-2xl bg-emerald-50/90 border border-emerald-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-xs">
-              ✓
-            </div>
-            <div>
-              <div class="text-xs font-bold text-emerald-950 flex items-center gap-2">
-                <span>Lịch sử làm bài trước</span>
-                <span class="text-[10px] font-normal text-emerald-700 bg-white px-1.5 py-0.5 rounded border border-emerald-200" id="pretest-history-date">
-                  --
-                </span>
+        <div id="pretest-history-banner" class="hidden p-4 rounded-2xl bg-emerald-50/90 border border-emerald-200 flex flex-col gap-3 shadow-xs">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-xs">
+                ✓
               </div>
-              <div class="text-xs text-emerald-800 mt-0.5">
-                Kết quả: <strong id="pretest-history-score" class="text-emerald-950 font-black text-sm">--</strong>
+              <div>
+                <div class="text-xs font-bold text-emerald-950 flex items-center gap-2">
+                  <span>Lịch sử làm bài trước</span>
+                  <span class="text-[10px] font-normal text-emerald-700 bg-white px-1.5 py-0.5 rounded border border-emerald-200" id="pretest-history-date">
+                    --
+                  </span>
+                </div>
+                <div class="text-xs text-emerald-800 mt-0.5">
+                  Tổng điểm đã làm: <strong id="pretest-history-score" class="text-emerald-950 font-black text-sm">--</strong>
+                </div>
               </div>
             </div>
+            <button type="button" id="btn-pretest-review-banner" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition shadow-2xs shrink-0 flex items-center gap-1.5 cursor-pointer">
+              <span>🔍</span>
+              <span>Xem lại toàn bộ</span>
+            </button>
           </div>
-          <button type="button" id="btn-pretest-review-banner" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition shadow-2xs shrink-0 flex items-center gap-1.5">
-            <span>🔍</span>
-            <span>Xem lại bài làm cũ</span>
-          </button>
+          <!-- Section-by-section history badges -->
+          <div id="pretest-history-sections" class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2.5 border-t border-emerald-200/80">
+            <!-- Dynamically rendered in openPretestModal -->
+          </div>
         </div>
         
         <!-- Step 1: Chọn phạm vi bài thi (3 Checkboxes linh hoạt) -->

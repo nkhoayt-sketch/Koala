@@ -410,7 +410,8 @@ class App {
       const isActive = this.currentCourse === 'n2' && this.currentN2Exam && this.currentN2Exam.id === item.id;
       const isAvailable = item.available;
       const history = storage.getExamHistoryRecord(item.id);
-      const isDone = !!history;
+      const isDone = !!history && ((history.overall?.totalQuestions > 0) || (history.sections && Object.values(history.sections).some(s => s && s.completed)));
+      const badgeTitle = isDone ? storage.formatExamHistoryBadge(history, item) : 'Chưa làm';
 
       return `
         <li>
@@ -437,8 +438,8 @@ class App {
             <div class="shrink-0 flex items-center gap-1.5 ml-2">
               <span class="active-indicator w-2 h-2 rounded-full hidden"></span>
               ${isDone ? `
-                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded-full ${isActive ? 'bg-white text-emerald-800' : 'bg-emerald-100 text-emerald-800 border border-emerald-200'}">
-                  ✓ ${history.lastScore}/${history.totalQuestions}
+                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded-full ${isActive ? 'bg-white text-emerald-800' : 'bg-emerald-100 text-emerald-800 border border-emerald-200'}" title="${badgeTitle}">
+                  ✓ ${history.overall?.totalScore ?? history.lastScore}/${history.overall?.totalQuestions ?? history.totalQuestions}
                 </span>
               ` : `
                 <span class="text-[9px] font-medium px-1.5 py-0.5 rounded ${isActive ? 'text-white/80' : 'text-slate-400'}">
@@ -620,7 +621,8 @@ class App {
       const readyExams = this.n2Exams.filter(e => e.id === 'n2-2025-12' || e.id === 'n2-2025-07' || e.id === 'n2-2023-12');
       this.homeN2ReadyList.innerHTML = readyExams.map(exam => {
         const history = storage.getExamHistoryRecord(exam.id);
-        const isDone = !!history;
+        const isDone = !!history && ((history.overall?.totalQuestions > 0) || (history.sections && Object.values(history.sections).some(s => s && s.completed)));
+        const badgeText = isDone ? storage.formatExamHistoryBadge(history, exam) : 'Chưa làm';
         return `
           <button type="button" 
                   class="btn-home-launch-exam w-full p-2.5 rounded-xl border border-slate-200 hover:border-rose-300 bg-slate-50/80 hover:bg-rose-50/40 text-left transition flex items-center justify-between group active:scale-98"
@@ -636,8 +638,8 @@ class App {
                 <div class="text-[10px] text-slate-400 mt-0.5 flex flex-wrap items-center gap-2">
                   <span>${exam.listeningCount ? `${exam.totalQuestions} câu • Đầy đủ 3 phần (có Audio 🎧)` : `${exam.totalQuestions || 56} câu • Split-View`}</span>
                   ${isDone ? `
-                    <span class="inline-flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">
-                      ✓ Đã làm: ${history.lastScore}/${history.totalQuestions} (${history.percentage}%)
+                    <span class="inline-flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">
+                      ✓ ${badgeText}
                     </span>
                   ` : `
                     <span class="inline-flex items-center text-[10px] font-medium px-1.5 py-0.2 rounded-full bg-slate-100 text-slate-500 border border-slate-200">
@@ -672,7 +674,8 @@ class App {
       const readyExams = this.n2Exams.filter(e => e.standardized || e.available);
       this.n2PickerReadyList.innerHTML = readyExams.map(exam => {
         const history = storage.getExamHistoryRecord(exam.id);
-        const isDone = !!history;
+        const isDone = !!history && ((history.overall?.totalQuestions > 0) || (history.sections && Object.values(history.sections).some(s => s && s.completed)));
+        const badgeText = isDone ? storage.formatExamHistoryBadge(history, exam) : 'Chưa làm';
         return `
           <div class="p-3.5 sm:p-4 rounded-2xl border-2 border-rose-300 bg-gradient-to-br from-rose-50/70 via-white to-amber-50/40 shadow-xs hover:shadow-md transition flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="space-y-1">
@@ -686,7 +689,7 @@ class App {
                 </span>
                 ${isDone ? `
                   <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
-                    ✓ Đã làm: ${history.lastScore}/${history.totalQuestions} (${history.percentage}%)
+                    ✓ ${badgeText}
                   </span>
                 ` : `
                   <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 border border-slate-200">
@@ -727,15 +730,16 @@ class App {
       }
       this.n2PickerOtherList.innerHTML = otherExams.map(exam => {
         const history = storage.getExamHistoryRecord(exam.id);
-        const isDone = !!history;
+        const isDone = !!history && ((history.overall?.totalQuestions > 0) || (history.sections && Object.values(history.sections).some(s => s && s.completed)));
+        const badgeText = isDone ? storage.formatExamHistoryBadge(history, exam) : 'Chưa làm';
         return `
           <div class="px-3 py-2 rounded-xl bg-white border border-slate-100 flex items-center justify-between text-xs hover:bg-slate-50/70 transition">
             <div class="flex items-center gap-2">
               <span class="font-semibold text-slate-700">${exam.title}</span>
               <span class="text-[10px] text-slate-400">(${exam.totalQuestions || 56} câu)</span>
               ${isDone ? `
-                <span class="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">
-                  ✓ Đã làm: ${history.lastScore}/${history.totalQuestions} (${history.percentage}%)
+                <span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">
+                  ✓ ${badgeText}
                 </span>
               ` : `
                 <span class="text-[10px] font-medium px-1.5 py-0.2 rounded bg-slate-100 text-slate-400">
@@ -861,41 +865,84 @@ class App {
     if (this.pretestModalLevel) this.pretestModalLevel.textContent = examMeta.level || 'JLPT N2';
 
     const history = storage.getExamHistoryRecord(examMeta.id);
+    const hasAnyCompleted = history && history.sections && Object.values(history.sections).some(s => s && s.completed);
 
     // Show or hide History Review Banner & Buttons
     if (this.pretestHistoryBanner) {
-      if (history) {
+      if (hasAnyCompleted) {
         this.pretestHistoryBanner.classList.remove('hidden');
-        if (this.pretestHistoryDate) this.pretestHistoryDate.textContent = history.completedAt || '--';
+        if (this.pretestHistoryDate) this.pretestHistoryDate.textContent = history.completedAt || history.overall?.lastUpdated || '--';
         if (this.pretestHistoryScore) {
-          this.pretestHistoryScore.textContent = `${history.lastScore}/${history.totalQuestions} (${history.percentage}%)`;
+          const totalScore = history.overall?.totalScore ?? history.lastScore ?? 0;
+          const totalQuestions = history.overall?.totalQuestions ?? history.totalQuestions ?? 0;
+          const pct = totalQuestions > 0 ? Math.round((totalScore / totalQuestions) * 100) : 0;
+          this.pretestHistoryScore.textContent = `${totalScore}/${totalQuestions} (${pct}%)`;
+        }
+
+        const sectionsContainer = document.getElementById('pretest-history-sections');
+        if (sectionsContainer && history.sections) {
+          const secGoi = history.sections.goi_bunpou;
+          const secDokkai = history.sections.dokkai;
+          const secChoukai = history.sections.choukai;
+
+          sectionsContainer.innerHTML = `
+            <div class="p-2.5 rounded-xl ${secGoi?.completed ? 'bg-white border border-emerald-200' : 'bg-slate-50 border border-slate-200/70'} flex flex-col justify-between gap-1.5">
+              <div>
+                <div class="text-[11px] font-bold text-slate-800">1. Từ vựng & Ngữ pháp</div>
+                <div class="text-xs ${secGoi?.completed ? 'font-extrabold text-emerald-700' : 'text-slate-400 font-medium'} mt-0.5">
+                  ${secGoi?.completed ? `✓ ${secGoi.score}/${secGoi.total} câu` : 'Chưa làm'}
+                </div>
+              </div>
+              ${secGoi?.completed ? `
+                <button type="button" class="btn-review-section text-[10px] font-bold text-indigo-700 hover:text-indigo-900 bg-indigo-50 hover:bg-indigo-100 px-2 py-1 rounded-lg transition self-start cursor-pointer flex items-center gap-1" data-section="vocab_grammar">
+                  <span>🔍 Xem lại</span>
+                </button>
+              ` : ''}
+            </div>
+
+            <div class="p-2.5 rounded-xl ${secDokkai?.completed ? 'bg-white border border-emerald-200' : 'bg-slate-50 border border-slate-200/70'} flex flex-col justify-between gap-1.5">
+              <div>
+                <div class="text-[11px] font-bold text-slate-800">2. Đọc hiểu</div>
+                <div class="text-xs ${secDokkai?.completed ? 'font-extrabold text-emerald-700' : 'text-slate-400 font-medium'} mt-0.5">
+                  ${secDokkai?.completed ? `✓ ${secDokkai.score}/${secDokkai.total} câu` : 'Chưa làm'}
+                </div>
+              </div>
+              ${secDokkai?.completed ? `
+                <button type="button" class="btn-review-section text-[10px] font-bold text-indigo-700 hover:text-indigo-900 bg-indigo-50 hover:bg-indigo-100 px-2 py-1 rounded-lg transition self-start cursor-pointer flex items-center gap-1" data-section="reading">
+                  <span>🔍 Xem lại</span>
+                </button>
+              ` : ''}
+            </div>
+
+            <div class="p-2.5 rounded-xl ${secChoukai?.completed ? 'bg-white border border-emerald-200' : 'bg-slate-50 border border-slate-200/70'} flex flex-col justify-between gap-1.5">
+              <div>
+                <div class="text-[11px] font-bold text-slate-800">3. Nghe hiểu</div>
+                <div class="text-xs ${secChoukai?.completed ? 'font-extrabold text-emerald-700' : 'text-slate-400 font-medium'} mt-0.5">
+                  ${secChoukai?.completed ? `✓ ${secChoukai.score}/${secChoukai.total} câu` : 'Chưa làm'}
+                </div>
+              </div>
+              ${secChoukai?.completed ? `
+                <button type="button" class="btn-review-section text-[10px] font-bold text-indigo-700 hover:text-indigo-900 bg-indigo-50 hover:bg-indigo-100 px-2 py-1 rounded-lg transition self-start cursor-pointer flex items-center gap-1" data-section="listening">
+                  <span>🔍 Xem lại</span>
+                </button>
+              ` : ''}
+            </div>
+          `;
+
+          sectionsContainer.querySelectorAll('.btn-review-section').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              const sec = btn.getAttribute('data-section');
+              this.reviewOldExam(examMeta, {
+                vocab_grammar: sec === 'vocab_grammar',
+                reading: sec === 'reading',
+                listening: sec === 'listening'
+              });
+            });
+          });
         }
       } else {
         this.pretestHistoryBanner.classList.add('hidden');
-      }
-    }
-
-    if (this.btnPretestRetake) {
-      if (history) {
-        this.btnPretestRetake.classList.remove('hidden');
-      } else {
-        this.btnPretestRetake.classList.add('hidden');
-      }
-    }
-
-    if (this.btnPretestReviewBtn) {
-      if (history) {
-        this.btnPretestReviewBtn.classList.remove('hidden');
-      } else {
-        this.btnPretestReviewBtn.classList.add('hidden');
-      }
-    }
-
-    if (this.btnStartPretest) {
-      if (history) {
-        this.btnStartPretest.classList.add('hidden');
-      } else {
-        this.btnStartPretest.classList.remove('hidden');
       }
     }
 
@@ -1009,6 +1056,60 @@ class App {
     if (this.pretestSummaryParts) this.pretestSummaryParts.textContent = partsSummary;
     if (this.pretestSummaryQuestions) this.pretestSummaryQuestions.textContent = `${totalQuestions} câu`;
     if (this.pretestSummaryTime) this.pretestSummaryTime.textContent = `${durationMinutes} phút`;
+
+    // Smart Footer Buttons according to Requirement 4:
+    // - If selected sections are all completed -> Show "Làm lại phần đã chọn" and "Xem lại phần này", Hide "Bắt đầu làm bài"
+    // - If selected sections are not yet completed -> Show "Bắt đầu làm bài", Hide "Làm lại" and "Xem lại"
+    // - If combination of completed and uncompleted -> Show "Bắt đầu làm bài" (primary) and "Làm lại"
+    const history = meta.id ? storage.getExamHistoryRecord(meta.id) : null;
+    const secGoi = !!history?.sections?.goi_bunpou?.completed;
+    const secDokkai = !!history?.sections?.dokkai?.completed;
+    const secChoukai = !!history?.sections?.choukai?.completed;
+
+    const allSelectedCompleted = 
+      (!hasVocab || secGoi) && 
+      (!hasReading || secDokkai) && 
+      (!hasListening || secChoukai) &&
+      (hasVocab || hasReading || hasListening) &&
+      ((hasVocab && secGoi) || (hasReading && secDokkai) || (hasListening && secChoukai));
+
+    const anySelectedCompleted = 
+      (hasVocab && secGoi) || 
+      (hasReading && secDokkai) || 
+      (hasListening && secChoukai);
+
+    if (allSelectedCompleted) {
+      if (this.btnStartPretest) this.btnStartPretest.classList.add('hidden');
+      if (this.btnPretestRetake) {
+        this.btnPretestRetake.classList.remove('hidden');
+        this.btnPretestRetake.innerHTML = `<span>🔄 Làm lại phần đã chọn</span>`;
+      }
+      if (this.btnPretestReviewBtn) {
+        this.btnPretestReviewBtn.classList.remove('hidden');
+        this.btnPretestReviewBtn.innerHTML = `<span>🔍 Xem lại phần này</span>`;
+      }
+    } else {
+      if (this.btnStartPretest) {
+        this.btnStartPretest.classList.remove('hidden');
+        this.btnStartPretest.innerHTML = `<span>🚀 Bắt đầu làm bài</span>`;
+      }
+      if (this.btnPretestRetake) {
+        if (anySelectedCompleted) {
+          this.btnPretestRetake.classList.remove('hidden');
+          this.btnPretestRetake.innerHTML = `<span>🔄 Làm lại phần đã chọn</span>`;
+        } else {
+          this.btnPretestRetake.classList.add('hidden');
+        }
+      }
+      if (this.btnPretestReviewBtn) {
+        if (anySelectedCompleted) {
+          this.btnPretestReviewBtn.classList.remove('hidden');
+          this.btnPretestReviewBtn.innerHTML = `<span>🔍 Xem lại phần đã xong</span>`;
+        } else {
+          this.btnPretestReviewBtn.classList.add('hidden');
+        }
+      }
+    }
   }
 
   setPretestModeSelection(mode) {
@@ -1049,27 +1150,30 @@ class App {
 
   async retakeExam(examMeta = this.pendingN2ExamMeta) {
     if (!examMeta) return;
-    const proceed = confirm(`Làm lại từ đầu đề ${examMeta.title}? Toàn bộ câu trả lời và kết quả lần trước sẽ được làm mới.`);
+
+    const scopes = {
+      vocab_grammar: this.cbPretestVocab ? this.cbPretestVocab.checked : true,
+      reading: this.cbPretestReading ? this.cbPretestReading.checked : false,
+      listening: this.cbPretestListening ? this.cbPretestListening.checked : false
+    };
+
+    const sectionKeys = [];
+    if (scopes.vocab_grammar) sectionKeys.push('goi_bunpou');
+    if (scopes.reading) sectionKeys.push('dokkai');
+    if (scopes.listening) sectionKeys.push('choukai');
+    if (sectionKeys.length === 0) sectionKeys.push('goi_bunpou');
+
+    const sectionNames = storage.getSectionDisplayNames(sectionKeys);
+    const proceed = confirm(`Làm lại phần ${sectionNames}? Kết quả của các phần thi khác vẫn sẽ được giữ nguyên.`);
     if (!proceed) return;
 
-    // 1. Remove from koala_exam_history
-    storage.removeExamHistoryRecord(examMeta.id);
+    // 1. Reset ONLY selected sections in storage
+    storage.resetExamSection(examMeta.id, sectionKeys);
 
-    // 2. Clear local storage keys for this exam
-    const baseId = examMeta.id;
-    storage.resetDay(baseId);
-    storage.resetDay(`${baseId}_vocab_grammar`);
-    storage.resetDay(`${baseId}_full`);
-    storage.resetDay(`${baseId}_reading`);
-    storage.resetDay(`${baseId}_listening`);
-    localStorage.removeItem(`n1_quiz_exam_seconds_${baseId}`);
-    localStorage.removeItem(`n1_quiz_exam_seconds_${baseId}_vocab_grammar`);
-    localStorage.removeItem(`n1_quiz_exam_seconds_${baseId}_full`);
+    // 2. Dispatch event to update home dashboard and sidebar
+    window.dispatchEvent(new CustomEvent('koala:exam-reset', { detail: { examId: examMeta.id, sections: sectionKeys } }));
 
-    // 3. Dispatch event to update home dashboard and sidebar
-    window.dispatchEvent(new CustomEvent('koala:exam-reset', { detail: { examId: examMeta.id } }));
-
-    // 4. Reset quizEngine internal state if it matches this exam
+    // 3. Reset quizEngine internal state if it matches this exam
     if (this.quizEngine) {
       this.quizEngine.userAnswers = {};
       this.quizEngine.userFlags = {};
@@ -1081,19 +1185,14 @@ class App {
     this.closePretestModal();
     this.currentQuestionIndex = 0;
 
-    const scopes = {
-      vocab_grammar: this.cbPretestVocab ? this.cbPretestVocab.checked : true,
-      reading: this.cbPretestReading ? this.cbPretestReading.checked : false,
-      listening: this.cbPretestListening ? this.cbPretestListening.checked : false
-    };
     const selectedMode = document.querySelector('input[name="pretest-mode"]:checked')?.value || 'practice';
 
     this.switchView('TEST');
     await this.loadN2Exam(examMeta, scopes, selectedMode);
-    this.showToast(`Bắt đầu làm lại đề ${examMeta.title}!`, 'info');
+    this.showToast(`Bắt đầu làm lại phần ${sectionNames} (${examMeta.title})!`, 'info');
   }
 
-  async reviewOldExam(examMeta = this.pendingN2ExamMeta) {
+  async reviewOldExam(examMeta = this.pendingN2ExamMeta, reviewScopes = null) {
     if (!examMeta) return;
     const history = storage.getExamHistoryRecord(examMeta.id);
     this.closePretestModal();
@@ -1103,15 +1202,30 @@ class App {
       this.quizEngine.currentQuestionIndex = 0;
     }
 
-    const scopes = {
-      vocab_grammar: true,
-      reading: history && history.totalQuestions > (examMeta.vocabGrammarCount || 51),
-      listening: false
-    };
+    let scopes;
+    if (reviewScopes) {
+      scopes = reviewScopes;
+    } else {
+      // Default: review all sections that have completed: true
+      const hasGoi = !!history?.sections?.goi_bunpou?.completed;
+      const hasDokkai = !!history?.sections?.dokkai?.completed;
+      const hasChoukai = !!history?.sections?.choukai?.completed;
+
+      scopes = {
+        vocab_grammar: hasGoi || (!hasDokkai && !hasChoukai),
+        reading: hasDokkai,
+        listening: hasChoukai
+      };
+    }
 
     this.switchView('TEST');
     await this.loadN2Exam(examMeta, scopes, 'practice', { reviewMode: true, historyRecord: history });
-    this.showToast(`Đang xem lại kết quả bài làm: ${examMeta.title}`, 'info');
+    const activeSectionKeys = [];
+    if (scopes.vocab_grammar) activeSectionKeys.push('goi_bunpou');
+    if (scopes.reading) activeSectionKeys.push('dokkai');
+    if (scopes.listening) activeSectionKeys.push('choukai');
+    const scopeNames = storage.getSectionDisplayNames(activeSectionKeys);
+    this.showToast(`Đang xem lại kết quả bài làm: ${examMeta.title} (${scopeNames})`, 'info');
   }
 
   async loadN2Exam(examMeta, scopes = { vocab_grammar: true, reading: false, listening: false }, mode = 'practice', extraOptions = {}) {
@@ -1335,7 +1449,14 @@ class App {
       this.btnPretestRetake.addEventListener('click', () => this.retakeExam(this.pendingN2ExamMeta));
     }
     if (this.btnPretestReviewBtn) {
-      this.btnPretestReviewBtn.addEventListener('click', () => this.reviewOldExam(this.pendingN2ExamMeta));
+      this.btnPretestReviewBtn.addEventListener('click', () => {
+        const scopes = {
+          vocab_grammar: this.cbPretestVocab ? this.cbPretestVocab.checked : true,
+          reading: this.cbPretestReading ? this.cbPretestReading.checked : false,
+          listening: this.cbPretestListening ? this.cbPretestListening.checked : false
+        };
+        this.reviewOldExam(this.pendingN2ExamMeta, scopes);
+      });
     }
     if (this.btnPretestReviewBanner) {
       this.btnPretestReviewBanner.addEventListener('click', () => this.reviewOldExam(this.pendingN2ExamMeta));

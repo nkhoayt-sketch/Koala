@@ -299,6 +299,26 @@ export class QuizEngine {
     }
     this.scopes = scopes;
 
+    if (isN2Exam) {
+      if (scopes.vocab_grammar && scopes.reading && scopes.listening) {
+        this.scope = 'full';
+      } else if (scopes.vocab_grammar && scopes.reading) {
+        this.scope = 'vocab_reading';
+      } else if (scopes.vocab_grammar && scopes.listening) {
+        this.scope = 'vocab_listening';
+      } else if (scopes.reading && scopes.listening) {
+        this.scope = 'reading_listening';
+      } else if (scopes.reading) {
+        this.scope = 'reading';
+      } else if (scopes.listening) {
+        this.scope = 'listening';
+      } else {
+        this.scope = 'vocab_grammar';
+      }
+    } else {
+      this.scope = 'full';
+    }
+
     let questions = rawDayData.questions || [];
     if (questions.length === 0 && Array.isArray(rawDayData.sections)) {
       let num = 1;
@@ -385,20 +405,39 @@ export class QuizEngine {
     if (options.reviewMode || (this.isSubmitted && Object.keys(this.userAnswers).length === 0)) {
       if (history) {
         this.isSubmitted = true;
-        if (history.userAnswers && Object.keys(history.userAnswers).length > 0) {
-          this.userAnswers = { ...this.userAnswers, ...history.userAnswers };
+        const reviewAnswers = {};
+        if (history.sections) {
+          if (scopes.vocab_grammar && history.sections.goi_bunpou?.userAnswers) {
+            Object.assign(reviewAnswers, history.sections.goi_bunpou.userAnswers);
+          }
+          if (scopes.reading && history.sections.dokkai?.userAnswers) {
+            Object.assign(reviewAnswers, history.sections.dokkai.userAnswers);
+          }
+          if (scopes.listening && history.sections.choukai?.userAnswers) {
+            Object.assign(reviewAnswers, history.sections.choukai.userAnswers);
+          }
         }
+        if (Object.keys(reviewAnswers).length === 0 && history.userAnswers) {
+          Object.assign(reviewAnswers, history.userAnswers);
+        }
+
+        this.userAnswers = { ...this.userAnswers, ...reviewAnswers };
         if (history.flaggedQuestions && Array.isArray(history.flaggedQuestions)) {
           history.flaggedQuestions.forEach(qid => { this.userFlags[qid] = true; });
         }
-        if (!this.scoreResult) {
-          this.scoreResult = {
-            total: history.totalQuestions || this.dayData.questions.length,
-            correct: history.lastScore || 0,
-            percentage: history.percentage || 0,
-            isPassed: (history.percentage || 0) >= 60
-          };
-        }
+
+        let reviewCorrect = 0;
+        this.dayData.questions.forEach(q => {
+          if (this.userAnswers[q.id] === q.answer) reviewCorrect++;
+        });
+        const qTotal = this.dayData.questions.length;
+        const qPercent = qTotal > 0 ? Math.round((reviewCorrect / qTotal) * 100) : 0;
+        this.scoreResult = {
+          total: qTotal,
+          correct: reviewCorrect,
+          percentage: qPercent,
+          isPassed: qPercent >= 60
+        };
       }
     }
 
@@ -1317,13 +1356,35 @@ export class QuizEngine {
 
     retryBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        if (confirm('Làm lại từ đầu cho đề/ngày này? Kết quả và các lựa chọn sẽ được thiết lập lại.')) {
+        const examId = this.getExamId();
+        const isN2 = String(examId).startsWith('n2');
+        let sectionNames = 'thi đã chọn';
+        let sectionKeysToReset = [];
+
+        if (isN2) {
+          if (this.scopes?.vocab_grammar) sectionKeysToReset.push('goi_bunpou');
+          if (this.scopes?.reading) sectionKeysToReset.push('dokkai');
+          if (this.scopes?.listening) sectionKeysToReset.push('choukai');
+          if (sectionKeysToReset.length === 0) sectionKeysToReset = ['goi_bunpou', 'dokkai', 'choukai'];
+          sectionNames = storage.getSectionDisplayNames(sectionKeysToReset);
+        } else {
+          sectionKeysToReset = ['general'];
+          sectionNames = `Ngày ${this.dayData?.day || ''}`;
+        }
+
+        const confirmMsg = `Làm lại phần ${sectionNames}? Kết quả của các phần thi khác vẫn sẽ được giữ nguyên.`;
+        if (confirm(confirmMsg)) {
           const key = this.getStorageKey();
-          const examId = this.getExamId();
           storage.resetDay(key);
-          storage.resetDay(examId);
-          storage.removeExamHistoryRecord(examId);
-          window.dispatchEvent(new CustomEvent('koala:exam-reset', { detail: { examId } }));
+
+          if (isN2) {
+            storage.resetExamSection(examId, sectionKeysToReset);
+          } else {
+            storage.resetDay(examId);
+            storage.removeExamHistoryRecord(examId);
+          }
+
+          window.dispatchEvent(new CustomEvent('koala:exam-reset', { detail: { examId, sections: sectionKeysToReset } }));
 
           this.userAnswers = {};
           this.userFlags = {};
@@ -1542,9 +1603,50 @@ export class QuizEngine {
     const pad = (n) => String(n).padStart(2, '0');
     const completedAt = `${pad(now.getDate())}/${pad(now.getMonth() + 1)}/${now.getFullYear()} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
     const examId = this.getExamId();
+    const isN2 = String(examId).startsWith('n2');
+
+    let sectionUpdates = {};
+    if (isN2) {
+      const sectionScores = {
+        goi_bunpou: { score: 0, total: 0, userAnswers: {} },
+        dokkai: { score: 0, total: 0, userAnswers: {} },
+        choukai: { score: 0, total: 0, userAnswers: {} }
+      };
+
+      this.dayData.questions.forEach(q => {
+        const isVocab = q.sectionGroup === 'vocab_grammar' || (!q.sectionGroup && !q.section?.includes('読解') && !q.section?.includes('聴解'));
+        const isReading = q.sectionGroup === 'reading' || q.section?.includes('読解');
+        const isListening = q.sectionGroup === 'listening' || q.section?.includes('聴解');
+
+        let targetSec = 'goi_bunpou';
+        if (isReading) targetSec = 'dokkai';
+        else if (isListening) targetSec = 'choukai';
+
+        sectionScores[targetSec].total++;
+        if (this.userAnswers[q.id] !== undefined) {
+          sectionScores[targetSec].userAnswers[q.id] = this.userAnswers[q.id];
+          if (this.userAnswers[q.id] === q.answer) {
+            sectionScores[targetSec].score++;
+          }
+        }
+      });
+
+      for (const [secKey, data] of Object.entries(sectionScores)) {
+        if (data.total > 0) {
+          sectionUpdates[secKey] = {
+            completed: true,
+            score: data.score,
+            total: data.total,
+            userAnswers: data.userAnswers,
+            completedAt: completedAt
+          };
+        }
+      }
+    }
 
     const historyRecord = {
       examId: examId,
+      sections: sectionUpdates,
       lastScore: correct,
       totalQuestions: total,
       percentage: percentage,
@@ -1553,8 +1655,8 @@ export class QuizEngine {
       flaggedQuestions: Object.keys(this.userFlags)
     };
 
-    // Save to official koala_exam_history storage
-    storage.saveExamHistoryRecord(examId, historyRecord);
+    // Save to official koala_exam_history storage (with section preservation)
+    const savedRecord = storage.saveExamHistoryRecord(examId, historyRecord, { isN2, scopes: this.scopes });
 
     // Save session submission status for in-quiz results view
     storage.saveSubmission(this.getStorageKey(), {
@@ -1563,7 +1665,7 @@ export class QuizEngine {
     });
 
     // Notify app to update score badges on Home dashboard and sidebar
-    window.dispatchEvent(new CustomEvent('koala:exam-submitted', { detail: historyRecord }));
+    window.dispatchEvent(new CustomEvent('koala:exam-submitted', { detail: savedRecord || historyRecord }));
 
     this.render();
     this.renderPalette();
