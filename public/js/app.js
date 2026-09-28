@@ -568,7 +568,7 @@ class App {
 
     // 1. Render N1 Days Quicklist on Card 1
     if (this.homeN1DaysQuicklist && this.daysIndex.length > 0) {
-      this.homeN1DaysQuicklist.innerHTML = this.daysIndex.slice(0, 10).map(item => {
+      this.homeN1DaysQuicklist.innerHTML = this.daysIndex.map(item => {
         const isAvail = item.available;
         const dayKey = `n1_day${String(item.day).padStart(2, '0')}`;
         const history = storage.getExamHistoryRecord(dayKey) || storage.getExamHistoryRecord(item.day);
