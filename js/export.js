@@ -13,15 +13,77 @@ export function stripHtml(html) {
 }
 
 /**
- * Builds a clean, organized text report of wrong answers
+ * Collects and classifies questions for Anki export:
+ * - All wrong questions (userChoice === undefined || userChoice !== q.answer)
+ * - All flagged questions (isFlagged === true), whether correct or wrong
+ * Deduplicated by question ID.
+ * Returns items, totalCount, wrongCount, flaggedCount.
  */
-export function buildMistakesReport(dayTitle, questions, userAnswers) {
-  const wrongQuestions = questions.filter(q => {
-    const userChoice = userAnswers[q.id];
-    return userChoice === undefined || userChoice !== q.answer;
+export function collectQuestionsForAnki(questions = [], userAnswers = {}, userFlags = {}) {
+  const seenIds = new Set();
+  const collected = [];
+  let wrongCount = 0;
+  let flaggedCount = 0;
+
+  questions.forEach((q, idx) => {
+    const qid = q.id !== undefined && q.id !== null ? String(q.id) : `q_${idx}`;
+    const userChoice = userAnswers ? userAnswers[q.id] : undefined;
+    const isAnswered = userChoice !== undefined && userChoice !== null;
+    const isCorrect = isAnswered && userChoice === q.answer;
+    const isWrong = !isAnswered || userChoice !== q.answer;
+    const isFlagged = !!(userFlags && userFlags[q.id]);
+
+    if (isWrong || isFlagged) {
+      if (!seenIds.has(qid)) {
+        seenIds.add(qid);
+
+        let classification = 'wrong';
+        let tag = 'JLPT_Wrong';
+        let label = 'Câu làm sai';
+
+        if (isFlagged && isWrong) {
+          classification = 'flagged_wrong';
+          tag = 'JLPT_Flagged_Wrong';
+          label = 'Vừa đánh dấu khó vừa làm sai';
+        } else if (isFlagged && isCorrect) {
+          classification = 'flagged_correct';
+          tag = 'JLPT_Flagged_Correct';
+          label = 'Đánh dấu khó (làm đúng)';
+        }
+
+        if (isWrong) wrongCount++;
+        if (isFlagged) flaggedCount++;
+
+        collected.push({
+          question: q,
+          userChoice,
+          isAnswered,
+          isCorrect,
+          isWrong,
+          isFlagged,
+          classification,
+          tag,
+          label
+        });
+      }
+    }
   });
 
-  if (wrongQuestions.length === 0) {
+  return {
+    items: collected,
+    totalCount: collected.length,
+    wrongCount,
+    flaggedCount
+  };
+}
+
+/**
+ * Builds a clean, organized text report of wrong & flagged questions for Anki / study review
+ */
+export function buildMistakesReport(dayTitle, questions = [], userAnswers = {}, userFlags = {}) {
+  const collection = collectQuestionsForAnki(questions, userAnswers, userFlags);
+
+  if (collection.totalCount === 0) {
     return null;
   }
 
@@ -34,32 +96,47 @@ export function buildMistakesReport(dayTitle, questions, userAnswers) {
   });
 
   let report = `====================================================\n`;
-  report += ` BÁO CÁO CÂU LÀM SAI - ${dayTitle}\n`;
+  report += ` BÁO CÁO ÔN TẬP ANKI - ${dayTitle}\n`;
   report += ` Thời gian: ${dateStr}\n`;
-  report += ` Số câu làm sai: ${wrongQuestions.length}/${questions.length} câu\n`;
+  report += ` Đã trích xuất: ${collection.totalCount} câu (gồm ${collection.wrongCount} câu sai và ${collection.flaggedCount} câu đánh dấu khó)\n`;
   report += `====================================================\n\n`;
 
-  wrongQuestions.forEach((q, idx) => {
-    const userChoiceIndex = userAnswers[q.id];
-    const userChoiceText = userChoiceIndex !== undefined 
-      ? `(${userChoiceIndex + 1}) ${q.options[userChoiceIndex]}` 
+  collection.items.forEach((item, idx) => {
+    const q = item.question;
+    const userChoiceIndex = item.userChoice;
+    const userChoiceText = item.isAnswered
+      ? `(${userChoiceIndex + 1}) ${q.options[userChoiceIndex] || ''}` 
       : '(Chưa chọn)';
-    const correctText = `(${q.answer + 1}) ${q.options[q.answer]}`;
+    const correctText = `(${q.answer + 1}) ${q.options[q.answer] || ''}`;
 
-    report += `【Câu ${q.number || idx + 1}】[${q.section}]\n`;
+    report += `【Câu ${q.number || idx + 1}】[${q.section || 'JLPT'}] [Tag: #${item.tag}]\n`;
+    report += `• Nhãn phân loại   : 🏷️ ${item.label}\n`;
     if (q.passage) {
       report += `[Đoạn văn]:\n${stripHtml(q.passage)}\n\n`;
     }
-    report += `• Câu hỏi: ${stripHtml(q.question)}\n`;
-    report += `• Lựa chọn đã chọn : ❌ ${userChoiceText}\n`;
+    report += `• Câu hỏi         : ${stripHtml(q.question)}\n`;
+    if (item.isCorrect) {
+      report += `• Lựa chọn đã chọn : ✅ ${userChoiceText} (Làm đúng - đã đánh dấu khó)\n`;
+    } else {
+      report += `• Lựa chọn đã chọn : ❌ ${userChoiceText}\n`;
+    }
     report += `• Đáp án chính xác : ✅ ${correctText}\n`;
-    report += `• Giải thích chi tiết:\n${q.explanation.trim()}\n`;
+    report += `• Giải thích chi tiết:\n${(q.explanation || '').trim()}\n`;
     report += `----------------------------------------------------\n\n`;
   });
 
   report += `\n* Mẹo học tập: Hãy nhập danh sách này vào Anki hoặc ôn tập lại sau 24 giờ để ghi nhớ lâu dài!`;
 
-  return report;
+  return {
+    text: report,
+    totalCount: collection.totalCount,
+    wrongCount: collection.wrongCount,
+    flaggedCount: collection.flaggedCount,
+    items: collection.items,
+    toString() {
+      return this.text;
+    }
+  };
 }
 
 /**
@@ -98,16 +175,20 @@ export async function copyTextToClipboard(text) {
 
 /**
  * Direct Integration with AnkiConnect API (http://localhost:8765)
- * Adds all wrong questions directly to Anki deck 'JLPT N1 Weakness'
+ * Adds wrong & flagged questions directly to Anki deck 'JLPT N1 Weakness'
  */
-export async function sendMistakesToAnkiConnect(dayTitle, questions, userAnswers) {
-  const wrongQuestions = questions.filter(q => {
-    const userChoice = userAnswers[q.id];
-    return userChoice === undefined || userChoice !== q.answer;
-  });
+export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAnswers = {}, userFlags = {}) {
+  const collection = collectQuestionsForAnki(questions, userAnswers, userFlags);
 
-  if (wrongQuestions.length === 0) {
-    return { success: true, count: 0, message: 'no_mistakes' };
+  if (collection.totalCount === 0) {
+    return {
+      success: true,
+      count: 0,
+      totalCount: 0,
+      wrongCount: 0,
+      flaggedCount: 0,
+      message: 'no_cards'
+    };
   }
 
   const ankiUrl = 'http://localhost:8765';
@@ -126,16 +207,39 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions, userAnswers
     });
 
     // Step 2: Build Notes array
-    const notes = wrongQuestions.map((q) => {
-      const userChoiceIndex = userAnswers[q.id];
-      const userChoiceText = userChoiceIndex !== undefined 
-        ? `(${userChoiceIndex + 1}) ${q.options[userChoiceIndex]}` 
+    const notes = collection.items.map((item) => {
+      const q = item.question;
+      const userChoiceIndex = item.userChoice;
+      const userChoiceText = item.isAnswered
+        ? `(${userChoiceIndex + 1}) ${q.options[userChoiceIndex] || ''}` 
         : '(Chưa chọn)';
+
+      let badgeBg = '#f1f5f9';
+      let badgeColor = '#475569';
+      let badgeBorder = '#cbd5e1';
+      let badgeIcon = '❌';
+
+      if (item.classification === 'flagged_wrong') {
+        badgeBg = '#fee2e2';
+        badgeColor = '#b91c1c';
+        badgeBorder = '#fca5a5';
+        badgeIcon = '⚠️';
+      } else if (item.classification === 'flagged_correct') {
+        badgeBg = '#fef3c7';
+        badgeColor = '#b45309';
+        badgeBorder = '#fde68a';
+        badgeIcon = '⭐';
+      }
 
       const frontHtml = `
         <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; color: #1e293b; line-height: 1.8;">
-          <div style="font-size: 12px; font-weight: bold; color: #4f46e5; margin-bottom: 8px;">
-            [${q.section}] Câu ${q.number}
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-size: 12px; font-weight: bold; color: #4f46e5;">
+              [${q.section || 'JLPT'}] Câu ${q.number || ''}
+            </span>
+            <span style="font-size: 11px; font-weight: bold; padding: 2px 8px; border-radius: 4px; background: ${badgeBg}; color: ${badgeColor}; border: 1px solid ${badgeBorder};">
+              ${badgeIcon} ${item.label}
+            </span>
           </div>
           ${q.passage ? `<div style="background:#f8fafc; border-left:3px solid #6366f1; padding:8px 12px; margin-bottom:12px; font-size:13px; line-height:1.7;">${q.passage}</div>` : ''}
           <div style="font-size: 17px; font-weight: 600; margin-bottom: 12px;">
@@ -143,22 +247,38 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions, userAnswers
           </div>
           <div style="background:#f1f5f9; padding:10px 14px; border-radius:8px;">
             <ol style="margin: 0; padding-left: 20px;">
-              ${q.options.map((opt, i) => `<li>${opt}</li>`).join('')}
+              ${(q.options || []).map((opt) => `<li>${opt}</li>`).join('')}
             </ol>
           </div>
         </div>
       `;
 
+      let userChoiceHtml = '';
+      if (item.isCorrect) {
+        userChoiceHtml = `
+          <div style="font-size: 13px; color: #059669; margin-bottom: 12px; background: #ecfdf5; padding: 6px 10px; border-radius: 6px; border: 1px solid #a7f3d0;">
+            ⭐ Bạn đã làm đúng: ${userChoiceText} (Được gắn cờ câu khó để ôn tập lại)
+          </div>
+        `;
+      } else {
+        userChoiceHtml = `
+          <div style="font-size: 13px; color: #e11d48; margin-bottom: 12px; background: #fff1f2; padding: 6px 10px; border-radius: 6px; border: 1px solid #fecdd3;">
+            ❌ Lựa chọn của bạn: ${userChoiceText}
+          </div>
+        `;
+      }
+
       const backHtml = `
         <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; line-height: 1.8;">
           <div style="font-size: 15px; font-weight: bold; color: #059669; padding: 6px 12px; background: #ecfdf5; border-radius: 6px; margin-bottom: 10px;">
-            ✅ Đáp án đúng: (${q.answer + 1}) ${q.options[q.answer]}
+            ✅ Đáp án đúng: (${q.answer + 1}) ${q.options[q.answer] || ''}
           </div>
-          <div style="font-size: 13px; color: #e11d48; margin-bottom: 12px;">
-            ❌ Lựa chọn của bạn: ${userChoiceText}
-          </div>
+          ${userChoiceHtml}
           <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 12px; white-space: pre-line; color: #1e293b;">
-            ${q.explanation}
+            ${q.explanation || ''}
+          </div>
+          <div style="margin-top: 10px; font-size: 11px; color: #64748b;">
+            🏷️ Nhãn thẻ: <strong>${item.tag}</strong>
           </div>
         </div>
       `;
@@ -170,7 +290,7 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions, userAnswers
           Front: frontHtml,
           Back: backHtml
         },
-        tags: ['JLPT_N1', '20Ngay_N1', 'Weakness', `Day_${q.day || 1}`]
+        tags: ['JLPT_N1', '20Ngay_N1', item.tag, `Day_${q.day || 1}`]
       };
     });
 
@@ -194,18 +314,23 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions, userAnswers
       throw new Error(data.error);
     }
 
-    const addedCount = Array.isArray(data.result) ? data.result.filter(id => id !== null).length : wrongQuestions.length;
+    const addedCount = Array.isArray(data.result) ? data.result.filter(id => id !== null).length : collection.totalCount;
 
     return {
       success: true,
       count: addedCount,
-      totalMistakes: wrongQuestions.length,
+      totalCount: collection.totalCount,
+      wrongCount: collection.wrongCount,
+      flaggedCount: collection.flaggedCount,
       deckName: deckName
     };
   } catch (err) {
     console.warn('AnkiConnect API error:', err);
     return {
       success: false,
+      totalCount: collection.totalCount,
+      wrongCount: collection.wrongCount,
+      flaggedCount: collection.flaggedCount,
       error: err.message || 'connection_failed'
     };
   }

@@ -616,15 +616,15 @@ export class QuizEngine {
             <div class="flex items-center gap-2.5">
               ${this.isSubmitted ? `
                 <!-- AnkiConnect Direct Sync Button -->
-                <button id="btn-anki-connect-sync" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 transition active:scale-95 shadow-sm" title="Bắn toàn bộ câu làm sai vào ứng dụng Anki qua AnkiConnect (localhost:8765)">
+                <button id="btn-anki-connect-sync" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 transition active:scale-95 shadow-sm" title="Bắn các câu làm sai và câu đánh dấu khó vào ứng dụng Anki qua AnkiConnect (localhost:8765)">
                   <span>⚡</span>
                   <span>Bắn vào AnkiConnect</span>
                 </button>
-                <button id="btn-copy-mistakes" class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition active:scale-95 shadow-sm">
+                <button id="btn-copy-mistakes" class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition active:scale-95 shadow-sm" title="Sao chép các câu làm sai và câu đánh dấu khó vào Clipboard">
                   <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
                   </svg>
-                  <span>Sao chép câu sai</span>
+                  <span>Sao chép Anki</span>
                 </button>
                 <button id="btn-retry" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-800 hover:bg-slate-900 text-white transition active:scale-95 shadow-sm">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1104,7 +1104,7 @@ export class QuizEngine {
             <p class="text-slate-300 text-sm max-w-md">
               ${isPassed 
                 ? 'Kiến thức từ vựng và ngữ pháp của ngày này đã nắm chắc. Hãy xem lại các câu chưa đúng nếu có.' 
-                : 'Đừng nản lòng! Hãy bấm nút "Bắn vào AnkiConnect" hoặc "Sao chép câu sai" bên dưới để ôn tập lại nhé.'}
+                : 'Đừng nản lòng! Hãy bấm nút "Bắn vào AnkiConnect" hoặc "Sao chép Anki" bên dưới để ôn tập lại nhé.'}
             </p>
           </div>
 
@@ -1144,13 +1144,13 @@ export class QuizEngine {
           </div>
 
           <div class="flex items-center gap-2">
-            <button id="btn-anki-connect-banner" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/30 hover:bg-emerald-500/40 text-emerald-200 border border-emerald-400/30 transition">
+            <button id="btn-anki-connect-banner" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/30 hover:bg-emerald-500/40 text-emerald-200 border border-emerald-400/30 transition" title="Bắn các câu làm sai và câu đánh dấu khó vào Anki">
               <span>⚡</span>
               <span>Bắn vào AnkiConnect</span>
             </button>
-            <button id="btn-copy-mistakes-banner" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/30 hover:bg-indigo-500/40 text-indigo-200 border border-indigo-400/30 transition">
+            <button id="btn-copy-mistakes-banner" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/30 hover:bg-indigo-500/40 text-indigo-200 border border-indigo-400/30 transition" title="Sao chép các câu làm sai và câu đánh dấu khó vào Clipboard">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-              <span>Sao chép câu sai</span>
+              <span>Sao chép Anki</span>
             </button>
             <button id="btn-retry-banner" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-rose-500/30 hover:bg-rose-500/40 text-rose-200 border border-rose-400/30 transition">
               <span>🔄</span>
@@ -1709,35 +1709,36 @@ export class QuizEngine {
   }
 
   /**
-   * Handle copy wrong answers to clipboard
+   * Handle copy wrong answers and flagged questions to clipboard
    */
   async handleCopyMistakes() {
-    const report = buildMistakesReport(this.dayData.title, this.dayData.questions, this.userAnswers);
-    if (!report) {
-      this.showToast('Tuyệt vời! Bạn không làm sai câu nào để xuất báo cáo.', 'success');
+    const report = buildMistakesReport(this.dayData.title, this.dayData.questions, this.userAnswers, this.userFlags);
+    if (!report || report.totalCount === 0) {
+      this.showToast('🎉 Tuyệt vời! Bạn không có câu sai hoặc câu đánh dấu khó nào để xuất.', 'info');
       return;
     }
 
-    const success = await copyTextToClipboard(report);
+    const textToCopy = report.text || String(report);
+    const success = await copyTextToClipboard(textToCopy);
     if (success) {
-      this.showToast('Đã sao chép danh sách câu sai vào Clipboard!', 'success');
+      this.showToast(`📋 Đã trích xuất ${report.totalCount} câu (gồm ${report.wrongCount} câu sai và ${report.flaggedCount} câu đánh dấu khó) vào Clipboard!`, 'success');
     } else {
       this.showToast('Không thể sao chép tự động. Vui lòng cấp quyền Clipboard.', 'error');
     }
   }
 
   /**
-   * Direct sync to AnkiConnect API
+   * Direct sync to AnkiConnect API for wrong and flagged questions
    */
   async handleAnkiConnectSync() {
     this.showToast('Đang kết nối AnkiConnect (localhost:8765)...', 'info');
-    const result = await sendMistakesToAnkiConnect(this.dayData.title, this.dayData.questions, this.userAnswers);
+    const result = await sendMistakesToAnkiConnect(this.dayData.title, this.dayData.questions, this.userAnswers, this.userFlags);
 
     if (result.success) {
-      if (result.message === 'no_mistakes') {
-        this.showToast('🎉 Bạn không làm sai câu nào nên không cần thêm vào Anki!', 'success');
+      if (result.totalCount === 0) {
+        this.showToast('🎉 Bạn không có câu sai hoặc câu đánh dấu khó nào để thêm vào Anki!', 'info');
       } else {
-        this.showToast(`⚡ Đã bắn thành công ${result.count} câu sai vào Deck "${result.deckName}" trong Anki!`, 'success');
+        this.showToast(`⚡ Đã trích xuất ${result.totalCount} câu (gồm ${result.wrongCount} câu sai và ${result.flaggedCount} câu đánh dấu khó) vào Deck "${result.deckName}" trong Anki!`, 'success');
       }
     } else {
       this.showToast('⚠️ Không thể kết nối AnkiConnect (localhost:8765). Hãy mở app Anki & cài AnkiConnect!', 'error');
