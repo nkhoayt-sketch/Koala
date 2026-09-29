@@ -1,5 +1,5 @@
 import { storage } from './storage.js';
-import { buildMistakesReport, copyTextToClipboard, sendMistakesToAnkiConnect } from './export.js';
+import { buildMistakesReport, copyTextToClipboard, sendMistakesToAnkiConnect, downloadAnkiTxtFile } from './export.js';
 import { GeminiModal } from './gemini.js';
 
 /**
@@ -620,6 +620,11 @@ export class QuizEngine {
                   <span>⚡</span>
                   <span>Bắn vào AnkiConnect</span>
                 </button>
+                <!-- Download Anki TXT Import File Button -->
+                <button id="btn-download-anki-txt" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 transition active:scale-95 shadow-sm" title="Tải file text chuẩn UTF-8 (.txt) để import trực tiếp vào Anki">
+                  <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  <span>Tải file nạp Anki (.txt)</span>
+                </button>
                 <button id="btn-copy-mistakes" class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition active:scale-95 shadow-sm" title="Sao chép các câu làm sai và câu đánh dấu khó vào Clipboard">
                   <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
@@ -1148,6 +1153,10 @@ export class QuizEngine {
               <span>⚡</span>
               <span>Bắn vào AnkiConnect</span>
             </button>
+            <button id="btn-download-anki-txt-banner" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-teal-500/30 hover:bg-teal-500/40 text-teal-200 border border-teal-400/30 transition" title="Tải file text chuẩn UTF-8 (.txt) để import trực tiếp vào Anki">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span>Tải file nạp Anki (.txt)</span>
+            </button>
             <button id="btn-copy-mistakes-banner" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/30 hover:bg-indigo-500/40 text-indigo-200 border border-indigo-400/30 transition" title="Sao chép các câu làm sai và câu đánh dấu khó vào Clipboard">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
               <span>Sao chép Anki</span>
@@ -1425,6 +1434,16 @@ export class QuizEngine {
 
     ankiSyncBtns.forEach(btn => {
       btn.addEventListener('click', () => this.handleAnkiConnectSync());
+    });
+
+    // Download Anki TXT buttons
+    const downloadAnkiBtns = [
+      this.container.querySelector('#btn-download-anki-txt'),
+      this.container.querySelector('#btn-download-anki-txt-banner')
+    ].filter(Boolean);
+
+    downloadAnkiBtns.forEach(btn => {
+      btn.addEventListener('click', () => this.handleDownloadAnkiTxt());
     });
 
     // Filter buttons
@@ -1749,7 +1768,33 @@ export class QuizEngine {
         this.showToast(`⚡ Đã trích xuất ${result.totalCount} câu (gồm ${result.wrongCount} câu sai và ${result.flaggedCount} câu đánh dấu khó) vào Deck "${result.deckName}" trong Anki!`, 'success');
       }
     } else {
-      this.showToast(`⚠️ Không thể kết nối AnkiConnect (localhost:8765). Hãy mở app Anki & cài AnkiConnect để nạp vào Deck "${result.deckName || deckName}"!`, 'error');
+      if (result.totalCount === 0) {
+        this.showToast('🎉 Bạn không có câu sai hoặc câu đánh dấu khó nào để thêm vào Anki!', 'info');
+      } else {
+        this.showToast("Do trình duyệt chặn kết nối an toàn HTTPS về máy nội bộ, vui lòng bấm nút 'Tải file nạp Anki' bên cạnh để thêm nhanh vào Anki!", 'warning');
+      }
+    }
+  }
+
+  /**
+   * Export wrong and flagged questions to standard Anki TSV text file (.txt)
+   */
+  handleDownloadAnkiTxt() {
+    if (!this.dayData || !this.dayData.questions) return;
+    const level = (this.dayData && (this.dayData.level || (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n2') ? 'N2' : 'N1'))) || 'N1';
+    const deckName = level === 'N2' ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review';
+    const result = downloadAnkiTxtFile(
+      this.dayData.title,
+      this.dayData.questions,
+      this.userAnswers,
+      this.userFlags,
+      { level, deckName, filename: 'Koala_Anki_Export.txt' }
+    );
+
+    if (result.success) {
+      this.showToast(`📥 Đã tải file "${result.filename}" (${result.totalCount} câu). Bạn có thể Import trực tiếp vào Anki!`, 'success');
+    } else {
+      this.showToast('🎉 Bạn không có câu sai hoặc câu đánh dấu khó nào để xuất file!', 'info');
     }
   }
 

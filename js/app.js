@@ -1575,16 +1575,18 @@ class App {
     const bgColors = {
       success: 'bg-emerald-900/95 border-emerald-500/40 text-emerald-100',
       error: 'bg-rose-900/95 border-rose-500/40 text-rose-100',
+      warning: 'bg-amber-900/95 border-amber-500/40 text-amber-100',
       info: 'bg-slate-900/95 border-slate-700/80 text-white'
     };
 
     const icons = {
       success: `<svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>`,
       error: `<svg class="w-4 h-4 text-rose-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>`,
+      warning: `<svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>`,
       info: `<svg class="w-4 h-4 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`
     };
 
-    toast.className = `flex items-center gap-3 px-4 py-3 rounded-2xl border backdrop-blur-md shadow-xl text-sm max-w-sm pointer-events-auto animate-toast ${bgColors[type] || bgColors.info}`;
+    toast.className = `flex items-center gap-3 px-4 py-3 rounded-2xl border backdrop-blur-md shadow-xl text-sm max-w-md pointer-events-auto animate-toast ${bgColors[type] || bgColors.info}`;
     toast.innerHTML = `
       ${icons[type] || icons.info}
       <span class="flex-1 font-medium leading-snug">${message}</span>
@@ -1592,12 +1594,14 @@ class App {
 
     this.toastContainer.appendChild(toast);
 
+    const displayDuration = (type === 'warning' || message.length > 50) ? 5500 : 3800;
+
     setTimeout(() => {
       toast.style.opacity = '0';
       toast.style.transform = 'translateY(10px) scale(0.95)';
       toast.style.transition = 'all 0.3s ease';
       setTimeout(() => toast.remove(), 300);
-    }, 3800);
+    }, displayDuration);
   }
 }
 

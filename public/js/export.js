@@ -365,3 +365,125 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAn
     };
   }
 }
+
+/**
+ * Generates and downloads a standard Anki TSV text file (.txt) for wrong and flagged questions.
+ * Format:
+ * - Column 1 (Front): Question content + passage + options (1, 2, 3, 4)
+ * - Column 2 (Back): Correct answer + user choice + explanation (HTML formatted with <br>, <b>)
+ * - Column 3 (Tags): Exam/Day tags + classification tags (e.g. Koala_N1_Day02, Koala_N2_Review, JLPT_Wrong)
+ */
+export function downloadAnkiTxtFile(dayTitle, questions = [], userAnswers = {}, userFlags = {}, options = {}) {
+  const collection = collectQuestionsForAnki(questions, userAnswers, userFlags);
+  if (collection.totalCount === 0) {
+    return {
+      success: false,
+      totalCount: 0,
+      wrongCount: 0,
+      flaggedCount: 0
+    };
+  }
+
+  const isN2 = (options && options.level === 'N2') ||
+    (typeof dayTitle === 'string' && /N2/i.test(dayTitle)) ||
+    (questions && questions.length > 0 && questions[0].id && String(questions[0].id).toLowerCase().includes('n2'));
+
+  const cleanTitle = (dayTitle || '').trim();
+  const dayMatch = cleanTitle.match(/(?:day|第)?0?(\d+)/i);
+  const examTag = isN2
+    ? 'Koala_N2_Review'
+    : (dayMatch ? `Koala_N1_Day${dayMatch[1].padStart(2, '0')}` : 'Koala_N1_Review');
+
+  const targetDeck = (options && options.deckName) || (isN2 ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review');
+
+  // Anki Standard Headers for automatic tab recognition, HTML rendering and tag column
+  let tsvContent = `#separator:tab\n#html:true\n#tags column:3\n`;
+
+  collection.items.forEach((item, idx) => {
+    const q = item.question;
+
+    // --- Column 1: Front (Question + Passage + Options 1-4) ---
+    let frontHtml = '';
+    if (q.section) {
+      frontHtml += `<b>[${q.section}]</b><br>`;
+    }
+    if (q.passage) {
+      const cleanPassage = q.passage.trim().replace(/\r?\n/g, '<br>');
+      frontHtml += `<b>[Đoạn văn]:</b><br><div style="padding:8px 10px;background:#f8fafc;border-left:3px solid #6366f1;border-radius:4px;margin:6px 0;line-height:1.6;">${cleanPassage}</div><br>`;
+    }
+    
+    const questionText = q.question || '';
+    frontHtml += questionText;
+
+    if (Array.isArray(q.options) && q.options.length > 0) {
+      frontHtml += '<br><br>' + q.options.map((opt, oIdx) => `(${oIdx + 1}) ${opt}`).join('<br>');
+    }
+
+    // --- Column 2: Back (Correct Answer + User Choice + Explanation) ---
+    const correctOptText = (Array.isArray(q.options) && q.options[q.answer] !== undefined)
+      ? `(${q.answer + 1}) ${q.options[q.answer]}`
+      : `(${q.answer + 1})`;
+
+    let backHtml = `<b>Đáp án đúng:</b> ${correctOptText}`;
+
+    if (item.userChoice !== undefined && item.userChoice !== null) {
+      const userOptText = (Array.isArray(q.options) && q.options[item.userChoice] !== undefined)
+        ? `(${item.userChoice + 1}) ${q.options[item.userChoice]}`
+        : `(${item.userChoice + 1})`;
+      if (item.isCorrect) {
+        backHtml += `<br><b>Lựa chọn của bạn:</b> ${userOptText} (✅ Làm đúng - Đánh dấu khó 🚩)`;
+      } else {
+        backHtml += `<br><b>Lựa chọn của bạn:</b> ${userOptText} (❌ Làm sai)`;
+      }
+    } else {
+      backHtml += `<br><b>Lựa chọn của bạn:</b> (Chưa chọn)`;
+    }
+
+    if (item.label) {
+      backHtml += `<br><b>Phân loại:</b> ${item.label}`;
+    }
+
+    if (q.explanation && q.explanation.trim()) {
+      const cleanExp = q.explanation.trim().replace(/\r?\n/g, '<br>');
+      backHtml += `<br><br><b>Giải thích chi tiết:</b><br>${cleanExp}`;
+    }
+
+    // --- Column 3: Tags ---
+    const tagList = [examTag, item.tag, 'Koala_JLPT'];
+    const tags = tagList.filter(Boolean).join(' ');
+
+    // Normalize: Replace literal tabs with space and literal newlines with <br> to keep strictly 1 line per card
+    const cleanFront = frontHtml.replace(/\t/g, ' ').replace(/[\r\n]+/g, '<br>');
+    const cleanBack = backHtml.replace(/\t/g, ' ').replace(/[\r\n]+/g, '<br>');
+    const cleanTags = tags.replace(/[\t\r\n]+/g, ' ');
+
+    tsvContent += `${cleanFront}\t${cleanBack}\t${cleanTags}\n`;
+  });
+
+  const filename = options.filename || 'Koala_Anki_Export.txt';
+
+  // Trigger browser download via Blob
+  try {
+    const blob = new Blob(['\uFEFF' + tsvContent], { type: 'text/tab-separated-values;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  } catch (err) {
+    console.error('Download Anki txt error:', err);
+  }
+
+  return {
+    success: true,
+    totalCount: collection.totalCount,
+    wrongCount: collection.wrongCount,
+    flaggedCount: collection.flaggedCount,
+    filename,
+    deckName: targetDeck
+  };
+}
+
