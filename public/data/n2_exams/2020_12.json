@@ -714,15 +714,15 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題8: 文の組み立て ★",
       "instruction": "次の文の＿★＿に入る最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "「10 倍がゆ」とは         ★     おかゆのことです。",
+      "question": "「10倍がゆ」とは ＿＿ ＿＿ ＿★＿ ＿＿ おかゆのことです。",
       "options": [
         "作った",
-        "",
         "水で",
-        "米"
+        "10倍の",
+        "米1に対して"
       ],
       "answer": 1,
-      "explanation": "【正解】2 (10 倍の)\n\n• Giải thích kiến thức và ngữ cảnh câu 44 trong đề thi JLPT N2 12/2020."
+      "explanation": "Thứ tự đúng: 4 - 3 - ★2 - 1\nCâu hoàn chỉnh: 「10倍がゆ」とは米1に対して10倍の水で作ったおかゆのことです。\n(\"Cháo gấp 10 lần\" là loại cháo được nấu với lượng nước gấp 10 lần so với 1 phần gạo.)\nVị trí ngôi sao ★ là phương án 2 (水で)."
     },
     {
       "id": "n2-202012-q45",

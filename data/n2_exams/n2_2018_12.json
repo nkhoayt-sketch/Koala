@@ -460,13 +460,13 @@
       "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "【日課】",
       "options": [
-        "停留所でバスの日課を見ると、次の発車時刻は",
-        "",
-        "朝",
-        "健康のため、毎朝"
+        "停留所でバスの時刻表を見ると、次の発車時刻は20分後だった。",
+        "今日は売り上げが10万円以上あったので、目標が達成できた。",
+        "朝9時までに出社することが会社の規則で決まっている。",
+        "健康のため、毎朝30分体操することを日課にしている。"
       ],
       "answer": 3,
-      "explanation": "【正解】4 (健康のため、毎朝３0 分体操することを日課にしている。)\n\n• Giải thích kiến thức và ngữ cảnh câu 28 trong đề thi JLPT N2 12/2018."
+      "explanation": "Đáp án đúng là 4: 「健康のため、毎朝30分体操することを日課にしている。」(Vì sức khỏe, tôi biến việc tập thể dục 30 phút mỗi sáng thành thói quen hàng ngày).\nCác câu còn lại dùng sai từ:\n- Câu 1: nên dùng 時刻表 (bảng giờ xe)\n- Câu 2: nên dùng 目標 / ノルマ (chỉ tiêu)\n- Câu 3: nên dùng 規則 / ルール (quy tắc)"
     },
     {
       "id": "n2-201812-q29",

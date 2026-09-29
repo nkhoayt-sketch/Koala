@@ -524,13 +524,13 @@
       "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
       "question": "【隔てる】",
       "options": [
-        "この二つの",
+        "この二つの問題は隔てて考えるべきだ。",
         "大きな川が二つの市を隔てている。",
-        "",
+        "5分ほど休憩を隔てて、11時から再開します。",
         "試験のときは、隣の人と隔てて座ってください。"
       ],
       "answer": 1,
-      "explanation": "【正解】2 (大きな川が二つの市を隔てている。)\n\n• Giải thích kiến thức và ngữ cảnh câu 32 trong đề thi JLPT N2 07/2013."
+      "explanation": "Đáp án đúng là 2: 「大きな川が二つの市を隔てている。」(Con sông lớn ngăn cách hai thành phố).\nCác câu còn lại dùng từ chưa tự nhiên:\n- Câu 1: nên dùng 別にして / 分けて\n- Câu 3: nên dùng 挟んで (5分ほど休憩を挟んで)\n- Câu 4: nên dùng 離れて / 間隔をあけて"
     },
     {
       "id": "n2-201307-q33",

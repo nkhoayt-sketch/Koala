@@ -746,15 +746,15 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題8: 文の組み立て ★",
       "instruction": "次の文の＿★＿に入る最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "姉の＿＿ ＿＿ ＿★＿ ＿＿私にはとてもできない。",
+      "question": "姉の ＿＿ ＿＿ ＿★＿ ＿＿ 私にはとてもできない。",
       "options": [
         "欠かさず",
-        "",
         "ように",
+        "10年以上一日も",
         "日記を書くなんて"
       ],
       "answer": 0,
-      "explanation": "【正解】1 (欠かさず)\n\n• Giải thích kiến thức và ngữ cảnh câu 46 trong đề thi JLPT N2 12/2014."
+      "explanation": "Thứ tự đúng: 2 - 3 - ★1 - 4\nCâu hoàn chỉnh: 姉のように10年以上一日も欠かさず日記を書くなんて、私にはとてもできない。\n(Như chị gái tôi ngày nào cũng viết nhật ký không bỏ sót một ngày nào suốt hơn 10 năm trời thì tôi hoàn toàn không làm được.)\nVị trí ngôi sao ★ là phương án 1 (欠かさず)."
     },
     {
       "id": "n2-201412-q47",

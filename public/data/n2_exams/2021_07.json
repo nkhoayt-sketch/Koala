@@ -746,15 +746,15 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題8: 文の組み立て ★",
       "instruction": "次の文の＿★＿に入る最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "参考書を読んで完壁に         ★     ということがよくある。",
+      "question": "参考書を読んで完璧に ＿＿ ＿＿ ＿★＿ ＿＿ ということがよくある。",
       "options": [
         "理解した",
-        "",
+        "問題を解いてみると",
         "できない",
         "つもりでも"
       ],
       "answer": 1,
-      "explanation": "【正解】2 (問題を解いてみると)\n\n• Giải thích kiến thức và ngữ cảnh câu 46 trong đề thi JLPT N2 07/2021."
+      "explanation": "Thứ tự đúng: 1 - 4 - ★2 - 3\nCâu hoàn chỉnh: 参考書を読んで完璧に理解したつもりでも、問題を解いてみるとできないということがよくある。\n(Dù cứ ngỡ là đã hiểu hoàn toàn khi đọc sách tham khảo, nhưng hễ bắt tay vào giải bài tập thì thường lại không làm được.)\nVị trí ngôi sao ★ là phương án 2 (問題を解いてみると)."
     },
     {
       "id": "n2-202107-q47",
@@ -762,15 +762,15 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題8: 文の組み立て ★",
       "instruction": "次の文の＿★＿に入る最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "この池に         ★     そうだ。",
+      "question": "この池に ＿＿ ＿＿ ＿★＿ ＿＿ そうだ。",
       "options": [
         "ものもいる",
         "すむ",
         "魚の中には",
-        ""
+        "100年以上生きる"
       ],
       "answer": 3,
-      "explanation": "【正解】4 (100 年以上生きる)\n\n• Giải thích kiến thức và ngữ cảnh câu 47 trong đề thi JLPT N2 07/2021."
+      "explanation": "Thứ tự đúng: 2 - 3 - ★4 - 1\nCâu hoàn chỉnh: この池にすむ魚の中には、100年以上生きるものもいるそうだ。\n(Nghe nói trong số những loài cá sống ở ao này, có con sống thọ hơn 100 năm.)\nVị trí ngôi sao ★ là phương án 4 (100年以上生きる)."
     },
     {
       "id": "n2-202107-q48",

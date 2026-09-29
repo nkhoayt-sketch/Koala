@@ -794,15 +794,15 @@
       "sectionGroup": "vocab_grammar",
       "section": "問題8: 文の組み立て ★",
       "instruction": "次の文の＿★＿に入る最もよいものを、1・2・3・4から一つ選びなさい。",
-      "question": "Câu hỏi 49 ＿＿ ＿＿ ＿★＿ ＿＿",
+      "question": "私は、中学生になったころから ＿＿ ＿＿ ＿★＿ ＿＿ 医者になろうと決めていた。",
       "options": [
-        "",
-        "",
-        "",
-        ""
+        "将来",
+        "医学に興味を持ち始め",
+        "高校に入ったころには",
+        "次第に"
       ],
       "answer": 2,
-      "explanation": "【正解】3 (3)\n\n• Giải thích kiến thức và ngữ cảnh câu 49 trong đề thi JLPT N2 07/2018."
+      "explanation": "Thứ tự đúng: 4 - 2 - ★3 - 1\nCâu hoàn chỉnh: 私は、中学生になったころから次第に医学に興味を持ち始め、高校に入ったころには将来医者になろうと決めていた。\n(Từ hồi học cấp hai tôi đã dần dần có hứng thú với y học, và đến khi vào cấp ba thì đã quyết định tương lai sẽ trở thành bác sĩ.)\nVị trí ngôi sao ★ là phương án 3 (高校に入ったころには)."
     },
     {
       "id": "n2-201807-q50",
