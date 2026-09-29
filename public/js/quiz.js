@@ -1732,7 +1732,15 @@ export class QuizEngine {
    */
   async handleAnkiConnectSync() {
     this.showToast('Đang kết nối AnkiConnect (localhost:8765)...', 'info');
-    const result = await sendMistakesToAnkiConnect(this.dayData.title, this.dayData.questions, this.userAnswers, this.userFlags);
+    const level = (this.dayData && (this.dayData.level || (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n2') ? 'N2' : 'N1'))) || 'N1';
+    const deckName = level === 'N2' ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review';
+    const result = await sendMistakesToAnkiConnect(
+      this.dayData.title,
+      this.dayData.questions,
+      this.userAnswers,
+      this.userFlags,
+      { level, deckName }
+    );
 
     if (result.success) {
       if (result.totalCount === 0) {
@@ -1741,7 +1749,7 @@ export class QuizEngine {
         this.showToast(`⚡ Đã trích xuất ${result.totalCount} câu (gồm ${result.wrongCount} câu sai và ${result.flaggedCount} câu đánh dấu khó) vào Deck "${result.deckName}" trong Anki!`, 'success');
       }
     } else {
-      this.showToast('⚠️ Không thể kết nối AnkiConnect (localhost:8765). Hãy mở app Anki & cài AnkiConnect!', 'error');
+      this.showToast(`⚠️ Không thể kết nối AnkiConnect (localhost:8765). Hãy mở app Anki & cài AnkiConnect để nạp vào Deck "${result.deckName || deckName}"!`, 'error');
     }
   }
 

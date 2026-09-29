@@ -80,12 +80,17 @@ export function collectQuestionsForAnki(questions = [], userAnswers = {}, userFl
 /**
  * Builds a clean, organized text report of wrong & flagged questions for Anki / study review
  */
-export function buildMistakesReport(dayTitle, questions = [], userAnswers = {}, userFlags = {}) {
+export function buildMistakesReport(dayTitle, questions = [], userAnswers = {}, userFlags = {}, options = {}) {
   const collection = collectQuestionsForAnki(questions, userAnswers, userFlags);
 
   if (collection.totalCount === 0) {
     return null;
   }
+
+  const isN2 = (options && options.level === 'N2') ||
+    (typeof dayTitle === 'string' && /N2/i.test(dayTitle)) ||
+    (questions && questions.length > 0 && questions[0].id && String(questions[0].id).toLowerCase().includes('n2'));
+  const targetDeck = (options && options.deckName) || (isN2 ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review');
 
   const dateStr = new Date().toLocaleDateString('vi-VN', {
     year: 'numeric',
@@ -97,6 +102,7 @@ export function buildMistakesReport(dayTitle, questions = [], userAnswers = {}, 
 
   let report = `====================================================\n`;
   report += ` BÁO CÁO ÔN TẬP ANKI - ${dayTitle}\n`;
+  report += ` Khuyến nghị Deck: ${targetDeck}\n`;
   report += ` Thời gian: ${dateStr}\n`;
   report += ` Đã trích xuất: ${collection.totalCount} câu (gồm ${collection.wrongCount} câu sai và ${collection.flaggedCount} câu đánh dấu khó)\n`;
   report += `====================================================\n\n`;
@@ -125,13 +131,14 @@ export function buildMistakesReport(dayTitle, questions = [], userAnswers = {}, 
     report += `----------------------------------------------------\n\n`;
   });
 
-  report += `\n* Mẹo học tập: Hãy nhập danh sách này vào Anki hoặc ôn tập lại sau 24 giờ để ghi nhớ lâu dài!`;
+  report += `\n* Mẹo học tập: Hãy nhập danh sách này vào Anki (Deck: ${targetDeck}) hoặc ôn tập lại sau 24 giờ để ghi nhớ lâu dài!`;
 
   return {
     text: report,
     totalCount: collection.totalCount,
     wrongCount: collection.wrongCount,
     flaggedCount: collection.flaggedCount,
+    deckName: targetDeck,
     items: collection.items,
     toString() {
       return this.text;
@@ -175,10 +182,20 @@ export async function copyTextToClipboard(text) {
 
 /**
  * Direct Integration with AnkiConnect API (http://localhost:8765)
- * Adds wrong & flagged questions directly to Anki deck 'JLPT N1 Weakness'
+ * Adds wrong & flagged questions to Anki deck:
+ * - 'Koala_JLPT::N1_Review' for N1
+ * - 'Koala_JLPT::N2_Review' for N2
  */
-export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAnswers = {}, userFlags = {}) {
+export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAnswers = {}, userFlags = {}, options = {}) {
   const collection = collectQuestionsForAnki(questions, userAnswers, userFlags);
+
+  // Automatically detect level from options, title, or question IDs
+  const isN2 = (options && options.level === 'N2') ||
+    (typeof dayTitle === 'string' && /N2/i.test(dayTitle)) ||
+    (questions && questions.length > 0 && questions[0].id && String(questions[0].id).toLowerCase().includes('n2'));
+
+  const defaultDeck = isN2 ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review';
+  const deckName = (options && options.deckName) ? options.deckName : defaultDeck;
 
   if (collection.totalCount === 0) {
     return {
@@ -187,15 +204,15 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAn
       totalCount: 0,
       wrongCount: 0,
       flaggedCount: 0,
+      deckName: deckName,
       message: 'no_cards'
     };
   }
 
   const ankiUrl = 'http://localhost:8765';
-  const deckName = 'JLPT N1 Weakness';
 
   try {
-    // Step 1: Ensure deck exists
+    // Step 1: Ensure deck exists (Anki creates parent deck 'Koala_JLPT' and child deck automatically via '::')
     await fetch(ankiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -283,6 +300,18 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAn
         </div>
       `;
 
+      const noteTags = [
+        'Koala_JLPT',
+        isN2 ? 'JLPT_N2' : 'JLPT_N1',
+        item.tag
+      ];
+      if (q.section) {
+        noteTags.push(q.section.replace(/\s+/g, '_'));
+      }
+      if (q.day) {
+        noteTags.push(`Day_${q.day}`);
+      }
+
       return {
         deckName: deckName,
         modelName: 'Basic',
@@ -290,7 +319,7 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAn
           Front: frontHtml,
           Back: backHtml
         },
-        tags: ['JLPT_N1', '20Ngay_N1', item.tag, `Day_${q.day || 1}`]
+        tags: noteTags
       };
     });
 
@@ -331,6 +360,7 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAn
       totalCount: collection.totalCount,
       wrongCount: collection.wrongCount,
       flaggedCount: collection.flaggedCount,
+      deckName: deckName,
       error: err.message || 'connection_failed'
     };
   }
