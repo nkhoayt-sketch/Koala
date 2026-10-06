@@ -1,0 +1,41 @@
+[
+  {
+    "id": "skz_ch01",
+    "chapterNumber": 1,
+    "chapter": "第1章：対比・逆接",
+    "title": "Cấu trúc tương phản & nghịch lý (対比・逆接)",
+    "theme": "Tiền đề số đông (〜と思われがちだが) vs Cú lật tư duy (しかし・実は)",
+    "description": "Chương 1 mở đầu giáo trình Shin Kanzen Master Dokkai N1. Rèn luyện phản xạ bóc tách quan niệm thông thường của xã hội và nắm bắt tức thì thông điệp cốt lõi của tác giả qua các từ nối lật ngược vấn đề.",
+    "file": "data/n1_dokkai/shinkanzen_ch01.json",
+    "available": true,
+    "totalQuestions": 4,
+    "types": [
+      "short",
+      "medium"
+    ]
+  },
+  {
+    "id": "skz_ch02",
+    "chapterNumber": 2,
+    "chapter": "第2章：言い換え・比喩",
+    "title": "Diễn đạt tương đương & Ẩn dụ (言い換え・比喩)",
+    "theme": "Nhận diện mệnh đề đồng nghĩa (つまり・すなわち) và giải mã hình ảnh ẩn dụ",
+    "description": "Rèn luyện kỹ năng phát hiện các cách diễn đạt lại tư tưởng của tác giả và giải mã hàm ý ẩn dụ trong câu hỏi N1.",
+    "file": "data/n1_dokkai/shinkanzen_ch02.json",
+    "available": false,
+    "totalQuestions": 0,
+    "types": []
+  },
+  {
+    "id": "skz_ch03",
+    "chapterNumber": 3,
+    "chapter": "第3章：理由・根拠",
+    "title": "Lý do & Căn cứ lập luận (理由・根拠)",
+    "theme": "Bóc tách mối quan hệ nhân quả (なぜなら・〜からだ) và cơ sở lập luận",
+    "description": "Nắm vững phương pháp lần theo nguồn cơn của vấn đề để trả lời chính xác các câu hỏi 'Tại sao tác giả lại nói như vậy?'.",
+    "file": "data/n1_dokkai/shinkanzen_ch03.json",
+    "available": false,
+    "totalQuestions": 0,
+    "types": []
+  }
+]

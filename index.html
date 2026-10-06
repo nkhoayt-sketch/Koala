@@ -217,13 +217,32 @@
               </div>
             </div>
 
-            <!-- Subfolder 2: Shinkanzen Dokkai (Khung chờ) -->
-            <div class="tree-item-disabled px-3 py-2 rounded-xl flex items-center justify-between text-xs font-medium text-slate-400 bg-slate-50/50 cursor-not-allowed border border-dashed border-slate-200">
-              <div class="flex items-center gap-2">
-                <span>📚</span>
-                <span>Shinkanzen Dokkai</span>
+            <!-- Subfolder 2: Shinkanzen Dokkai N1 (Đang mở Chương 1) -->
+            <div class="tree-subfolder rounded-xl border border-slate-100 overflow-hidden">
+              <button type="button" class="tree-subfolder-toggle w-full px-3 py-2 flex items-center justify-between bg-white hover:bg-slate-50 transition text-left" data-target="subgroup-n1-dokkai">
+                <div class="flex items-center gap-2">
+                  <span>📚</span>
+                  <span class="text-xs font-bold text-slate-800">Shinkanzen Dokkai N1</span>
+                  <span id="n1-dokkai-count-tag" class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-amber-50 text-amber-700">Chương 1</span>
+                </div>
+                <svg class="tree-chevron w-3.5 h-3.5 text-slate-400 transition-transform duration-200 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+
+              <div id="subgroup-n1-dokkai" class="tree-subfolder-content pl-2 pr-1 pb-1 pt-0.5 space-y-1">
+                <ul id="sidebar-dokkai-list" class="space-y-1 border-l-2 border-amber-200 pl-2">
+                  <li>
+                    <button type="button" id="btn-sidebar-dokkai-ch01" class="nav-tree-item w-full text-left px-2.5 py-1.5 rounded-xl transition flex items-center justify-between text-xs font-semibold text-slate-700 hover:bg-slate-100 hover:text-amber-700 cursor-pointer" data-dokkai-ch="ch01">
+                      <div class="flex items-center gap-2 truncate">
+                        <span class="inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-bold bg-amber-100 text-amber-800">1</span>
+                        <span class="truncate">第1章: 対比・逆接</span>
+                      </div>
+                      <span class="text-[9px] font-bold px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800 shrink-0">4 bài</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
-              <span class="text-[9px] px-1.5 py-0.5 rounded font-normal bg-slate-100 text-slate-400">Khung chờ</span>
             </div>
 
             <!-- Subfolder 3: Đề thi N1 các năm (Khung chờ) -->
@@ -576,44 +595,44 @@
               </div>
             </div>
 
-            <!-- CARD 3: Shinkanzen Dokkai / Ngữ pháp (Coming Soon) -->
-            <div class="rounded-3xl border border-slate-200/80 bg-slate-50/50 p-6 flex flex-col justify-between opacity-85 border-dashed">
+            <!-- CARD 3: Shinkanzen Dokkai N1 (ACTIVE) -->
+            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-amber-400">
               <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                  <span class="w-10 h-10 rounded-2xl bg-slate-200 text-slate-500 font-extrabold text-sm flex items-center justify-center">
-                    📚
+                  <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-700 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-amber-100">
+                    読解
                   </span>
-                  <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1">
-                    <span>⏳</span>
-                    Sắp ra mắt
+                  <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Chương 1 đã sẵn sàng
                   </span>
                 </div>
 
                 <div>
-                  <h3 class="text-base font-bold text-slate-700">
-                    Shinkanzen Master
+                  <h3 class="text-base font-bold text-slate-900 group-hover:text-amber-700 transition flex items-center gap-1.5">
+                    <span>Shin Kanzen Dokkai N1</span>
                   </h3>
-                  <p class="text-xs font-semibold text-slate-500 mt-0.5">Dokkai & Bunpou (N1 & N2)</p>
-                  <p class="text-xs text-slate-400 mt-2 leading-relaxed">
-                    Giáo trình chuyên sâu rèn luyện kỹ năng Đọc hiểu trung văn, trường văn và tư duy phân tích ngữ pháp khó theo từng chủ đề.
+                  <p class="text-xs font-semibold text-amber-700 mt-0.5">Phương pháp mổ xẻ logic & bắt bẫy</p>
+                  <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                    Giáo trình đọc hiểu đỉnh cao JLPT N1. Rèn luyện tư duy bóc tách tiền đề số đông (〜と思われがちだが) và cú lật tư duy (しかし・実は) để chốt đúng quan điểm tác giả.
                   </p>
                 </div>
 
-                <div class="bg-white/80 rounded-2xl p-3 border border-slate-200/60 space-y-1.5 text-xs text-slate-500">
+                <div class="bg-slate-50 rounded-2xl p-3 border border-slate-100 space-y-1.5 text-xs text-slate-600">
                   <div class="flex items-center justify-between">
-                    <span>Đọc hiểu phân loại:</span>
-                    <span class="font-medium text-slate-600">Đang chuẩn bị</span>
+                    <span class="text-slate-400">Đang mở:</span>
+                    <span class="font-bold text-slate-800">第1章：対比・逆接 (4 bài)</span>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span>Ngữ pháp chuyên đề:</span>
-                    <span class="font-medium text-slate-600">Đang chuẩn bị</span>
+                    <span class="text-slate-400">Tính năng:</span>
+                    <span class="font-bold text-amber-700">Adaptive Timer & 2-Step Logic</span>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-5 mt-4 border-t border-slate-200/60">
-                <button type="button" disabled class="w-full py-2.5 px-4 rounded-xl bg-slate-200 text-slate-400 font-bold text-xs cursor-not-allowed flex items-center justify-center gap-2">
-                  <span>🔒 Đang chuẩn bị nội dung</span>
+              <div class="pt-5 mt-4 border-t border-slate-100">
+                <button type="button" id="btn-home-start-dokkai-ch01" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 active:scale-98 text-white font-bold text-xs shadow-md shadow-amber-200 flex items-center justify-center gap-2 transition cursor-pointer">
+                  <span>📖 Học ngay Chương 1 (対比・逆接)</span>
                 </button>
               </div>
             </div>

@@ -1,0 +1,117 @@
+{
+  "chapterId": "ch01",
+  "chapter": "第1章：対比・逆接",
+  "title": "Chương 1: Cấu trúc tương phản & nghịch lý (対比・逆接)",
+  "description": "Phương pháp độc quyền Shin Kanzen Dokkai: Nhận diện tiền đề số đông (〜と思われがちだが), bắt trọn từ nối lật ngược (しかし・ところが) để chốt chính xác quan điểm tác giả.",
+  "totalQuestions": 4,
+  "questions": [
+    {
+      "id": "skz_ch01_q01",
+      "chapter": "第1章：対比・逆接",
+      "title": "Bài đọc thực hành 1: Giá trị của sự nhàn rỗi (無為の時間)",
+      "mondaiType": "short",
+      "passage": "現代社会では、忙しく働くことこそが美徳であり、何もせず過ごす「暇」は悪、あるいは時間の浪費と思われがちである。スケジュール帳が予定で埋まっていることに充実感を覚える現代人も少なくないだろう。\n\nしかし、人間が本当に新しい発想を生み出し、物事の本質を深く思索できるのは、まさにそうした「目的のない無為の時間」においてではないだろうか。常に眼前の作業や効率に追われていては、既存の枠組みを疑う余裕など生まれない。一見無駄に見える余白の時間こそが、創造的な知性を育むための不可欠な肥沃な土壌なのである。",
+      "question": "筆者の考えと最も合致するものはどれか。",
+      "options": [
+        "効率的に多忙な日々を送る現代人ほど、創造的な発想を生み出しやすい。",
+        "予定を埋めて忙しく活動することは、怠惰な時間を防ぐために推奨されるべき美徳である。",
+        "一見無駄に思える目的のない余白の時間こそが、創造的な知性と深い思索を育む根源である。",
+        "現代社会で新しい知性を発揮するには、時間の浪費を徹底的に排除した行動計画が不可欠である。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "忙しく働くことこそが美徳であり、何もせず過ごす「暇」は悪、あるいは時間の浪費と思われがちである",
+        "turningPoint": "しかし",
+        "authorConclusion": "一見無駄に見える余白の時間こそが、創造的な知性を育むための不可欠な肥沃な土壌なのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đảo ngược quan hệ nhân quả): Bài đọc khẳng định bận rộn làm mất đi khoảng trống tư duy, chứ không phải càng bận rộn thì càng sáng tạo.",
+        "opt2": "❌ BẪY TƯ DUY (Đồng hóa tiền đề số đông): Đây là quan niệm thường thấy của xã hội (tiền đề số đông) được nêu ở câu đầu, hoàn toàn trái ngược với lập luận phản bác của tác giả sau chữ 「しかし」.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác 100% với câu chốt của tác giả ở cuối đoạn: 「一見無駄に見える余白の時間こそが、創造的な知性を育むための不可欠な肥沃な土壌なのである」.",
+        "opt4": "❌ BẪY TƯ DUY (Suy diễn ngược): Tác giả bảo vệ giá trị của sự 'nhàn rỗi vô định', phương án này lại đòi hỏi bài trừ lãng phí thời gian."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, người ta thường nghĩ rằng làm việc bận rộn mới là đức tính tốt, còn việc ở không 'nhàn rỗi' là điều xấu, hoặc là sự lãng phí thời gian. Có không ít người cảm thấy thỏa mãn khi cuốn sổ tay ngập tràn lịch trình.<br><br>Tuy nhiên, chẳng phải chính trong những 'khoảng thời gian vô định không mục đích' ấy mới là lúc con người thực sự nảy sinh những ý tưởng mới mẻ và suy ngẫm sâu sắc về bản chất sự vật hay sao? Nếu cứ luôn bị cuốn theo công việc trước mắt và hiệu suất, ta sẽ không thể có đủ thảnh thơi để hoài nghi những khuôn mẫu sẵn có. Khoảng thời gian tưởng chừng như vô ích ấy lại chính là mảnh đất màu mỡ không thể thiếu để nuôi dưỡng trí tuệ sáng tạo.<br><br><b>【Phân tích cấu trúc 対比・逆接 (Shin Kanzen Dokkai)】:</b><br>1. <b>Tiền đề số đông (一般論):</b> Dấu hiệu <code>〜と思われがちである</code> (người ta thường nghĩ bận rộn là tốt, nhàn rỗi là lãng phí).<br>2. <b>Cú lật chuyển ý (逆接の転換):</b> Từ nối <code>しかし</code> lật ngược hoàn toàn quan niệm trên, dẫn dắt sang góc nhìn của tác giả bằng câu hỏi tu từ <code>〜のではないだろうか</code>.<br>3. <b>Kết luận tác giả (筆者の主張):</b> Nhấn mạnh bằng trợ từ <code>〜こそが</code> ở câu cuối: Thời gian vô định chính là nền tảng của tư duy sáng tạo."
+    },
+    {
+      "id": "skz_ch01_q02",
+      "chapter": "第1章：対比・逆接",
+      "title": "Bài đọc thực hành 2: Ngôn ngữ của AI và Thể nghiệm con người",
+      "mondaiType": "short",
+      "passage": "近年、人工知能（AI）の急速な発展により、文章の要約や翻訳、さらには創作活動までもが機械によって高度に代行されるようになった。AIの膨大なデータ処理能力を前にして、いずれ人間の言語活動の大半はAIに取って代わられるのではないかという悲観的な見解も広く語られている。\n\nところが、AIが扱っているのはあくまで統計的に配置された「記号」の連鎖にすぎず、そこには身体を通した痛みや喜びといった「生のリアリティ」が根本的に欠落している。人間が発する言葉が他者の心を揺さぶるのは、その言葉が肉体的な経験と感情の重みを背負っているからだ。したがって、機械がどれほど巧みな文章を紡ぎ出そうとも、生身の身体性に根ざした人間の表現の尊厳が失われることは決してないはずである。",
+      "question": "筆者の主張として最も適切なものはどれか。",
+      "options": [
+        "AIの処理能力の向上に伴い、人間の創作活動や言語表現の価値は次第に失われていく。",
+        "AIの言語処理は記号の操作にとどまり、身体的な経験に根ざした人間の言葉の重みに取って代わることはできない。",
+        "統計的なデータ分析に基づくAIの文章は、人間の感情的な表現よりも客観的で優れている。",
+        "人間の表現の尊厳を守るためには、文章作成や翻訳におけるAIの利用を厳しく制限すべきである。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "いずれ人間の言語活動の大半はAIに取って代わられるのではないかという悲観的な見解も広く語られている",
+        "turningPoint": "ところが",
+        "authorConclusion": "機械がどれほど巧みな文章を紡ぎ出そうとも、生身の身体性に根ざした人間の表現の尊厳が失われることは決してないはずである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa ý kiến lo ngại của số đông): Đây là quan điểm bi quan được nêu ở đoạn 1, tác giả phản bác quan điểm này ở đoạn 2.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp trọn vẹn với kết luận sau chữ 「ところが」: AI chỉ xử lý ký hiệu, không có thể nghiệm thân thể nên không thể thay thế giá trị cốt lõi của ngôn ngữ con người.",
+        "opt3": "❌ BẪY TƯ DUY (Đưa ra thông tin trái ngược): Bài đọc không khen ngợi AI khách quan hơn mà chỉ ra AI thiếu hụt cảm xúc và trải nghiệm sống thực tế.",
+        "opt4": "❌ BẪY TƯ DUY (Đưa ra giải pháp cực đoan không có trong bài): Tác giả không hề kêu gọi hạn chế hay cấm đoán việc sử dụng AI trong đời sống."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Những năm gần đây, với sự phát triển thần tốc của trí tuệ nhân tạo (AI), các công việc tóm tắt, dịch thuật, thậm chí cả hoạt động sáng tạo văn chương cũng đã được máy móc đảm nhiệm ở trình độ cao. Đứng trước năng lực xử lý dữ liệu khổng lồ của AI, không ít quan điểm bi quan cho rằng phần lớn hoạt động ngôn ngữ của con người rốt cuộc sẽ bị AI thay thế hoàn toàn.<br><br>Thế nhưng, những gì AI đang xử lý rốt cuộc cũng chỉ là chuỗi 'ký hiệu' được sắp đặt theo thuật toán thống kê, hoàn toàn thiếu vắng 'tính hiện thực của sự sống' như nỗi đau hay niềm hân hoan thông qua cơ thể sinh học. Lời nói con người thốt ra có thể làm rung động trái tim người khác chính là vì nó gánh trên mình sức nặng của trải nghiệm thể xác và cảm xúc. Do đó, cho dù máy móc có dệt nên những áng văn khéo léo đến đâu chăng nữa, phẩm giá biểu đạt bắt nguồn từ tính thể nghiệm của con người chắc chắn sẽ không bao giờ bị mai một.<br><br><b>【Phân tích cấu trúc 対比・逆接】:</b><br>1. <b>Quan niệm lo ngại (世間の見解):</b> AI sẽ nuốt chửng hoạt động sáng tạo của con người.<br>2. <b>Cú lật tư duy (転換):</b> Từ nối <code>ところが</code> lật lại bản chất: AI chỉ là ký hiệu thống kê, không có cảm xúc thể xác.<br>3. <b>Khẳng định của tác giả (主張):</b> Biểu đạt của con người bắt nguồn từ thân thể sống nên vị thế không thể lay chuyển (<code>〜決してないはずである</code>)."
+    },
+    {
+      "id": "skz_ch01_q03",
+      "chapter": "第1章：対比・逆接",
+      "title": "Bài đọc thực hành 3: Cạm bẫy của chuyên môn hóa hẹp",
+      "mondaiType": "short",
+      "passage": "現代の学問やビジネスにおいては、一つの領域を極限まで掘り下げた高度な専門性こそが何よりも高く評価されがちである。細分化された特定の分野に特化することこそが、競争を勝ち抜く確実な戦略だと信じられているのだ。\n\nだが、自らの専門の狭い蛸壺（たこつぼ）に閉じこもることは、かえって全体像を見失い、予期せぬ変化への適応力を奪う危険をはらんでいる。真に解決が困難な現実の諸問題は、単一の専門知識だけで対処できるほど単純ではない。専門知識を深めること以上に、異なる領域の知見を自在に結びつけ、大所高所から俯瞰する「越境する知性」こそが、今まさに求められているのである。",
+      "question": "この文章で筆者が最も言いたいことは何か。",
+      "options": [
+        "激しい競争を勝ち抜くためには、自らの専門分野のみを極限まで深めることが最優先である。",
+        "複雑な社会問題の解決には、狭い専門性に固執せず、異なる知見を統合して全体を俯瞰する知性が不可欠である。",
+        "専門知識を身につけることは全体像を見失う原因となるため、専門化自体を避けるべきである。",
+        "一つの分野にとどまらない幅広い知識を持つ人は、特定の専門性を持つ人よりも常に優れている。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "一つの領域を極限まで掘り下げた高度な専門性こそが何よりも高く評価されがちである",
+        "turningPoint": "だが",
+        "authorConclusion": "専門知識を深めること以上に、異なる領域の知見を自在に結びつけ、大所高所から俯瞰する「越境する知性」こそが、今まさに求められているのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Chọn phải quan niệm số đông bị tác giả bác bỏ): Câu đầu nêu đây là điều thường thấy, nhưng đoạn sau vạch ra cạm bẫy của nó.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với thông điệp cốt lõi sau từ nối 「だが」 và câu chốt 「〜越境する知性こそが、今まさに求められている」.",
+        "opt3": "❌ BẪY TƯ DUY (Nói quá đà / Cực đoan hóa): Tác giả không khuyên bài trừ chuyên môn, mà khuyên không nên tự giam mình trong chuyên môn hẹp mà mất cái nhìn toàn cảnh.",
+        "opt4": "❌ BẪY TƯ DUY (So sánh tuyệt đối vô căn cứ): Tác giả không so sánh ai luôn luôn giỏi hơn ai, bài viết nhấn mạnh sự phối hợp kiến thức."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong học thuật và thương trường hiện đại, tính chuyên môn cao được đào sâu đến cùng cực trong một lĩnh vực duy nhất thường có xu hướng được đánh giá cao hơn tất thảy. Người ta tin rằng việc chuyên môn hóa vào một lĩnh vực phân nhánh cụ thể chính là chiến lược chắc chắn nhất để chiến thắng trong cạnh tranh.<br><br>Thế nhưng, việc tự giam mình trong chiếc vỏ ốc chật hẹp của chuyên môn lại tiềm ẩn nguy cơ làm mất đi bức tranh toàn cảnh và tước đoạt khả năng thích ứng trước những biến cố khó lường. Những nan đề thực tế phức tạp không bao giờ đơn giản đến mức chỉ một mảng tri thức đơn lẻ có thể giải quyết. Hơn cả việc đào sâu kiến thức chuyên ngành, thứ đang thực sự được khao khát lúc này chính là 'trí tuệ vượt biên giới' — năng lực tự do kết nối những tri thức khác nhau và quan sát toàn cảnh từ trên cao.<br><br><b>【Phân tích cấu trúc 対比・逆接】:</b><br>1. <b>Tiền đề số đông:</b> <code>〜評価されがちである</code> (Đánh giá cao chuyên môn hóa hẹp).<br>2. <b>Từ nối lật ngược:</b> <code>だが</code> (Chỉ ra cạm bẫy 'chiếc vỏ ốc' 蛸壺).<br>3. <b>Kết luận tác giả:</b> Dùng cấu trúc so sánh hơn kém <code>〜以上に、〜こそが、今まさに求められている</code>."
+    },
+    {
+      "id": "skz_ch01_q04",
+      "chapter": "第1章：対比・逆接",
+      "title": "Bài đọc thực hành 4: Văn hóa im lặng và Chiều sâu của đối thoại",
+      "mondaiType": "medium",
+      "passage": "現代社会では、滑らかに淀みなく自己主張を展開し、間断なく言葉を発し続けることこそが優れたコミュニケーション能力の証拠であるとみなされがちだ。沈黙は「会話の停滞」や「自己表現の拙さ」と解釈され、気まずい空白を埋めるために次から次へと中身のない言葉が費やされる光景も珍しくない。\n\nしかし、本来のコミュニケーションにおいて、「沈黙」とは単なる言葉の不在や空白ではない。相手の言葉の真意を自らの内面で深く受け止め、咀嚼するための濃密な思考の時間であり、沈黙そのものが豊かな敬意の表明たり得るのである。相手の呼吸や余韻を感じ取りながらあえて言葉を差し控える「間（ま）」の共有こそが、言語化できない深い心の通底を可能にする。\n\n言葉数が多ければ多いほど相互理解が深まるというのは、皮肉にも現代人が陥った幻想にすぎない。雄弁に語り立てること以上に、豊かな沈黙を恐れずに共有できる関係性の中にこそ、真の対話の成熟が存在するのではないだろうか。",
+      "question": "「沈黙」についての筆者の見解として最も適切なものはどれか。",
+      "options": [
+        "沈黙は円滑な会話を停滞させるため、間断なく言葉を発して空白を埋めるよう努めるべきである。",
+        "言葉数の多さに比例して相互理解は深まるため、沈黙を極力減らすことがコミュニケーションの成熟につながる。",
+        "沈黙は言葉の不在ではなく、相手の言葉を咀嚼し敬意や心情を共有するための成熟した対話の本質である。",
+        "言葉による伝達は幻想にすぎないため、言語表現を一切廃止して沈黙の間だけを重視すべきである。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "滑らかに淀みなく自己主張を展開し、間断なく言葉を発し続けることこそが優れたコミュニケーション能力の証拠であるとみなされがちだ",
+        "turningPoint": "しかし",
+        "authorConclusion": "雄弁に語り立てること以上に、豊かな沈黙を恐れずに共有できる関係性の中にこそ、真の対話の成熟が存在するのではないだろうか"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa tiền đề số đông): Đây là quan niệm sai lầm phổ biến được tác giả nêu ra để chỉ trích ở đoạn 1.",
+        "opt2": "❌ BẪY TƯ DUY (Đảo ngược thông điệp): Tác giả coi quan niệm 'càng nhiều lời càng hiểu nhau' là một ảo tưởng (幻想) của người hiện đại.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khái quát hoàn hảo lập luận ở đoạn 2 và câu chốt đoạn 3: 沈黙 không phải là khoảng trống mà là thời khắc tiếp nhận, tôn trọng và là biểu hiện của đối thoại chín muồi.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa / Đưa ra kết luận phi thực tế): Tác giả không bài xích ngôn ngữ hay bảo bỏ hẳn lời nói, mà nhấn mạnh sự cân bằng giữa lời nói và khoảng lặng."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, việc trình bày quan điểm trôi chảy, lưu loát và nói liên hồi không ngắt quãng thường được coi là thước đo của năng lực giao tiếp xuất sắc. Sự im lặng bị diễn giải thành 'sự tắc nghẽn của cuộc trò chuyện' hay 'sự vụng về trong bộc lộ bản thân', khiến không ít người vội vã lấp đầy khoảng trống ngượng ngùng bằng hàng tràng ngôn từ rỗng tuếch.<br><br>Thế nhưng, trong bản chất của giao tiếp, 'im lặng' không đơn thuần là sự vắng bóng của ngôn từ hay khoảng trống vô nghĩa. Đó là khoảng thời gian tư duy lắng đọng để ta đón nhận và thẩm thấu trọn vẹn chân ý của đối phương nơi đáy lòng; bản thân sự im lặng có thể là biểu hiện của lòng tôn kính sâu sắc. Chính việc cùng chia sẻ 'khoảng lặng' (Ma) — nơi ta cảm nhận nhịp thở và dư vị của đối phương mà chủ động ghìm giữ lời nói — mới là điều giúp hai tâm hồn đồng điệu vượt lên trên mọi câu chữ.<br><br>Cho rằng nói càng nhiều thì càng thấu hiểu nhau, mỉa mai thay, chỉ là ảo tưởng của con người hiện đại. Hơn cả việc thao thao bất tuyệt, chẳng phải sự chín muồi thực sự của đối thoại lại nằm trong một mối quan hệ nơi ta dám cùng nhau sẻ chia sự im lặng màu mỡ hay sao?<br><br><b>【Phân tích cấu trúc đối chiếu Trung văn (対比・逆接)】:</b><br>1. Đoạn 1: Phê phán lối giao tiếp 'chỉ coi trọng nói liên tục' (Ngoại diện).<br>2. Đoạn 2: Lật ngược bằng <code>しかし</code>, giải mã giá trị thực của sự im lặng (Bản chất).<br>3. Đoạn 3: Kết luận bằng câu hỏi tu từ <code>〜のではないだろうか</code>, nâng tầm sự im lặng thành sự chín muồi trong quan hệ đối thoại."
+    }
+  ]
+}
