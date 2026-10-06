@@ -30,7 +30,75 @@
         "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác 100% với câu chốt của tác giả ở cuối đoạn: 「一見無駄に見える余白の時間こそが、創造的な知性を育むための不可欠な肥沃な土壌なのである」.",
         "opt4": "❌ BẪY TƯ DUY (Suy diễn ngược): Tác giả bảo vệ giá trị của sự 'nhàn rỗi vô định', phương án này lại đòi hỏi bài trừ lãng phí thời gian."
       },
-      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, người ta thường nghĩ rằng làm việc bận rộn mới là đức tính tốt, còn việc ở không 'nhàn rỗi' là điều xấu, hoặc là sự lãng phí thời gian. Có không ít người cảm thấy thỏa mãn khi cuốn sổ tay ngập tràn lịch trình.<br><br>Tuy nhiên, chẳng phải chính trong những 'khoảng thời gian vô định không mục đích' ấy mới là lúc con người thực sự nảy sinh những ý tưởng mới mẻ và suy ngẫm sâu sắc về bản chất sự vật hay sao? Nếu cứ luôn bị cuốn theo công việc trước mắt và hiệu suất, ta sẽ không thể có đủ thảnh thơi để hoài nghi những khuôn mẫu sẵn có. Khoảng thời gian tưởng chừng như vô ích ấy lại chính là mảnh đất màu mỡ không thể thiếu để nuôi dưỡng trí tuệ sáng tạo.<br><br><b>【Phân tích cấu trúc 対比・逆接 (Shin Kanzen Dokkai)】:</b><br>1. <b>Tiền đề số đông (一般論):</b> Dấu hiệu <code>〜と思われがちである</code> (người ta thường nghĩ bận rộn là tốt, nhàn rỗi là lãng phí).<br>2. <b>Cú lật chuyển ý (逆接の転換):</b> Từ nối <code>しかし</code> lật ngược hoàn toàn quan niệm trên, dẫn dắt sang góc nhìn của tác giả bằng câu hỏi tu từ <code>〜のではないだろうか</code>.<br>3. <b>Kết luận tác giả (筆者の主張):</b> Nhấn mạnh bằng trợ từ <code>〜こそが</code> ở câu cuối: Thời gian vô định chính là nền tảng của tư duy sáng tạo."
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, người ta thường nghĩ rằng làm việc bận rộn mới là đức tính tốt, còn việc ở không 'nhàn rỗi' là điều xấu, hoặc là sự lãng phí thời gian. Có không ít người cảm thấy thỏa mãn khi cuốn sổ tay ngập tràn lịch trình.<br><br>Tuy nhiên, chẳng phải chính trong những 'khoảng thời gian vô định không mục đích' ấy mới là lúc con người thực sự nảy sinh những ý tưởng mới mẻ và suy ngẫm sâu sắc về bản chất sự vật hay sao? Nếu cứ luôn bị cuốn theo công việc trước mắt và hiệu suất, ta sẽ không thể có đủ thảnh thơi để hoài nghi những khuôn mẫu sẵn có. Khoảng thời gian tưởng chừng như vô ích ấy lại chính là mảnh đất màu mỡ không thể thiếu để nuôi dưỡng trí tuệ sáng tạo.<br><br><b>【Phân tích cấu trúc 対比・逆接 (Shin Kanzen Dokkai)】:</b><br>1. <b>Tiền đề số đông (一般論):</b> Dấu hiệu <code>〜と思われがちである</code> (người ta thường nghĩ bận rộn là tốt, nhàn rỗi là lãng phí).<br>2. <b>Cú lật chuyển ý (逆接の転換):</b> Từ nối <code>しかし</code> lật ngược hoàn toàn quan niệm trên, dẫn dắt sang góc nhìn của tác giả bằng câu hỏi tu từ <code>〜のではないだろうか</code>.<br>3. <b>Kết luận tác giả (筆者の主張):</b> Nhấn mạnh bằng trợ từ <code>〜こそが</code> ở câu cuối: Thời gian vô định chính là nền tảng của tư duy sáng tạo.",
+      "vocabulary": [
+        {
+          "word": "美徳",
+          "reading": "びとく",
+          "hanviet": "Mỹ Đức",
+          "meaning": "Đức tính tốt đẹp, chuẩn mực đạo đức cao quý"
+        },
+        {
+          "word": "浪費",
+          "reading": "ろうひ",
+          "hanviet": "Lãng Phí",
+          "meaning": "Sự lãng phí, tiêu tốn vô bổ"
+        },
+        {
+          "word": "充実感",
+          "reading": "じゅうじつかん",
+          "hanviet": "Sung Thực Cảm",
+          "meaning": "Cảm giác thỏa mãn, đủ đầy ý nghĩa"
+        },
+        {
+          "word": "思索",
+          "reading": "しさく",
+          "hanviet": "Tư Tác",
+          "meaning": "Suy ngẫm sâu sắc về bản chất vấn đề"
+        },
+        {
+          "word": "無為",
+          "reading": "むい",
+          "hanviet": "Vô Vi",
+          "meaning": "Nhàn rỗi, không hành động gượng ép hay có mục đích"
+        },
+        {
+          "word": "眼前",
+          "reading": "がんぜん",
+          "hanviet": "Nhãn Tiền",
+          "meaning": "Ngay trước mắt, tức thời"
+        },
+        {
+          "word": "既存",
+          "reading": "きぞん",
+          "hanviet": "Ký Tồn",
+          "meaning": "Đã có sẵn, khuôn mẫu hiện hữu"
+        },
+        {
+          "word": "枠組み",
+          "reading": "わくぐみ",
+          "hanviet": "Khung Tổ",
+          "meaning": "Khuôn khổ, rào cản tư duy"
+        },
+        {
+          "word": "余白",
+          "reading": "よはく",
+          "hanviet": "Dư Bạch",
+          "meaning": "Khoảng trống dôi dư, khoảng lặng quý giá"
+        },
+        {
+          "word": "肥沃",
+          "reading": "ひよく",
+          "hanviet": "Phì Nhiêu",
+          "meaning": "Màu mỡ, tươi tốt, giàu tiềm năng"
+        },
+        {
+          "word": "土壌",
+          "reading": "どじょう",
+          "hanviet": "Thổ Nhưỡng",
+          "meaning": "Đất đai, môi trường màu mỡ nuôi dưỡng"
+        }
+      ]
     },
     {
       "id": "skz_ch01_q02",
@@ -57,7 +125,63 @@
         "opt3": "❌ BẪY TƯ DUY (Đưa ra thông tin trái ngược): Bài đọc không khen ngợi AI khách quan hơn mà chỉ ra AI thiếu hụt cảm xúc và trải nghiệm sống thực tế.",
         "opt4": "❌ BẪY TƯ DUY (Đưa ra giải pháp cực đoan không có trong bài): Tác giả không hề kêu gọi hạn chế hay cấm đoán việc sử dụng AI trong đời sống."
       },
-      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Những năm gần đây, với sự phát triển thần tốc của trí tuệ nhân tạo (AI), các công việc tóm tắt, dịch thuật, thậm chí cả hoạt động sáng tạo văn chương cũng đã được máy móc đảm nhiệm ở trình độ cao. Đứng trước năng lực xử lý dữ liệu khổng lồ của AI, không ít quan điểm bi quan cho rằng phần lớn hoạt động ngôn ngữ của con người rốt cuộc sẽ bị AI thay thế hoàn toàn.<br><br>Thế nhưng, những gì AI đang xử lý rốt cuộc cũng chỉ là chuỗi 'ký hiệu' được sắp đặt theo thuật toán thống kê, hoàn toàn thiếu vắng 'tính hiện thực của sự sống' như nỗi đau hay niềm hân hoan thông qua cơ thể sinh học. Lời nói con người thốt ra có thể làm rung động trái tim người khác chính là vì nó gánh trên mình sức nặng của trải nghiệm thể xác và cảm xúc. Do đó, cho dù máy móc có dệt nên những áng văn khéo léo đến đâu chăng nữa, phẩm giá biểu đạt bắt nguồn từ tính thể nghiệm của con người chắc chắn sẽ không bao giờ bị mai một.<br><br><b>【Phân tích cấu trúc 対比・逆接】:</b><br>1. <b>Quan niệm lo ngại (世間の見解):</b> AI sẽ nuốt chửng hoạt động sáng tạo của con người.<br>2. <b>Cú lật tư duy (転換):</b> Từ nối <code>ところが</code> lật lại bản chất: AI chỉ là ký hiệu thống kê, không có cảm xúc thể xác.<br>3. <b>Khẳng định của tác giả (主張):</b> Biểu đạt của con người bắt nguồn từ thân thể sống nên vị thế không thể lay chuyển (<code>〜決してないはずである</code>)."
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Những năm gần đây, với sự phát triển thần tốc của trí tuệ nhân tạo (AI), các công việc tóm tắt, dịch thuật, thậm chí cả hoạt động sáng tạo văn chương cũng đã được máy móc đảm nhiệm ở trình độ cao. Đứng trước năng lực xử lý dữ liệu khổng lồ của AI, không ít quan điểm bi quan cho rằng phần lớn hoạt động ngôn ngữ của con người rốt cuộc sẽ bị AI thay thế hoàn toàn.<br><br>Thế nhưng, những gì AI đang xử lý rốt cuộc cũng chỉ là chuỗi 'ký hiệu' được sắp đặt theo thuật toán thống kê, hoàn toàn thiếu vắng 'tính hiện thực của sự sống' như nỗi đau hay niềm hân hoan thông qua cơ thể sinh học. Lời nói con người thốt ra có thể làm rung động trái tim người khác chính là vì nó gánh trên mình sức nặng của trải nghiệm thể xác và cảm xúc. Do đó, cho dù máy móc có dệt nên những áng văn khéo léo đến đâu chăng nữa, phẩm giá biểu đạt bắt nguồn từ tính thể nghiệm của con người chắc chắn sẽ không bao giờ bị mai một.<br><br><b>【Phân tích cấu trúc 対比・逆接】:</b><br>1. <b>Quan niệm lo ngại (世間の見解):</b> AI sẽ nuốt chửng hoạt động sáng tạo của con người.<br>2. <b>Cú lật tư duy (転換):</b> Từ nối <code>ところが</code> lật lại bản chất: AI chỉ là ký hiệu thống kê, không có cảm xúc thể xác.<br>3. <b>Khẳng định của tác giả (主張):</b> Biểu đạt của con người bắt nguồn từ thân thể sống nên vị thế không thể lay chuyển (<code>〜決してないはずである</code>).",
+      "vocabulary": [
+        {
+          "word": "要約",
+          "reading": "ようやく",
+          "hanviet": "Yếu Ước",
+          "meaning": "Tóm lược, khái quát ý chính"
+        },
+        {
+          "word": "代行",
+          "reading": "だいこう",
+          "hanviet": "Đại Hành",
+          "meaning": "Làm thay, đại diện thực hiện"
+        },
+        {
+          "word": "膨大",
+          "reading": "ぼうだい",
+          "hanviet": "Bàng Đại",
+          "meaning": "Khổng lồ, cực kỳ đồ sộ"
+        },
+        {
+          "word": "連鎖",
+          "reading": "れんさ",
+          "hanviet": "Liên Tỏa",
+          "meaning": "Chuỗi dây chuyền, mối liên hệ nối tiếp"
+        },
+        {
+          "word": "欠落",
+          "reading": "けつらく",
+          "hanviet": "Khiếm Lạc",
+          "meaning": "Sự thiếu hụt, khiếm khuyết căn bản"
+        },
+        {
+          "word": "揺さぶる",
+          "reading": "ゆさぶる",
+          "hanviet": "Dao",
+          "meaning": "Làm rung chuyển, lay động tâm can"
+        },
+        {
+          "word": "巧み",
+          "reading": "たくみ",
+          "hanviet": "Xảo",
+          "meaning": "Khéo léo, tinh xảo, điêu luyện"
+        },
+        {
+          "word": "生身",
+          "reading": "なまみ",
+          "hanviet": "Sinh Thân",
+          "meaning": "Bằng xương bằng thịt, trải nghiệm sống thực"
+        },
+        {
+          "word": "尊厳",
+          "reading": "そんげん",
+          "hanviet": "Tôn Nghiêm",
+          "meaning": "Phẩm giá, giá trị tôn nghiêm không thể xâm phạm"
+        }
+      ]
     },
     {
       "id": "skz_ch01_q03",
@@ -84,7 +208,57 @@
         "opt3": "❌ BẪY TƯ DUY (Nói quá đà / Cực đoan hóa): Tác giả không khuyên bài trừ chuyên môn, mà khuyên không nên tự giam mình trong chuyên môn hẹp mà mất cái nhìn toàn cảnh.",
         "opt4": "❌ BẪY TƯ DUY (So sánh tuyệt đối vô căn cứ): Tác giả không so sánh ai luôn luôn giỏi hơn ai, bài viết nhấn mạnh sự phối hợp kiến thức."
       },
-      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong học thuật và thương trường hiện đại, tính chuyên môn cao được đào sâu đến cùng cực trong một lĩnh vực duy nhất thường có xu hướng được đánh giá cao hơn tất thảy. Người ta tin rằng việc chuyên môn hóa vào một lĩnh vực phân nhánh cụ thể chính là chiến lược chắc chắn nhất để chiến thắng trong cạnh tranh.<br><br>Thế nhưng, việc tự giam mình trong chiếc vỏ ốc chật hẹp của chuyên môn lại tiềm ẩn nguy cơ làm mất đi bức tranh toàn cảnh và tước đoạt khả năng thích ứng trước những biến cố khó lường. Những nan đề thực tế phức tạp không bao giờ đơn giản đến mức chỉ một mảng tri thức đơn lẻ có thể giải quyết. Hơn cả việc đào sâu kiến thức chuyên ngành, thứ đang thực sự được khao khát lúc này chính là 'trí tuệ vượt biên giới' — năng lực tự do kết nối những tri thức khác nhau và quan sát toàn cảnh từ trên cao.<br><br><b>【Phân tích cấu trúc 対比・逆接】:</b><br>1. <b>Tiền đề số đông:</b> <code>〜評価されがちである</code> (Đánh giá cao chuyên môn hóa hẹp).<br>2. <b>Từ nối lật ngược:</b> <code>だが</code> (Chỉ ra cạm bẫy 'chiếc vỏ ốc' 蛸壺).<br>3. <b>Kết luận tác giả:</b> Dùng cấu trúc so sánh hơn kém <code>〜以上に、〜こそが、今まさに求められている</code>."
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong học thuật và thương trường hiện đại, tính chuyên môn cao được đào sâu đến cùng cực trong một lĩnh vực duy nhất thường có xu hướng được đánh giá cao hơn tất thảy. Người ta tin rằng việc chuyên môn hóa vào một lĩnh vực phân nhánh cụ thể chính là chiến lược chắc chắn nhất để chiến thắng trong cạnh tranh.<br><br>Thế nhưng, việc tự giam mình trong chiếc vỏ ốc chật hẹp của chuyên môn lại tiềm ẩn nguy cơ làm mất đi bức tranh toàn cảnh và tước đoạt khả năng thích ứng trước những biến cố khó lường. Những nan đề thực tế phức tạp không bao giờ đơn giản đến mức chỉ một mảng tri thức đơn lẻ có thể giải quyết. Hơn cả việc đào sâu kiến thức chuyên ngành, thứ đang thực sự được khao khát lúc này chính là 'trí tuệ vượt biên giới' — năng lực tự do kết nối những tri thức khác nhau và quan sát toàn cảnh từ trên cao.<br><br><b>【Phân tích cấu trúc 対比・逆接】:</b><br>1. <b>Tiền đề số đông:</b> <code>〜評価されがちである</code> (Đánh giá cao chuyên môn hóa hẹp).<br>2. <b>Từ nối lật ngược:</b> <code>だが</code> (Chỉ ra cạm bẫy 'chiếc vỏ ốc' 蛸壺).<br>3. <b>Kết luận tác giả:</b> Dùng cấu trúc so sánh hơn kém <code>〜以上に、〜こそが、今まさに求められている</code>.",
+      "vocabulary": [
+        {
+          "word": "細分化",
+          "reading": "さいぶんか",
+          "hanviet": "Tế Phân Hóa",
+          "meaning": "Phân chia nhỏ, chia thành các nhánh hẹp"
+        },
+        {
+          "word": "特化",
+          "reading": "とっか",
+          "hanviet": "Đặc Hóa",
+          "meaning": "Chuyên môn hóa sâu vào một lĩnh vực"
+        },
+        {
+          "word": "蛸壺",
+          "reading": "たこつぼ",
+          "hanviet": "Tiêu Hồ",
+          "meaning": "Chiếc vỏ ốc hẹp, cái hũ kín tự cô lập"
+        },
+        {
+          "word": "閉じこもる",
+          "reading": "とじこもる",
+          "hanviet": "Bế",
+          "meaning": "Giam mình, thu mình trong phạm vi hẹp"
+        },
+        {
+          "word": "知見",
+          "reading": "ちけん",
+          "hanviet": "Tri Kiến",
+          "meaning": "Tri thức và hiểu biết sâu sắc tích lũy được"
+        },
+        {
+          "word": "大所高所",
+          "reading": "たいしょこうしょ",
+          "hanviet": "Đại Sở Cao Sở",
+          "meaning": "Tầm nhìn bao quát, đại cục từ trên cao"
+        },
+        {
+          "word": "俯瞰",
+          "reading": "ふかん",
+          "hanviet": "Phủ Khám",
+          "meaning": "Nhìn bao quát toàn cảnh từ trên cao xuống"
+        },
+        {
+          "word": "越境",
+          "reading": "えっきょう",
+          "hanviet": "Việt Cảnh",
+          "meaning": "Vượt ranh giới, liên kết đa ngành"
+        }
+      ]
     },
     {
       "id": "skz_ch01_q04",
@@ -111,7 +285,75 @@
         "opt3": "✓ ĐÁP ÁN ĐÚNG: Khái quát hoàn hảo lập luận ở đoạn 2 và câu chốt đoạn 3: 沈黙 không phải là khoảng trống mà là thời khắc tiếp nhận, tôn trọng và là biểu hiện của đối thoại chín muồi.",
         "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa / Đưa ra kết luận phi thực tế): Tác giả không bài xích ngôn ngữ hay bảo bỏ hẳn lời nói, mà nhấn mạnh sự cân bằng giữa lời nói và khoảng lặng."
       },
-      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, việc trình bày quan điểm trôi chảy, lưu loát và nói liên hồi không ngắt quãng thường được coi là thước đo của năng lực giao tiếp xuất sắc. Sự im lặng bị diễn giải thành 'sự tắc nghẽn của cuộc trò chuyện' hay 'sự vụng về trong bộc lộ bản thân', khiến không ít người vội vã lấp đầy khoảng trống ngượng ngùng bằng hàng tràng ngôn từ rỗng tuếch.<br><br>Thế nhưng, trong bản chất của giao tiếp, 'im lặng' không đơn thuần là sự vắng bóng của ngôn từ hay khoảng trống vô nghĩa. Đó là khoảng thời gian tư duy lắng đọng để ta đón nhận và thẩm thấu trọn vẹn chân ý của đối phương nơi đáy lòng; bản thân sự im lặng có thể là biểu hiện của lòng tôn kính sâu sắc. Chính việc cùng chia sẻ 'khoảng lặng' (Ma) — nơi ta cảm nhận nhịp thở và dư vị của đối phương mà chủ động ghìm giữ lời nói — mới là điều giúp hai tâm hồn đồng điệu vượt lên trên mọi câu chữ.<br><br>Cho rằng nói càng nhiều thì càng thấu hiểu nhau, mỉa mai thay, chỉ là ảo tưởng của con người hiện đại. Hơn cả việc thao thao bất tuyệt, chẳng phải sự chín muồi thực sự của đối thoại lại nằm trong một mối quan hệ nơi ta dám cùng nhau sẻ chia sự im lặng màu mỡ hay sao?<br><br><b>【Phân tích cấu trúc đối chiếu Trung văn (対比・逆接)】:</b><br>1. Đoạn 1: Phê phán lối giao tiếp 'chỉ coi trọng nói liên tục' (Ngoại diện).<br>2. Đoạn 2: Lật ngược bằng <code>しかし</code>, giải mã giá trị thực của sự im lặng (Bản chất).<br>3. Đoạn 3: Kết luận bằng câu hỏi tu từ <code>〜のではないだろうか</code>, nâng tầm sự im lặng thành sự chín muồi trong quan hệ đối thoại."
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, việc trình bày quan điểm trôi chảy, lưu loát và nói liên hồi không ngắt quãng thường được coi là thước đo của năng lực giao tiếp xuất sắc. Sự im lặng bị diễn giải thành 'sự tắc nghẽn của cuộc trò chuyện' hay 'sự vụng về trong bộc lộ bản thân', khiến không ít người vội vã lấp đầy khoảng trống ngượng ngùng bằng hàng tràng ngôn từ rỗng tuếch.<br><br>Thế nhưng, trong bản chất của giao tiếp, 'im lặng' không đơn thuần là sự vắng bóng của ngôn từ hay khoảng trống vô nghĩa. Đó là khoảng thời gian tư duy lắng đọng để ta đón nhận và thẩm thấu trọn vẹn chân ý của đối phương nơi đáy lòng; bản thân sự im lặng có thể là biểu hiện của lòng tôn kính sâu sắc. Chính việc cùng chia sẻ 'khoảng lặng' (Ma) — nơi ta cảm nhận nhịp thở và dư vị của đối phương mà chủ động ghìm giữ lời nói — mới là điều giúp hai tâm hồn đồng điệu vượt lên trên mọi câu chữ.<br><br>Cho rằng nói càng nhiều thì càng thấu hiểu nhau, mỉa mai thay, chỉ là ảo tưởng của con người hiện đại. Hơn cả việc thao thao bất tuyệt, chẳng phải sự chín muồi thực sự của đối thoại lại nằm trong một mối quan hệ nơi ta dám cùng nhau sẻ chia sự im lặng màu mỡ hay sao?<br><br><b>【Phân tích cấu trúc đối chiếu Trung văn (対比・逆接)】:</b><br>1. Đoạn 1: Phê phán lối giao tiếp 'chỉ coi trọng nói liên tục' (Ngoại diện).<br>2. Đoạn 2: Lật ngược bằng <code>しかし</code>, giải mã giá trị thực của sự im lặng (Bản chất).<br>3. Đoạn 3: Kết luận bằng câu hỏi tu từ <code>〜のではないだろうか</code>, nâng tầm sự im lặng thành sự chín muồi trong quan hệ đối thoại.",
+      "vocabulary": [
+        {
+          "word": "淀みなく",
+          "reading": "よどみなく",
+          "hanviet": "Định",
+          "meaning": "Trôi chảy, lưu loát, không ngắc ngứ"
+        },
+        {
+          "word": "間断なく",
+          "reading": "かんだんなく",
+          "hanviet": "Gian Đoạn",
+          "meaning": "Liên tục không ngừng nghỉ, không ngắt quãng"
+        },
+        {
+          "word": "停滞",
+          "reading": "ていたい",
+          "hanviet": "Đình Trệ",
+          "meaning": "Sự ngưng trệ, bế tắc của cuộc trò chuyện"
+        },
+        {
+          "word": "拙さ",
+          "reading": "つたなさ",
+          "hanviet": "Chuyết",
+          "meaning": "Sự vụng về, non nớt trong thể hiện"
+        },
+        {
+          "word": "咀嚼",
+          "reading": "そしゃく",
+          "hanviet": "Tổ Tước",
+          "meaning": "Nghiền ngẫm, tiếp nhận và thẩm thấu sâu sắc"
+        },
+        {
+          "word": "濃密",
+          "reading": "のうみつ",
+          "hanviet": "Nồng Mật",
+          "meaning": "Đậm đặc, sâu sắc, lắng đọng"
+        },
+        {
+          "word": "余韻",
+          "reading": "よいん",
+          "hanviet": "Dư Vận",
+          "meaning": "Dư âm, dư vị lắng đọng sau lời nói"
+        },
+        {
+          "word": "差し控える",
+          "reading": "さしひかえる",
+          "hanviet": "Sai Khống",
+          "meaning": "Chủ động kiềm chế, nhịn không nói ra"
+        },
+        {
+          "word": "通底",
+          "reading": "つうてい",
+          "hanviet": "Thông Để",
+          "meaning": "Đồng điệu ngầm, thấu hiểu xuyên suốt mạch nguồn"
+        },
+        {
+          "word": "雄弁",
+          "reading": "ゆうべん",
+          "hanviet": "Hùng Biện",
+          "meaning": "Nói năng trôi chảy, hùng hồn thao thao"
+        },
+        {
+          "word": "成熟",
+          "reading": "せいじゅく",
+          "hanviet": "Thành Thục",
+          "meaning": "Sự chín muồi, trưởng thành sâu sắc"
+        }
+      ]
     }
   ]
 }
