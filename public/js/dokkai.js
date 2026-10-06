@@ -1,10 +1,8 @@
 /**
  * Koala JLPT Hub - Shin Kanzen Master Dokkai N1 Engine
  * 2-Column Responsive Workspace with Sticky Timer Dock, Pre-start Blur Lock,
- * Single-Correct Logic Mastery, and Universal N1 Vocab Tooltip & Anki Harvest Engine
+ * Single-Correct Logic Mastery, and Pure Authentic Japanese Passage Rendering
  */
-
-import { downloadAnkiTxtFile } from './export.js';
 
 export const TIMER_CONFIGS = {
   short: {
@@ -49,13 +47,10 @@ export class DokkaiEngine {
     this.currentIndex = 0;
 
     // State per question
-    this.step = 1; // 1: Reading & Timer, 2: Logic Highlights, Trap Breakdown & Vocab Tooltips
-    this.isStarted = false; // Blur/Lock overlay before user clicks Start
+    this.step = 1; // 1: Reading & Timer, 2: Logic Highlights & Trap Breakdown
+    this.isStarted = false; // Blur/Lock overlay before user clicks Start in modal
     this.selectedOption = null; // 0, 1, 2, 3
     this.userAnswersHistory = {}; // { questionId: { selectedOption, isCorrect, timeSpent } }
-
-    // Anki Harvest State: Map of word -> { word, reading, hanviet, meaning, context }
-    this.savedVocab = new Map();
 
     // Timer State
     this.timerMode = 'standard'; // 'standard' | 'hardcore' | 'unlimited'
@@ -65,9 +60,6 @@ export class DokkaiEngine {
     this.timerInterval = null;
     this.isTimerRunning = false;
     this.isTimeUp = false;
-
-    // Active tooltip element state
-    this.activeTooltipEl = null;
   }
 
   /**
@@ -237,7 +229,7 @@ export class DokkaiEngine {
   }
 
   // ==============================================================
-  // STEP 2: LOGIC HIGHLIGHTING & N1 VOCABULARY TOOLTIPS PROCESSOR
+  // STEP 2: LOGIC HIGHLIGHTING PROCESSOR (PURE JAPANESE TEXT)
   // ==============================================================
 
   escapeHtml(str) {
@@ -249,32 +241,17 @@ export class DokkaiEngine {
       .replace(/"/g, '&quot;');
   }
 
-  /**
-   * Safely replaces target word outside HTML tags to avoid corrupting attributes
-   */
-  replaceWordOutsideTags(html, word, replacementHtml) {
-    if (!html || !word) return html;
-    const parts = html.split(/(<[^>]+>)/g);
-    for (let i = 0; i < parts.length; i++) {
-      if (i % 2 === 0) {
-        // Text outside tags
-        parts[i] = parts[i].split(word).join(replacementHtml);
-      }
-    }
-    return parts.join('');
-  }
-
-  buildHighlightedPassage(passage, logicHighlights = {}, vocabulary = []) {
+  buildHighlightedPassage(passage, logicHighlights = {}) {
     if (!passage) return '';
-    if (this.step !== 2) {
-      // Step 1: Clean, unhighlighted text (pure reading practice)
+    if (this.step !== 2 || !logicHighlights) {
+      // Step 1: Clean, unhighlighted authentic text for pure reading practice
       return passage
         .split('\n\n')
         .map(para => `<p class="mb-5 last:mb-0">${this.escapeHtml(para)}</p>`)
         .join('');
     }
 
-    // Step 2: Full logic highlights + N1 Vocabulary tooltips
+    // Step 2: Full logic highlights (3 colors) without internal tooltips (Mazii/Yomitan friendly)
     let text = passage;
     const { counterPremise, turningPoint, authorConclusion } = logicHighlights;
 
@@ -319,17 +296,6 @@ export class DokkaiEngine {
     if (replacedBlue) combined = combined.replace(tokenBlue, replacedBlue);
     if (replacedYellow) combined = combined.replace(tokenYellow, replacedYellow);
     if (replacedRed) combined = combined.replace(tokenRed, replacedRed);
-
-    // Inject Vocabulary Tooltip Spans (Sorted by length descending)
-    if (Array.isArray(vocabulary) && vocabulary.length > 0) {
-      const sortedVocab = [...vocabulary].sort((a, b) => (b.word?.length || 0) - (a.word?.length || 0));
-      for (const item of sortedVocab) {
-        if (!item.word) continue;
-        const isSaved = this.savedVocab.has(item.word);
-        const vocabSpan = `<span class="dokkai-vocab-word cursor-pointer border-b-2 border-dashed border-indigo-400 hover:border-indigo-600 hover:bg-indigo-50/80 transition-colors font-medium rounded-xs px-0.5 ${isSaved ? 'bg-amber-50 border-amber-400 font-bold' : ''}" data-word="${this.escapeHtml(item.word)}" data-reading="${this.escapeHtml(item.reading || '')}" data-hanviet="${this.escapeHtml(item.hanviet || '')}" data-meaning="${this.escapeHtml(item.meaning || '')}" title="Nhấn để xem chú thích & lưu Anki">${this.escapeHtml(item.word)}</span>`;
-        combined = this.replaceWordOutsideTags(combined, item.word, vocabSpan);
-      }
-    }
 
     return combined;
   }
@@ -433,95 +399,6 @@ export class DokkaiEngine {
   }
 
   // ==============================================================
-  // ANKI VOCABULARY HARVEST ENGINE
-  // ==============================================================
-
-  toggleSaveVocab(item) {
-    if (!item || !item.word) return;
-    if (this.savedVocab.has(item.word)) {
-      this.savedVocab.delete(item.word);
-      if (this.app && typeof this.app.showToast === 'function') {
-        this.app.showToast(`Đã bỏ lưu từ "${item.word}" khỏi danh sách Anki.`, 'info');
-      }
-    } else {
-      this.savedVocab.set(item.word, item);
-      if (this.app && typeof this.app.showToast === 'function') {
-        this.app.showToast(`✨ Đã thêm "${item.word}" (${item.reading}) vào danh sách thẻ Anki!`, 'success');
-      }
-    }
-    this.updateVocabHarvestCount();
-    this.render();
-  }
-
-  updateVocabHarvestCount() {
-    const badgeEl = document.getElementById('dokkai-vocab-harvest-badge');
-    if (badgeEl) {
-      badgeEl.textContent = `${this.savedVocab.size} từ`;
-    }
-  }
-
-  saveSelectedTextToAnki(selectedText) {
-    if (!selectedText || !selectedText.trim()) return;
-    const cleanWord = selectedText.trim();
-    const q = this.getCurrentQuestion();
-    const item = {
-      word: cleanWord,
-      reading: '',
-      hanviet: 'Tự do bôi đen',
-      meaning: `Trích từ bài đọc: ${q ? q.title : ''}`
-    };
-    this.savedVocab.set(cleanWord, item);
-    if (this.app && typeof this.app.showToast === 'function') {
-      this.app.showToast(`✨ Đã lưu cụm từ "${cleanWord}" vào danh sách thẻ Anki!`, 'success');
-    }
-    this.updateVocabHarvestCount();
-    this.render();
-  }
-
-  exportVocabToAnki() {
-    if (this.savedVocab.size === 0) {
-      // If none saved manually, offer to export all vocabulary of this chapter
-      const q = this.getCurrentQuestion();
-      if (q && Array.isArray(q.vocabulary) && q.vocabulary.length > 0) {
-        q.vocabulary.forEach(v => this.savedVocab.set(v.word, v));
-        if (this.app && typeof this.app.showToast === 'function') {
-          this.app.showToast(`Đã tự động gom ${q.vocabulary.length} từ vựng N1 của bài đọc vào file xuất!`, 'info');
-        }
-      } else {
-        if (this.app && typeof this.app.showToast === 'function') {
-          this.app.showToast('Chưa có từ vựng nào được lưu. Hãy rê chuột vào các từ có gạch chân để lưu!', 'warning');
-        }
-        return;
-      }
-    }
-
-    const q = this.getCurrentQuestion();
-    let tsvRows = [];
-
-    this.savedVocab.forEach((item) => {
-      const front = `<b>【Từ vựng N1 Dokkai】</b><br><span style="font-size:26px; color:#4338ca; font-weight:bold;">${item.word}</span> ${item.reading ? `【${item.reading}】` : ''}`;
-      const back = `<b>【Âm Hán Việt】:</b> ${item.hanviet || '--'}<br><b>【Ý nghĩa ngữ cảnh】:</b> ${item.meaning || '--'}<br><br><b>【Bài đọc trích đoạn】:</b> ${q ? q.title : 'Shin Kanzen Master N1'}`;
-      const tags = `Koala_Dokkai_Vocab_N1 ${q ? q.chapter.replace(/[:：]/g, '_') : 'Ch01'}`;
-      tsvRows.push(`${front}\t${back}\t${tags}`);
-    });
-
-    const tsvContent = tsvRows.join('\n') + '\n';
-    const blob = new Blob([tsvContent], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `Koala_Dokkai_Vocab_${(q && q.id) || 'Ch01'}.txt`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-
-    if (this.app && typeof this.app.showToast === 'function') {
-      this.app.showToast(`🎉 Đã xuất thành công file thẻ Anki (.txt) với ${tsvRows.length} từ vựng N1!`, 'success');
-    }
-  }
-
-  // ==============================================================
   // RENDER MAIN 2-COLUMN WORKSPACE
   // ==============================================================
 
@@ -544,6 +421,9 @@ export class DokkaiEngine {
     const correctNum = this.getCorrectAnswerNumber(q);
     const isCorrect = isAnswered && this.isAnswerCorrect(this.selectedOption, q);
 
+    // Requirement 1: Pure Japanese title according to book
+    const japaneseTitle = q.title || `第1章：対比・逆接 - 練習 ${this.currentIndex + 1}`;
+
     this.containerEl.innerHTML = `
       <div class="dokkai-workspace max-w-7xl mx-auto px-3 sm:px-6 py-6 space-y-6 animate-fade-in font-sans">
         
@@ -565,8 +445,8 @@ export class DokkaiEngine {
                 ${typeLabel}
               </span>
             </div>
-            <h1 class="text-lg sm:text-xl font-black text-slate-900 tracking-tight">
-              ${q.title || `Bài đọc ${this.currentIndex + 1}`}
+            <h1 class="text-lg sm:text-xl font-black text-slate-900 tracking-tight font-jp">
+              ${this.escapeHtml(japaneseTitle)}
             </h1>
           </div>
 
@@ -599,7 +479,7 @@ export class DokkaiEngine {
         <!-- 2-COLUMN WORKSPACE: LEFT (75%) & RIGHT STICKY DOCK (25%) -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
-          <!-- LEFT COLUMN: Main Reading, Questions, and Step 2 Analysis (~75%) -->
+          <!-- LEFT COLUMN: Reading, Questions, and Step 2 Analysis (~75%) -->
           <div class="lg:col-span-8 xl:col-span-9 space-y-6">
 
             <!-- Result Banner in Step 2 -->
@@ -644,7 +524,7 @@ export class DokkaiEngine {
             <!-- PASSAGE & QUESTIONS WRAPPER WITH PRE-START BLUR LOCK -->
             <div class="dokkai-reading-and-question-wrapper relative rounded-3xl ${!this.isStarted && this.step === 1 ? 'max-h-[500px] overflow-hidden' : ''}">
               
-              <!-- PRE-START BLUR OVERLAY MODAL -->
+              <!-- PRE-START BLUR OVERLAY MODAL (Single centralized start button) -->
               ${!this.isStarted && this.step === 1 ? `
                 <div class="absolute inset-0 z-30 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-md rounded-3xl">
                   <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 max-w-md w-full text-center shadow-2xl space-y-4 animate-scale-up">
@@ -679,7 +559,7 @@ export class DokkaiEngine {
                       </div>
                     </div>
 
-                    <!-- Big Start Button -->
+                    <!-- Single Primary Start Button -->
                     <button type="button" id="btn-dokkai-start-reading-modal" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 active:scale-98 text-white font-black text-sm shadow-xl shadow-amber-300/40 transition flex items-center justify-center gap-2 cursor-pointer">
                       <span>🚀 BẮT ĐẦU ĐỌC & BẤM GIỜ</span>
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
@@ -694,18 +574,16 @@ export class DokkaiEngine {
                 <!-- Reading Passage Card -->
                 <div id="dokkai-reading-card" class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-9 shadow-sm transition-card relative">
                   
-                  <!-- Card Header: Cleaned Meta Info (Requirement 4: No redundant font text) -->
+                  <!-- Card Header: Clean Title Without Meta Text (Requirement 4) -->
                   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-5 border-b border-slate-100">
                     <div class="flex items-center gap-2">
                       <span class="w-8 h-8 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xs">
                         📄
                       </span>
-                      <div>
-                        <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider">Văn bản bài đọc gốc</h2>
-                      </div>
+                      <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider">Văn bản bài đọc gốc</h2>
                     </div>
 
-                    <!-- Legend & Vocab Hint (Step 2 Only) -->
+                    <!-- Legend (Step 2 Only) -->
                     ${this.step === 2 ? `
                       <div class="flex flex-wrap items-center gap-1.5 text-[11px] font-bold">
                         <span class="px-2 py-0.5 rounded-md bg-blue-50 text-blue-800 border border-blue-200">
@@ -717,10 +595,6 @@ export class DokkaiEngine {
                         <span class="px-2 py-0.5 rounded-md bg-rose-50 text-rose-800 border border-rose-200">
                           🔴 Câu chốt tác giả
                         </span>
-                        <span class="px-2 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200 flex items-center gap-1">
-                          <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
-                          <span>Gạch chân nét đứt: Chú thích N1</span>
-                        </span>
                       </div>
                     ` : `
                       <div class="text-[11px] font-semibold text-slate-400 flex items-center gap-1">
@@ -729,23 +603,10 @@ export class DokkaiEngine {
                     `}
                   </div>
 
-                  <!-- Passage Content (with N1 Vocab Tooltips in Step 2) -->
+                  <!-- Pure Authentic Japanese Passage Content (Requirement 3: Clean, Extension Friendly) -->
                   <div id="dokkai-passage-container" class="dokkai-passage-text font-jp text-slate-800 text-base sm:text-[17px] leading-[2.3] tracking-wide select-text relative">
-                    ${this.buildHighlightedPassage(q.passage, q.logicHighlights, q.vocabulary)}
+                    ${this.buildHighlightedPassage(q.passage, q.logicHighlights)}
                   </div>
-
-                  <!-- Step 2 Floating Selection Toolbar -->
-                  ${this.step === 2 ? `
-                    <div id="dokkai-selection-toolbar" class="hidden mt-3 p-2.5 rounded-xl bg-indigo-900/90 text-white text-xs flex items-center justify-between gap-2 shadow-lg animate-fade-in">
-                      <div class="flex items-center gap-2 truncate">
-                        <span>✂️</span>
-                        <span class="truncate">Đã bôi đen: <b id="dokkai-selection-text" class="text-amber-300"></b></span>
-                      </div>
-                      <button type="button" id="btn-save-selected-to-anki" class="px-3 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold text-xs shrink-0 cursor-pointer shadow-xs active:scale-95">
-                        ⚡ Thêm vào Anki
-                      </button>
-                    </div>
-                  ` : ''}
 
                 </div>
 
@@ -766,7 +627,7 @@ export class DokkaiEngine {
                   <div class="options-stack space-y-3">
                     ${(q.options || []).map((opt, optIdx) => {
                       const isSelected = this.selectedOption === optIdx;
-                      // FIX REQUIREMENT 3: Only exact match (optIdx + 1) === correctNum gets isThisCorrect = true
+                      // Strictly single correct answer: (optIdx + 1) === correctNum
                       const isThisCorrect = isAnswered && ((optIdx + 1) === correctNum);
                       const isSelectedAndWrong = isAnswered && isSelected && !isThisCorrect;
 
@@ -866,7 +727,7 @@ export class DokkaiEngine {
                     ${[1, 2, 3, 4].map(num => {
                       const optKey = `opt${num}`;
                       const trapText = (q.trapBreakdown && q.trapBreakdown[optKey]) || '';
-                      // FIX REQUIREMENT 3: Strictly single correct answer badge
+                      // Strictly single correct answer: only num === correctNum gets isThisCorrect = true
                       const isThisCorrect = (num === correctNum);
                       const isUserPick = (this.selectedOption === (num - 1));
 
@@ -941,10 +802,7 @@ export class DokkaiEngine {
                       <span>🔄 Đọc lại bài này</span>
                     </button>
                     <button type="button" id="btn-dokkai-anki-export" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-amber-50 text-amber-800 border border-amber-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95" title="Tải file text nạp câu hỏi vào Anki">
-                      <span>⚡ Xuất bài đọc Anki</span>
-                    </button>
-                    <button type="button" id="btn-dokkai-export-vocab-bottom" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95" title="Tải toàn bộ từ vựng đã lưu vào Anki">
-                      <span>📚 Xuất từ vựng Anki (.txt)</span>
+                      <span>⚡ Xuất bài đọc Anki (.txt)</span>
                     </button>
                   </div>
 
@@ -1003,7 +861,7 @@ export class DokkaiEngine {
                 </span>
               </div>
 
-              <!-- Giant Countdown Timer Display (Requirement 2) -->
+              <!-- Giant Countdown Timer Display -->
               <div class="text-center py-1">
                 <div id="dokkai-timer-display" class="font-mono text-3xl sm:text-4xl font-black tracking-wider py-2.5 rounded-2xl transition-all ${
                   this.totalTimerSeconds > 0 && this.remainingSeconds <= 30 && this.isTimerRunning && !this.isTimeUp
@@ -1058,14 +916,14 @@ export class DokkaiEngine {
                 </div>
               </div>
 
-              <!-- Dock Primary Action Button (Requirement 2: Sticky submit & progress) -->
+              <!-- Dock Primary Action Button (Requirement 2: No duplicate start button!) -->
               <div class="pt-2 border-t border-slate-100">
                 ${
                   !this.isStarted
                     ? `
-                      <button type="button" id="btn-dock-start-reading" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 text-white font-black text-xs shadow-md shadow-amber-300/40 transition active:scale-95 cursor-pointer flex items-center justify-center gap-1.5">
-                        <span>🚀 Bắt đầu bấm giờ</span>
-                      </button>
+                      <div class="p-3 rounded-xl bg-slate-50 border border-dashed border-slate-200 text-center text-xs text-slate-500 font-medium">
+                        <span>👈 Bấm nút ở khung bài đọc để bắt đầu tính giờ</span>
+                      </div>
                     `
                     : this.step === 1
                       ? `
@@ -1097,21 +955,6 @@ export class DokkaiEngine {
                         </div>
                       `
                 }
-              </div>
-
-              <!-- Anki Vocab Harvest Status (Part 2) -->
-              <div class="pt-3 border-t border-slate-100 space-y-2">
-                <div class="flex items-center justify-between text-[11px]">
-                  <span class="font-bold text-slate-600 flex items-center gap-1">
-                    <span>⚡ Thu hoạch Anki:</span>
-                  </span>
-                  <span id="dokkai-vocab-harvest-badge" class="font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-200">
-                    ${this.savedVocab.size} từ đã lưu
-                  </span>
-                </div>
-                <button type="button" id="btn-dock-export-vocab" class="w-full py-2 px-3 rounded-xl bg-slate-50 hover:bg-indigo-50 text-indigo-700 hover:text-indigo-900 border border-indigo-200 text-xs font-bold transition flex items-center justify-center gap-1.5 cursor-pointer">
-                  <span>📥 Tải file nạp Anki (.txt)</span>
-                </button>
               </div>
 
               <!-- Mini Question Navigator in Dock -->
@@ -1147,11 +990,6 @@ export class DokkaiEngine {
 
         </div>
 
-        <!-- Floating Tooltip Container for N1 Vocab (Part 2) -->
-        <div id="dokkai-vocab-tooltip-box" class="hidden fixed z-50 p-3.5 bg-slate-900/95 backdrop-blur-md text-white rounded-2xl shadow-2xl border border-slate-700/80 max-w-xs space-y-2 text-xs transition-opacity pointer-events-auto">
-          <!-- Populated dynamically on hover / tap -->
-        </div>
-
       </div>
     `;
 
@@ -1164,13 +1002,8 @@ export class DokkaiEngine {
   // ==============================================================
 
   bindEvents() {
-    // Modal Start Button
+    // Modal Start Button (Single Primary trigger)
     document.getElementById('btn-dokkai-start-reading-modal')?.addEventListener('click', () => {
-      this.startReading();
-    });
-
-    // Dock Start Button
-    document.getElementById('btn-dock-start-reading')?.addEventListener('click', () => {
       this.startReading();
     });
 
@@ -1257,14 +1090,6 @@ export class DokkaiEngine {
       this.exportCurrentToAnki();
     });
 
-    // Anki export vocab buttons (Dock & Bottom)
-    document.getElementById('btn-dock-export-vocab')?.addEventListener('click', () => {
-      this.exportVocabToAnki();
-    });
-    document.getElementById('btn-dokkai-export-vocab-bottom')?.addEventListener('click', () => {
-      this.exportVocabToAnki();
-    });
-
     // Modal Mode selector buttons
     const modalModeButtons = this.containerEl.querySelectorAll('.btn-dokkai-modal-mode');
     modalModeButtons.forEach(btn => {
@@ -1282,130 +1107,6 @@ export class DokkaiEngine {
         this.setTimerMode(mode);
       });
     });
-
-    // ==============================================================
-    // STEP 2: VOCABULARY TOOLTIP & SELECTION LISTENERS
-    // ==============================================================
-    if (this.step === 2) {
-      this.bindVocabTooltipEvents();
-      this.bindSelectionHarvestEvents();
-    }
-  }
-
-  bindVocabTooltipEvents() {
-    const tooltipBox = document.getElementById('dokkai-vocab-tooltip-box');
-    const vocabWords = this.containerEl.querySelectorAll('.dokkai-vocab-word');
-
-    const hideTooltip = () => {
-      if (tooltipBox) tooltipBox.classList.add('hidden');
-    };
-
-    vocabWords.forEach(span => {
-      const showTooltipForSpan = (e) => {
-        if (!tooltipBox) return;
-        const word = span.getAttribute('data-word');
-        const reading = span.getAttribute('data-reading');
-        const hanviet = span.getAttribute('data-hanviet');
-        const meaning = span.getAttribute('data-meaning');
-        const isSaved = this.savedVocab.has(word);
-
-        tooltipBox.innerHTML = `
-          <div class="space-y-2">
-            <div class="flex items-center justify-between gap-2 border-b border-slate-700/80 pb-1.5">
-              <span class="font-bold text-amber-300 text-sm">${word}</span>
-              <span class="text-slate-300 font-mono text-[11px]">${reading ? `【${reading}】` : ''}</span>
-            </div>
-            <div class="text-[11px] text-slate-300">
-              <span class="text-indigo-300 font-semibold">Hán-Việt:</span> ${hanviet || '--'}
-            </div>
-            <div class="text-[11px] text-slate-200 leading-relaxed">
-              <span class="text-indigo-300 font-semibold">Nghĩa:</span> ${meaning || '--'}
-            </div>
-            <button type="button" id="btn-tooltip-save-action" class="w-full py-1.5 px-2 rounded-xl font-bold text-[11px] transition flex items-center justify-center gap-1 cursor-pointer active:scale-95 ${
-              isSaved
-                ? 'bg-emerald-600 hover:bg-emerald-700 text-white'
-                : 'bg-indigo-600 hover:bg-indigo-700 text-white'
-            }">
-              <span>${isSaved ? '✓ Đã lưu Anki (Nhấn để hủy)' : '⚡ Lưu vào Anki'}</span>
-            </button>
-          </div>
-        `;
-
-        const rect = span.getBoundingClientRect();
-        tooltipBox.classList.remove('hidden');
-
-        // Position tooltip nicely above or below
-        const tooltipWidth = 260;
-        let left = rect.left + window.scrollX + (rect.width / 2) - (tooltipWidth / 2);
-        left = Math.max(10, Math.min(window.innerWidth - tooltipWidth - 20, left));
-        let top = rect.top + window.scrollY - 130;
-        if (rect.top < 150) {
-          top = rect.bottom + window.scrollY + 8;
-        }
-
-        tooltipBox.style.left = `${left}px`;
-        tooltipBox.style.top = `${top}px`;
-        tooltipBox.style.width = `${tooltipWidth}px`;
-
-        const btnSave = document.getElementById('btn-tooltip-save-action');
-        if (btnSave) {
-          btnSave.onclick = (event) => {
-            event.stopPropagation();
-            this.toggleSaveVocab({ word, reading, hanviet, meaning });
-            hideTooltip();
-          };
-        }
-      };
-
-      span.addEventListener('mouseenter', showTooltipForSpan);
-      span.addEventListener('click', (e) => {
-        e.stopPropagation();
-        showTooltipForSpan(e);
-      });
-    });
-
-    document.addEventListener('click', (e) => {
-      if (tooltipBox && !tooltipBox.contains(e.target) && !e.target.closest('.dokkai-vocab-word')) {
-        hideTooltip();
-      }
-    }, { once: false });
-  }
-
-  bindSelectionHarvestEvents() {
-    const passageEl = document.getElementById('dokkai-passage-container');
-    const selectionToolbar = document.getElementById('dokkai-selection-toolbar');
-    const selectionTextEl = document.getElementById('dokkai-selection-text');
-    const btnSaveSelected = document.getElementById('btn-save-selected-to-anki');
-
-    if (!passageEl || !selectionToolbar) return;
-
-    let selectedPhrase = '';
-
-    const handleSelection = () => {
-      const selection = window.getSelection();
-      const text = selection ? selection.toString().trim() : '';
-
-      if (text.length >= 1 && text.length <= 40 && passageEl.contains(selection.anchorNode)) {
-        selectedPhrase = text;
-        if (selectionTextEl) selectionTextEl.textContent = `"${text}"`;
-        selectionToolbar.classList.remove('hidden');
-      } else {
-        selectedPhrase = '';
-        selectionToolbar.classList.add('hidden');
-      }
-    };
-
-    passageEl.addEventListener('mouseup', handleSelection);
-    passageEl.addEventListener('touchend', handleSelection);
-
-    if (btnSaveSelected) {
-      btnSaveSelected.onclick = () => {
-        if (selectedPhrase) {
-          this.saveSelectedTextToAnki(selectedPhrase);
-          selectionToolbar.classList.add('hidden');
-        }
-      };
-    }
   }
 
   exportCurrentToAnki() {
