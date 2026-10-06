@@ -385,7 +385,11 @@ export class DokkaiEngine {
         <!-- Chapter & Breadcrumb Header -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-200/80">
           <div>
-            <div class="flex flex-wrap items-center gap-2 mb-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1.5">
+              <button type="button" id="btn-dokkai-back-home" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200/80 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                <span>Trang Chủ</span>
+              </button>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">
                 📖 Shin Kanzen Dokkai N1
               </span>
@@ -849,6 +853,14 @@ export class DokkaiEngine {
       });
     });
 
+    // Back to Home button
+    document.getElementById('btn-dokkai-back-home')?.addEventListener('click', () => {
+      this.stopTimer();
+      if (this.app && typeof this.app.switchView === 'function') {
+        this.app.switchView('HOME');
+      }
+    });
+
     // Retake buttons
     document.getElementById('btn-dokkai-retake-top')?.addEventListener('click', () => this.retakeCurrentQuestion());
     document.getElementById('btn-dokkai-retake-bottom')?.addEventListener('click', () => this.retakeCurrentQuestion());
@@ -859,9 +871,15 @@ export class DokkaiEngine {
 
     // Finish chapter button
     document.getElementById('btn-dokkai-finish-chapter')?.addEventListener('click', () => {
+      this.stopTimer();
       if (this.app && typeof this.app.showToast === 'function') {
         this.app.showToast('🎉 Chúc mừng bạn đã hoàn thành trọn vẹn Chương 1: 対比・逆接!', 'success');
       }
+      setTimeout(() => {
+        if (this.app && typeof this.app.switchView === 'function') {
+          this.app.switchView('HOME');
+        }
+      }, 1200);
     });
 
     // Anki export single dokkai question

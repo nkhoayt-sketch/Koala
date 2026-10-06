@@ -1555,6 +1555,15 @@ class App {
     }
 
     // Shin Kanzen Dokkai N1 Events
+    const cardDokkai = document.getElementById('card-shinkanzen-dokkai');
+    if (cardDokkai) {
+      cardDokkai.addEventListener('click', (e) => {
+        // Prevent double trigger if clicked on the child button
+        if (e.target.closest('#btn-home-start-dokkai-ch01')) return;
+        this.loadDokkaiChapter('ch01');
+      });
+    }
+
     const btnHomeDokkaiCh01 = document.getElementById('btn-home-start-dokkai-ch01');
     if (btnHomeDokkaiCh01) {
       btnHomeDokkaiCh01.addEventListener('click', () => {
