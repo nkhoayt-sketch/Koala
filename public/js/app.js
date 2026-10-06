@@ -1,18 +1,21 @@
 import { QuizEngine } from './quiz.js';
+import { DokkaiEngine } from './dokkai.js';
 import { storage } from './storage.js';
 
 class App {
   constructor() {
     this.currentView = 'HOME'; // 'HOME' | 'TEST'
-    this.currentCourse = 'n1'; // 'n1' | 'n2'
+    this.currentCourse = 'n1'; // 'n1' | 'n2' | 'n1_dokkai'
     this.daysIndex = [];
     this.n2Exams = [];
     this.currentDay = 1;
     this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
     this.activeN2Scope = 'vocab_grammar'; // 'vocab_grammar' | 'full'
     this.pendingN2ExamMeta = null;
 
     this.quizEngine = null;
+    this.dokkaiEngine = null;
     this.currentQuestionIndex = 0;
     this.isSidebarCollapsed = localStorage.getItem('n1_quiz_sidebar_collapsed') === 'true';
     this.isPaletteCollapsed = false;
@@ -123,6 +126,7 @@ class App {
 
   async init() {
     this.quizEngine = new QuizEngine(this.quizContainerEl, (stats) => this.onProgressUpdate(stats));
+    this.dokkaiEngine = new DokkaiEngine(this.quizContainerEl, this);
 
     // Restore Sidebar Collapsed state
     if (this.isSidebarCollapsed) {
@@ -173,8 +177,8 @@ class App {
       this.renderN2List();
       this.renderHomeDashboard();
 
-      // Start in HOME view by default (do not jump into test!)
-      this.switchView('HOME');
+      // Check current URL route (/dokkai/shinkanzen or default to HOME)
+      this.initRouting();
     } catch (err) {
       console.error('Lỗi khởi tạo ứng dụng:', err);
       // Ensure safe fallback so the app still loads
@@ -195,6 +199,26 @@ class App {
             <p class="text-sm text-slate-600 mt-2">${err.message}</p>
           </div>
         `;
+      }
+    }
+  }
+
+  initRouting() {
+    window.addEventListener('popstate', () => {
+      this.handleRoute();
+    });
+    this.handleRoute();
+  }
+
+  handleRoute() {
+    const path = (window.location.pathname || '').toLowerCase();
+    const hash = (window.location.hash || '').toLowerCase();
+
+    if (path.includes('/dokkai/shinkanzen') || path.includes('/dokkai') || hash.includes('dokkai')) {
+      this.loadDokkaiChapter('ch01');
+    } else {
+      if (this.currentView !== 'HOME') {
+        this.switchView('HOME');
       }
     }
   }
@@ -298,6 +322,18 @@ class App {
     // Filter N2 Exam Items
     const n2Items = document.querySelectorAll('#sidebar-n2-list li');
     n2Items.forEach(li => {
+      const text = li.textContent.toLowerCase();
+      if (!query || text.includes(query)) {
+        li.classList.remove('hidden');
+        matchCount++;
+      } else {
+        li.classList.add('hidden');
+      }
+    });
+
+    // Filter Shin Kanzen Dokkai Items
+    const dokkaiItems = document.querySelectorAll('#sidebar-dokkai-list li');
+    dokkaiItems.forEach(li => {
       const text = li.textContent.toLowerCase();
       if (!query || text.includes(query)) {
         li.classList.remove('hidden');
@@ -499,6 +535,19 @@ class App {
       if (this.quizEngine) {
         this.quizEngine.pauseTimer();
       }
+      if (this.dokkaiEngine) {
+        this.dokkaiEngine.stopTimer();
+      }
+
+      // Reset URL route back to root if coming from Dokkai
+      const currentPath = (window.location.pathname || '').toLowerCase();
+      if (currentPath.includes('/dokkai') || (window.location.hash || '').includes('dokkai')) {
+        try {
+          history.pushState({ view: 'home' }, '', '/');
+        } catch (e) {
+          window.location.hash = '';
+        }
+      }
 
       // Reset sidebar palette header & stats
       if (this.paletteActiveTitle) {
@@ -545,10 +594,15 @@ class App {
       if (this.headerTestInfo) this.headerTestInfo.classList.remove('hidden');
       if (this.headerDivider) this.headerDivider.classList.remove('hidden');
       if (this.homeHeaderControls) this.homeHeaderControls.classList.add('hidden');
-      if (this.testHeaderControls) this.testHeaderControls.classList.remove('hidden');
+      
+      if (this.currentCourse === 'n1_dokkai') {
+        if (this.testHeaderControls) this.testHeaderControls.classList.add('hidden');
+      } else {
+        if (this.testHeaderControls) this.testHeaderControls.classList.remove('hidden');
+      }
 
       // Resume timer if in exam mode and not submitted
-      if (this.quizEngine && this.quizEngine.mode === 'exam' && !this.quizEngine.isSubmitted) {
+      if (this.currentCourse !== 'n1_dokkai' && this.quizEngine && this.quizEngine.mode === 'exam' && !this.quizEngine.isSubmitted) {
         this.quizEngine.startTimer();
       }
 
@@ -1314,6 +1368,105 @@ class App {
     }
   }
 
+  async loadDokkaiChapter(chapterId = 'ch01') {
+    this.currentCourse = 'n1_dokkai';
+    this.currentDokkaiChapter = chapterId;
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentQuestionIndex = 0;
+
+    // Push URL route: /dokkai/shinkanzen
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (!currentPath.includes('/dokkai/shinkanzen')) {
+      try {
+        history.pushState({ view: 'dokkai', chapterId }, '', '/dokkai/shinkanzen');
+      } catch (e) {
+        window.location.hash = 'dokkai/shinkanzen';
+      }
+    }
+
+    if (this.quizEngine) {
+      this.quizEngine.pauseTimer();
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+
+    this.switchView('TEST');
+
+    // Update Header Info
+    if (this.headerLevelBadge) {
+      this.headerLevelBadge.textContent = 'Dokkai N1';
+      this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-amber-100 text-amber-800 border border-amber-300';
+    }
+    if (this.dayTitleEl) {
+      this.dayTitleEl.textContent = 'Shin Kanzen Master: 第1章：対比・逆接';
+    }
+    if (this.dayDescEl) {
+      this.dayDescEl.textContent = 'Cấu trúc tương phản & nghịch lý: Bóc tách tiền đề số đông, bắt cú lật tư duy';
+    }
+    if (this.headerScopeBtn) {
+      this.headerScopeBtn.classList.add('hidden');
+    }
+    if (this.paletteActiveTitle) {
+      this.paletteActiveTitle.textContent = 'Shin Kanzen Dokkai N1';
+    }
+    if (this.paletteActiveCount) {
+      this.paletteActiveCount.textContent = 'Chương 1 (4 bài)';
+    }
+
+    // Hide normal test header controls
+    if (this.testHeaderControls) {
+      this.testHeaderControls.classList.add('hidden');
+    }
+
+    // Palette grid in sidebar for Dokkai
+    const paletteGrid = document.getElementById('question-palette-grid');
+    if (paletteGrid) {
+      paletteGrid.innerHTML = `
+        <div class="col-span-5 py-5 text-center text-[11px] text-slate-500 leading-relaxed px-2">
+          <span class="font-bold text-amber-700">📖 Shin Kanzen N1</span>
+          <p class="text-[10px] text-slate-400 mt-1">Single-Column & Adaptive Timer</p>
+        </div>
+      `;
+    }
+
+    // Loading indicator
+    this.quizContainerEl.innerHTML = `
+      <div class="flex flex-col items-center justify-center py-20">
+        <div class="w-10 h-10 border-4 border-amber-200 border-t-amber-600 rounded-full animate-spin"></div>
+        <p class="mt-4 text-sm font-medium text-slate-600">Đang tải giáo trình Shin Kanzen Dokkai N1 (Chương 1)...</p>
+      </div>
+    `;
+
+    try {
+      let res = await fetch(`data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      if (!res.ok) {
+        res = await fetch(`public/data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      }
+      if (!res.ok) throw new Error(`Không thể tìm thấy tệp dữ liệu: shinkanzen_${chapterId}.json`);
+      const chapterData = await res.json();
+
+      if (!this.dokkaiEngine) {
+        this.dokkaiEngine = new DokkaiEngine(this.quizContainerEl, this);
+      }
+      this.dokkaiEngine.loadChapter(chapterData);
+
+      // Highlight active sidebar item
+      document.querySelectorAll('.nav-tree-item.is-active').forEach(el => el.classList.remove('is-active'));
+      const activeBtn = document.getElementById(`btn-sidebar-dokkai-${chapterId}`);
+      if (activeBtn) activeBtn.classList.add('is-active');
+
+      this.toggleMobileSidebar(false);
+    } catch (err) {
+      console.error('Lỗi nạp bài đọc Dokkai:', err);
+      this.quizContainerEl.innerHTML = `
+        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200 max-w-lg mx-auto">
+          <p class="font-bold">Chưa thể tải dữ liệu bài đọc</p>
+          <p class="text-sm text-slate-600 mt-2">${err.message}</p>
+        </div>
+      `;
+    }
+  }
+
   onProgressUpdate({ answered, total, percent }) {
     if (this.progressBarFillEl) {
       this.progressBarFillEl.style.width = `${percent}%`;
@@ -1398,6 +1551,28 @@ class App {
       this.btnSidebarHome.addEventListener('click', () => {
         this.switchView('HOME');
         this.toggleMobileSidebar(false);
+      });
+    }
+
+    // Shin Kanzen Dokkai N1 Events
+    const btnHomeDokkaiCh01 = document.getElementById('btn-home-start-dokkai-ch01');
+    if (btnHomeDokkaiCh01) {
+      btnHomeDokkaiCh01.addEventListener('click', () => {
+        this.loadDokkaiChapter('ch01');
+      });
+    }
+
+    const btnSidebarDokkaiCh01 = document.getElementById('btn-sidebar-dokkai-ch01');
+    if (btnSidebarDokkaiCh01) {
+      btnSidebarDokkaiCh01.addEventListener('click', () => {
+        this.loadDokkaiChapter('ch01');
+      });
+    }
+
+    const btnHeroDokkai = document.getElementById('btn-hero-dokkai');
+    if (btnHeroDokkai) {
+      btnHeroDokkai.addEventListener('click', () => {
+        this.loadDokkaiChapter('ch01');
       });
     }
 

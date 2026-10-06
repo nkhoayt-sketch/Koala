@@ -177,8 +177,8 @@ class App {
       this.renderN2List();
       this.renderHomeDashboard();
 
-      // Start in HOME view by default (do not jump into test!)
-      this.switchView('HOME');
+      // Check current URL route (/dokkai/shinkanzen or default to HOME)
+      this.initRouting();
     } catch (err) {
       console.error('Lỗi khởi tạo ứng dụng:', err);
       // Ensure safe fallback so the app still loads
@@ -199,6 +199,26 @@ class App {
             <p class="text-sm text-slate-600 mt-2">${err.message}</p>
           </div>
         `;
+      }
+    }
+  }
+
+  initRouting() {
+    window.addEventListener('popstate', () => {
+      this.handleRoute();
+    });
+    this.handleRoute();
+  }
+
+  handleRoute() {
+    const path = (window.location.pathname || '').toLowerCase();
+    const hash = (window.location.hash || '').toLowerCase();
+
+    if (path.includes('/dokkai/shinkanzen') || path.includes('/dokkai') || hash.includes('dokkai')) {
+      this.loadDokkaiChapter('ch01');
+    } else {
+      if (this.currentView !== 'HOME') {
+        this.switchView('HOME');
       }
     }
   }
@@ -517,6 +537,16 @@ class App {
       }
       if (this.dokkaiEngine) {
         this.dokkaiEngine.stopTimer();
+      }
+
+      // Reset URL route back to root if coming from Dokkai
+      const currentPath = (window.location.pathname || '').toLowerCase();
+      if (currentPath.includes('/dokkai') || (window.location.hash || '').includes('dokkai')) {
+        try {
+          history.pushState({ view: 'home' }, '', '/');
+        } catch (e) {
+          window.location.hash = '';
+        }
       }
 
       // Reset sidebar palette header & stats
@@ -1345,6 +1375,16 @@ class App {
     this.currentN2Exam = null;
     this.currentQuestionIndex = 0;
 
+    // Push URL route: /dokkai/shinkanzen
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (!currentPath.includes('/dokkai/shinkanzen')) {
+      try {
+        history.pushState({ view: 'dokkai', chapterId }, '', '/dokkai/shinkanzen');
+      } catch (e) {
+        window.location.hash = 'dokkai/shinkanzen';
+      }
+    }
+
     if (this.quizEngine) {
       this.quizEngine.pauseTimer();
       this.quizEngine.currentQuestionIndex = 0;
@@ -1398,7 +1438,10 @@ class App {
     `;
 
     try {
-      const res = await fetch(`data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      let res = await fetch(`data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      if (!res.ok) {
+        res = await fetch(`public/data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      }
       if (!res.ok) throw new Error(`Không thể tìm thấy tệp dữ liệu: shinkanzen_${chapterId}.json`);
       const chapterData = await res.json();
 
@@ -1522,6 +1565,13 @@ class App {
     const btnSidebarDokkaiCh01 = document.getElementById('btn-sidebar-dokkai-ch01');
     if (btnSidebarDokkaiCh01) {
       btnSidebarDokkaiCh01.addEventListener('click', () => {
+        this.loadDokkaiChapter('ch01');
+      });
+    }
+
+    const btnHeroDokkai = document.getElementById('btn-hero-dokkai');
+    if (btnHeroDokkai) {
+      btnHeroDokkai.addEventListener('click', () => {
         this.loadDokkaiChapter('ch01');
       });
     }

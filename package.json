@@ -1,0 +1,19 @@
+{
+  "name": "koala-jlpt-hub",
+  "version": "1.0.0",
+  "description": "Koala JLPT Hub - Luyện thi & Ôn tập JLPT N1 & N2",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/sync_public.js",
+    "start": "node scripts/sync_public.js"
+  },
+  "keywords": [
+    "jlpt",
+    "n1",
+    "n2",
+    "dokkai",
+    "shinkanzen"
+  ],
+  "author": "Koala JLPT Hub",
+  "license": "MIT"
+}

@@ -317,3 +317,55 @@ main {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
+/* ==============================================================
+   Shin Kanzen Master Dokkai N1 Styles
+   ============================================================== */
+@keyframes shakeAnimation {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.animate-shake {
+  animation: shakeAnimation 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Dokkai Logic Highlighting classes */
+.dokkai-hl-blue {
+  background-color: #dbeafe !important;
+  color: #1e3a8a !important;
+  border-bottom: 2.5px solid #2563eb !important;
+  padding: 2px 4px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.1) !important;
+  display: inline;
+}
+
+.dokkai-hl-yellow {
+  background-color: #fef3c7 !important;
+  color: #78350f !important;
+  border-bottom: 2.5px solid #d97706 !important;
+  padding: 2px 4px !important;
+  border-radius: 6px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 1px 2px rgba(217, 119, 6, 0.1) !important;
+  display: inline;
+}
+
+.dokkai-hl-red {
+  background-color: #fee2e2 !important;
+  color: #881337 !important;
+  border-bottom: 2.5px solid #e11d48 !important;
+  padding: 2px 4px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 2px rgba(225, 29, 72, 0.1) !important;
+  display: inline;
+}
+
+.dokkai-passage-text p {
+  text-indent: 1em;
+}
+
+
