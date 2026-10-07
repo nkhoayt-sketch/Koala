@@ -182,6 +182,9 @@ export class DokkaiEngine {
     }
 
     this.render();
+    if (this.app && typeof this.app.openContextualAccordion === 'function') {
+      this.app.openContextualAccordion('n1_dokkai');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

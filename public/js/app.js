@@ -291,6 +291,57 @@ class App {
     });
   }
 
+  /**
+   * Set specific accordion (category or subfolder) state
+   */
+  setAccordionState(targetId, open = false) {
+    const content = document.getElementById(targetId);
+    if (!content) return;
+    const btn = document.querySelector(`[data-target="${targetId}"]`);
+    const chevron = btn ? btn.querySelector('.tree-chevron') : null;
+
+    if (open) {
+      content.classList.remove('hidden');
+      if (chevron) chevron.classList.add('rotate-180');
+    } else {
+      content.classList.add('hidden');
+      if (chevron) chevron.classList.remove('rotate-180');
+    }
+  }
+
+  /**
+   * Collapse all categories and subfolders on sidebar
+   */
+  collapseAllAccordions() {
+    const targetIds = [
+      'group-n1-content',
+      'subgroup-n1-20days',
+      'subgroup-n1-dokkai',
+      'group-n2-content',
+      'subgroup-n2-exams'
+    ];
+    targetIds.forEach(id => this.setAccordionState(id, false));
+  }
+
+  /**
+   * Auto-open only the relevant accordion group for the active course / lesson
+   * while ensuring all other groups remain collapsed.
+   */
+  openContextualAccordion(context) {
+    this.collapseAllAccordions();
+
+    if (context === 'n1_20days') {
+      this.setAccordionState('group-n1-content', true);
+      this.setAccordionState('subgroup-n1-20days', true);
+    } else if (context === 'n1_dokkai') {
+      this.setAccordionState('group-n1-content', true);
+      this.setAccordionState('subgroup-n1-dokkai', true);
+    } else if (context === 'n2') {
+      this.setAccordionState('group-n2-content', true);
+      this.setAccordionState('subgroup-n2-exams', true);
+    }
+  }
+
   initSearch() {
     if (!this.searchInput) return;
 
@@ -868,6 +919,7 @@ class App {
     }
 
     this.switchView('TEST');
+    this.openContextualAccordion('n1_20days');
     this.renderN1List();
     this.renderN2List();
     await this.loadDay(day);
@@ -1363,6 +1415,7 @@ class App {
       }
 
       this.updateModeUI(mode);
+      this.openContextualAccordion('n2');
       this.renderN1List();
       this.renderN2List();
       this.toggleMobileSidebar(false);
@@ -1835,6 +1888,7 @@ class App {
     }
 
     await this.dokkaiEngine.showHub(chapterFilter);
+    this.openContextualAccordion('n1_dokkai');
 
     // Highlight active sidebar item
     document.querySelectorAll('.nav-tree-item.is-active').forEach(el => el.classList.remove('is-active'));
@@ -1938,6 +1992,7 @@ class App {
         this.dokkaiEngine = new DokkaiEngine(this.quizContainerEl, this);
       }
       this.dokkaiEngine.loadChapter(chapterData);
+      this.openContextualAccordion('n1_dokkai');
 
       // Highlight active sidebar item
       document.querySelectorAll('.nav-tree-item.is-active').forEach(el => el.classList.remove('is-active'));
