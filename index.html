@@ -632,8 +632,8 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- CARD 1: 20日で合格 N1 -->
-            <div class="hover-reveal-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-indigo-300">
-              <div class="space-y-3.5">
+            <div id="card-n1-20days" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-indigo-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[170px]">
+              <div class="space-y-3">
                 <div class="flex items-center justify-between">
                   <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 to-indigo-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-indigo-100">
                     N1
@@ -645,46 +645,24 @@
                 </div>
 
                 <div>
-                  <h3 class="text-base font-bold text-slate-900 group-hover:text-indigo-600 transition flex items-center gap-1.5">
+                  <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-indigo-600 transition flex items-center gap-1.5">
                     <span>20日で合格 N1</span>
                   </h3>
-                  <p class="text-xs font-semibold text-indigo-600 mt-0.5">Lộ trình 20 ngày bứt phá N1</p>
-                  <div class="hover-reveal-detail text-xs text-slate-500 leading-relaxed">
-                    <p>Giáo trình kinh điển luyện cấp tốc theo lộ trình 20 ngày. Đầy đủ Chữ Hán, Từ vựng, Ngữ pháp, Dấu sao ★ và Bài đọc ngữ pháp Mondai 7.</p>
-                  </div>
-                </div>
-
-                <!-- Info highlights -->
-                <div class="bg-slate-50 rounded-2xl p-3 border border-slate-100 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-400">Số câu mỗi ngày:</span>
-                    <span class="font-bold text-slate-700">45 câu / ngày</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-400">Tính năng:</span>
-                    <span class="font-bold text-slate-700">Đọc hiểu Split-View Sticky</span>
-                  </div>
-                </div>
-
-                <!-- Quick Day Selection Badges -->
-                <div>
-                  <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Chọn nhanh ngày học:</div>
-                  <div class="flex flex-wrap gap-1.5" id="home-n1-days-quicklist">
-                    <!-- Populated dynamically via JS -->
-                  </div>
+                  <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                    Lộ trình 20 ngày bứt phá N1: Đầy đủ Chữ Hán, Từ vựng, Ngữ pháp, Dấu sao ★ và Đọc hiểu ngữ pháp.
+                  </p>
                 </div>
               </div>
 
-              <div class="pt-5 mt-4 border-t border-slate-100">
-                <button type="button" class="btn-home-start-n1 w-full py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 active:scale-98 text-white font-bold text-xs shadow-md shadow-indigo-200 flex items-center justify-center gap-2 transition" data-day="1">
-                  <span>▶ Vào học ngay (Ngày 1)</span>
-                </button>
+              <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-indigo-600 group-hover:text-indigo-700">
+                <span>Chọn ngày học (20 ngày)</span>
+                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
 
             <!-- CARD 2: Kho Đề Thi N2 Các Năm -->
-            <div class="hover-reveal-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
-              <div class="space-y-3.5">
+            <div id="card-n2-exams" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-rose-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[170px]">
+              <div class="space-y-3">
                 <div class="flex items-center justify-between">
                   <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-600 to-rose-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-rose-100">
                     N2
@@ -696,122 +674,47 @@
                 </div>
 
                 <div>
-                  <h3 class="text-base font-bold text-slate-900 group-hover:text-rose-600 transition flex items-center gap-1.5">
+                  <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-rose-600 transition flex items-center gap-1.5">
                     <span>Kho Đề Thi N2 Các Năm</span>
                   </h3>
-                  <p class="text-xs font-semibold text-rose-600 mt-0.5">Tổng hợp đề thi thực chiến chính thức</p>
-                  <div class="hover-reveal-detail text-xs text-slate-500 leading-relaxed">
-                    <p>Trọn bộ đề thi thật phần 言語知識 đã làm sạch 100% dữ liệu, khôi phục gạch chân, câu ngôi sao ★ và đoạn văn đọc hiểu Mondai 9.</p>
-                  </div>
-                </div>
-
-                <!-- Info highlights -->
-                <div class="bg-slate-50 rounded-2xl p-3 border border-slate-100 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-400">Tùy chọn:</span>
-                    <span class="font-bold text-slate-700">Từ vựng & Ngữ pháp (51c) / Full</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="text-slate-400">Thời gian thi:</span>
-                    <span class="font-bold text-slate-700">35 phút / 105 phút</span>
-                  </div>
-                </div>
-
-                <!-- Ready Exam List -->
-                <div>
-                  <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Đề thi nổi bật:</div>
-                  <div class="space-y-1.5" id="home-n2-ready-list">
-                    <!-- Populated dynamically via JS: 12/2025, 07/2025, 12/2024, 07/2024, 12/2023 buttons -->
-                  </div>
+                  <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                    Trọn bộ đề thi thật phần 言語知識, 読解 & 聴解 đã chuẩn hóa 100% dữ liệu, có audio và chấm điểm thi thử.
+                  </p>
                 </div>
               </div>
 
-              <div class="pt-5 mt-4 border-t border-slate-100">
-                <button type="button" id="btn-home-open-n2-modal" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 active:scale-98 text-white font-bold text-xs shadow-md shadow-rose-200 flex items-center justify-center gap-2 transition">
-                  <span>📝 Mở Danh Sách Đề N2</span>
-                </button>
+              <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-600 group-hover:text-rose-700">
+                <span>Chọn đề thi (2010 - 2025)</span>
+                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
 
-            <!-- CARD 3: Dokkai N1 (Shin Kanzen Master) (ACTIVE) -->
-            <div id="card-shinkanzen-dokkai" class="hover-reveal-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-amber-400 cursor-pointer">
-              <div class="space-y-3.5">
+            <!-- CARD 3: Dokkai N1 (Shin Kanzen Master) -->
+            <div id="card-shinkanzen-dokkai" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-amber-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[170px]">
+              <div class="space-y-3">
                 <div class="flex items-center justify-between">
                   <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-700 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-amber-100">
                     読解
                   </span>
                   <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    🟢 Sẵn sàng (6 chương • 24 bài)
+                    🟢 24 bài thực hành (6 chương)
                   </span>
                 </div>
 
                 <div>
-                  <h3 class="text-base font-bold text-slate-900 group-hover:text-amber-700 transition flex items-center gap-1.5">
+                  <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-amber-700 transition flex items-center gap-1.5">
                     <span>Dokkai N1 (Shin Kanzen Master)</span>
                   </h3>
-                  <p class="text-xs font-bold text-amber-700 mt-1">Luyện tư duy mổ xẻ logic & bắt bẫy phương án</p>
-                  <div class="hover-reveal-detail text-xs text-slate-500 leading-relaxed">
-                    <p>Giáo trình đọc hiểu đỉnh cao JLPT N1. Rèn luyện tư duy bóc tách tiền đề số đông, cú lật chuyển ý và giải mã các phép ẩn dụ để chốt đúng quan điểm tác giả.</p>
-                  </div>
-                </div>
-
-                <!-- 6 Chapters Grid Overview -->
-                <div class="bg-slate-50 rounded-2xl p-3 border border-slate-100 space-y-1.5 text-xs text-slate-600">
-                  <div class="grid grid-cols-2 gap-1.5 text-[11px]">
-                    <div class="flex items-center justify-between bg-white px-2 py-1 rounded-lg border border-slate-100">
-                      <span class="text-slate-500">Ch.1: 对比・逆接</span>
-                      <span class="font-bold text-emerald-700">4 bài</span>
-                    </div>
-                    <div class="flex items-center justify-between bg-white px-2 py-1 rounded-lg border border-slate-100">
-                      <span class="text-slate-500">Ch.2: 言換・比喩</span>
-                      <span class="font-bold text-indigo-700">4 bài</span>
-                    </div>
-                    <div class="flex items-center justify-between bg-white px-2 py-1 rounded-lg border border-slate-100">
-                      <span class="text-slate-500">Ch.3: 疑問・主張</span>
-                      <span class="font-bold text-teal-700">4 bài</span>
-                    </div>
-                    <div class="flex items-center justify-between bg-white px-2 py-1 rounded-lg border border-slate-100">
-                      <span class="text-slate-500">Ch.4: 指示・機能</span>
-                      <span class="font-bold text-sky-700">4 bài</span>
-                    </div>
-                    <div class="flex items-center justify-between bg-white px-2 py-1 rounded-lg border border-slate-100">
-                      <span class="text-slate-500">Ch.5: 理由・因果</span>
-                      <span class="font-bold text-purple-700">4 bài</span>
-                    </div>
-                    <div class="flex items-center justify-between bg-white px-2 py-1 rounded-lg border border-slate-100">
-                      <span class="text-slate-500">Ch.6: 実践・総合</span>
-                      <span class="font-bold text-rose-700">4 bài</span>
-                    </div>
-                  </div>
+                  <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                    Luyện tư duy bóc tách cấu trúc đoạn văn, nhận diện cú lật chuyển ý và phá bẫy phương án theo Shin Kanzen.
+                  </p>
                 </div>
               </div>
 
-              <div class="pt-5 mt-4 border-t border-slate-100 space-y-2">
-                <button type="button" id="btn-home-start-dokkai-hub" class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 via-amber-600 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 active:scale-98 text-white font-bold text-xs shadow-md shadow-amber-200 flex items-center justify-center gap-1.5 transition cursor-pointer">
-                  <span>📚 Vào kho bài đọc Dokkai N1 (24 bài tự do)</span>
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </button>
-                <div class="grid grid-cols-3 gap-1.5">
-                  <button type="button" id="btn-home-start-dokkai-ch01" class="py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-amber-100 hover:text-amber-800 text-slate-700 font-bold text-[11px] transition cursor-pointer flex items-center justify-center gap-1">
-                    <span>Chương 1</span>
-                  </button>
-                  <button type="button" id="btn-home-start-dokkai-ch02" class="py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-indigo-100 hover:text-indigo-800 text-slate-700 font-bold text-[11px] transition cursor-pointer flex items-center justify-center gap-1">
-                    <span>Chương 2</span>
-                  </button>
-                  <button type="button" id="btn-home-start-dokkai-ch03" class="py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-teal-100 hover:text-teal-800 text-slate-700 font-bold text-[11px] transition cursor-pointer flex items-center justify-center gap-1">
-                    <span>Chương 3</span>
-                  </button>
-                  <button type="button" id="btn-home-start-dokkai-ch04" class="py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-sky-100 hover:text-sky-800 text-slate-700 font-bold text-[11px] transition cursor-pointer flex items-center justify-center gap-1">
-                    <span>Chương 4</span>
-                  </button>
-                  <button type="button" id="btn-home-start-dokkai-ch05" class="py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-purple-100 hover:text-purple-800 text-slate-700 font-bold text-[11px] transition cursor-pointer flex items-center justify-center gap-1">
-                    <span>Chương 5</span>
-                  </button>
-                  <button type="button" id="btn-home-start-dokkai-ch06" class="py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-rose-100 hover:text-rose-800 text-slate-700 font-bold text-[11px] transition cursor-pointer flex items-center justify-center gap-1">
-                    <span>Chương 6</span>
-                  </button>
-                </div>
+              <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-700 group-hover:text-amber-800">
+                <span>Kho bài đọc tự do (24 bài)</span>
+                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
 

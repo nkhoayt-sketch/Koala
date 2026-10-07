@@ -224,6 +224,10 @@ class App {
         }
       }
       this.openDokkaiHub(chapterId);
+    } else if (path.includes('/n1/20days') || hash.includes('n1/20days') || hash.includes('n1-hub')) {
+      this.openN1Hub();
+    } else if (path.includes('/n2/exams') || hash.includes('n2/exams') || hash.includes('n2-hub')) {
+      this.openN2Hub();
     } else {
       if (this.currentView !== 'HOME') {
         this.switchView('HOME');
@@ -1382,6 +1386,389 @@ class App {
     }
   }
 
+  async openN1Hub() {
+    this.currentCourse = 'n1';
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
+
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (!currentPath.includes('/n1/20days')) {
+      try {
+        history.pushState({ view: 'n1_hub' }, '', '/n1/20days');
+      } catch (e) {
+        window.location.hash = 'n1/20days';
+      }
+    }
+
+    if (this.quizEngine) {
+      this.quizEngine.pauseTimer();
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+
+    this.switchView('TEST');
+
+    // Update Header Info
+    if (this.headerLevelBadge) {
+      this.headerLevelBadge.textContent = 'JLPT N1';
+      this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-indigo-100 text-indigo-700 border border-indigo-200';
+    }
+    if (this.dayTitleEl) {
+      this.dayTitleEl.textContent = '20日で合格 N1 • Lộ Trình 20 Ngày';
+    }
+    if (this.dayDescEl) {
+      this.dayDescEl.textContent = 'Chọn một ngày học bất kỳ để luyện tập toàn diện Từ vựng, Ngữ pháp, Dấu sao ★ và Đọc hiểu ngữ pháp';
+    }
+    if (this.headerScopeBtn) {
+      this.headerScopeBtn.classList.add('hidden');
+    }
+    if (this.paletteActiveTitle) {
+      this.paletteActiveTitle.textContent = '20日で合格 N1';
+    }
+    if (this.paletteActiveCount) {
+      this.paletteActiveCount.textContent = '20 ngày';
+    }
+
+    // Hide normal test header controls
+    if (this.testHeaderControls) {
+      this.testHeaderControls.classList.add('hidden');
+    }
+
+    // Render N1 20-Day Selection Grid
+    this.renderN1HubView();
+    this.toggleMobileSidebar(false);
+  }
+
+  renderN1HubView() {
+    const totalDays = this.daysIndex.length || 20;
+    let completedCount = 0;
+    let totalScore = 0;
+    let totalQuestions = 0;
+
+    this.daysIndex.forEach(item => {
+      const dayKey = `n1_day${String(item.day).padStart(2, '0')}`;
+      const history = storage.getExamHistoryRecord(dayKey) || storage.getExamHistoryRecord(item.day);
+      if (history) {
+        completedCount++;
+        totalScore += (history.lastScore || 0);
+        totalQuestions += (history.totalQuestions || 45);
+      }
+    });
+
+    const progressPct = Math.round((completedCount / totalDays) * 100);
+
+    this.quizContainerEl.innerHTML = `
+      <div class="n1-hub-view max-w-7xl mx-auto px-3 sm:px-6 py-6 space-y-6 animate-fade-in font-sans">
+        
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-br from-white via-indigo-50/40 to-slate-50 rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" id="btn-n1-hub-back-home" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200/90 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                  <span>Trang Chủ</span>
+                </button>
+                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-indigo-100 text-indigo-800 border border-indigo-200">
+                  📖 20日で合格 N1
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 flex items-center gap-1">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  🟢 Đã mở toàn bộ (20/20 Ngày)
+                </span>
+              </div>
+
+              <div>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
+                  20日で合格 N1 • Lộ Trình Luyện Thi Cấp Tốc
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+                  Tự do chọn ngày học bất kỳ. Mỗi ngày gồm 45 câu hỏi chuẩn format JLPT N1 (Chữ Hán, Từ vựng, Ngữ pháp, Dấu sao ★ và Bài đọc ngữ pháp Mondai 7).
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Card -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 p-4 sm:p-5 shrink-0 shadow-xs space-y-3 min-w-[260px]">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-700 pb-2 border-b border-slate-100">
+                <span>Tiến độ học tập</span>
+                <span class="font-mono text-indigo-600">${completedCount}/${totalDays} ngày (${progressPct}%)</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden border border-slate-200/60">
+                <div class="h-full bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-full transition-all duration-500" style="width: ${progressPct}%"></div>
+              </div>
+              <div class="text-[11px] text-slate-500 font-medium">
+                ${totalQuestions > 0 ? `Đã làm: <strong class="text-emerald-700">${totalScore}/${totalQuestions} câu</strong>` : 'Chưa có bài làm nào'}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 Days Selection Grid (4 to 5 columns) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          ${this.daysIndex.map(item => {
+            const isAvail = item.available;
+            const dayKey = `n1_day${String(item.day).padStart(2, '0')}`;
+            const history = storage.getExamHistoryRecord(dayKey) || storage.getExamHistoryRecord(item.day);
+            const isDone = !!history;
+
+            return `
+              <div class="n1-day-card group bg-white rounded-2xl border ${
+                isDone 
+                  ? 'border-emerald-200 hover:border-emerald-400 bg-emerald-50/15' 
+                  : 'border-slate-200/90 hover:border-indigo-400'
+              } p-4 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between cursor-pointer min-h-[160px]" data-day="${item.day}">
+                
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="w-8 h-8 rounded-xl font-black text-xs flex items-center justify-center ${
+                      isDone ? 'bg-emerald-600 text-white' : 'bg-indigo-600 text-white shadow-xs'
+                    }">
+                      ${item.day}
+                    </span>
+                    ${isDone ? `
+                      <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300">
+                        ✓ ${history.lastScore}/${history.totalQuestions}
+                      </span>
+                    ` : `
+                      <span class="px-2 py-0.5 rounded-md text-[10px] font-medium bg-slate-100 text-slate-500 border border-slate-200">
+                        Chưa làm
+                      </span>
+                    `}
+                  </div>
+
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition leading-snug">
+                      ${item.title || `Ngày ${item.day}`}
+                    </h3>
+                    <p class="text-[11px] text-slate-400 mt-0.5">
+                      45 câu hỏi • Đọc hiểu Split-View
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-slate-100">
+                  <button type="button" class="w-full py-2 px-3 rounded-xl ${
+                    isDone 
+                      ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300' 
+                      : 'bg-indigo-600 hover:bg-indigo-700 text-white'
+                  } font-bold text-xs shadow-2xs transition flex items-center justify-center gap-1 cursor-pointer">
+                    <span>${isDone ? 'Xem lại bài 🔍' : 'Vào học ngay 🚀'}</span>
+                  </button>
+                </div>
+
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+      </div>
+    `;
+
+    // Bind back button
+    document.getElementById('btn-n1-hub-back-home')?.addEventListener('click', () => {
+      this.switchView('HOME');
+    });
+
+    // Bind day card clicks
+    this.quizContainerEl.querySelectorAll('.n1-day-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const day = parseInt(card.getAttribute('data-day'), 10);
+        this.selectDay(day, true);
+      });
+    });
+  }
+
+  async openN2Hub() {
+    this.currentCourse = 'n2';
+    this.currentDay = null;
+    this.currentDokkaiChapter = null;
+
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (!currentPath.includes('/n2/exams')) {
+      try {
+        history.pushState({ view: 'n2_hub' }, '', '/n2/exams');
+      } catch (e) {
+        window.location.hash = 'n2/exams';
+      }
+    }
+
+    if (this.quizEngine) {
+      this.quizEngine.pauseTimer();
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+
+    this.switchView('TEST');
+
+    // Update Header Info
+    if (this.headerLevelBadge) {
+      this.headerLevelBadge.textContent = 'JLPT N2';
+      this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-rose-100 text-rose-700 border border-rose-200';
+    }
+    if (this.dayTitleEl) {
+      this.dayTitleEl.textContent = 'Kho Đề Thi N2 Các Năm (2010 - 2025)';
+    }
+    if (this.dayDescEl) {
+      this.dayDescEl.textContent = 'Tổng hợp 31 đợt thi thật chính thức với dữ liệu đã chuẩn hóa 100%, có audio và tính giờ';
+    }
+    if (this.headerScopeBtn) {
+      this.headerScopeBtn.classList.add('hidden');
+    }
+    if (this.paletteActiveTitle) {
+      this.paletteActiveTitle.textContent = 'Đề Thi N2';
+    }
+    if (this.paletteActiveCount) {
+      this.paletteActiveCount.textContent = `${this.n2Exams.length} đề`;
+    }
+
+    // Hide normal test header controls
+    if (this.testHeaderControls) {
+      this.testHeaderControls.classList.add('hidden');
+    }
+
+    // Render N2 Exams Selection Grid
+    this.renderN2HubView();
+    this.toggleMobileSidebar(false);
+  }
+
+  renderN2HubView() {
+    const readyExams = this.n2Exams.filter(e => e.standardized || e.available);
+    const totalExams = readyExams.length;
+    let completedCount = 0;
+
+    readyExams.forEach(exam => {
+      const history = storage.getExamHistoryRecord(exam.id);
+      if (history && ((history.overall?.totalQuestions > 0) || (history.sections && Object.values(history.sections).some(s => s && s.completed)))) {
+        completedCount++;
+      }
+    });
+
+    const progressPct = totalExams > 0 ? Math.round((completedCount / totalExams) * 100) : 0;
+
+    this.quizContainerEl.innerHTML = `
+      <div class="n2-hub-view max-w-7xl mx-auto px-3 sm:px-6 py-6 space-y-6 animate-fade-in font-sans">
+        
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-br from-white via-rose-50/40 to-slate-50 rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" id="btn-n2-hub-back-home" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200/90 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                  <span>Trang Chủ</span>
+                </button>
+                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-rose-100 text-rose-800 border border-rose-200">
+                  📝 Kho Đề Thi N2
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 flex items-center gap-1">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  🟢 ${totalExams} đề chuẩn hóa (2010 - 2025)
+                </span>
+              </div>
+
+              <div>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
+                  Kho Đề Thi JLPT N2 Các Năm (Thực Chiến Chính Thức)
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+                  Trọn bộ 31 đợt thi thật từ năm 2010 đến 2025. Hỗ trợ tùy chọn linh hoạt: Từ vựng & Ngữ pháp (51 câu), Đọc hiểu hoặc làm bài Full có Audio tính giờ chuẩn thi.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Card -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 p-4 sm:p-5 shrink-0 shadow-xs space-y-3 min-w-[260px]">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-700 pb-2 border-b border-slate-100">
+                <span>Tiến độ luyện đề</span>
+                <span class="font-mono text-rose-600">${completedCount}/${totalExams} đề (${progressPct}%)</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden border border-slate-200/60">
+                <div class="h-full bg-gradient-to-r from-rose-500 to-rose-700 rounded-full transition-all duration-500" style="width: ${progressPct}%"></div>
+              </div>
+              <div class="text-[11px] text-slate-500 font-medium">
+                Đã hoàn thành: <strong class="text-emerald-700">${completedCount} đề thi</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- N2 Exams Grid (3 to 4 columns) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          ${readyExams.map(exam => {
+            const history = storage.getExamHistoryRecord(exam.id);
+            const isDone = !!history && ((history.overall?.totalQuestions > 0) || (history.sections && Object.values(history.sections).some(s => s && s.completed)));
+            const badgeText = isDone ? storage.formatExamHistoryBadge(history, exam) : 'Chưa làm';
+
+            return `
+              <div class="n2-exam-card group bg-white rounded-2xl border ${
+                isDone 
+                  ? 'border-emerald-200 hover:border-emerald-400 bg-emerald-50/15' 
+                  : 'border-slate-200/90 hover:border-rose-400'
+              } p-4 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between cursor-pointer min-h-[160px]" data-exam-id="${exam.id}">
+                
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <span class="px-2 py-0.5 rounded-lg text-xs font-bold ${
+                      isDone ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-700'
+                    }">
+                      ${exam.month < 10 ? '0' + exam.month : exam.month}/${exam.year}
+                    </span>
+                    ${isDone ? `
+                      <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300">
+                        ✓ ${badgeText}
+                      </span>
+                    ` : `
+                      <span class="px-2 py-0.5 rounded-md text-[10px] font-medium bg-slate-100 text-slate-500 border border-slate-200">
+                        Chưa làm
+                      </span>
+                    `}
+                  </div>
+
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-rose-600 transition leading-snug">
+                      ${exam.title}
+                    </h3>
+                    <p class="text-[11px] text-slate-400 mt-0.5">
+                      ${exam.listeningCount ? `${exam.totalQuestions} câu • Có Audio 🎧` : `${exam.totalQuestions || 56} câu • Split-View`}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-slate-100">
+                  <button type="button" class="w-full py-2 px-3 rounded-xl ${
+                    isDone 
+                      ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300' 
+                      : 'bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white'
+                  } font-bold text-xs shadow-2xs transition flex items-center justify-center gap-1 cursor-pointer">
+                    <span>${isDone ? 'Xem lại đề thi 🔍' : 'Làm đề thi 🚀'}</span>
+                  </button>
+                </div>
+
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+      </div>
+    `;
+
+    // Bind back button
+    document.getElementById('btn-n2-hub-back-home')?.addEventListener('click', () => {
+      this.switchView('HOME');
+    });
+
+    // Bind exam card clicks to openPretestModal
+    this.quizContainerEl.querySelectorAll('.n2-exam-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const examId = card.getAttribute('data-exam-id');
+        const examMeta = this.n2Exams.find(e => e.id === examId);
+        if (examMeta) {
+          this.openPretestModal(examMeta);
+        }
+      });
+    });
+  }
+
   async openDokkaiHub(chapterFilter = 'all') {
     this.currentCourse = 'n1_dokkai';
     this.currentDokkaiChapter = chapterFilter;
@@ -1653,6 +2040,21 @@ class App {
       this.btnSidebarHome.addEventListener('click', () => {
         this.switchView('HOME');
         this.toggleMobileSidebar(false);
+      });
+    }
+
+    // Dashboard Portal Hub Cards Events
+    const cardN1 = document.getElementById('card-n1-20days');
+    if (cardN1) {
+      cardN1.addEventListener('click', () => {
+        this.openN1Hub();
+      });
+    }
+
+    const cardN2 = document.getElementById('card-n2-exams');
+    if (cardN2) {
+      cardN2.addEventListener('click', () => {
+        this.openN2Hub();
       });
     }
 
