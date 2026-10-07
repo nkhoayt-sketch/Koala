@@ -1,0 +1,117 @@
+{
+  "chapterId": "ch06",
+  "chapter": "第6章：実践演習・総合理解",
+  "title": "Chương 6: Luyện thực chiến & Đọc hiểu tổng hợp (実践演習・総合理解)",
+  "description": "Tổng hợp trọn bộ các dạng thức đề thi JLPT N1 Dokkai thực chiến: Đoản văn (短文), Trung văn (中文), Trường văn (長文), So sánh văn bản tích hợp (統合理解 A-B) và Tìm kiếm thông tin (情報検索).",
+  "totalQuestions": 4,
+  "questions": [
+    {
+      "id": "skz_ch06_q01",
+      "chapter": "第6章：実践演習・総合理解",
+      "title": "第6章 練習 1（中文）",
+      "mondaiType": "medium",
+      "passage": "私たちは時計という人工的な機械によって測定される「均質な時間」を自明のものとして生きている。一日は24時間、一時間は60分として厳密に等分され、すべての行動はその目盛りに従って秩序づけられる。この近代的な時間規律のおかげで、社会の組織的協調や産業活動は驚異的な同期と効率化を達成することができた。\n\nしかし、この時計の時間が絶対化した代償として、人間は内面的な「生の主観的リズム」を切り捨ててしまった。自然界に目を向ければ、春の訪れとともに芽吹き、冬の寒さの中で眠りにつく生命のサイクルは、決して機械的な均等さでは測れない。人間自身の心や身体もまた、情熱に駆られて没頭するときには時間は瞬く間に過ぎ去り、苦痛や思索に沈むときには一刻が永遠のように引き伸ばされる独自の「質的な時間」を生きているはずなのだ。\n\n均等に細切れにされたスケジュールに心身を無理に適合させ続ける現代人は、自らの生命が発する固有のテンポを見失った「時間の難民」と言えるかもしれない。今求められているのは、時計の支配から自律を取り戻し、自分自身の内なる時間に耳を澄ませる勇気である。",
+      "question": "近代的な「時計の時間」と人間の関係について、筆者の主張として最も適切なものはどれか。",
+      "options": [
+        "時計の時間がもたらした効率性は人間の幸福そのものであり、主観的な時間感覚は克服されるべき非合理である。",
+        "社会秩序を維持するためには個人の内面的なリズムを優先すべきではなく、厳密な時間管理を徹底すべきである。",
+        "均質な時計の時間に過度に適合した結果、人間は心身の固有な質的リズムを見失っており、内なる時間を取り戻す必要がある。",
+        "自然界のサイクルと機械の時間は完全に一致しており、時計の目盛りに従うことこそが自然な生き方である。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "この近代的な時間規律のおかげで、社会の組織的協調や産業活動は驚異的な同期と効率化を達成することができた",
+        "turningPoint": "しかし、この時計の時間が絶対化した代償として",
+        "authorConclusion": "今求められているのは、時計の支配から自律を取り戻し、自分自身の内なる時間に耳を澄ませる勇気である"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa tiền đề đã bị phê phán): Tác giả chỉ trích việc biến thời gian đồng hồ thành tuyệt đối.",
+        "opt2": "❌ BẪY TƯ DUY (Trái ngược lập luận): Tác giả cảnh báo con người đang trở thành 'người tị nạn của thời gian' do quá kỷ luật máy móc.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với thông điệp: con người đang đánh mất nhịp điệu sinh mệnh chất lượng riêng do quá gượng ép tuân theo thời gian đồng hồ cơ học, cần phải lấy lại quyền tự chủ thời gian nội tại.",
+        "opt4": "❌ BẪY TƯ DUY (Xuyên tạc sự thật trong bài): Bài nêu rõ nhịp điệu thiên nhiên không thể đo bằng sự đều đặn máy móc."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Chúng ta đang sống và coi 'thời gian đồng nhất' được đo lường bằng cỗ máy nhân tạo mang tên đồng hồ là điều hiển nhiên. Một ngày được chia đều tăm tắp thành 24 giờ, một giờ là 60 phút, và mọi hành vi được trật tự hóa theo từng vạch chia ấy. Nhờ kỷ luật thời gian cận đại này, sự phối hợp tổ chức và hoạt động sản xuất công nghiệp của xã hội mới đạt được sự đồng bộ và tối ưu hóa phi thường.<br><br>Thế nhưng, như một cái giá phải trả cho sự tuyệt đối hóa thời gian đồng hồ, con người đã vứt bỏ 'nhịp điệu sinh mệnh chủ quan' trong nội tâm. Hướng mắt ra thế giới tự nhiên, chu kỳ của sự sống đâm chồi vào mùa xuân và chìm vào giấc ngủ giữa đông buốt giá tuyệt nhiên không thể đo đếm bằng sự chia đều máy móc. Bản thân tâm trí và thân thể con người vốn dĩ cũng sống trong một 'thời gian định tính' độc đáo: khi say mê đắm chìm thì thời gian vút qua trong chớp mắt, khi đớn đau hay trầm tư thì một khoảnh khắc dài tựa thiên thu.<br><br>Những người hiện đại cứ ép uổng thân tâm mình phải thích nghi với những lịch trình bị băm nhỏ đều đặn có lẽ chính là những 'người tị nạn thời gian' đã đánh mất tiết tấu nội tại của sinh mệnh. Điều cần kíp lúc này là lòng dũng cảm lấy lại quyền tự chủ khỏi sự thống trị của đồng hồ, để lắng nghe thời gian nội tâm của chính mình."
+    },
+    {
+      "id": "skz_ch06_q02",
+      "chapter": "第6章：実践演習・総合理解",
+      "title": "第6章 練習 2（長文）",
+      "mondaiType": "long",
+      "passage": "インターネットの普及とデジタルテクノロジーの進化は、人間の「共同体」のあり方を根底から変容させた。地理的な制約に縛られることなく、地球の裏側にいる他者と共通の趣味や関心で瞬時につながり合えるバーチャルなコミュニティは、個人の自由をかつてないほど拡張したかに見えた。\n\nしかし、物理的な空間を共有しないデジタルなつながりには、決定的な要素が欠落している。それは、「偶発的な出会い」と「厄介さの引き受け」である。オンライン空間では、アルゴリズムによって最適化された同質的な意見ばかりが反響し合う「エコーチェンバー」に陥りやすく、自分が不快と感じる異質な他者はワンクリックで遮断することができる。そこには、他者の存在の手触りや、意見の衝突を粘り強くすり合わせる中で生まれる生の摩擦が存在しない。\n\n古来、人間が育んできた真の「居場所」とは、単に自分にとって心地よい賛同者ばかりが集まるサロンではなかったはずだ。そこには、時に意見が合わず、煩わしく思える他者もまた同じ空間に実在し、そうした厄介さを引き受け合いながら互いの存在を認め合う重層的な関係性の網の目があったのだ。\n\n身体を伴った物理的な空間での他者との交わりを軽視し、都合の良いデジタルな関係性だけに逃避し続けるならば、私たちの社会は個別に分断され、他者への寛容さを失った不毛な孤立の集合体へと退行してしまうだろう。今こそ、面倒で思い通りにならない「生身の他者」と共に生きる場所の尊厳を問い直さなければならない。",
+      "question": "物理的な空間における「居場所」の意義について、筆者の見解として最も適切なものはどれか。",
+      "options": [
+        "デジタル空間と完全に一致しており、同質な関心を持つ仲間と効率的に交流するための快適な環境である。",
+        "煩わしい人間関係を排除し、個人の自由とプライバシーを完全に保障する安全なサロンである。",
+        "意見の不一致や厄介さも含めて生身の他者と身体を共有し、摩擦を通じて相互承認を育む場である。",
+        "地理的な制約を完全に克服し、全世界のあらゆる人々と衝突なしに調和するための架け橋である。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "地理的な制約に縛られることなく、地球の裏側にいる他者と共通の趣味や関心で瞬時につながり合えるバーチャルなコミュニティは、個人の自由をかつてないほど拡張したかに見えた",
+        "turningPoint": "しかし、物理的な空間を共有しないデジタルなつながりには、決定的な要素が欠落している",
+        "authorConclusion": "今こそ、面倒で思い通りにならない「生身の他者」と共に生きる場所の尊厳を問い直さなければならない"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đánh tráo với không gian ảo): Đây là đặc điểm của cộng đồng mạng đồng nhất mà tác giả chỉ trích.",
+        "opt2": "❌ BẪY TƯ DUY (Trái ngược bản chất): Tác giả khẳng định chốn dung thân chân thực không phải là cái salon êm ấm trốn tránh phiền hà.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với tư tưởng trường văn: chốn thuộc về vật lý là nơi cùng chia sẻ thân xác với tha nhân bằng xương bằng thịt, chấp nhận cả sự bất đồng và phiền toái, qua đó tôi luyện sự thừa nhận lẫn nhau.",
+        "opt4": "❌ BẪY TƯ DUY (Lý tưởng hóa hão huyền): Bài đọc nhấn mạnh sự va chạm đời thực đầy phiền toái, không phải sự hài hòa không xung đột."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Sự phổ biến của Internet và công nghệ số đã làm biến đổi tận gốc rễ phương thức tồn tại của 'cộng đồng' loài người. Các cộng đồng ảo nơi con người có thể kết nối tức thời qua sở thích chung mà không bị trói buộc bởi rào cản địa lý thoạt nhìn như mở rộng tự do cá nhân hơn bao giờ hết.<br><br>Thế nhưng, những kết nối số không cùng chia sẻ không gian vật lý lại thiếu vắng những yếu tố mang tính quyết định: đó là 'sự hội ngộ ngẫu nhiên' và 'việc chấp nhận những phiền toái'. Trong không gian mạng, người ta rất dễ rơi vào 'phòng dội âm' nơi thuật toán chỉ phản hồi những quan điểm đồng điệu, còn những tha nhân dị biệt khiến ta khó chịu thì có thể chặn đứng chỉ bằng một cú nhấp chuột. Ở đó không có cảm giác chân thực về sự hiện diện của người khác, cũng chẳng có sự ma sát sống động vốn được sinh ra từ quá trình kiên trì dàn xếp xung đột.<br><br>Tự cổ chí kim, một 'chốn thuộc về' thực sự mà con người vun đắp đâu phải chỉ là một phòng khách êm ái quy tụ toàn những kẻ tán đồng mình. Ở đó, ngay cả những người đôi khi bất đồng ý kiến, những kẻ ta thấy phiền toái cũng cùng tồn tại trong một không gian thực, tạo nên mạng lưới quan hệ đa tầng nơi người ta cùng gánh vác sự phiền phức để công nhận sự hiện diện của nhau.<br><br>Nếu cứ tiếp tục coi nhẹ việc giao tiếp có cơ thể trong không gian vật lý mà trốn tránh vào những mối quan hệ số thuận tiện, xã hội chúng ta sẽ bị phân mảnh thành tập hợp những kẻ cô lập cằn cỗi đánh mất lòng khoan dung. Đã đến lúc phải nhìn nhận lại phẩm giá của chốn cùng chung sống với những 'tha nhân bằng xương bằng thịt' - những con người phiền phức và không bao giờ chiều theo ý mình."
+    },
+    {
+      "id": "skz_ch06_q03",
+      "chapter": "第6章：実践演習・総合理解",
+      "title": "第6章 練習 3（統合理解 A-B）",
+      "mondaiType": "compare",
+      "passage": "【A】\nテレワークの普及は、通勤ラッシュの疲労から労働者を解放し、ワークライフバランスの改善に大きく寄与した。場所を選ばずに業務を遂行できる柔軟性は、育児や介護とキャリアの両立を容易にし、個人の自律的な時間管理を促している。デジタルツールを活用した業務効率化が進む現代において、オフィスという一箇所に全員が集まることを強制する従来の働き方はもはや過去の遺物であり、完全なリモートワークへの移行こそが未来の標準となるべきである。\n\n【B】\n確かにリモートワークは定型的な業務処理においては高い効率を発揮する。しかし、革新的なアイディアの創出や強固な組織の信頼関係は、画面越しの計画的な会議だけでは育まれない。廊下ですれ違った際の一言の雑談や、同じ空間で共に汗を流す中で共有される暗黙の空気感こそが、創造的な協働の起爆剤となるのだ。オフィスは単なる作業場ではなく、偶発的な対話を生み出す社会的な触媒であり、その価値を過小評価して完全なオンライン化を進めることには慎重であるべきだ。",
+      "question": "リモートワークとオフィスの存在意義について、AとBの主張を比較したものとして最も適切なものはどれか。",
+      "options": [
+        "AもBも、業務の効率化と社員のワークライフバランスを最優先し、オフィスを完全に撤廃すべきだという点で一致している。",
+        "Aはリモートワークこそが未来の標準だと全面肯定しているのに対し、Bは雑談や偶発的対話を生む場としてオフィスの独自の価値を主張している。",
+        "Aはオフィスの対面コミュニケーションの重要性を強調し、Bは通勤の負担を軽減するために完全な在宅勤務を推奨している。",
+        "AもBも、オンライン会議ではアイディアの創出が不可能であるため、全従業員がオフィスに出社すべきだと主張している。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "【A】オフィスという一箇所に全員が集まることを強制する従来の働き方はもはや過去の遺物であり、完全なリモートワークへの移行こそが未来の標準となるべきである",
+        "turningPoint": "【B】確かにリモートワークは定型的な業務処理においては高い効率を発揮する。しかし",
+        "authorConclusion": "【B】オフィスは単なる作業場ではなく、偶発的な対話を生み出す社会的な触媒であり、その価値を過小評価して完全なオンライン化を進めることには慎重であるべきだ"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng nhất hóa sai lệch): B không hề muốn xóa bỏ văn phòng mà bảo vệ giá trị của văn phòng.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với so sánh 2 văn bản: A ủng hộ hoàn toàn làm từ xa xem văn phòng là tàn tích, trong khi B chỉ ra văn phòng có vai trò xúc tác xã hội tạo ra đối thoại ngẫu nhiên và sáng tạo mà online không thay thế được.",
+        "opt3": "❌ BẪY TƯ DUY (Đảo ngược lập trường giữa A và B): A là người ủng hộ từ xa, B mới là người bảo vệ văn phòng.",
+        "opt4": "❌ BẪY TƯ DUY (Sai lệch cả hai): A nhiệt liệt ủng hộ online chứ không bắt mọi người lên công ty."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc So sánh A-B】:</b><br><b>【Văn bản A】:</b> Việc phổ biến làm việc từ xa (telework) đã giải phóng người lao động khỏi nỗi ám ảnh kẹt xe tàu điện giờ cao điểm, đóng góp lớn vào cân bằng công việc - cuộc sống. Sự linh hoạt trong địa điểm làm việc giúp việc vừa chăm con hay chăm sóc người thân vừa thăng tiến sự nghiệp trở nên dễ dàng. Cách làm việc truyền thống bắt ép toàn bộ nhân viên tụ về một chỗ tại văn phòng nay đã là tàn tích của quá khứ, và việc chuyển dịch hoàn toàn sang làm việc từ xa nên trở thành tiêu chuẩn tương lai.<br><br><b>【Văn bản B】:</b> Quả thật làm việc từ xa phát huy hiệu suất cao trong các tác vụ xử lý theo quy trình cố định. Tuy nhiên, việc sản sinh các ý tưởng đổi mới sáng tạo và gây dựng lòng tin tổ chức vững chắc lại không thể nuôi dưỡng chỉ bằng những cuộc họp lên lịch sẵn qua màn hình. Những câu tán gẫu ngẫu nhiên khi lướt qua nhau ở hành lang hay bầu không khí ngầm hiểu khi cùng chung một phòng làm việc mới chính là ngòi nổ cho sự cộng tác sáng tạo. Văn phòng không chỉ là nơi làm việc đơn thuần, nó là chất xúc tác xã hội tạo ra đối thoại ngẫu nhiên, và ta cần hết sức thận trọng trước việc coi nhẹ giá trị ấy để thúc đẩy số hóa toàn bộ."
+    },
+    {
+      "id": "skz_ch06_q04",
+      "chapter": "第6章：実践演習・総合理解",
+      "title": "第6章 練習 4（情報検索）",
+      "mondaiType": "search",
+      "passage": "【国際文化交流財団・海外研究助成プログラム 募集要項（抜粋）】\n\n1. 助成対象者：\n・日本国内の大学院に在籍する大学院生（修士課程または博士課程）、または大学等で研究に従事する35歳未満の若手研究者。\n・過去に本財団の助成を受けたことがない者。\n\n2. 助成金額及び期間：\n・上限150万円（渡航費、現地滞在費、研究資料収集費を含む）。\n・現地滞在期間は3ヶ月以上1年以内とする。\n\n3. 申請手続きと締切：\n・申請期間：2026年4月1日〜5月15日（消印有効）。\n・提出書類：申請書、指導教員の推薦書（1通）、研究計画書（書式自由、A4で3枚以内）。\n※大学院生は在学証明書の添付が必須。\n\n4. 注意事項：\n・他機関からの助成金と本プログラムの重複受給は不可（併願は可能だが採択時に辞退手続きが必要）。\n・助成期間終了後、2ヶ月以内に研究成果報告書及び会計報告書を提出すること。",
+      "question": "本助成プログラムの申請条件および手続きについて、適切なものはどれか。",
+      "options": [
+        "過去に本財団の助成を受けたことがある者でも、研究テーマが異なれば再度の申請が可能である。",
+        "他機関の助成金と併願して申請することは認められているが、採択された場合は重複して受け取ることはできない。",
+        "大学院生の場合、指導教員の推薦書は不要であり、在学証明書と研究計画書のみを提出すればよい。",
+        "現地滞在期間は最短で1ヶ月から申請可能であり、助成金の上限は200万円である。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "他機関からの助成金と本プログラムの重複受給は不可",
+        "turningPoint": "（併願は可能だが採択時に辞退手続きが必要）",
+        "authorConclusion": "他機関の助成金と併願して申請することは認められているが、採択された場合は重複して受け取ることはできない"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Trái ngược điều kiện 1): Mục 1 ghi rõ: 「過去に本財団の助成を受けたことがない者」 (Người chưa từng nhận trợ cấp của quỹ).",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với mục 4: 「他機関からの助成金と本プログラムの重複受給は不可（併願は可能だが採択時に辞退手続きが必要）」 (Được nộp cùng lúc nhiều nơi nhưng khi đỗ không được nhận song song).",
+        "opt3": "❌ BẪY TƯ DUY (Trái ngược mục 3): Thư giới thiệu của giáo viên hướng dẫn (推薦書) là bắt buộc cho tất cả người nộp.",
+        "opt4": "❌ BẪY TƯ DUY (Sai số liệu mục 2): Thời gian ở thực địa tối thiểu là 3 tháng (không phải 1 tháng) và trần kinh phí là 150 vạn yên (không phải 200 vạn)."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc Tìm kiếm thông tin (情報検索)】:</b><br><b>【Quy chế chương trình Trợ cấp Nghiên cứu Nước ngoài (Trích yếu)】:</b><br>1. <b>Đối tượng:</b> Học viên cao học (Thạc sĩ hoặc Tiến sĩ) tại các trường đại học Nhật Bản, hoặc nhà nghiên cứu trẻ dưới 35 tuổi. Chưa từng nhận trợ cấp của quỹ trong quá khứ.<br>2. <b>Mức trợ cấp & thời hạn:</b> Tối đa 1.500.000 yên. Thời gian lưu trú từ 3 tháng đến 1 năm.<br>3. <b>Thủ tục & hạn nộp:</b> Từ 1/4/2026 đến 15/5/2026. Hồ sơ gồm đơn đăng ký, 1 thư giới thiệu của giảng viên hướng dẫn, đề cương nghiên cứu (A4 tối đa 3 trang). Học viên cao học bắt buộc đính kèm giấy chứng nhận đang theo học.<br>4. <b>Lưu ý:</b> Không được nhận trùng lặp với học bổng/trợ cấp của cơ quan khác (cho phép nộp song song nhiều nơi, nhưng khi được chọn phải làm thủ tục từ chối nơi kia). Phải nộp báo cáo nghiên cứu và quyết toán trong vòng 2 tháng sau khi kết thúc đợt lưu trú."
+    }
+  ]
+}

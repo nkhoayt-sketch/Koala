@@ -64,10 +64,10 @@ export class DokkaiEngine {
   }
 
   /**
-   * Preload chapter JSON files and assemble the flattened passage registry
+   * Preload all chapter JSON files (ch01 to ch06) and assemble the flattened passage registry
    */
   async ensureDataLoaded() {
-    if (this.allPassages.length > 0 && this.cachedChapters.skz_ch01 && this.cachedChapters.skz_ch02) {
+    if (this.allPassages.length >= 24 && Object.keys(this.cachedChapters).length >= 6) {
       return;
     }
 
@@ -82,13 +82,20 @@ export class DokkaiEngine {
         throw new Error(`Cannot load ${path1}`);
       };
 
-      const [ch01Data, ch02Data] = await Promise.all([
-        fetchWithFallback('data/n1_dokkai/shinkanzen_ch01.json', 'public/data/n1_dokkai/shinkanzen_ch01.json').catch(() => null),
-        fetchWithFallback('data/n1_dokkai/shinkanzen_ch02.json', 'public/data/n1_dokkai/shinkanzen_ch02.json').catch(() => null)
-      ]);
+      const chapterIds = ['ch01', 'ch02', 'ch03', 'ch04', 'ch05', 'ch06'];
+      const results = await Promise.all(
+        chapterIds.map(chId =>
+          fetchWithFallback(`data/n1_dokkai/shinkanzen_${chId}.json`, `public/data/n1_dokkai/shinkanzen_${chId}.json`).catch(() => null)
+        )
+      );
 
-      if (ch01Data) this.cachedChapters.skz_ch01 = ch01Data;
-      if (ch02Data) this.cachedChapters.skz_ch02 = ch02Data;
+      chapterIds.forEach((chId, idx) => {
+        const data = results[idx];
+        if (data) {
+          const key = `skz_${chId}`;
+          this.cachedChapters[key] = data;
+        }
+      });
 
       this.buildAllPassagesList();
     } catch (e) {
@@ -98,7 +105,7 @@ export class DokkaiEngine {
 
   buildAllPassagesList() {
     this.allPassages = [];
-    const chKeys = ['skz_ch01', 'skz_ch02'];
+    const chKeys = ['skz_ch01', 'skz_ch02', 'skz_ch03', 'skz_ch04', 'skz_ch05', 'skz_ch06'];
     chKeys.forEach(chKey => {
       const chData = this.cachedChapters[chKey];
       if (!chData) return;
@@ -601,8 +608,25 @@ export class DokkaiEngine {
 
     const wrongCount = doneCount - correctCount;
     const progressPct = totalCount > 0 ? Math.round((doneCount / totalCount) * 100) : 0;
-    const ch1Count = this.allPassages.filter(p => p.chapterKey === 'skz_ch01').length;
-    const ch2Count = this.allPassages.filter(p => p.chapterKey === 'skz_ch02').length;
+
+    const chaptersMeta = [
+      { key: 'all', label: 'Tất cả bài học', color: 'bg-slate-900', lightColor: 'bg-slate-100 text-slate-700' },
+      { key: 'skz_ch01', label: '第1章: 対比', color: 'bg-amber-600', lightColor: 'bg-amber-100 text-amber-800' },
+      { key: 'skz_ch02', label: '第2章: 言い換え', color: 'bg-indigo-600', lightColor: 'bg-indigo-100 text-indigo-800' },
+      { key: 'skz_ch03', label: '第3章: 主張', color: 'bg-emerald-600', lightColor: 'bg-emerald-100 text-emerald-800' },
+      { key: 'skz_ch04', label: '第4章: 指示語', color: 'bg-teal-600', lightColor: 'bg-teal-100 text-teal-800' },
+      { key: 'skz_ch05', label: '第5章: 理由', color: 'bg-rose-600', lightColor: 'bg-rose-100 text-rose-800' },
+      { key: 'skz_ch06', label: '第6章: 実践', color: 'bg-purple-600', lightColor: 'bg-purple-100 text-purple-800' },
+    ];
+
+    const chStyleMap = {
+      skz_ch01: { num: '第1章', style: 'bg-amber-50 text-amber-800 border-amber-200' },
+      skz_ch02: { num: '第2章', style: 'bg-indigo-50 text-indigo-700 border-indigo-200' },
+      skz_ch03: { num: '第3章', style: 'bg-emerald-50 text-emerald-800 border-emerald-200' },
+      skz_ch04: { num: '第4章', style: 'bg-teal-50 text-teal-800 border-teal-200' },
+      skz_ch05: { num: '第5章', style: 'bg-rose-50 text-rose-800 border-rose-200' },
+      skz_ch06: { num: '第6章', style: 'bg-purple-50 text-purple-800 border-purple-200' },
+    };
 
     const filteredPassages = this.filterChapter === 'all'
       ? this.allPassages
@@ -621,11 +645,11 @@ export class DokkaiEngine {
                   <span>Trang Chủ</span>
                 </button>
                 <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-amber-100 text-amber-900 border border-amber-300">
-                  📖 Shin Kanzen Master Dokkai N1
+                  📖 Dokkai N1 (Shin Kanzen Master)
                 </span>
                 <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300 flex items-center gap-1">
                   <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                  🟢 Kho Luyện Đề Tự Do (On-Demand Hub)
+                  🟢 Kho Luyện Đề Tự Do (${totalCount} bài • 6 chương)
                 </span>
                 <span class="px-2 py-0.5 rounded-md text-[11px] font-bold bg-slate-100 text-slate-600">
                   🔓 100% Không khóa tuần tự
@@ -634,10 +658,10 @@ export class DokkaiEngine {
 
               <div>
                 <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight font-jp">
-                  新完全マスター読解 N1 • 自由練習ハブ
+                  Dokkai N1 • 新完全マスター読解 自由練習ハブ
                 </h1>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl leading-relaxed">
-                  Luyện tư duy bóc tách cấu trúc đoạn văn, nhận diện cú lật chuyển ý và phá bẫy phương án. Bạn có thể tự do làm bất kỳ bài nào mà không bị ràng buộc thứ tự.
+                  Kho luyện đọc hiểu Dokkai N1 toàn diện với 24 bài đọc thực chiến thuộc 6 chương. Luyện tư duy bóc tách cấu trúc, phản xạ bắt bẫy và làm chủ thời gian thi thật mà không bị gò bó thứ tự.
                 </p>
               </div>
             </div>
@@ -678,32 +702,20 @@ export class DokkaiEngine {
             Lọc theo chương:
           </span>
 
-          <button type="button" class="btn-dokkai-hub-tab px-4 py-2 rounded-2xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
-            this.filterChapter === 'all'
-              ? 'bg-slate-900 text-white shadow-xs'
-              : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
-          }" data-tab="all">
-            <span>Tất cả bài học</span>
-            <span class="px-1.5 py-0.2 rounded-full text-[10px] ${this.filterChapter === 'all' ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'}">${totalCount}</span>
-          </button>
-
-          <button type="button" class="btn-dokkai-hub-tab px-4 py-2 rounded-2xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
-            this.filterChapter === 'skz_ch01'
-              ? 'bg-amber-600 text-white shadow-xs'
-              : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
-          }" data-tab="skz_ch01">
-            <span>第1章：対比・逆接</span>
-            <span class="px-1.5 py-0.2 rounded-full text-[10px] ${this.filterChapter === 'skz_ch01' ? 'bg-white/20 text-white' : 'bg-amber-100 text-amber-800'}">${ch1Count}</span>
-          </button>
-
-          <button type="button" class="btn-dokkai-hub-tab px-4 py-2 rounded-2xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
-            this.filterChapter === 'skz_ch02'
-              ? 'bg-indigo-600 text-white shadow-xs'
-              : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
-          }" data-tab="skz_ch02">
-            <span>第2章：言い換え・比喩</span>
-            <span class="px-1.5 py-0.2 rounded-full text-[10px] ${this.filterChapter === 'skz_ch02' ? 'bg-white/20 text-white' : 'bg-indigo-100 text-indigo-800'}">${ch2Count}</span>
-          </button>
+          ${chaptersMeta.map(ch => {
+            const count = ch.key === 'all' ? totalCount : this.allPassages.filter(p => p.chapterKey === ch.key).length;
+            const isActive = this.filterChapter === ch.key;
+            return `
+              <button type="button" class="btn-dokkai-hub-tab px-3.5 py-2 rounded-2xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                isActive
+                  ? `${ch.color} text-white shadow-xs`
+                  : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
+              }" data-tab="${ch.key}">
+                <span>${ch.label}</span>
+                <span class="px-1.5 py-0.2 rounded-full text-[10px] ${isActive ? 'bg-white/20 text-white' : ch.lightColor}">${count}</span>
+              </button>
+            `;
+          }).join('')}
         </div>
 
         <!-- Lessons Grid -->
@@ -717,6 +729,7 @@ export class DokkaiEngine {
             const qType = item.mondaiType || 'short';
             const cfg = TIMER_CONFIGS[qType] || TIMER_CONFIGS.short;
             const typeBadgeText = `${cfg.name.split(' ')[0]} (${cfg.standard.label})`;
+            const chMeta = chStyleMap[item.chapterKey] || { num: 'Bài đọc', style: 'bg-slate-100 text-slate-700 border-slate-200' };
 
             let statusBadge = `
               <span class="px-2.5 py-0.8 rounded-full text-[11px] font-bold bg-slate-100 text-slate-500 border border-slate-200">
@@ -752,8 +765,8 @@ export class DokkaiEngine {
                   <!-- Badges & Status -->
                   <div class="flex flex-wrap items-center justify-between gap-1.5">
                     <div class="flex items-center gap-1">
-                      <span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold ${item.chapterKey === 'skz_ch02' ? 'bg-indigo-50 text-indigo-700 border border-indigo-200' : 'bg-amber-50 text-amber-800 border border-amber-200'}">
-                        ${item.chapterKey === 'skz_ch02' ? '第2章' : '第1章'}
+                      <span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold border ${chMeta.style}">
+                        ${chMeta.num}
                       </span>
                       <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-100 text-slate-600">
                         ${typeBadgeText}
@@ -762,15 +775,14 @@ export class DokkaiEngine {
                     ${statusBadge}
                   </div>
 
-                  <!-- Title -->
-                  <div>
-                    <h3 class="font-jp text-base font-black text-slate-900 group-hover:text-amber-700 transition leading-snug">
-                      ${this.escapeHtml(item.title)}
-                    </h3>
-                    <p class="text-[11px] text-slate-400 mt-0.5 font-medium truncate">
-                      ${item.chapterTitle}
-                    </p>
-                  </div>
+                    <div>
+                      <h3 class="font-jp text-base font-black text-slate-900 group-hover:text-amber-700 transition leading-snug">
+                        ${this.escapeHtml(item.title)}
+                      </h3>
+                      <p class="text-[11px] text-slate-400 mt-0.5 font-medium truncate">
+                        ${item.chapterTitle}
+                      </p>
+                    </div>
 
                   <!-- Japanese Excerpt -->
                   <div class="font-jp text-xs text-slate-600 leading-relaxed bg-slate-50/90 p-3 rounded-2xl border border-slate-100 line-clamp-3 select-none">
@@ -883,7 +895,7 @@ export class DokkaiEngine {
                 <span>📋 Kho bài đọc</span>
               </button>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">
-                📖 Shin Kanzen Dokkai N1
+                📖 Dokkai N1 (Shin Kanzen Master)
               </span>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
                 ${q.chapter || '第1章：対比・逆接'}

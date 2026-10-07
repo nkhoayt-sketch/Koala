@@ -1,0 +1,117 @@
+{
+  "chapterId": "ch05",
+  "chapter": "第5章：理由・因果関係",
+  "title": "Chương 5: Mối quan hệ nhân quả & Lý do (理由・因果関係)",
+  "description": "Phương pháp Shin Kanzen Dokkai N1: Lần theo cấu trúc giải thích nguyên nhân (なぜなら・〜からだ・〜に起因する) để trả lời chính xác câu hỏi 'Vì sao tác giả lập luận như vậy?'.",
+  "totalQuestions": 4,
+  "questions": [
+    {
+      "id": "skz_ch05_q01",
+      "chapter": "第5章：理由・因果関係",
+      "title": "第5章 練習 1",
+      "mondaiType": "short",
+      "passage": "現代人はしばしば「孤独」を寂しさや孤立として恐れ、常にSNSなどを通じて誰かとつながっていないと不安を覚える。しかし、思索を深め自己を確立するためには、意識的に一人になる「積極的な孤独の時間」が不可欠である。\n\nなぜなら、他者の視線や社会的評価から完全に解放された静寂の中でしか、人間は自らの内面にある本音と向き合い、自立した価値判断を鍛え上げることができないからだ。常に他者と接続された状態では、自分自身の思考すらも世間の声に同調して希釈されてしまう。精神的な成熟とは、他者との調和と同時に、孤独に耐えうる強さを培うことによって初めて成し遂げられるのである。",
+      "question": "筆者が「積極的な孤独の時間」を不可欠と考える理由は何か。",
+      "options": [
+        "他者とのつながりを断つことで、社会的な責任や義務から逃避できるから。",
+        "他者の視線から離れた静寂の中でこそ、自己の内面と向き合い自立した価値判断を養えるから。",
+        "SNSでの交流は時間の浪費であり、人間関係のトラブルを未然に防ぐ唯一の手段だから。",
+        "孤独に耐える訓練を積むことで、他者との一切の妥協を排した強い自己主張ができるようになるから。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "現代人はしばしば「孤独」を寂しさや孤立として恐れ、常にSNSなどを通じて誰かとつながっていないと不安を覚える",
+        "turningPoint": "なぜなら",
+        "authorConclusion": "精神的な成熟とは、他者との調和と同時に、孤独に耐えうる強さを培うことによって初めて成し遂げられるのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Bóp méo thành trốn tránh trách nhiệm): Tác giả bảo cô độc tích cực để trưởng thành, không phải để trốn tránh trách nhiệm xã hội.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với lý do sau chữ 「なぜなら」: chỉ trong tĩnh lặng thoát khỏi ánh nhìn tha nhân mới đối diện được với lòng mình và rèn giũa phán đoán độc lập.",
+        "opt3": "❌ BẪY TƯ DUY (Thêm thắt thông tin tiêu cực): Bài viết không nói SNS là nguồn cơn rắc rối hay lãng phí thời gian.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa): Trưởng thành tinh thần đòi hỏi hòa hợp với người khác chứ không phải bài trừ thỏa hiệp để tự cao tự đại."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Người hiện đại thường lo sợ 'sự cô độc' như một nỗi buồn bã hay sự cô lập, và luôn cảm thấy bất an nếu không liên tục kết nối với ai đó qua mạng xã hội. Thế nhưng, để đào sâu suy tưởng và xác lập bản ngã, khoảng thời gian 'cô độc chủ động' - tức là có ý thức ở một mình - là điều không thể thiếu.<br><br>Lý do là vì chỉ trong sự tĩnh lặng khi hoàn toàn được giải phóng khỏi ánh mắt và sự phán xét xã hội của người khác, con người mới có thể đối diện với tiếng lòng chân thực bên trong mình và tôi luyện khả năng phán đoán giá trị độc lập. Trong trạng thái luôn kết nối với người khác, ngay cả suy nghĩ của chính mình cũng bị hòa tan và pha loãng theo thanh âm số đông. Sự trưởng thành về mặt tinh thần chỉ có thể đạt được khi ta vừa biết hòa hợp với người khác, đồng thời vừa bồi đắp được sức mạnh đủ để chịu đựng sự cô độc.<br><br><b>【Phân tích quan hệ nhân quả (因果関係)】:</b><br>Câu hỏi hỏi 'Vì sao?'. Đáp án nằm trọn vẹn ở câu nối bằng <code>なぜなら、〜からだ</code>."
+    },
+    {
+      "id": "skz_ch05_q02",
+      "chapter": "第5章：理由・因果関係",
+      "title": "第5章 練習 2",
+      "mondaiType": "short",
+      "passage": "世界各地の大都市を訪れると、どこに行っても同じような高層ビルが立ち並び、似通ったチェーン店が軒を連ねている光景に遭遇する。都市のグローバル化と機能性の追求は、地域固有の歴史的風情や独自の文化的多様性を急速に均質化させてしまった。\n\nこうした都市空間の画一化がもたらされた主因は、経済的な効率性と短期的な収益性の極大化ばかりが都市開発の至上命題とされてきたことにある。地域に固有の古い街並みや職人文化を維持するコストは「非効率」として切り捨てられ、規格化された商業施設へと建て替えられていった。その結果、都市はその土地ならではの魂を失い、どこにも代わりのきく無機質な空間へと成り下がってしまったのである。",
+      "question": "都市空間が「均質化・画一化」してしまった主な原因について、筆者はどう説明しているか。",
+      "options": [
+        "歴史的建造物の老朽化が進み、災害防止のために建て替えを余儀なくされたから。",
+        "経済的な効率性と短期的な利益ばかりを最優先して都市開発が進められてきたから。",
+        "観光客を誘致するために、世界基準の便利なチェーン店を増やす必要があったから。",
+        "地域の住民が伝統的な職人文化に誇りを持たなくなり、近代的な利便性を求めたから。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "都市のグローバル化と機能性の追求は、地域固有の歴史的風情や独自の文化的多様性を急速に均質化させてしまった",
+        "turningPoint": "こうした都市空間の画一化がもたらされた主因は",
+        "authorConclusion": "その結果、都市はその土地ならではの魂を失い、どこにも代わりのきく無機質な空間へと成り下がってしまったのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Lý do ngoài bài): Không hề nhắc đến nhà cửa xuống cấp hay phòng chống thiên tai.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp nguyên văn với cụm từ chỉ nguyên nhân then chốt: 「主因は、経済的な効率性と短期的な収益性の極大化ばかりが都市開発の至上命題とされてきたことにある」.",
+        "opt3": "❌ BẪY TƯ DUY (Đoán bừa): Bài viết không nói mở chuỗi cửa hàng vì thu hút khách du lịch.",
+        "opt4": "❌ BẪY TƯ DUY (Đổ lỗi cho dân cư): Tác giả phê phán triết lý phát triển kinh tế của quy hoạch đô thị chứ không đổ lỗi cho người dân."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Khi ghé thăm các đô thị lớn khắp thế giới, ta thường bắt gặp cảnh tượng ở đâu cũng san sát những tòa nhà chọc trời giống hệt nhau và các chuỗi cửa hàng tương tự nhau xếp hàng dài. Quá trình toàn cầu hóa đô thị và sự theo đuổi công năng thuần túy đã nhanh chóng đồng nhất hóa phong vị lịch sử và tính đa dạng văn hóa độc đáo vốn có của từng vùng miền.<br><br>Nguyên nhân chính dẫn đến sự rập khuôn của không gian đô thị như thế này nằm ở chỗ: hiệu quả kinh tế và việc tối đa hóa lợi nhuận ngắn hạn đã bị coi là mệnh lệnh tối thượng của phát triển đô thị. Chi phí bảo tồn phố cổ và văn hóa thủ công truyền thống bị gạt bỏ với danh nghĩa 'kém hiệu quả', nhường chỗ cho các tổ hợp thương mại quy chuẩn hóa. Hệ quả là các đô thị đã đánh mất linh hồn bản địa, biến thành những không gian vô hồn có thể thay thế ở bất kỳ đâu."
+    },
+    {
+      "id": "skz_ch05_q03",
+      "chapter": "第5章：理由・因果関係",
+      "title": "第5章 練習 3",
+      "mondaiType": "medium",
+      "passage": "インターネットとソーシャルメディアの普及は、誰もが瞬時に膨大な情報へアクセスできる情報民主化の時代をもたらした。知りたいことがあれば即座に検索し、世界中の専門知識やニュースを手に入れることができる。しかし、皮肉なことに、流通する情報量が爆発的に増大したにもかかわらず、人々の主体的な思考力や的確な判断力はむしろ低下しているのではないかという懸念が強まっている。\n\nこの問題が生じる理由は、過剰な情報刺激の洪水が、人間が深く思索するために不可欠な「認知的余白」を奪い去っているからである。次々と流れてくるセンセーショナルな見出しや断片的な情報を受動的にスクロールし続けることで、脳は情報の真偽を吟味したり論理的な整合性を検討したりする前に、過負荷に陥ってしまうのだ。自ら問いを立て、粘り強く考え抜くプロセスを省き、アルゴリズムが提示する手軽な要約や他人の意見をそのまま自己の意見と錯覚してしまう現象は、まさにこの知的怠惰に起因している。\n\n真に知識を血肉とし、独自の知性を磨くためには、意識的に情報摂取の量を絞り込み、得た情報を自らの頭の中で反芻する「遅い思考」の時間を取り戻さなければならない。",
+      "question": "情報が氾濫する現代において、人々の主体的思考力が低下してしまう原因は何か。",
+      "options": [
+        "専門知識の難易度が高すぎて、一般の利用者が内容を正しく理解できないから。",
+        "インターネット上の情報の大半が虚偽であり、正しい知識を得る手段が制限されているから。",
+        "過剰な情報刺激により思考の余白が奪われ、真偽や論理を吟味せず受動的に受け入れてしまうから。",
+        "検索エンジンのアルゴリズムが未熟なため、質の高い情報が検索結果に表示されないから。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "流通する情報量が爆発的に増大したにもかかわらず、人々の主体的な思考力や的確な判断力はむしろ低下しているのではないか",
+        "turningPoint": "この問題が生じる理由は",
+        "authorConclusion": "意識的に情報摂取の量を絞り込み、得た情報を自らの頭の中で反芻する「遅い思考」の時間を取り戻さなければならない"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Lệch hướng): Bài viết không nói do chuyên môn quá khó hiểu.",
+        "opt2": "❌ BẪY TƯ DUY (Nói quá đà): Tác giả không bảo phần lớn thông tin mạng là tin giả.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp hoàn toàn với lý giải của tác giả: lượng kích thích thông tin quá tải cướp đi khoảng trống nhận thức (認知的余白), khiến não bộ bị quá tải trước khi kịp thẩm định tính logic và chân ngụy.",
+        "opt4": "❌ BẪY TƯ DUY (Đổ lỗi cho thuật toán kỹ thuật): Vấn đề nằm ở thói quen tiếp nhận thụ động của con người, không phải thuật toán chưa đủ hoàn thiện."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Sự phổ biến của Internet và mạng xã hội đã mở ra kỷ nguyên dân chủ hóa thông tin, nơi bất kỳ ai cũng có thể tức thời tiếp cận lượng thông tin khổng lồ. Hễ có điều gì muốn biết là có thể lập tức tra cứu. Thế nhưng, trớ trêu thay, bất chấp việc lượng thông tin lưu hành bùng nổ, mối lo ngại về việc năng lực tư duy chủ động và phán đoán chuẩn xác của con người đang suy giảm lại ngày càng dâng cao.<br><br>Lý do nảy sinh vấn đề này là vì cơn lũ kích thích thông tin thái quá đang cướp đoạt đi 'khoảng trống nhận thức' vốn dĩ thiết yếu để con người suy ngẫm sâu sắc. Bằng việc cứ tiếp tục cuộn chuột thụ động xem qua những tiêu đề giật gân và mẩu tin vụn vặt trôi dạt liên hồi, não bộ sẽ rơi vào tình trạng quá tải trước khi kịp cân nhắc tính chân ngụy hay thẩm tra tính nhất quán logic. Hiện tượng lược bỏ quy trình tự đặt câu hỏi và kiên trì suy nghĩ đến cùng, rồi ngộ nhận những bản tóm tắt tiện lợi của thuật toán hay ý kiến người khác thành ý kiến của mình, bắt nguồn chính từ sự lười biếng trí tuệ này.<br><br>Để thực sự biến tri thức thành máu thịt và mài giũa trí tuệ độc lập, ta phải có ý thức chắt lọc lượng thông tin nạp vào, lấy lại khoảng thời gian 'tư duy chậm' để nhai đi nhai lại thông tin trong chính bộ não của mình."
+    },
+    {
+      "id": "skz_ch05_q04",
+      "chapter": "第5章：理由・因果関係",
+      "title": "第5章 練習 4",
+      "mondaiType": "short",
+      "passage": "対面でのコミュニケーションにおいて、私たちは言葉そのものよりも、相手の視線や声のトーン、微細な表情の変化といった非言語的な合図から、より多くの情報を直感的に読み取っている。心理学の実験でも、言語情報と非言語情報が矛盾した場合、聞き手は圧倒的に非言語情報を信頼することが示されている。\n\nこれは、言語が理性の産物であり意識的に嘘をつくことが容易であるのに対し、身体的な反応や無意識の仕草は感情の動きに直結しており、偽ることが極めて困難だからである。つまり、信頼関係の構築において非言語コミュニケーションが決定的役割を果たすのは、身体が言葉よりもはるかに嘘をつかない誠実な語り手だからなのだ。",
+      "question": "非言語情報が言語情報よりも強く信頼されるのはなぜか。",
+      "options": [
+        "非言語情報は理性的な分析に基づく客観的な事実を表しているから。",
+        "言語は意識的に偽ることができるが、身体反応は感情に直結し偽ることが困難だから。",
+        "対面での会話では、言葉の意味を理解するよりも表情を観察するほうが簡単だから。",
+        "現代社会では言葉によるコミュニケーション能力が全般的に低下しているから。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "聞き手は圧倒的に非言語情報を信頼することが示されている",
+        "turningPoint": "これは、〜からである",
+        "authorConclusion": "信頼関係の構築において非言語コミュニケーションが決定的役割を果たすのは、身体が言葉よりもはるかに嘘をつかない誠実な語り手だからなのだ"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đảo ngược tính chất): Ngôn ngữ mới là sản phẩm lý tính (理性の産物), còn phi ngôn ngữ gắn với cảm xúc tự nhiên.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với cấu trúc giải thích: 「言語が理性の産物であり意識的に嘘をつくことが容易であるのに対し、身体的な反応や無意識の仕草は感情の動きに直結しており、偽ることが極めて困難だからである」.",
+        "opt3": "❌ BẪY TƯ DUY (Lý do chủ quan ngớ ngẩn): Không phải vì nhìn mặt dễ hơn hiểu chữ.",
+        "opt4": "❌ BẪY TƯ DUY (Suy diễn không liên quan): Bài không bàn về sự suy giảm năng lực ngôn ngữ của xã hội."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong giao tiếp trực diện, con người trực giác đọc được nhiều thông tin hơn từ những tín hiệu phi ngôn ngữ như ánh mắt, tông giọng, hay biến đổi vi mô trên nét mặt của đối phương hơn là câu chữ đơn thuần. Trong các thí nghiệm tâm lý học, khi thông tin ngôn ngữ và phi ngôn ngữ mâu thuẫn nhau, người nghe áp đảo chọn tin vào thông tin phi ngôn ngữ.<br><br>Điều này là bởi vì trong khi ngôn từ là sản phẩm của lý tính và rất dễ để cố ý nói dối, thì phản ứng thân thể và cử chỉ vô thức lại gắn liền trực tiếp với chuyển động cảm xúc, cực kỳ khó để giả tạo. Nói cách khác, giao tiếp phi ngôn ngữ đóng vai trò quyết định trong việc xây dựng lòng tin chính là vì thân thể là một người kể chuyện thành thật, ít biết nói dối hơn nhiều so với ngôn từ."
+    }
+  ]
+}

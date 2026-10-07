@@ -1,0 +1,117 @@
+{
+  "chapterId": "ch04",
+  "chapter": "第4章：指示語・機能表現",
+  "title": "Chương 4: Từ chỉ thị & Cấu trúc chức năng (指示語・機能表現)",
+  "description": "Phương pháp Shin Kanzen Dokkai N1: Lần theo dấu vết của từ chỉ thị (これ・それ・こうした・このような) và các cấu trúc chức năng mạch lạc để định vị chính xác đối tượng được đề cập.",
+  "totalQuestions": 4,
+  "questions": [
+    {
+      "id": "skz_ch04_q01",
+      "chapter": "第4章：指示語・機能表現",
+      "title": "第4章 練習 1",
+      "mondaiType": "short",
+      "passage": "他者との真のコミュニケーションにおいては、相手の言葉の表面的な意味を理解するだけでは不十分である。発話の背景にある感情の揺らぎや、言葉にされなかった沈黙の重みにまで耳を傾け、相手の内面的な世界を自己の経験に照らし合わせて追体験する感受性が求められる。\n\nこうした共感的な態度を欠いたままでは、どれほど言葉を交わそうとも、互いの主張の押し付け合いに終始してしまう。つまり、真に対話が成立するためには、自らの固定観念を一度保留し、相手の視点に立って世界を捉え直す勇気が必要なのだ。それこそが、孤立した個人と個人をつなぐ唯一の架け橋となる。",
+      "question": "傍線部「それ」は何を指しているか。",
+      "options": [
+        "相手の発話の表面的な意味を論理的に分析し、誤りを正す行為。",
+        "言葉を頻繁に交わし合い、自分の主張を相手に強く納得させる態度。",
+        "自らの固定観念を保留し、相手の視点に立って世界を捉え直す勇気。",
+        "過去の経験のみに頼って、他者の沈黙を自分勝手に推し量ること。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "こうした共感的な態度を欠いたままでは、どれほど言葉を交わそうとも、互いの主張の押し付け合いに終始してしまう",
+        "turningPoint": "つまり",
+        "authorConclusion": "自らの固定観念を一度保留し、相手の視点に立って世界を捉え直す勇気が必要なのだ。それこそが、孤立した個人と個人をつなぐ唯一の架け橋となる"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Ngược ý đoạn 1): Chỉ phân tích bề mặt và bắt bẻ lỗi sai là thái độ thiếu thấu cảm.",
+        "opt2": "❌ BẪY TƯ DUY (Đồng hóa điều bị phê phán): Ép buộc quan điểm của mình lên người khác (押し付け合い) là biểu hiện của đối thoại thất bại.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với câu văn liền trước chỉ thị từ 「それ」: lòng dũng cảm tạm gác định kiến của bản thân và đặt mình vào góc nhìn của đối phương.",
+        "opt4": "❌ BẪY TƯ DUY (Suy diễn lệch lạc): Đoạn văn yêu cầu thấu cảm chân thành, không phải suy đoán áp đặt tùy tiện."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong giao tiếp chân thực với người khác, chỉ nắm bắt ý nghĩa bề mặt câu chữ của đối phương thôi là chưa đủ. Ta cần phải lắng nghe đến cả những rung cảm trong cảm xúc ẩn sau lời nói và sức nặng của những khoảng lặng không thốt nên lời, đòi hỏi một độ nhạy cảm để cùng trải nghiệm thế giới nội tâm của họ qua lăng kính trải nghiệm của chính mình.<br><br>Nếu thiếu đi thái độ thấu cảm như thế này, thì dù có trao đổi biết bao lời lẽ đi chăng nữa, rốt cuộc cũng chỉ dừng lại ở việc áp đặt quan điểm lẫn nhau. Nói cách khác, để cuộc đối thoại thực sự được xác lập, ta cần lòng dũng cảm tạm gác lại những định kiến bất di bất dịch của bản thân để nhìn nhận lại thế giới từ góc nhìn của đối phương. Chính điều đó mới là cây cầu duy nhất kết nối những cá nhân vốn dĩ cô lập lại với nhau.<br><br><b>【Phân tích từ chỉ thị (指示語)】:</b><br>Từ chỉ thị <code>それ</code> nằm ngay sau mệnh đề <code>自らの固定観念を一度保留し、相手の視点に立って世界を捉え直す勇気</code>. Nó quy chiếu thẳng đến hành động lùi một bước khỏi định kiến để thấu cảm."
+    },
+    {
+      "id": "skz_ch04_q02",
+      "chapter": "第4章：指示語・機能表現",
+      "title": "第4章 練習 2",
+      "mondaiType": "short",
+      "passage": "近代社会は、自然を人間が支配し開発すべき対象として捉えることで、驚異的な物質的繁栄を築き上げてきた。原生林は農地や都市へと姿を変え、河川はダムによって制御された。しかしその一方で、地球規模の気候変動や生態系の破壊が深刻化し、人類自身の存続基盤が脅かされる事態を招いている。\n\nこのような矛盾が生じた根本的な原因は、人間が生態系という巨大な生命の網の目の一部にすぎないという事実を忘却した点にある。自然を単なる資源として客観視する傲慢さを改めない限り、真の持続可能性を達成することは不可能である。",
+      "question": "傍線部「このような矛盾」が指す内容として最も適切なものはどれか。",
+      "options": [
+        "農地や都市を開発したにもかかわらず、人口が減少し経済が停滞していること。",
+        "自然を支配して物質的繁栄を築いた一方で、環境破壊によって人類の生存基盤が脅かされていること。",
+        "気候変動を防止するための技術開発が、かえって膨大なエネルギーを消費していること。",
+        "原生林の保護に注力するあまり、近代都市のインフラ整備が滞ってしまったこと。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "近代社会は、自然を人間が支配し開発すべき対象として捉えることで、驚異的な物質的繁栄を築き上げてきた",
+        "turningPoint": "しかしその一方で",
+        "authorConclusion": "このような矛盾が生じた根本的な原因は、人間が生態系という巨大な生命の網の目の一部にすぎないという事実を忘却した点にある"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đưa thông tin ngoài bài): Bài đọc không đề cập đến giảm dân số hay suy thoái kinh tế.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp trọn vẹn với 2 vế đối lập ở đoạn 1 được nối bởi 「しかしその一方で」: một mặt tạo phồn vinh vật chất, mặt khác phá hủy sinh thái đe dọa sự tồn vong của chính loài người.",
+        "opt3": "❌ BẪY TƯ DUY (Chi tiết ngoài bài): Không nói về công nghệ chống biến đổi khí hậu tốn năng lượng.",
+        "opt4": "❌ BẪY TƯ DUY (Xuyên tạc nội dung): Xã hội phát triển quá đà lấn át thiên nhiên, không phải vì lo bảo vệ rừng mà đình trệ đô thị."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Xã hội cận đại, bằng việc xem tự nhiên là đối tượng để con người thống trị và khai thác, đã kiến tạo nên một sự phồn vinh vật chất đáng kinh ngạc. Những cánh rừng nguyên sinh đã hóa thành đất nông nghiệp và đô thị, sông ngòi bị kiểm soát bởi các đập thủy điện. Thế nhưng mặt khác, sự biến đổi khí hậu toàn cầu và sự hủy hoại hệ sinh thái ngày càng trầm trọng, dẫn đến tình trạng nền tảng tồn vong của chính loài người bị đe dọa.<br><br>Nguyên nhân sâu xa làm nảy sinh mâu thuẫn như thế này bắt nguồn từ việc con người lãng quên sự thật rằng mình chỉ là một mắt xích nhỏ trong mạng lưới sự sống vĩ đại của hệ sinh thái. Chừng nào chưa sửa đổi thái độ kiêu ngạo xem tự nhiên như tài nguyên thuần túy, thì việc đạt được sự phát triển bền vững thực sự là điều bất khả thi."
+    },
+    {
+      "id": "skz_ch04_q03",
+      "chapter": "第4章：指示語・機能表現",
+      "title": "第4章 練習 3",
+      "mondaiType": "medium",
+      "passage": "画期的なアイディアのひらめきや直感的な洞察は、しばしば論理的な思考の対極にある神秘的な能力として神秘化されがちである。天才的な芸術家や科学者が「突然神が降りてきたかのように答えが閃いた」と語るエピソードは、そうした見方を補強する根拠として好んで引用される。\n\nだが、認知科学の研究が明らかにしたように、直感とは何もない真空から突如として湧き出る超常現象ではない。それは、長年にわたって脳内に蓄積された膨大な知識や経験の断片が、意識下のレベルで高速に照合され、一つの秩序あるパターンとして再編された瞬間の知覚体験にすぎないのだ。地道な思考の試行錯誤と知識のインプットを積み重ねた者だけに、その蓄積が無意識の深層で熟成し、ひらめきという果実をもたらすのである。\n\nしたがって、日々の丹念な学習や論理的思考を怠ったまま、安易に「直感」に頼ろうとする姿勢は本末転倒と言わざるを得ない。論理の徹底的な探求の果てにこそ、真に信頼に足る直感が研ぎ澄まされるのである。",
+      "question": "傍線部「そうした見方」が指す内容として最も適切なものはどれか。",
+      "options": [
+        "直感とは長年の知識や経験が無意識下で結びついた高度な認知プロセスであるという見方。",
+        "直感やひらめきは、論理的思考とは無縁の神秘的で超常的な能力であるという見方。",
+        "日々の学習を積み重ねることで、誰でも容易に天才的な閃きを得られるという見方。",
+        "論理的思考を徹底的に探求しても、直感的な洞察力には敵わないという見方。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "画期的なアイディアのひらめきや直感的な洞察は、しばしば論理的な思考の対極にある神秘的な能力として神秘化されがちである",
+        "turningPoint": "だが、認知科学の研究が明らかにしたように",
+        "authorConclusion": "論理の徹底的な探求の果てにこそ、真に信頼に足る直感が研ぎ澄まされるのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đánh tráo với quan điểm tác giả ở đoạn 2): Đây là định nghĩa khoa học đúng đắn của tác giả sau chữ 「だが」, không phải quan điểm số đông bị chỉ thị từ 「そうした見方」 quy chiếu.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với quan niệm thần bí hóa ở câu mở đầu: xem trực giác là năng lực thần bí đối lập với tư duy logic.",
+        "opt3": "❌ BẪY TƯ DUY (Thông tin sai lệch): Tác giả không hề nói ai cũng dễ dàng đạt được tia sáng thiên tài.",
+        "opt4": "❌ BẪY TƯ DUY (Đảo ngược tư tưởng): Tác giả đề cao việc rèn luyện tư duy logic làm nền tảng cho trực giác."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Những tia sáng ý tưởng mang tính đột phá hay sự thấu suốt mang tính trực giác thường dễ bị thần bí hóa như một thứ năng lực siêu nhiên nằm ở thái cực đối lập với tư duy logic. Những giai thoại về việc các nghệ sĩ hay nhà khoa học thiên tài kể lại rằng 'như thể bỗng nhiên có thần linh giáng xuống ban cho câu trả lời' thường rất hay được trích dẫn để củng cố cho cách nhìn nhận như thế.<br><br>Thế nhưng, như nghiên cứu khoa học nhận thức đã chỉ rõ, trực giác không phải hiện tượng siêu nhiên đột nhiên nảy nở từ chân không. Nó chẳng qua là một trải nghiệm tri giác tại khoảnh khắc mà vô số mảnh kiến thức và trải nghiệm tích lũy qua nhiều năm trong não bộ được đối chiếu với tốc độ siêu nhanh ở tầng tiềm thức và tái cấu trúc thành một trật tự hoàn chỉnh. Chỉ những ai kiên trì nạp kiến thức và trải qua quá trình thử sai suy nghĩ kỹ lưỡng, thì sự tích lũy ấy mới chín muồi trong tầng sâu vô thức để kết tinh thành trái ngọt trực giác.<br><br>Do đó, việc lơ là học hỏi cẩn trọng và tư duy logic mỗi ngày mà lại dễ dãi trông cậy vào 'trực giác' là một thái độ hoàn toàn đảo lộn đầu đuôi. Chính tại điểm tận cùng của sự truy tìm logic triệt để, trực giác thực sự đáng tin cậy mới được mài sắc."
+    },
+    {
+      "id": "skz_ch04_q04",
+      "chapter": "第4章：指示語・機能表現",
+      "title": "第4章 練習 4",
+      "mondaiType": "short",
+      "passage": "都市化が進んだ社会において、人間はコンクリートと人工的な光に囲まれ、季節の移ろいや土の匂いといった自然の息吹から急速に切り離されつつある。空調によって一定に保たれた室内で過ごす日常は、身体が本来持っていた環境適応力や感覚の鋭敏さを次第に鈍磨させていく。\n\nこうした身体感覚の衰退は、単なる肉体的な問題にとどまらず、人間の情緒や想像力の枯渇にも深く影を落としている。生身の自然との交感が遮断されることによって、私たちは自らが生命体であるという根源的な実感を見失ってしまうのだ。",
+      "question": "傍線部「こうした身体感覚の衰退」の具体例として最も適切なものはどれか。",
+      "options": [
+        "人工的な環境に慣れきった結果、自然の美しさに感動する情緒が完全に消滅すること。",
+        "自然から切り離された生活により、身体が本来備えていた環境適応力や感覚の鋭敏さが鈍ること。",
+        "都市での過密な生活ストレスによって、運動能力が低下し病気にかかりやすくなること。",
+        "土の匂いや季節の移ろいに対する関心が薄れ、屋外での活動時間を極端に減らすこと。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "空調によって一定に保たれた室内で過ごす日常は、身体が本来持っていた環境適応力や感覚の鋭敏さを次第に鈍磨させていく",
+        "turningPoint": "こうした身体感覚の衰退は",
+        "authorConclusion": "生身の自然との交感が遮断されることによって、私たちは自らが生命体であるという根源的な実感を見失ってしまうのだ"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đoán bừa quá mức): Bài đọc chỉ nói ảnh hưởng đến cảm xúc chứ không bảo cảm xúc 'hoàn toàn biến mất'.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với câu trước: khả năng thích ứng môi trường và độ nhạy bén của các giác quan vốn có bị cùn mòn (鈍磨させていく).",
+        "opt3": "❌ BẪY TƯ DUY (Thông tin ngoài bài): Không nhắc đến stress hay bệnh tật.",
+        "opt4": "❌ BẪY TƯ DUY (Nhầm lẫn giữa nguyên nhân và hệ quả suy thoái cảm giác): Việc giảm tiếp xúc tự nhiên là bối cảnh, suy thoái là việc các giác quan bị cùn lụt."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội đô thị hóa phát triển, con người bị bao bọc bởi bê tông và ánh sáng nhân tạo, đang nhanh chóng bị tách rời khỏi hơi thở tự nhiên như sự đổi dời của bốn mùa hay mùi hương của đất cát. Những ngày tháng sống trong phòng kín máy lạnh nhiệt độ không đổi đang dần làm cùn mòn đi khả năng thích ứng môi trường và độ nhạy bén của các giác quan vốn có của cơ thể sinh học.<br><br>Sự suy thoái cảm giác cơ thể như thế này không chỉ dừng lại ở vấn đề thể chất đơn thuần, mà còn phủ bóng đen sâu sắc lên sự cạn kiệt cảm xúc và trí tưởng tượng của con người. Việc bị cắt đứt giao cảm với tự nhiên sống động khiến chúng ta đánh mất đi cảm thức căn cốt rằng bản thân mình là một sinh mệnh sống."
+    }
+  ]
+}

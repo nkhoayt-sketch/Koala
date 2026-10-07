@@ -1,0 +1,117 @@
+{
+  "chapterId": "ch03",
+  "chapter": "第3章：疑問提示・筆者の主張",
+  "title": "Chương 3: Câu hỏi gợi mở & Quan điểm của tác giả (疑問提示・筆者の主張)",
+  "description": "Phương pháp Shin Kanzen Dokkai N1: Bắt trọn câu hỏi tu từ (〜だろうか・〜ではないか), nhận diện cách tác giả tự đặt vấn đề để lật ngược định kiến và chốt hạ quan điểm then chốt.",
+  "totalQuestions": 4,
+  "questions": [
+    {
+      "id": "skz_ch03_q01",
+      "chapter": "第3章：疑問提示・筆者の主張",
+      "title": "第3章 練習 1",
+      "mondaiType": "short",
+      "passage": "科学技術の進歩によって、私たちの生活はかつてないほどの利便性と効率性を手に入れた。ボタン一つで世界中の情報にアクセスでき、移動にかかる時間も劇的に短縮された。しかし、これほど便利になった現代社会において、人間は本当に幸福になり、心の豊かさを獲得したのだろうか。\n\nむしろ、効率化によって生み出されたはずの余暇は、新たな情報処理や雑務によって埋め尽くされ、私たちは常に時間に追われる感覚に苛まれている。利便性を追い求めた結果、皮肉にも自らを時間に縛り付ける生き方に陥ってしまったのではないか。真の豊かさとは、速度や利便性の追求にあるのではなく、何ものにも急かされずに目の前の瞬間に没頭できる心の静寂の中にこそ存在するのだ。",
+      "question": "現代の「利便性の追求」について、筆者はどのように考えているか。",
+      "options": [
+        "生活の利便性が向上したことで、現代人は余暇を有効に使い心の豊かさを実現した。",
+        "利便性の追求はかえって人間を時間に縛り付け、真の心の静寂を奪う結果となっている。",
+        "科学技術による効率化をさらに進めることで、過密なスケジュールを解消すべきである。",
+        "時間の浪費を防ぐための効率的な技術利用こそが、現代人にとって真の幸福の基盤である。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "科学技術の進歩によって、私たちの生活はかつてないほどの利便性と効率性を手に入れた",
+        "turningPoint": "しかし、これほど便利になった現代社会において、人間は本当に幸福になり、心の豊かさを獲得したのだろうか",
+        "authorConclusion": "真の豊かさとは、速度や利便性の追求にあるのではなく、何ものにも急かされずに目の前の瞬間に没頭できる心の静寂の中にこそ存在するのだ"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Trái ngược lập luận): Bài đọc nêu rõ余暇 (thời gian rỗi) bị lấp đầy bởi thông tin và ta luôn bị thời gian truy đuổi, không phải đã đạt được tâm hồn phong phú.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với câu hỏi tu từ và kết luận cuối đoạn: tiện lợi trớ trêu thay lại trói buộc ta vào thời gian, đánh mất sự tĩnh lặng trong tâm hồn.",
+        "opt3": "❌ BẪY TƯ DUY (Đưa giải pháp ngoài bài): Tác giả không kêu gọi tiếp tục đẩy mạnh công nghệ để giải quyết lịch trình.",
+        "opt4": "❌ BẪY TƯ DUY (Ngược quan điểm tác giả): Tác giả phản đối việc chạy theo tốc độ và tiện lợi máy móc."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Nhờ sự tiến bộ của khoa học kỹ thuật, cuộc sống của chúng ta đã có được sự tiện lợi và hiệu quả chưa từng thấy. Chỉ bằng một nút bấm có thể tiếp cận thông tin toàn cầu, thời gian di chuyển cũng rút ngắn vượt bậc. Thế nhưng, trong một xã hội tiện lợi nhường này, liệu con người có thực sự trở nên hạnh phúc và đạt được sự phong phú trong tâm hồn hay không?<br><br>Trái lại, khoảng thời gian rảnh rỗi lẽ ra được sinh ra từ sự tối ưu hóa hiệu suất nay lại bị lấp kín bởi việc xử lý thông tin mới và những việc vặt vãnh, khiến chúng ta luôn bị dằn vặt bởi cảm giác bị thời gian truy đuổi. Chẳng phải việc mải miết theo đuổi tiện ích, trớ trêu thay, lại đẩy chúng ta vào lối sống tự trói buộc mình vào thời gian đó sao? Sự giàu có đích thực không nằm ở việc chạy đua tốc độ hay tiện ích, mà hiện hữu chính trong sự tĩnh lặng nội tâm, nơi ta có thể đắm mình vào khoảnh khắc trước mắt mà không bị bất cứ điều gì thúc giục.<br><br><b>【Phân tích cấu trúc 疑問提示・筆者の主張】:</b><br>1. <b>Đặt câu hỏi tu từ (疑問提示):</b> <code>〜獲得したのだろうか</code> (Liệu đã đạt được sự phong phú tâm hồn hay chưa? -> Hàm ý là chưa).<br>2. <b>Phát triển lập luận phản bác:</b> <code>〜のではないか</code> (Chẳng phải đã tự trói buộc mình vào thời gian hay sao?).<br>3. <b>Câu chốt khẳng định (筆者の主張):</b> <code>〜にこそ存在するのだ</code> (Chính trong sự tĩnh lặng nội tâm mới là sự giàu có đích thực)."
+    },
+    {
+      "id": "skz_ch03_q02",
+      "chapter": "第3章：疑問提示・筆者の主張",
+      "title": "第3章 練習 2",
+      "mondaiType": "short",
+      "passage": "私たちは日常において、美しい絵画や雄大な自然の風景を目にしたとき、「美」が対象そのものに客観的な性質として内在していると考えがちである。だが、美とは本当に、物理的な物体の中に固定されて実在するものなのだろうか。\n\nもしそうであるなら、時代や文化、あるいは個人の境遇によって美の基準が大きく揺らぐ現象を説明することはできない。美とは、観察者の感性や記憶、そしてその瞬間の情動が対象と交錯したときに初めて立ち現れる「関係性の奇跡」にほかならない。美は事物の中にあらかじめ存在するのではなく、それを見つめる私たちの感受性の深さによって、その都度新たに創造されているのである。",
+      "question": "「美」の本質について、筆者の主張と最も合致するものはどれか。",
+      "options": [
+        "美は絵画や自然の中に客観的・固定的に存在し、万人に共通する不変の性質である。",
+        "美の基準は時代や文化に左右されず、対象物の物理的な完成度によって決まる。",
+        "美は対象そのものに内在するのではなく、対象と向き合う観察者の感受性との関係において生み出される。",
+        "個人の感性や記憶は不安定であるため、真の美を把握するには客観的な評価基準の確立が不可欠である。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "「美」が対象そのものに客観的な性質として内在していると考えがちである",
+        "turningPoint": "だが、美とは本当に、物理的な物体の中に固定されて実在するものなのだろうか",
+        "authorConclusion": "美は事物の中にあらかじめ存在するのではなく、それを見つめる私たちの感受性の深さによって、その都度新たに創造されているのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa tiền đề số đông): Đây là quan niệm thường tình ở câu đầu mà tác giả dùng câu hỏi tu từ để bác bỏ.",
+        "opt2": "❌ BẪY TƯ DUY (Ngược thực tế trong bài): Tác giả chỉ ra tiêu chuẩn cái đẹp luôn biến động theo thời đại và văn hóa.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp 100% với luận điểm cốt lõi: cái đẹp là sự kỳ diệu của mối quan hệ tương tác, được sáng tạo từ chiều sâu cảm thụ của người quan sát.",
+        "opt4": "❌ BẪY TƯ DUY (Suy diễn ngoài bài): Tác giả không hề yêu cầu lập tiêu chuẩn đánh giá khách quan."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong đời sống thường nhật, khi chiêm ngưỡng một bức tranh đẹp hay một cảnh sắc thiên nhiên hùng vĩ, ta thường dễ nghĩ rằng 'cái đẹp' vốn nội tại như một đặc tính khách quan ngay trong chính đối tượng đó. Nhưng liệu cái đẹp có thực sự tồn tại cố định bên trong các thực thể vật lý như thế hay không?<br><br>Nếu quả đúng như vậy, ta sẽ không thể lý giải được hiện tượng vì sao chuẩn mực cái đẹp lại dao động dữ dội tùy theo thời đại, văn hóa hay hoàn cảnh của mỗi cá nhân. Cái đẹp chẳng qua chính là 'phép màu của tính tương quan', chỉ bừng nở khi xúc cảm, ký ức và tâm trạng của người quan sát hòa quyện cùng đối tượng. Cái đẹp không hề tồn tại sẵn trong sự vật, mà nó được tái tạo mới trong từng khoảnh khắc nhờ vào độ sâu sắc trong năng lực cảm thụ của chúng ta.<br><br><b>【Phân tích cấu trúc 疑問提示・筆者の主張】:</b><br>1. <b>Nêu định kiến số đông:</b> <code>〜と考えがちである</code>.<br>2. <b>Cú lật bằng câu hỏi gợi mở:</b> <code>だが、〜ものなのだろうか</code>.<br>3. <b>Chốt luận điểm tác giả:</b> <code>〜ではなく、〜によって、その都度新たに創造されているのである</code>."
+    },
+    {
+      "id": "skz_ch03_q03",
+      "chapter": "第3章：疑問提示・筆者の主張",
+      "title": "第3章 練習 3",
+      "mondaiType": "medium",
+      "passage": "現代の学校教育やビジネスの現場では、「失敗を恐れずに挑戦することの大切さ」が盛んに叫ばれている。失敗から学び、それを糧にして成長するプロセスこそが成功への近道であるという主張には、一見すると誰も反論の余地がないように思える。しかし、言葉で「失敗を恐れるな」と唱えるだけで、本当に若者や挑戦者たちの足元にある不安が払拭されるのだろうか。\n\n現実に目を向ければ、社会のシステムは一度の過ちや挫折に対して驚くほど不寛容である。入試や就職のレールから一度外れた者に向けられる冷淡な視線、組織内での減点主義の評価体系などを前にして、個人がリスクを冒すことをためらうのは極めて自然な防衛反応である。それにもかかわらず、挑戦を回避する姿勢を個人の気概や勇気の欠如に帰してしまうのは、問題のすり替えではないだろうか。\n\n挑戦する精神を社会に育みたいのであれば、個人に精神論を説く前に、失敗した人間が容易に再起できるセーフティネットと寛容な文化基盤を構築することこそが先決である。失敗のリスクを個人に背負わせたまま美辞麗句を並べるだけでは、真のイノベーションなど生まれようはずもない。",
+      "question": "「失敗を恐れずに挑戦する環境」について、筆者の考えとして最も適切なものはどれか。",
+      "options": [
+        "若者が挑戦をためらう主な原因は精神的な気概の不足にあるため、教育現場での意識改革が急務である。",
+        "社会システムは十分に寛容であるため、個人は減点主義を気にせず自らの意志で失敗を乗り越えるべきだ。",
+        "個人の勇気や精神論に頼るのではなく、失敗しても再起できる寛容な社会基盤や制度を整えることが不可欠である。",
+        "失敗から学ぶプロセスは美辞麗句にすぎず、最初から過ちを犯さない完璧な行動計画こそがイノベーションを生む。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "言葉で「失敗を恐れるな」と唱えるだけで、本当に若者や挑戦者たちの足元にある不安が払拭されるのだろうか",
+        "turningPoint": "それにもかかわらず、挑戦を回避する姿勢を個人の気概や勇気の欠如に帰してしまうのは、問題のすり替えではないだろうか",
+        "authorConclusion": "個人に精神論を説く前に、失敗した人間が容易に再起できるセーフティネットと寛容な文化基盤を構築することこそが先決である"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đổ lỗi cho cá nhân bị tác giả phản bác): Tác giả chỉ trích việc quy kết thất bại cho sự thiếu dũng khí của cá nhân (問題のすり替え).",
+        "opt2": "❌ BẪY TƯ DUY (Trái ngược thực tế nêu trong bài): Bài khẳng định hệ thống xã hội cực kỳ khắt khe (不寛容) và mang nặng tính trừ điểm.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với thông điệp then chốt: trước khi rao giảng lý thuyết suông về tinh thần, phải xây dựng mạng lưới an toàn và văn hóa dung thứ để người thất bại có thể đứng dậy làm lại.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa): Tác giả không bảo phủ nhận việc học từ thất bại, mà lên án việc bắt cá nhân gánh rủi ro một mình."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong giáo dục nhà trường và thương trường hiện đại, người ta không ngừng ra rả khẩu hiệu 'hãy dám thách thức, đừng sợ thất bại'. Luận điểm cho rằng học hỏi từ vấp ngã rồi biến nó thành bàn đạp trưởng thành là con đường ngắn nhất đến thành công thoạt nhìn tưởng như chẳng ai có thể bắt bẻ. Thế nhưng, liệu chỉ hô hào bằng miệng 'đừng sợ thất bại' có thực sự xua tan được nỗi bất an dưới chân những người trẻ và những kẻ dấn thân hay không?<br><br>Nhìn vào thực tế, hệ thống xã hội lại khắt khe và bất khoan dung đến kinh ngạc đối với một lần lầm lỡ hay vấp ngã. Ánh nhìn lạnh nhạt hướng vào kẻ lỡ trật bánh khỏi đường ray thi cử hay xin việc, cùng chế độ đánh giá nặng tính trừ điểm trong tổ chức khiến cho việc cá nhân chùn bước trước rủi ro là một phản xạ tự vệ hết sức tự nhiên. Ấy vậy mà lại quy kết thái độ né tránh thách thức ấy cho sự thiếu hụt dũng khí hay ý chí của cá nhân, chẳng phải là hành vi đánh tráo khái niệm hay sao?<br><br>Nếu muốn nuôi dưỡng tinh thần dám dấn thân trong xã hội, thì trước khi rao giảng liệu pháp tinh thần cho cá nhân, việc cấp bách trước mắt là kiến tạo một mạng lưới an toàn và nền tảng văn hóa bao dung để kẻ thất bại có thể dễ dàng tái khởi nghiệp. Chừng nào còn bắt cá nhân trơ trọi gánh lấy rủi ro thất bại mà chỉ biết tuôn ra những lời hoa mỹ, thì đổi mới sáng tạo thực sự tuyệt đối chẳng thể nào nảy nở.<br><br><b>【Phân tích cấu trúc Trung văn (疑問提示・主張)】:</b><br>Tác giả dùng liên tiếp 2 câu hỏi tu từ: <code>〜払拭されるのだろうか</code> -> <code>〜すり替えではないだろうか</code> để lật tẩy sự đạo đức giả của các khẩu hiệu suông, từ đó chốt hạ giải pháp thể chế ở câu kết <code>〜ことこそが先決である</code>."
+    },
+    {
+      "id": "skz_ch03_q04",
+      "chapter": "第3章：疑問提示・筆者の主張",
+      "title": "第3章 練習 4",
+      "mondaiType": "short",
+      "passage": "科学の言説は、主観や偏見を排した「絶対的な客観的真理」として社会に受け入れられる傾向が強い。数値データや実証実験によって裏付けられた結論には、疑う余地など存在しないかのように信じられている。しかし、科学者が立てる問いそのものや、データを解釈する視点までもが、本当に人間の社会的関心や時代精神から完全に独立していると言えるのだろうか。\n\n科学史を振り返れば、ある時代に絶対と信じられた理論が、パラダイムの転換によって覆された事例は枚挙にいとまがない。科学的知見とは、現時点で最も反証に耐えうる「暫定的な合意」にすぎないのである。科学を絶対視して盲信するのではなく、常に自己検証と批判的対話に開かれた仮説の体系として捉える謙虚さこそが、真の科学的精神にふさわしい。",
+      "question": "「科学の客観性」について、筆者が最も伝えたいことはどれか。",
+      "options": [
+        "科学の結論は数値データに基づくため、時代の変化に関わらず絶対的な真理として受容されるべきだ。",
+        "科学的知見は暫定的な仮説にすぎず、絶対視することなく常に批判的検証に開かれた姿勢を持つべきである。",
+        "科学者の研究姿勢は主観や社会的関心から完全に独立しており、その客観性に疑いの余地はない。",
+        "過去の理論が覆されてきた歴史を考慮すると、科学的知見に依拠して社会的意思決定を行うべきではない。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "科学の言説は、主観や偏見を排した「絶対的な客観的真理」として社会に受け入れられる傾向が強い",
+        "turningPoint": "しかし、科学者が立てる問いそのものや、データを解釈する視点までもが、本当に人間の社会的関心や時代精神から完全に独立していると言えるのだろうか",
+        "authorConclusion": "科学を絶対視して盲信するのではなく、常に自己検証と批判的対話に開かれた仮説の体系として捉える謙虚さこそが、真の科学的精神にふさわしい"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa tiền đề số đông): Đây là xu hướng tiếp nhận ngây thơ của xã hội mà tác giả phản bác.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp hoàn toàn với câu chốt: tri thức khoa học chỉ là sự đồng thuận tạm thời, cần giữ thái độ khiêm nhường xem nó là hệ giả thuyết luôn mở cho sự tự kiểm chứng và đối thoại phê phán.",
+        "opt3": "❌ BẪY TƯ DUY (Trái ngược câu hỏi tu từ): Tác giả ngầm chỉ ra câu hỏi khoa học và cách diễn giải luôn chịu ảnh hưởng từ tinh thần thời đại.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa tiêu cực): Tác giả không bảo bài xích khoa học trong quyết sách xã hội."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Diễn ngôn khoa học thường có xu hướng được xã hội tiếp nhận như một 'chân lý khách quan tuyệt đối' đã loại trừ mọi thiên kiến và chủ quan. Những kết luận được nâng đỡ bởi số liệu thực nghiệm dường như được tin tưởng tuyệt đối như thể không còn chút nghi ngờ nào. Thế nhưng, liệu ngay cả những câu hỏi do các nhà khoa học đặt ra và góc nhìn diễn giải dữ liệu có thực sự hoàn toàn độc lập khỏi mối quan tâm xã hội và tinh thần thời đại của con người hay không?<br><br>Nhìn lại lịch sử khoa học, những ví dụ về các lý thuyết từng được coi là chân lý bất di bất dịch ở một thời kỳ rồi sau đó bị đảo lộn bởi sự chuyển dịch hệ hình nhiều không đếm xuể. Tri thức khoa học thực chất chỉ là một 'sự đồng thuận tạm thời' có sức chịu đựng tốt nhất trước các phản biện ở thời điểm hiện tại. Thay vì tuyệt đối hóa và mù quáng tin theo khoa học, việc giữ thái độ khiêm nhường nhìn nhận khoa học như một hệ thống giả thuyết luôn mở ra cho sự tự kiểm chứng và đối thoại phản biện mới thực sự xứng đáng với tinh thần khoa học chân chính."
+    }
+  ]
+}

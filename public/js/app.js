@@ -215,7 +215,14 @@ class App {
     const hash = (window.location.hash || '').toLowerCase();
 
     if (path.includes('/dokkai/shinkanzen') || path.includes('/dokkai') || hash.includes('dokkai')) {
-      const chapterId = (path.includes('ch02') || hash.includes('ch02')) ? 'skz_ch02' : (path.includes('ch01') || hash.includes('ch01')) ? 'skz_ch01' : 'all';
+      let chapterId = 'all';
+      for (let i = 1; i <= 6; i++) {
+        const chStr = `ch0${i}`;
+        if (path.includes(chStr) || hash.includes(chStr)) {
+          chapterId = `skz_${chStr}`;
+          break;
+        }
+      }
       this.openDokkaiHub(chapterId);
     } else {
       if (this.currentView !== 'HOME') {
@@ -1405,7 +1412,7 @@ class App {
       this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-amber-100 text-amber-800 border border-amber-300';
     }
     if (this.dayTitleEl) {
-      this.dayTitleEl.textContent = 'Shin Kanzen Master 読解 N1 • Kho Luyện Đề Tự Do';
+      this.dayTitleEl.textContent = 'Dokkai N1 (Shin Kanzen Master) • Kho Luyện Đề Tự Do';
     }
     if (this.dayDescEl) {
       this.dayDescEl.textContent = 'Luyện tư duy bóc tách cấu trúc đoạn văn, nhận diện cú lật chuyển ý và phá bẫy phương án';
@@ -1414,10 +1421,10 @@ class App {
       this.headerScopeBtn.classList.add('hidden');
     }
     if (this.paletteActiveTitle) {
-      this.paletteActiveTitle.textContent = 'Shin Kanzen Dokkai N1';
+      this.paletteActiveTitle.textContent = 'Dokkai N1 (Shin Kanzen)';
     }
     if (this.paletteActiveCount) {
-      this.paletteActiveCount.textContent = '8 bài tự do';
+      this.paletteActiveCount.textContent = '24 bài tự do';
     }
 
     // Hide normal test header controls
@@ -1430,8 +1437,8 @@ class App {
     if (paletteGrid) {
       paletteGrid.innerHTML = `
         <div class="col-span-5 py-5 text-center text-[11px] text-slate-500 leading-relaxed px-2">
-          <span class="font-bold text-amber-700">📖 Shin Kanzen N1</span>
-          <p class="text-[10px] text-slate-400 mt-1">Kho Luyện Đề Tự Do (8 bài đọc)</p>
+          <span class="font-bold text-amber-700">📖 Dokkai N1</span>
+          <p class="text-[10px] text-slate-400 mt-1">Kho Luyện Đề Tự Do (24 bài đọc)</p>
         </div>
       `;
     }
@@ -1444,7 +1451,12 @@ class App {
 
     // Highlight active sidebar item
     document.querySelectorAll('.nav-tree-item.is-active').forEach(el => el.classList.remove('is-active'));
-    const activeBtn = document.getElementById(chapterFilter === 'skz_ch02' ? 'btn-sidebar-dokkai-ch02' : chapterFilter === 'skz_ch01' ? 'btn-sidebar-dokkai-ch01' : 'btn-sidebar-dokkai-hub');
+    let activeBtnId = 'btn-sidebar-dokkai-hub';
+    if (chapterFilter && chapterFilter.startsWith('skz_ch')) {
+      const chNum = chapterFilter.replace('skz_', '');
+      activeBtnId = `btn-sidebar-dokkai-${chNum}`;
+    }
+    const activeBtn = document.getElementById(activeBtnId);
     if (activeBtn) activeBtn.classList.add('is-active');
 
     this.toggleMobileSidebar(false);
@@ -1672,6 +1684,34 @@ class App {
       });
     }
 
+    const btnHomeDokkaiCh03 = document.getElementById('btn-home-start-dokkai-ch03');
+    if (btnHomeDokkaiCh03) {
+      btnHomeDokkaiCh03.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch03');
+      });
+    }
+
+    const btnHomeDokkaiCh04 = document.getElementById('btn-home-start-dokkai-ch04');
+    if (btnHomeDokkaiCh04) {
+      btnHomeDokkaiCh04.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch04');
+      });
+    }
+
+    const btnHomeDokkaiCh05 = document.getElementById('btn-home-start-dokkai-ch05');
+    if (btnHomeDokkaiCh05) {
+      btnHomeDokkaiCh05.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch05');
+      });
+    }
+
+    const btnHomeDokkaiCh06 = document.getElementById('btn-home-start-dokkai-ch06');
+    if (btnHomeDokkaiCh06) {
+      btnHomeDokkaiCh06.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch06');
+      });
+    }
+
     const btnSidebarDokkaiHub = document.getElementById('btn-sidebar-dokkai-hub');
     if (btnSidebarDokkaiHub) {
       btnSidebarDokkaiHub.addEventListener('click', () => {
@@ -1690,6 +1730,34 @@ class App {
     if (btnSidebarDokkaiCh02) {
       btnSidebarDokkaiCh02.addEventListener('click', () => {
         this.openDokkaiHub('skz_ch02');
+      });
+    }
+
+    const btnSidebarDokkaiCh03 = document.getElementById('btn-sidebar-dokkai-ch03');
+    if (btnSidebarDokkaiCh03) {
+      btnSidebarDokkaiCh03.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch03');
+      });
+    }
+
+    const btnSidebarDokkaiCh04 = document.getElementById('btn-sidebar-dokkai-ch04');
+    if (btnSidebarDokkaiCh04) {
+      btnSidebarDokkaiCh04.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch04');
+      });
+    }
+
+    const btnSidebarDokkaiCh05 = document.getElementById('btn-sidebar-dokkai-ch05');
+    if (btnSidebarDokkaiCh05) {
+      btnSidebarDokkaiCh05.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch05');
+      });
+    }
+
+    const btnSidebarDokkaiCh06 = document.getElementById('btn-sidebar-dokkai-ch06');
+    if (btnSidebarDokkaiCh06) {
+      btnSidebarDokkaiCh06.addEventListener('click', () => {
+        this.openDokkaiHub('skz_ch06');
       });
     }
 

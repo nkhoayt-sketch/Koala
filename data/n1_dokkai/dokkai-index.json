@@ -32,13 +32,64 @@
   {
     "id": "skz_ch03",
     "chapterNumber": 3,
-    "chapter": "第3章：理由・根拠",
-    "title": "Lý do & Căn cứ lập luận (理由・根拠)",
-    "theme": "Bóc tách mối quan hệ nhân quả (なぜなら・〜からだ) và cơ sở lập luận",
-    "description": "Nắm vững phương pháp lần theo nguồn cơn của vấn đề để trả lời chính xác các câu hỏi 'Tại sao tác giả lại nói như vậy?'.",
+    "chapter": "第3章：疑問提示・筆者の主張",
+    "title": "Câu hỏi gợi mở & Quan điểm tác giả (疑問提示・筆者の主張)",
+    "theme": "Bắt trọn câu hỏi tu từ (〜だろうか) và nhận diện quan điểm cốt lõi của tác giả",
+    "description": "Khám phá cách thức tác giả đặt câu hỏi tu từ để lật ngược định kiến và khẳng định lập trường then chốt.",
     "file": "data/n1_dokkai/shinkanzen_ch03.json",
-    "available": false,
-    "totalQuestions": 0,
-    "types": []
+    "available": true,
+    "totalQuestions": 4,
+    "types": [
+      "short",
+      "medium"
+    ]
+  },
+  {
+    "id": "skz_ch04",
+    "chapterNumber": 4,
+    "chapter": "第4章：指示語・機能表現",
+    "title": "Từ chỉ thị & Cấu trúc chức năng (指示語・機能表現)",
+    "theme": "Lần theo dấu vết của từ chỉ thị (これ・それ・こうした) và liên kết mạch văn",
+    "description": "Luyện kỹ năng truy tìm đối tượng được chỉ định chính xác, giải quyết triệt để các câu hỏi 'Điều này chỉ cái gì?'.",
+    "file": "data/n1_dokkai/shinkanzen_ch04.json",
+    "available": true,
+    "totalQuestions": 4,
+    "types": [
+      "short",
+      "medium"
+    ]
+  },
+  {
+    "id": "skz_ch05",
+    "chapterNumber": 5,
+    "chapter": "第5章：理由・因果関係",
+    "title": "Mối quan hệ nhân quả & Lý do (理由・因果関係)",
+    "theme": "Bóc tách mối quan hệ nhân quả (なぜなら・〜からだ) và nguồn cơn sự việc",
+    "description": "Nắm vững phương pháp lần theo nguồn cơn của vấn đề để trả lời chính xác các câu hỏi 'Tại sao tác giả lại nói như vậy?'.",
+    "file": "data/n1_dokkai/shinkanzen_ch05.json",
+    "available": true,
+    "totalQuestions": 4,
+    "types": [
+      "short",
+      "medium"
+    ]
+  },
+  {
+    "id": "skz_ch06",
+    "chapterNumber": 6,
+    "chapter": "第6章：実践演習・総合理解",
+    "title": "Luyện thực chiến & Đọc hiểu tổng hợp (実践演習・総合理解)",
+    "theme": "Trọn bộ định dạng thi N1: Đoản văn, Trung văn, Trường văn, So sánh A-B, Tìm thông tin",
+    "description": "Luyện tập tổng hợp với các dạng bài thi thực chiến của Shin Kanzen Master Dokkai N1 dưới áp lực phòng thi thật.",
+    "file": "data/n1_dokkai/shinkanzen_ch06.json",
+    "available": true,
+    "totalQuestions": 4,
+    "types": [
+      "short",
+      "medium",
+      "long",
+      "compare",
+      "search"
+    ]
   }
 ]
