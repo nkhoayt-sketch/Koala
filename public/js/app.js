@@ -224,7 +224,7 @@ class App {
         }
       }
       this.openDokkaiHub(chapterId);
-    } else if (path.includes('/n1/20days') || hash.includes('n1/20days') || hash.includes('n1-hub')) {
+    } else if (path.includes('/n1/20days') || path.includes('/n1-20days') || hash.includes('n1/20days') || hash.includes('n1-20days') || hash.includes('n1-hub')) {
       this.openN1Hub();
     } else if (path.includes('/n2/exams') || hash.includes('n2/exams') || hash.includes('n2-hub')) {
       this.openN2Hub();
@@ -1446,7 +1446,7 @@ class App {
     this.currentDokkaiChapter = null;
 
     const currentPath = (window.location.pathname || '').toLowerCase();
-    if (!currentPath.includes('/n1/20days')) {
+    if (!currentPath.includes('/n1/20days') && !currentPath.includes('/n1-20days')) {
       try {
         history.pushState({ view: 'n1_hub' }, '', '/n1/20days');
       } catch (e) {
@@ -1536,7 +1536,7 @@ class App {
                   20日で合格 N1 • Lộ Trình Luyện Thi Cấp Tốc
                 </h1>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
-                  Tự do chọn ngày học bất kỳ. Mỗi ngày gồm 45 câu hỏi chuẩn format JLPT N1 (Chữ Hán, Từ vựng, Ngữ pháp, Dấu sao ★ và Bài đọc ngữ pháp Mondai 7).
+                  Mỗi ngày 45 câu trắc nghiệm • Hỗ trợ Split-View đọc hiểu & tra từ tức thì
                 </p>
               </div>
             </div>
@@ -1557,57 +1557,44 @@ class App {
           </div>
         </div>
 
-        <!-- 20 Days Selection Grid (4 to 5 columns) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <!-- 20 Days Minimalist Compact Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
           ${this.daysIndex.map(item => {
-            const isAvail = item.available;
             const dayKey = `n1_day${String(item.day).padStart(2, '0')}`;
             const history = storage.getExamHistoryRecord(dayKey) || storage.getExamHistoryRecord(item.day);
             const isDone = !!history;
+            const displayTitle = item.title || `第${item.day}日`;
 
             return `
-              <div class="n1-day-card group bg-white rounded-2xl border ${
+              <div class="n1-day-card group ${
                 isDone 
-                  ? 'border-emerald-200 hover:border-emerald-400 bg-emerald-50/15' 
-                  : 'border-slate-200/90 hover:border-indigo-400'
-              } p-4 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between cursor-pointer min-h-[160px]" data-day="${item.day}">
+                  ? 'bg-emerald-50/40 border-emerald-300 hover:border-emerald-500' 
+                  : 'bg-white border-slate-200/90 hover:border-indigo-500'
+              } border rounded-2xl p-3 sm:p-3.5 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between cursor-pointer min-h-[92px] sm:min-h-[102px] select-none" data-day="${item.day}">
                 
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <span class="w-8 h-8 rounded-xl font-black text-xs flex items-center justify-center ${
-                      isDone ? 'bg-emerald-600 text-white' : 'bg-indigo-600 text-white shadow-xs'
-                    }">
-                      ${item.day}
+                <div class="flex items-center justify-between">
+                  <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-full font-black text-xs sm:text-sm flex items-center justify-center ${
+                    isDone 
+                      ? 'bg-emerald-600 text-white shadow-2xs' 
+                      : 'bg-slate-100 text-slate-700 border border-slate-200/80 group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-600 transition-colors'
+                  }">
+                    ${item.day}
+                  </span>
+                  ${isDone ? `
+                    <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200/80">
+                      ✓ ${history.lastScore}/${history.totalQuestions}
                     </span>
-                    ${isDone ? `
-                      <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300">
-                        ✓ ${history.lastScore}/${history.totalQuestions}
-                      </span>
-                    ` : `
-                      <span class="px-2 py-0.5 rounded-md text-[10px] font-medium bg-slate-100 text-slate-500 border border-slate-200">
-                        Chưa làm
-                      </span>
-                    `}
-                  </div>
-
-                  <div>
-                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition leading-snug">
-                      ${item.title || `Ngày ${item.day}`}
-                    </h3>
-                    <p class="text-[11px] text-slate-400 mt-0.5">
-                      45 câu hỏi • Đọc hiểu Split-View
-                    </p>
-                  </div>
+                  ` : `
+                    <span class="px-2 py-0.5 rounded-md text-[10px] font-medium bg-slate-100 text-slate-500 border border-slate-200/70">
+                      Chưa làm
+                    </span>
+                  `}
                 </div>
 
-                <div class="pt-3 border-t border-slate-100">
-                  <button type="button" class="w-full py-2 px-3 rounded-xl ${
-                    isDone 
-                      ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300' 
-                      : 'bg-indigo-600 hover:bg-indigo-700 text-white'
-                  } font-bold text-xs shadow-2xs transition flex items-center justify-center gap-1 cursor-pointer">
-                    <span>${isDone ? 'Xem lại bài 🔍' : 'Vào học ngay 🚀'}</span>
-                  </button>
+                <div class="pt-2">
+                  <h3 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition truncate leading-snug" title="${displayTitle}">
+                    ${displayTitle}
+                  </h3>
                 </div>
 
               </div>
