@@ -621,6 +621,12 @@ class App {
       n1HomeCountEl.textContent = `${availCount}/20 Ngày đã sẵn sàng`;
     }
 
+    const n2HomeCountBadge = document.getElementById('home-n2-ready-count-badge');
+    if (n2HomeCountBadge && this.n2Exams.length > 0) {
+      const availN2Count = this.n2Exams.filter(e => e.standardized || e.available).length;
+      n2HomeCountBadge.textContent = `${availN2Count} đề hoàn thiện • ${this.n2Exams.length} đợt thi`;
+    }
+
     // 1. Render N1 Days Quicklist on Card 1
     if (this.homeN1DaysQuicklist && this.daysIndex.length > 0) {
       this.homeN1DaysQuicklist.innerHTML = this.daysIndex.map(item => {
@@ -670,9 +676,9 @@ class App {
       });
     }
 
-    // 2. Render N2 Ready List on Card 2 (Feature 12/2025 first)
+    // 2. Render N2 Ready List on Card 2 (Top recent 4-5 exams: 12/2025, 07/2025, 12/2024, 07/2024, 12/2023)
     if (this.homeN2ReadyList && this.n2Exams.length > 0) {
-      const readyExams = this.n2Exams.filter(e => e.id === 'n2-2025-12' || e.id === 'n2-2025-07' || e.id === 'n2-2023-12');
+      const readyExams = this.n2Exams.filter(e => e.standardized || e.available).slice(0, 4);
       this.homeN2ReadyList.innerHTML = readyExams.map(exam => {
         const history = storage.getExamHistoryRecord(exam.id);
         const isDone = !!history && ((history.overall?.totalQuestions > 0) || (history.sections && Object.values(history.sections).some(s => s && s.completed)));
