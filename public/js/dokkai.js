@@ -38,6 +38,11 @@ export class DokkaiEngine {
     this.containerEl = containerEl;
     this.app = appInstance;
 
+    this.viewMode = 'hub'; // 'hub' | 'reader'
+    this.filterChapter = 'all'; // 'all' | 'skz_ch01' | 'skz_ch02'
+    this.cachedChapters = {};
+    this.allPassages = [];
+
     this.chapterData = null;
     this.questions = [];
     this.currentIndex = 0;
@@ -59,12 +64,125 @@ export class DokkaiEngine {
   }
 
   /**
+   * Preload chapter JSON files and assemble the flattened passage registry
+   */
+  async ensureDataLoaded() {
+    if (this.allPassages.length > 0 && this.cachedChapters.skz_ch01 && this.cachedChapters.skz_ch02) {
+      return;
+    }
+
+    try {
+      const fetchWithFallback = async (path1, path2) => {
+        try {
+          const r = await fetch(path1);
+          if (r.ok) return await r.json();
+        } catch (_) {}
+        const r2 = await fetch(path2);
+        if (r2.ok) return await r2.json();
+        throw new Error(`Cannot load ${path1}`);
+      };
+
+      const [ch01Data, ch02Data] = await Promise.all([
+        fetchWithFallback('data/n1_dokkai/shinkanzen_ch01.json', 'public/data/n1_dokkai/shinkanzen_ch01.json').catch(() => null),
+        fetchWithFallback('data/n1_dokkai/shinkanzen_ch02.json', 'public/data/n1_dokkai/shinkanzen_ch02.json').catch(() => null)
+      ]);
+
+      if (ch01Data) this.cachedChapters.skz_ch01 = ch01Data;
+      if (ch02Data) this.cachedChapters.skz_ch02 = ch02Data;
+
+      this.buildAllPassagesList();
+    } catch (e) {
+      console.error('Failed to preload dokkai chapters:', e);
+    }
+  }
+
+  buildAllPassagesList() {
+    this.allPassages = [];
+    const chKeys = ['skz_ch01', 'skz_ch02'];
+    chKeys.forEach(chKey => {
+      const chData = this.cachedChapters[chKey];
+      if (!chData) return;
+      const qs = chData.questions || [];
+      qs.forEach((q, idx) => {
+        this.allPassages.push({
+          id: q.id,
+          chapterKey: chKey,
+          chapterId: chData.chapterId || chKey,
+          chapterTitle: chData.chapter || q.chapter,
+          title: q.title || `${chData.chapter} - 練習 ${idx + 1}`,
+          mondaiType: q.mondaiType || 'short',
+          question: q.question,
+          passage: q.passage,
+          passageExcerpt: (q.passage || '').slice(0, 130).replace(/\n+/g, ' ').trim() + '...',
+          qData: q,
+          indexInChapter: idx,
+          chapterData: chData
+        });
+      });
+    });
+  }
+
+  /**
+   * Display the Dokkai Selection Grid (Hub View)
+   */
+  async showHub(filterTab = 'all') {
+    this.stopTimer();
+    await this.ensureDataLoaded();
+    this.loadPersistedProgress();
+    this.viewMode = 'hub';
+    if (filterTab) this.filterChapter = filterTab;
+    this.render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /**
+   * Open a specific passage directly from the Hub grid
+   */
+  async openPassage(passageId) {
+    await this.ensureDataLoaded();
+    this.loadPersistedProgress();
+
+    const target = this.allPassages.find(p => p.id === passageId);
+    if (!target) {
+      console.warn('Passage not found:', passageId);
+      return;
+    }
+
+    this.chapterData = target.chapterData;
+    this.questions = target.chapterData.questions || [];
+    this.currentIndex = target.indexInChapter;
+    this.viewMode = 'reader';
+
+    const hist = this.userAnswersHistory[passageId];
+    if (hist && hist.isCompleted) {
+      this.step = 2;
+      this.isStarted = true;
+      this.selectedOption = hist.selectedOption !== undefined ? hist.selectedOption : (hist.selectedAnswer - 1);
+      this.elapsedSeconds = hist.timeSpent || 0;
+      this.stopTimer();
+    } else {
+      this.resetQuestionState();
+    }
+
+    this.render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /**
    * Load chapter data and initialize reading with saved LocalStorage state
    */
   loadChapter(chapterData, initialIndex = 0) {
+    this.viewMode = 'reader';
     this.chapterData = chapterData;
     this.questions = chapterData.questions || [];
     this.currentIndex = Math.max(0, Math.min(initialIndex, this.questions.length - 1));
+
+    if (chapterData.chapterId === 'ch01' || chapterData.chapter?.includes('第1章')) {
+      this.cachedChapters.skz_ch01 = chapterData;
+    } else if (chapterData.chapterId === 'ch02' || chapterData.chapter?.includes('第2章')) {
+      this.cachedChapters.skz_ch02 = chapterData;
+    }
+    this.buildAllPassagesList();
 
     // Load persisted progress from LocalStorage
     this.loadPersistedProgress();
@@ -451,10 +569,284 @@ export class DokkaiEngine {
   }
 
   // ==============================================================
-  // RENDER MAIN 2-COLUMN WORKSPACE
+  // RENDER DISPATCHER
   // ==============================================================
 
   render() {
+    if (!this.containerEl) return;
+    if (this.viewMode === 'hub') {
+      this.renderHub();
+    } else {
+      this.renderReader();
+    }
+  }
+
+  // ==============================================================
+  // DOKKAI SELECTION GRID (ON-DEMAND HUB VIEW)
+  // ==============================================================
+
+  renderHub() {
+    const progressMap = storage.getDokkaiProgress();
+    const totalCount = this.allPassages.length;
+    let doneCount = 0;
+    let correctCount = 0;
+
+    this.allPassages.forEach(p => {
+      const h = progressMap[p.id] || this.userAnswersHistory[p.id];
+      if (h && h.isCompleted) {
+        doneCount++;
+        if (h.isCorrect) correctCount++;
+      }
+    });
+
+    const wrongCount = doneCount - correctCount;
+    const progressPct = totalCount > 0 ? Math.round((doneCount / totalCount) * 100) : 0;
+    const ch1Count = this.allPassages.filter(p => p.chapterKey === 'skz_ch01').length;
+    const ch2Count = this.allPassages.filter(p => p.chapterKey === 'skz_ch02').length;
+
+    const filteredPassages = this.filterChapter === 'all'
+      ? this.allPassages
+      : this.allPassages.filter(p => p.chapterKey === this.filterChapter);
+
+    this.containerEl.innerHTML = `
+      <div class="dokkai-hub-view max-w-7xl mx-auto px-3 sm:px-6 py-6 space-y-6 animate-fade-in font-sans">
+        
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-br from-white via-amber-50/30 to-indigo-50/40 rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" id="btn-dokkai-hub-back-home" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200/90 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                  <span>Trang Chủ</span>
+                </button>
+                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-amber-100 text-amber-900 border border-amber-300">
+                  📖 Shin Kanzen Master Dokkai N1
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300 flex items-center gap-1">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  🟢 Kho Luyện Đề Tự Do (On-Demand Hub)
+                </span>
+                <span class="px-2 py-0.5 rounded-md text-[11px] font-bold bg-slate-100 text-slate-600">
+                  🔓 100% Không khóa tuần tự
+                </span>
+              </div>
+
+              <div>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight font-jp">
+                  新完全マスター読解 N1 • 自由練習ハブ
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl leading-relaxed">
+                  Luyện tư duy bóc tách cấu trúc đoạn văn, nhận diện cú lật chuyển ý và phá bẫy phương án. Bạn có thể tự do làm bất kỳ bài nào mà không bị ràng buộc thứ tự.
+                </p>
+              </div>
+            </div>
+
+            <!-- Hub Stats Mini Card -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 p-4 sm:p-5 shrink-0 shadow-xs space-y-3 min-w-[260px]">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-700 pb-2 border-b border-slate-100">
+                <span>Tiến độ cá nhân</span>
+                <span class="font-mono text-indigo-600">${doneCount}/${totalCount} bài (${progressPct}%)</span>
+              </div>
+
+              <div class="grid grid-cols-3 gap-2 text-center">
+                <div class="bg-emerald-50 rounded-xl p-2 border border-emerald-200">
+                  <div class="text-base font-black text-emerald-700">${correctCount}</div>
+                  <div class="text-[10px] font-bold text-emerald-800">Đúng</div>
+                </div>
+                <div class="bg-rose-50 rounded-xl p-2 border border-rose-200">
+                  <div class="text-base font-black text-rose-700">${wrongCount}</div>
+                  <div class="text-[10px] font-bold text-rose-800">Sai</div>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-2 border border-slate-200">
+                  <div class="text-base font-black text-slate-700">${totalCount - doneCount}</div>
+                  <div class="text-[10px] font-bold text-slate-600">Chưa làm</div>
+                </div>
+              </div>
+
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden border border-slate-200/60">
+                <div class="h-full bg-gradient-to-r from-emerald-500 to-indigo-600 rounded-full transition-all duration-500" style="width: ${progressPct}%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2 pb-2 border-b border-slate-200/80">
+          <span class="text-xs font-bold text-slate-500 mr-1 flex items-center gap-1">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+            Lọc theo chương:
+          </span>
+
+          <button type="button" class="btn-dokkai-hub-tab px-4 py-2 rounded-2xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+            this.filterChapter === 'all'
+              ? 'bg-slate-900 text-white shadow-xs'
+              : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
+          }" data-tab="all">
+            <span>Tất cả bài học</span>
+            <span class="px-1.5 py-0.2 rounded-full text-[10px] ${this.filterChapter === 'all' ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'}">${totalCount}</span>
+          </button>
+
+          <button type="button" class="btn-dokkai-hub-tab px-4 py-2 rounded-2xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+            this.filterChapter === 'skz_ch01'
+              ? 'bg-amber-600 text-white shadow-xs'
+              : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
+          }" data-tab="skz_ch01">
+            <span>第1章：対比・逆接</span>
+            <span class="px-1.5 py-0.2 rounded-full text-[10px] ${this.filterChapter === 'skz_ch01' ? 'bg-white/20 text-white' : 'bg-amber-100 text-amber-800'}">${ch1Count}</span>
+          </button>
+
+          <button type="button" class="btn-dokkai-hub-tab px-4 py-2 rounded-2xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+            this.filterChapter === 'skz_ch02'
+              ? 'bg-indigo-600 text-white shadow-xs'
+              : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
+          }" data-tab="skz_ch02">
+            <span>第2章：言い換え・比喩</span>
+            <span class="px-1.5 py-0.2 rounded-full text-[10px] ${this.filterChapter === 'skz_ch02' ? 'bg-white/20 text-white' : 'bg-indigo-100 text-indigo-800'}">${ch2Count}</span>
+          </button>
+        </div>
+
+        <!-- Lessons Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5">
+          ${filteredPassages.map(item => {
+            const hist = progressMap[item.id] || this.userAnswersHistory[item.id];
+            const isDone = hist && hist.isCompleted;
+            const isCorrect = isDone && hist.isCorrect;
+            const timeSpentText = isDone ? this.formatTime(hist.timeSpent || 0) : '';
+
+            const qType = item.mondaiType || 'short';
+            const cfg = TIMER_CONFIGS[qType] || TIMER_CONFIGS.short;
+            const typeBadgeText = `${cfg.name.split(' ')[0]} (${cfg.standard.label})`;
+
+            let statusBadge = `
+              <span class="px-2.5 py-0.8 rounded-full text-[11px] font-bold bg-slate-100 text-slate-500 border border-slate-200">
+                Chưa làm
+              </span>
+            `;
+            if (isDone) {
+              if (isCorrect) {
+                statusBadge = `
+                  <span class="px-2.5 py-0.8 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    <span>✓ Hoàn thành (Đúng) • ${timeSpentText}</span>
+                  </span>
+                `;
+              } else {
+                statusBadge = `
+                  <span class="px-2.5 py-0.8 rounded-full text-[11px] font-bold bg-rose-50 text-rose-800 border border-rose-300 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                    <span>✕ Đã làm (Sai) • ${timeSpentText}</span>
+                  </span>
+                `;
+              }
+            }
+
+            return `
+              <div class="dokkai-hub-card group bg-white rounded-3xl border ${
+                isDone 
+                  ? (isCorrect ? 'border-emerald-200/90 hover:border-emerald-400 bg-emerald-50/10' : 'border-rose-200/90 hover:border-rose-400 bg-rose-50/10') 
+                  : 'border-slate-200/90 hover:border-amber-400'
+              } p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between cursor-pointer" data-passage-id="${item.id}">
+                
+                <div class="space-y-3">
+                  <!-- Badges & Status -->
+                  <div class="flex flex-wrap items-center justify-between gap-1.5">
+                    <div class="flex items-center gap-1">
+                      <span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold ${item.chapterKey === 'skz_ch02' ? 'bg-indigo-50 text-indigo-700 border border-indigo-200' : 'bg-amber-50 text-amber-800 border border-amber-200'}">
+                        ${item.chapterKey === 'skz_ch02' ? '第2章' : '第1章'}
+                      </span>
+                      <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-100 text-slate-600">
+                        ${typeBadgeText}
+                      </span>
+                    </div>
+                    ${statusBadge}
+                  </div>
+
+                  <!-- Title -->
+                  <div>
+                    <h3 class="font-jp text-base font-black text-slate-900 group-hover:text-amber-700 transition leading-snug">
+                      ${this.escapeHtml(item.title)}
+                    </h3>
+                    <p class="text-[11px] text-slate-400 mt-0.5 font-medium truncate">
+                      ${item.chapterTitle}
+                    </p>
+                  </div>
+
+                  <!-- Japanese Excerpt -->
+                  <div class="font-jp text-xs text-slate-600 leading-relaxed bg-slate-50/90 p-3 rounded-2xl border border-slate-100 line-clamp-3 select-none">
+                    ${this.escapeHtml(item.passageExcerpt)}
+                  </div>
+
+                  <!-- Question preview -->
+                  <div class="text-[11px] font-medium text-slate-500 flex items-center gap-1 pt-0.5">
+                    <span class="text-amber-700 font-bold shrink-0">❓ Hỏi:</span>
+                    <span class="truncate font-jp">${this.escapeHtml(item.question)}</span>
+                  </div>
+                </div>
+
+                <!-- Launch Button -->
+                <div class="pt-4 mt-3 border-t border-slate-100">
+                  ${!isDone ? `
+                    <button type="button" class="btn-card-launch w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 active:scale-98 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+                      <span>Luyện tập ngay 🚀</span>
+                    </button>
+                  ` : isCorrect ? `
+                    <button type="button" class="btn-card-launch w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 active:scale-98 text-emerald-800 font-bold text-xs border border-emerald-300 transition flex items-center justify-center gap-1.5 cursor-pointer">
+                      <span>Xem lại phân tích 🔍</span>
+                    </button>
+                  ` : `
+                    <button type="button" class="btn-card-launch w-full py-2.5 px-3 rounded-xl bg-rose-50 hover:bg-rose-100 active:scale-98 text-rose-800 font-bold text-xs border border-rose-300 transition flex items-center justify-center gap-1.5 cursor-pointer">
+                      <span>Mổ xẻ nguyên nhân sai 🔍</span>
+                    </button>
+                  `}
+                </div>
+
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+      </div>
+    `;
+
+    this.bindHubEvents();
+  }
+
+  bindHubEvents() {
+    // Back to Home
+    document.getElementById('btn-dokkai-hub-back-home')?.addEventListener('click', () => {
+      if (this.app && typeof this.app.switchView === 'function') {
+        this.app.switchView('HOME');
+      }
+    });
+
+    // Tab buttons
+    const tabButtons = this.containerEl.querySelectorAll('.btn-dokkai-hub-tab');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.getAttribute('data-tab');
+        this.filterChapter = tab;
+        this.renderHub();
+      });
+    });
+
+    // Passage card clicks
+    const cards = this.containerEl.querySelectorAll('.dokkai-hub-card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const passageId = card.getAttribute('data-passage-id');
+        if (passageId) {
+          this.openPassage(passageId);
+        }
+      });
+    });
+  }
+
+  // ==============================================================
+  // RENDER MAIN 2-COLUMN WORKSPACE (READER VIEW)
+  // ==============================================================
+
+  renderReader() {
     if (!this.containerEl) return;
     const q = this.getCurrentQuestion();
     if (!q) {
@@ -486,6 +878,9 @@ export class DokkaiEngine {
               <button type="button" id="btn-dokkai-back-home" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200/80 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
                 <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
                 <span>Trang Chủ</span>
+              </button>
+              <button type="button" id="btn-dokkai-back-hub" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Kho Luyện Đề Tự Do">
+                <span>📋 Kho bài đọc</span>
               </button>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">
                 📖 Shin Kanzen Dokkai N1
@@ -851,7 +1246,10 @@ export class DokkaiEngine {
                 <div class="p-4 bg-slate-50/90 rounded-2xl border border-slate-200/80 flex flex-wrap items-center justify-between gap-3 shadow-2xs">
                   <div class="flex items-center gap-2">
                     <button type="button" id="btn-dokkai-retake-bottom" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95">
-                      <span>🔄 Đọc lại bài này</span>
+                      <span>🔄 Làm lại bài này</span>
+                    </button>
+                    <button type="button" id="btn-dokkai-back-hub-bottom" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95">
+                      <span>📋 Chọn bài khác</span>
                     </button>
                     <button type="button" id="btn-dokkai-anki-export" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-amber-50 text-amber-800 border border-amber-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95" title="Tải file text nạp câu hỏi vào Anki">
                       <span>⚡ Xuất bài đọc Anki (.txt)</span>
@@ -865,7 +1263,7 @@ export class DokkaiEngine {
                       </button>
                     ` : `
                       <button type="button" id="btn-dokkai-finish-chapter" class="px-6 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-md shadow-emerald-200 transition flex items-center gap-1.5 cursor-pointer active:scale-95">
-                        <span>🎉 Hoàn thành Chương 1!</span>
+                        <span>🎉 Trở về Kho Luyện Đề</span>
                       </button>
                     `}
                   </div>
@@ -992,18 +1390,17 @@ export class DokkaiEngine {
                       `
                       : `
                         <div class="space-y-2">
+                          <button type="button" id="btn-dock-retake" class="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition cursor-pointer flex items-center justify-center gap-1.5 shadow-2xs active:scale-95">
+                            <span>🔄 Làm lại bài này</span>
+                          </button>
+                          <button type="button" id="btn-dock-back-hub" class="w-full py-2.5 px-3 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-xs border border-indigo-200 transition cursor-pointer flex items-center justify-center gap-1.5 shadow-2xs active:scale-95">
+                            <span>📋 Chọn bài khác</span>
+                          </button>
                           ${this.currentIndex < this.questions.length - 1 ? `
                             <button type="button" id="btn-dock-next" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer active:scale-95">
                               <span>Bài tiếp theo (Bài ${this.currentIndex + 2}) ➡</span>
                             </button>
-                          ` : `
-                            <button type="button" id="btn-dock-finish" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer active:scale-95">
-                              <span>🎉 Hoàn thành Chương!</span>
-                            </button>
-                          `}
-                          <button type="button" id="btn-dock-retake" class="w-full py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition cursor-pointer flex items-center justify-center gap-1">
-                            <span>🔄 Đọc lại bài này</span>
-                          </button>
+                          ` : ''}
                         </div>
                       `
                 }
@@ -1116,6 +1513,11 @@ export class DokkaiEngine {
       }
     });
 
+    // Back to Dokkai Hub buttons
+    document.getElementById('btn-dokkai-back-hub')?.addEventListener('click', () => this.showHub());
+    document.getElementById('btn-dokkai-back-hub-bottom')?.addEventListener('click', () => this.showHub());
+    document.getElementById('btn-dock-back-hub')?.addEventListener('click', () => this.showHub());
+
     // Retake buttons
     document.getElementById('btn-dokkai-retake-top')?.addEventListener('click', () => this.retakeCurrentQuestion());
     document.getElementById('btn-dokkai-retake-bottom')?.addEventListener('click', () => this.retakeCurrentQuestion());
@@ -1124,17 +1526,13 @@ export class DokkaiEngine {
     document.getElementById('btn-dokkai-next-top')?.addEventListener('click', () => this.goToQuestion(this.currentIndex + 1));
     document.getElementById('btn-dokkai-next-bottom')?.addEventListener('click', () => this.goToQuestion(this.currentIndex + 1));
 
-    // Finish chapter button
+    // Finish chapter button (Returns to Hub)
     document.getElementById('btn-dokkai-finish-chapter')?.addEventListener('click', () => {
       this.stopTimer();
       if (this.app && typeof this.app.showToast === 'function') {
-        this.app.showToast('🎉 Chúc mừng bạn đã hoàn thành trọn vẹn Chương 1: 対比・逆接!', 'success');
+        this.app.showToast('🎉 Bạn đã hoàn thành các bài trong chương này!', 'success');
       }
-      setTimeout(() => {
-        if (this.app && typeof this.app.switchView === 'function') {
-          this.app.switchView('HOME');
-        }
-      }, 1000);
+      this.showHub();
     });
 
     // Anki export single dokkai question

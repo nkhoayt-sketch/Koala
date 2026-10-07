@@ -94,12 +94,12 @@ export const storage = {
    */
   /**
    * Dokkai Shin Kanzen Master Progress Persistence (Per-passage state)
-   * Key: 'dokkai_progress_shinkanzen'
+   * Key: 'koala_dokkai_history' (with fallback to 'dokkai_progress_shinkanzen')
    * Structure: { [passageId]: { selectedAnswer, isCompleted, isCorrect, timeSpent, completedAt } }
    */
   getDokkaiProgress() {
     try {
-      const raw = localStorage.getItem('dokkai_progress_shinkanzen');
+      const raw = localStorage.getItem('koala_dokkai_history') || localStorage.getItem('dokkai_progress_shinkanzen');
       return raw ? JSON.parse(raw) : {};
     } catch (e) {
       console.error('Failed to load dokkai progress from localStorage:', e);
@@ -117,6 +117,7 @@ export const storage = {
         timeSpent: data.timeSpent || 0,
         completedAt: data.completedAt || new Date().toISOString()
       };
+      localStorage.setItem('koala_dokkai_history', JSON.stringify(progress));
       localStorage.setItem('dokkai_progress_shinkanzen', JSON.stringify(progress));
       return progress;
     } catch (e) {
@@ -129,6 +130,7 @@ export const storage = {
     try {
       const progress = this.getDokkaiProgress();
       delete progress[passageId];
+      localStorage.setItem('koala_dokkai_history', JSON.stringify(progress));
       localStorage.setItem('dokkai_progress_shinkanzen', JSON.stringify(progress));
       return progress;
     } catch (e) {
