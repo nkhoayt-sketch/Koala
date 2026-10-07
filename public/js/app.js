@@ -1537,7 +1537,10 @@ class App {
     `;
 
     try {
-      let res = await fetch(`data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      let res = await fetch(`/data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      if (!res.ok) {
+        res = await fetch(`data/n1_dokkai/shinkanzen_${chapterId}.json`);
+      }
       if (!res.ok) {
         res = await fetch(`public/data/n1_dokkai/shinkanzen_${chapterId}.json`);
       }
@@ -1657,8 +1660,8 @@ class App {
     const cardDokkai = document.getElementById('card-shinkanzen-dokkai');
     if (cardDokkai) {
       cardDokkai.addEventListener('click', (e) => {
-        // Prevent double trigger if clicked on the child buttons
-        if (e.target.closest('#btn-home-start-dokkai-ch01') || e.target.closest('#btn-home-start-dokkai-ch02') || e.target.closest('#btn-home-start-dokkai-hub')) return;
+        // If clicked on specific chapter button, let their specific handler run
+        if (e.target.closest('[id^="btn-home-start-dokkai-ch"]')) return;
         this.openDokkaiHub('all');
       });
     }

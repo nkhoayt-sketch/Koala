@@ -72,21 +72,31 @@ export class DokkaiEngine {
     }
 
     try {
-      const fetchWithFallback = async (path1, path2) => {
-        try {
-          const r = await fetch(path1);
-          if (r.ok) return await r.json();
-        } catch (_) {}
-        const r2 = await fetch(path2);
-        if (r2.ok) return await r2.json();
-        throw new Error(`Cannot load ${path1}`);
+      const fetchWithFallback = async (chId) => {
+        const candidatePaths = [
+          `/data/n1_dokkai/shinkanzen_${chId}.json`,
+          `data/n1_dokkai/shinkanzen_${chId}.json`,
+          `public/data/n1_dokkai/shinkanzen_${chId}.json`
+        ];
+
+        let lastErr = null;
+        for (const p of candidatePaths) {
+          try {
+            const r = await fetch(p);
+            if (r.ok) {
+              return await r.json();
+            }
+          } catch (err) {
+            lastErr = err;
+          }
+        }
+        console.error(`Lỗi nạp bài đọc shinkanzen_${chId}.json:`, lastErr || 'File not found');
+        return null;
       };
 
       const chapterIds = ['ch01', 'ch02', 'ch03', 'ch04', 'ch05', 'ch06'];
       const results = await Promise.all(
-        chapterIds.map(chId =>
-          fetchWithFallback(`data/n1_dokkai/shinkanzen_${chId}.json`, `public/data/n1_dokkai/shinkanzen_${chId}.json`).catch(() => null)
-        )
+        chapterIds.map(chId => fetchWithFallback(chId))
       );
 
       chapterIds.forEach((chId, idx) => {
@@ -99,7 +109,7 @@ export class DokkaiEngine {
 
       this.buildAllPassagesList();
     } catch (e) {
-      console.error('Failed to preload dokkai chapters:', e);
+      console.error('Lỗi nạp bài đọc Dokkai (toàn cục):', e);
     }
   }
 
