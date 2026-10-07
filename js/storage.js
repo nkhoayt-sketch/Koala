@@ -92,13 +92,48 @@ export const storage = {
   /**
    * Reset all progress for a given day/scope key
    */
-  resetDay(day) {
+  /**
+   * Dokkai Shin Kanzen Master Progress Persistence (Per-passage state)
+   * Key: 'dokkai_progress_shinkanzen'
+   * Structure: { [passageId]: { selectedAnswer, isCompleted, isCorrect, timeSpent, completedAt } }
+   */
+  getDokkaiProgress() {
     try {
-      localStorage.removeItem(`${STORAGE_PREFIX}answers_day_${day}`);
-      localStorage.removeItem(`${STORAGE_PREFIX}flags_day_${day}`);
-      localStorage.removeItem(`${STORAGE_PREFIX}submission_day_${day}`);
+      const raw = localStorage.getItem('dokkai_progress_shinkanzen');
+      return raw ? JSON.parse(raw) : {};
     } catch (e) {
-      console.error('Failed to reset day:', e);
+      console.error('Failed to load dokkai progress from localStorage:', e);
+      return {};
+    }
+  },
+
+  saveDokkaiPassageProgress(passageId, data) {
+    try {
+      const progress = this.getDokkaiProgress();
+      progress[passageId] = {
+        selectedAnswer: data.selectedAnswer,
+        isCompleted: true,
+        isCorrect: !!data.isCorrect,
+        timeSpent: data.timeSpent || 0,
+        completedAt: data.completedAt || new Date().toISOString()
+      };
+      localStorage.setItem('dokkai_progress_shinkanzen', JSON.stringify(progress));
+      return progress;
+    } catch (e) {
+      console.error('Failed to save dokkai passage progress:', e);
+      return {};
+    }
+  },
+
+  removeDokkaiPassageProgress(passageId) {
+    try {
+      const progress = this.getDokkaiProgress();
+      delete progress[passageId];
+      localStorage.setItem('dokkai_progress_shinkanzen', JSON.stringify(progress));
+      return progress;
+    } catch (e) {
+      console.error('Failed to remove dokkai passage progress:', e);
+      return {};
     }
   },
 

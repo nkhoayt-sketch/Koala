@@ -215,7 +215,8 @@ class App {
     const hash = (window.location.hash || '').toLowerCase();
 
     if (path.includes('/dokkai/shinkanzen') || path.includes('/dokkai') || hash.includes('dokkai')) {
-      this.loadDokkaiChapter('ch01');
+      const chapterId = (path.includes('ch02') || hash.includes('ch02')) ? 'ch02' : 'ch01';
+      this.loadDokkaiChapter(chapterId);
     } else {
       if (this.currentView !== 'HOME') {
         this.switchView('HOME');
@@ -1381,13 +1382,14 @@ class App {
     this.currentN2Exam = null;
     this.currentQuestionIndex = 0;
 
-    // Push URL route: /dokkai/shinkanzen
+    // Push URL route: /dokkai/shinkanzen or /dokkai/shinkanzen/ch02
     const currentPath = (window.location.pathname || '').toLowerCase();
-    if (!currentPath.includes('/dokkai/shinkanzen')) {
+    const targetPath = chapterId === 'ch02' ? '/dokkai/shinkanzen/ch02' : '/dokkai/shinkanzen';
+    if (!currentPath.includes(targetPath)) {
       try {
-        history.pushState({ view: 'dokkai', chapterId }, '', '/dokkai/shinkanzen');
+        history.pushState({ view: 'dokkai', chapterId }, '', targetPath);
       } catch (e) {
-        window.location.hash = 'dokkai/shinkanzen';
+        window.location.hash = `dokkai/shinkanzen/${chapterId}`;
       }
     }
 
@@ -1404,10 +1406,14 @@ class App {
       this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-amber-100 text-amber-800 border border-amber-300';
     }
     if (this.dayTitleEl) {
-      this.dayTitleEl.textContent = 'Shin Kanzen Master: 第1章：対比・逆接';
+      this.dayTitleEl.textContent = chapterId === 'ch02' 
+        ? 'Shin Kanzen Master: 第2章：言い換え・比喩' 
+        : 'Shin Kanzen Master: 第1章：対比・逆接';
     }
     if (this.dayDescEl) {
-      this.dayDescEl.textContent = 'Cấu trúc tương phản & nghịch lý: Bóc tách tiền đề số đông, bắt cú lật tư duy';
+      this.dayDescEl.textContent = chapterId === 'ch02'
+        ? 'Cách diễn đạt tương đương & Hình ảnh ẩn dụ: Nắm bắt cách tác giả diễn giải lại luận điểm cốt lõi'
+        : 'Cấu trúc tương phản & nghịch lý: Bóc tách tiền đề số đông, bắt cú lật tư duy';
     }
     if (this.headerScopeBtn) {
       this.headerScopeBtn.classList.add('hidden');
@@ -1416,7 +1422,7 @@ class App {
       this.paletteActiveTitle.textContent = 'Shin Kanzen Dokkai N1';
     }
     if (this.paletteActiveCount) {
-      this.paletteActiveCount.textContent = 'Chương 1 (4 bài)';
+      this.paletteActiveCount.textContent = chapterId === 'ch02' ? 'Chương 2 (4 bài)' : 'Chương 1 (4 bài)';
     }
 
     // Hide normal test header controls
@@ -1430,7 +1436,7 @@ class App {
       paletteGrid.innerHTML = `
         <div class="col-span-5 py-5 text-center text-[11px] text-slate-500 leading-relaxed px-2">
           <span class="font-bold text-amber-700">📖 Shin Kanzen N1</span>
-          <p class="text-[10px] text-slate-400 mt-1">Single-Column & Adaptive Timer</p>
+          <p class="text-[10px] text-slate-400 mt-1">${chapterId === 'ch02' ? 'Chương 2: 言い換え・比喩' : 'Chương 1: 対比・逆接'}</p>
         </div>
       `;
     }
@@ -1439,7 +1445,7 @@ class App {
     this.quizContainerEl.innerHTML = `
       <div class="flex flex-col items-center justify-center py-20">
         <div class="w-10 h-10 border-4 border-amber-200 border-t-amber-600 rounded-full animate-spin"></div>
-        <p class="mt-4 text-sm font-medium text-slate-600">Đang tải giáo trình Shin Kanzen Dokkai N1 (Chương 1)...</p>
+        <p class="mt-4 text-sm font-medium text-slate-600">Đang tải giáo trình Shin Kanzen Dokkai N1 (${chapterId === 'ch02' ? 'Chương 2' : 'Chương 1'})...</p>
       </div>
     `;
 
@@ -1564,8 +1570,8 @@ class App {
     const cardDokkai = document.getElementById('card-shinkanzen-dokkai');
     if (cardDokkai) {
       cardDokkai.addEventListener('click', (e) => {
-        // Prevent double trigger if clicked on the child button
-        if (e.target.closest('#btn-home-start-dokkai-ch01')) return;
+        // Prevent double trigger if clicked on the child buttons
+        if (e.target.closest('#btn-home-start-dokkai-ch01') || e.target.closest('#btn-home-start-dokkai-ch02')) return;
         this.loadDokkaiChapter('ch01');
       });
     }
@@ -1577,10 +1583,24 @@ class App {
       });
     }
 
+    const btnHomeDokkaiCh02 = document.getElementById('btn-home-start-dokkai-ch02');
+    if (btnHomeDokkaiCh02) {
+      btnHomeDokkaiCh02.addEventListener('click', () => {
+        this.loadDokkaiChapter('ch02');
+      });
+    }
+
     const btnSidebarDokkaiCh01 = document.getElementById('btn-sidebar-dokkai-ch01');
     if (btnSidebarDokkaiCh01) {
       btnSidebarDokkaiCh01.addEventListener('click', () => {
         this.loadDokkaiChapter('ch01');
+      });
+    }
+
+    const btnSidebarDokkaiCh02 = document.getElementById('btn-sidebar-dokkai-ch02');
+    if (btnSidebarDokkaiCh02) {
+      btnSidebarDokkaiCh02.addEventListener('click', () => {
+        this.loadDokkaiChapter('ch02');
       });
     }
 

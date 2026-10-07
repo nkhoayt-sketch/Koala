@@ -1,8 +1,4 @@
-/**
- * Koala JLPT Hub - Shin Kanzen Master Dokkai N1 Engine
- * 2-Column Responsive Workspace with Sticky Timer Dock, Pre-start Blur Lock,
- * Single-Correct Logic Mastery, and Pure Authentic Japanese Passage Rendering
- */
+import { storage } from './storage.js';
 
 export const TIMER_CONFIGS = {
   short: {
@@ -50,7 +46,7 @@ export class DokkaiEngine {
     this.step = 1; // 1: Reading & Timer, 2: Logic Highlights & Trap Breakdown
     this.isStarted = false; // Blur/Lock overlay before user clicks Start in modal
     this.selectedOption = null; // 0, 1, 2, 3
-    this.userAnswersHistory = {}; // { questionId: { selectedOption, isCorrect, timeSpent } }
+    this.userAnswersHistory = {}; // { [questionId]: { selectedOption, selectedAnswer, isCompleted, isCorrect, timeSpent, completedAt } }
 
     // Timer State
     this.timerMode = 'standard'; // 'standard' | 'hardcore' | 'unlimited'
@@ -63,14 +59,52 @@ export class DokkaiEngine {
   }
 
   /**
-   * Load chapter data and initialize first reading
+   * Load chapter data and initialize reading with saved LocalStorage state
    */
   loadChapter(chapterData, initialIndex = 0) {
     this.chapterData = chapterData;
     this.questions = chapterData.questions || [];
     this.currentIndex = Math.max(0, Math.min(initialIndex, this.questions.length - 1));
-    this.resetQuestionState();
+
+    // Load persisted progress from LocalStorage
+    this.loadPersistedProgress();
+
+    // Check if the initial question was already completed
+    const currentQ = this.getCurrentQuestion();
+    if (currentQ && this.userAnswersHistory[currentQ.id]?.isCompleted) {
+      const saved = this.userAnswersHistory[currentQ.id];
+      this.step = 2;
+      this.isStarted = true;
+      this.selectedOption = saved.selectedOption;
+      this.elapsedSeconds = saved.timeSpent || 0;
+      this.stopTimer();
+    } else {
+      this.resetQuestionState();
+    }
+
     this.render();
+  }
+
+  loadPersistedProgress() {
+    try {
+      const savedProgress = storage.getDokkaiProgress();
+      if (savedProgress && typeof savedProgress === 'object') {
+        Object.entries(savedProgress).forEach(([id, item]) => {
+          if (item && item.isCompleted) {
+            this.userAnswersHistory[id] = {
+              selectedOption: item.selectedAnswer !== undefined ? (item.selectedAnswer - 1) : item.selectedOption,
+              selectedAnswer: item.selectedAnswer,
+              isCompleted: true,
+              isCorrect: !!item.isCorrect,
+              timeSpent: item.timeSpent || 0,
+              completedAt: item.completedAt
+            };
+          }
+        });
+      }
+    } catch (e) {
+      console.warn('Could not restore dokkai progress from localStorage:', e);
+    }
   }
 
   resetQuestionState() {
@@ -356,12 +390,25 @@ export class DokkaiEngine {
 
     const q = this.getCurrentQuestion();
     const isCorrect = this.isAnswerCorrect(this.selectedOption, q);
+    const selectedAnswer = this.selectedOption + 1; // 1-based answer index
 
+    // Update in-memory state
     this.userAnswersHistory[q.id] = {
       selectedOption: this.selectedOption,
+      selectedAnswer,
+      isCompleted: true,
       isCorrect,
-      timeSpent: this.elapsedSeconds
+      timeSpent: this.elapsedSeconds,
+      completedAt: new Date().toISOString()
     };
+
+    // Instant per-passage LocalStorage persistence (PHẦN 1: LocalStorage Per-Item Persistence)
+    storage.saveDokkaiPassageProgress(q.id, {
+      selectedAnswer,
+      isCorrect,
+      timeSpent: this.elapsedSeconds,
+      completedAt: new Date().toISOString()
+    });
 
     this.render();
 
@@ -378,11 +425,11 @@ export class DokkaiEngine {
     if (index < 0 || index >= this.questions.length) return;
     this.currentIndex = index;
     const q = this.getCurrentQuestion();
-    if (q && this.userAnswersHistory[q.id]) {
+    if (q && this.userAnswersHistory[q.id]?.isCompleted) {
       const hist = this.userAnswersHistory[q.id];
       this.step = 2;
       this.isStarted = true;
-      this.selectedOption = hist.selectedOption;
+      this.selectedOption = hist.selectedOption !== undefined ? hist.selectedOption : (hist.selectedAnswer - 1);
       this.elapsedSeconds = hist.timeSpent || 0;
       this.stopTimer();
     } else {
@@ -393,6 +440,11 @@ export class DokkaiEngine {
   }
 
   retakeCurrentQuestion() {
+    const q = this.getCurrentQuestion();
+    if (q) {
+      delete this.userAnswersHistory[q.id];
+      storage.removeDokkaiPassageProgress(q.id);
+    }
     this.resetQuestionState();
     this.render();
     window.scrollTo({ top: 0, behavior: 'smooth' });

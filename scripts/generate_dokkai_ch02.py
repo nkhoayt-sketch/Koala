@@ -1,0 +1,131 @@
+import json
+import os
+
+ch02_data = {
+  "chapterId": "ch02",
+  "chapter": "第2章：言い換え・比喩",
+  "title": "Chương 2: Diễn đạt tương đương & Phép ẩn dụ (言い換え・比喩)",
+  "description": "Phương pháp Shin Kanzen Dokkai N1: Bóc tách từ đồng nghĩa, cấu trúc giải thích lại (つまり・要するに・すなわち) và giải mã hình ảnh ẩn dụ (比喩) để nắm bắt thông điệp then chốt của tác giả.",
+  "totalQuestions": 4,
+  "questions": [
+    {
+      "id": "skz_ch02_q01",
+      "chapter": "第2章：言い換え・比喩",
+      "title": "第2章 練習 1",
+      "mondaiType": "short",
+      "passage": "読書とは、他人の頭で考えることだと言われることがある。確かに本を開けば、そこには先人の知恵や著者の思索の道筋が整然と提示されている。しかし、真の読書とは受動的に活字を追うことではない。著者が提示した問いを自らの経験に引きつけ、反発し、共鳴しながら自らの言葉へと鍛え直していく営みである。つまり、読書とは他者との対話を通じて、「自分自身の思考を編み直す作業」にほかならないのである。",
+      "question": "筆者の考える「真の読書」として最も適切なものはどれか。",
+      "options": [
+        "先人の知恵を正確に暗記し、他人の優れた思考様式を受動的に踏襲すること。",
+        "他者の言葉を契機として自己の内面と対話し、自らの思考を主体的に再構築すること。",
+        "著者の主張に反発することなく、書かれた活字の論理を忠実に受け入れ続けること。",
+        "他人の知見に惑わされず、一切の書物を読まずに自分だけの力で思索を深めること。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "読書とは、他人の頭で考えることだと言われることがある",
+        "turningPoint": "つまり",
+        "authorConclusion": "読書とは他者との対話を通じて、「自分自身の思考を編み直す作業」にほかならないのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Trích xuất nguyên văn tiền đề bị bác bỏ): Nhắc lại cách hiểu tiêu cực ở đầu câu mà tác giả chỉ ra là thụ động.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với cách diễn đạt tương đương sau chữ 「つまり」: 「自分自身の思考を編み直す作業」 (Tái cấu trúc tư duy bản thân qua đối thoại với tác giả).",
+        "opt3": "❌ BẪY TƯ DUY (Ngược logic): Tác giả nhấn mạnh phải biết phản biện, cọ xát (反発し、共鳴しながら), không phải vâng dạ chấp nhận thụ động.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa không có trong bài): Tác giả không bảo bài trừ sách vở mà bảo đọc sách một cách chủ động."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Người ta thường bảo rằng đọc sách là tư duy bằng bộ não của kẻ khác. Quả thật khi mở cuốn sách ra, dấu vết suy tưởng và trí tuệ của tiền nhân được bày ra rành mạch. Thế nhưng, việc đọc sách thực thụ không phải là hành động thụ động dõi theo con chữ. Đó là hoạt động kéo những câu hỏi của tác giả về gắn kết với trải nghiệm của chính mình, vừa phản biện, vừa đồng cảm để tôi luyện lại thành lời lẽ của bản thân. Tức là, đọc sách không gì khác hơn là công cuộc \"dệt lại chính tư duy của bản thân mình\" thông qua cuộc đối thoại với người khác.<br><br><b>【Phân tích cấu trúc 言い換え・比喩 (Shin Kanzen Dokkai)】:</b><br>1. <b>Từ khóa diễn đạt tương đương (言い換え):</b> Cụm từ <code>つまり</code> (tức là / nói cách khác) chốt lại định nghĩa cốt lõi của tác giả.<br>2. <b>Hình ảnh ẩn dụ (比喩):</b> <code>思考を編み直す</code> (dệt lại / đan lại mạng lưới tư duy của chính mình) diễn đạt lại toàn bộ quá trình phản biện, đối thoại chủ động với văn bản.<br>3. <b>Mẫu câu chốt tác giả:</b> <code>〜にほかならない</code> (chính là / không gì khác hơn là)."
+    },
+    {
+      "id": "skz_ch02_q02",
+      "chapter": "第2章：言い換え・比喩",
+      "title": "第2章 練習 2",
+      "mondaiType": "short",
+      "passage": "人間の記憶は、精密なビデオカメラのように過去の出来事をありのまま記録し、保存する装置ではない。むしろ、過去の断片的な素材を使って、現在の視点から物語を組み立て直す「編集室」のようなものだ。我々は現在の感情や立場というレンズを通して過去を常に解釈し直している。要するに、記憶とは客観的な事実の倉庫ではなく、「現在の自分が生きるために再構成された物語」なのである。",
+      "question": "「記憶」についての筆者の説明として最も合致するものはどれか。",
+      "options": [
+        "過去の出来事をビデオカメラのように忠実かつ客観的に保存し続ける記録装置である。",
+        "感情や主観を排除し、過去の事実をありのままに再現する不変の倉庫のようなものである。",
+        "現在の自己の視点や感情を通して、過去の出来事を主観的に編纂・再構成した物語である。",
+        "現在の立場に関わりなく、過去の出来事を断片的な素材のまま放置しておく場所である。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "精密なビデオカメラのように過去の出来事をありのまま記録し、保存する装置ではない",
+        "turningPoint": "要するに",
+        "authorConclusion": "記憶とは客観的な事実の倉庫ではなく、「現在の自分が生きるために再構成された物語」なのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa so sánh phủ định): Bài viết nêu rõ ký ức \"không phải là máy quay phim ghi lại nguyên xi sự thật\" (ではない).",
+        "opt2": "❌ BẪY TƯ DUY (Trái ngược lập luận): Tác giả khẳng định ký ức không phải kho lưu trữ sự thật khách quan (事実の倉庫ではない).",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp trọn vẹn với kết luận sau chữ 「要するに」: ký ức là câu chuyện được biên tập, tái cấu trúc từ góc nhìn hiện tại.",
+        "opt4": "❌ BẪY TƯ DUY (Sai bản chất): Ký ức chủ động biên tập, chắp nối các mảnh ghép để tạo thành câu chuyện, chứ không để mặc kệ hoang phế."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trí nhớ của con người không phải là thiết bị ghi lại và bảo quản sự việc trong quá khứ nguyên vẹn như một chiếc máy quay phim chính xác. Đúng hơn, nó giống như một \"phòng biên tập dựng phim\", dùng các mảnh tư liệu rời rạc trong quá khứ để xây dựng lại một câu chuyện từ góc nhìn của hiện tại. Chúng ta luôn tái diễn giải quá khứ qua lăng kính cảm xúc và hoàn cảnh của hiện tại. Tóm lại, ký ức không phải là nhà kho chứa sự thật khách quan, mà là \"câu chuyện được tái cấu trúc để phục vụ cho sự sinh tồn của chính bản thân mình ở hiện tại\".<br><br><b>【Phân tích cấu trúc 言い換え・比喩】:</b><br>1. <b>Phép ẩn dụ đối lập (比喩の対比):</b> <code>ビデオカメラ</code> (máy quay ghi nhận thụ động) đối lập với <code>編集室</code> (phòng dựng phim chủ động cắt ghép).<br>2. <b>Dấu hiệu tóm lược / diễn đạt tương đương:</b> <code>要するに</code> (tóm lại / nói tóm lại).<br>3. <b>Mệnh đề đồng nghĩa khẳng định:</b> <code>〜ではなく、「〜再構成された物語」なのである</code>."
+    },
+    {
+      "id": "skz_ch02_q03",
+      "chapter": "第2章：言い換え・比喩",
+      "title": "第2章 練習 3",
+      "mondaiType": "short",
+      "passage": "異文化を理解するとは、単に外国の珍しい風習や礼儀作法を知識として蓄積することではない。それは、自分が無意識にかけている「文化という色眼鏡」の存在に気づくプロセスである。自らの常識が普遍的な絶対真理ではなく、特定の共同体が生み出した一つの枠組みにすぎないと知るとき、初めて他者の視線を受け入れる余白が生まれる。すなわち、異文化理解の真髄とは、外部を観察すること以上に、「自己の常識の相対化」にほかならない。",
+      "question": "「異文化理解」についての筆者の考えとして最も適切なものはどれか。",
+      "options": [
+        "外国の伝統的な風習やマナーに関する膨大な知識を収集・暗記すること。",
+        "自国の文化や常識こそが普遍的で絶対的な正義であると再確認すること。",
+        "自らが持つ常識の枠組みを自覚し、その絶対性を相対化して捉え直すこと。",
+        "自分自身の文化的アイデンティティを完全に捨て去り、相手の文化に同化すること。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "単に外国の珍しい風習や礼儀作法を知識として蓄積することではない",
+        "turningPoint": "すなわち",
+        "authorConclusion": "異文化理解の真髄とは、外部を観察すること以上に、「自己の常識の相対化」にほかならない"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Bám vào cách hiểu hời hợt): Câu mở đầu đã phủ định điều này (〜ではない).",
+        "opt2": "❌ BẪY TƯ DUY (Trái ngược hoàn toàn tư tưởng bài viết): Tác giả nhấn mạnh nhận thức văn hóa của mình không phải là chân lý tuyệt đối.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác câu chốt sau chữ 「すなわち」: Tương đối hóa thường thức của chính bản thân (「自己の常識の相対化」).",
+        "opt4": "❌ BẪY TƯ DUY (Nói quá / Cực đoan): Tác giả không yêu cầu vứt bỏ bản sắc hay đồng hóa tuyệt đối vào đối phương."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Thấu hiểu văn hóa khác không đơn thuần là tích lũy kiến thức về các phong tục hay phép tắc kỳ lạ của nước ngoài. Đó là một quá trình nhận ra sự tồn tại của chiếc \"kính màu văn hóa\" mà bản thân mình đang vô thức đeo trên mắt. Chỉ khi biết rằng những lẽ thường (常識) của bản thân không phải là chân lý phổ quát tuyệt đối, mà chỉ là một chiếc khuôn do một cộng đồng cụ thể tạo nên, ta mới bắt đầu có khoảng trống để dung nạp góc nhìn của người khác. Tức là, cốt tủy của việc thấu hiểu dị văn hóa, hơn cả việc quan sát bên ngoài, chính là \"sự tương đối hóa lẽ thường của bản thân\".<br><br><b>【Phân tích cấu trúc 言い換え・比喩】:</b><br>1. <b>Phép ẩn dụ (比喩):</b> <code>文化という色眼鏡</code> (chiếc kính màu văn hóa) — định kiến tiềm ẩn chi phối góc nhìn.<br>2. <b>Từ nối diễn đạt tương đương:</b> <code>すなわち</code> (tức là / nói cách khác).<br>3. <b>Khái niệm then chốt diễn đạt lại:</b> <code>自己の常識の相対化</code>."
+    },
+    {
+      "id": "skz_ch02_q04",
+      "chapter": "第2章：言い換え・比喩",
+      "title": "第2章 練習 4",
+      "mondaiType": "medium",
+      "passage": "現代社会において、「孤独」は克服すべき欠陥、あるいは避けるべき病理のように扱われがちである。SNSで常に誰かとつながっていることが幸福の証とされ、一人の時間を過ごすことに対する不安や恐れが煽られている。\n\nしかし、人間にとって孤独とは、他者から見捨てられた「孤立（アイソレーション）」とは根本的に異なる。孤独とは、他者の視線や世間の喧騒から身を引いて、自分自身の内なる声と対話する「孤高の対話時間（ソリチュード）」である。内省の深まりや独創的な表現は、まさにこの静寂な孤独の深淵においてのみ育まれる。\n\n植物が暗い土の中で静かに根を伸ばすように、人間の精神もまた、誰の目にも触れない孤独な時間においてこそ深く根を張り、強靭さを獲得する。言い換えれば、成熟した精神を培うためには、表層的なつながりをあえて遮断し、「豊かな孤独」を抱きしめる勇気こそが不可欠なのである。",
+      "question": "筆者の主張する「孤独」の意義として最も適切なものはどれか。",
+      "options": [
+        "孤独は精神の病理であり、SNSなどを通じて絶え間なく他者とつながり続けることで解消すべきである。",
+        "孤独とは他者からの孤立であり、人間関係の断絶による苦痛を耐え忍ぶための試練である。",
+        "孤独とは世間の喧騒を離れて自らの内面と深く対話し、成熟した強靭な精神を育むための不可欠な時間である。",
+        "孤独を維持するためには、社会生活を完全に放棄し、他者との関わりを生涯にわたって拒絶しなければならない。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "「孤独」は克服すべき欠陥、あるいは避けるべき病理のように扱われがちである",
+        "turningPoint": "言い換えれば",
+        "authorConclusion": "成熟した精神を培うためには、表層的なつながりをあえて遮断し、「豊かな孤独」を抱きしめる勇気こそが不可欠なのである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa tiền đề nông cạn của xã hội): Quan niệm tiêu cực ở đoạn 1 bị tác giả bác bỏ hoàn toàn.",
+        "opt2": "❌ BẪY TƯ DUY (Đánh tráo khái niệm): Tác giả phân biệt rạch ròi 孤独 (Solitude - cô đơn tích cực) với 孤立 (Isolation - cô lập tiêu cực).",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với thông điệp diễn đạt lại sau chữ 「言い換えれば」 và toàn bộ đoạn 2 & 3: Khoảng thời gian tĩnh lặng đối thoại nội tâm để nuôi dưỡng tinh thần chín muồi.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa): Tác giả không khuyên từ bỏ xã hội hay từ chối giao tiếp trọn đời."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, \"sự cô đơn\" thường bị coi như một khiếm khuyết cần khắc phục hoặc một bệnh lý cần tránh xa. Việc luôn kết nối với ai đó trên mạng xã hội được tung hô là bằng chứng của hạnh phúc, thổi bùng lên nỗi sợ hãi và bất an khi phải ở một mình.<br><br>Thế nhưng, đối với con người, cô đơn (Solitude) khác biệt căn bản với sự \"bị cô lập\" (Isolation) khi bị người khác ruồng bỏ. Cô đơn là khoảng thời gian rút lui khỏi ánh nhìn của người khác và sự huyên náo của xã hội để đối thoại với tiếng nói nội tâm của chính mình. Sự sâu sắc của nội tâm và biểu đạt độc sáng chỉ có thể được ươm mầm chính trong vực sâu cô đơn tĩnh lặng này.<br><br>Tựa như cái cây lặng lẽ cắm rễ sâu trong lòng đất tối tăm, tinh thần con người cũng chỉ đâm rễ sâu và đạt được sự kiên cường trong những khoảng thời gian cô đơn không ai nhìn thấy. Nói cách khác, để nuôi dưỡng một tâm hồn chín muồi, lòng can đảm dám cắt đứt những kết nối bề mặt để ôm lấy \"sự cô đơn màu mỡ\" chính là điều không thể thiếu.<br><br><b>【Phân tích cấu trúc 言い換え・比喩 Trung văn】:</b><br>1. <b>Phân biệt khái niệm (概念の峻別):</b> 孤立 (Isolation) vs 孤独 (Solitude).<br>2. <b>Hình ảnh ẩn dụ (比喩):</b> <code>植物が暗い土の中で静かに根を伸ばすように</code> (như cái cây đâm rễ trong đất tối) ẩn dụ cho sự tích lũy nội lực trong thầm lặng.<br>3. <b>Từ nối diễn đạt tương đương:</b> <code>言い換えれば</code> (Nói cách khác).<br>4. <b>Từ khóa then chốt:</b> <code>豊かな孤独</code> (sự cô đơn màu mỡ / phong phú)."
+    }
+  ]
+}
+
+os.makedirs('data/n1_dokkai', exist_ok=True)
+os.makedirs('public/data/n1_dokkai', exist_ok=True)
+
+with open('data/n1_dokkai/shinkanzen_ch02.json', 'w', encoding='utf-8') as f:
+    json.dump(ch02_data, f, ensure_ascii=False, indent=2)
+
+with open('public/data/n1_dokkai/shinkanzen_ch02.json', 'w', encoding='utf-8') as f:
+    json.dump(ch02_data, f, ensure_ascii=False, indent=2)
+
+print('Generated shinkanzen_ch02.json in data/ and public/data/ successfully!')

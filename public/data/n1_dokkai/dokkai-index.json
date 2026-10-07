@@ -22,9 +22,12 @@
     "theme": "Nhận diện mệnh đề đồng nghĩa (つまり・すなわち) và giải mã hình ảnh ẩn dụ",
     "description": "Rèn luyện kỹ năng phát hiện các cách diễn đạt lại tư tưởng của tác giả và giải mã hàm ý ẩn dụ trong câu hỏi N1.",
     "file": "data/n1_dokkai/shinkanzen_ch02.json",
-    "available": false,
-    "totalQuestions": 0,
-    "types": []
+    "available": true,
+    "totalQuestions": 4,
+    "types": [
+      "short",
+      "medium"
+    ]
   },
   {
     "id": "skz_ch03",
