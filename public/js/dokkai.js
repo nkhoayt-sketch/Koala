@@ -728,97 +728,91 @@ export class DokkaiEngine {
           }).join('')}
         </div>
 
-        <!-- Lessons Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5">
+        <!-- Lessons Grid (Minimalist 3 to 4 columns) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           ${filteredPassages.map(item => {
             const hist = progressMap[item.id] || this.userAnswersHistory[item.id];
             const isDone = hist && hist.isCompleted;
             const isCorrect = isDone && hist.isCorrect;
             const timeSpentText = isDone ? this.formatTime(hist.timeSpent || 0) : '';
 
+            // Format type badge: 短文 • 3 phút, 中文 • 7.5 phút, etc.
             const qType = item.mondaiType || 'short';
             const cfg = TIMER_CONFIGS[qType] || TIMER_CONFIGS.short;
-            const typeBadgeText = `${cfg.name.split(' ')[0]} (${cfg.standard.label})`;
-            const chMeta = chStyleMap[item.chapterKey] || { num: 'Bài đọc', style: 'bg-slate-100 text-slate-700 border-slate-200' };
+            const shortTypeName = qType === 'short' ? '短文' : qType === 'medium' ? '中文' : qType === 'long' ? '長文' : qType === 'compare' ? '比較' : '情報検索';
+            const typeBadgeText = `${shortTypeName} • ${cfg.standard.label}`;
+            const chMeta = chStyleMap[item.chapterKey] || { num: '第1章', style: 'bg-slate-100 text-slate-700 border-slate-200' };
 
+            // Status Badge
             let statusBadge = `
-              <span class="px-2.5 py-0.8 rounded-full text-[11px] font-bold bg-slate-100 text-slate-500 border border-slate-200">
+              <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-100 text-slate-500 border border-slate-200">
                 Chưa làm
               </span>
             `;
             if (isDone) {
               if (isCorrect) {
                 statusBadge = `
-                  <span class="px-2.5 py-0.8 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    <span>✓ Hoàn thành (Đúng) • ${timeSpentText}</span>
+                  <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1">
+                    <span>✓ Đúng (${timeSpentText})</span>
                   </span>
                 `;
               } else {
                 statusBadge = `
-                  <span class="px-2.5 py-0.8 rounded-full text-[11px] font-bold bg-rose-50 text-rose-800 border border-rose-300 flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
-                    <span>✕ Đã làm (Sai) • ${timeSpentText}</span>
+                  <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-rose-50 text-rose-800 border border-rose-300 flex items-center gap-1">
+                    <span>✕ Sai (${timeSpentText})</span>
                   </span>
                 `;
               }
             }
 
+            // Minimalist Title: extract "練習 1", "練習 2" or clean title
+            let shortTitle = item.title || `練習 ${item.indexInChapter + 1}`;
+            if (shortTitle.includes('練習')) {
+              const m = shortTitle.match(/練習\s*\d+/);
+              if (m) shortTitle = m[0];
+            } else if (shortTitle.includes('問題')) {
+              const m = shortTitle.match(/問題\s*\d+/);
+              if (m) shortTitle = m[0];
+            }
+
             return `
-              <div class="dokkai-hub-card group bg-white rounded-3xl border ${
+              <div class="dokkai-hub-card group bg-white rounded-2xl border ${
                 isDone 
-                  ? (isCorrect ? 'border-emerald-200/90 hover:border-emerald-400 bg-emerald-50/10' : 'border-rose-200/90 hover:border-rose-400 bg-rose-50/10') 
+                  ? (isCorrect ? 'border-emerald-200 hover:border-emerald-400 bg-emerald-50/15' : 'border-rose-200 hover:border-rose-400 bg-rose-50/15') 
                   : 'border-slate-200/90 hover:border-amber-400'
-              } p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between cursor-pointer" data-passage-id="${item.id}">
+              } p-4 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between cursor-pointer min-h-[160px]" data-passage-id="${item.id}">
                 
                 <div class="space-y-3">
-                  <!-- Badges & Status -->
-                  <div class="flex flex-wrap items-center justify-between gap-1.5">
+                  <!-- Top Row: Chapter Badge + Type & Time Badge + Status Badge -->
+                  <div class="flex items-center justify-between gap-1.5 flex-wrap">
                     <div class="flex items-center gap-1">
-                      <span class="px-2 py-0.5 rounded-md text-[10px] font-extrabold border ${chMeta.style}">
+                      <span class="px-1.5 py-0.5 rounded-md text-[10px] font-extrabold border ${chMeta.style}">
                         ${chMeta.num}
                       </span>
-                      <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-100 text-slate-600">
+                      <span class="px-1.5 py-0.5 rounded-md text-[10px] font-semibold bg-slate-100 text-slate-600">
                         ${typeBadgeText}
                       </span>
                     </div>
                     ${statusBadge}
                   </div>
 
-                    <div>
-                      <h3 class="font-jp text-base font-black text-slate-900 group-hover:text-amber-700 transition leading-snug">
-                        ${this.escapeHtml(item.title)}
-                      </h3>
-                      <p class="text-[11px] text-slate-400 mt-0.5 font-medium truncate">
-                        ${item.chapterTitle}
-                      </p>
-                    </div>
-
-                  <!-- Japanese Excerpt -->
-                  <div class="font-jp text-xs text-slate-600 leading-relaxed bg-slate-50/90 p-3 rounded-2xl border border-slate-100 line-clamp-3 select-none">
-                    ${this.escapeHtml(item.passageExcerpt)}
-                  </div>
-
-                  <!-- Question preview -->
-                  <div class="text-[11px] font-medium text-slate-500 flex items-center gap-1 pt-0.5">
-                    <span class="text-amber-700 font-bold shrink-0">❓ Hỏi:</span>
-                    <span class="truncate font-jp">${this.escapeHtml(item.question)}</span>
+                  <!-- Headline Title -->
+                  <div>
+                    <h3 class="font-jp text-base font-black text-slate-900 group-hover:text-amber-700 transition tracking-tight">
+                      ${this.escapeHtml(shortTitle)}
+                    </h3>
                   </div>
                 </div>
 
-                <!-- Launch Button -->
-                <div class="pt-4 mt-3 border-t border-slate-100">
+                <!-- Bottom Action Button -->
+                <div class="pt-3 border-t border-slate-100">
                   ${!isDone ? `
-                    <button type="button" class="btn-card-launch w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 active:scale-98 text-white font-bold text-xs shadow-xs transition flex items-center justify-center gap-1.5 cursor-pointer">
+                    <button type="button" class="btn-card-launch w-full py-2 px-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 active:scale-98 text-white font-bold text-xs shadow-2xs transition flex items-center justify-center gap-1 cursor-pointer">
                       <span>Luyện tập ngay 🚀</span>
                     </button>
-                  ` : isCorrect ? `
-                    <button type="button" class="btn-card-launch w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 active:scale-98 text-emerald-800 font-bold text-xs border border-emerald-300 transition flex items-center justify-center gap-1.5 cursor-pointer">
-                      <span>Xem lại phân tích 🔍</span>
-                    </button>
                   ` : `
-                    <button type="button" class="btn-card-launch w-full py-2.5 px-3 rounded-xl bg-rose-50 hover:bg-rose-100 active:scale-98 text-rose-800 font-bold text-xs border border-rose-300 transition flex items-center justify-center gap-1.5 cursor-pointer">
-                      <span>Mổ xẻ nguyên nhân sai 🔍</span>
+                    <button type="button" class="btn-card-launch w-full py-2 px-3 rounded-xl ${isCorrect ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border-emerald-300' : 'bg-rose-50 hover:bg-rose-100 text-rose-800 border-rose-300'} active:scale-98 font-bold text-xs border transition flex items-center justify-center gap-1 cursor-pointer">
+                      <span>Xem lại phân tích 🔍</span>
                     </button>
                   `}
                 </div>
