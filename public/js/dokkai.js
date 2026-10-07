@@ -620,13 +620,13 @@ export class DokkaiEngine {
     const progressPct = totalCount > 0 ? Math.round((doneCount / totalCount) * 100) : 0;
 
     const chaptersMeta = [
-      { key: 'all', label: 'Tất cả bài học', color: 'bg-slate-900', lightColor: 'bg-slate-100 text-slate-700' },
-      { key: 'skz_ch01', label: '第1章: 対比', color: 'bg-amber-600', lightColor: 'bg-amber-100 text-amber-800' },
-      { key: 'skz_ch02', label: '第2章: 言い換え', color: 'bg-indigo-600', lightColor: 'bg-indigo-100 text-indigo-800' },
-      { key: 'skz_ch03', label: '第3章: 主張', color: 'bg-emerald-600', lightColor: 'bg-emerald-100 text-emerald-800' },
-      { key: 'skz_ch04', label: '第4章: 指示語', color: 'bg-teal-600', lightColor: 'bg-teal-100 text-teal-800' },
-      { key: 'skz_ch05', label: '第5章: 理由', color: 'bg-rose-600', lightColor: 'bg-rose-100 text-rose-800' },
-      { key: 'skz_ch06', label: '第6章: 実践', color: 'bg-purple-600', lightColor: 'bg-purple-100 text-purple-800' },
+      { key: 'all', label: 'Tất cả', color: 'bg-slate-900', lightColor: 'bg-slate-100 text-slate-700' },
+      { key: 'skz_ch01', label: '第1章', color: 'bg-amber-600', lightColor: 'bg-amber-100 text-amber-800' },
+      { key: 'skz_ch02', label: '第2章', color: 'bg-indigo-600', lightColor: 'bg-indigo-100 text-indigo-800' },
+      { key: 'skz_ch03', label: '第3章', color: 'bg-emerald-600', lightColor: 'bg-emerald-100 text-emerald-800' },
+      { key: 'skz_ch04', label: '第4章', color: 'bg-teal-600', lightColor: 'bg-teal-100 text-teal-800' },
+      { key: 'skz_ch05', label: '第5章', color: 'bg-rose-600', lightColor: 'bg-rose-100 text-rose-800' },
+      { key: 'skz_ch06', label: '第6章', color: 'bg-purple-600', lightColor: 'bg-purple-100 text-purple-800' },
     ];
 
     const chStyleMap = {
