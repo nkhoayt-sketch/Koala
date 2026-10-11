@@ -3,7 +3,7 @@
   "chapter": "第2章：言い換え・比喩",
   "title": "Chương 2: Diễn đạt tương đương & Phép ẩn dụ (言い換え・比喩)",
   "description": "Phương pháp Shin Kanzen Dokkai N1: Bóc tách từ đồng nghĩa, cấu trúc giải thích lại (つまり・要するに・すなわち) và giải mã hình ảnh ẩn dụ (比喩) để nắm bắt thông điệp then chốt của tác giả.",
-  "totalQuestions": 4,
+  "totalQuestions": 6,
   "questions": [
     {
       "id": "skz_ch02_q01",
@@ -112,6 +112,60 @@
         "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa): Tác giả không khuyên từ bỏ xã hội hay từ chối giao tiếp trọn đời."
       },
       "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội hiện đại, \"sự cô đơn\" thường bị coi như một khiếm khuyết cần khắc phục hoặc một bệnh lý cần tránh xa. Việc luôn kết nối với ai đó trên mạng xã hội được tung hô là bằng chứng của hạnh phúc, thổi bùng lên nỗi sợ hãi và bất an khi phải ở một mình.<br><br>Thế nhưng, đối với con người, cô đơn (Solitude) khác biệt căn bản với sự \"bị cô lập\" (Isolation) khi bị người khác ruồng bỏ. Cô đơn là khoảng thời gian rút lui khỏi ánh nhìn của người khác và sự huyên náo của xã hội để đối thoại với tiếng nói nội tâm của chính mình. Sự sâu sắc của nội tâm và biểu đạt độc sáng chỉ có thể được ươm mầm chính trong vực sâu cô đơn tĩnh lặng này.<br><br>Tựa như cái cây lặng lẽ cắm rễ sâu trong lòng đất tối tăm, tinh thần con người cũng chỉ đâm rễ sâu và đạt được sự kiên cường trong những khoảng thời gian cô đơn không ai nhìn thấy. Nói cách khác, để nuôi dưỡng một tâm hồn chín muồi, lòng can đảm dám cắt đứt những kết nối bề mặt để ôm lấy \"sự cô đơn màu mỡ\" chính là điều không thể thiếu.<br><br><b>【Phân tích cấu trúc 言い換え・比喩 Trung văn】:</b><br>1. <b>Phân biệt khái niệm (概念の峻別):</b> 孤立 (Isolation) vs 孤独 (Solitude).<br>2. <b>Hình ảnh ẩn dụ (比喩):</b> <code>植物が暗い土の中で静かに根を伸ばすように</code> (như cái cây đâm rễ trong đất tối) ẩn dụ cho sự tích lũy nội lực trong thầm lặng.<br>3. <b>Từ nối diễn đạt tương đương:</b> <code>言い換えれば</code> (Nói cách khác).<br>4. <b>Từ khóa then chốt:</b> <code>豊かな孤独</code> (sự cô đơn màu mỡ / phong phú)."
+    },
+    {
+      "id": "skz_ch02_q05",
+      "chapter": "第2章：言い換え・比喩",
+      "title": "第2章 実践・中文 1 - 問1",
+      "mondaiType": "medium",
+      "passage": "古典的な書物の読書体験を、未知の山岳を登攀する行為に譬えることができる。ベストセラーの娯楽小説や手軽な解説書を読むことが、整備された遊歩道を散策することであるならば、何世紀にもわたって読み継がれてきた古典に挑むことは、自らの手足を使って切り立った岩壁によじ登るような労苦を伴う。そこには即座に理解できる平易な言葉や、手軽な教訓などは用意されていない。\n\nすなわち、古典を読むという営みは、単なる知識の消費ではなく、読者自身が著者の強靭な知性と格闘し、思考の強度を限界まで引き上げられる「精神の筋力トレーニング」にほかならないのである。一見すると難解で時代錯誤に思える語句の一行一句に立ち止まり、その底にある意味の地層を掘り下げる過程でこそ、私たちの精神は既存の常識の枠組みを打ち破る新たな視座を獲得する。\n\n登山者が険しい頂に立ったときに初めて眼下に広がる壮大なパノラマを目撃できるように、難解な古典を粘り強く読了した者だけが、時代や文化の制約を超えた普遍的な人間理解の地平に到達することができるのだ。手軽な要約で満足することは、登山の過程を省略してロープウェイで展望台に運ばれるようなものであり、自らの足で登り詰めた者だけが得られる真の変容を味わうことはできない。",
+      "question": "筆者が古典を読むことを「精神の筋力トレーニング」と言い換えているのはなぜか。",
+      "options": [
+        "短時間で実用的な知識を大量に暗記し、試験やビジネスで即効性のある成果を出すため。",
+        "難解なテキストと格闘し思索を深める過程を通じて、読者自身の思考の強度が鍛えられるから。",
+        "古典の知識を消費することで、他者との知的優位性を誇示するための教養が身につくから。",
+        "娯楽小説を読むときと同じように、リラックスした状態で精神の疲労を回復できるから。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "ベストセラーの娯楽小説や手軽な解説書を読むことが、整備された遊歩道を散策することであるならば",
+        "turningPoint": "すなわち、古典を読むという営みは、単なる知識の消費ではなく、読者自身が著者の強靭な知性と格闘し、思考の強度を限界まで引き上げられる「精神の筋力トレーニング」にほかならないのである",
+        "authorConclusion": "一見すると難解で時代錯誤に思える語句の一行一句に立ち止まり、その底にある意味の地層を掘り下げる過程でこそ、私たちの精神は既存の常識の枠組みを打ち破る新たな視座を獲得する"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Thực dụng hóa ngắn hạn): Đọc sách kinh điển không đem lại kết quả ăn liền kiểu mẹo mực.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với cách diễn đạt tương đương: vật lộn với tư tưởng khó nhằn của tác giả để nâng giới hạn cơ bắp tư duy.",
+        "opt3": "❌ BẪY TƯ DUY (Đánh tráo mục đích): Đọc kinh điển không nhằm khoe mẽ tri thức thượng đẳng.",
+        "opt4": "❌ BẪY TƯ DUY (Ngược nghĩa ẩn dụ): Đọc kinh điển là leo núi đá hiểm trở đầy nhọc nhằn, không phải dạo bộ thư giãn."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trải nghiệm đọc kinh điển có thể ví như việc leo lên một đỉnh núi chưa ai biết. Nếu đọc sách giải trí bán chạy là đi dạo trên lối mòn phẳng phiu, thì đối mặt kinh điển là việc dùng chân tay leo lên vách đá dựng đứng.<br><br>Nói cách khác (すなわち), đọc kinh điển là 'tập thể hình cho cơ bắp tinh thần', nơi độc giả vật lộn cùng trí tuệ của tác giả để nâng giới hạn tư duy."
+    },
+    {
+      "id": "skz_ch02_q06",
+      "chapter": "第2章：言い換え・比喩",
+      "title": "第2章 実践・中文 1 - 問2",
+      "mondaiType": "medium",
+      "passage": "古典的な書物の読書体験を、未知の山岳を登攀する行為に譬えることができる。ベストセラーの娯楽小説や手軽な解説書を読むことが、整備された遊歩道を散策することであるならば、何世紀にもわたって読み継がれてきた古典に挑むことは、自らの手足を使って切り立った岩壁によじ登るような労苦を伴う。そこには即座に理解できる平易な言葉や、手軽な教訓などは用意されていない。\n\nすなわち、古典を読むという営みは、単なる知識の消費ではなく、読者自身が著者の強靭な知性と格闘し、思考の強度を限界まで引き上げられる「精神の筋力トレーニング」にほかならないのである。一見すると難解で時代錯誤に思える語句の一行一句に立ち止まり、その底にある意味の地層を掘り下げる過程でこそ、私たちの精神は既存の常識の枠組みを打ち破る新たな視座を獲得する。\n\n登山者が険しい頂に立ったときに初めて眼下に広がる壮大なパノラマを目撃できるように、難解な古典を粘り強く読了した者だけが、時代や文化の制約を超えた普遍的な人間理解の地平に到達することができるのだ。手軽な要約で満足することは、登山の過程を省略してロープウェイで展望台に運ばれるようなものであり、自らの足で登り詰めた者だけが得られる真の変容を味わうことはできない。",
+      "question": "「手軽な要約で満足すること」について、筆者はどのように捉えているか。",
+      "options": [
+        "読書にかかる時間を節約し、より多くの古典の知識を効率的に網羅するための有効な手段である。",
+        "自らの頭で思索を深める労苦を伴わないため、読書を通じた真の人間的変容をもたらさない。",
+        "ロープウェイのように安全に頂上に到達できるため、現代人にとって最も推奨される読書スタイルである。",
+        "難解な古典の本質を完璧に凝縮しているため、原文を読むのと全く同等の読書体験が得られる。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "手軽な要約で満足することは、登山の過程を省略してロープウェイで展望台に運ばれるようなものであり",
+        "turningPoint": "登山者が険しい頂に立ったときに初めて眼下に広がる壮大なパノラマを目撃できるように、難解な古典を粘り強く読了した者だけが、時代や文化の制約を超えた普遍的な人間理解の地平に到達することができるのだ",
+        "authorConclusion": "自らの足で登り詰めた者だけが得られる真の変容を味わうことはできない"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa góc nhìn hiệu suất): Tác giả phê phán việc đi tắt đón đầu qua các bản tóm tắt hời hợt.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp trọn vẹn với ẩn dụ cáp treo: bỏ qua nhọc nhằn tự thân leo núi thì không bao giờ nếm trải sự biến chuyển nội tâm thực thụ.",
+        "opt3": "❌ BẪY TƯ DUY (Đồng tình với hành vi bị tác giả chê): Tác giả dùng hình ảnh cáp treo với hàm ý mỉa mai, không phải khuyến khích.",
+        "opt4": "❌ BẪY TƯ DUY (Thổi phồng phi thực tế): Bản tóm tắt không thể thay thế việc đối thoại trực tiếp với nguyên tác."
+      },
+      "explanation": "<b>【Phân tích ẩn dụ chiếc cáp treo (ロープウェイ)】:</b><br>Tác giả dùng hình ảnh đi cáp treo lên đài quan sát để ẩn dụ cho việc đọc bản tóm tắt ăn liền: tuy nhanh nhưng bỏ qua quá trình tự bước đi, vì thế không thể đạt được sự biến chuyển tư duy sâu sắc."
     }
   ]
 }

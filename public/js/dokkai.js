@@ -67,7 +67,7 @@ export class DokkaiEngine {
    * Preload all chapter JSON files (ch01 to ch06) and assemble the flattened passage registry
    */
   async ensureDataLoaded() {
-    if (this.allPassages.length >= 24 && Object.keys(this.cachedChapters).length >= 6) {
+    if (this.allPassages.length >= 43 && Object.keys(this.cachedChapters).length >= 6) {
       return;
     }
 
@@ -144,6 +144,9 @@ export class DokkaiEngine {
    */
   async showHub(filterTab = 'all') {
     this.stopTimer();
+    if (this.app && typeof this.app.hideSidebar === 'function') {
+      this.app.hideSidebar();
+    }
     await this.ensureDataLoaded();
     this.loadPersistedProgress();
     this.viewMode = 'hub';
@@ -156,6 +159,9 @@ export class DokkaiEngine {
    * Open a specific passage directly from the Hub grid
    */
   async openPassage(passageId) {
+    if (this.app && typeof this.app.hideSidebar === 'function') {
+      this.app.hideSidebar();
+    }
     await this.ensureDataLoaded();
     this.loadPersistedProgress();
 
@@ -182,8 +188,8 @@ export class DokkaiEngine {
     }
 
     this.render();
-    if (this.app && typeof this.app.openContextualAccordion === 'function') {
-      this.app.openContextualAccordion('n1_dokkai');
+    if (this.app && typeof this.app.hideSidebar === 'function') {
+      this.app.hideSidebar();
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -674,7 +680,7 @@ export class DokkaiEngine {
                   Dokkai N1 • 新完全マスター読解 自由練習ハブ
                 </h1>
                 <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl leading-relaxed">
-                  Kho luyện đọc hiểu Dokkai N1 toàn diện với 24 bài đọc thực chiến thuộc 6 chương. Luyện tư duy bóc tách cấu trúc, phản xạ bắt bẫy và làm chủ thời gian thi thật mà không bị gò bó thứ tự.
+                  Kho luyện đọc hiểu Dokkai N1 toàn diện với ${totalCount} bài đọc thực chiến thuộc 6 chương. Luyện tư duy bóc tách cấu trúc, phản xạ bắt bẫy và làm chủ thời gian thi thật mà không bị gò bó thứ tự.
                 </p>
               </div>
             </div>

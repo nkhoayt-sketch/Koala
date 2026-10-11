@@ -3,7 +3,7 @@
   "chapter": "第3章：疑問提示・筆者の主張",
   "title": "Chương 3: Câu hỏi gợi mở & Quan điểm của tác giả (疑問提示・筆者の主張)",
   "description": "Phương pháp Shin Kanzen Dokkai N1: Bắt trọn câu hỏi tu từ (〜だろうか・〜ではないか), nhận diện cách tác giả tự đặt vấn đề để lật ngược định kiến và chốt hạ quan điểm then chốt.",
-  "totalQuestions": 4,
+  "totalQuestions": 6,
   "questions": [
     {
       "id": "skz_ch03_q01",
@@ -112,6 +112,60 @@
         "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa tiêu cực): Tác giả không bảo bài xích khoa học trong quyết sách xã hội."
       },
       "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Diễn ngôn khoa học thường có xu hướng được xã hội tiếp nhận như một 'chân lý khách quan tuyệt đối' đã loại trừ mọi thiên kiến và chủ quan. Những kết luận được nâng đỡ bởi số liệu thực nghiệm dường như được tin tưởng tuyệt đối như thể không còn chút nghi ngờ nào. Thế nhưng, liệu ngay cả những câu hỏi do các nhà khoa học đặt ra và góc nhìn diễn giải dữ liệu có thực sự hoàn toàn độc lập khỏi mối quan tâm xã hội và tinh thần thời đại của con người hay không?<br><br>Nhìn lại lịch sử khoa học, những ví dụ về các lý thuyết từng được coi là chân lý bất di bất dịch ở một thời kỳ rồi sau đó bị đảo lộn bởi sự chuyển dịch hệ hình nhiều không đếm xuể. Tri thức khoa học thực chất chỉ là một 'sự đồng thuận tạm thời' có sức chịu đựng tốt nhất trước các phản biện ở thời điểm hiện tại. Thay vì tuyệt đối hóa và mù quáng tin theo khoa học, việc giữ thái độ khiêm nhường nhìn nhận khoa học như một hệ thống giả thuyết luôn mở ra cho sự tự kiểm chứng và đối thoại phản biện mới thực sự xứng đáng với tinh thần khoa học chân chính."
+    },
+    {
+      "id": "skz_ch03_q05",
+      "chapter": "第3章：疑問提示・筆者の主張",
+      "title": "第3章 実践・中文 1 - 問1",
+      "mondaiType": "medium",
+      "passage": "インターネット空間の言論において、私たちは「自分自身で情報を取捨選択し、主体的に意思決定を行っている」と信じて疑わない。膨大なニュースやSNSの投稿の中から、自らの価値観に合致するオピニオンを選び取ることこそが、個人の自律的な思考の証であると考えられている。だが、私たちが「自分の意志」と信じ込んでいるその判断は、本当にアルゴリズムの誘導から自由なものなのだろうか。\n\n現実には、プラットフォームが提供する推薦アルゴリズムは、ユーザーの過去の閲覧履歴や感情的反応を精緻に分析し、最もエンゲージメントを高めやすい情報だけを選択的に提示し続けている。その結果、私たちは知らず知らずのうちに自らの偏見を強化する心地よい情報だけに囲まれ、異なる視点を排除する「認識の牢獄」に自発的に幽閉されてしまっているのではないか。自ら選んでいるつもりで、実はアルゴリズムに選ばされているにすぎないのだ。\n\n真の知的自律性とは、推薦される快適な情報に安住することではなく、自らの信条を揺るがすような不都合な他者の声にあえて身を晒し、自らの偏見を不断に相対化し続ける営みの中にこそ成立する。客観的な客体として情報を消費するのではなく、自らの認知の限界を自覚的に問い直す態度を持たない限り、デジタルの海で思考の自由を維持することはできない。",
+      "question": "現代の情報接触について、筆者が問題視している点は何か。",
+      "options": [
+        "推薦アルゴリズムの精度が低いため、ユーザーが求める情報にアクセスする効率が落ちていること。",
+        "自分の意志で選んでいるつもりが、アルゴリズムに誘導され偏見を強化する情報に幽閉されていること。",
+        "インターネット上の情報量が多すぎるため、若者がニュースを読む習慣を失ってしまっていること。",
+        "プラットフォームが利用者の個人情報を不正に売買し、思想信条の自由を直接侵害していること。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "膨大なニュースやSNSの投稿の中から、自らの価値観に合致するオピニオンを選び取ることこそが、個人の自律的な思考の証であると考えられている",
+        "turningPoint": "だが、私たちが「自分の意志」と信じ込んでいるその判断は、本当にアルゴリズムの誘導から自由なものなのだろうか",
+        "authorConclusion": "自ら選んでいるつもりで、実はアルゴリズムに選ばされているにすぎないのだ"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Ngược thực tế): Thuật toán đề xuất quá tinh vi chứ không phải kém cỏi.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với câu hỏi tu từ và phân tích đoạn 2: ngỡ là tự chọn nhưng thực chất bị nhốt trong nhà tù nhận thức tự củng cố định kiến.",
+        "opt3": "❌ BẪY TƯ DUY (Đưa thông tin ngoài bài): Bài đọc không nói về việc mất thói quen đọc tin.",
+        "opt4": "❌ BẪY TƯ DUY (Lạc đề pháp lý): Bài đọc phân tích tâm lý nhận thức, không bàn chuyện buôn bán dữ liệu cá nhân."
+      },
+      "explanation": "<b>【Phân tích câu hỏi tu từ 疑問提示】:</b><br>Tác giả dùng câu hỏi gợi mở <code>本当にアルゴリズムの誘導から自由なものなのだろうか</code> để đánh đổ định kiến rằng người dùng mạng có toàn quyền tự chủ."
+    },
+    {
+      "id": "skz_ch03_q06",
+      "chapter": "第3章：疑問提示・筆者の主張",
+      "title": "第3章 実践・中文 1 - 問2",
+      "mondaiType": "medium",
+      "passage": "インターネット空間の言論において、私たちは「自分自身で情報を取捨選択し、主体的に意思決定を行っている」と信じて疑わない。膨大なニュースやSNSの投稿の中から、自らの価値観に合致するオピニオンを選び取ることこそが、個人の自律的な思考の証であると考えられている。だが、私たちが「自分の意志」と信じ込んでいるその判断は、本当にアルゴリズムの誘導から自由なものなのだろうか。\n\n現実には、プラットフォームが提供する推薦アルゴリズムは、ユーザーの過去の閲覧履歴や感情的反応を精緻に分析し、最もエンゲージメントを高めやすい情報だけを選択的に提示し続けている。その結果、私たちは知らず知らずのうちに自らの偏見を強化する心地よい情報だけに囲まれ、異なる視点を排除する「認識の牢獄」に自発的に幽閉されてしまっているのではないか。自ら選んでいるつもりで、実はアルゴリズムに選ばされているにすぎないのだ。\n\n真の知的自律性とは、推薦される快適な情報に安住することではなく、自らの信条を揺るがすような不都合な他者の声にあえて身を晒し、自らの偏見を不断に相対化し続ける営みの中にこそ成立する。客観的な客体として情報を消費するのではなく、自らの認知の限界を自覚的に問い直す態度を持たない限り、デジタルの海で思考の自由を維持することはできない。",
+      "question": "「真の知的自律性」について、筆者の主張と最も合致するものはどれか。",
+      "options": [
+        "自分の価値観と一致するオピニオンを徹底的に収集し、自らの信念を一切揺るがさない姿勢。",
+        "アルゴリズムの推薦機能を最大限に活用し、最も効率的に偏りのない知識を蓄積すること。",
+        "快適な情報にとどまらず、自らの偏見を揺るがす不都合な異見に触れて認知の限界を問い直すこと。",
+        "インターネットやSNSの利用を完全に断ち、デジタル技術を一切使わずに思索を深めること。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "その結果、私たちは知らず知らずのうちに自らの偏見を強化する心地よい情報だけに囲まれ",
+        "turningPoint": "客観的な客体として情報を消費するのではなく",
+        "authorConclusion": "真の知的自律性とは、推薦される快適な情報に安住することではなく、自らの信条を揺るがすような不都合な他者の声にあえて身を晒し、自らの偏見を不断に相対化し続ける営みの中にこそ成立する"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Bảo thủ hóa quan điểm): Tác giả chống lại việc chỉ bám chặt vào quan điểm cá nhân có sẵn.",
+        "opt2": "❌ BẪY TƯ DUY (Trái ngược cảnh báo): Tác giả cảnh báo nguy cơ bị thuật toán thao túng nhận thức.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp 100% với câu chốt của tác giả ở đoạn cuối: dũng cảm đối diện với ý kiến trái chiều gây khó chịu để liên tục tương đối hóa định kiến bản thân.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa giải pháp): Tác giả không yêu cầu cấm tiệt Internet."
+      },
+      "explanation": "<b>【Phân tích quan điểm của tác giả (筆者の主張)】:</b><br>Tác giả kết luận bằng công thức: <code>〜ではなく、〜の中にこそ成立する</code>. Độc lập tri thức thật sự là việc dám đối diện với những góc nhìn trái chiều làm rung chuyển định kiến bản thân."
     }
   ]
 }

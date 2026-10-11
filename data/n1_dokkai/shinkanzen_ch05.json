@@ -3,7 +3,7 @@
   "chapter": "第5章：理由・因果関係",
   "title": "Chương 5: Mối quan hệ nhân quả & Lý do (理由・因果関係)",
   "description": "Phương pháp Shin Kanzen Dokkai N1: Lần theo cấu trúc giải thích nguyên nhân (なぜなら・〜からだ・〜に起因する) để trả lời chính xác câu hỏi 'Vì sao tác giả lập luận như vậy?'.",
-  "totalQuestions": 4,
+  "totalQuestions": 6,
   "questions": [
     {
       "id": "skz_ch05_q01",
@@ -112,6 +112,60 @@
         "opt4": "❌ BẪY TƯ DUY (Suy diễn không liên quan): Bài không bàn về sự suy giảm năng lực ngôn ngữ của xã hội."
       },
       "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong giao tiếp trực diện, con người trực giác đọc được nhiều thông tin hơn từ những tín hiệu phi ngôn ngữ như ánh mắt, tông giọng, hay biến đổi vi mô trên nét mặt của đối phương hơn là câu chữ đơn thuần. Trong các thí nghiệm tâm lý học, khi thông tin ngôn ngữ và phi ngôn ngữ mâu thuẫn nhau, người nghe áp đảo chọn tin vào thông tin phi ngôn ngữ.<br><br>Điều này là bởi vì trong khi ngôn từ là sản phẩm của lý tính và rất dễ để cố ý nói dối, thì phản ứng thân thể và cử chỉ vô thức lại gắn liền trực tiếp với chuyển động cảm xúc, cực kỳ khó để giả tạo. Nói cách khác, giao tiếp phi ngôn ngữ đóng vai trò quyết định trong việc xây dựng lòng tin chính là vì thân thể là một người kể chuyện thành thật, ít biết nói dối hơn nhiều so với ngôn từ."
+    },
+    {
+      "id": "skz_ch05_q05",
+      "chapter": "第5章：理由・因果関係",
+      "title": "第5章 実践・中文 1 - 問1",
+      "mondaiType": "medium",
+      "passage": "各地の伝統工芸や職人技が後継者不足に悩み、次々と衰退の危機に瀕している。この現象の原因について、世間では「若者のものづくり離れ」や「伝統文化への敬意の欠如」といった、受け手側の意識の変化に理由を求める言説が後を絶たない。若者が苦労を嫌い、手軽なデスクワークやIT産業ばかりを志向するようになったからだという批判は、極めてわかりやすい解釈として人口に膾炙している。\n\nなぜなら、ものづくりに対する情熱や関心を持つ若者は依然として多数存在するにもかかわらず、その技術を専業として生活を成り立たせるための「経済的循環構造」が完全に崩壊してしまっているからだ。どれほど卓越した技術を身につけても、製品の正当な価値が市場で評価されず、原材料費や制作時間にすら見合わない不当な安価で買いたたかれる現状では、生活の基盤を築くことなど不可能である。\n\nすなわち、後継者不足の真因は、個人の精神性や若者の気質の変化にあるのではなく、熟練の技に対して適正な対価を保証し、職人が誇りを持って自活できる持続可能な市場エコシステムを構築してこなかった社会構造の不全にこそあるのだ。精神論で若者を責めるのをやめ、工芸の価値を正当に換金できる流通と評価の仕組みを再設計することこそが、危機の根治につながる唯一の道である。",
+      "question": "伝統工芸の後継者不足について、世間で広く信じられている解釈はどのようなものか。",
+      "options": [
+        "原材料の高騰により、伝統工芸品の製造コストが採算ラインを超えてしまったこと。",
+        "若者のものづくり離れや伝統文化への敬意不足など、若者の意識や気質の変化に原因があるとする解釈。",
+        "国や自治体からの助成金が打ち切られ、職人の養成学校が閉鎖されたこと。",
+        "海外からの安価な複製品が市場に大量流入し、本物の工芸品の需要が消滅したこと。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "若者が苦労を嫌い、手軽なデスクワークやIT産業ばかりを志向するようになったからだという批判は、極めてわかりやすい解釈として人口に膾炙している",
+        "turningPoint": "なぜなら、ものづくりに対する情熱や関心を持つ若者は依然として多数存在するにもかかわらず",
+        "authorConclusion": "その技術を専業として生活を成り立たせるための「経済的循環構造」が完全に崩壊してしまっているからだ"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đưa yếu tố kinh tế): Đây là thực tế khách quan ở đoạn 2, không phải quan niệm phổ biến ở đoạn 1.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với tiền đề số đông được nêu ở đoạn 1: dư luận dễ dãi quy chụp cho giới trẻ lười biếng, thiếu tôn trọng văn hóa truyền thống.",
+        "opt3": "❌ BẪY TƯ DUY (Đưa thông tin ngoài bài): Bài đọc không đề cập chuyện cắt học bổng hay đóng cửa trường.",
+        "opt4": "❌ BẪY TƯ DUY (Yếu tố thị trường ngoài bài): Bài đọc không đổ lỗi cho hàng nhái ngoại nhập."
+      },
+      "explanation": "<b>【Phân tích mối quan hệ nhân quả (理由・因果関係)】:</b><br>Đoạn 1 nêu lý do giả định của dư luận (世間の解釈): quy kết cho tâm lý giới trẻ. Đoạn 2 bẻ gãy giả định này bằng từ nối chỉ nguyên nhân thật sự: <code>なぜなら〜からだ</code>."
+    },
+    {
+      "id": "skz_ch05_q06",
+      "chapter": "第5章：理由・因果関係",
+      "title": "第5章 実践・中文 1 - 問2",
+      "mondaiType": "medium",
+      "passage": "各地の伝統工芸や職人技が後継者不足に悩み、次々と衰退の危機に瀕している。この現象の原因について、世間では「若者のものづくり離れ」や「伝統文化への敬意の欠如」といった、受け手側の意識の変化に理由を求める言説が後を絶たない。若者が苦労を嫌い、手軽なデスクワークやIT産業ばかりを志向するようになったからだという批判は、極めてわかりやすい解釈として人口に膾炙している。\n\nなぜなら、ものづくりに対する情熱や関心を持つ若者は依然として多数存在するにもかかわらず、その技術を専業として生活を成り立たせるための「経済的循環構造」が完全に崩壊してしまっているからだ。どれほど卓越した技術を身につけても、製品の正当な価値が市場で評価されず、原材料費や制作時間にすら見合わない不当な安価で買いたたかれる現状では、生活の基盤を築くことなど不可能である。\n\nすなわち、後継者不足の真因は、個人の精神性や若者の気質の変化にあるのではなく、熟練の技に対して適正な対価を保証し、職人が誇りを持って自活できる持続可能な市場エコシステムを構築してこなかった社会構造の不全にこそあるのだ。精神論で若者を責めるのをやめ、工芸の価値を正当に換金できる流通と評価の仕組みを再設計することこそが、危機の根治につながる唯一の道である。",
+      "question": "伝統工芸の危機を解決するために、筆者が真に必要だと考えていることは何か。",
+      "options": [
+        "学校教育において若者に精神論を説き、苦労に耐えうる忍耐力を養わせること。",
+        "熟練の技術に見合った適正な対価を保証し、職人が自活できる経済的な市場エコシステムを再設計すること。",
+        "手作業による工芸を廃止し、ITやAIを導入して生産コストを極限まで引き下げること。",
+        "伝統工芸品を博物館に収蔵し、一般市場での商業的取引を全面的に禁止すること。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "どれほど卓越した技術を身につけても、製品の正当な価値が市場で評価されず",
+        "turningPoint": "すなわち、後継者不足の真因は、個人の精神性や若者の気質の変化にあるのではなく",
+        "authorConclusion": "熟練の技に対して適正な対価を保証し、職人が誇りを持って自活できる持続可能な市場エコシステムを構築してこなかった社会構造の不全にこそあるのだ"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa điều tác giả bài trừ): Tác giả yêu cầu chấm dứt việc đổ lỗi bằng luận điệu tinh thần.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp 100% với kết luận nhân quả: giải quyết tận gốc bằng việc xây dựng lại hệ sinh thái thị trường trả công xứng đáng để người thợ tự nuôi sống mình.",
+        "opt3": "❌ BẪY TƯ DUY (Phản bội bản chất thủ công): Đòi cơ giới hóa xóa bỏ thủ công là đi ngược bài đọc.",
+        "opt4": "❌ BẪY TƯ DUY (Cực đoan hóa phi lý): Đưa vào bảo tàng cấm buôn bán là giết chết nghề sống."
+      },
+      "explanation": "<b>【Chốt nguyên nhân cốt lõi (真因の解明)】:</b><br>Tác giả sử dụng liên từ tổng kết <code>すなわち</code> và cấu trúc khẳng định <code>〜にこそあるのだ</code> để khẳng định: mấu chốt nằm ở cơ cấu kinh tế và định giá giá trị, không phải ở phẩm chất người trẻ."
     }
   ]
 }

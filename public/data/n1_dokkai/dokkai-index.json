@@ -8,7 +8,7 @@
     "description": "Chương 1 mở đầu giáo trình Shin Kanzen Master Dokkai N1. Rèn luyện phản xạ bóc tách quan niệm thông thường của xã hội và nắm bắt tức thì thông điệp cốt lõi của tác giả qua các từ nối lật ngược vấn đề.",
     "file": "data/n1_dokkai/shinkanzen_ch01.json",
     "available": true,
-    "totalQuestions": 4,
+    "totalQuestions": 6,
     "types": [
       "short",
       "medium"
@@ -23,7 +23,7 @@
     "description": "Rèn luyện kỹ năng phát hiện các cách diễn đạt lại tư tưởng của tác giả và giải mã hàm ý ẩn dụ trong câu hỏi N1.",
     "file": "data/n1_dokkai/shinkanzen_ch02.json",
     "available": true,
-    "totalQuestions": 4,
+    "totalQuestions": 6,
     "types": [
       "short",
       "medium"
@@ -38,7 +38,7 @@
     "description": "Khám phá cách thức tác giả đặt câu hỏi tu từ để lật ngược định kiến và khẳng định lập trường then chốt.",
     "file": "data/n1_dokkai/shinkanzen_ch03.json",
     "available": true,
-    "totalQuestions": 4,
+    "totalQuestions": 6,
     "types": [
       "short",
       "medium"
@@ -53,7 +53,7 @@
     "description": "Luyện kỹ năng truy tìm đối tượng được chỉ định chính xác, giải quyết triệt để các câu hỏi 'Điều này chỉ cái gì?'.",
     "file": "data/n1_dokkai/shinkanzen_ch04.json",
     "available": true,
-    "totalQuestions": 4,
+    "totalQuestions": 6,
     "types": [
       "short",
       "medium"
@@ -68,7 +68,7 @@
     "description": "Nắm vững phương pháp lần theo nguồn cơn của vấn đề để trả lời chính xác các câu hỏi 'Tại sao tác giả lại nói như vậy?'.",
     "file": "data/n1_dokkai/shinkanzen_ch05.json",
     "available": true,
-    "totalQuestions": 4,
+    "totalQuestions": 6,
     "types": [
       "short",
       "medium"
@@ -79,11 +79,11 @@
     "chapterNumber": 6,
     "chapter": "第6章：実践演習・総合理解",
     "title": "Luyện thực chiến & Đọc hiểu tổng hợp (実践演習・総合理解)",
-    "theme": "Trọn bộ định dạng thi N1: Đoản văn, Trung văn, Trường văn, So sánh A-B, Tìm thông tin",
-    "description": "Luyện tập tổng hợp với các dạng bài thi thực chiến của Shin Kanzen Master Dokkai N1 dưới áp lực phòng thi thật.",
+    "theme": "Trọn bộ 5 định dạng thi N1: Đoản văn, Trung văn, Trường văn, So sánh A-B, Tìm thông tin",
+    "description": "Luyện tập tổng hợp trọn bộ 13 câu hỏi thực chiến chuẩn đề thi JLPT N1 Dokkai dưới áp lực phòng thi thật.",
     "file": "data/n1_dokkai/shinkanzen_ch06.json",
     "available": true,
-    "totalQuestions": 4,
+    "totalQuestions": 13,
     "types": [
       "short",
       "medium",

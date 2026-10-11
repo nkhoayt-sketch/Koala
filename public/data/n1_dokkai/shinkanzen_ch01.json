@@ -3,7 +3,7 @@
   "chapter": "第1章：対比・逆接",
   "title": "Chương 1: Cấu trúc tương phản & nghịch lý (対比・逆接)",
   "description": "Phương pháp độc quyền Shin Kanzen Dokkai: Nhận diện tiền đề số đông (〜と思われがちだが), bắt trọn từ nối lật ngược (しかし・ところが) để chốt chính xác quan điểm tác giả.",
-  "totalQuestions": 4,
+  "totalQuestions": 6,
   "questions": [
     {
       "id": "skz_ch01_q01",
@@ -354,6 +354,60 @@
           "meaning": "Sự chín muồi, trưởng thành sâu sắc"
         }
       ]
+    },
+    {
+      "id": "skz_ch01_q05",
+      "chapter": "第1章：対比・逆接",
+      "title": "第1章 実践・中文 1 - 問1",
+      "mondaiType": "medium",
+      "passage": "高度経済成長期以来、日本企業は個人の能力や実績を客観的な数値で評価する「成果主義」へと大きく舵を切ってきた。年功序列や終身雇用といった従来の日本型雇用慣行は非効率であり、個々人の競争心を刺激することこそが組織の生産性を最大化するという論理は、一見すると極めて合理的で疑う余地のないものに思われた。\n\nしかし、この徹底した個人主義的な評価システムの導入がもたらしたのは、皮肉にも組織全体の活力の減退であった。他者との相対的な優位性を競い合う環境下では、同僚は協働のパートナーではなく競争相手へと変貌し、暗黙知の共有や若手社員への献身的な育成といった「組織の余白」を支えていた利他行動が急速に消失していったのである。個人の数値的成果を合算しても、組織としての総和が必ずしも増大するとは限らない。\n\n真に強靭な組織とは、個人の卓越した能力の総計によって規定されるのではなく、互いの欠落を補い合い、不確実性に直面した際に自発的に助け合える「関係性の質」の中にこそ宿る。短視眼的な個人成果の最大化を追求するあまり、組織の土台である相互信頼という見えない資本を毀損しては本末転倒である。",
+      "question": "成果主義の導入がもたらした弊害について、筆者はどのように述べているか。",
+      "options": [
+        "個人の能力を数値化することが技術的に困難であったため、正当な人事評価が行われなくなった。",
+        "社員間の過剰な競争により利他的な知識共有や育成が失われ、組織全体の活力がかえって衰退した。",
+        "年功序列制度の復活を求める声が強まり、若手社員のモチベーションが著しく低下した。",
+        "終身雇用の廃止によって個々人の生産性は向上したものの、企業の短期的利益が圧迫された。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "個々人の競争心を刺激することこそが組織の生産性を最大化するという論理は、一見すると極めて合理的で疑う余地のないものに思われた",
+        "turningPoint": "しかし、この徹底した個人主義的な評価システムの導入がもたらしたのは、皮肉にも組織全体の活力の減退であった",
+        "authorConclusion": "個人の数値的成果を合算しても、組織としての総和が必ずしも増大するとは限らない"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đưa lý do ngoài bài): Bài đọc không nói về khó khăn kỹ thuật trong lượng hóa, mà nói về sự biến chất trong quan hệ hợp tác.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với đoạn 2: cạnh tranh cá nhân làm mất đi sự sẻ chia tri thức và nâng đỡ lẫn nhau, dẫn đến suy giảm sinh khí toàn tổ chức.",
+        "opt3": "❌ BẪY TƯ DUY (Suy diễn không căn cứ): Bài đọc không nhắc đến việc đòi khôi phục chế độ thâm niên.",
+        "opt4": "❌ BẪY TƯ DUY (Trái ngược lập luận): Bài chỉ ra tổng hòa tổ chức không tăng lên và niềm tin bị xói mòn."
+      },
+      "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Từ thời kỳ tăng trưởng kinh tế cao độ, các doanh nghiệp Nhật Bản đã chuyển hướng mạnh mẽ sang 'chủ nghĩa thành tích' - đánh giá năng lực cá nhân bằng chỉ số khách quan. Lập luận cho rằng tập quán truyền thống như thâm niên là kém hiệu quả và kích thích cạnh tranh mới tối đa hóa năng suất thoạt nhìn tưởng như vô cùng hợp lý.<br><br>Thế nhưng, điều mà việc áp dụng hệ thống đánh giá vị kỷ này mang lại, trớ trêu thay, lại là sự suy giảm sinh khí của toàn bộ tổ chức. Trong môi trường so kè ưu thế hơn thua, đồng nghiệp biến thành đối thủ cạnh tranh, những hành vi vị tha như chia sẻ tri thức ngầm hay tận tâm bồi dưỡng cấp dưới vốn là 'khoảng trống nâng đỡ tổ chức' đã nhanh chóng tan biến. Cộng dồn thành tích cá nhân không đồng nghĩa với tổng thể tổ chức sẽ lớn mạnh.<br><br>Một tổ chức thực sự vững mạnh không được định đoạt bởi tổng số năng lực xuất chúng của các cá nhân, mà nằm ở 'chất lượng của mối tương quan' nơi người ta bù đắp khuyết điểm và tự nguyện tương trợ lẫn nhau khi đối mặt bất định. Mải miết chạy theo tối đa hóa thành tích cá nhân thiển cận mà phá hủy vốn liếng niềm tin nền tảng thì đúng là việc đảo lộn đầu đuôi."
+    },
+    {
+      "id": "skz_ch01_q06",
+      "chapter": "第1章：対比・逆接",
+      "title": "第1章 実践・中文 1 - 問2",
+      "mondaiType": "medium",
+      "passage": "高度経済成長期以来、日本企業は個人の能力や実績を客観的な数値で評価する「成果主義」へと大きく舵を切ってきた。年功序列や終身雇用といった従来の日本型雇用慣行は非効率であり、個々人の競争心を刺激することこそが組織の生産性を最大化するという論理は、一見すると極めて合理的で疑う余地のないものに思われた。\n\nしかし、この徹底した個人主義的な評価システムの導入がもたらしたのは、皮肉にも組織全体の活力の減退であった。他者との相対的な優位性を競い合う環境下では、同僚は協働のパートナーではなく競争相手へと変貌し、暗黙知の共有や若手社員への献身的な育成といった「組織の余白」を支えていた利他行動が急速に消失していったのである。個人の数値的成果を合算しても、組織としての総和が必ずしも増大するとは限らない。\n\n真に強靭な組織とは、個人の卓越した能力の総計によって規定されるのではなく、互いの欠落を補い合い、不確実性に直面した際に自発的に助け合える「関係性の質」の中にこそ宿る。短視眼的な個人成果の最大化を追求するあまり、組織の土台である相互信頼という見えない資本を毀損しては本末転倒である。",
+      "question": "組織のあり方について、筆者が最も主張したいことはどれか。",
+      "options": [
+        "組織の生産性を高めるためには、個人の数値的実績を徹底的に競わせる評価基準を再構築すべきだ。",
+        "不確実な時代を生き抜くには、個人の卓越した能力を単独で最大限に発揮できる環境を整備すべきである。",
+        "組織の強靭さは個人の能力の総和ではなく、互いに補い合い支え合う関係性の質と相互信頼にある。",
+        "組織の活力を維持するには、成果主義を完全に撤廃して従前の日本型雇用慣行をそのまま維持すべきだ。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "年功序列や終身雇用といった従来の日本型雇用慣行は非効率であり",
+        "turningPoint": "個人の数値的成果を合算しても、組織としての総和が必ずしも増大するとは限らない",
+        "authorConclusion": "真に強靭な組織とは、個人の卓越した能力の総計によって規定されるのではなく、互いの欠落を補い合い、不確実性に直面した際に自発的に助け合える「関係性の質」の中にこそ宿る"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa tiền đề bị phê phán): Đây là quan điểm duy thành tích cá nhân mà tác giả đã bác bỏ.",
+        "opt2": "❌ BẪY TƯ DUY (Trái ngược quan điểm): Tác giả nhấn mạnh sức mạnh không nằm ở năng lực cá nhân đơn lẻ.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với câu chốt của tác giả: sức mạnh tổ chức nằm ở chất lượng tương quan và vốn liếng niềm tin nâng đỡ nhau khi đối mặt biến cố.",
+        "opt4": "❌ BẪY TƯ DUY (Đưa giải pháp cực đoan): Tác giả không kêu gọi quay lại mù quáng cách làm cũ mà cảnh báo việc xói mòn niềm tin nền tảng."
+      },
+      "explanation": "<b>【Phân tích kết luận của tác giả】:</b><br>Tác giả sử dụng cấu trúc tương phản cốt lõi của Chương 1: <code>〜によって規定されるのではなく、〜の中にこそ宿る</code> (Không phải định đoạt bởi tổng năng lực cá nhân, mà hiện hữu chính trong chất lượng của mối tương quan). Phương án 3 khớp 100% với luận điểm này."
     }
   ]
 }

@@ -112,7 +112,7 @@
       </div>
 
       <!-- Question Matrix Section (Collapsible Accordion) -->
-      <div id="sidebar-palette-section" class="border-b border-slate-100 bg-white shrink-0">
+      <div id="sidebar-palette-section" class="border-b border-slate-100 bg-white shrink-0 hidden">
         <button id="btn-toggle-palette" type="button" class="w-full px-3.5 py-2.5 flex items-center justify-between text-xs font-bold text-slate-700 hover:bg-slate-50 transition border-b border-slate-50">
           <div class="flex items-center gap-2 min-w-0">
             <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse shrink-0"></span>
@@ -224,7 +224,7 @@
                 <div class="flex items-center gap-2">
                   <span>📚</span>
                   <span class="text-xs font-bold text-slate-800">Dokkai N1</span>
-                  <span id="n1-dokkai-count-tag" class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-amber-50 text-amber-700">24 bài</span>
+                  <span id="n1-dokkai-count-tag" class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-amber-50 text-amber-700">43 bài</span>
                 </div>
                 <svg class="tree-chevron w-3.5 h-3.5 text-slate-400 transition-transform duration-200 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -239,7 +239,7 @@
                         <span class="inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-bold bg-amber-500 text-white">★</span>
                         <span class="truncate">Kho Luyện Đề Tự Do</span>
                       </div>
-                      <span class="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-200 text-amber-900 shrink-0">24 bài</span>
+                      <span id="n1-dokkai-sidebar-badge" class="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-200 text-amber-900 shrink-0">43 bài</span>
                     </button>
                   </li>
                   <li>
@@ -696,9 +696,9 @@
                   <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-700 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-amber-100">
                     読解
                   </span>
-                  <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+                  <span id="home-dokkai-count-badge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    🟢 24 bài thực hành (6 chương)
+                    🟢 43 bài thực hành (6 chương)
                   </span>
                 </div>
 
@@ -713,7 +713,7 @@
               </div>
 
               <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-700 group-hover:text-amber-800">
-                <span>Kho bài đọc tự do (24 bài)</span>
+                <span id="home-dokkai-subtitle">Kho bài đọc tự do (43 bài)</span>
                 <span class="transform group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>

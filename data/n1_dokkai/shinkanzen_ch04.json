@@ -3,7 +3,7 @@
   "chapter": "第4章：指示語・機能表現",
   "title": "Chương 4: Từ chỉ thị & Cấu trúc chức năng (指示語・機能表現)",
   "description": "Phương pháp Shin Kanzen Dokkai N1: Lần theo dấu vết của từ chỉ thị (これ・それ・こうした・このような) và các cấu trúc chức năng mạch lạc để định vị chính xác đối tượng được đề cập.",
-  "totalQuestions": 4,
+  "totalQuestions": 6,
   "questions": [
     {
       "id": "skz_ch04_q01",
@@ -112,6 +112,60 @@
         "opt4": "❌ BẪY TƯ DUY (Nhầm lẫn giữa nguyên nhân và hệ quả suy thoái cảm giác): Việc giảm tiếp xúc tự nhiên là bối cảnh, suy thoái là việc các giác quan bị cùn lụt."
       },
       "explanation": "<b>【Dịch nghĩa bài đọc】:</b><br>Trong xã hội đô thị hóa phát triển, con người bị bao bọc bởi bê tông và ánh sáng nhân tạo, đang nhanh chóng bị tách rời khỏi hơi thở tự nhiên như sự đổi dời của bốn mùa hay mùi hương của đất cát. Những ngày tháng sống trong phòng kín máy lạnh nhiệt độ không đổi đang dần làm cùn mòn đi khả năng thích ứng môi trường và độ nhạy bén của các giác quan vốn có của cơ thể sinh học.<br><br>Sự suy thoái cảm giác cơ thể như thế này không chỉ dừng lại ở vấn đề thể chất đơn thuần, mà còn phủ bóng đen sâu sắc lên sự cạn kiệt cảm xúc và trí tưởng tượng của con người. Việc bị cắt đứt giao cảm với tự nhiên sống động khiến chúng ta đánh mất đi cảm thức căn cốt rằng bản thân mình là một sinh mệnh sống."
+    },
+    {
+      "id": "skz_ch04_q05",
+      "chapter": "第4章：指示語・機能表現",
+      "title": "第4章 実践・中文 1 - 問1",
+      "mondaiType": "medium",
+      "passage": "近代以降の都市計画は、機能性と衛生を最優先し、住宅地、商業地、工業地帯を整然と区分する「ゾーニング」を基本方針としてきた。自動車の円滑な通行を保証する幅広の幹線道路や、用途ごとに純化された整然たる街並みは、都市の効率的な発展を支える理想形とみなされた。\n\nしかし、こうした画一的な都市の区画整理は、街が本来備えていた「有機的な賑わい」を根こそぎ奪い去ることになった。これによって生じた最大の問題は、歩行者が安心して歩き、偶然の出会いや雑談を楽しむ余白が街から消滅したことである。用途が単一化された通りは、夜間や休日になると人通りが途絶え、防犯上の死角と化してしまう。雑多な店舗や住居が混在し、街路に人々の視線が絶え間なく注がれている状態こそが、都市の安全と活気を自発的に生み出す源泉であったのだ。\n\nこのような街の「生きた生態系」を回復するためには、効率至上主義の都市計画を見直さなければならない。単一の機能に特化した無機質な空間ではなく、多様な生活の営みが幾重にも重なり合う街路の再生こそが、現代の都市生活者に人間的な居場所を取り戻させる道である。",
+      "question": "「これによって生じた最大の問題」とあるが、どのような問題を指しているか。",
+      "options": [
+        "自動車の交通量が劇的に増加し、都市中心部で深刻な大気汚染と渋滞が引き起こされたこと。",
+        "商業地と工業地の区分が曖昧になり、都市の産業競争力が国際的に著しく低下したこと。",
+        "用途の純化により街から歩行者の余白や偶発的な交流が消え、夜間に人通りが途絶える死角が生まれたこと。",
+        "住宅地の衛生環境が悪化し、都市住民の健康被害が深刻化したこと。"
+      ],
+      "answer": 3,
+      "logicHighlights": {
+        "counterPremise": "自動車の円滑な通行を保証する幅広の幹線道路や、用途ごとに純化された整然たる街並みは、都市の効率的な発展を支える理想形とみなされた",
+        "turningPoint": "しかし、こうした画一的な都市の区画整理は、街が本来備えていた「有機的な賑わい」を根こそぎ奪い去ることになった",
+        "authorConclusion": "これによって生じた最大の問題は、歩行者が安心して歩き、偶然の出会いや雑談を楽しむ余白が街から消滅したことである"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Nêu vấn đề ngoài bài): Bài đọc không nói về ô nhiễm khí thải xe cộ.",
+        "opt2": "❌ BẪY TƯ DUY (Ngược sự thật): Bài nêu rõ khu vực bị phân chia quá rạch ròi, không phải mơ hồ.",
+        "opt3": "✓ ĐÁP ÁN ĐÚNG: Khớp chính xác với từ chỉ thị 'これ' chỉ việc phân lô quy hoạch đồng nhất làm biến mất khoảng trống giao lưu của người đi bộ và tạo ra điểm mù an ninh.",
+        "opt4": "❌ BẪY TƯ DUY (Ngược tiền đề): Tiền đề bài đọc ghi nhận việc quy hoạch ban đầu nhằm ưu tiên vệ sinh và công năng."
+      },
+      "explanation": "<b>【Phân tích từ chỉ thị (これ・こうした)】:</b><br>Từ chỉ thị <code>これ</code> thay thế trực tiếp cho mệnh đề trước đó: việc quy hoạch đô thị đồng nhất (こうした画一的な都市の区画整理) đã cướp đi sự nhộn nhịp hữu cơ."
+    },
+    {
+      "id": "skz_ch04_q06",
+      "chapter": "第4章：指示語・機能表現",
+      "title": "第4章 実践・中文 1 - 問2",
+      "mondaiType": "medium",
+      "passage": "近代以降の都市計画は、機能性と衛生を最優先し、住宅地、商業地、工業地帯を整然と区分する「ゾーニング」を基本方針としてきた。自動車の円滑な通行を保証する幅広の幹線道路や、用途ごとに純化された整然たる街並みは、都市の効率的な発展を支える理想形とみなされた。\n\nしかし、こうした画一的な都市の区画整理は、街が本来備えていた「有機的な賑わい」を根こそぎ奪い去ることになった。これによって生じた最大の問題は、歩行者が安心して歩き、偶然の出会いや雑談を楽しむ余白が街から消滅したことである。用途が単一化された通りは、夜間や休日になると人通りが途絶え、防犯上の死角と化してしまう。雑多な店舗や住居が混在し、街路に人々の視線が絶え間なく注がれている状態こそが、都市の安全と活気を自発的に生み出す源泉であったのだ。\n\nこのような街の「生きた生態系」を回復するためには、効率至上主義の都市計画を見直さなければならない。単一の機能に特化した無機質な空間ではなく、多様な生活の営みが幾重にも重なり合う街路の再生こそが、現代の都市生活者に人間的な居場所を取り戻させる道である。",
+      "question": "「生きた生態系」を持つ都市の再生について、筆者はどのように考えているか。",
+      "options": [
+        "幹線道路の整備をさらに加速させ、自家用車による移動効率を徹底的に高めるべきだ。",
+        "単一機能の空間ではなく、多様な生活の営みが重なり合い人の視線が行き交う街路を再生すべきだ。",
+        "都市の人口密度を抑制するために、住宅地を郊外へ完全に移転させるべきである。",
+        "商業活動を全面的に規制し、静寂で衛生的な住宅専用の街並みを維持すべきである。"
+      ],
+      "answer": 2,
+      "logicHighlights": {
+        "counterPremise": "用途が単一化された通りは、夜間や休日になると人通りが途絶え、防犯上の死角と化してしまう",
+        "turningPoint": "効率至上主義の都市計画を見直さなければならない",
+        "authorConclusion": "単一の機能に特化した無機質な空間ではなく、多様な生活の営みが幾重にも重なり合う街路の再生こそが、現代の都市生活者に人間的な居場所を取り戻させる道である"
+      },
+      "trapBreakdown": {
+        "opt1": "❌ BẪY TƯ DUY (Đồng hóa tư duy quy hoạch cũ): Đây chính là tư duy hiệu suất xe hơi mà tác giả phản đối.",
+        "opt2": "✓ ĐÁP ÁN ĐÚNG: Khớp 100% với chỉ thị từ 'このような' và câu chốt: hồi sinh những con phố đa dạng nhiều tầng nấc sinh hoạt đan xen.",
+        "opt3": "❌ BẪY TƯ DUY (Đưa giải pháp trái ngược): Tác giả phản đối việc chia tách dân cư ra ngoại ô.",
+        "opt4": "❌ BẪY TƯ DUY (Ngược quan điểm tác giả): Tác giả ủng hộ sự đan xen buôn bán và nhà ở để tạo sự nhộn nhịp."
+      },
+      "explanation": "<b>【Phân tích chỉ thị từ liên kết văn bản】:</b><br>Cụm từ <code>このような街の「生きた生態系」</code> tổng hợp lại đặc tính: các cửa hàng, nhà ở đan xen hỗn hợp, ánh mắt người qua lại bảo vệ an ninh đường phố."
     }
   ]
 }

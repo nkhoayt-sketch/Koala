@@ -564,26 +564,43 @@ class App {
     });
   }
 
-  switchView(viewName) {
+  hideSidebar() {
+    if (this.sidebarEl) this.sidebarEl.classList.add('!hidden');
+    if (this.sidebarBackdrop) this.sidebarBackdrop.classList.add('hidden');
+    if (this.expandSidebarFloatingBtn) this.expandSidebarFloatingBtn.classList.add('hidden');
+    const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
+    if (btnToggleSidebar) btnToggleSidebar.classList.add('hidden');
+    if (this.paletteSection) this.paletteSection.classList.add('!hidden', 'hidden');
+    if (this.mainEl) {
+      this.mainEl.classList.remove('lg:pl-72');
+      this.mainEl.classList.add('lg:pl-0');
+    }
+    const bottomBar = document.getElementById('bottom-action-bar');
+    if (bottomBar) {
+      bottomBar.classList.remove('lg:pl-72');
+      bottomBar.classList.add('lg:pl-0');
+    }
+    const quizBottomBar = document.getElementById('quiz-bottom-bar');
+    if (quizBottomBar) {
+      quizBottomBar.classList.remove('lg:pl-72');
+      quizBottomBar.classList.add('lg:pl-0');
+    }
+  }
+
+  showSidebar() {
+    if (this.sidebarEl) this.sidebarEl.classList.remove('!hidden');
+    const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
+    if (btnToggleSidebar) btnToggleSidebar.classList.remove('hidden');
+    if (this.paletteSection) this.paletteSection.classList.remove('!hidden', 'hidden');
+    this.setSidebarCollapsed(false, false);
+  }
+
+  switchView(viewName, isExam = false) {
     this.currentView = viewName;
 
     if (viewName === 'HOME') {
       // Fully hide sidebar + related elements — Home is full-width dashboard
-      if (this.sidebarEl) this.sidebarEl.classList.add('!hidden');
-      if (this.sidebarBackdrop) this.sidebarBackdrop.classList.add('hidden');
-      if (this.expandSidebarFloatingBtn) this.expandSidebarFloatingBtn.classList.add('hidden');
-      const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
-      if (btnToggleSidebar) btnToggleSidebar.classList.add('hidden');
-      // Remove sidebar left-padding from main content
-      if (this.mainEl) {
-        this.mainEl.classList.remove('lg:pl-72');
-        this.mainEl.classList.add('lg:pl-0');
-      }
-      const bottomBar = document.getElementById('bottom-action-bar');
-      if (bottomBar) {
-        bottomBar.classList.remove('lg:pl-72');
-        bottomBar.classList.add('lg:pl-0');
-      }
+      this.hideSidebar();
 
       if (this.homeViewEl) this.homeViewEl.classList.remove('hidden');
       if (this.testViewEl) this.testViewEl.classList.add('hidden');
@@ -644,12 +661,12 @@ class App {
       if (this.mainEl) this.mainEl.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       // viewName === 'TEST'
-      // Restore sidebar visibility
-      if (this.sidebarEl) this.sidebarEl.classList.remove('!hidden');
-      const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
-      if (btnToggleSidebar) btnToggleSidebar.classList.remove('hidden');
-      // Re-apply sidebar collapsed/expanded state (uses setSidebarCollapsed to manage pl-72)
-      this.setSidebarCollapsed(false, false);
+      if (isExam) {
+        this.showSidebar();
+      } else {
+        // Hubs (Dokkai, N1, N2) stay minimalist with sidebar hidden
+        this.hideSidebar();
+      }
 
       if (this.homeViewEl) this.homeViewEl.classList.add('hidden');
       if (this.testViewEl) this.testViewEl.classList.remove('hidden');
@@ -665,7 +682,7 @@ class App {
       }
 
       // Resume timer if in exam mode and not submitted
-      if (this.currentCourse !== 'n1_dokkai' && this.quizEngine && this.quizEngine.mode === 'exam' && !this.quizEngine.isSubmitted) {
+      if (isExam && this.currentCourse !== 'n1_dokkai' && this.quizEngine && this.quizEngine.mode === 'exam' && !this.quizEngine.isSubmitted) {
         this.quizEngine.startTimer();
       }
 
@@ -688,6 +705,25 @@ class App {
     if (n2HomeCountBadge && this.n2Exams.length > 0) {
       const availN2Count = this.n2Exams.filter(e => e.standardized || e.available).length;
       n2HomeCountBadge.textContent = `${availN2Count} đề hoàn thiện • ${this.n2Exams.length} đợt thi`;
+    }
+
+    // Dynamic Dokkai N1 Badges
+    const dokkaiTotal = 43;
+    const dokkaiBadge = document.getElementById('home-dokkai-count-badge');
+    if (dokkaiBadge) {
+      dokkaiBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>🟢 ${dokkaiTotal} bài thực hành (6 chương)`;
+    }
+    const dokkaiSubtitle = document.getElementById('home-dokkai-subtitle');
+    if (dokkaiSubtitle) {
+      dokkaiSubtitle.textContent = `Kho bài đọc tự do (${dokkaiTotal} bài)`;
+    }
+    const dokkaiSidebarTag = document.getElementById('n1-dokkai-count-tag');
+    if (dokkaiSidebarTag) {
+      dokkaiSidebarTag.textContent = `${dokkaiTotal} bài`;
+    }
+    const dokkaiSidebarBadge = document.getElementById('n1-dokkai-sidebar-badge');
+    if (dokkaiSidebarBadge) {
+      dokkaiSidebarBadge.textContent = `${dokkaiTotal} bài`;
     }
 
     // 1. Render N1 Days Quicklist on Card 1
@@ -918,7 +954,8 @@ class App {
       this.quizEngine.currentQuestionIndex = 0;
     }
 
-    this.switchView('TEST');
+    this.switchView('TEST', true);
+    this.showSidebar();
     this.openContextualAccordion('n1_20days');
     this.renderN1List();
     this.renderN2List();
@@ -1267,7 +1304,8 @@ class App {
       this.quizEngine.currentQuestionIndex = 0;
     }
     if (this.pendingN2ExamMeta) {
-      this.switchView('TEST');
+      this.switchView('TEST', true);
+      this.showSidebar();
       await this.loadN2Exam(this.pendingN2ExamMeta, scopes, selectedMode);
     }
   }
@@ -1311,7 +1349,8 @@ class App {
 
     const selectedMode = document.querySelector('input[name="pretest-mode"]:checked')?.value || 'practice';
 
-    this.switchView('TEST');
+    this.switchView('TEST', true);
+    this.showSidebar();
     await this.loadN2Exam(examMeta, scopes, selectedMode);
     this.showToast(`Bắt đầu làm lại phần ${sectionNames} (${examMeta.title})!`, 'info');
   }
@@ -1342,7 +1381,8 @@ class App {
       };
     }
 
-    this.switchView('TEST');
+    this.switchView('TEST', true);
+    this.showSidebar();
     await this.loadN2Exam(examMeta, scopes, 'practice', { reviewMode: true, historyRecord: history });
     const activeSectionKeys = [];
     if (scopes.vocab_grammar) activeSectionKeys.push('goi_bunpou');
@@ -1459,7 +1499,8 @@ class App {
       this.quizEngine.currentQuestionIndex = 0;
     }
 
-    this.switchView('TEST');
+    this.switchView('TEST', false);
+    this.hideSidebar();
 
     // Update Header Info
     if (this.headerLevelBadge) {
@@ -1638,7 +1679,8 @@ class App {
       this.quizEngine.currentQuestionIndex = 0;
     }
 
-    this.switchView('TEST');
+    this.switchView('TEST', false);
+    this.hideSidebar();
 
     // Update Header Info
     if (this.headerLevelBadge) {
@@ -1831,7 +1873,8 @@ class App {
       this.quizEngine.currentQuestionIndex = 0;
     }
 
-    this.switchView('TEST');
+    this.switchView('TEST', false);
+    this.hideSidebar();
 
     // Update Header Info
     if (this.headerLevelBadge) {
@@ -1851,7 +1894,7 @@ class App {
       this.paletteActiveTitle.textContent = 'Dokkai N1 (Shin Kanzen)';
     }
     if (this.paletteActiveCount) {
-      this.paletteActiveCount.textContent = '24 bài tự do';
+      this.paletteActiveCount.textContent = '43 bài tự do';
     }
 
     // Hide normal test header controls
@@ -1865,7 +1908,7 @@ class App {
       paletteGrid.innerHTML = `
         <div class="col-span-5 py-5 text-center text-[11px] text-slate-500 leading-relaxed px-2">
           <span class="font-bold text-amber-700">📖 Dokkai N1</span>
-          <p class="text-[10px] text-slate-400 mt-1">Kho Luyện Đề Tự Do (24 bài đọc)</p>
+          <p class="text-[10px] text-slate-400 mt-1">Kho Luyện Đề Tự Do (43 bài đọc)</p>
         </div>
       `;
     }
@@ -1913,7 +1956,8 @@ class App {
       this.quizEngine.currentQuestionIndex = 0;
     }
 
-    this.switchView('TEST');
+    this.switchView('TEST', false);
+    this.hideSidebar();
 
     // Update Header Info
     if (this.headerLevelBadge) {
