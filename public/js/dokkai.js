@@ -61,6 +61,90 @@ export class DokkaiEngine {
     this.timerInterval = null;
     this.isTimerRunning = false;
     this.isTimeUp = false;
+
+    // Initialize Keyboard Shortcuts UX
+    this.initKeyboardShortcuts();
+  }
+
+  initKeyboardShortcuts() {
+    if (this._hasBoundKeyboard) return;
+    this._hasBoundKeyboard = true;
+
+    window.addEventListener('keydown', (e) => {
+      // 1. Ignore if typing in form elements
+      const activeEl = document.activeElement;
+      if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'SELECT' || activeEl.isContentEditable)) {
+        return;
+      }
+      if (document.getElementById('image-lightbox-modal')) {
+        return;
+      }
+
+      // 2. Only active when DokkaiEngine is in reader view
+      if (this.viewMode !== 'reader' || !this.questions || this.questions.length === 0) {
+        return;
+      }
+      const testView = document.getElementById('test-view');
+      if (!testView || testView.classList.contains('hidden')) {
+        return;
+      }
+      if (this.app && this.app.currentCourse !== 'n1_dokkai') {
+        return;
+      }
+
+      // 3. Option Selection: [1], [2], [3], [4]
+      if (['1', '2', '3', '4'].includes(e.key)) {
+        if (this.step === 1) {
+          e.preventDefault();
+          if (!this.isStarted) {
+            this.startReading();
+          }
+          const optIdx = parseInt(e.key, 10) - 1;
+          this.selectOption(optIdx);
+        }
+        return;
+      }
+
+      // 4. Space / Enter -> Submit in Step 1, or Next Question in Step 2
+      if (e.key === ' ' || e.code === 'Space' || e.key === 'Enter') {
+        if (e.target && (e.target.tagName === 'BUTTON' || e.target.tagName === 'A')) {
+          return;
+        }
+        e.preventDefault();
+        if (this.step === 1) {
+          if (!this.isStarted) {
+            this.startReading();
+          } else if (this.selectedOption !== null) {
+            this.submitAnswer();
+          } else {
+            if (this.app && typeof this.app.showToast === 'function') {
+              this.app.showToast('Vui lòng bấm [1], [2], [3], [4] để chọn phương án trước khi chốt đáp án!', 'info');
+            }
+          }
+        } else if (this.step === 2) {
+          if (this.currentIndex < this.questions.length - 1) {
+            this.goToQuestion(this.currentIndex + 1);
+          }
+        }
+        return;
+      }
+
+      // 5. Navigation: ArrowRight / ArrowLeft
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        if (this.currentIndex < this.questions.length - 1) {
+          this.goToQuestion(this.currentIndex + 1);
+        }
+        return;
+      }
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        if (this.currentIndex > 0) {
+          this.goToQuestion(this.currentIndex - 1);
+        }
+        return;
+      }
+    });
   }
 
   /**
@@ -890,7 +974,7 @@ export class DokkaiEngine {
     const correctNum = this.getCorrectAnswerNumber(q);
     const isCorrect = isAnswered && this.isAnswerCorrect(this.selectedOption, q);
 
-    // Requirement 1: Pure Japanese title according to book
+    // Pure Japanese title according to book
     const japaneseTitle = q.title || `第1章：対比・逆接 - 練習 ${this.currentIndex + 1}`;
 
     this.containerEl.innerHTML = `
@@ -900,12 +984,12 @@ export class DokkaiEngine {
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-200/80">
           <div>
             <div class="flex flex-wrap items-center gap-2 mb-1.5">
-              <button type="button" id="btn-dokkai-back-home" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200/80 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
-                <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-                <span>Trang Chủ</span>
+              <button type="button" id="btn-dokkai-back-hub" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Danh sách bài đọc">
+                <svg class="w-3.5 h-3.5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                <span>← Danh sách bài</span>
               </button>
-              <button type="button" id="btn-dokkai-back-hub" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Kho Luyện Đề Tự Do">
-                <span>📋 Kho bài đọc</span>
+              <button type="button" id="btn-dokkai-back-home" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200/80 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                <span>Trang Chủ</span>
               </button>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200">
                 📖 Dokkai N1 (Shin Kanzen Master)
@@ -924,7 +1008,7 @@ export class DokkaiEngine {
 
           <!-- Pagination Bar -->
           <div class="flex items-center gap-1.5 self-start sm:self-center">
-            <button type="button" id="btn-dokkai-prev" class="p-2 rounded-xl text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer" ${this.currentIndex === 0 ? 'disabled' : ''} title="Bài trước">
+            <button type="button" id="btn-dokkai-prev" class="p-2 rounded-xl text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer" ${this.currentIndex === 0 ? 'disabled' : ''} title="Bài trước (←)">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
             </button>
             <div class="flex items-center gap-1">
@@ -942,526 +1026,335 @@ export class DokkaiEngine {
                 </button>
               `).join('')}
             </div>
-            <button type="button" id="btn-dokkai-next" class="p-2 rounded-xl text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer" ${this.currentIndex === this.questions.length - 1 ? 'disabled' : ''} title="Bài tiếp">
+            <button type="button" id="btn-dokkai-next" class="p-2 rounded-xl text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer" ${this.currentIndex === this.questions.length - 1 ? 'disabled' : ''} title="Bài tiếp (→)">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </button>
           </div>
         </div>
 
-        <!-- 2-COLUMN WORKSPACE: LEFT (75%) & RIGHT STICKY DOCK (25%) -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-
-          <!-- LEFT COLUMN: Reading, Questions, and Step 2 Analysis (~75%) -->
-          <div class="lg:col-span-8 xl:col-span-9 space-y-6">
-
-            <!-- Result Banner in Step 2 -->
-            ${isAnswered ? `
-              <div class="rounded-2xl p-4 sm:p-5 border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs ${
-                isCorrect ? 'bg-emerald-50/90 border-emerald-200 text-emerald-950' : 'bg-rose-50/90 border-rose-200 text-rose-950'
-              }">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-2xl text-white font-black text-lg flex items-center justify-center shrink-0 shadow-xs ${
-                    isCorrect ? 'bg-emerald-600' : 'bg-rose-600'
-                  }">
-                    ${isCorrect ? '✓' : '✗'}
-                  </div>
-                  <div>
-                    <div class="text-sm font-black flex items-center gap-2">
-                      <span>${isCorrect ? 'CHÍNH XÁC! TƯ DUY RẤT TỐT' : 'CHƯA CHÍNH XÁC (ĐÃ DÍNH BẪY TƯ DUY)'}</span>
-                      <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full ${isCorrect ? 'bg-emerald-200 text-emerald-900' : 'bg-rose-200 text-rose-900'}">
-                        ⏱️ Hoàn thành: ${this.formatTime(this.elapsedSeconds)}
-                      </span>
-                    </div>
-                    <p class="text-xs mt-0.5 ${isCorrect ? 'text-emerald-800' : 'text-rose-800'}">
-                      ${isCorrect 
-                        ? 'Bạn đã bắt đúng câu chốt của tác giả và không bị quan niệm số đông đánh lừa.' 
-                        : 'Hãy xem văn bản bên dưới đã bật 3 màu điểm nhìn để mổ xẻ nguyên nhân sai.'}
-                    </p>
-                  </div>
+        <!-- PASSAGE & QUESTIONS WRAPPER WITH PRE-START BLUR LOCK -->
+        <div class="dokkai-reading-and-question-wrapper relative rounded-3xl ${!this.isStarted && this.step === 1 ? 'min-h-[500px]' : ''}">
+          
+          <!-- PRE-START BLUR OVERLAY MODAL (Chống lộ đề) -->
+          ${!this.isStarted && this.step === 1 ? `
+            <div class="absolute inset-0 z-30 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-md rounded-3xl">
+              <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 max-w-md w-full text-center shadow-2xl space-y-4 animate-scale-up">
+                <div class="w-13 h-13 mx-auto rounded-2xl bg-gradient-to-tr from-amber-500 via-amber-600 to-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-amber-400/25">
+                  🔒
+                </div>
+                <div>
+                  <h3 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">
+                    BÀI ĐỌC ĐANG ĐƯỢC KHÓA (CHỐNG LỘ ĐỀ)
+                  </h3>
+                  <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                    Để đảm bảo phản xạ và áp lực phòng thi thật, nội dung bài đọc và câu hỏi sẽ mở ngay khi bạn bấm Bắt đầu.
+                  </p>
                 </div>
 
-                <div class="flex items-center gap-2 shrink-0">
-                  <button type="button" id="btn-dokkai-retake-top" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 transition flex items-center gap-1.5 shadow-2xs cursor-pointer active:scale-95">
-                    <span>🔄 Làm lại</span>
-                  </button>
-                  ${this.currentIndex < this.questions.length - 1 ? `
-                    <button type="button" id="btn-dokkai-next-top" class="px-4 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white transition flex items-center gap-1.5 shadow-xs cursor-pointer active:scale-95">
-                      <span>Bài tiếp theo ➡</span>
+                <!-- Mode selection inside pre-start card -->
+                <div class="bg-slate-50 rounded-2xl p-2.5 border border-slate-200 text-left space-y-1.5">
+                  <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Thời gian làm bài:</div>
+                  <div class="grid grid-cols-3 gap-1">
+                    <button type="button" class="btn-dokkai-modal-mode p-1.5 rounded-xl text-xs font-bold transition flex flex-col items-center justify-center cursor-pointer ${this.timerMode === 'standard' ? 'bg-emerald-600 text-white shadow-xs' : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'}" data-mode="standard">
+                      <span>🟢 Chuẩn</span>
+                      <span class="text-[9px] font-normal opacity-90">${cfg.standard.label}</span>
                     </button>
-                  ` : ''}
+                    <button type="button" class="btn-dokkai-modal-mode p-1.5 rounded-xl text-xs font-bold transition flex flex-col items-center justify-center cursor-pointer ${this.timerMode === 'hardcore' ? 'bg-rose-600 text-white shadow-xs' : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'}" data-mode="hardcore">
+                      <span>🔥 Gắt</span>
+                      <span class="text-[9px] font-normal opacity-90">${cfg.hardcore.label}</span>
+                    </button>
+                    <button type="button" class="btn-dokkai-modal-mode p-1.5 rounded-xl text-xs font-bold transition flex flex-col items-center justify-center cursor-pointer ${this.timerMode === 'unlimited' ? 'bg-amber-600 text-white shadow-xs' : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'}" data-mode="unlimited">
+                      <span>☕ Tự do</span>
+                      <span class="text-[9px] font-normal opacity-90">Vô hạn</span>
+                    </button>
+                  </div>
                 </div>
+
+                <!-- Single Primary Start Button -->
+                <button type="button" id="btn-dokkai-start-reading-modal" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 active:scale-98 text-white font-black text-sm shadow-xl shadow-amber-300/40 transition flex items-center justify-center gap-2 cursor-pointer">
+                  <span>🚀 BẮT ĐẦU ĐỌC & BẤM GIỜ</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
               </div>
-            ` : ''}
+            </div>
+          ` : ''}
 
-            <!-- PASSAGE & QUESTIONS WRAPPER WITH PRE-START BLUR LOCK -->
-            <div class="dokkai-reading-and-question-wrapper relative rounded-3xl ${!this.isStarted && this.step === 1 ? 'max-h-[500px] overflow-hidden' : ''}">
-              
-              <!-- PRE-START BLUR OVERLAY MODAL (Single centralized start button) -->
-              ${!this.isStarted && this.step === 1 ? `
-                <div class="absolute inset-0 z-30 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-md rounded-3xl">
-                  <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 max-w-md w-full text-center shadow-2xl space-y-4 animate-scale-up">
-                    <div class="w-13 h-13 mx-auto rounded-2xl bg-gradient-to-tr from-amber-500 via-amber-600 to-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-amber-400/25">
-                      🔒
-                    </div>
-                    <div>
-                      <h3 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">
-                        BÀI ĐỌC ĐANG ĐƯỢC KHÓA (CHỐNG LỘ ĐỀ)
-                      </h3>
-                      <p class="text-xs text-slate-500 mt-1 leading-relaxed">
-                        Để đảm bảo phản xạ và áp lực phòng thi thật, nội dung bài đọc và câu hỏi sẽ mở ngay khi bạn bấm Bắt đầu.
-                      </p>
-                    </div>
+          <!-- CLEAN SPLIT-VIEW: LEFT (PASSAGE) & RIGHT (QUESTIONS & ANALYSIS) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start ${!this.isStarted && this.step === 1 ? 'filter blur-md select-none pointer-events-none opacity-25' : ''}">
 
-                    <!-- Mode selection inside pre-start card -->
-                    <div class="bg-slate-50 rounded-2xl p-2.5 border border-slate-200 text-left space-y-1.5">
-                      <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Thời gian làm bài:</div>
-                      <div class="grid grid-cols-3 gap-1">
-                        <button type="button" class="btn-dokkai-modal-mode p-1.5 rounded-xl text-xs font-bold transition flex flex-col items-center justify-center cursor-pointer ${this.timerMode === 'standard' ? 'bg-emerald-600 text-white shadow-xs' : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'}" data-mode="standard">
-                          <span>🟢 Chuẩn</span>
-                          <span class="text-[9px] font-normal opacity-90">${cfg.standard.label}</span>
-                        </button>
-                        <button type="button" class="btn-dokkai-modal-mode p-1.5 rounded-xl text-xs font-bold transition flex flex-col items-center justify-center cursor-pointer ${this.timerMode === 'hardcore' ? 'bg-rose-600 text-white shadow-xs' : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'}" data-mode="hardcore">
-                          <span>🔥 Gắt</span>
-                          <span class="text-[9px] font-normal opacity-90">${cfg.hardcore.label}</span>
-                        </button>
-                        <button type="button" class="btn-dokkai-modal-mode p-1.5 rounded-xl text-xs font-bold transition flex flex-col items-center justify-center cursor-pointer ${this.timerMode === 'unlimited' ? 'bg-amber-600 text-white shadow-xs' : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'}" data-mode="unlimited">
-                          <span>☕ Tự do</span>
-                          <span class="text-[9px] font-normal opacity-90">Vô hạn</span>
-                        </button>
-                      </div>
-                    </div>
-
-                    <!-- Single Primary Start Button -->
-                    <button type="button" id="btn-dokkai-start-reading-modal" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 active:scale-98 text-white font-black text-sm shadow-xl shadow-amber-300/40 transition flex items-center justify-center gap-2 cursor-pointer">
-                      <span>🚀 BẮT ĐẦU ĐỌC & BẤM GIỜ</span>
-                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </button>
+            <!-- LEFT COLUMN: Sticky Authentic Reading Passage (~58% width: lg:col-span-7) -->
+            <div class="lg:col-span-7 lg:sticky lg:top-4">
+              <div id="dokkai-reading-card" class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm max-h-[calc(100vh-3rem)] overflow-y-auto">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-5 border-b border-slate-100">
+                  <div class="flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xs">
+                      📄
+                    </span>
+                    <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider">Văn bản bài đọc gốc</h2>
                   </div>
-                </div>
-              ` : ''}
 
-              <!-- BLURRED INNER CONTENT (Locked when !isStarted) -->
-              <div class="space-y-6 ${!this.isStarted && this.step === 1 ? 'filter blur-md select-none pointer-events-none opacity-25' : ''}">
-                
-                <!-- Reading Passage Card -->
-                <div id="dokkai-reading-card" class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-9 shadow-sm transition-card relative">
-                  
-                  <!-- Card Header: Clean Title Without Meta Text (Requirement 4) -->
-                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-5 border-b border-slate-100">
-                    <div class="flex items-center gap-2">
-                      <span class="w-8 h-8 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xs">
-                        📄
+                  <!-- Legend (Step 2 Only) -->
+                  ${this.step === 2 ? `
+                    <div class="flex flex-wrap items-center gap-1.5 text-[10px] font-bold">
+                      <span class="px-2 py-0.5 rounded-md bg-blue-50 text-blue-800 border border-blue-200">
+                        🔵 Tiền đề số đông
                       </span>
-                      <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider">Văn bản bài đọc gốc</h2>
+                      <span class="px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 border border-amber-200">
+                        🟡 Cú lật tư duy
+                      </span>
+                      <span class="px-2 py-0.5 rounded-md bg-rose-50 text-rose-800 border border-rose-200">
+                        🔴 Câu chốt tác giả
+                      </span>
                     </div>
-
-                    <!-- Legend (Step 2 Only) -->
-                    ${this.step === 2 ? `
-                      <div class="flex flex-wrap items-center gap-1.5 text-[11px] font-bold">
-                        <span class="px-2 py-0.5 rounded-md bg-blue-50 text-blue-800 border border-blue-200">
-                          🔵 Tiền đề số đông
-                        </span>
-                        <span class="px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 border border-amber-200">
-                          🟡 Cú lật tư duy
-                        </span>
-                        <span class="px-2 py-0.5 rounded-md bg-rose-50 text-rose-800 border border-rose-200">
-                          🔴 Câu chốt tác giả
-                        </span>
-                      </div>
-                    ` : `
-                      <div class="text-[11px] font-semibold text-slate-400 flex items-center gap-1">
-                        <span>${this.isStarted ? '⚡ Bước 1: Đọc tự lực & tư duy độc lập' : '🛡️ Bài đọc được che mờ chống lộ đề'}</span>
-                      </div>
-                    `}
-                  </div>
-
-                  <!-- Pure Authentic Japanese Passage Content (Requirement 3: Clean, Extension Friendly) -->
-                  <div id="dokkai-passage-container" class="dokkai-passage-text font-jp text-slate-800 text-base sm:text-[17px] leading-[2.3] tracking-wide select-text relative">
-                    ${this.buildHighlightedPassage(q.passage, q.logicHighlights)}
-                  </div>
-
+                  ` : `
+                    <div class="text-[11px] font-semibold text-slate-400">
+                      ⚡ Bước 1: Đọc tự lực & tư duy độc lập
+                    </div>
+                  `}
                 </div>
 
-                <!-- Question & 4 Options Card -->
-                <div id="dokkai-question-card" class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm space-y-6">
-                  
-                  <!-- Question Title -->
-                  <div class="space-y-1">
-                    <div class="text-xs font-bold text-indigo-700 uppercase tracking-wider flex items-center gap-1.5">
-                      <span>❓ CÂU HỎI ĐỌC HIỂU</span>
-                    </div>
-                    <h3 class="font-jp text-base sm:text-lg font-bold text-slate-900 leading-snug">
-                      ${this.escapeHtml(q.question)}
-                    </h3>
-                  </div>
-
-                  <!-- Options Stack -->
-                  <div class="options-stack space-y-3">
-                    ${(q.options || []).map((opt, optIdx) => {
-                      const isSelected = this.selectedOption === optIdx;
-                      // Strictly single correct answer: (optIdx + 1) === correctNum
-                      const isThisCorrect = isAnswered && ((optIdx + 1) === correctNum);
-                      const isSelectedAndWrong = isAnswered && isSelected && !isThisCorrect;
-
-                      let optionStyle = 'border-slate-200 bg-white hover:border-indigo-300 hover:bg-slate-50/70 text-slate-800 cursor-pointer';
-                      let badgeStyle = 'bg-slate-100 text-slate-600 border-slate-200';
-
-                      if (this.step === 1) {
-                        if (isSelected) {
-                          optionStyle = 'border-indigo-600 bg-indigo-50/70 text-indigo-950 ring-2 ring-indigo-500/20 shadow-xs font-semibold cursor-pointer';
-                          badgeStyle = 'bg-indigo-600 text-white border-indigo-600 shadow-xs';
-                        }
-                      } else {
-                        // Step 2
-                        if (isThisCorrect) {
-                          optionStyle = 'border-emerald-500 bg-emerald-50/80 text-emerald-950 font-bold ring-2 ring-emerald-500/20';
-                          badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
-                        } else if (isSelectedAndWrong) {
-                          optionStyle = 'border-rose-400 bg-rose-50/70 text-rose-950 ring-2 ring-rose-400/20';
-                          badgeStyle = 'bg-rose-600 text-white border-rose-600';
-                        } else {
-                          optionStyle = 'border-slate-200 bg-slate-50/40 text-slate-500 opacity-80';
-                          badgeStyle = 'bg-slate-100 text-slate-400 border-slate-200';
-                        }
-                      }
-
-                      return `
-                        <button type="button" class="btn-dokkai-option w-full text-left p-4 sm:p-5 rounded-2xl border-2 transition-all flex items-start gap-3.5 group ${optionStyle}" data-opt-idx="${optIdx}" ${this.step === 2 ? 'disabled' : ''}>
-                          <div class="w-7 h-7 rounded-xl font-black text-xs flex items-center justify-center shrink-0 border mt-0.5 transition ${badgeStyle}">
-                            ${optIdx + 1}
-                          </div>
-                          <div class="flex-1 font-jp text-sm sm:text-base leading-relaxed">
-                            ${this.escapeHtml(opt)}
-                          </div>
-                          ${isSelected ? `
-                            <div class="shrink-0 text-xs font-bold px-2 py-0.5 rounded-full ${
-                              this.step === 1 ? 'bg-indigo-600 text-white' : isThisCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white'
-                            }">
-                              ${this.step === 1 ? 'Đã chọn' : isThisCorrect ? '✓ Bạn chọn' : '✗ Bạn chọn'}
-                            </div>
-                          ` : isThisCorrect ? `
-                            <div class="shrink-0 text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-600 text-white">
-                              ✓ Đáp án đúng
-                            </div>
-                          ` : ''}
-                        </button>
-                      `;
-                    }).join('')}
-                  </div>
-
-                  <!-- Step 1 Bottom Action Bar -->
-                  ${this.step === 1 ? `
-                    <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3">
-                      <div class="text-xs text-slate-500">
-                        ${this.selectedOption !== null 
-                          ? `<span class="font-bold text-indigo-700">Đã chọn lựa chọn ${this.selectedOption + 1}.</span> Nhấn nút bên cạnh hoặc ở khung bên phải để chốt đáp án & mở khóa mổ xẻ.`
-                          : 'Hãy đọc kỹ văn bản, chọn 1 phương án để mở khóa phân tích.'}
-                      </div>
-
-                      <button type="button" id="btn-dokkai-submit" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold text-xs shadow-md transition flex items-center justify-center gap-2 ${
-                        this.selectedOption !== null
-                          ? 'bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white shadow-indigo-200 cursor-pointer active:scale-95'
-                          : 'bg-slate-200 text-slate-400 cursor-not-allowed'
-                      }" ${this.selectedOption === null ? 'disabled' : ''}>
-                        <span>🎯 Chốt đáp án & Xem phân tích logic</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                      </button>
-                    </div>
-                  ` : ''}
-
+                <!-- Pure Authentic Japanese Passage -->
+                <div id="dokkai-passage-container" class="dokkai-passage-text font-jp text-slate-800 text-base sm:text-[17px] leading-[2.3] tracking-wide select-text relative">
+                  ${this.buildHighlightedPassage(q.passage, q.logicHighlights)}
                 </div>
-
               </div>
             </div>
 
-            <!-- STEP 2: TRAP BREAKDOWN & EXPLANATION (Mổ xẻ logic & Bắt bẫy) -->
-            ${this.step === 2 ? `
-              <div id="dokkai-breakdown-section" class="space-y-6 animate-fade-in">
-                
-                <!-- Trap Breakdown Container -->
-                <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm space-y-4">
-                  <div class="flex items-center justify-between pb-3 border-b border-slate-100">
-                    <div class="flex items-center gap-2">
-                      <span class="w-8 h-8 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-xs shadow-xs">
-                        ⚡
-                      </span>
-                      <div>
-                        <h3 class="text-sm font-black text-slate-900">Bắt Bẫy Tư Duy (Trap Breakdown)</h3>
-                        <p class="text-[11px] text-slate-500 font-medium">Phân tích chi tiết từng phương án theo phương pháp Shin Kanzen</p>
-                      </div>
-                    </div>
-                    <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">
-                      Chương 1: 対比・逆接
-                    </span>
+            <!-- RIGHT COLUMN: Timer Dock + Question & Options + Stage 2 Breakdown (~42% width: lg:col-span-5) -->
+            <div class="lg:col-span-5 space-y-4">
+
+              <!-- Timer Widget Card -->
+              <div id="dokkai-sticky-dock" class="dokkai-sticky-dock bg-white rounded-3xl border border-slate-200/90 p-4 sm:p-5 shadow-sm space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div class="flex items-center gap-1.5 text-xs font-black text-slate-900">
+                    <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>ĐỒNG HỒ PHÒNG THI</span>
                   </div>
-
-                  <div class="grid grid-cols-1 gap-3.5 pt-2">
-                    ${[1, 2, 3, 4].map(num => {
-                      const optKey = `opt${num}`;
-                      const trapText = (q.trapBreakdown && q.trapBreakdown[optKey]) || '';
-                      // Strictly single correct answer: only num === correctNum gets isThisCorrect = true
-                      const isThisCorrect = (num === correctNum);
-                      const isUserPick = (this.selectedOption === (num - 1));
-
-                      return `
-                        <div class="p-4 rounded-2xl border-2 transition ${
-                          isThisCorrect
-                            ? 'border-emerald-300 bg-emerald-50/40 text-emerald-950'
-                            : isUserPick
-                              ? 'border-rose-300 bg-rose-50/50 text-rose-950'
-                              : 'border-slate-200 bg-slate-50/60 text-slate-700'
-                        }">
-                          <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
-                            <div class="flex items-center gap-2">
-                              <span class="w-6 h-6 rounded-lg font-black text-xs flex items-center justify-center ${
-                                isThisCorrect ? 'bg-emerald-600 text-white' : 'bg-slate-200 text-slate-700'
-                              }">
-                                ${num}
-                              </span>
-                              <span class="text-xs font-bold ${isThisCorrect ? 'text-emerald-900' : 'text-slate-800'}">
-                                Lựa chọn ${num}
-                              </span>
-                            </div>
-
-                            <div class="flex items-center gap-1.5">
-                              ${isUserPick ? `
-                                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                                  isThisCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white'
-                                }">
-                                  ${isThisCorrect ? '✓ Bạn đã chọn đúng' : '✗ Lựa chọn của bạn'}
-                                </span>
-                              ` : ''}
-                              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                                isThisCorrect ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' : 'bg-rose-100 text-rose-800 border border-rose-300'
-                              }">
-                                ${isThisCorrect ? '✓ ĐÁP ÁN ĐÚNG' : '❌ BẪY TƯ DUY'}
-                              </span>
-                            </div>
-                          </div>
-
-                          <p class="text-xs sm:text-[13px] leading-relaxed mt-2 ${
-                            isThisCorrect ? 'text-emerald-900 font-medium' : 'text-slate-700'
-                          }">
-                            ${this.escapeHtml(trapText)}
-                          </p>
-                        </div>
-                      `;
-                    }).join('')}
-                  </div>
-                </div>
-
-                <!-- Full Translation & Overall Explanation -->
-                <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm space-y-4">
-                  <div class="flex items-center gap-2 pb-3 border-b border-slate-100">
-                    <span class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
-                      📖
-                    </span>
-                    <div>
-                      <h3 class="text-sm font-black text-slate-900">Bản Dịch Nghĩa & Phân Tích Chiến Lược</h3>
-                      <p class="text-[11px] text-slate-500 font-medium">Bản dịch tiếng Việt tự nhiên và phương pháp tư duy đọc hiểu N1</p>
-                    </div>
-                  </div>
-
-                  <div class="explanation-box text-xs sm:text-sm text-slate-700 leading-loose space-y-3 font-sans">
-                    ${q.explanation || 'Đang cập nhật lời giải chi tiết.'}
-                  </div>
-                </div>
-
-                <!-- Bottom Action Controls -->
-                <div class="p-4 bg-slate-50/90 rounded-2xl border border-slate-200/80 flex flex-wrap items-center justify-between gap-3 shadow-2xs">
-                  <div class="flex items-center gap-2">
-                    <button type="button" id="btn-dokkai-retake-bottom" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95">
-                      <span>🔄 Làm lại bài này</span>
-                    </button>
-                    <button type="button" id="btn-dokkai-back-hub-bottom" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95">
-                      <span>📋 Chọn bài khác</span>
-                    </button>
-                    <button type="button" id="btn-dokkai-anki-export" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-amber-50 text-amber-800 border border-amber-200 transition shadow-2xs flex items-center gap-1.5 cursor-pointer active:scale-95" title="Tải file text nạp câu hỏi vào Anki">
-                      <span>⚡ Xuất bài đọc Anki (.txt)</span>
-                    </button>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    ${this.currentIndex < this.questions.length - 1 ? `
-                      <button type="button" id="btn-dokkai-next-bottom" class="px-6 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white shadow-md shadow-indigo-200 transition flex items-center gap-1.5 cursor-pointer active:scale-95">
-                        <span>Bài tiếp theo (Bài ${this.currentIndex + 2}) ➡</span>
-                      </button>
-                    ` : `
-                      <button type="button" id="btn-dokkai-finish-chapter" class="px-6 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-md shadow-emerald-200 transition flex items-center gap-1.5 cursor-pointer active:scale-95">
-                        <span>🎉 Trở về Kho Luyện Đề</span>
-                      </button>
-                    `}
-                  </div>
-                </div>
-
-              </div>
-            ` : ''}
-
-          </div>
-
-          <!-- RIGHT COLUMN: STICKY TIMER DOCK WIDGET (~25% width, position: sticky; top: 24px) -->
-          <div class="lg:col-span-4 xl:col-span-3 lg:sticky lg:top-6 z-10 space-y-4">
-            
-            <div class="dokkai-sticky-dock bg-white/95 backdrop-blur-md rounded-3xl border border-slate-200/90 p-5 shadow-sm space-y-4">
-              
-              <!-- Dock Header -->
-              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
-                <div class="flex items-center gap-1.5 text-xs font-black text-slate-900">
-                  <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                  <span>ĐỒNG HỒ PHÒNG THI</span>
-                </div>
-                
-                <span id="dokkai-dock-status-badge" class="text-[10px] font-bold px-2 py-0.5 rounded-full border ${
-                  !this.isStarted 
-                    ? 'bg-slate-100 text-slate-500 border-slate-200'
-                    : this.step === 2
-                      ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                      : this.isTimeUp
-                        ? 'bg-rose-50 text-rose-700 border-rose-200 animate-pulse'
-                        : this.isTimerRunning
-                          ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                          : 'bg-slate-100 text-slate-600 border-slate-200'
-                }">
-                  ${
+                  <span id="dokkai-dock-status-badge" class="text-[10px] font-bold px-2 py-0.5 rounded-full border ${
                     !this.isStarted 
-                      ? '⏸️ Chưa bắt đầu' 
-                      : this.step === 2 
-                        ? '✓ Đã nộp bài' 
-                        : this.isTimeUp 
-                          ? '⚠️ Hết giờ' 
-                          : this.isTimerRunning 
-                            ? '⚡ Đang đếm giờ' 
-                            : '⏸️ Tạm dừng'
-                  }
-                </span>
-              </div>
+                      ? 'bg-slate-100 text-slate-500 border-slate-200'
+                      : this.step === 2
+                        ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                        : this.isTimeUp
+                          ? 'bg-rose-50 text-rose-700 border-rose-200 animate-pulse'
+                          : this.isTimerRunning
+                            ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                            : 'bg-slate-100 text-slate-600 border-slate-200'
+                  }">
+                    ${
+                      !this.isStarted 
+                        ? '⏸️ Chưa bắt đầu' 
+                        : this.step === 2 
+                          ? '✓ Đã hoàn thành' 
+                          : this.isTimeUp 
+                            ? '⚠️ Hết giờ' 
+                            : this.isTimerRunning 
+                              ? '⚡ Đang đếm giờ' 
+                              : '⏸️ Tạm dừng'
+                    }
+                  </span>
+                </div>
 
-              <!-- Giant Countdown Timer Display -->
-              <div class="text-center py-1">
-                <div id="dokkai-timer-display" class="font-mono text-3xl sm:text-4xl font-black tracking-wider py-2.5 rounded-2xl transition-all ${
-                  this.totalTimerSeconds > 0 && this.remainingSeconds <= 30 && this.isTimerRunning && !this.isTimeUp
-                    ? 'text-rose-600 bg-rose-50 border-2 border-rose-300 animate-pulse'
-                    : this.isTimeUp
-                      ? 'text-rose-600 bg-rose-50 border-2 border-rose-300'
-                      : this.totalTimerSeconds === 0
-                        ? 'text-amber-700 bg-amber-50/80 border border-amber-200'
+                <!-- Timer numbers + Mode switch -->
+                <div class="flex items-center justify-between gap-2">
+                  <div id="dokkai-timer-display" class="font-mono text-2xl sm:text-3xl font-black px-3 py-1.5 rounded-xl ${
+                    this.totalTimerSeconds > 0 && this.remainingSeconds <= 30 && this.isTimerRunning && !this.isTimeUp
+                      ? 'text-rose-600 bg-rose-50 border border-rose-200 animate-pulse'
+                      : this.isTimeUp
+                        ? 'text-rose-600 bg-rose-50 border border-rose-200'
                         : 'text-slate-900 bg-slate-50 border border-slate-200/80'
-                }">
-                  ${this.totalTimerSeconds > 0 ? this.formatTime(this.remainingSeconds) : `☕ ${this.formatTime(this.elapsedSeconds)}`}
-                </div>
+                  }">
+                    ${this.totalTimerSeconds > 0 ? this.formatTime(this.remainingSeconds) : `☕ ${this.formatTime(this.elapsedSeconds)}`}
+                  </div>
 
-                <!-- Visual Progress Bar -->
-                <div class="w-full bg-slate-100 rounded-full h-2 mt-3 overflow-hidden border border-slate-200/60">
-                  <div id="dokkai-timer-progress" class="h-full transition-all duration-300 rounded-full ${
-                    this.totalTimerSeconds > 0 && this.remainingSeconds <= 30
-                      ? 'bg-rose-500'
-                      : 'bg-gradient-to-r from-emerald-500 to-indigo-600'
-                  }" style="width: ${
-                    this.totalTimerSeconds > 0
-                      ? Math.max(0, Math.min(100, (this.remainingSeconds / this.totalTimerSeconds) * 100))
-                      : '100'
-                  }%"></div>
+                  <!-- Quick mode switch buttons in step 1 -->
+                  ${this.step === 1 ? `
+                    <div class="flex items-center gap-1">
+                      <button type="button" class="btn-dokkai-modal-mode px-2 py-1 rounded-lg text-[10px] font-bold transition cursor-pointer ${this.timerMode === 'standard' ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}" data-mode="standard">Chuẩn</button>
+                      <button type="button" class="btn-dokkai-modal-mode px-2 py-1 rounded-lg text-[10px] font-bold transition cursor-pointer ${this.timerMode === 'hardcore' ? 'bg-rose-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}" data-mode="hardcore">Gắt</button>
+                      <button type="button" class="btn-dokkai-modal-mode px-2 py-1 rounded-lg text-[10px] font-bold transition cursor-pointer ${this.timerMode === 'unlimited' ? 'bg-amber-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}" data-mode="unlimited">Tự do</button>
+                    </div>
+                  ` : ''}
                 </div>
               </div>
 
-              <!-- Mode Selector Buttons in Dock -->
-              <div class="space-y-1.5 pt-1">
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Chế độ đếm giờ:</div>
-                <div class="grid grid-cols-3 gap-1">
-                  <button type="button" class="btn-dokkai-mode p-1.5 rounded-xl text-[11px] font-bold transition flex flex-col items-center justify-center cursor-pointer ${
-                    this.timerMode === 'standard' ? 'bg-emerald-600 text-white shadow-xs' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
-                  }" data-mode="standard" ${this.isTimerRunning ? 'disabled' : ''} title="${cfg.standard.label}">
-                    <span>🟢 Chuẩn</span>
-                    <span class="text-[9px] font-normal opacity-90">${cfg.standard.label}</span>
-                  </button>
-
-                  <button type="button" class="btn-dokkai-mode p-1.5 rounded-xl text-[11px] font-bold transition flex flex-col items-center justify-center cursor-pointer ${
-                    this.timerMode === 'hardcore' ? 'bg-rose-600 text-white shadow-xs' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
-                  }" data-mode="hardcore" ${this.isTimerRunning ? 'disabled' : ''} title="${cfg.hardcore.label}">
-                    <span>🔥 Gắt</span>
-                    <span class="text-[9px] font-normal opacity-90">${cfg.hardcore.label}</span>
-                  </button>
-
-                  <button type="button" class="btn-dokkai-mode p-1.5 rounded-xl text-[11px] font-bold transition flex flex-col items-center justify-center cursor-pointer ${
-                    this.timerMode === 'unlimited' ? 'bg-amber-600 text-white shadow-xs' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
-                  }" data-mode="unlimited" ${this.isTimerRunning ? 'disabled' : ''} title="Không giới hạn thời gian">
-                    <span>☕ Tự do</span>
-                    <span class="text-[9px] font-normal opacity-90">Vô hạn</span>
-                  </button>
+              <!-- Question & 4 Options Card -->
+              <div id="dokkai-question-card" class="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-6 shadow-sm space-y-4">
+                <div class="space-y-1">
+                  <div class="text-[11px] font-bold text-indigo-700 uppercase tracking-wider flex items-center gap-1.5">
+                    <span>❓ CÂU HỎI ĐỌC HIỂU</span>
+                  </div>
+                  <h3 class="font-jp text-base font-bold text-slate-900 leading-snug">
+                    ${this.escapeHtml(q.question)}
+                  </h3>
                 </div>
-              </div>
 
-              <!-- Dock Primary Action Button (Requirement 2: No duplicate start button!) -->
-              <div class="pt-2 border-t border-slate-100">
-                ${
-                  !this.isStarted
-                    ? `
-                      <div class="p-3 rounded-xl bg-slate-50 border border-dashed border-slate-200 text-center text-xs text-slate-500 font-medium">
-                        <span>👈 Bấm nút ở khung bài đọc để bắt đầu tính giờ</span>
-                      </div>
-                    `
-                    : this.step === 1
-                      ? `
-                        <button type="button" id="btn-dock-submit-answer" class="w-full py-3 px-4 rounded-xl font-black text-xs shadow-md transition flex items-center justify-center gap-1.5 ${
-                          this.selectedOption !== null
-                            ? 'bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white shadow-indigo-300/50 cursor-pointer active:scale-95'
-                            : 'bg-slate-200 text-slate-400 cursor-not-allowed'
-                        }" ${this.selectedOption === null ? 'disabled' : ''}>
-                          <span>🎯 Chốt đáp án & Xem phân tích logic</span>
-                        </button>
-                        <div class="text-[10px] text-center text-slate-400 mt-1.5">
-                          ${this.selectedOption !== null ? `Đã chọn lựa chọn ${this.selectedOption + 1}` : 'Vui lòng chọn 1 lựa chọn'}
-                        </div>
-                      `
-                      : `
-                        <div class="space-y-2">
-                          <button type="button" id="btn-dock-retake" class="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition cursor-pointer flex items-center justify-center gap-1.5 shadow-2xs active:scale-95">
-                            <span>🔄 Làm lại bài này</span>
-                          </button>
-                          <button type="button" id="btn-dock-back-hub" class="w-full py-2.5 px-3 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-xs border border-indigo-200 transition cursor-pointer flex items-center justify-center gap-1.5 shadow-2xs active:scale-95">
-                            <span>📋 Chọn bài khác</span>
-                          </button>
-                          ${this.currentIndex < this.questions.length - 1 ? `
-                            <button type="button" id="btn-dock-next" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer active:scale-95">
-                              <span>Bài tiếp theo (Bài ${this.currentIndex + 2}) ➡</span>
-                            </button>
-                          ` : ''}
-                        </div>
-                      `
-                }
-              </div>
+                <!-- 4 Options Stack with keyboard shortcut badges [1], [2], [3], [4] -->
+                <div class="options-stack space-y-2.5">
+                  ${(q.options || []).map((opt, optIdx) => {
+                    const isSelected = this.selectedOption === optIdx;
+                    const isThisCorrect = isAnswered && ((optIdx + 1) === correctNum);
+                    const isSelectedAndWrong = isAnswered && isSelected && !isThisCorrect;
 
-              <!-- Mini Question Navigator in Dock -->
-              <div class="pt-3 border-t border-slate-100">
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Danh sách bài đọc:</div>
-                <div class="grid grid-cols-4 gap-1.5">
-                  ${this.questions.map((item, idx) => {
-                    const hist = this.userAnswersHistory[item.id];
-                    const isCurrent = idx === this.currentIndex;
+                    let optionStyle = 'border-slate-200 bg-white hover:border-indigo-300 hover:bg-slate-50/70 text-slate-800 cursor-pointer';
+                    let badgeStyle = 'bg-slate-100 text-slate-600 border-slate-200';
+
+                    if (this.step === 1) {
+                      if (isSelected) {
+                        optionStyle = 'border-indigo-600 bg-indigo-50/70 text-indigo-950 ring-2 ring-indigo-500/20 shadow-xs font-semibold cursor-pointer';
+                        badgeStyle = 'bg-indigo-600 text-white border-indigo-600 shadow-xs';
+                      }
+                    } else {
+                      if (isThisCorrect) {
+                        optionStyle = 'border-emerald-500 bg-emerald-50/80 text-emerald-950 font-bold ring-2 ring-emerald-500/20';
+                        badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
+                      } else if (isSelectedAndWrong) {
+                        optionStyle = 'border-rose-400 bg-rose-50/70 text-rose-950 ring-2 ring-rose-400/20';
+                        badgeStyle = 'bg-rose-600 text-white border-rose-600';
+                      } else {
+                        optionStyle = 'border-slate-200 bg-slate-50/40 text-slate-500 opacity-80';
+                        badgeStyle = 'bg-slate-100 text-slate-400 border-slate-200';
+                      }
+                    }
+
                     return `
-                      <button type="button" class="btn-dock-goto-page py-1.5 rounded-lg text-xs font-bold transition flex flex-col items-center justify-center cursor-pointer ${
-                        isCurrent
-                          ? 'bg-indigo-600 text-white shadow-xs'
-                          : hist
-                            ? hist.isCorrect
-                              ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
-                              : 'bg-rose-100 text-rose-800 border border-rose-300'
-                            : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                      }" data-index="${idx}">
-                        <span>${idx + 1}</span>
-                        <span class="text-[8px] font-normal leading-none mt-0.5">
-                          ${isCurrent ? 'Đang đọc' : hist ? (hist.isCorrect ? '✓ Đúng' : '✗ Sai') : 'Chưa làm'}
-                        </span>
+                      <button type="button" class="btn-dokkai-option w-full text-left p-3.5 sm:p-4 rounded-2xl border-2 transition-all flex items-start gap-3 group ${optionStyle}" data-opt-idx="${optIdx}" ${this.step === 2 ? 'disabled' : ''}>
+                        <div class="w-6 h-6 rounded-lg font-black text-xs flex items-center justify-center shrink-0 border mt-0.5 transition ${badgeStyle}">
+                          ${optIdx + 1}
+                        </div>
+                        <div class="flex-1 font-jp text-sm leading-relaxed">
+                          ${this.escapeHtml(opt)}
+                        </div>
+                        <!-- Keyboard shortcut hint badge [1], [2], [3], [4] -->
+                        <span class="hidden sm:inline-flex items-center text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-slate-100/80 text-slate-400 border border-slate-200/80 shrink-0 select-none ml-auto" title="Bấm phím [${optIdx + 1}]">[${optIdx + 1}]</span>
+                        ${isSelected ? `
+                          <div class="shrink-0 text-[11px] font-bold px-2 py-0.5 rounded-full ${
+                            this.step === 1 ? 'bg-indigo-600 text-white' : isThisCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white'
+                          }">
+                            ${this.step === 1 ? 'Đã chọn' : isThisCorrect ? '✓ Bạn chọn' : '✗ Bạn chọn'}
+                          </div>
+                        ` : isThisCorrect ? `
+                          <div class="shrink-0 text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-600 text-white">
+                            ✓ Đúng
+                          </div>
+                        ` : ''}
                       </button>
                     `;
                   }).join('')}
                 </div>
+
+                <!-- Step 1 Submit Button -->
+                ${this.step === 1 ? `
+                  <div class="pt-3 border-t border-slate-100 space-y-2">
+                    <button type="button" id="btn-dokkai-submit" class="w-full py-3.5 px-5 rounded-2xl font-bold text-xs shadow-md transition flex items-center justify-center gap-2 ${
+                      this.selectedOption !== null
+                        ? 'bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white shadow-indigo-200 cursor-pointer active:scale-95'
+                        : 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                    }" ${this.selectedOption === null ? 'disabled' : ''}>
+                      <span>🎯 Chốt đáp án & Xem phân tích logic</span>
+                      <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] bg-white/20 rounded font-mono">Space</kbd>
+                    </button>
+                    <p class="text-[11px] text-center text-slate-400">
+                      ${this.selectedOption !== null ? `Đã chọn lựa chọn [${this.selectedOption + 1}]. Bấm Space hoặc Enter để chốt.` : 'Bấm phím số [1, 2, 3, 4] để chọn nhanh.'}
+                    </p>
+                  </div>
+                ` : ''}
               </div>
+
+              <!-- Step 2: Result Banner + Trap Breakdown + Navigation -->
+              ${this.step === 2 ? `
+                <div id="dokkai-breakdown-section" class="space-y-4 animate-fade-in">
+                  
+                  <!-- Result Banner -->
+                  <div id="dokkai-result-banner" class="rounded-2xl p-4 border flex items-center justify-between gap-3 shadow-xs ${
+                    isCorrect ? 'bg-emerald-50 border-emerald-200 text-emerald-950' : 'bg-rose-50 border-rose-200 text-rose-950'
+                  }">
+                    <div class="flex items-center gap-3">
+                      <div class="w-9 h-9 rounded-xl text-white font-black text-base flex items-center justify-center shrink-0 ${
+                        isCorrect ? 'bg-emerald-600' : 'bg-rose-600'
+                      }">
+                        ${isCorrect ? '✓' : '✗'}
+                      </div>
+                      <div>
+                        <div class="text-xs font-black">
+                          ${isCorrect ? 'CHÍNH XÁC! TƯ DUY RẤT TỐT' : 'CHƯA CHÍNH XÁC (DÍNH BẪY TƯ DUY)'}
+                        </div>
+                        <p class="text-[11px] opacity-80 mt-0.5">
+                          ⏱️ Hoàn thành trong ${this.formatTime(this.elapsedSeconds)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Trap Breakdown (Bắt bẫy tư duy) -->
+                  <div class="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-6 shadow-sm space-y-3">
+                    <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
+                      <span class="w-6 h-6 rounded-lg bg-amber-500 text-white flex items-center justify-center font-bold text-xs">
+                        ⚡
+                      </span>
+                      <h3 class="text-xs font-black text-slate-900 uppercase tracking-wider">Bắt Bẫy Tư Duy (Trap Breakdown)</h3>
+                    </div>
+
+                    <div class="space-y-2.5">
+                      ${[1, 2, 3, 4].map(num => {
+                        const optKey = `opt${num}`;
+                        const trapText = q.trapBreakdown ? (q.trapBreakdown[optKey] || '') : '';
+                        const isThisOptCorrect = num === correctNum;
+                        return `
+                          <div class="p-3 rounded-xl border text-xs leading-relaxed ${
+                            isThisOptCorrect 
+                              ? 'bg-emerald-50/70 border-emerald-200 text-emerald-950 font-medium' 
+                              : 'bg-slate-50 border-slate-200/80 text-slate-700'
+                          }">
+                            <div class="font-bold flex items-center gap-1.5 mb-1 ${isThisOptCorrect ? 'text-emerald-800' : 'text-slate-800'}">
+                              <span>${isThisOptCorrect ? '✅' : '❌'} Phương án ${num}:</span>
+                              ${isThisOptCorrect ? '<span class="text-[10px] px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800">ĐÁP ÁN ĐÚNG</span>' : ''}
+                            </div>
+                            <div class="text-[11px] pl-5">
+                              ${trapText ? this.escapeHtml(trapText) : 'Phương án gây nhiễu, không phản ánh đúng ý tác giả.'}
+                            </div>
+                          </div>
+                        `;
+                      }).join('')}
+                    </div>
+
+                    ${q.explanation ? `
+                      <div class="mt-3 pt-3 border-t border-slate-100">
+                        <div class="text-[11px] font-bold text-slate-700 mb-1">📖 Giải thích tổng quan:</div>
+                        <p class="text-xs text-slate-600 leading-relaxed font-jp whitespace-pre-line">${this.escapeHtml(q.explanation)}</p>
+                      </div>
+                    ` : ''}
+                  </div>
+
+                  <!-- Action Buttons in Stage 2 -->
+                  <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+                    <div class="flex items-center gap-2">
+                      <button type="button" id="btn-dokkai-retake-top" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 transition flex items-center gap-1 cursor-pointer active:scale-95 shadow-2xs">
+                        <span>🔄 Làm lại</span>
+                      </button>
+                      <button type="button" id="btn-dokkai-anki-export" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-white border border-amber-200 hover:bg-amber-50 text-amber-800 transition flex items-center gap-1 cursor-pointer active:scale-95 shadow-2xs" title="Xuất bài đọc vào Anki (.txt)">
+                        <span>⚡ Xuất Anki (.txt)</span>
+                      </button>
+                    </div>
+
+                    ${this.currentIndex < this.questions.length - 1 ? `
+                      <button type="button" id="btn-dokkai-next-top" class="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-600 to-indigo-800 hover:from-indigo-700 hover:to-indigo-900 text-white transition flex items-center gap-1 shadow-xs cursor-pointer active:scale-95">
+                        <span>Bài tiếp theo ➡</span>
+                        <kbd class="hidden sm:inline-block px-1 py-0.2 text-[9px] bg-white/20 rounded font-mono">Space</kbd>
+                      </button>
+                    ` : `
+                      <button type="button" id="btn-dokkai-finish-chapter" class="px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white transition flex items-center gap-1 shadow-xs cursor-pointer active:scale-95">
+                        <span>🎉 Về Kho Luyện Đề</span>
+                      </button>
+                    `}
+                  </div>
+
+                </div>
+              ` : ''}
 
             </div>
 
           </div>
-
         </div>
 
       </div>
@@ -1588,24 +1481,31 @@ export class DokkaiEngine {
     const q = this.getCurrentQuestion();
     if (!q) return;
 
-    const optLines = (q.options || []).map((o, i) => `${i + 1}. ${o}`).join('<br>');
-    const frontText = `<b>【Đọc hiểu N1 - ${q.chapter}】</b><br>${q.title}<br><br><div style="text-align:left; line-height:1.8;">${q.passage.replace(/\n\n/g, '<br><br>')}</div><br><b>${q.question}</b><br><br>${optLines}`;
-    const backText = `<b>【Đáp án đúng】: Phương án ${this.getCorrectAnswerNumber(q)}</b><br><br>${q.explanation || ''}`;
-    const tags = `Koala_Dokkai_N1 ${q.chapter.replace(/[:：]/g, '_')}`;
+    const isAnswered = this.step === 2;
+    const isCorrect = isAnswered && this.isAnswerCorrect(this.selectedOption, q);
+    const tag = isCorrect ? 'JLPT_Flagged_Correct' : 'JLPT_Wrong';
 
-    const tsvContent = `${frontText}\t${backText}\t${tags}\n`;
-    const blob = new Blob([tsvContent], { type: 'text/plain;charset=utf-8' });
+    const optLines = (q.options || []).map((o, i) => `(${i + 1}) ${o}`).join('<br>');
+    const frontText = `<b>【Đọc hiểu N1 - ${q.chapter}】</b><br>${q.title || ''}<br><br><div style="text-align:left; line-height:1.8; background:#f8fafc; padding:10px 14px; border-left:3px solid #6366f1; border-radius:6px;">${q.passage.replace(/\n\n/g, '<br><br>')}</div><br><b>${q.question}</b><br><br>${optLines}`;
+    const correctOptIndex = this.getCorrectAnswerNumber(q);
+    const backText = `<b>【Đáp án đúng】: Phương án (${correctOptIndex})</b><br><br>${(q.explanation || '').trim().replace(/\n/g, '<br>')}`;
+    const tags = `Koala_Dokkai_N1 ${tag} ${q.chapter ? q.chapter.replace(/[:：\s]+/g, '_') : 'N1_Dokkai'}`;
+
+    const tsvContent = `#separator:tab\n#html:true\n#tags column:3\n${frontText.replace(/[\t\r\n]+/g, ' ')}\t${backText.replace(/[\t\r\n]+/g, ' ')}\t${tags}\n`;
+    const blob = new Blob(['\uFEFF' + tsvContent], { type: 'text/tab-separated-values;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `Koala_Dokkai_${q.id}.txt`;
+    link.download = `Koala_Dokkai_${q.id || 'export'}.txt`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
 
     if (this.app && typeof this.app.showToast === 'function') {
-      this.app.showToast('Đã tải file thẻ Anki (.txt) thành công!', 'success');
+      const wrongCount = isCorrect ? 0 : 1;
+      const flaggedCount = isCorrect ? 1 : 0;
+      this.app.showToast(`📥 Đã trích xuất 1 câu (gồm ${wrongCount} câu sai và ${flaggedCount} câu đánh dấu khó) vào file Anki (.txt)!`, 'success');
     }
   }
 }

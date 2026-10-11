@@ -29,8 +29,17 @@ export function collectQuestionsForAnki(questions = [], userAnswers = {}, userFl
     const qid = q.id !== undefined && q.id !== null ? String(q.id) : `q_${idx}`;
     const userChoice = userAnswers ? userAnswers[q.id] : undefined;
     const isAnswered = userChoice !== undefined && userChoice !== null;
-    const isCorrect = isAnswered && userChoice === q.answer;
-    const isWrong = !isAnswered || userChoice !== q.answer;
+    
+    // Safely evaluate correctness for both 0-based index and 1-based index answers
+    let isCorrect = false;
+    if (isAnswered) {
+      if (userChoice === q.answer) {
+        isCorrect = true;
+      } else if (typeof q.answer === 'number' && (userChoice + 1) === q.answer) {
+        isCorrect = true;
+      }
+    }
+    const isWrong = !isAnswered || !isCorrect;
     const isFlagged = !!(userFlags && userFlags[q.id]);
 
     if (isWrong || isFlagged) {

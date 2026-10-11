@@ -136,6 +136,9 @@ export class QuizEngine {
 
     // Dokkai layout state: 'split' (Chia đôi) or 'stacked' (Bài đọc ở trên)
     this.dokkaiLayout = localStorage.getItem('koala_dokkai_layout') || 'split';
+
+    // Initialize Keyboard Shortcuts UX
+    this.initKeyboardShortcuts();
   }
 
   setDokkaiLayout(layout) {
@@ -982,6 +985,7 @@ export class QuizEngine {
                 <span class="font-jp text-sm sm:text-base leading-relaxed flex-1 break-words">
                   ${optText}
                 </span>
+                <span class="hidden sm:inline-flex items-center text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-slate-100/80 text-slate-400 border border-slate-200/80 shrink-0 select-none ml-auto" title="Phím tắt: Bấm [${optIdx + 1}]">[${optIdx + 1}]</span>
                 ${this.isSubmitted && isThisCorrect ? `
                   <svg class="w-5 h-5 text-emerald-600 shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
@@ -1299,6 +1303,88 @@ export class QuizEngine {
     }
   }
 
+  goToQuestion(index) {
+    if (!this.dayData || !Array.isArray(this.dayData.questions)) return;
+    if (index < 0 || index >= this.dayData.questions.length) return;
+    this.currentQuestionIndex = index;
+    this.updateActivePaletteTile();
+    const q = this.dayData.questions[index];
+    if (q) {
+      this.scrollToQuestion(q.id);
+    }
+  }
+
+  initKeyboardShortcuts() {
+    if (this._hasBoundKeyboard) return;
+    this._hasBoundKeyboard = true;
+
+    window.addEventListener('keydown', (e) => {
+      // 1. Do not intercept if user is typing in form / input / textarea
+      const activeEl = document.activeElement;
+      if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'SELECT' || activeEl.isContentEditable)) {
+        return;
+      }
+      if (document.getElementById('pretest-config-modal')?.classList.contains('active') ||
+          document.getElementById('image-lightbox-modal') ||
+          document.getElementById('score-modal')?.classList.contains('active')) {
+        return;
+      }
+
+      // 2. Only active when QuizEngine is visible and active course is N1 / N2
+      if (!this.container || !this.dayData || !Array.isArray(this.dayData.questions) || this.dayData.questions.length === 0) {
+        return;
+      }
+      const testView = document.getElementById('test-view');
+      if (!testView || testView.classList.contains('hidden')) {
+        return;
+      }
+      if (this.app && this.app.currentCourse === 'n1_dokkai') {
+        return; // Handled by DokkaiEngine
+      }
+
+      // 3. Option Selection: [1], [2], [3], [4]
+      if (['1', '2', '3', '4'].includes(e.key)) {
+        if (!this.isSubmitted) {
+          const optIdx = parseInt(e.key, 10) - 1;
+          const currentQ = this.dayData.questions[this.currentQuestionIndex];
+          if (currentQ && optIdx >= 0 && optIdx < (currentQ.options ? currentQ.options.length : 4)) {
+            e.preventDefault();
+            this.selectOption(currentQ.id, optIdx);
+          }
+        }
+        return;
+      }
+
+      // 4. Space / Enter -> Move to next question in standard multiple-choice mode
+      if (e.key === ' ' || e.code === 'Space' || e.key === 'Enter') {
+        if (e.target && (e.target.tagName === 'BUTTON' || e.target.tagName === 'A')) {
+          return;
+        }
+        e.preventDefault();
+        if (this.currentQuestionIndex < this.dayData.questions.length - 1) {
+          this.goToQuestion(this.currentQuestionIndex + 1);
+        }
+        return;
+      }
+
+      // 5. Arrow Navigation: [←] / [→]
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        if (this.currentQuestionIndex < this.dayData.questions.length - 1) {
+          this.goToQuestion(this.currentQuestionIndex + 1);
+        }
+        return;
+      }
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        if (this.currentQuestionIndex > 0) {
+          this.goToQuestion(this.currentQuestionIndex - 1);
+        }
+        return;
+      }
+    });
+  }
+
   /**
    * Bind DOM event listeners
    */
@@ -1309,7 +1395,29 @@ export class QuizEngine {
       btn.addEventListener('click', () => {
         const questionId = btn.getAttribute('data-question-id');
         const optionIndex = parseInt(btn.getAttribute('data-option-index'), 10);
+        if (this.dayData && this.dayData.questions) {
+          const idx = this.dayData.questions.findIndex(q => q.id === questionId);
+          if (idx !== -1) {
+            this.currentQuestionIndex = idx;
+            this.updateActivePaletteTile();
+          }
+        }
         this.selectOption(questionId, optionIndex);
+      });
+    });
+
+    // Question card click to focus active index
+    const questionCards = this.container.querySelectorAll('.question-card');
+    questionCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const questionId = card.getAttribute('data-question-id');
+        if (this.dayData && this.dayData.questions) {
+          const idx = this.dayData.questions.findIndex(q => q.id === questionId);
+          if (idx !== -1 && this.currentQuestionIndex !== idx) {
+            this.currentQuestionIndex = idx;
+            this.updateActivePaletteTile();
+          }
+        }
       });
     });
 
@@ -1792,7 +1900,7 @@ export class QuizEngine {
     );
 
     if (result.success) {
-      this.showToast(`📥 Đã tải file "${result.filename}" (${result.totalCount} câu). Bạn có thể Import trực tiếp vào Anki!`, 'success');
+      this.showToast(`📥 Đã trích xuất ${result.totalCount} câu (gồm ${result.wrongCount} câu sai và ${result.flaggedCount} câu đánh dấu khó) vào file "${result.filename}"!`, 'success');
     } else {
       this.showToast('🎉 Bạn không có câu sai hoặc câu đánh dấu khó nào để xuất file!', 'info');
     }
