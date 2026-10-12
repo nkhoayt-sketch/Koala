@@ -1176,6 +1176,68 @@ export class QuizEngine {
   }
 
   /**
+   * Helper to compute classes for question palette matrix tiles
+   * Clear separation between completion state (background) and difficulty flag (border / dot)
+   */
+  getPaletteBtnClasses(isAnswered, isFlagged, isCurrent) {
+    const classes = [
+      'palette-btn',
+      'w-9',
+      'h-9',
+      'rounded-xl',
+      'text-xs',
+      'font-semibold',
+      'flex',
+      'items-center',
+      'justify-center',
+      'relative',
+      'transition-all'
+    ];
+
+    if (isAnswered) {
+      // ĐÃ LÀM: Nền tím/xanh dương, chữ trắng
+      classes.push('status-answered', 'bg-indigo-600', 'text-white');
+      if (isFlagged) {
+        // Đã làm + Khó: Nền tím + viền cam nổi bật
+        classes.push('is-flagged', 'border-2', 'border-amber-400');
+        if (!isCurrent) {
+          classes.push('ring-2', 'ring-amber-400/30');
+        }
+      } else {
+        classes.push('border-2', 'border-indigo-600');
+      }
+    } else {
+      // CHƯA LÀM: Nền trắng/xám nhạt trong suốt, chữ xám đậm, KHÔNG tô nền cam
+      classes.push('status-unanswered', 'bg-white', 'dark:bg-slate-800', 'text-slate-700');
+      if (isFlagged) {
+        // Chưa làm + Khó: Nền trắng + viền cam nổi bật
+        classes.push('is-flagged', 'border-2', 'border-amber-500');
+        if (!isCurrent) {
+          classes.push('ring-2', 'ring-amber-400/30');
+        }
+      } else {
+        classes.push('border-2', 'border-slate-300');
+      }
+    }
+
+    if (isCurrent) {
+      classes.push('ring-2', 'ring-indigo-500', 'ring-offset-1', 'font-bold', 'z-10');
+    }
+
+    return classes.join(' ');
+  }
+
+  /**
+   * Helper to compute content for question palette matrix tiles
+   */
+  getPaletteBtnContent(qNumber, isFlagged) {
+    const flagIndicator = isFlagged 
+      ? `<span class="absolute -top-1 -right-1 w-3 h-3 bg-amber-500 rounded-full border-2 border-white shadow-xs pointer-events-none z-10" title="Câu khó"></span>`
+      : '';
+    return `${qNumber}${flagIndicator}`;
+  }
+
+  /**
    * Question Palette (Matrix) rendering
    */
   renderPalette() {
@@ -1189,30 +1251,22 @@ export class QuizEngine {
       const isFlagged = !!this.userFlags[q.id];
       const isCurrent = idx === this.currentQuestionIndex;
 
-      // Determine CSS class based on priority: Flagged (Yellow) > Answered (Blue) > Unanswered (Transparent/gray border)
-      let statusClass = 'status-unanswered';
-      if (isFlagged) {
-        statusClass = 'status-flagged';
-      } else if (isAnswered) {
-        statusClass = 'status-answered';
-      }
+      const btnClasses = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent);
+      const btnContent = this.getPaletteBtnContent(q.number, isFlagged);
 
       return `
         <button type="button" 
-                class="palette-btn w-9 h-9 rounded-xl text-xs font-semibold flex items-center justify-center relative transition-all ${statusClass} ${isCurrent ? 'ring-2 ring-indigo-500 ring-offset-1 font-bold' : ''}"
+                class="${btnClasses}"
                 data-palette-qid="${q.id}"
                 data-palette-index="${idx}"
                 data-q-num="${q.number}"
-                title="Câu ${q.number} (${q.section})">
-          ${q.number}
-          ${isFlagged ? `
-            <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-amber-500 rounded-full border border-white"></span>
-          ` : ''}
+                title="Câu ${q.number}${q.section ? ` (${q.section})` : ''}">
+          ${btnContent}
         </button>
       `;
     }).join('');
 
-    // Update Palette Stats Summary
+    // Update Palette Stats Summary & bind quick jump listeners
     this.updatePaletteStats();
 
     // Bind clicks on palette buttons to jump smoothly to question
@@ -1223,19 +1277,25 @@ export class QuizEngine {
         const idx = parseInt(btn.getAttribute('data-palette-index'), 10);
         this.currentQuestionIndex = isNaN(idx) ? 0 : idx;
         this.updateActivePaletteTile();
+        if (window.app && typeof window.app.toggleMobileSidebar === 'function' && window.innerWidth < 1024) {
+          window.app.toggleMobileSidebar(false);
+        }
         this.scrollToQuestion(qid);
       });
     });
   }
 
   updateActivePaletteTile() {
+    if (!this.dayData || !this.dayData.questions) return;
     const allBtns = document.querySelectorAll('.palette-btn');
     allBtns.forEach((btn, idx) => {
-      if (idx === this.currentQuestionIndex) {
-        btn.classList.add('ring-2', 'ring-indigo-500', 'ring-offset-1', 'font-bold');
-      } else {
-        btn.classList.remove('ring-2', 'ring-indigo-500', 'ring-offset-1', 'font-bold');
-      }
+      const q = this.dayData.questions[idx];
+      if (!q) return;
+      const isAnswered = this.userAnswers[q.id] !== undefined;
+      const isFlagged = !!this.userFlags[q.id];
+      const isCurrent = idx === this.currentQuestionIndex;
+
+      btn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent);
     });
   }
 
@@ -1249,18 +1309,8 @@ export class QuizEngine {
     const idx = parseInt(paletteBtn.getAttribute('data-palette-index'), 10);
     const isCurrent = idx === this.currentQuestionIndex;
 
-    let statusClass = 'status-unanswered';
-    if (isFlagged) {
-      statusClass = 'status-flagged';
-    } else if (isAnswered) {
-      statusClass = 'status-answered';
-    }
-
-    paletteBtn.className = `palette-btn w-9 h-9 rounded-xl text-xs font-semibold flex items-center justify-center relative transition-all ${statusClass} ${isCurrent ? 'ring-2 ring-indigo-500 ring-offset-1 font-bold' : ''}`;
-    paletteBtn.innerHTML = `
-      ${qNum}
-      ${isFlagged ? `<span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-amber-500 rounded-full border border-white"></span>` : ''}
-    `;
+    paletteBtn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent);
+    paletteBtn.innerHTML = this.getPaletteBtnContent(qNum, isFlagged);
 
     this.updatePaletteStats();
   }
@@ -1275,12 +1325,64 @@ export class QuizEngine {
     const statAnswered = document.getElementById('palette-stat-answered');
     const statFlagged = document.getElementById('palette-stat-flagged');
     const statUnanswered = document.getElementById('palette-stat-unanswered');
+    const statUnansweredBox = document.getElementById('palette-stat-unanswered-box');
+    const statFlaggedBox = document.getElementById('palette-stat-flagged-box');
     const bottomFlagged = document.getElementById('bottom-flagged-count');
 
     if (statAnswered) statAnswered.textContent = answered;
     if (statFlagged) statFlagged.textContent = flagged;
     if (statUnanswered) statUnanswered.textContent = unanswered;
     if (bottomFlagged) bottomFlagged.textContent = flagged;
+
+    // Bind click on unanswered stat box to jump directly to first unanswered question
+    if (statUnansweredBox && !statUnansweredBox._hasJumpListener) {
+      statUnansweredBox._hasJumpListener = true;
+      statUnansweredBox.addEventListener('click', () => {
+        this.jumpToFirstUnanswered();
+      });
+    }
+
+    // Bind click on flagged stat box to jump directly to first flagged question
+    if (statFlaggedBox && !statFlaggedBox._hasJumpListener) {
+      statFlaggedBox._hasJumpListener = true;
+      statFlaggedBox.addEventListener('click', () => {
+        this.jumpToFirstFlagged();
+      });
+    }
+  }
+
+  /**
+   * Jump directly to the first unanswered question
+   */
+  jumpToFirstUnanswered() {
+    if (!this.dayData || !this.dayData.questions || !this.dayData.questions.length) return;
+    const firstUnanswered = this.dayData.questions.find(q => this.userAnswers[q.id] === undefined);
+    if (firstUnanswered) {
+      if (window.app && typeof window.app.toggleMobileSidebar === 'function' && window.innerWidth < 1024) {
+        window.app.toggleMobileSidebar(false);
+      }
+      this.scrollToQuestion(firstUnanswered.id);
+      this.showToast(`Đã chuyển đến câu chưa làm đầu tiên: Câu ${firstUnanswered.number || ''}`, 'info');
+    } else {
+      this.showToast('Bạn đã hoàn thành tất cả các câu hỏi!', 'success');
+    }
+  }
+
+  /**
+   * Jump directly to the first flagged (hard) question
+   */
+  jumpToFirstFlagged() {
+    if (!this.dayData || !this.dayData.questions || !this.dayData.questions.length) return;
+    const firstFlagged = this.dayData.questions.find(q => !!this.userFlags[q.id]);
+    if (firstFlagged) {
+      if (window.app && typeof window.app.toggleMobileSidebar === 'function' && window.innerWidth < 1024) {
+        window.app.toggleMobileSidebar(false);
+      }
+      this.scrollToQuestion(firstFlagged.id);
+      this.showToast(`Đã chuyển đến câu khó đầu tiên: Câu ${firstFlagged.number || ''}`, 'info');
+    } else {
+      this.showToast('Không có câu hỏi nào được đánh dấu khó.', 'info');
+    }
   }
 
   scrollToQuestion(questionId) {
@@ -1294,6 +1396,10 @@ export class QuizEngine {
 
     const card = document.getElementById(`question-${questionId}`);
     if (card) {
+      if (card.classList.contains('hidden')) {
+        this.activeFilter = 'all';
+        this.applyActiveFilter();
+      }
       card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       // Temporary pulse highlight ring
       card.classList.add('ring-4', 'ring-indigo-400/50');

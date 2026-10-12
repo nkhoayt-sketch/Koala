@@ -131,35 +131,37 @@
               <div class="font-bold text-xs" id="palette-stat-answered">0</div>
               <div class="text-[9px] text-indigo-600">Đã làm</div>
             </div>
-            <div class="bg-amber-50 p-1 rounded-lg border border-amber-200 text-amber-900">
+            <div id="palette-stat-flagged-box" class="bg-amber-50 p-1 rounded-lg border border-amber-200 text-amber-900 cursor-pointer hover:border-amber-400 hover:bg-amber-100 transition-all select-none active:scale-95" title="Bấm để nhảy đến câu khó đầu tiên">
               <div class="font-bold text-xs text-amber-700" id="palette-stat-flagged">0</div>
               <div class="text-[9px] text-amber-600">Câu khó</div>
             </div>
-            <div class="bg-white p-1 rounded-lg border border-slate-200 text-slate-700">
-              <div class="font-bold text-xs" id="palette-stat-unanswered">45</div>
-              <div class="text-[9px] text-slate-400">Chưa làm</div>
+            <div id="palette-stat-unanswered-box" class="bg-white p-1 rounded-lg border-2 border-slate-300 text-slate-700 cursor-pointer hover:border-amber-400 hover:bg-amber-50/40 transition-all select-none active:scale-95 group shadow-2xs" title="Bấm để nhảy ngay đến câu chưa hoàn thành đầu tiên">
+              <div class="font-bold text-xs group-hover:text-amber-600 transition-colors" id="palette-stat-unanswered">45</div>
+              <div class="text-[9px] text-slate-500 group-hover:text-amber-700 transition-colors">Chưa làm</div>
             </div>
           </div>
 
           <!-- Color Legend -->
           <div class="flex items-center justify-between text-[9px] text-slate-500 mb-2 px-1">
             <div class="flex items-center gap-1">
-              <span class="w-2 h-2 rounded-xs bg-slate-100 border border-slate-300 inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-xs bg-white border-2 border-slate-300 inline-block"></span>
               <span>Chưa làm</span>
             </div>
             <div class="flex items-center gap-1">
-              <span class="w-2 h-2 rounded-xs bg-indigo-600 inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-xs bg-indigo-600 border border-indigo-700 inline-block"></span>
               <span>Đã làm</span>
             </div>
             <div class="flex items-center gap-1">
-              <span class="w-2 h-2 rounded-xs bg-amber-400 inline-block"></span>
-              <span>Khó</span>
+              <span class="relative w-2.5 h-2.5 rounded-xs bg-white border-2 border-amber-500 inline-block">
+                <span class="absolute -top-1 -right-1 w-1.5 h-1.5 bg-amber-500 rounded-full border border-white"></span>
+              </span>
+              <span>Cờ khó</span>
             </div>
           </div>
 
           <!-- Question Grid (Scrollable max height) -->
           <div class="max-h-44 overflow-y-auto pr-0.5">
-            <div id="question-palette-grid" class="grid grid-cols-5 gap-1.5 justify-items-center">
+            <div id="question-palette-grid" class="grid grid-cols-5 gap-1.5 justify-items-center p-1">
               <!-- Populated via quiz.js -->
             </div>
           </div>

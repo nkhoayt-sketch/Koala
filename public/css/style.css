@@ -219,35 +219,50 @@ body {
   transform: scale(0.95);
 }
 
-/* Unanswered: Light gray border, transparent bg */
+/* Unanswered: Light gray border, white bg */
 .palette-btn.status-unanswered {
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  color: #64748b;
-}
-
-.palette-btn.status-unanswered:hover {
-  border-color: #cbd5e1;
-  background-color: #f1f5f9;
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
   color: #334155;
 }
 
-/* Answered: Blue */
+.palette-btn.status-unanswered:hover {
+  border-color: #94a3b8;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Answered: Blue / Indigo */
 .palette-btn.status-answered {
   background-color: #4f46e5;
-  border: 1px solid #4338ca;
+  border: 2px solid #4338ca;
   color: #ffffff;
   font-weight: 600;
   box-shadow: 0 1px 2px rgba(79, 70, 229, 0.25);
 }
 
-/* Flagged: Yellow (Takes priority) */
+.palette-btn.status-answered:hover {
+  background-color: #4338ca;
+}
+
+/* Flagged status modifier: Highlight border & ring, NEVER force solid amber background */
+.palette-btn.is-flagged,
 .palette-btn.status-flagged {
-  background-color: #f59e0b !important;
-  border: 1px solid #d97706 !important;
-  color: #78350f !important;
-  font-weight: 700 !important;
-  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25) !important;
+  border-color: #f59e0b !important;
+}
+
+.palette-btn.status-unanswered.is-flagged,
+.palette-btn.status-unanswered.status-flagged {
+  background-color: #ffffff !important;
+  color: #334155 !important;
+  border-color: #f59e0b !important;
+}
+
+.palette-btn.status-answered.is-flagged,
+.palette-btn.status-answered.status-flagged {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+  border-color: #fbbf24 !important;
 }
 
 /* Compact Gemini Sparkle Button */
