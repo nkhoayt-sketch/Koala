@@ -759,7 +759,7 @@ export class QuizEngine {
 
         if (isSplit) {
           html += `
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <div class="passage-block-container grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
               <!-- Left: Sticky Passage (Renders ONCE for all sub-questions) -->
               <div class="lg:col-span-6 xl:col-span-7 lg:sticky lg:top-20">
                 <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-sm max-h-[calc(100vh-6.5rem)] overflow-y-auto">
@@ -779,7 +779,7 @@ export class QuizEngine {
         } else {
           // Mode 2: Standard View / Bài đọc ở trên (trải rộng full-width)
           html += `
-            <div class="space-y-6">
+            <div class="passage-block-container space-y-6">
               <!-- Top: Full-width Passage -->
               <div class="w-full">
                 <div class="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
@@ -1178,8 +1178,12 @@ export class QuizEngine {
   /**
    * Helper to compute classes for question palette matrix tiles
    * Clear separation between completion state (background) and difficulty flag (border / dot)
+   * In review mode (isSubmitted):
+   * - Correct: Green bg (bg-emerald-500)
+   * - Wrong: Red bg (bg-rose-500)
+   * - Filtered out: Dimmed (opacity-30 pointer-events-none)
    */
-  getPaletteBtnClasses(isAnswered, isFlagged, isCurrent) {
+  getPaletteBtnClasses(isAnswered, isFlagged, isCurrent, isCorrect = false) {
     const classes = [
       'palette-btn',
       'w-9',
@@ -1194,29 +1198,57 @@ export class QuizEngine {
       'transition-all'
     ];
 
-    if (isAnswered) {
-      // ĐÃ LÀM: Nền tím/xanh dương, chữ trắng
-      classes.push('status-answered', 'bg-indigo-600', 'text-white');
-      if (isFlagged) {
-        // Đã làm + Khó: Nền tím + viền cam nổi bật
-        classes.push('is-flagged', 'border-2', 'border-amber-400');
-        if (!isCurrent) {
-          classes.push('ring-2', 'ring-amber-400/30');
+    if (this.isSubmitted) {
+      // ĐÃ NỘP BÀI (REVIEW MODE): Đổi màu Đỏ/Xanh
+      if (isCorrect) {
+        // Làm ĐÚNG: Nền màu XANH LÁ
+        classes.push('status-correct', 'bg-emerald-500', 'hover:bg-emerald-600', 'text-white', 'border-transparent');
+        // Nếu bộ lọc đang là 'wrong', làm mờ ô xanh và vô hiệu hóa click
+        if (this.activeFilter === 'wrong') {
+          classes.push('opacity-30', 'pointer-events-none', 'cursor-not-allowed');
+        } else {
+          classes.push('opacity-100');
         }
       } else {
-        classes.push('border-2', 'border-indigo-600');
+        // Làm SAI hoặc Bỏ trống: Nền màu ĐỎ NỔI BẬT
+        classes.push('status-wrong', 'bg-rose-500', 'hover:bg-rose-600', 'text-white', 'border-transparent');
+        // Nếu bộ lọc đang là 'correct', làm mờ ô đỏ và vô hiệu hóa click
+        if (this.activeFilter === 'correct') {
+          classes.push('opacity-30', 'pointer-events-none', 'cursor-not-allowed');
+        } else {
+          classes.push('opacity-100', 'animate-pulse-once');
+        }
+      }
+
+      if (isFlagged) {
+        classes.push('is-flagged');
       }
     } else {
-      // CHƯA LÀM: Nền trắng/xám nhạt trong suốt, chữ xám đậm, KHÔNG tô nền cam
-      classes.push('status-unanswered', 'bg-white', 'dark:bg-slate-800', 'text-slate-700');
-      if (isFlagged) {
-        // Chưa làm + Khó: Nền trắng + viền cam nổi bật
-        classes.push('is-flagged', 'border-2', 'border-amber-500');
-        if (!isCurrent) {
-          classes.push('ring-2', 'ring-amber-400/30');
+      // ĐANG LÀM BÀI (IN-PROGRESS MODE):
+      if (isAnswered) {
+        // ĐÃ LÀM: Nền tím/xanh dương, chữ trắng
+        classes.push('status-answered', 'bg-indigo-600', 'text-white');
+        if (isFlagged) {
+          // Đã làm + Khó: Nền tím + viền cam nổi bật
+          classes.push('is-flagged', 'border-2', 'border-amber-400');
+          if (!isCurrent) {
+            classes.push('ring-2', 'ring-amber-400/30');
+          }
+        } else {
+          classes.push('border-2', 'border-indigo-600');
         }
       } else {
-        classes.push('border-2', 'border-slate-300');
+        // CHƯA LÀM: Nền trắng/xám nhạt trong suốt, chữ xám đậm, KHÔNG tô nền cam
+        classes.push('status-unanswered', 'bg-white', 'dark:bg-slate-800', 'text-slate-700');
+        if (isFlagged) {
+          // Chưa làm + Khó: Nền trắng + viền cam nổi bật
+          classes.push('is-flagged', 'border-2', 'border-amber-500');
+          if (!isCurrent) {
+            classes.push('ring-2', 'ring-amber-400/30');
+          }
+        } else {
+          classes.push('border-2', 'border-slate-300');
+        }
       }
     }
 
@@ -1250,9 +1282,15 @@ export class QuizEngine {
       const isAnswered = this.userAnswers[q.id] !== undefined;
       const isFlagged = !!this.userFlags[q.id];
       const isCurrent = idx === this.currentQuestionIndex;
+      const isCorrect = isAnswered && this.userAnswers[q.id] === q.answer;
 
-      const btnClasses = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent);
+      const btnClasses = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent, isCorrect);
       const btnContent = this.getPaletteBtnContent(q.number, isFlagged);
+
+      const statusTitle = this.isSubmitted 
+        ? (isCorrect ? 'Đúng' : 'Sai')
+        : (isAnswered ? 'Đã làm' : 'Chưa làm');
+      const flagTitle = isFlagged ? ', Đánh dấu khó' : '';
 
       return `
         <button type="button" 
@@ -1260,7 +1298,7 @@ export class QuizEngine {
                 data-palette-qid="${q.id}"
                 data-palette-index="${idx}"
                 data-q-num="${q.number}"
-                title="Câu ${q.number}${q.section ? ` (${q.section})` : ''}">
+                title="Câu ${q.number}${q.section ? ` (${q.section})` : ''} - [${statusTitle}${flagTitle}]">
           ${btnContent}
         </button>
       `;
@@ -1294,8 +1332,9 @@ export class QuizEngine {
       const isAnswered = this.userAnswers[q.id] !== undefined;
       const isFlagged = !!this.userFlags[q.id];
       const isCurrent = idx === this.currentQuestionIndex;
+      const isCorrect = isAnswered && this.userAnswers[q.id] === q.answer;
 
-      btn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent);
+      btn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent, isCorrect);
     });
   }
 
@@ -1308,11 +1347,22 @@ export class QuizEngine {
     const qNum = paletteBtn.getAttribute('data-q-num');
     const idx = parseInt(paletteBtn.getAttribute('data-palette-index'), 10);
     const isCurrent = idx === this.currentQuestionIndex;
+    const q = this.dayData?.questions?.find(item => item.id === questionId);
+    const isCorrect = isAnswered && q && this.userAnswers[questionId] === q.answer;
 
-    paletteBtn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent);
+    paletteBtn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent, isCorrect);
     paletteBtn.innerHTML = this.getPaletteBtnContent(qNum, isFlagged);
 
     this.updatePaletteStats();
+  }
+
+  /**
+   * Set result active filter and synchronize questions + palette matrix
+   */
+  setFilter(filter) {
+    this.activeFilter = filter;
+    this.render();
+    this.renderPalette();
   }
 
   updatePaletteStats() {
@@ -1322,32 +1372,136 @@ export class QuizEngine {
     const flagged = Object.keys(this.userFlags).length;
     const unanswered = Math.max(0, total - answered);
 
+    const statBox1 = document.getElementById('palette-stat-box-1');
+    const statBox2 = document.getElementById('palette-stat-box-2') || document.getElementById('palette-stat-flagged-box');
+    const statBox3 = document.getElementById('palette-stat-box-3') || document.getElementById('palette-stat-unanswered-box');
+
     const statAnswered = document.getElementById('palette-stat-answered');
     const statFlagged = document.getElementById('palette-stat-flagged');
     const statUnanswered = document.getElementById('palette-stat-unanswered');
-    const statUnansweredBox = document.getElementById('palette-stat-unanswered-box');
-    const statFlaggedBox = document.getElementById('palette-stat-flagged-box');
-    const bottomFlagged = document.getElementById('bottom-flagged-count');
+    const statLabel1 = document.getElementById('palette-stat-label-1');
+    const statLabel2 = document.getElementById('palette-stat-label-2');
+    const statLabel3 = document.getElementById('palette-stat-label-3');
 
-    if (statAnswered) statAnswered.textContent = answered;
-    if (statFlagged) statFlagged.textContent = flagged;
-    if (statUnanswered) statUnanswered.textContent = unanswered;
+    const bottomFlagged = document.getElementById('bottom-flagged-count');
     if (bottomFlagged) bottomFlagged.textContent = flagged;
 
-    // Bind click on unanswered stat box to jump directly to first unanswered question
-    if (statUnansweredBox && !statUnansweredBox._hasJumpListener) {
-      statUnansweredBox._hasJumpListener = true;
-      statUnansweredBox.addEventListener('click', () => {
-        this.jumpToFirstUnanswered();
-      });
-    }
+    const legendContainer = document.getElementById('palette-legend');
+    const activeCountEl = document.getElementById('palette-active-count');
 
-    // Bind click on flagged stat box to jump directly to first flagged question
-    if (statFlaggedBox && !statFlaggedBox._hasJumpListener) {
-      statFlaggedBox._hasJumpListener = true;
-      statFlaggedBox.addEventListener('click', () => {
-        this.jumpToFirstFlagged();
+    if (this.isSubmitted) {
+      // REVIEW MODE: Stats show Đúng / Sai / Khó
+      let correctCount = 0;
+      this.dayData.questions.forEach(q => {
+        if (this.userAnswers[q.id] !== undefined && this.userAnswers[q.id] === q.answer) {
+          correctCount++;
+        }
       });
+      const wrongCount = total - correctCount;
+      const pct = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+
+      if (activeCountEl) {
+        activeCountEl.textContent = `${correctCount}/${total} (${pct}%)`;
+        activeCountEl.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0';
+      }
+
+      if (statAnswered) statAnswered.textContent = correctCount;
+      if (statLabel1) statLabel1.textContent = 'Đúng';
+      if (statBox1) {
+        statBox1.className = `p-1 rounded-lg border transition-all cursor-pointer active:scale-95 ${
+          this.activeFilter === 'correct' ? 'bg-emerald-600 text-white border-emerald-700 shadow-sm' : 'bg-emerald-50 text-emerald-900 border border-emerald-200 hover:bg-emerald-100'
+        }`;
+        statBox1.title = 'Bấm để lọc câu đúng';
+        statBox1.onclick = () => this.setFilter(this.activeFilter === 'correct' ? 'all' : 'correct');
+      }
+
+      if (statFlagged) statFlagged.textContent = wrongCount;
+      if (statLabel2) statLabel2.textContent = 'Sai';
+      if (statBox2) {
+        statBox2.className = `p-1 rounded-lg border transition-all cursor-pointer active:scale-95 ${
+          this.activeFilter === 'wrong' ? 'bg-rose-600 text-white border-rose-700 shadow-sm' : 'bg-rose-50 text-rose-900 border border-rose-200 hover:bg-rose-100'
+        }`;
+        statBox2.title = 'Bấm để lọc câu sai';
+        statBox2.onclick = () => this.setFilter(this.activeFilter === 'wrong' ? 'all' : 'wrong');
+      }
+
+      if (statUnanswered) statUnanswered.textContent = flagged;
+      if (statLabel3) statLabel3.textContent = 'Khó';
+      if (statBox3) {
+        statBox3.className = 'bg-amber-50 p-1 rounded-lg border border-amber-200 text-amber-900 cursor-pointer hover:border-amber-400 hover:bg-amber-100 transition-all select-none active:scale-95';
+        statBox3.title = 'Bấm để nhảy đến câu khó đầu tiên';
+        statBox3.onclick = () => this.jumpToFirstFlagged();
+      }
+
+      // Legend in review mode: Đúng (Xanh lá), Sai (Đỏ), Cờ khó (Chấm cam)
+      if (legendContainer) {
+        legendContainer.innerHTML = `
+          <div class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-xs bg-emerald-500 border border-emerald-600 inline-block"></span>
+            <span>Đúng</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-xs bg-rose-500 border border-rose-600 inline-block"></span>
+            <span>Sai</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <span class="relative w-2.5 h-2.5 rounded-xs bg-slate-100 border border-slate-300 inline-block">
+              <span class="absolute -top-1 -right-1 w-1.5 h-1.5 bg-amber-500 rounded-full border border-white"></span>
+            </span>
+            <span>Cờ khó</span>
+          </div>
+        `;
+      }
+    } else {
+      // IN-PROGRESS MODE: Stats show Đã làm / Câu khó / Chưa làm
+      if (activeCountEl) {
+        activeCountEl.textContent = `${answered}/${total}`;
+        activeCountEl.className = 'text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100 shrink-0';
+      }
+
+      if (statAnswered) statAnswered.textContent = answered;
+      if (statLabel1) statLabel1.textContent = 'Đã làm';
+      if (statBox1) {
+        statBox1.className = 'bg-indigo-50 p-1 rounded-lg border border-indigo-100 text-indigo-900';
+        statBox1.title = '';
+        statBox1.onclick = null;
+      }
+
+      if (statFlagged) statFlagged.textContent = flagged;
+      if (statLabel2) statLabel2.textContent = 'Câu khó';
+      if (statBox2) {
+        statBox2.className = 'bg-amber-50 p-1 rounded-lg border border-amber-200 text-amber-900 cursor-pointer hover:border-amber-400 hover:bg-amber-100 transition-all select-none active:scale-95';
+        statBox2.title = 'Bấm để nhảy đến câu khó đầu tiên';
+        statBox2.onclick = () => this.jumpToFirstFlagged();
+      }
+
+      if (statUnanswered) statUnanswered.textContent = unanswered;
+      if (statLabel3) statLabel3.textContent = 'Chưa làm';
+      if (statBox3) {
+        statBox3.className = 'bg-white p-1 rounded-lg border-2 border-slate-300 text-slate-700 cursor-pointer hover:border-amber-400 hover:bg-amber-50/40 transition-all select-none active:scale-95 group shadow-2xs';
+        statBox3.title = 'Bấm để nhảy ngay đến câu chưa hoàn thành đầu tiên';
+        statBox3.onclick = () => this.jumpToFirstUnanswered();
+      }
+
+      // Legend in in-progress mode: Chưa làm (Trắng), Đã làm (Xanh tím), Cờ khó (Chấm cam)
+      if (legendContainer) {
+        legendContainer.innerHTML = `
+          <div class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-xs bg-white border-2 border-slate-300 inline-block"></span>
+            <span>Chưa làm</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-xs bg-indigo-600 border border-indigo-700 inline-block"></span>
+            <span>Đã làm</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <span class="relative w-2.5 h-2.5 rounded-xs bg-white border-2 border-amber-500 inline-block">
+              <span class="absolute -top-1 -right-1 w-1.5 h-1.5 bg-amber-500 rounded-full border border-white"></span>
+            </span>
+            <span>Cờ khó</span>
+          </div>
+        `;
+      }
     }
   }
 
@@ -1397,15 +1551,17 @@ export class QuizEngine {
     const card = document.getElementById(`question-${questionId}`);
     if (card) {
       if (card.classList.contains('hidden')) {
-        this.activeFilter = 'all';
-        this.applyActiveFilter();
+        this.setFilter('all');
       }
-      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Temporary pulse highlight ring
-      card.classList.add('ring-4', 'ring-indigo-400/50');
-      setTimeout(() => {
-        card.classList.remove('ring-4', 'ring-indigo-400/50');
-      }, 1500);
+      const targetCard = document.getElementById(`question-${questionId}`);
+      if (targetCard) {
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Temporary pulse highlight ring
+        targetCard.classList.add('ring-4', 'ring-indigo-400/50');
+        setTimeout(() => {
+          targetCard.classList.remove('ring-4', 'ring-indigo-400/50');
+        }, 1500);
+      }
     }
   }
 
@@ -1665,8 +1821,7 @@ export class QuizEngine {
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         const filter = btn.getAttribute('data-filter');
-        this.activeFilter = filter;
-        this.render();
+        this.setFilter(filter);
       });
     });
 
@@ -1915,9 +2070,19 @@ export class QuizEngine {
    * Filter card visibility
    */
   applyActiveFilter() {
-    if (!this.isSubmitted || this.activeFilter === 'all') return;
+    if (!this.isSubmitted) return;
 
     const cards = this.container.querySelectorAll('.question-card');
+    const sections = this.container.querySelectorAll('.section-group');
+    const passageContainers = this.container.querySelectorAll('.passage-block-container');
+
+    if (this.activeFilter === 'all') {
+      cards.forEach(card => card.classList.remove('hidden'));
+      sections.forEach(sec => sec.classList.remove('hidden'));
+      passageContainers.forEach(container => container.classList.remove('hidden'));
+      return;
+    }
+
     cards.forEach(card => {
       const status = card.getAttribute('data-status');
       if (this.activeFilter === 'wrong' && status !== 'wrong') {
@@ -1929,8 +2094,17 @@ export class QuizEngine {
       }
     });
 
+    // Hide empty passage block containers if all sub-questions are filtered out
+    passageContainers.forEach(container => {
+      const visibleCards = container.querySelectorAll('.question-card:not(.hidden)');
+      if (visibleCards.length === 0) {
+        container.classList.add('hidden');
+      } else {
+        container.classList.remove('hidden');
+      }
+    });
+
     // Hide empty section groups if all questions in section are filtered out
-    const sections = this.container.querySelectorAll('.section-group');
     sections.forEach(sec => {
       const visibleCards = sec.querySelectorAll('.question-card:not(.hidden)');
       if (visibleCards.length === 0) {

@@ -94,7 +94,7 @@
       </div>
 
       <!-- Quick Search Bar -->
-      <div class="p-3 border-b border-slate-100 bg-white sticky top-0 z-10">
+      <div id="sidebar-search-container" class="p-3 border-b border-slate-100 bg-white sticky top-0 z-10">
         <div class="relative">
           <svg class="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -112,8 +112,8 @@
       </div>
 
       <!-- Question Matrix Section (Collapsible Accordion) -->
-      <div id="sidebar-palette-section" class="border-b border-slate-100 bg-white shrink-0 hidden">
-        <button id="btn-toggle-palette" type="button" class="w-full px-3.5 py-2.5 flex items-center justify-between text-xs font-bold text-slate-700 hover:bg-slate-50 transition border-b border-slate-50">
+      <div id="sidebar-palette-section" class="border-b border-slate-100 bg-white flex-1 flex flex-col min-h-0 hidden">
+        <button id="btn-toggle-palette" type="button" class="w-full px-3.5 py-2.5 flex items-center justify-between text-xs font-bold text-slate-700 hover:bg-slate-50 transition border-b border-slate-50 shrink-0">
           <div class="flex items-center gap-2 min-w-0">
             <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse shrink-0"></span>
             <span id="palette-active-title" class="text-xs font-bold text-slate-800 truncate">Ma trận câu hỏi</span>
@@ -124,25 +124,25 @@
           </svg>
         </button>
 
-        <div id="palette-body" class="p-3 bg-slate-50/50">
+        <div id="palette-body" class="p-3 bg-slate-50/50 flex-1 flex flex-col min-h-0">
           <!-- Mini Stats Summary -->
-          <div class="grid grid-cols-3 gap-1.5 text-center text-[10px] mb-2 font-medium">
-            <div class="bg-indigo-50 p-1 rounded-lg border border-indigo-100 text-indigo-900">
+          <div class="grid grid-cols-3 gap-1.5 text-center text-[10px] mb-2 font-medium shrink-0">
+            <div id="palette-stat-box-1" class="bg-indigo-50 p-1 rounded-lg border border-indigo-100 text-indigo-900 transition-colors">
               <div class="font-bold text-xs" id="palette-stat-answered">0</div>
-              <div class="text-[9px] text-indigo-600">Đã làm</div>
+              <div class="text-[9px] text-indigo-600" id="palette-stat-label-1">Đã làm</div>
             </div>
-            <div id="palette-stat-flagged-box" class="bg-amber-50 p-1 rounded-lg border border-amber-200 text-amber-900 cursor-pointer hover:border-amber-400 hover:bg-amber-100 transition-all select-none active:scale-95" title="Bấm để nhảy đến câu khó đầu tiên">
+            <div id="palette-stat-box-2" class="bg-amber-50 p-1 rounded-lg border border-amber-200 text-amber-900 cursor-pointer hover:border-amber-400 hover:bg-amber-100 transition-all select-none active:scale-95">
               <div class="font-bold text-xs text-amber-700" id="palette-stat-flagged">0</div>
-              <div class="text-[9px] text-amber-600">Câu khó</div>
+              <div class="text-[9px] text-amber-600" id="palette-stat-label-2">Câu khó</div>
             </div>
-            <div id="palette-stat-unanswered-box" class="bg-white p-1 rounded-lg border-2 border-slate-300 text-slate-700 cursor-pointer hover:border-amber-400 hover:bg-amber-50/40 transition-all select-none active:scale-95 group shadow-2xs" title="Bấm để nhảy ngay đến câu chưa hoàn thành đầu tiên">
+            <div id="palette-stat-box-3" class="bg-white p-1 rounded-lg border-2 border-slate-300 text-slate-700 cursor-pointer hover:border-amber-400 hover:bg-amber-50/40 transition-all select-none active:scale-95 group shadow-2xs">
               <div class="font-bold text-xs group-hover:text-amber-600 transition-colors" id="palette-stat-unanswered">45</div>
-              <div class="text-[9px] text-slate-500 group-hover:text-amber-700 transition-colors">Chưa làm</div>
+              <div class="text-[9px] text-slate-500 group-hover:text-amber-700 transition-colors" id="palette-stat-label-3">Chưa làm</div>
             </div>
           </div>
 
           <!-- Color Legend -->
-          <div class="flex items-center justify-between text-[9px] text-slate-500 mb-2 px-1">
+          <div id="palette-legend" class="flex items-center justify-between text-[9px] text-slate-500 mb-2 px-1 shrink-0">
             <div class="flex items-center gap-1">
               <span class="w-2.5 h-2.5 rounded-xs bg-white border-2 border-slate-300 inline-block"></span>
               <span>Chưa làm</span>
@@ -159,8 +159,8 @@
             </div>
           </div>
 
-          <!-- Question Grid (Scrollable max height) -->
-          <div class="max-h-44 overflow-y-auto pr-0.5">
+          <!-- Question Grid (Scrollable) -->
+          <div class="flex-1 overflow-y-auto pr-0.5 min-h-0">
             <div id="question-palette-grid" class="grid grid-cols-5 gap-1.5 justify-items-center p-1">
               <!-- Populated via quiz.js -->
             </div>

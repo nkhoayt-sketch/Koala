@@ -592,13 +592,32 @@ class App {
     const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
     if (btnToggleSidebar) btnToggleSidebar.classList.remove('hidden');
     if (this.paletteSection) this.paletteSection.classList.remove('!hidden', 'hidden');
+
+    // Clean sidebar for test / review mode: hide accordion menu & search
+    const treeMenu = document.getElementById('tree-menu');
+    const searchContainer = document.getElementById('sidebar-search-container');
+    if (this.currentView === 'TEST') {
+      if (treeMenu) treeMenu.classList.add('hidden');
+      if (searchContainer) searchContainer.classList.add('hidden');
+    } else {
+      if (treeMenu) treeMenu.classList.remove('hidden');
+      if (searchContainer) searchContainer.classList.remove('hidden');
+    }
+
     this.setSidebarCollapsed(false, false);
   }
 
   switchView(viewName, isExam = false) {
     this.currentView = viewName;
 
+    const treeMenu = document.getElementById('tree-menu');
+    const searchContainer = document.getElementById('sidebar-search-container');
+
     if (viewName === 'HOME') {
+      // Restore tree menu & search on Home
+      if (treeMenu) treeMenu.classList.remove('hidden');
+      if (searchContainer) searchContainer.classList.remove('hidden');
+
       // Fully hide sidebar + related elements — Home is full-width dashboard
       this.hideSidebar();
 
@@ -661,6 +680,9 @@ class App {
       if (this.mainEl) this.mainEl.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       // viewName === 'TEST'
+      if (treeMenu) treeMenu.classList.add('hidden');
+      if (searchContainer) searchContainer.classList.add('hidden');
+
       if (isExam) {
         this.showSidebar();
       } else {

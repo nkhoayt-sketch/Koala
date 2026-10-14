@@ -245,6 +245,32 @@ body {
   background-color: #4338ca;
 }
 
+/* Post-submission Review: Correct (Emerald Green) */
+.palette-btn.status-correct {
+  background-color: #10b981 !important;
+  border: 2px solid #059669 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(16, 185, 129, 0.25);
+}
+
+.palette-btn.status-correct:hover {
+  background-color: #059669 !important;
+}
+
+/* Post-submission Review: Wrong / Unanswered (Rose Red) */
+.palette-btn.status-wrong {
+  background-color: #f43f5e !important;
+  border: 2px solid #e11d48 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(244, 63, 94, 0.25);
+}
+
+.palette-btn.status-wrong:hover {
+  background-color: #e11d48 !important;
+}
+
 /* Flagged status modifier: Highlight border & ring, NEVER force solid amber background */
 .palette-btn.is-flagged,
 .palette-btn.status-flagged {
@@ -263,6 +289,29 @@ body {
   background-color: #4f46e5 !important;
   color: #ffffff !important;
   border-color: #fbbf24 !important;
+}
+
+.palette-btn.status-correct.is-flagged {
+  background-color: #10b981 !important;
+  border-color: #fbbf24 !important;
+  color: #ffffff !important;
+}
+
+.palette-btn.status-wrong.is-flagged {
+  background-color: #f43f5e !important;
+  border-color: #fbbf24 !important;
+  color: #ffffff !important;
+}
+
+/* One-shot pulse animation for review mode */
+@keyframes pulseOnce {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse-once {
+  animation: pulseOnce 0.4s ease-out 1;
 }
 
 /* Compact Gemini Sparkle Button */
