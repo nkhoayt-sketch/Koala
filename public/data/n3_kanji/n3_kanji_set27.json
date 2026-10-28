@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set27",
+  "set": "Set 27",
+  "title": "Kanji N3 • Set 27 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s27_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "会社の新社屋への<u>移転</u>は1週間かかった。",
+      "targetWord": "移転",
+      "options": [
+        "はってん",
+        "じてん",
+        "かいてん",
+        "いてん"
+      ],
+      "answer": 4,
+      "hanViet": "Di - Chuyển",
+      "explanation": "【正解】4 (いてん)\n\n• Từ vựng kiểm tra: 移転 [いてん]\n• Âm Hán Việt: Di - Chuyển\n• Cách đọc chính xác của 「移転」 trong câu là 「いてん」."
+    },
+    {
+      "id": "n3_k_s27_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "これは現代アメリカ文学を<u>代表</u>する作品です。",
+      "targetWord": "代表",
+      "options": [
+        "たいしょう",
+        "たいひょう",
+        "だいしょう",
+        "だいひょう"
+      ],
+      "answer": 4,
+      "hanViet": "Đại - Biểu",
+      "explanation": "【正解】4 (だいひょう)\n\n• Từ vựng kiểm tra: 代表 [だいひょう]\n• Âm Hán Việt: Đại - Biểu\n• Cách đọc chính xác của 「代表」 trong câu là 「だいひょう」."
+    },
+    {
+      "id": "n3_k_s27_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "日本では車は左側<u>通行</u>、人は右側です。",
+      "targetWord": "通行",
+      "options": [
+        "こつう",
+        "こうつう",
+        "つこう",
+        "つうこう"
+      ],
+      "answer": 4,
+      "hanViet": "Thông - Hàng",
+      "explanation": "【正解】4 (つうこう)\n\n• Từ vựng kiểm tra: 通行 [つうこう]\n• Âm Hán Việt: Thông - Hàng\n• Cách đọc chính xác của 「通行」 trong câu là 「つうこう」."
+    },
+    {
+      "id": "n3_k_s27_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "いろいろな本を広げるので大きな<u>机</u>がほしい。",
+      "targetWord": "机",
+      "options": [
+        "はこ",
+        "つくえ",
+        "いす",
+        "たな"
+      ],
+      "answer": 2,
+      "hanViet": "Kỷ",
+      "explanation": "【正解】2 (つくえ)\n\n• Từ vựng kiểm tra: 机 [つくえ]\n• Âm Hán Việt: Kỷ\n• Cách đọc chính xác của 「机」 trong câu là 「つくえ」."
+    },
+    {
+      "id": "n3_k_s27_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "苦情にはすばやく<u>応対</u>することが大切です。",
+      "targetWord": "応対",
+      "options": [
+        "おうえん",
+        "おうせつ",
+        "おうたい",
+        "おうよう"
+      ],
+      "answer": 3,
+      "hanViet": "応 - Đối",
+      "explanation": "【正解】3 (おうたい)\n\n• Từ vựng kiểm tra: 応対 [おうたい]\n• Âm Hán Việt: 応 - Đối\n• Cách đọc chính xác của 「応対」 trong câu là 「おうたい」."
+    },
+    {
+      "id": "n3_k_s27_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "その事故の<u>主な</u>原因は変わりやすい天候であった。",
+      "targetWord": "主な",
+      "options": [
+        "あらたな",
+        "おもな",
+        "まれな",
+        "ゆたかな"
+      ],
+      "answer": 2,
+      "hanViet": "Chúa",
+      "explanation": "【正解】2 (おもな)\n\n• Từ vựng kiểm tra: 主な [おもな]\n• Âm Hán Việt: Chúa\n• Cách đọc chính xác của 「主な」 trong câu là 「おもな」."
+    },
+    {
+      "id": "n3_k_s27_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "東京には世界<u>各国</u>から最新の情報が入ってくる。",
+      "targetWord": "各国",
+      "options": [
+        "かくこく",
+        "かくごく",
+        "かっこく",
+        "かっごく"
+      ],
+      "answer": 3,
+      "hanViet": "Các - Quốc",
+      "explanation": "【正解】3 (かっこく)\n\n• Từ vựng kiểm tra: 各国 [かっこく]\n• Âm Hán Việt: Các - Quốc\n• Cách đọc chính xác của 「各国」 trong câu là 「かっこく」."
+    },
+    {
+      "id": "n3_k_s27_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "<u>会談</u>は双方合意に至ることなく終わりました。",
+      "targetWord": "会談",
+      "options": [
+        "かいけん",
+        "かいげん",
+        "Oかいたん",
+        "かいだん"
+      ],
+      "answer": 4,
+      "hanViet": "Hội - Đàm",
+      "explanation": "【正解】4 (かいだん)\n\n• Từ vựng kiểm tra: 会談 [かいだん]\n• Âm Hán Việt: Hội - Đàm\n• Cách đọc chính xác của 「会談」 trong câu là 「かいだん」."
+    },
+    {
+      "id": "n3_k_s27_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "予算的に厳しいけれど、<u>内容</u>の充実した講演にしたい。",
+      "targetWord": "内容",
+      "options": [
+        "ないゆ",
+        "ないゆう",
+        "ないよ",
+        "ないよう"
+      ],
+      "answer": 4,
+      "hanViet": "Nội - Dung",
+      "explanation": "【正解】4 (ないよう)\n\n• Từ vựng kiểm tra: 内容 [ないよう]\n• Âm Hán Việt: Nội - Dung\n• Cách đọc chính xác của 「内容」 trong câu là 「ないよう」."
+    },
+    {
+      "id": "n3_k_s27_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 27",
+      "type": "reading",
+      "question": "朝食前に新聞を読むのがわたしの<u>日課</u>です。",
+      "targetWord": "日課",
+      "options": [
+        "にっき",
+        "にっか",
+        "にちか",
+        "にちき"
+      ],
+      "answer": 2,
+      "hanViet": "Nhật - Khóa",
+      "explanation": "【正解】2 (にっか)\n\n• Từ vựng kiểm tra: 日課 [にっか]\n• Âm Hán Việt: Nhật - Khóa\n• Cách đọc chính xác của 「日課」 trong câu là 「にっか」."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set10",
+  "set": "Set 10",
+  "title": "Kanji N3 • Set 10 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s10_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "布団は<u>汚れ</u>たら洗いにくいです。",
+      "targetWord": "汚れ",
+      "options": [
+        "かくれたら",
+        "おぼれたら",
+        "たおれたら",
+        "よごれたら"
+      ],
+      "answer": 4,
+      "hanViet": "Ô",
+      "explanation": "【正解】4 (よごれたら)\n\n• Từ vựng kiểm tra: 汚れ [よごれたら]\n• Âm Hán Việt: Ô\n• Cách đọc chính xác của 「汚れ」 trong câu là 「よごれたら」."
+    },
+    {
+      "id": "n3_k_s10_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "このシャツをもっと小さいサイズのと<u>替え</u>てもらえますか。",
+      "targetWord": "替え",
+      "options": [
+        "きえて",
+        "かえて",
+        "うえて",
+        "はえて"
+      ],
+      "answer": 2,
+      "hanViet": "Thế",
+      "explanation": "【正解】2 (かえて)\n\n• Từ vựng kiểm tra: 替え [かえて]\n• Âm Hán Việt: Thế\n• Cách đọc chính xác của 「替え」 trong câu là 「かえて」."
+    },
+    {
+      "id": "n3_k_s10_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "その店は新聞に<u>広告</u>を出した。",
+      "targetWord": "広告",
+      "options": [
+        "こうこく",
+        "こうごく",
+        "こうこう",
+        "こうごう"
+      ],
+      "answer": 1,
+      "hanViet": "広 - Cáo",
+      "explanation": "【正解】1 (こうこく)\n\n• Từ vựng kiểm tra: 広告 [こうこく]\n• Âm Hán Việt: 広 - Cáo\n• Cách đọc chính xác của 「広告」 trong câu là 「こうこく」."
+    },
+    {
+      "id": "n3_k_s10_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "君は<u>文章</u>が下手だ。",
+      "targetWord": "文章",
+      "options": [
+        "もんしょ",
+        "もんしょう",
+        "ぶんしょ",
+        "ぶんしょう"
+      ],
+      "answer": 4,
+      "hanViet": "Văn - Chương",
+      "explanation": "【正解】4 (ぶんしょう)\n\n• Từ vựng kiểm tra: 文章 [ぶんしょう]\n• Âm Hán Việt: Văn - Chương\n• Cách đọc chính xác của 「文章」 trong câu là 「ぶんしょう」."
+    },
+    {
+      "id": "n3_k_s10_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "道路の<u>横断</u>には気をつけてください。",
+      "targetWord": "横断",
+      "options": [
+        "よこたん",
+        "よこだん",
+        "おうたん",
+        "おうだん"
+      ],
+      "answer": 4,
+      "hanViet": "Hoành - Đoạn",
+      "explanation": "【正解】4 (おうだん)\n\n• Từ vựng kiểm tra: 横断 [おうだん]\n• Âm Hán Việt: Hoành - Đoạn\n• Cách đọc chính xác của 「横断」 trong câu là 「おうだん」."
+    },
+    {
+      "id": "n3_k_s10_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "友達にノートを<u>返し</u>た。",
+      "targetWord": "返し",
+      "options": [
+        "わたした",
+        "さがした",
+        "かえした",
+        "もどした"
+      ],
+      "answer": 3,
+      "hanViet": "Phản",
+      "explanation": "【正解】3 (かえした)\n\n• Từ vựng kiểm tra: 返し [かえした]\n• Âm Hán Việt: Phản\n• Cách đọc chính xác của 「返し」 trong câu là 「かえした」."
+    },
+    {
+      "id": "n3_k_s10_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "<u>単語</u>テストは月曜です。",
+      "targetWord": "単語",
+      "options": [
+        "だんご",
+        "たんご",
+        "げいご",
+        "けいご"
+      ],
+      "answer": 2,
+      "hanViet": "単 - Ngữ",
+      "explanation": "【正解】2 (たんご)\n\n• Từ vựng kiểm tra: 単語 [たんご]\n• Âm Hán Việt: 単 - Ngữ\n• Cách đọc chính xác của 「単語」 trong câu là 「たんご」."
+    },
+    {
+      "id": "n3_k_s10_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "<u>地球温暖化</u>を防止するために京都議定書が採択された。",
+      "targetWord": "地球温暖化",
+      "options": [
+        "じきゅ",
+        "じきゅう",
+        "Oちきゅ",
+        "ちきゅう"
+      ],
+      "answer": 4,
+      "hanViet": "Địa - Cầu - Ôn - Noãn - Hóa",
+      "explanation": "【正解】4 (ちきゅう)\n\n• Từ vựng kiểm tra: 地球温暖化 [ちきゅう]\n• Âm Hán Việt: Địa - Cầu - Ôn - Noãn - Hóa\n• Cách đọc chính xác của 「地球温暖化」 trong câu là 「ちきゅう」."
+    },
+    {
+      "id": "n3_k_s10_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "<u>夫婦</u>になって40年です。",
+      "targetWord": "夫婦",
+      "options": [
+        "ふふ",
+        "ふぶ",
+        "ふうふ",
+        "ふうぶ"
+      ],
+      "answer": 3,
+      "hanViet": "Phu - Phụ",
+      "explanation": "【正解】3 (ふうふ)\n\n• Từ vựng kiểm tra: 夫婦 [ふうふ]\n• Âm Hán Việt: Phu - Phụ\n• Cách đọc chính xác của 「夫婦」 trong câu là 「ふうふ」."
+    },
+    {
+      "id": "n3_k_s10_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 10",
+      "type": "reading",
+      "question": "新しい生物が<u>発見</u>された。",
+      "targetWord": "発見",
+      "options": [
+        "はけん",
+        "はっけん",
+        "はつけん",
+        "ぱつけん"
+      ],
+      "answer": 2,
+      "hanViet": "Phát - Kiến",
+      "explanation": "【正解】2 (はっけん)\n\n• Từ vựng kiểm tra: 発見 [はっけん]\n• Âm Hán Việt: Phát - Kiến\n• Cách đọc chính xác của 「発見」 trong câu là 「はっけん」."
+    }
+  ]
+}

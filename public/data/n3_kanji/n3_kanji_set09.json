@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set09",
+  "set": "Set 09",
+  "title": "Kanji N3 • Set 09 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s09_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "この話を聞いて彼が何と言うかは、容易に<u>想像</u>がつく。",
+      "targetWord": "想像",
+      "options": [
+        "そうそう",
+        "そうぞう",
+        "そうしょう",
+        "そうじょう"
+      ],
+      "answer": 2,
+      "hanViet": "Tưởng - Tượng",
+      "explanation": "【正解】2 (そうぞう)\n\n• Từ vựng kiểm tra: 想像 [そうぞう]\n• Âm Hán Việt: Tưởng - Tượng\n• Cách đọc chính xác của 「想像」 trong câu là 「そうぞう」."
+    },
+    {
+      "id": "n3_k_s09_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "<u>自然</u>を守ることは人間を守ることです。",
+      "targetWord": "自然",
+      "options": [
+        "しぜん",
+        "しねん",
+        "じぜん",
+        "じねん"
+      ],
+      "answer": 1,
+      "hanViet": "Tự - Nhiên",
+      "explanation": "【正解】1 (しぜん)\n\n• Từ vựng kiểm tra: 自然 [しぜん]\n• Âm Hán Việt: Tự - Nhiên\n• Cách đọc chính xác của 「自然」 trong câu là 「しぜん」."
+    },
+    {
+      "id": "n3_k_s09_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "父が何と言ったかよく<u>覚え</u>ています。",
+      "targetWord": "覚え",
+      "options": [
+        "かんがえて",
+        "つかまえて",
+        "おぼえて",
+        "つたえて"
+      ],
+      "answer": 3,
+      "hanViet": "Giác",
+      "explanation": "【正解】3 (おぼえて)\n\n• Từ vựng kiểm tra: 覚え [おぼえて]\n• Âm Hán Việt: Giác\n• Cách đọc chính xác của 「覚え」 trong câu là 「おぼえて」."
+    },
+    {
+      "id": "n3_k_s09_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "あまり泳げないので、いつもプールの<u>浅い</u>方で泳いでいる。",
+      "targetWord": "浅い",
+      "options": [
+        "ふかい",
+        "あさい",
+        "あつい",
+        "うすい"
+      ],
+      "answer": 2,
+      "hanViet": "Thiển",
+      "explanation": "【正解】2 (あさい)\n\n• Từ vựng kiểm tra: 浅い [あさい]\n• Âm Hán Việt: Thiển\n• Cách đọc chính xác của 「浅い」 trong câu là 「あさい」."
+    },
+    {
+      "id": "n3_k_s09_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "彼は働きながら大学を<u>卒業</u>した。",
+      "targetWord": "卒業",
+      "options": [
+        "そつぎょう",
+        "そつぎょ",
+        "そつごう",
+        "そつご"
+      ],
+      "answer": 1,
+      "hanViet": "Tốt - Nghiệp",
+      "explanation": "【正解】1 (そつぎょう)\n\n• Từ vựng kiểm tra: 卒業 [そつぎょう]\n• Âm Hán Việt: Tốt - Nghiệp\n• Cách đọc chính xác của 「卒業」 trong câu là 「そつぎょう」."
+    },
+    {
+      "id": "n3_k_s09_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "息を<u>深く</u>吸ってください。",
+      "targetWord": "深く",
+      "options": [
+        "ながく",
+        "ふかく",
+        "だるく",
+        "ゆるく"
+      ],
+      "answer": 2,
+      "hanViet": "Thâm",
+      "explanation": "【正解】2 (ふかく)\n\n• Từ vựng kiểm tra: 深く [ふかく]\n• Âm Hán Việt: Thâm\n• Cách đọc chính xác của 「深く」 trong câu là 「ふかく」."
+    },
+    {
+      "id": "n3_k_s09_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "3月に<u>発表</u>された論文です。",
+      "targetWord": "発表",
+      "options": [
+        "はっぴょ",
+        "はっぴょう",
+        "はつひょ",
+        "はつひょう"
+      ],
+      "answer": 2,
+      "hanViet": "Phát - Biểu",
+      "explanation": "【正解】2 (はっぴょう)\n\n• Từ vựng kiểm tra: 発表 [はっぴょう]\n• Âm Hán Việt: Phát - Biểu\n• Cách đọc chính xác của 「発表」 trong câu là 「はっぴょう」."
+    },
+    {
+      "id": "n3_k_s09_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "<u>大韓民国の</u>首都はソウルです。",
+      "targetWord": "大韓民国の",
+      "options": [
+        "しゅとう",
+        "しゅうと",
+        "Oしゅと",
+        "しゅうとう"
+      ],
+      "answer": 3,
+      "hanViet": "Đại - Hàn - Dân - Quốc",
+      "explanation": "【正解】3 (Oしゅと)\n\n• Từ vựng kiểm tra: 大韓民国の [Oしゅと]\n• Âm Hán Việt: Đại - Hàn - Dân - Quốc\n• Cách đọc chính xác của 「大韓民国の」 trong câu là 「Oしゅと」."
+    },
+    {
+      "id": "n3_k_s09_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "こちらに3名様分の<u>空席</u>がございます。",
+      "targetWord": "空席",
+      "options": [
+        "あいど",
+        "あいせき",
+        "くうど",
+        "くうせき"
+      ],
+      "answer": 4,
+      "hanViet": "Không - Tịch",
+      "explanation": "【正解】4 (くうせき)\n\n• Từ vựng kiểm tra: 空席 [くうせき]\n• Âm Hán Việt: Không - Tịch\n• Cách đọc chính xác của 「空席」 trong câu là 「くうせき」."
+    },
+    {
+      "id": "n3_k_s09_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 09",
+      "type": "reading",
+      "question": "彼は料理が<u>得意</u>だ。",
+      "targetWord": "得意",
+      "options": [
+        "どくい",
+        "どおくい",
+        "とくい",
+        "とおくい"
+      ],
+      "answer": 3,
+      "hanViet": "Đắc - Ý",
+      "explanation": "【正解】3 (とくい)\n\n• Từ vựng kiểm tra: 得意 [とくい]\n• Âm Hán Việt: Đắc - Ý\n• Cách đọc chính xác của 「得意」 trong câu là 「とくい」."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set41",
+  "set": "Set 41",
+  "title": "Kanji N3 • Set 41 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s41_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "外国人留学生との交流は<u>こくさい</u>親善に役立つ。",
+      "targetWord": "こくさい",
+      "options": [
+        "国祭",
+        "国際",
+        "国擦",
+        "国察"
+      ],
+      "answer": 2,
+      "hanViet": "Quốc - Tế",
+      "explanation": "【正解】2 (国際)\n\n• Từ vựng kiểm tra: 国際 (こくさい)\n• Âm Hán Việt: Quốc - Tế\n• Chữ Hán chính xác ứng với cách đọc 「こくさい」 là 「国際」."
+    },
+    {
+      "id": "n3_k_s41_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "これはあくまで<u>こじんてき</u>な意見です。",
+      "targetWord": "こじんてき",
+      "options": [
+        "独人的",
+        "単人的",
+        "自人的",
+        "個人的"
+      ],
+      "answer": 4,
+      "hanViet": "Cá - Nhân - Đích",
+      "explanation": "【正解】4 (個人的)\n\n• Từ vựng kiểm tra: 個人的 (こじんてき)\n• Âm Hán Việt: Cá - Nhân - Đích\n• Chữ Hán chính xác ứng với cách đọc 「こじんてき」 là 「個人的」."
+    },
+    {
+      "id": "n3_k_s41_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "<u>こっせつ</u>で入院した患者には高齢者が多いです。",
+      "targetWord": "こっせつ",
+      "options": [
+        "背切",
+        "骨切",
+        "背折",
+        "骨折"
+      ],
+      "answer": 4,
+      "hanViet": "Cốt - Chiết",
+      "explanation": "【正解】4 (骨折)\n\n• Từ vựng kiểm tra: 骨折 (こっせつ)\n• Âm Hán Việt: Cốt - Chiết\n• Chữ Hán chính xác ứng với cách đọc 「こっせつ」 là 「骨折」."
+    },
+    {
+      "id": "n3_k_s41_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "背中をまっすぐ<u>のばし</u>姿勢をよくする。",
+      "targetWord": "のばし",
+      "options": [
+        "仲ばし",
+        "伸ばし",
+        "由ばし",
+        "申ばし"
+      ],
+      "answer": 2,
+      "hanViet": "Thân",
+      "explanation": "【正解】2 (伸ばし)\n\n• Từ vựng kiểm tra: 伸ばし (のばし)\n• Âm Hán Việt: Thân\n• Chữ Hán chính xác ứng với cách đọc 「のばし」 là 「伸ばし」."
+    },
+    {
+      "id": "n3_k_s41_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "あいにくみな寝不足で、あまり<u>しょくよく</u>がないようだ。",
+      "targetWord": "しょくよく",
+      "options": [
+        "食好",
+        "食探",
+        "食求",
+        "食欲"
+      ],
+      "answer": 4,
+      "hanViet": "Thực - Dục",
+      "explanation": "【正解】4 (食欲)\n\n• Từ vựng kiểm tra: 食欲 (しょくよく)\n• Âm Hán Việt: Thực - Dục\n• Chữ Hán chính xác ứng với cách đọc 「しょくよく」 là 「食欲」."
+    },
+    {
+      "id": "n3_k_s41_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "われわれは子孫のために森林を<u>ほぞん</u>しなければなりません。",
+      "targetWord": "ほぞん",
+      "options": [
+        "保存",
+        "保在",
+        "保左",
+        "保式"
+      ],
+      "answer": 1,
+      "hanViet": "Bảo - Tồn",
+      "explanation": "【正解】1 (保存)\n\n• Từ vựng kiểm tra: 保存 (ほぞん)\n• Âm Hán Việt: Bảo - Tồn\n• Chữ Hán chính xác ứng với cách đọc 「ほぞん」 là 「保存」."
+    },
+    {
+      "id": "n3_k_s41_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "さまざまな<u>えのぐ</u>を使ってふでで友達の顔を描きます。",
+      "targetWord": "えのぐ",
+      "options": [
+        "絵の具",
+        "画の貝",
+        "画の具",
+        "絵の貝"
+      ],
+      "answer": 1,
+      "hanViet": "Hội - Cụ",
+      "explanation": "【正解】1 (絵の具)\n\n• Từ vựng kiểm tra: 絵の具 (えのぐ)\n• Âm Hán Việt: Hội - Cụ\n• Chữ Hán chính xác ứng với cách đọc 「えのぐ」 là 「絵の具」."
+    },
+    {
+      "id": "n3_k_s41_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "労働組合への加入は個人の自由<u>いし</u>に任されている。",
+      "targetWord": "いし",
+      "options": [
+        "意思",
+        "意地",
+        "O意持",
+        "意見"
+      ],
+      "answer": 1,
+      "hanViet": "Ý - Tư",
+      "explanation": "【正解】1 (意思)\n\n• Từ vựng kiểm tra: 意思 (いし)\n• Âm Hán Việt: Ý - Tư\n• Chữ Hán chính xác ứng với cách đọc 「いし」 là 「意思」."
+    },
+    {
+      "id": "n3_k_s41_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "すぐにこの新しい生活に<u>なれる</u>でしょう。",
+      "targetWord": "なれる",
+      "options": [
+        "情れる",
+        "慎れる",
+        "慣れる",
+        "憤れる"
+      ],
+      "answer": 3,
+      "hanViet": "Quán",
+      "explanation": "【正解】3 (慣れる)\n\n• Từ vựng kiểm tra: 慣れる (なれる)\n• Âm Hán Việt: Quán\n• Chữ Hán chính xác ứng với cách đọc 「なれる」 là 「慣れる」."
+    },
+    {
+      "id": "n3_k_s41_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 41",
+      "type": "writing",
+      "question": "テラスからながめる<u>けしき</u>がとてもきれいです。",
+      "targetWord": "けしき",
+      "options": [
+        "景色",
+        "風色",
+        "景気",
+        "風気"
+      ],
+      "answer": 1,
+      "hanViet": "Cảnh - Sắc",
+      "explanation": "【正解】1 (景色)\n\n• Từ vựng kiểm tra: 景色 (けしき)\n• Âm Hán Việt: Cảnh - Sắc\n• Chữ Hán chính xác ứng với cách đọc 「けしき」 là 「景色」."
+    }
+  ]
+}

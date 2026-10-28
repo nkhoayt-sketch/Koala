@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set24",
+  "set": "Set 24",
+  "title": "Kanji N3 • Set 24 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s24_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "事故の<u>げんいん</u>はスピードの出しすぎです。",
+      "targetWord": "げんいん",
+      "options": [
+        "源因",
+        "源困",
+        "原因",
+        "原困"
+      ],
+      "answer": 3,
+      "hanViet": "Nguyên - Nhân",
+      "explanation": "【正解】3 (原因)\n\n• Từ vựng kiểm tra: 原因 (げんいん)\n• Âm Hán Việt: Nguyên - Nhân\n• Chữ Hán chính xác ứng với cách đọc 「げんいん」 là 「原因」."
+    },
+    {
+      "id": "n3_k_s24_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "別れた彼女が<u>こいしい</u>。",
+      "targetWord": "こいしい",
+      "options": [
+        "愛しい",
+        "悲しい",
+        "恋しい",
+        "変しい"
+      ],
+      "answer": 3,
+      "hanViet": "Luyến",
+      "explanation": "【正解】3 (恋しい)\n\n• Từ vựng kiểm tra: 恋しい (こいしい)\n• Âm Hán Việt: Luyến\n• Chữ Hán chính xác ứng với cách đọc 「こいしい」 là 「恋しい」."
+    },
+    {
+      "id": "n3_k_s24_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "<u>ふくすう</u>の人がそれに関係している。",
+      "targetWord": "ふくすう",
+      "options": [
+        "複数",
+        "複類",
+        "復数",
+        "復類"
+      ],
+      "answer": 1,
+      "hanViet": "Phức - Số",
+      "explanation": "【正解】1 (複数)\n\n• Từ vựng kiểm tra: 複数 (ふくすう)\n• Âm Hán Việt: Phức - Số\n• Chữ Hán chính xác ứng với cách đọc 「ふくすう」 là 「複数」."
+    },
+    {
+      "id": "n3_k_s24_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "友だちに本を3冊<u>かす</u>。",
+      "targetWord": "かす",
+      "options": [
+        "消す",
+        "貸す",
+        "削す",
+        "賃す"
+      ],
+      "answer": 2,
+      "hanViet": "Thải",
+      "explanation": "【正解】2 (貸す)\n\n• Từ vựng kiểm tra: 貸す (かす)\n• Âm Hán Việt: Thải\n• Chữ Hán chính xác ứng với cách đọc 「かす」 là 「貸す」."
+    },
+    {
+      "id": "n3_k_s24_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "列車は予定より1時間<u>おそく</u>着いた。",
+      "targetWord": "おそく",
+      "options": [
+        "送く",
+        "早く",
+        "速く",
+        "遅く"
+      ],
+      "answer": 4,
+      "hanViet": "Trì",
+      "explanation": "【正解】4 (遅く)\n\n• Từ vựng kiểm tra: 遅く (おそく)\n• Âm Hán Việt: Trì\n• Chữ Hán chính xác ứng với cách đọc 「おそく」 là 「遅く」."
+    },
+    {
+      "id": "n3_k_s24_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "ゴムで髪を一つに<u>むすぶ</u>。",
+      "targetWord": "むすぶ",
+      "options": [
+        "結ぶ",
+        "運ぶ",
+        "巻ぶ",
+        "締ぶ"
+      ],
+      "answer": 1,
+      "hanViet": "Kết",
+      "explanation": "【正解】1 (結ぶ)\n\n• Từ vựng kiểm tra: 結ぶ (むすぶ)\n• Âm Hán Việt: Kết\n• Chữ Hán chính xác ứng với cách đọc 「むすぶ」 là 「結ぶ」."
+    },
+    {
+      "id": "n3_k_s24_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "わたし<u>は</u>寝る前にかならずはをみがく。",
+      "targetWord": "は",
+      "options": [
+        "首",
+        "顔",
+        "靴",
+        "歯"
+      ],
+      "answer": 4,
+      "hanViet": "Xỉ",
+      "explanation": "【正解】4 (歯)\n\n• Từ vựng kiểm tra: 歯 (は)\n• Âm Hán Việt: Xỉ\n• Chữ Hán chính xác ứng với cách đọc 「は」 là 「歯」."
+    },
+    {
+      "id": "n3_k_s24_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "30代男性の4割が<u>どくしん</u>です。",
+      "targetWord": "どくしん",
+      "options": [
+        "単身",
+        "単者",
+        "O独身",
+        "独者"
+      ],
+      "answer": 3,
+      "hanViet": "Độc - Thân",
+      "explanation": "【正解】3 (O独身)\n\n• Từ vựng kiểm tra: O独身 (どくしん)\n• Âm Hán Việt: Độc - Thân\n• Chữ Hán chính xác ứng với cách đọc 「どくしん」 là 「O独身」."
+    },
+    {
+      "id": "n3_k_s24_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "きのう新しい<u>がっき</u>を買いました。",
+      "targetWord": "がっき",
+      "options": [
+        "薬器",
+        "薬機",
+        "楽器",
+        "楽機"
+      ],
+      "answer": 3,
+      "hanViet": "Lạc - Khí",
+      "explanation": "【正解】3 (楽器)\n\n• Từ vựng kiểm tra: 楽器 (がっき)\n• Âm Hán Việt: Lạc - Khí\n• Chữ Hán chính xác ứng với cách đọc 「がっき」 là 「楽器」."
+    },
+    {
+      "id": "n3_k_s24_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 24",
+      "type": "writing",
+      "question": "母親が子どもの後を<u>おって</u>走っている。",
+      "targetWord": "おって",
+      "options": [
+        "折って",
+        "押って",
+        "送って",
+        "追って"
+      ],
+      "answer": 4,
+      "hanViet": "Truy",
+      "explanation": "【正解】4 (追って)\n\n• Từ vựng kiểm tra: 追って (おって)\n• Âm Hán Việt: Truy\n• Chữ Hán chính xác ứng với cách đọc 「おって」 là 「追って」."
+    }
+  ]
+}

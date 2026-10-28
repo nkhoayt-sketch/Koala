@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set32",
+  "set": "Set 32",
+  "title": "Kanji N3 • Set 32 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s32_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "2つの機械の性能を<u>比べ</u>てみました。",
+      "targetWord": "比べ",
+      "options": [
+        "のべて",
+        "すべて",
+        "くらべて",
+        "ならべて"
+      ],
+      "answer": 3,
+      "hanViet": "Tỉ",
+      "explanation": "【正解】3 (くらべて)\n\n• Từ vựng kiểm tra: 比べ [くらべて]\n• Âm Hán Việt: Tỉ\n• Cách đọc chính xác của 「比べ」 trong câu là 「くらべて」."
+    },
+    {
+      "id": "n3_k_s32_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "ぼくのもっとも得意な科目は、<u>算数</u>です。",
+      "targetWord": "算数",
+      "options": [
+        "ざんすう",
+        "ざんずう",
+        "さんすう",
+        "さんずう"
+      ],
+      "answer": 3,
+      "hanViet": "Toán - Số",
+      "explanation": "【正解】3 (さんすう)\n\n• Từ vựng kiểm tra: 算数 [さんすう]\n• Âm Hán Việt: Toán - Số\n• Cách đọc chính xác của 「算数」 trong câu là 「さんすう」."
+    },
+    {
+      "id": "n3_k_s32_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "経済政策の失敗などによって<u>政府</u>の支持率が著しく低下した。",
+      "targetWord": "政府",
+      "options": [
+        "せいふ",
+        "せいぶ",
+        "せんふ",
+        "せんぷ"
+      ],
+      "answer": 1,
+      "hanViet": "Chính - Phủ",
+      "explanation": "【正解】1 (せいふ)\n\n• Từ vựng kiểm tra: 政府 [せいふ]\n• Âm Hán Việt: Chính - Phủ\n• Cách đọc chính xác của 「政府」 trong câu là 「せいふ」."
+    },
+    {
+      "id": "n3_k_s32_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "今回は宿泊先での<u>洗濯</u>事情について書いてみようと思います。",
+      "targetWord": "洗濯",
+      "options": [
+        "せんだく",
+        "せんたく",
+        "せっだく",
+        "せったく"
+      ],
+      "answer": 2,
+      "hanViet": "Tẩy - Trạc",
+      "explanation": "【正解】2 (せんたく)\n\n• Từ vựng kiểm tra: 洗濯 [せんたく]\n• Âm Hán Việt: Tẩy - Trạc\n• Cách đọc chính xác của 「洗濯」 trong câu là 「せんたく」."
+    },
+    {
+      "id": "n3_k_s32_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "子どもをやる気にさせる何かいい<u>工夫</u>はありませんか。",
+      "targetWord": "工夫",
+      "options": [
+        "こうふ",
+        "こうふう",
+        "くふう",
+        "くうふ"
+      ],
+      "answer": 3,
+      "hanViet": "Công - Phu",
+      "explanation": "【正解】3 (くふう)\n\n• Từ vựng kiểm tra: 工夫 [くふう]\n• Âm Hán Việt: Công - Phu\n• Cách đọc chính xác của 「工夫」 trong câu là 「くふう」."
+    },
+    {
+      "id": "n3_k_s32_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "彼の批判は社会<u>全般</u>に向けたものだった。",
+      "targetWord": "全般",
+      "options": [
+        "ぜんはい",
+        "ぜんぱん",
+        "ぜんはん",
+        "ぜんぱい"
+      ],
+      "answer": 2,
+      "hanViet": "Toàn - Ban",
+      "explanation": "【正解】2 (ぜんぱん)\n\n• Từ vựng kiểm tra: 全般 [ぜんぱん]\n• Âm Hán Việt: Toàn - Ban\n• Cách đọc chính xác của 「全般」 trong câu là 「ぜんぱん」."
+    },
+    {
+      "id": "n3_k_s32_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "ツバメは秋になると<u>集団</u>を作って南へ渡る。",
+      "targetWord": "集団",
+      "options": [
+        "じゅうだん",
+        "じゅうたん",
+        "しゅうだん",
+        "しゅうたん"
+      ],
+      "answer": 3,
+      "hanViet": "Tập - 団",
+      "explanation": "【正解】3 (しゅうだん)\n\n• Từ vựng kiểm tra: 集団 [しゅうだん]\n• Âm Hán Việt: Tập - 団\n• Cách đọc chính xác của 「集団」 trong câu là 「しゅうだん」."
+    },
+    {
+      "id": "n3_k_s32_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "<u>健康を</u>保つには規則的に運動して汗を流すのがいいと思う。",
+      "targetWord": "健康を",
+      "options": [
+        "おとす",
+        "たらす",
+        "Oながす",
+        "ぬらす"
+      ],
+      "answer": 3,
+      "hanViet": "Kiện - Khang",
+      "explanation": "【正解】3 (Oながす)\n\n• Từ vựng kiểm tra: 健康を [Oながす]\n• Âm Hán Việt: Kiện - Khang\n• Cách đọc chính xác của 「健康を」 trong câu là 「Oながす」."
+    },
+    {
+      "id": "n3_k_s32_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "道の両側にたくさんの屋台が<u>並ん</u>でいた。",
+      "targetWord": "並ん",
+      "options": [
+        "えらんで",
+        "ならんで",
+        "つかんで",
+        "たのんで"
+      ],
+      "answer": 2,
+      "hanViet": "Tịnh",
+      "explanation": "【正解】2 (ならんで)\n\n• Từ vựng kiểm tra: 並ん [ならんで]\n• Âm Hán Việt: Tịnh\n• Cách đọc chính xác của 「並ん」 trong câu là 「ならんで」."
+    },
+    {
+      "id": "n3_k_s32_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 32",
+      "type": "reading",
+      "question": "だまっていないで意思<u>表示</u>をしてほしいです。",
+      "targetWord": "表示",
+      "options": [
+        "ひょじ",
+        "ひょし",
+        "ひょうじ",
+        "ひょうし"
+      ],
+      "answer": 3,
+      "hanViet": "Biểu - Thị",
+      "explanation": "【正解】3 (ひょうじ)\n\n• Từ vựng kiểm tra: 表示 [ひょうじ]\n• Âm Hán Việt: Biểu - Thị\n• Cách đọc chính xác của 「表示」 trong câu là 「ひょうじ」."
+    }
+  ]
+}

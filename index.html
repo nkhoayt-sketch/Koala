@@ -302,14 +302,14 @@
               </div>
             </div>
 
-            <!-- Subfolder 3: Đề thi N1 các năm (Khung chờ) -->
-            <div class="tree-item-disabled px-3 py-2 rounded-xl flex items-center justify-between text-xs font-medium text-slate-400 bg-slate-50/50 cursor-not-allowed border border-dashed border-slate-200">
+            <!-- Subfolder 3: Kanji N1 (Shin Kanzen Drill) -->
+            <button type="button" id="btn-sidebar-n1-kanji-hub" class="nav-tree-item w-full text-left px-3 py-2 rounded-xl text-xs font-bold text-slate-800 hover:text-indigo-600 hover:bg-slate-50 transition flex items-center justify-between group">
               <div class="flex items-center gap-2">
-                <span>📝</span>
-                <span>Đề thi N1 các năm</span>
+                <span>🏮</span>
+                <span class="truncate">Kanji N1 (Shin Kanzen)</span>
               </div>
-              <span class="text-[9px] px-1.5 py-0.5 rounded font-normal bg-slate-100 text-slate-400">Khung chờ</span>
-            </div>
+              <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-indigo-50 text-indigo-700">10 Ch</span>
+            </button>
 
           </div>
         </div>
@@ -357,6 +357,38 @@
               </div>
             </div>
 
+          </div>
+        </div>
+
+        <!-- CATEGORY: JLPT N3 -->
+        <div class="tree-category rounded-2xl border border-slate-200/80 bg-white overflow-hidden shadow-2xs" data-category="n3">
+          <!-- Category Header -->
+          <button type="button" class="tree-category-toggle w-full px-3.5 py-3 flex items-center justify-between bg-slate-50/80 hover:bg-slate-100/80 transition text-left group" data-target="group-n3-content">
+            <div class="flex items-center gap-2.5">
+              <div class="w-7 h-7 rounded-lg bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center shadow-xs">
+                N3
+              </div>
+              <div>
+                <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                  <span>📁 JLPT N3</span>
+                </div>
+                <div class="text-[10px] text-slate-400 font-medium">Kanji Drill (45 Set / 450 Câu)</div>
+              </div>
+            </div>
+            <svg class="tree-chevron w-4 h-4 text-slate-400 transition-transform duration-200 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+
+          <!-- Category Content -->
+          <div id="group-n3-content" class="tree-category-content p-2 space-y-1.5 border-t border-slate-100 hidden">
+            <button type="button" id="btn-sidebar-n3-kanji-hub" class="nav-tree-item w-full text-left px-3 py-2 rounded-xl text-xs font-bold text-slate-800 hover:text-emerald-700 hover:bg-emerald-50/60 transition flex items-center justify-between group">
+              <div class="flex items-center gap-2">
+                <span>🌱</span>
+                <span class="truncate">Kanji N3 Drill (450 Câu)</span>
+              </div>
+              <span class="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800">45 Set</span>
+            </button>
           </div>
         </div>
 
@@ -617,109 +649,215 @@
           </div>
         </section>
 
-        <!-- Course / Exam Grid Cards Section -->
-        <section class="space-y-4">
-          <div class="flex items-center justify-between">
+        <!-- Tiered Course / Exam Portal Hub Section (N1 / N2 / N3) -->
+        <section class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-1 border-b border-slate-200/60">
             <div>
-              <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-2">
-                <span>📚 Bộ Đề & Giáo Trình Luyện Thi</span>
+              <h2 class="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
+                <span>📚 Cổng Học & Luyện Thi JLPT</span>
               </h2>
-              <p class="text-xs text-slate-500 mt-0.5">Chọn giáo trình hoặc đề thi bạn muốn thực hành</p>
+              <p class="text-xs text-slate-500 mt-0.5">Phân cấp chuẩn hóa theo từng cấp độ (N1 • N2 • N3)</p>
             </div>
-            <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full border border-indigo-100">
-              Khả dụng: N1 & N2
-            </span>
+            
+            <!-- Level Filter Pill Tabs -->
+            <div id="dashboard-level-filter" class="inline-flex items-center p-1 bg-slate-100/90 rounded-2xl border border-slate-200/80 text-xs font-bold shrink-0">
+              <button type="button" data-level="all" class="level-filter-btn px-3 py-1.5 rounded-xl transition text-slate-900 bg-white shadow-2xs">
+                ⚡ Tất cả
+              </button>
+              <button type="button" data-level="n1" class="level-filter-btn px-3 py-1.5 rounded-xl transition text-slate-600 hover:text-slate-900">
+                🎯 JLPT N1
+              </button>
+              <button type="button" data-level="n2" class="level-filter-btn px-3 py-1.5 rounded-xl transition text-slate-600 hover:text-slate-900">
+                🔥 JLPT N2
+              </button>
+              <button type="button" data-level="n3" class="level-filter-btn px-3 py-1.5 rounded-xl transition text-slate-600 hover:text-slate-900">
+                🌱 JLPT N3
+              </button>
+            </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- CARD 1: 20日で合格 N1 -->
-            <div id="card-n1-20days" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-indigo-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[170px]">
-              <div class="space-y-3">
-                <div class="flex items-center justify-between">
-                  <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 to-indigo-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-indigo-100">
-                    N1
-                  </span>
-                  <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                    <span id="home-n1-ready-count-text">20/20 Ngày đã sẵn sàng</span>
-                  </span>
-                </div>
-
-                <div>
-                  <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-indigo-600 transition flex items-center gap-1.5">
-                    <span>20日で合格 N1</span>
-                  </h3>
-                  <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
-                    Lộ trình 20 ngày bứt phá N1: Đầy đủ Chữ Hán, Từ vựng, Ngữ pháp, Dấu sao ★ và Đọc hiểu ngữ pháp.
-                  </p>
-                </div>
+          <!-- LEVEL CLUSTER N1 -->
+          <div class="level-cluster-group space-y-3" data-cluster="n1">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-indigo-600 text-white font-extrabold text-[11px] flex items-center justify-center shadow-xs">N1</span>
+                <h3 class="text-xs sm:text-sm font-black text-slate-800 tracking-wide uppercase">Cụm JLPT N1 • Trình độ Thượng cấp</h3>
               </div>
-
-              <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-indigo-600 group-hover:text-indigo-700">
-                <span>Chọn ngày học (20 ngày)</span>
-                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-              </div>
+              <span class="text-[11px] font-bold text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-100">3 Mô-đun</span>
             </div>
 
-            <!-- CARD 2: Kho Đề Thi N2 Các Năm -->
-            <div id="card-n2-exams" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-rose-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[170px]">
-              <div class="space-y-3">
-                <div class="flex items-center justify-between">
-                  <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-600 to-rose-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-rose-100">
-                    N2
-                  </span>
-                  <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200 flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
-                    <span id="home-n2-ready-count-badge">31 đề hoàn thiện • 31 đợt thi</span>
-                  </span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <!-- CARD 1: 20日で合格 N1 -->
+              <div id="card-n1-20days" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-indigo-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[175px]">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 to-indigo-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-indigo-100">
+                      N1
+                    </span>
+                    <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                      <span id="home-n1-ready-count-text">20/20 Ngày đã sẵn sàng</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-indigo-600 transition flex items-center gap-1.5">
+                      <span>20日で合格 N1</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                      Lộ trình 20 ngày bứt phá N1: Đầy đủ Chữ Hán, Từ vựng, Ngữ pháp, Dấu sao ★ và Đọc hiểu ngữ pháp.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-rose-600 transition flex items-center gap-1.5">
-                    <span>Kho Đề Thi N2 Các Năm</span>
-                  </h3>
-                  <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
-                    Trọn bộ đề thi thật phần 言語知識, 読解 & 聴解 đã chuẩn hóa 100% dữ liệu, có audio và chấm điểm thi thử.
-                  </p>
+                <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-indigo-600 group-hover:text-indigo-700">
+                  <span>Chọn ngày học (20 ngày)</span>
+                  <span class="transform group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </div>
 
-              <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-600 group-hover:text-rose-700">
-                <span>Chọn đề thi (2010 - 2025)</span>
-                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+              <!-- CARD 2: Dokkai N1 (Shin Kanzen Master) -->
+              <div id="card-shinkanzen-dokkai" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-amber-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[175px]">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-700 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-amber-100">
+                      読解
+                    </span>
+                    <span id="home-dokkai-count-badge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                      🟢 43 bài thực hành (6 chương)
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-amber-700 transition flex items-center gap-1.5">
+                      <span>Dokkai N1 (Shin Kanzen)</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                      Luyện tư duy bóc tách cấu trúc đoạn văn, nhận diện cú lật chuyển ý và phá bẫy phương án theo Shin Kanzen.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-700 group-hover:text-amber-800">
+                  <span id="home-dokkai-subtitle">Kho bài đọc tự do (43 bài)</span>
+                  <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </div>
+
+              <!-- CARD 3: Kanji N1 (Shin Kanzen Drill) -->
+              <div id="card-n1-kanji" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-purple-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[175px]">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-purple-600 to-indigo-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-purple-100">
+                      漢字
+                    </span>
+                    <span id="home-n1-kanji-badge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-200 flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                      <span>10 Chapter • 400 câu</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-purple-600 transition flex items-center gap-1.5">
+                      <span>Kanji N1 (Shin Kanzen Drill)</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                      Luyện tập 10 Chapter Drill bao quát 800 Hán tự N1: Đọc câu, Viết câu, Đọc từ và Viết cụm từ kèm Hán Việt.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-purple-600 group-hover:text-purple-700">
+                  <span>Vào sảnh Drill N1</span>
+                  <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </div>
               </div>
             </div>
+          </div>
 
-            <!-- CARD 3: Dokkai N1 (Shin Kanzen Master) -->
-            <div id="card-shinkanzen-dokkai" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-amber-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[170px]">
-              <div class="space-y-3">
-                <div class="flex items-center justify-between">
-                  <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-700 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-amber-100">
-                    読解
-                  </span>
-                  <span id="home-dokkai-count-badge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    🟢 43 bài thực hành (6 chương)
-                  </span>
-                </div>
-
-                <div>
-                  <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-amber-700 transition flex items-center gap-1.5">
-                    <span>Dokkai N1 (Shin Kanzen Master)</span>
-                  </h3>
-                  <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
-                    Luyện tư duy bóc tách cấu trúc đoạn văn, nhận diện cú lật chuyển ý và phá bẫy phương án theo Shin Kanzen.
-                  </p>
-                </div>
+          <!-- LEVEL CLUSTER N2 -->
+          <div class="level-cluster-group space-y-3 pt-2" data-cluster="n2">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-rose-600 text-white font-extrabold text-[11px] flex items-center justify-center shadow-xs">N2</span>
+                <h3 class="text-xs sm:text-sm font-black text-slate-800 tracking-wide uppercase">Cụm JLPT N2 • Đề thi chính thức</h3>
               </div>
-
-              <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-700 group-hover:text-amber-800">
-                <span id="home-dokkai-subtitle">Kho bài đọc tự do (43 bài)</span>
-                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-              </div>
+              <span class="text-[11px] font-bold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-100">1 Mô-đun (31 Đề)</span>
             </div>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <!-- CARD: Kho Đề Thi N2 Các Năm -->
+              <div id="card-n2-exams" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-rose-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[175px]">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-600 to-rose-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-rose-100">
+                      N2
+                    </span>
+                    <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200 flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                      <span id="home-n2-ready-count-badge">31 đề hoàn thiện • 31 đợt thi</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-rose-600 transition flex items-center gap-1.5">
+                      <span>Kho Đề Thi N2 Các Năm</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                      Trọn bộ đề thi thật phần 言語知識, 読解 & 聴解 đã chuẩn hóa 100% dữ liệu, có audio và chấm điểm thi thử.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-rose-600 group-hover:text-rose-700">
+                  <span>Chọn đề thi (2010 - 2025)</span>
+                  <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVEL CLUSTER N3 -->
+          <div class="level-cluster-group space-y-3 pt-2" data-cluster="n3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-emerald-600 text-white font-extrabold text-[11px] flex items-center justify-center shadow-xs">N3</span>
+                <h3 class="text-xs sm:text-sm font-black text-slate-800 tracking-wide uppercase">Cụm JLPT N3 • Chữ Hán Căn bản & Nâng cao</h3>
+              </div>
+              <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">1 Mô-đun (45 Set)</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <!-- CARD: Kanji N3 Drill -->
+              <div id="card-n3-kanji" class="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-emerald-400 transition-all duration-200 flex flex-col justify-between group cursor-pointer min-h-[175px]">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-800 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-emerald-100">
+                      N3
+                    </span>
+                    <span id="home-n3-kanji-badge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                      <span>45 Set • 450 câu</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-emerald-700 transition flex items-center gap-1.5">
+                      <span>Kanji N3 Drill (450 câu Hán tự)</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-2">
+                      Luyện trọn 45 Set (450 câu) tuyển chọn: 問題1 Chọn cách đọc (読み方) & 問題2 Chọn chữ Hán (書き方) kèm âm Hán Việt.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 mt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700 group-hover:text-emerald-800">
+                  <span>Vào sảnh Drill N3</span>
+                  <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

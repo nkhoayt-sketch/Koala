@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set35",
+  "set": "Set 35",
+  "title": "Kanji N3 • Set 35 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s35_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "2人の間に愛情が<u>育つ</u>のに時間はかからなかった。",
+      "targetWord": "育つ",
+      "options": [
+        "たもつ",
+        "はなつ",
+        "めだつ",
+        "そだつ"
+      ],
+      "answer": 4,
+      "hanViet": "Dục",
+      "explanation": "【正解】4 (そだつ)\n\n• Từ vựng kiểm tra: 育つ [そだつ]\n• Âm Hán Việt: Dục\n• Cách đọc chính xác của 「育つ」 trong câu là 「そだつ」."
+    },
+    {
+      "id": "n3_k_s35_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "1万円<u>以内</u>の品物はどれでもさしあげます。",
+      "targetWord": "以内",
+      "options": [
+        "いぜん",
+        "いない",
+        "いがい",
+        "いご"
+      ],
+      "answer": 2,
+      "hanViet": "Dĩ - Nội",
+      "explanation": "【正解】2 (いない)\n\n• Từ vựng kiểm tra: 以内 [いない]\n• Âm Hán Việt: Dĩ - Nội\n• Cách đọc chính xác của 「以内」 trong câu là 「いない」."
+    },
+    {
+      "id": "n3_k_s35_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "わたしは<u>飲酒</u>の習慣を治してもらいました。",
+      "targetWord": "飲酒",
+      "options": [
+        "のみさけ",
+        "のみしゅ",
+        "いんさけ",
+        "いんしゅ"
+      ],
+      "answer": 4,
+      "hanViet": "Ẩm - Tửu",
+      "explanation": "【正解】4 (いんしゅ)\n\n• Từ vựng kiểm tra: 飲酒 [いんしゅ]\n• Âm Hán Việt: Ẩm - Tửu\n• Cách đọc chính xác của 「飲酒」 trong câu là 「いんしゅ」."
+    },
+    {
+      "id": "n3_k_s35_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "今回の台風で、この地区の農家は大きな被害を<u>受け</u>た。",
+      "targetWord": "受け",
+      "options": [
+        "うけた",
+        "とどけた",
+        "つづけた",
+        "さけた"
+      ],
+      "answer": 1,
+      "hanViet": "Thọ",
+      "explanation": "【正解】1 (うけた)\n\n• Từ vựng kiểm tra: 受け [うけた]\n• Âm Hán Việt: Thọ\n• Cách đọc chính xác của 「受け」 trong câu là 「うけた」."
+    },
+    {
+      "id": "n3_k_s35_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "この時間が<u>永遠</u>に続いてほしいです。",
+      "targetWord": "永遠",
+      "options": [
+        "えいげん",
+        "えいごん",
+        "えいえん",
+        "えいおん"
+      ],
+      "answer": 3,
+      "hanViet": "Vĩnh - Viễn",
+      "explanation": "【正解】3 (えいえん)\n\n• Từ vựng kiểm tra: 永遠 [えいえん]\n• Âm Hán Việt: Vĩnh - Viễn\n• Cách đọc chính xác của 「永遠」 trong câu là 「えいえん」."
+    },
+    {
+      "id": "n3_k_s35_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "故郷の風景がスクリーンに<u>映っ</u>ています。",
+      "targetWord": "映っ",
+      "options": [
+        "ひかって",
+        "うつって",
+        "てって",
+        "はって"
+      ],
+      "answer": 2,
+      "hanViet": "Ảnh",
+      "explanation": "【正解】2 (うつって)\n\n• Từ vựng kiểm tra: 映っ [うつって]\n• Âm Hán Việt: Ảnh\n• Cách đọc chính xác của 「映っ」 trong câu là 「うつって」."
+    },
+    {
+      "id": "n3_k_s35_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "仕事の<u>都合</u>でめいの結婚式に出られなくて残念です。",
+      "targetWord": "都合",
+      "options": [
+        "つごう",
+        "つあい",
+        "とごう",
+        "とあい"
+      ],
+      "answer": 1,
+      "hanViet": "Đô - Hợp",
+      "explanation": "【正解】1 (つごう)\n\n• Từ vựng kiểm tra: 都合 [つごう]\n• Âm Hán Việt: Đô - Hợp\n• Cách đọc chính xác của 「都合」 trong câu là 「つごう」."
+    },
+    {
+      "id": "n3_k_s35_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "<u>勉強の</u>分量が多すぎて、遊ぶことができない。",
+      "targetWord": "勉強の",
+      "options": [
+        "ふんりょう",
+        "ふんりょ",
+        "Oぶんりょう",
+        "ぶんりょ"
+      ],
+      "answer": 3,
+      "hanViet": "Miễn - Cường",
+      "explanation": "【正解】3 (Oぶんりょう)\n\n• Từ vựng kiểm tra: 勉強の [Oぶんりょう]\n• Âm Hán Việt: Miễn - Cường\n• Cách đọc chính xác của 「勉強の」 trong câu là 「Oぶんりょう」."
+    },
+    {
+      "id": "n3_k_s35_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "<u>部品</u>が足りなくて組立が遅くなった。",
+      "targetWord": "部品",
+      "options": [
+        "ふひん",
+        "ぶひん",
+        "ふしな",
+        "ぶしな"
+      ],
+      "answer": 2,
+      "hanViet": "Bộ - Phẩm",
+      "explanation": "【正解】2 (ぶひん)\n\n• Từ vựng kiểm tra: 部品 [ぶひん]\n• Âm Hán Việt: Bộ - Phẩm\n• Cách đọc chính xác của 「部品」 trong câu là 「ぶひん」."
+    },
+    {
+      "id": "n3_k_s35_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 35",
+      "type": "reading",
+      "question": "各所で担当の<u>係員</u>が説明しますから、必ず聞いておいてください。",
+      "targetWord": "係員",
+      "options": [
+        "やくいん",
+        "しょくいん",
+        "かかりいん",
+        "けいいん"
+      ],
+      "answer": 3,
+      "hanViet": "Hệ - Viên",
+      "explanation": "【正解】3 (かかりいん)\n\n• Từ vựng kiểm tra: 係員 [かかりいん]\n• Âm Hán Việt: Hệ - Viên\n• Cách đọc chính xác của 「係員」 trong câu là 「かかりいん」."
+    }
+  ]
+}

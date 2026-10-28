@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set17",
+  "set": "Set 17",
+  "title": "Kanji N3 • Set 17 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s17_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "わたしの趣味は野鳥の<u>かんさつ</u>です。",
+      "targetWord": "かんさつ",
+      "options": [
+        "観祭",
+        "視察",
+        "観察",
+        "視祭"
+      ],
+      "answer": 3,
+      "hanViet": "Quan - Sát",
+      "explanation": "【正解】3 (観察)\n\n• Từ vựng kiểm tra: 観察 (かんさつ)\n• Âm Hán Việt: Quan - Sát\n• Chữ Hán chính xác ứng với cách đọc 「かんさつ」 là 「観察」."
+    },
+    {
+      "id": "n3_k_s17_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "それは問題を<u>ふくざつ</u>にするだけだ。",
+      "targetWord": "ふくざつ",
+      "options": [
+        "復推",
+        "復雑",
+        "複推",
+        "複雑"
+      ],
+      "answer": 4,
+      "hanViet": "Phức - Tạp",
+      "explanation": "【正解】4 (複雑)\n\n• Từ vựng kiểm tra: 複雑 (ふくざつ)\n• Âm Hán Việt: Phức - Tạp\n• Chữ Hán chính xác ứng với cách đọc 「ふくざつ」 là 「複雑」."
+    },
+    {
+      "id": "n3_k_s17_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "ことしの冬は<u>あたたかい</u>。",
+      "targetWord": "あたたかい",
+      "options": [
+        "明かい",
+        "暑かい",
+        "暖かい",
+        "熱かい"
+      ],
+      "answer": 3,
+      "hanViet": "Noãn",
+      "explanation": "【正解】3 (暖かい)\n\n• Từ vựng kiểm tra: 暖かい (あたたかい)\n• Âm Hán Việt: Noãn\n• Chữ Hán chính xác ứng với cách đọc 「あたたかい」 là 「暖かい」."
+    },
+    {
+      "id": "n3_k_s17_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "<u>いっぱんてき</u>に言って日本人は野球が好きです。",
+      "targetWord": "いっぱんてき",
+      "options": [
+        "一般的",
+        "一方的",
+        "一時的",
+        "一半的"
+      ],
+      "answer": 1,
+      "hanViet": "Nhất - Ban - Đích",
+      "explanation": "【正解】1 (一般的)\n\n• Từ vựng kiểm tra: 一般的 (いっぱんてき)\n• Âm Hán Việt: Nhất - Ban - Đích\n• Chữ Hán chính xác ứng với cách đọc 「いっぱんてき」 là 「一般的」."
+    },
+    {
+      "id": "n3_k_s17_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "湖の氷が<u>あつく</u>なりました。",
+      "targetWord": "あつく",
+      "options": [
+        "丸く",
+        "厚く",
+        "細く",
+        "浅く"
+      ],
+      "answer": 2,
+      "hanViet": "Hậu",
+      "explanation": "【正解】2 (厚く)\n\n• Từ vựng kiểm tra: 厚く (あつく)\n• Âm Hán Việt: Hậu\n• Chữ Hán chính xác ứng với cách đọc 「あつく」 là 「厚く」."
+    },
+    {
+      "id": "n3_k_s17_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "つぎの信号で<u>うせつ</u>してください。",
+      "targetWord": "うせつ",
+      "options": [
+        "左折",
+        "左曲",
+        "右折",
+        "右曲"
+      ],
+      "answer": 3,
+      "hanViet": "Hữu - Chiết",
+      "explanation": "【正解】3 (右折)\n\n• Từ vựng kiểm tra: 右折 (うせつ)\n• Âm Hán Việt: Hữu - Chiết\n• Chữ Hán chính xác ứng với cách đọc 「うせつ」 là 「右折」."
+    },
+    {
+      "id": "n3_k_s17_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "父は仕事の<u>かんけい</u>でよく出張します。",
+      "targetWord": "かんけい",
+      "options": [
+        "関系",
+        "関係",
+        "間系",
+        "間係"
+      ],
+      "answer": 2,
+      "hanViet": "Quan - Hệ",
+      "explanation": "【正解】2 (関係)\n\n• Từ vựng kiểm tra: 関係 (かんけい)\n• Âm Hán Việt: Quan - Hệ\n• Chữ Hán chính xác ứng với cách đọc 「かんけい」 là 「関係」."
+    },
+    {
+      "id": "n3_k_s17_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "息子が公園でいろいろな形の<u>は</u>を集めてきました。",
+      "targetWord": "は",
+      "options": [
+        "草",
+        "葉",
+        "O菜",
+        "芽"
+      ],
+      "answer": 2,
+      "hanViet": "Diệp",
+      "explanation": "【正解】2 (葉)\n\n• Từ vựng kiểm tra: 葉 (は)\n• Âm Hán Việt: Diệp\n• Chữ Hán chính xác ứng với cách đọc 「は」 là 「葉」."
+    },
+    {
+      "id": "n3_k_s17_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "その国は原料を日本に<u>ゆしゅつ</u>している。",
+      "targetWord": "ゆしゅつ",
+      "options": [
+        "輸出",
+        "論出",
+        "輸出",
+        "論出"
+      ],
+      "answer": 1,
+      "hanViet": "Thâu - Xuất",
+      "explanation": "【正解】1 (輸出)\n\n• Từ vựng kiểm tra: 輸出 (ゆしゅつ)\n• Âm Hán Việt: Thâu - Xuất\n• Chữ Hán chính xác ứng với cách đọc 「ゆしゅつ」 là 「輸出」."
+    },
+    {
+      "id": "n3_k_s17_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 17",
+      "type": "writing",
+      "question": "事件を<u>きろく</u>した映画が公開された。",
+      "targetWord": "きろく",
+      "options": [
+        "議録",
+        "記禄",
+        "記録",
+        "議禄"
+      ],
+      "answer": 3,
+      "hanViet": "Ký - Lục",
+      "explanation": "【正解】3 (記録)\n\n• Từ vựng kiểm tra: 記録 (きろく)\n• Âm Hán Việt: Ký - Lục\n• Chữ Hán chính xác ứng với cách đọc 「きろく」 là 「記録」."
+    }
+  ]
+}

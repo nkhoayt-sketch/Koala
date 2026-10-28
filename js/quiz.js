@@ -361,6 +361,18 @@ export class QuizEngine {
       });
     }
 
+    // Safely normalize 1-based answers (1-4) from Kanji drill modules to 0-based for engine matching
+    questions = questions.map(q => {
+      let ans = q.answer;
+      if (q.level === 'N3' || q.id?.startsWith('n3_k_') || q.id?.startsWith('n1_skz_k_') || (typeof ans === 'number' && ans >= 1 && ans <= 4 && (q.set || q.chapter))) {
+        ans = ans - 1;
+      }
+      return {
+        ...q,
+        answer: ans
+      };
+    });
+
     this.dayData = {
       ...rawDayData,
       questions: questions
@@ -1063,12 +1075,17 @@ export class QuizEngine {
         ` : (this.isSubmitted && q.explanation ? `
           <div class="mt-4 pt-4 border-t border-slate-100">
             <div class="rounded-xl bg-amber-50/80 border border-amber-200/80 p-4 text-slate-800 text-sm">
-              <div class="flex items-center justify-between gap-2 mb-2">
-                <div class="flex items-center gap-2 font-bold text-amber-900">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <div class="flex flex-wrap items-center gap-2 font-bold text-amber-900">
                   <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                   <span>Giải thích chi tiết</span>
+                  ${q.hanViet ? `
+                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-black bg-amber-200/80 text-amber-950 border border-amber-300 shadow-2xs">
+                      🇨🇳 Hán Việt: ${q.hanViet}
+                    </span>
+                  ` : ''}
                 </div>
 
                 <!-- Minimalist Single-icon Sparkle Gemini Button -->
@@ -2139,8 +2156,8 @@ export class QuizEngine {
    */
   async handleAnkiConnectSync() {
     this.showToast('Đang kết nối AnkiConnect (localhost:8765)...', 'info');
-    const level = (this.dayData && (this.dayData.level || (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n2') ? 'N2' : 'N1'))) || 'N1';
-    const deckName = level === 'N2' ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review';
+    const level = (this.dayData && (this.dayData.level || (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n3') ? 'N3' : (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n2') ? 'N2' : 'N1')))) || 'N1';
+    const deckName = level === 'N3' ? 'Koala_JLPT::N3_Review' : (level === 'N2' ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review');
     const result = await sendMistakesToAnkiConnect(
       this.dayData.title,
       this.dayData.questions,
@@ -2169,14 +2186,14 @@ export class QuizEngine {
    */
   handleDownloadAnkiTxt() {
     if (!this.dayData || !this.dayData.questions) return;
-    const level = (this.dayData && (this.dayData.level || (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n2') ? 'N2' : 'N1'))) || 'N1';
-    const deckName = level === 'N2' ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review';
+    const level = (this.dayData && (this.dayData.level || (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n3') ? 'N3' : (this.dayData.id && String(this.dayData.id).toLowerCase().includes('n2') ? 'N2' : 'N1')))) || 'N1';
+    const deckName = level === 'N3' ? 'Koala_JLPT::N3_Review' : (level === 'N2' ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review');
     const result = downloadAnkiTxtFile(
       this.dayData.title,
       this.dayData.questions,
       this.userAnswers,
       this.userFlags,
-      { level, deckName, filename: 'Koala_Anki_Export.txt' }
+      { level, deckName, filename: `Koala_${level}_Kanji_Export.txt` }
     );
 
     if (result.success) {

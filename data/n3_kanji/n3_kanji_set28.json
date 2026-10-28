@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set28",
+  "set": "Set 28",
+  "title": "Kanji N3 • Set 28 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s28_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "車は駅とは<u>反対</u>の方向に走っていった。",
+      "targetWord": "反対",
+      "options": [
+        "はんだい",
+        "はんたい",
+        "ほんだい",
+        "ほんたい"
+      ],
+      "answer": 2,
+      "hanViet": "Phản - Đối",
+      "explanation": "【正解】2 (はんたい)\n\n• Từ vựng kiểm tra: 反対 [はんたい]\n• Âm Hán Việt: Phản - Đối\n• Cách đọc chính xác của 「反対」 trong câu là 「はんたい」."
+    },
+    {
+      "id": "n3_k_s28_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "森さんの意見には<u>部分的</u>に賛成です。",
+      "targetWord": "部分的",
+      "options": [
+        "ぶふんてき",
+        "ぶぶんてき",
+        "ぶんぶてき",
+        "ぶんぷてき"
+      ],
+      "answer": 2,
+      "hanViet": "Bộ - Phân • phần • phận - Đích",
+      "explanation": "【正解】2 (ぶぶんてき)\n\n• Từ vựng kiểm tra: 部分的 [ぶぶんてき]\n• Âm Hán Việt: Bộ - Phân • phần • phận - Đích\n• Cách đọc chính xác của 「部分的」 trong câu là 「ぶぶんてき」."
+    },
+    {
+      "id": "n3_k_s28_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "今シーズンあのチームが優勝する<u>可能性</u>はない。",
+      "targetWord": "可能性",
+      "options": [
+        "かんのうしょう",
+        "かのうしょう",
+        "かんのうせい",
+        "かのうせい"
+      ],
+      "answer": 4,
+      "hanViet": "Khả - Năng - Tính",
+      "explanation": "【正解】4 (かのうせい)\n\n• Từ vựng kiểm tra: 可能性 [かのうせい]\n• Âm Hán Việt: Khả - Năng - Tính\n• Cách đọc chính xác của 「可能性」 trong câu là 「かのうせい」."
+    },
+    {
+      "id": "n3_k_s28_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "村の小学校は新入生が<u>減っ</u>て廃校寸前だ。",
+      "targetWord": "減っ",
+      "options": [
+        "あまって",
+        "へって",
+        "そって",
+        "いたって"
+      ],
+      "answer": 2,
+      "hanViet": "Giảm",
+      "explanation": "【正解】2 (へって)\n\n• Từ vựng kiểm tra: 減っ [へって]\n• Âm Hán Việt: Giảm\n• Cách đọc chính xác của 「減っ」 trong câu là 「へって」."
+    },
+    {
+      "id": "n3_k_s28_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "今度の会議は京都で開催されることに<u>決ま</u>った。",
+      "targetWord": "決ま",
+      "options": [
+        "きまった",
+        "おさまった",
+        "かたまった",
+        "まとまった"
+      ],
+      "answer": 1,
+      "hanViet": "Quyết",
+      "explanation": "【正解】1 (きまった)\n\n• Từ vựng kiểm tra: 決ま [きまった]\n• Âm Hán Việt: Quyết\n• Cách đọc chính xác của 「決ま」 trong câu là 「きまった」."
+    },
+    {
+      "id": "n3_k_s28_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "<u>休息</u>をたっぷり取ったらすっかり元気になりました。",
+      "targetWord": "休息",
+      "options": [
+        "きゅうそく",
+        "きゅうか",
+        "きゅうよう",
+        "きゅうけい"
+      ],
+      "answer": 1,
+      "hanViet": "Hưu - Tức",
+      "explanation": "【正解】1 (きゅうそく)\n\n• Từ vựng kiểm tra: 休息 [きゅうそく]\n• Âm Hán Việt: Hưu - Tức\n• Cách đọc chính xác của 「休息」 trong câu là 「きゅうそく」."
+    },
+    {
+      "id": "n3_k_s28_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "連絡しておけば駅や<u>空港</u>まで迎えにきてくれます。",
+      "targetWord": "空港",
+      "options": [
+        "くうこ",
+        "くうこう",
+        "こうくう",
+        "こくう"
+      ],
+      "answer": 2,
+      "hanViet": "Không - Cảng",
+      "explanation": "【正解】2 (くうこう)\n\n• Từ vựng kiểm tra: 空港 [くうこう]\n• Âm Hán Việt: Không - Cảng\n• Cách đọc chính xác của 「空港」 trong câu là 「くうこう」."
+    },
+    {
+      "id": "n3_k_s28_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "日本の対米<u>貿易</u>は年々増加しています。",
+      "targetWord": "貿易",
+      "options": [
+        "ぼうえき",
+        "ぼうい",
+        "Oりゅうえき",
+        "りゅうい"
+      ],
+      "answer": 1,
+      "hanViet": "Mậu - Dị",
+      "explanation": "【正解】1 (ぼうえき)\n\n• Từ vựng kiểm tra: 貿易 [ぼうえき]\n• Âm Hán Việt: Mậu - Dị\n• Cách đọc chính xác của 「貿易」 trong câu là 「ぼうえき」."
+    },
+    {
+      "id": "n3_k_s28_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "野党は政府の<u>方針</u>にはげしく反発しました。",
+      "targetWord": "方針",
+      "options": [
+        "ほうしん",
+        "ほうじん",
+        "かたより",
+        "かたばり"
+      ],
+      "answer": 1,
+      "hanViet": "Phương - Châm",
+      "explanation": "【正解】1 (ほうしん)\n\n• Từ vựng kiểm tra: 方針 [ほうしん]\n• Âm Hán Việt: Phương - Châm\n• Cách đọc chính xác của 「方針」 trong câu là 「ほうしん」."
+    },
+    {
+      "id": "n3_k_s28_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 28",
+      "type": "reading",
+      "question": "今夜はとても明るいので、<u>星</u>明かりでも本が読めるくらいだ。",
+      "targetWord": "星",
+      "options": [
+        "ふし",
+        "ふうし",
+        "ほし",
+        "ほうし"
+      ],
+      "answer": 3,
+      "hanViet": "Tinh",
+      "explanation": "【正解】3 (ほし)\n\n• Từ vựng kiểm tra: 星 [ほし]\n• Âm Hán Việt: Tinh\n• Cách đọc chính xác của 「星」 trong câu là 「ほし」."
+    }
+  ]
+}

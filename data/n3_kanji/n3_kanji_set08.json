@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set08",
+  "set": "Set 08",
+  "title": "Kanji N3 • Set 08 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s08_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "少年は成長し<u>美しい</u>若者になった。",
+      "targetWord": "美しい",
+      "options": [
+        "こいしい",
+        "くるしい",
+        "うつくしい",
+        "おそろしい"
+      ],
+      "answer": 3,
+      "hanViet": "Mỹ",
+      "explanation": "【正解】3 (うつくしい)\n\n• Từ vựng kiểm tra: 美しい [うつくしい]\n• Âm Hán Việt: Mỹ\n• Cách đọc chính xác của 「美しい」 trong câu là 「うつくしい」."
+    },
+    {
+      "id": "n3_k_s08_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "この箱は<u>横</u>50センチあります。",
+      "targetWord": "横",
+      "options": [
+        "よこ",
+        "たて",
+        "そば",
+        "うら"
+      ],
+      "answer": 1,
+      "hanViet": "Hoành",
+      "explanation": "【正解】1 (よこ)\n\n• Từ vựng kiểm tra: 横 [よこ]\n• Âm Hán Việt: Hoành\n• Cách đọc chính xác của 「横」 trong câu là 「よこ」."
+    },
+    {
+      "id": "n3_k_s08_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "江戸時代、大阪は<u>商業</u>の中心地だった。",
+      "targetWord": "商業",
+      "options": [
+        "こうぎょ",
+        "こうぎょう",
+        "しょうぎょ",
+        "しょうぎょう"
+      ],
+      "answer": 4,
+      "hanViet": "Thương - Nghiệp",
+      "explanation": "【正解】4 (しょうぎょう)\n\n• Từ vựng kiểm tra: 商業 [しょうぎょう]\n• Âm Hán Việt: Thương - Nghiệp\n• Cách đọc chính xác của 「商業」 trong câu là 「しょうぎょう」."
+    },
+    {
+      "id": "n3_k_s08_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "彼女は旅行に行っていて<u>留守</u>だ。",
+      "targetWord": "留守",
+      "options": [
+        "ふざい",
+        "ふさい",
+        "るす",
+        "るしゅ"
+      ],
+      "answer": 3,
+      "hanViet": "Lưu - Thủ",
+      "explanation": "【正解】3 (るす)\n\n• Từ vựng kiểm tra: 留守 [るす]\n• Âm Hán Việt: Lưu - Thủ\n• Cách đọc chính xác của 「留守」 trong câu là 「るす」."
+    },
+    {
+      "id": "n3_k_s08_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "松の<u>根</u>はかなり遠いところまで伸びる。",
+      "targetWord": "根",
+      "options": [
+        "め",
+        "ね",
+        "は",
+        "かわ"
+      ],
+      "answer": 2,
+      "hanViet": "Căn",
+      "explanation": "【正解】2 (ね)\n\n• Từ vựng kiểm tra: 根 [ね]\n• Âm Hán Việt: Căn\n• Cách đọc chính xác của 「根」 trong câu là 「ね」."
+    },
+    {
+      "id": "n3_k_s08_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "彼女は<u>笑顔</u>でわたしを迎えてくれた。",
+      "targetWord": "笑顔",
+      "options": [
+        "えがん",
+        "えがお",
+        "しょうがん",
+        "しょうがお"
+      ],
+      "answer": 2,
+      "hanViet": "Tiếu - Nhan",
+      "explanation": "【正解】2 (えがお)\n\n• Từ vựng kiểm tra: 笑顔 [えがお]\n• Âm Hán Việt: Tiếu - Nhan\n• Cách đọc chính xác của 「笑顔」 trong câu là 「えがお」."
+    },
+    {
+      "id": "n3_k_s08_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "彼は<u>困っ</u>ていた老人を助けた。",
+      "targetWord": "困っ",
+      "options": [
+        "よわって",
+        "しばって",
+        "とまって",
+        "こまって"
+      ],
+      "answer": 4,
+      "hanViet": "Khốn",
+      "explanation": "【正解】4 (こまって)\n\n• Từ vựng kiểm tra: 困っ [こまって]\n• Âm Hán Việt: Khốn\n• Cách đọc chính xác của 「困っ」 trong câu là 「こまって」."
+    },
+    {
+      "id": "n3_k_s08_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "子どもはいろいろなことに<u>疑問</u>を持ちます。",
+      "targetWord": "疑問",
+      "options": [
+        "ぎもん",
+        "きもん",
+        "Oぐもん",
+        "くもん"
+      ],
+      "answer": 1,
+      "hanViet": "Nghi - Vấn",
+      "explanation": "【正解】1 (ぎもん)\n\n• Từ vựng kiểm tra: 疑問 [ぎもん]\n• Âm Hán Việt: Nghi - Vấn\n• Cách đọc chính xác của 「疑問」 trong câu là 「ぎもん」."
+    },
+    {
+      "id": "n3_k_s08_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "秘書が社長の日程を<u>組ん</u>でいる。",
+      "targetWord": "組ん",
+      "options": [
+        "あんで",
+        "かこんで",
+        "くんで",
+        "つつんで"
+      ],
+      "answer": 3,
+      "hanViet": "Tổ",
+      "explanation": "【正解】3 (くんで)\n\n• Từ vựng kiểm tra: 組ん [くんで]\n• Âm Hán Việt: Tổ\n• Cách đọc chính xác của 「組ん」 trong câu là 「くんで」."
+    },
+    {
+      "id": "n3_k_s08_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 08",
+      "type": "reading",
+      "question": "<u>努力</u>してもむだです。",
+      "targetWord": "努力",
+      "options": [
+        "どうりょく",
+        "とうりょく",
+        "どりょく",
+        "とりょく"
+      ],
+      "answer": 3,
+      "hanViet": "Nỗ - Lực",
+      "explanation": "【正解】3 (どりょく)\n\n• Từ vựng kiểm tra: 努力 [どりょく]\n• Âm Hán Việt: Nỗ - Lực\n• Cách đọc chính xác của 「努力」 trong câu là 「どりょく」."
+    }
+  ]
+}

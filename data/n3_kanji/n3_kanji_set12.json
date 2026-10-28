@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set12",
+  "set": "Set 12",
+  "title": "Kanji N3 • Set 12 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s12_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "彼女は<u>首</u>に白い包帯をしていた。",
+      "targetWord": "首",
+      "options": [
+        "こし",
+        "くび",
+        "かた",
+        "のど"
+      ],
+      "answer": 2,
+      "hanViet": "Thủ",
+      "explanation": "【正解】2 (くび)\n\n• Từ vựng kiểm tra: 首 [くび]\n• Âm Hán Việt: Thủ\n• Cách đọc chính xác của 「首」 trong câu là 「くび」."
+    },
+    {
+      "id": "n3_k_s12_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "そのようにするのが<u>一般的</u>です。",
+      "targetWord": "一般的",
+      "options": [
+        "いっぽんてき",
+        "いっぽんでき",
+        "いっぱんてき",
+        "いっぱんでき"
+      ],
+      "answer": 3,
+      "hanViet": "Nhất - Ban - Đích",
+      "explanation": "【正解】3 (いっぱんてき)\n\n• Từ vựng kiểm tra: 一般的 [いっぱんてき]\n• Âm Hán Việt: Nhất - Ban - Đích\n• Cách đọc chính xác của 「一般的」 trong câu là 「いっぱんてき」."
+    },
+    {
+      "id": "n3_k_s12_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "あすマラソン<u>大会</u>があります。",
+      "targetWord": "大会",
+      "options": [
+        "たいがい",
+        "たいかい",
+        "だいがい",
+        "だいかい"
+      ],
+      "answer": 2,
+      "hanViet": "Đại - Hội",
+      "explanation": "【正解】2 (たいかい)\n\n• Từ vựng kiểm tra: 大会 [たいかい]\n• Âm Hán Việt: Đại - Hội\n• Cách đọc chính xác của 「大会」 trong câu là 「たいかい」."
+    },
+    {
+      "id": "n3_k_s12_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "彼は英語の<u>実力</u>があります。",
+      "targetWord": "実力",
+      "options": [
+        "じつりょく",
+        "じつりき",
+        "しつりょく",
+        "しつりき"
+      ],
+      "answer": 1,
+      "hanViet": "Khách - Lực",
+      "explanation": "【正解】1 (じつりょく)\n\n• Từ vựng kiểm tra: 実力 [じつりょく]\n• Âm Hán Việt: Khách - Lực\n• Cách đọc chính xác của 「実力」 trong câu là 「じつりょく」."
+    },
+    {
+      "id": "n3_k_s12_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "毎朝5時に起きるのはとても<u>苦しか</u>った。",
+      "targetWord": "苦しか",
+      "options": [
+        "くやしかった",
+        "さびしかった",
+        "くるしかった",
+        "すずしかった"
+      ],
+      "answer": 3,
+      "hanViet": "Khổ",
+      "explanation": "【正解】3 (くるしかった)\n\n• Từ vựng kiểm tra: 苦しか [くるしかった]\n• Âm Hán Việt: Khổ\n• Cách đọc chính xác của 「苦しか」 trong câu là 「くるしかった」."
+    },
+    {
+      "id": "n3_k_s12_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "<u>他人</u>に迷惑をかけてはいけない。",
+      "targetWord": "他人",
+      "options": [
+        "ほかじん",
+        "ほかにん",
+        "たじん",
+        "たにん"
+      ],
+      "answer": 4,
+      "hanViet": "Tha - Nhân",
+      "explanation": "【正解】4 (たにん)\n\n• Từ vựng kiểm tra: 他人 [たにん]\n• Âm Hán Việt: Tha - Nhân\n• Cách đọc chính xác của 「他人」 trong câu là 「たにん」."
+    },
+    {
+      "id": "n3_k_s12_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "<u>汗</u>をかいたら風邪が治った。",
+      "targetWord": "汗",
+      "options": [
+        "なみだ",
+        "あせ",
+        "いき",
+        "あわ"
+      ],
+      "answer": 2,
+      "hanViet": "Hãn",
+      "explanation": "【正解】2 (あせ)\n\n• Từ vựng kiểm tra: 汗 [あせ]\n• Âm Hán Việt: Hãn\n• Cách đọc chính xác của 「汗」 trong câu là 「あせ」."
+    },
+    {
+      "id": "n3_k_s12_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "<u>列車は</u>午前11時に上野駅に到着した。",
+      "targetWord": "列車は",
+      "options": [
+        "とうちく",
+        "とちく",
+        "Oとうちゃく",
+        "とちゃく"
+      ],
+      "answer": 3,
+      "hanViet": "Liệt - Xa",
+      "explanation": "【正解】3 (Oとうちゃく)\n\n• Từ vựng kiểm tra: 列車は [Oとうちゃく]\n• Âm Hán Việt: Liệt - Xa\n• Cách đọc chính xác của 「列車は」 trong câu là 「Oとうちゃく」."
+    },
+    {
+      "id": "n3_k_s12_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "席を後ろから前に<u>移す</u>。",
+      "targetWord": "移す",
+      "options": [
+        "すごす",
+        "わたす",
+        "なおす",
+        "うつす"
+      ],
+      "answer": 4,
+      "hanViet": "Di",
+      "explanation": "【正解】4 (うつす)\n\n• Từ vựng kiểm tra: 移す [うつす]\n• Âm Hán Việt: Di\n• Cách đọc chính xác của 「移す」 trong câu là 「うつす」."
+    },
+    {
+      "id": "n3_k_s12_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 12",
+      "type": "reading",
+      "question": "内田さんから、来週のセミナーの<u>件</u>で電話がありました。",
+      "targetWord": "件",
+      "options": [
+        "けん",
+        "よう",
+        "あん",
+        "ほう"
+      ],
+      "answer": 1,
+      "hanViet": "Kiện",
+      "explanation": "【正解】1 (けん)\n\n• Từ vựng kiểm tra: 件 [けん]\n• Âm Hán Việt: Kiện\n• Cách đọc chính xác của 「件」 trong câu là 「けん」."
+    }
+  ]
+}

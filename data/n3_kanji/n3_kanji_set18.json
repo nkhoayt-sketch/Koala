@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set18",
+  "set": "Set 18",
+  "title": "Kanji N3 • Set 18 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s18_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "その絵は上下が<u>ぎゃく</u>だ。",
+      "targetWord": "ぎゃく",
+      "options": [
+        "途",
+        "辺",
+        "逆",
+        "造"
+      ],
+      "answer": 3,
+      "hanViet": "Nghịch",
+      "explanation": "【正解】3 (逆)\n\n• Từ vựng kiểm tra: 逆 (ぎゃく)\n• Âm Hán Việt: Nghịch\n• Chữ Hán chính xác ứng với cách đọc 「ぎゃく」 là 「逆」."
+    },
+    {
+      "id": "n3_k_s18_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "あかちゃんが<u>ないて</u>います。",
+      "targetWord": "ないて",
+      "options": [
+        "恋いて",
+        "涙いて",
+        "悲いて",
+        "泣いて"
+      ],
+      "answer": 4,
+      "hanViet": "Khấp",
+      "explanation": "【正解】4 (泣いて)\n\n• Từ vựng kiểm tra: 泣いて (ないて)\n• Âm Hán Việt: Khấp\n• Chữ Hán chính xác ứng với cách đọc 「ないて」 là 「泣いて」."
+    },
+    {
+      "id": "n3_k_s18_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "今夜<u>かならず</u>電話してね。",
+      "targetWord": "かならず",
+      "options": [
+        "要ず",
+        "必ず",
+        "寝ず",
+        "忘ず"
+      ],
+      "answer": 2,
+      "hanViet": "Tất",
+      "explanation": "【正解】2 (必ず)\n\n• Từ vựng kiểm tra: 必ず (かならず)\n• Âm Hán Việt: Tất\n• Chữ Hán chính xác ứng với cách đọc 「かならず」 là 「必ず」."
+    },
+    {
+      "id": "n3_k_s18_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "不意に一人の男が玄関先に<u>あらわれた</u>。",
+      "targetWord": "あらわれた",
+      "options": [
+        "明れた",
+        "乱れた",
+        "荒れた",
+        "現れた"
+      ],
+      "answer": 4,
+      "hanViet": "Hiện",
+      "explanation": "【正解】4 (現れた)\n\n• Từ vựng kiểm tra: 現れた (あらわれた)\n• Âm Hán Việt: Hiện\n• Chữ Hán chính xác ứng với cách đọc 「あらわれた」 là 「現れた」."
+    },
+    {
+      "id": "n3_k_s18_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "彼に<u>しゅうかんし</u>を買ってきてもらいました。",
+      "targetWord": "しゅうかんし",
+      "options": [
+        "週完誌",
+        "週刊記",
+        "週刊誌",
+        "週完記"
+      ],
+      "answer": 3,
+      "hanViet": "Chu - San - Chí",
+      "explanation": "【正解】3 (週刊誌)\n\n• Từ vựng kiểm tra: 週刊誌 (しゅうかんし)\n• Âm Hán Việt: Chu - San - Chí\n• Chữ Hán chính xác ứng với cách đọc 「しゅうかんし」 là 「週刊誌」."
+    },
+    {
+      "id": "n3_k_s18_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "夏の<u>つかれ</u>がまだ残っているようだ。",
+      "targetWord": "つかれ",
+      "options": [
+        "疲れ",
+        "痛れ",
+        "疫れ",
+        "病れ"
+      ],
+      "answer": 1,
+      "hanViet": "Bí",
+      "explanation": "【正解】1 (疲れ)\n\n• Từ vựng kiểm tra: 疲れ (つかれ)\n• Âm Hán Việt: Bí\n• Chữ Hán chính xác ứng với cách đọc 「つかれ」 là 「疲れ」."
+    },
+    {
+      "id": "n3_k_s18_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "その競技は100分の1<u>びょう</u>を争う競技だ。",
+      "targetWord": "びょう",
+      "options": [
+        "培",
+        "抄",
+        "倍",
+        "秒"
+      ],
+      "answer": 4,
+      "hanViet": "Miểu",
+      "explanation": "【正解】4 (秒)\n\n• Từ vựng kiểm tra: 秒 (びょう)\n• Âm Hán Việt: Miểu\n• Chữ Hán chính xác ứng với cách đọc 「びょう」 là 「秒」."
+    },
+    {
+      "id": "n3_k_s18_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "歯が悪くて<u>こまって</u>います。",
+      "targetWord": "こまって",
+      "options": [
+        "因って",
+        "困って",
+        "O固って",
+        "囚って"
+      ],
+      "answer": 2,
+      "hanViet": "Khốn",
+      "explanation": "【正解】2 (困って)\n\n• Từ vựng kiểm tra: 困って (こまって)\n• Âm Hán Việt: Khốn\n• Chữ Hán chính xác ứng với cách đọc 「こまって」 là 「困って」."
+    },
+    {
+      "id": "n3_k_s18_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "今日は<u>なみ</u>が荒い。",
+      "targetWord": "なみ",
+      "options": [
+        "池",
+        "湖",
+        "港",
+        "波"
+      ],
+      "answer": 4,
+      "hanViet": "Ba",
+      "explanation": "【正解】4 (波)\n\n• Từ vựng kiểm tra: 波 (なみ)\n• Âm Hán Việt: Ba\n• Chữ Hán chính xác ứng với cách đọc 「なみ」 là 「波」."
+    },
+    {
+      "id": "n3_k_s18_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 18",
+      "type": "writing",
+      "question": "彼は店にあったお金を全部持って<u>にげた</u>。",
+      "targetWord": "にげた",
+      "options": [
+        "遠げた",
+        "返げた",
+        "逃げた",
+        "逆げた"
+      ],
+      "answer": 3,
+      "hanViet": "Đào",
+      "explanation": "【正解】3 (逃げた)\n\n• Từ vựng kiểm tra: 逃げた (にげた)\n• Âm Hán Việt: Đào\n• Chữ Hán chính xác ứng với cách đọc 「にげた」 là 「逃げた」."
+    }
+  ]
+}

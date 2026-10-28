@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set05",
+  "set": "Set 05",
+  "title": "Kanji N3 • Set 05 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s05_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "わたしは、<u>普通</u>朝食前に新聞を読みます。",
+      "targetWord": "普通",
+      "options": [
+        "ふつつう",
+        "ふつう",
+        "ふうだん",
+        "ふだん"
+      ],
+      "answer": 2,
+      "hanViet": "Phổ - Thông",
+      "explanation": "【正解】2 (ふつう)\n\n• Từ vựng kiểm tra: 普通 [ふつう]\n• Âm Hán Việt: Phổ - Thông\n• Cách đọc chính xác của 「普通」 trong câu là 「ふつう」."
+    },
+    {
+      "id": "n3_k_s05_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "あまり<u>遅く</u>ならないうちに帰ってきなさい。",
+      "targetWord": "遅く",
+      "options": [
+        "おそく",
+        "きたなく",
+        "みじかく",
+        "とおく"
+      ],
+      "answer": 1,
+      "hanViet": "Trì",
+      "explanation": "【正解】1 (おそく)\n\n• Từ vựng kiểm tra: 遅く [おそく]\n• Âm Hán Việt: Trì\n• Cách đọc chính xác của 「遅く」 trong câu là 「おそく」."
+    },
+    {
+      "id": "n3_k_s05_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "祖父は年のせいで少し<u>腰</u>が曲がっています。",
+      "targetWord": "腰",
+      "options": [
+        "むね",
+        "かた",
+        "こし",
+        "くび"
+      ],
+      "answer": 3,
+      "hanViet": "Yêu",
+      "explanation": "【正解】3 (こし)\n\n• Từ vựng kiểm tra: 腰 [こし]\n• Âm Hán Việt: Yêu\n• Cách đọc chính xác của 「腰」 trong câu là 「こし」."
+    },
+    {
+      "id": "n3_k_s05_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "興味ある<u>部分</u>には下線を引いてください。",
+      "targetWord": "部分",
+      "options": [
+        "ぶふん",
+        "ぶうぶん",
+        "ぶうふん",
+        "ぶぶん"
+      ],
+      "answer": 4,
+      "hanViet": "Bộ - Phân • phần • phận",
+      "explanation": "【正解】4 (ぶぶん)\n\n• Từ vựng kiểm tra: 部分 [ぶぶん]\n• Âm Hán Việt: Bộ - Phân • phần • phận\n• Cách đọc chính xác của 「部分」 trong câu là 「ぶぶん」."
+    },
+    {
+      "id": "n3_k_s05_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "トマトに<u>塩</u>をつけて食べた。",
+      "targetWord": "塩",
+      "options": [
+        "まめ",
+        "こめ",
+        "あぶら",
+        "しお"
+      ],
+      "answer": 4,
+      "hanViet": "Diêm",
+      "explanation": "【正解】4 (しお)\n\n• Từ vựng kiểm tra: 塩 [しお]\n• Âm Hán Việt: Diêm\n• Cách đọc chính xác của 「塩」 trong câu là 「しお」."
+    },
+    {
+      "id": "n3_k_s05_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "このテーブルの<u>位置</u>を変えたほうがいいよ。",
+      "targetWord": "位置",
+      "options": [
+        "とち",
+        "いち",
+        "とじ",
+        "いじ"
+      ],
+      "answer": 2,
+      "hanViet": "Vị - Trí",
+      "explanation": "【正解】2 (いち)\n\n• Từ vựng kiểm tra: 位置 [いち]\n• Âm Hán Việt: Vị - Trí\n• Cách đọc chính xác của 「位置」 trong câu là 「いち」."
+    },
+    {
+      "id": "n3_k_s05_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "その店はもうクリスマスの<u>商品</u>をならべている。",
+      "targetWord": "商品",
+      "options": [
+        "せいひん",
+        "せひん",
+        "しょうひん",
+        "しょひん"
+      ],
+      "answer": 3,
+      "hanViet": "Thương - Phẩm",
+      "explanation": "【正解】3 (しょうひん)\n\n• Từ vựng kiểm tra: 商品 [しょうひん]\n• Âm Hán Việt: Thương - Phẩm\n• Cách đọc chính xác của 「商品」 trong câu là 「しょうひん」."
+    },
+    {
+      "id": "n3_k_s05_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "その試合に約3万人の<u>観客</u>が集まった。",
+      "targetWord": "観客",
+      "options": [
+        "けんぎゃく",
+        "かんぎゃく",
+        "Oけんきゃく",
+        "かんきゃく"
+      ],
+      "answer": 4,
+      "hanViet": "Quan - Khách",
+      "explanation": "【正解】4 (かんきゃく)\n\n• Từ vựng kiểm tra: 観客 [かんきゃく]\n• Âm Hán Việt: Quan - Khách\n• Cách đọc chính xác của 「観客」 trong câu là 「かんきゃく」."
+    },
+    {
+      "id": "n3_k_s05_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "司会者が説明を<u>加え</u>ました。",
+      "targetWord": "加え",
+      "options": [
+        "くわえました",
+        "かえました",
+        "おえました",
+        "つたえました"
+      ],
+      "answer": 1,
+      "hanViet": "Gia",
+      "explanation": "【正解】1 (くわえました)\n\n• Từ vựng kiểm tra: 加え [くわえました]\n• Âm Hán Việt: Gia\n• Cách đọc chính xác của 「加え」 trong câu là 「くわえました」."
+    },
+    {
+      "id": "n3_k_s05_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 05",
+      "type": "reading",
+      "question": "転んで前歯が2本<u>折れ</u>た。",
+      "targetWord": "折れ",
+      "options": [
+        "われた",
+        "おれた",
+        "ぬれた",
+        "こわれた"
+      ],
+      "answer": 2,
+      "hanViet": "Chiết",
+      "explanation": "【正解】2 (おれた)\n\n• Từ vựng kiểm tra: 折れ [おれた]\n• Âm Hán Việt: Chiết\n• Cách đọc chính xác của 「折れ」 trong câu là 「おれた」."
+    }
+  ]
+}

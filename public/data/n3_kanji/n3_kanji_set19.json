@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set19",
+  "set": "Set 19",
+  "title": "Kanji N3 • Set 19 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s19_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "彼女はその山に登った<u>さいしょ</u>の外国人でした。",
+      "targetWord": "さいしょ",
+      "options": [
+        "最後",
+        "最始",
+        "最初",
+        "最終"
+      ],
+      "answer": 3,
+      "hanViet": "Tối - Sơ",
+      "explanation": "【正解】3 (最初)\n\n• Từ vựng kiểm tra: 最初 (さいしょ)\n• Âm Hán Việt: Tối - Sơ\n• Chữ Hán chính xác ứng với cách đọc 「さいしょ」 là 「最初」."
+    },
+    {
+      "id": "n3_k_s19_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "医師のしょほうせんがないと、<u>やっきょく</u>で薬が買えない。",
+      "targetWord": "やっきょく",
+      "options": [
+        "楽曲",
+        "薬曲",
+        "楽局",
+        "薬局"
+      ],
+      "answer": 4,
+      "hanViet": "Dược - Cục",
+      "explanation": "【正解】4 (薬局)\n\n• Từ vựng kiểm tra: 薬局 (やっきょく)\n• Âm Hán Việt: Dược - Cục\n• Chữ Hán chính xác ứng với cách đọc 「やっきょく」 là 「薬局」."
+    },
+    {
+      "id": "n3_k_s19_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "この小説は多くの言語に<u>やくされて</u>います。",
+      "targetWord": "やくされて",
+      "options": [
+        "訳されて",
+        "説されて",
+        "記されて",
+        "語されて"
+      ],
+      "answer": 1,
+      "hanViet": "Dịch",
+      "explanation": "【正解】1 (訳されて)\n\n• Từ vựng kiểm tra: 訳されて (やくされて)\n• Âm Hán Việt: Dịch\n• Chữ Hán chính xác ứng với cách đọc 「やくされて」 là 「訳されて」."
+    },
+    {
+      "id": "n3_k_s19_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "この小説の<u>つづき</u>が早く読みたい。",
+      "targetWord": "つづき",
+      "options": [
+        "統き",
+        "続き",
+        "総き",
+        "績き"
+      ],
+      "answer": 2,
+      "hanViet": "Tục",
+      "explanation": "【正解】2 (続き)\n\n• Từ vựng kiểm tra: 続き (つづき)\n• Âm Hán Việt: Tục\n• Chữ Hán chính xác ứng với cách đọc 「つづき」 là 「続き」."
+    },
+    {
+      "id": "n3_k_s19_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "医者はあと3日で彼を<u>たいいん</u>させる予定だ。",
+      "targetWord": "たいいん",
+      "options": [
+        "帰院",
+        "帰員",
+        "退院",
+        "退員"
+      ],
+      "answer": 3,
+      "hanViet": "Thoái - Viện",
+      "explanation": "【正解】3 (退院)\n\n• Từ vựng kiểm tra: 退院 (たいいん)\n• Âm Hán Việt: Thoái - Viện\n• Chữ Hán chính xác ứng với cách đọc 「たいいん」 là 「退院」."
+    },
+    {
+      "id": "n3_k_s19_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "たくさんの風船が空中を<u>とんで</u>いた。",
+      "targetWord": "とんで",
+      "options": [
+        "飛んで",
+        "転んで",
+        "投んで",
+        "打んで"
+      ],
+      "answer": 1,
+      "hanViet": "Phi",
+      "explanation": "【正解】1 (飛んで)\n\n• Từ vựng kiểm tra: 飛んで (とんで)\n• Âm Hán Việt: Phi\n• Chữ Hán chính xác ứng với cách đọc 「とんで」 là 「飛んで」."
+    },
+    {
+      "id": "n3_k_s19_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "あの兄弟は性格がまったく<u>ちがいます</u>。",
+      "targetWord": "ちがいます",
+      "options": [
+        "違います",
+        "遅います",
+        "達います",
+        "遣います"
+      ],
+      "answer": 1,
+      "hanViet": "Vi",
+      "explanation": "【正解】1 (違います)\n\n• Từ vựng kiểm tra: 違います (ちがいます)\n• Âm Hán Việt: Vi\n• Chữ Hán chính xác ứng với cách đọc 「ちがいます」 là 「違います」."
+    },
+    {
+      "id": "n3_k_s19_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "彼は親の<u>きたい</u>どおりには勉強しなかった。",
+      "targetWord": "きたい",
+      "options": [
+        "期願",
+        "期待",
+        "O規願",
+        "規待"
+      ],
+      "answer": 2,
+      "hanViet": "Kỳ - Đãi",
+      "explanation": "【正解】2 (期待)\n\n• Từ vựng kiểm tra: 期待 (きたい)\n• Âm Hán Việt: Kỳ - Đãi\n• Chữ Hán chính xác ứng với cách đọc 「きたい」 là 「期待」."
+    },
+    {
+      "id": "n3_k_s19_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "彼は腕を<u>くんで</u>立っていた。",
+      "targetWord": "くんで",
+      "options": [
+        "結んで",
+        "接んで",
+        "折んで",
+        "組んで"
+      ],
+      "answer": 4,
+      "hanViet": "Tổ",
+      "explanation": "【正解】4 (組んで)\n\n• Từ vựng kiểm tra: 組んで (くんで)\n• Âm Hán Việt: Tổ\n• Chữ Hán chính xác ứng với cách đọc 「くんで」 là 「組んで」."
+    },
+    {
+      "id": "n3_k_s19_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 19",
+      "type": "writing",
+      "question": "日本語の試験でいい<u>せいせき</u>を取った。",
+      "targetWord": "せいせき",
+      "options": [
+        "成積",
+        "成績",
+        "整積",
+        "整績"
+      ],
+      "answer": 2,
+      "hanViet": "Thành - Tích",
+      "explanation": "【正解】2 (成績)\n\n• Từ vựng kiểm tra: 成績 (せいせき)\n• Âm Hán Việt: Thành - Tích\n• Chữ Hán chính xác ứng với cách đọc 「せいせき」 là 「成績」."
+    }
+  ]
+}

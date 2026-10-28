@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set25",
+  "set": "Set 25",
+  "title": "Kanji N3 • Set 25 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s25_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "彼女は銀行に<u>つとめて</u>います。",
+      "targetWord": "つとめて",
+      "options": [
+        "働めて",
+        "勤めて",
+        "務めて",
+        "勉めて"
+      ],
+      "answer": 2,
+      "hanViet": "Cần",
+      "explanation": "【正解】2 (勤めて)\n\n• Từ vựng kiểm tra: 勤めて (つとめて)\n• Âm Hán Việt: Cần\n• Chữ Hán chính xác ứng với cách đọc 「つとめて」 là 「勤めて」."
+    },
+    {
+      "id": "n3_k_s25_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "スマホがないと<u>かてい</u>してみましょう。",
+      "targetWord": "かてい",
+      "options": [
+        "仮定",
+        "仮程",
+        "過程",
+        "過定"
+      ],
+      "answer": 1,
+      "hanViet": "Giả - Định",
+      "explanation": "【正解】1 (仮定)\n\n• Từ vựng kiểm tra: 仮定 (かてい)\n• Âm Hán Việt: Giả - Định\n• Chữ Hán chính xác ứng với cách đọc 「かてい」 là 「仮定」."
+    },
+    {
+      "id": "n3_k_s25_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "この町の人口は<u>げんしょう</u>している。",
+      "targetWord": "げんしょう",
+      "options": [
+        "滅小",
+        "滅少",
+        "減小",
+        "減少"
+      ],
+      "answer": 4,
+      "hanViet": "Giảm - Thiểu",
+      "explanation": "【正解】4 (減少)\n\n• Từ vựng kiểm tra: 減少 (げんしょう)\n• Âm Hán Việt: Giảm - Thiểu\n• Chữ Hán chính xác ứng với cách đọc 「げんしょう」 là 「減少」."
+    },
+    {
+      "id": "n3_k_s25_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "やきにくをレタスに<u>つつんで</u>食べる。",
+      "targetWord": "つつんで",
+      "options": [
+        "包んで",
+        "含んで",
+        "内んで",
+        "泡んで"
+      ],
+      "answer": 1,
+      "hanViet": "Bao",
+      "explanation": "【正解】1 (包んで)\n\n• Từ vựng kiểm tra: 包んで (つつんで)\n• Âm Hán Việt: Bao\n• Chữ Hán chính xác ứng với cách đọc 「つつんで」 là 「包んで」."
+    },
+    {
+      "id": "n3_k_s25_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "今夜は<u>ざんぎょう</u>なので遅くなるよ。",
+      "targetWord": "ざんぎょう",
+      "options": [
+        "残庫",
+        "残業",
+        "産庫",
+        "産業"
+      ],
+      "answer": 2,
+      "hanViet": "Tàn - Nghiệp",
+      "explanation": "【正解】2 (残業)\n\n• Từ vựng kiểm tra: 残業 (ざんぎょう)\n• Âm Hán Việt: Tàn - Nghiệp\n• Chữ Hán chính xác ứng với cách đọc 「ざんぎょう」 là 「残業」."
+    },
+    {
+      "id": "n3_k_s25_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "そのことを医者に<u>そうだん</u>しましたか。",
+      "targetWord": "そうだん",
+      "options": [
+        "相詰",
+        "相談",
+        "相語",
+        "相話"
+      ],
+      "answer": 2,
+      "hanViet": "Tướng - Đàm",
+      "explanation": "【正解】2 (相談)\n\n• Từ vựng kiểm tra: 相談 (そうだん)\n• Âm Hán Việt: Tướng - Đàm\n• Chữ Hán chính xác ứng với cách đọc 「そうだん」 là 「相談」."
+    },
+    {
+      "id": "n3_k_s25_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "その子の目に<u>なみだ</u>があふれてきた。",
+      "targetWord": "なみだ",
+      "options": [
+        "泡",
+        "泉",
+        "涙",
+        "汗"
+      ],
+      "answer": 3,
+      "hanViet": "Lệ",
+      "explanation": "【正解】3 (涙)\n\n• Từ vựng kiểm tra: 涙 (なみだ)\n• Âm Hán Việt: Lệ\n• Chữ Hán chính xác ứng với cách đọc 「なみだ」 là 「涙」."
+    },
+    {
+      "id": "n3_k_s25_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "わたしは<u>けんこう</u>のために毎日走っています。",
+      "targetWord": "けんこう",
+      "options": [
+        "建庫",
+        "健康",
+        "O健庫",
+        "健康"
+      ],
+      "answer": 4,
+      "hanViet": "Kiện - Khang",
+      "explanation": "【正解】4 (健康)\n\n• Từ vựng kiểm tra: 健康 (けんこう)\n• Âm Hán Việt: Kiện - Khang\n• Chữ Hán chính xác ứng với cách đọc 「けんこう」 là 「健康」."
+    },
+    {
+      "id": "n3_k_s25_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "彼は環境問題の<u>せんもんか</u>です。",
+      "targetWord": "せんもんか",
+      "options": [
+        "専門屋",
+        "専門家",
+        "専問屋",
+        "専問家"
+      ],
+      "answer": 2,
+      "hanViet": "Chuyên - Môn - Gia",
+      "explanation": "【正解】2 (専門家)\n\n• Từ vựng kiểm tra: 専門家 (せんもんか)\n• Âm Hán Việt: Chuyên - Môn - Gia\n• Chữ Hán chính xác ứng với cách đọc 「せんもんか」 là 「専門家」."
+    },
+    {
+      "id": "n3_k_s25_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 25",
+      "type": "writing",
+      "question": "電車を<u>おりる</u>ときに、かさを忘れてしまった。",
+      "targetWord": "おりる",
+      "options": [
+        "降りる",
+        "降る",
+        "移りる",
+        "移る"
+      ],
+      "answer": 1,
+      "hanViet": "Giáng",
+      "explanation": "【正解】1 (降りる)\n\n• Từ vựng kiểm tra: 降りる (おりる)\n• Âm Hán Việt: Giáng\n• Chữ Hán chính xác ứng với cách đọc 「おりる」 là 「降りる」."
+    }
+  ]
+}

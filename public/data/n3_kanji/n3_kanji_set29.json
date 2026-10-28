@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set29",
+  "set": "Set 29",
+  "title": "Kanji N3 • Set 29 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s29_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "監督は5回に先発ピッチャーを<u>交代</u>させた。",
+      "targetWord": "交代",
+      "options": [
+        "こうだい",
+        "こうたい",
+        "こうはつ",
+        "こうばつ"
+      ],
+      "answer": 2,
+      "hanViet": "Giao - Đại",
+      "explanation": "【正解】2 (こうたい)\n\n• Từ vựng kiểm tra: 交代 [こうたい]\n• Âm Hán Việt: Giao - Đại\n• Cách đọc chính xác của 「交代」 trong câu là 「こうたい」."
+    },
+    {
+      "id": "n3_k_s29_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "今朝は水が<u>氷</u>のように冷たかったです。",
+      "targetWord": "氷",
+      "options": [
+        "あぶら",
+        "こおり",
+        "こな",
+        "こめ"
+      ],
+      "answer": 2,
+      "hanViet": "Băng",
+      "explanation": "【正解】2 (こおり)\n\n• Từ vựng kiểm tra: 氷 [こおり]\n• Âm Hán Việt: Băng\n• Cách đọc chính xác của 「氷」 trong câu là 「こおり」."
+    },
+    {
+      "id": "n3_k_s29_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "<u>彼の</u>行動は両国にとってなんの得にもならない。",
+      "targetWord": "彼の",
+      "options": [
+        "ろうくに",
+        "ろうこく",
+        "りょうくに",
+        "りょうこく"
+      ],
+      "answer": 4,
+      "hanViet": "Bỉ",
+      "explanation": "【正解】4 (りょうこく)\n\n• Từ vựng kiểm tra: 彼の [りょうこく]\n• Âm Hán Việt: Bỉ\n• Cách đọc chính xác của 「彼の」 trong câu là 「りょうこく」."
+    },
+    {
+      "id": "n3_k_s29_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "この<u>小包</u>を送るのにいくらかかりますか。",
+      "targetWord": "小包",
+      "options": [
+        "しょうほう",
+        "しょうぼう",
+        "こつづみ",
+        "こづつみ"
+      ],
+      "answer": 4,
+      "hanViet": "Tiểu - Bao",
+      "explanation": "【正解】4 (こづつみ)\n\n• Từ vựng kiểm tra: 小包 [こづつみ]\n• Âm Hán Việt: Tiểu - Bao\n• Cách đọc chính xác của 「小包」 trong câu là 「こづつみ」."
+    },
+    {
+      "id": "n3_k_s29_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "自分の<u>役目</u>はよくわかっているつもりです。",
+      "targetWord": "役目",
+      "options": [
+        "やきめ",
+        "やくもく",
+        "やくめ",
+        "やきもく"
+      ],
+      "answer": 3,
+      "hanViet": "Dịch - Mục",
+      "explanation": "【正解】3 (やくめ)\n\n• Từ vựng kiểm tra: 役目 [やくめ]\n• Âm Hán Việt: Dịch - Mục\n• Cách đọc chính xác của 「役目」 trong câu là 「やくめ」."
+    },
+    {
+      "id": "n3_k_s29_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "わたしの父は最近体調が<u>良く</u>ない。",
+      "targetWord": "良く",
+      "options": [
+        "うまくない",
+        "まずくない",
+        "いくない",
+        "よくない"
+      ],
+      "answer": 4,
+      "hanViet": "Lương",
+      "explanation": "【正解】4 (よくない)\n\n• Từ vựng kiểm tra: 良く [よくない]\n• Âm Hán Việt: Lương\n• Cách đọc chính xác của 「良く」 trong câu là 「よくない」."
+    },
+    {
+      "id": "n3_k_s29_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "古新聞を<u>再利用</u>してエコバックを作りました。",
+      "targetWord": "再利用",
+      "options": [
+        "さいかつよう",
+        "ざいかつよう",
+        "さいりよう",
+        "ざいりよう"
+      ],
+      "answer": 3,
+      "hanViet": "Tái - Lợi - Dụng",
+      "explanation": "【正解】3 (さいりよう)\n\n• Từ vựng kiểm tra: 再利用 [さいりよう]\n• Âm Hán Việt: Tái - Lợi - Dụng\n• Cách đọc chính xác của 「再利用」 trong câu là 「さいりよう」."
+    },
+    {
+      "id": "n3_k_s29_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "外に出ると<u>幸い</u>なことに雪がやんでいた。",
+      "targetWord": "幸い",
+      "options": [
+        "からい",
+        "とくい",
+        "Oあいまい",
+        "さいわい"
+      ],
+      "answer": 4,
+      "hanViet": "Hạnh",
+      "explanation": "【正解】4 (さいわい)\n\n• Từ vựng kiểm tra: 幸い [さいわい]\n• Âm Hán Việt: Hạnh\n• Cách đọc chính xác của 「幸い」 trong câu là 「さいわい」."
+    },
+    {
+      "id": "n3_k_s29_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "これが今、<u>若者</u>の間で流行の水着です。",
+      "targetWord": "若者",
+      "options": [
+        "にゃくもの",
+        "にゃくしゃ",
+        "わかもの",
+        "わかしゃ"
+      ],
+      "answer": 3,
+      "hanViet": "Nhược - Giả",
+      "explanation": "【正解】3 (わかもの)\n\n• Từ vựng kiểm tra: 若者 [わかもの]\n• Âm Hán Việt: Nhược - Giả\n• Cách đọc chính xác của 「若者」 trong câu là 「わかもの」."
+    },
+    {
+      "id": "n3_k_s29_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 29",
+      "type": "reading",
+      "question": "その傷害<u>事件</u>は新聞で詳しく報道されました。",
+      "targetWord": "事件",
+      "options": [
+        "じじょう",
+        "じだい",
+        "じけん",
+        "じこ"
+      ],
+      "answer": 3,
+      "hanViet": "Sự - Kiện",
+      "explanation": "【正解】3 (じけん)\n\n• Từ vựng kiểm tra: 事件 [じけん]\n• Âm Hán Việt: Sự - Kiện\n• Cách đọc chính xác của 「事件」 trong câu là 「じけん」."
+    }
+  ]
+}

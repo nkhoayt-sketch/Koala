@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set42",
+  "set": "Set 42",
+  "title": "Kanji N3 • Set 42 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s42_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "<u>さくじつの最低気温が0.8℃を記録しました。</u>",
+      "targetWord": "きのう",
+      "options": [
+        "先日",
+        "去日",
+        "前日",
+        "昨日"
+      ],
+      "answer": 4,
+      "hanViet": "Tạc - Nhật",
+      "explanation": "【正解】4 (昨日)\n\n• Từ vựng kiểm tra: 昨日 (きのう)\n• Âm Hán Việt: Tạc - Nhật\n• Chữ Hán chính xác ứng với cách đọc 「きのう」 là 「昨日」."
+    },
+    {
+      "id": "n3_k_s42_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "周囲の人々に<u>ささえられて</u>今日まで子育てができました。",
+      "targetWord": "ささえられて",
+      "options": [
+        "与えられて",
+        "支えられて",
+        "備えられて",
+        "構えられて"
+      ],
+      "answer": 2,
+      "hanViet": "Chi",
+      "explanation": "【正解】2 (支えられて)\n\n• Từ vựng kiểm tra: 支えられて (ささえられて)\n• Âm Hán Việt: Chi\n• Chữ Hán chính xác ứng với cách đọc 「ささえられて」 là 「支えられて」."
+    },
+    {
+      "id": "n3_k_s42_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "今、3つのプロジェクトを<u>どうじ</u>進行で担当しています。",
+      "targetWord": "どうじ",
+      "options": [
+        "同時",
+        "同自",
+        "等時",
+        "等自"
+      ],
+      "answer": 1,
+      "hanViet": "Đồng - Thời",
+      "explanation": "【正解】1 (同時)\n\n• Từ vựng kiểm tra: 同時 (どうじ)\n• Âm Hán Việt: Đồng - Thời\n• Chữ Hán chính xác ứng với cách đọc 「どうじ」 là 「同時」."
+    },
+    {
+      "id": "n3_k_s42_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "<u>せいのう</u>のよい機械ほど高価になります。",
+      "targetWord": "せいのう",
+      "options": [
+        "製能",
+        "性能",
+        "精脳",
+        "制脳"
+      ],
+      "answer": 2,
+      "hanViet": "Tính - Năng",
+      "explanation": "【正解】2 (性能)\n\n• Từ vựng kiểm tra: 性能 (せいのう)\n• Âm Hán Việt: Tính - Năng\n• Chữ Hán chính xác ứng với cách đọc 「せいのう」 là 「性能」."
+    },
+    {
+      "id": "n3_k_s42_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "市長はスピーチ原稿を読み直し無駄な所を<u>けずった</u>。",
+      "targetWord": "けずった",
+      "options": [
+        "削った",
+        "切った",
+        "減った",
+        "消った"
+      ],
+      "answer": 1,
+      "hanViet": "Tước",
+      "explanation": "【正解】1 (削った)\n\n• Từ vựng kiểm tra: 削った (けずった)\n• Âm Hán Việt: Tước\n• Chữ Hán chính xác ứng với cách đọc 「けずった」 là 「削った」."
+    },
+    {
+      "id": "n3_k_s42_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "こんなに親切にしてくれるなんて<u>あやしい</u>なあ。",
+      "targetWord": "あやしい",
+      "options": [
+        "快しい",
+        "険しい",
+        "怪しい",
+        "危しい"
+      ],
+      "answer": 3,
+      "hanViet": "Quái",
+      "explanation": "【正解】3 (怪しい)\n\n• Từ vựng kiểm tra: 怪しい (あやしい)\n• Âm Hán Việt: Quái\n• Chữ Hán chính xác ứng với cách đọc 「あやしい」 là 「怪しい」."
+    },
+    {
+      "id": "n3_k_s42_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "彼女は世界選手権で日本<u>さいこう</u>記録を出した。",
+      "targetWord": "さいこう",
+      "options": [
+        "最古",
+        "最好",
+        "最後",
+        "最高"
+      ],
+      "answer": 4,
+      "hanViet": "Tối - Cao",
+      "explanation": "【正解】4 (最高)\n\n• Từ vựng kiểm tra: 最高 (さいこう)\n• Âm Hán Việt: Tối - Cao\n• Chữ Hán chính xác ứng với cách đọc 「さいこう」 là 「最高」."
+    },
+    {
+      "id": "n3_k_s42_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "新しい辞書は来月から<u>はつばい</u>されます。",
+      "targetWord": "はつばい",
+      "options": [
+        "発買",
+        "発売",
+        "O販売",
+        "販買"
+      ],
+      "answer": 2,
+      "hanViet": "Phát - Mại",
+      "explanation": "【正解】2 (発売)\n\n• Từ vựng kiểm tra: 発売 (はつばい)\n• Âm Hán Việt: Phát - Mại\n• Chữ Hán chính xác ứng với cách đọc 「はつばい」 là 「発売」."
+    },
+    {
+      "id": "n3_k_s42_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "時間を<u>はぶく</u>ため、冷凍食品を使いました。",
+      "targetWord": "はぶく",
+      "options": [
+        "削く",
+        "除く",
+        "省く",
+        "外く"
+      ],
+      "answer": 3,
+      "hanViet": "Tỉnh",
+      "explanation": "【正解】3 (省く)\n\n• Từ vựng kiểm tra: 省く (はぶく)\n• Âm Hán Việt: Tỉnh\n• Chữ Hán chính xác ứng với cách đọc 「はぶく」 là 「省く」."
+    },
+    {
+      "id": "n3_k_s42_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 42",
+      "type": "writing",
+      "question": "わたしは学校での授業の<u>さいかい</u>を楽しみにしています。",
+      "targetWord": "さいかい",
+      "options": [
+        "展開",
+        "展会",
+        "再開",
+        "再会"
+      ],
+      "answer": 3,
+      "hanViet": "Tái - Khai",
+      "explanation": "【正解】3 (再開)\n\n• Từ vựng kiểm tra: 再開 (さいかい)\n• Âm Hán Việt: Tái - Khai\n• Chữ Hán chính xác ứng với cách đọc 「さいかい」 là 「再開」."
+    }
+  ]
+}

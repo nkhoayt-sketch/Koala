@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set26",
+  "set": "Set 26",
+  "title": "Kanji N3 • Set 26 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s26_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "薬の輸入に関しては多くの<u>きそく</u>があります。",
+      "targetWord": "きそく",
+      "options": [
+        "基律",
+        "基則",
+        "規律",
+        "規則"
+      ],
+      "answer": 4,
+      "hanViet": "Quy - Tắc",
+      "explanation": "【正解】4 (規則)\n\n• Từ vựng kiểm tra: 規則 (きそく)\n• Âm Hán Việt: Quy - Tắc\n• Chữ Hán chính xác ứng với cách đọc 「きそく」 là 「規則」."
+    },
+    {
+      "id": "n3_k_s26_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "海外から安い<u>げんりょう</u>を輸入する。",
+      "targetWord": "げんりょう",
+      "options": [
+        "源料",
+        "源量",
+        "原料",
+        "原量"
+      ],
+      "answer": 3,
+      "hanViet": "Nguyên - Liệu",
+      "explanation": "【正解】3 (原料)\n\n• Từ vựng kiểm tra: 原料 (げんりょう)\n• Âm Hán Việt: Nguyên - Liệu\n• Chữ Hán chính xác ứng với cách đọc 「げんりょう」 là 「原料」."
+    },
+    {
+      "id": "n3_k_s26_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "初めに昨日の授業の<u>ふくしゅう</u>をしましょう。",
+      "targetWord": "ふくしゅう",
+      "options": [
+        "復数",
+        "復類",
+        "復習",
+        "復学"
+      ],
+      "answer": 3,
+      "hanViet": "Phục - Tập",
+      "explanation": "【正解】3 (復習)\n\n• Từ vựng kiểm tra: 復習 (ふくしゅう)\n• Âm Hán Việt: Phục - Tập\n• Chữ Hán chính xác ứng với cách đọc 「ふくしゅう」 là 「復習」."
+    },
+    {
+      "id": "n3_k_s26_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "レンジで料理を<u>あたためる</u>。",
+      "targetWord": "あたためる",
+      "options": [
+        "湿める",
+        "温める",
+        "覚める",
+        "冷める"
+      ],
+      "answer": 2,
+      "hanViet": "Ôn",
+      "explanation": "【正解】2 (温める)\n\n• Từ vựng kiểm tra: 温める (あたためる)\n• Âm Hán Việt: Ôn\n• Chữ Hán chính xác ứng với cách đọc 「あたためる」 là 「温める」."
+    },
+    {
+      "id": "n3_k_s26_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "アジアの多くの国が<u>かんこう</u>に力を入れている。",
+      "targetWord": "かんこう",
+      "options": [
+        "観告",
+        "観光",
+        "勧告",
+        "勧光"
+      ],
+      "answer": 2,
+      "hanViet": "Quan - Quang",
+      "explanation": "【正解】2 (観光)\n\n• Từ vựng kiểm tra: 観光 (かんこう)\n• Âm Hán Việt: Quan - Quang\n• Chữ Hán chính xác ứng với cách đọc 「かんこう」 là 「観光」."
+    },
+    {
+      "id": "n3_k_s26_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "みんなで話し合って、問題を<u>かいけつ</u>した。",
+      "targetWord": "かいけつ",
+      "options": [
+        "改結",
+        "改決",
+        "解結",
+        "解決"
+      ],
+      "answer": 4,
+      "hanViet": "Giải - Quyết",
+      "explanation": "【正解】4 (解決)\n\n• Từ vựng kiểm tra: 解決 (かいけつ)\n• Âm Hán Việt: Giải - Quyết\n• Chữ Hán chính xác ứng với cách đọc 「かいけつ」 là 「解決」."
+    },
+    {
+      "id": "n3_k_s26_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "このシャツは工場で<u>たいりょう</u>に作られている。",
+      "targetWord": "たいりょう",
+      "options": [
+        "大量",
+        "大料",
+        "多量",
+        "多料"
+      ],
+      "answer": 1,
+      "hanViet": "Đại - Lượng",
+      "explanation": "【正解】1 (大量)\n\n• Từ vựng kiểm tra: 大量 (たいりょう)\n• Âm Hán Việt: Đại - Lượng\n• Chữ Hán chính xác ứng với cách đọc 「たいりょう」 là 「大量」."
+    },
+    {
+      "id": "n3_k_s26_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "機械が<u>せいじょう</u>かどうかチェックした。",
+      "targetWord": "せいじょう",
+      "options": [
+        "正情",
+        "正常",
+        "O成情",
+        "正精"
+      ],
+      "answer": 2,
+      "hanViet": "Chính - Thường",
+      "explanation": "【正解】2 (正常)\n\n• Từ vựng kiểm tra: 正常 (せいじょう)\n• Âm Hán Việt: Chính - Thường\n• Chữ Hán chính xác ứng với cách đọc 「せいじょう」 là 「正常」."
+    },
+    {
+      "id": "n3_k_s26_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "この<u>ものがたり</u>は、だれでも知っている。",
+      "targetWord": "ものがたり",
+      "options": [
+        "物語",
+        "物記",
+        "物説",
+        "物話"
+      ],
+      "answer": 1,
+      "hanViet": "Vật - Ngữ",
+      "explanation": "【正解】1 (物語)\n\n• Từ vựng kiểm tra: 物語 (ものがたり)\n• Âm Hán Việt: Vật - Ngữ\n• Chữ Hán chính xác ứng với cách đọc 「ものがたり」 là 「物語」."
+    },
+    {
+      "id": "n3_k_s26_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 26",
+      "type": "writing",
+      "question": "高校に入ってから、<u>しんちょう</u>が変わっていない。",
+      "targetWord": "しんちょう",
+      "options": [
+        "身張",
+        "身長",
+        "背張",
+        "背長"
+      ],
+      "answer": 2,
+      "hanViet": "Thân - Trường",
+      "explanation": "【正解】2 (身長)\n\n• Từ vựng kiểm tra: 身長 (しんちょう)\n• Âm Hán Việt: Thân - Trường\n• Chữ Hán chính xác ứng với cách đọc 「しんちょう」 là 「身長」."
+    }
+  ]
+}

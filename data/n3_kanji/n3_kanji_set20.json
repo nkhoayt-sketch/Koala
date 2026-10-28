@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set20",
+  "set": "Set 20",
+  "title": "Kanji N3 • Set 20 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s20_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "友だちが読めるように<u>でんごん</u>を残した。",
+      "targetWord": "でんごん",
+      "options": [
+        "伝記",
+        "伝言",
+        "転記",
+        "転言"
+      ],
+      "answer": 2,
+      "hanViet": "Truyền - Ngôn",
+      "explanation": "【正解】2 (伝言)\n\n• Từ vựng kiểm tra: 伝言 (でんごん)\n• Âm Hán Việt: Truyền - Ngôn\n• Chữ Hán chính xác ứng với cách đọc 「でんごん」 là 「伝言」."
+    },
+    {
+      "id": "n3_k_s20_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "お母さんが留守のときは<u>うちがわ</u>からかぎをかけておきなさい。",
+      "targetWord": "うちがわ",
+      "options": [
+        "裏測",
+        "裏側",
+        "内測",
+        "内側"
+      ],
+      "answer": 4,
+      "hanViet": "Nội - Trắc",
+      "explanation": "【正解】4 (内側)\n\n• Từ vựng kiểm tra: 内側 (うちがわ)\n• Âm Hán Việt: Nội - Trắc\n• Chữ Hán chính xác ứng với cách đọc 「うちがわ」 là 「内側」."
+    },
+    {
+      "id": "n3_k_s20_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "この川はあそこで<u>あさく</u>なっています。",
+      "targetWord": "あさく",
+      "options": [
+        "軽く",
+        "浅く",
+        "厚く",
+        "細く"
+      ],
+      "answer": 2,
+      "hanViet": "Thiển",
+      "explanation": "【正解】2 (浅く)\n\n• Từ vựng kiểm tra: 浅く (あさく)\n• Âm Hán Việt: Thiển\n• Chữ Hán chính xác ứng với cách đọc 「あさく」 là 「浅く」."
+    },
+    {
+      "id": "n3_k_s20_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "父は日曜日も<u>しゅっきん</u>した。",
+      "targetWord": "しゅっきん",
+      "options": [
+        "出勤",
+        "出働",
+        "出励",
+        "出動"
+      ],
+      "answer": 1,
+      "hanViet": "Xuất - Cần",
+      "explanation": "【正解】1 (出勤)\n\n• Từ vựng kiểm tra: 出勤 (しゅっきん)\n• Âm Hán Việt: Xuất - Cần\n• Chữ Hán chính xác ứng với cách đọc 「しゅっきん」 là 「出勤」."
+    },
+    {
+      "id": "n3_k_s20_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "わたしは地元の小学校で<u>きょうし</u>をしています。",
+      "targetWord": "きょうし",
+      "options": [
+        "教任",
+        "教師",
+        "教帥",
+        "教仕"
+      ],
+      "answer": 2,
+      "hanViet": "Giáo - Sư",
+      "explanation": "【正解】2 (教師)\n\n• Từ vựng kiểm tra: 教師 (きょうし)\n• Âm Hán Việt: Giáo - Sư\n• Chữ Hán chính xác ứng với cách đọc 「きょうし」 là 「教師」."
+    },
+    {
+      "id": "n3_k_s20_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "わたしはいつのまにか<u>ねむって</u>しまった。",
+      "targetWord": "ねむって",
+      "options": [
+        "宿って",
+        "眼って",
+        "眠って",
+        "寝って"
+      ],
+      "answer": 3,
+      "hanViet": "Miên",
+      "explanation": "【正解】3 (眠って)\n\n• Từ vựng kiểm tra: 眠って (ねむって)\n• Âm Hán Việt: Miên\n• Chữ Hán chính xác ứng với cách đọc 「ねむって」 là 「眠って」."
+    },
+    {
+      "id": "n3_k_s20_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "銀行にお金を<u>あずける</u>のがきらいな人もいる。",
+      "targetWord": "あずける",
+      "options": [
+        "借ける",
+        "替ける",
+        "預ける",
+        "貯ける"
+      ],
+      "answer": 3,
+      "hanViet": "Dự",
+      "explanation": "【正解】3 (預ける)\n\n• Từ vựng kiểm tra: 預ける (あずける)\n• Âm Hán Việt: Dự\n• Chữ Hán chính xác ứng với cách đọc 「あずける」 là 「預ける」."
+    },
+    {
+      "id": "n3_k_s20_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "用紙を1枚ずつ取って後ろの人へ<u>まわして</u>ください。",
+      "targetWord": "まわして",
+      "options": [
+        "回して",
+        "曲して",
+        "O押して",
+        "引して"
+      ],
+      "answer": 1,
+      "hanViet": "Hồi",
+      "explanation": "【正解】1 (回して)\n\n• Từ vựng kiểm tra: 回して (まわして)\n• Âm Hán Việt: Hồi\n• Chữ Hán chính xác ứng với cách đọc 「まわして」 là 「回して」."
+    },
+    {
+      "id": "n3_k_s20_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "ネットワーク<u>けいゆ</u>でサーバーにアクセスした。",
+      "targetWord": "けいゆ",
+      "options": [
+        "経郵",
+        "経由",
+        "係郵",
+        "係由"
+      ],
+      "answer": 2,
+      "hanViet": "Kinh - Do",
+      "explanation": "【正解】2 (経由)\n\n• Từ vựng kiểm tra: 経由 (けいゆ)\n• Âm Hán Việt: Kinh - Do\n• Chữ Hán chính xác ứng với cách đọc 「けいゆ」 là 「経由」."
+    },
+    {
+      "id": "n3_k_s20_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 20",
+      "type": "writing",
+      "question": "まちがって反対方向の電車に<u>じょうしゃ</u>した。",
+      "targetWord": "じょうしゃ",
+      "options": [
+        "下車",
+        "乗車",
+        "降車",
+        "上車"
+      ],
+      "answer": 2,
+      "hanViet": "Thừa - Xa",
+      "explanation": "【正解】2 (乗車)\n\n• Từ vựng kiểm tra: 乗車 (じょうしゃ)\n• Âm Hán Việt: Thừa - Xa\n• Chữ Hán chính xác ứng với cách đọc 「じょうしゃ」 là 「乗車」."
+    }
+  ]
+}

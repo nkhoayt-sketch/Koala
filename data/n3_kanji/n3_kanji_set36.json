@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set36",
+  "set": "Set 36",
+  "title": "Kanji N3 • Set 36 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s36_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "簡単に壊れない丈夫な<u>箱</u>をさがしています。",
+      "targetWord": "箱",
+      "options": [
+        "かん",
+        "かご",
+        "はん",
+        "はこ"
+      ],
+      "answer": 4,
+      "hanViet": "Rương",
+      "explanation": "【正解】4 (はこ)\n\n• Từ vựng kiểm tra: 箱 [はこ]\n• Âm Hán Việt: Rương\n• Cách đọc chính xác của 「箱」 trong câu là 「はこ」."
+    },
+    {
+      "id": "n3_k_s36_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "わたしたちは生きるために<u>働く</u>のであって、その逆ではない。",
+      "targetWord": "働く",
+      "options": [
+        "はたらく",
+        "かがやく",
+        "かたむく",
+        "みちびく"
+      ],
+      "answer": 1,
+      "hanViet": "Động",
+      "explanation": "【正解】1 (はたらく)\n\n• Từ vựng kiểm tra: 働く [はたらく]\n• Âm Hán Việt: Động\n• Cách đọc chính xác của 「働く」 trong câu là 「はたらく」."
+    },
+    {
+      "id": "n3_k_s36_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "きのう娘の学校の先生の<u>家庭訪問</u>がありました。",
+      "targetWord": "家庭訪問",
+      "options": [
+        "やてい",
+        "かてい",
+        "やけい",
+        "かけい"
+      ],
+      "answer": 2,
+      "hanViet": "Gia - Đình - Phỏng - Vấn",
+      "explanation": "【正解】2 (かてい)\n\n• Từ vựng kiểm tra: 家庭訪問 [かてい]\n• Âm Hán Việt: Gia - Đình - Phỏng - Vấn\n• Cách đọc chính xác của 「家庭訪問」 trong câu là 「かてい」."
+    },
+    {
+      "id": "n3_k_s36_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "計画は<u>順調</u>に進んでいる。",
+      "targetWord": "順調",
+      "options": [
+        "しゅんちょ",
+        "しゅんちょう",
+        "じゅんちょ",
+        "じゅんちょう"
+      ],
+      "answer": 4,
+      "hanViet": "Thuận - Điều",
+      "explanation": "【正解】4 (じゅんちょう)\n\n• Từ vựng kiểm tra: 順調 [じゅんちょう]\n• Âm Hán Việt: Thuận - Điều\n• Cách đọc chính xác của 「順調」 trong câu là 「じゅんちょう」."
+    },
+    {
+      "id": "n3_k_s36_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "この<u>通りをまっすぐ</u>行って2つ目の角を右に曲がってください。",
+      "targetWord": "通りをまっすぐ",
+      "options": [
+        "かく",
+        "つの",
+        "かど",
+        "すみ"
+      ],
+      "answer": 3,
+      "hanViet": "Thông",
+      "explanation": "【正解】3 (かど)\n\n• Từ vựng kiểm tra: 通りをまっすぐ [かど]\n• Âm Hán Việt: Thông\n• Cách đọc chính xác của 「通りをまっすぐ」 trong câu là 「かど」."
+    },
+    {
+      "id": "n3_k_s36_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "この番組では、社会のあらゆる<u>分野</u>の問題を取り上げるつもりです。",
+      "targetWord": "分野",
+      "options": [
+        "ふんの",
+        "ふんや",
+        "ぶんの",
+        "ぶんや"
+      ],
+      "answer": 4,
+      "hanViet": "Phân • phần • phận - Dã",
+      "explanation": "【正解】4 (ぶんや)\n\n• Từ vựng kiểm tra: 分野 [ぶんや]\n• Âm Hán Việt: Phân • phần • phận - Dã\n• Cách đọc chính xác của 「分野」 trong câu là 「ぶんや」."
+    },
+    {
+      "id": "n3_k_s36_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "ラベンダーは<u>淡い</u>紫色だ。",
+      "targetWord": "淡い",
+      "options": [
+        "こい",
+        "あわい",
+        "うすい",
+        "あさい"
+      ],
+      "answer": 2,
+      "hanViet": "Đạm",
+      "explanation": "【正解】2 (あわい)\n\n• Từ vựng kiểm tra: 淡い [あわい]\n• Âm Hán Việt: Đạm\n• Cách đọc chính xác của 「淡い」 trong câu là 「あわい」."
+    },
+    {
+      "id": "n3_k_s36_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "<u>犬が</u>散歩中に突然草を食べ始めるときがあります。",
+      "targetWord": "犬が",
+      "options": [
+        "くき",
+        "は",
+        "Oくさ",
+        "ね"
+      ],
+      "answer": 3,
+      "hanViet": "Khuyển",
+      "explanation": "【正解】3 (Oくさ)\n\n• Từ vựng kiểm tra: 犬が [Oくさ]\n• Âm Hán Việt: Khuyển\n• Cách đọc chính xác của 「犬が」 trong câu là 「Oくさ」."
+    },
+    {
+      "id": "n3_k_s36_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "地域<u>住民</u>は高層ビル建設反対の署名を集めている。",
+      "targetWord": "住民",
+      "options": [
+        "じゅうにん",
+        "じゅうみん",
+        "しゅうにん",
+        "しゅうみん"
+      ],
+      "answer": 2,
+      "hanViet": "Trú - Dân",
+      "explanation": "【正解】2 (じゅうみん)\n\n• Từ vựng kiểm tra: 住民 [じゅうみん]\n• Âm Hán Việt: Trú - Dân\n• Cách đọc chính xác của 「住民」 trong câu là 「じゅうみん」."
+    },
+    {
+      "id": "n3_k_s36_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 36",
+      "type": "reading",
+      "question": "学力テストが<u>全国</u>で実施されます。",
+      "targetWord": "全国",
+      "options": [
+        "ぜんこく",
+        "ぜんくに",
+        "せんごく",
+        "せんぐに"
+      ],
+      "answer": 1,
+      "hanViet": "Toàn - Quốc",
+      "explanation": "【正解】1 (ぜんこく)\n\n• Từ vựng kiểm tra: 全国 [ぜんこく]\n• Âm Hán Việt: Toàn - Quốc\n• Cách đọc chính xác của 「全国」 trong câu là 「ぜんこく」."
+    }
+  ]
+}

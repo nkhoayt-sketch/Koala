@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set06",
+  "set": "Set 06",
+  "title": "Kanji N3 • Set 06 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s06_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "このえんぴつで<u>線</u>をかいてください。",
+      "targetWord": "線",
+      "options": [
+        "す",
+        "せん",
+        "え",
+        "もじ"
+      ],
+      "answer": 2,
+      "hanViet": "Tuyến",
+      "explanation": "【正解】2 (せん)\n\n• Từ vựng kiểm tra: 線 [せん]\n• Âm Hán Việt: Tuyến\n• Cách đọc chính xác của 「線」 trong câu là 「せん」."
+    },
+    {
+      "id": "n3_k_s06_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "安全な場所へ<u>逃げ</u>てください。",
+      "targetWord": "逃げ",
+      "options": [
+        "にげて",
+        "こげて",
+        "なげて",
+        "あげて"
+      ],
+      "answer": 1,
+      "hanViet": "Đào",
+      "explanation": "【正解】1 (にげて)\n\n• Từ vựng kiểm tra: 逃げ [にげて]\n• Âm Hán Việt: Đào\n• Cách đọc chính xác của 「逃げ」 trong câu là 「にげて」."
+    },
+    {
+      "id": "n3_k_s06_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "娘は来年<u>卒業</u>します。",
+      "targetWord": "卒業",
+      "options": [
+        "さつきょう",
+        "さつぎょう",
+        "そうきょう",
+        "そつぎょう"
+      ],
+      "answer": 4,
+      "hanViet": "Tốt - Nghiệp",
+      "explanation": "【正解】4 (そつぎょう)\n\n• Từ vựng kiểm tra: 卒業 [そつぎょう]\n• Âm Hán Việt: Tốt - Nghiệp\n• Cách đọc chính xác của 「卒業」 trong câu là 「そつぎょう」."
+    },
+    {
+      "id": "n3_k_s06_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "こたつが<u>恋しい</u>季節になった。",
+      "targetWord": "恋しい",
+      "options": [
+        "やさしい",
+        "こいしい",
+        "したしい",
+        "なつかしい"
+      ],
+      "answer": 2,
+      "hanViet": "Luyến",
+      "explanation": "【正解】2 (こいしい)\n\n• Từ vựng kiểm tra: 恋しい [こいしい]\n• Âm Hán Việt: Luyến\n• Cách đọc chính xác của 「恋しい」 trong câu là 「こいしい」."
+    },
+    {
+      "id": "n3_k_s06_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "彼が腕をぐるぐる<u>回し</u>た。",
+      "targetWord": "回し",
+      "options": [
+        "おした",
+        "まわした",
+        "のばした",
+        "おろした"
+      ],
+      "answer": 2,
+      "hanViet": "Hồi",
+      "explanation": "【正解】2 (まわした)\n\n• Từ vựng kiểm tra: 回し [まわした]\n• Âm Hán Việt: Hồi\n• Cách đọc chính xác của 「回し」 trong câu là 「まわした」."
+    },
+    {
+      "id": "n3_k_s06_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "<u>手術</u>は成功した。",
+      "targetWord": "手術",
+      "options": [
+        "しゅしゅつ",
+        "しゅじゅつ",
+        "てしゅつ",
+        "てじゅつ"
+      ],
+      "answer": 2,
+      "hanViet": "Thủ - Thuật",
+      "explanation": "【正解】2 (しゅじゅつ)\n\n• Từ vựng kiểm tra: 手術 [しゅじゅつ]\n• Âm Hán Việt: Thủ - Thuật\n• Cách đọc chính xác của 「手術」 trong câu là 「しゅじゅつ」."
+    },
+    {
+      "id": "n3_k_s06_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "階段で<u>転ん</u>でしまった。",
+      "targetWord": "転ん",
+      "options": [
+        "はこんで",
+        "ふんで",
+        "ころんで",
+        "つつんで"
+      ],
+      "answer": 3,
+      "hanViet": "Chuyển",
+      "explanation": "【正解】3 (ころんで)\n\n• Từ vựng kiểm tra: 転ん [ころんで]\n• Âm Hán Việt: Chuyển\n• Cách đọc chính xác của 「転ん」 trong câu là 「ころんで」."
+    },
+    {
+      "id": "n3_k_s06_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "ゆでる<u>前に</u>豆を一晩水につけておいてください。",
+      "targetWord": "前に",
+      "options": [
+        "いも",
+        "こな",
+        "Oまめ",
+        "かい"
+      ],
+      "answer": 3,
+      "hanViet": "Tiền",
+      "explanation": "【正解】3 (Oまめ)\n\n• Từ vựng kiểm tra: 前に [Oまめ]\n• Âm Hán Việt: Tiền\n• Cách đọc chính xác của 「前に」 trong câu là 「Oまめ」."
+    },
+    {
+      "id": "n3_k_s06_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "彼の長年の<u>努力</u>が実った。",
+      "targetWord": "努力",
+      "options": [
+        "ぎょうりょく",
+        "きょうりょく",
+        "とりょく",
+        "どりょく"
+      ],
+      "answer": 4,
+      "hanViet": "Nỗ - Lực",
+      "explanation": "【正解】4 (どりょく)\n\n• Từ vựng kiểm tra: 努力 [どりょく]\n• Âm Hán Việt: Nỗ - Lực\n• Cách đọc chính xác của 「努力」 trong câu là 「どりょく」."
+    },
+    {
+      "id": "n3_k_s06_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 06",
+      "type": "reading",
+      "question": "病院で<u>血圧</u>を測ってもらった。",
+      "targetWord": "血圧",
+      "options": [
+        "けつえき",
+        "けつあつ",
+        "ちいき",
+        "ちあつ"
+      ],
+      "answer": 2,
+      "hanViet": "Huyết - Áp",
+      "explanation": "【正解】2 (けつあつ)\n\n• Từ vựng kiểm tra: 血圧 [けつあつ]\n• Âm Hán Việt: Huyết - Áp\n• Cách đọc chính xác của 「血圧」 trong câu là 「けつあつ」."
+    }
+  ]
+}

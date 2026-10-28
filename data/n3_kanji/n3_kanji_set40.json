@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set40",
+  "set": "Set 40",
+  "title": "Kanji N3 • Set 40 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s40_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "うちの<u>むすめ</u>ももう10歳になった。",
+      "targetWord": "むすめ",
+      "options": [
+        "嫁",
+        "嬢",
+        "婦",
+        "娘"
+      ],
+      "answer": 4,
+      "hanViet": "Nương",
+      "explanation": "【正解】4 (娘)\n\n• Từ vựng kiểm tra: 娘 (むすめ)\n• Âm Hán Việt: Nương\n• Chữ Hán chính xác ứng với cách đọc 「むすめ」 là 「娘」."
+    },
+    {
+      "id": "n3_k_s40_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "<u>お帰りのさいにはかさのお忘れのないようにご注意ください。</u>",
+      "targetWord": "きわ",
+      "options": [
+        "際",
+        "末",
+        "折",
+        "内"
+      ],
+      "answer": 1,
+      "hanViet": "Tế",
+      "explanation": "【正解】1 (際)\n\n• Từ vựng kiểm tra: 際 (きわ)\n• Âm Hán Việt: Tế\n• Chữ Hán chính xác ứng với cách đọc 「きわ」 là 「際」."
+    },
+    {
+      "id": "n3_k_s40_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "その本は<u>いっぱん</u>の読者によく読まれています。",
+      "targetWord": "いっぱん",
+      "options": [
+        "一販",
+        "一帆",
+        "一般",
+        "一版"
+      ],
+      "answer": 3,
+      "hanViet": "Nhất - Ban",
+      "explanation": "【正解】3 (一般)\n\n• Từ vựng kiểm tra: 一般 (いっぱん)\n• Âm Hán Việt: Nhất - Ban\n• Chữ Hán chính xác ứng với cách đọc 「いっぱん」 là 「一般」."
+    },
+    {
+      "id": "n3_k_s40_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "お金があっても<u>かならずしも</u>幸せとは限らないよ。",
+      "targetWord": "かならずしも",
+      "options": [
+        "心ずしも",
+        "必ずしも",
+        "委ずしも",
+        "要ずしも"
+      ],
+      "answer": 2,
+      "hanViet": "Tất",
+      "explanation": "【正解】2 (必ずしも)\n\n• Từ vựng kiểm tra: 必ずしも (かならずしも)\n• Âm Hán Việt: Tất\n• Chữ Hán chính xác ứng với cách đọc 「かならずしも」 là 「必ずしも」."
+    },
+    {
+      "id": "n3_k_s40_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "本当の芸術的<u>さいのう</u>がある学生は少ないです。",
+      "targetWord": "さいのう",
+      "options": [
+        "才能",
+        "才脳",
+        "歳能",
+        "歳脳"
+      ],
+      "answer": 1,
+      "hanViet": "Tài - Năng",
+      "explanation": "【正解】1 (才能)\n\n• Từ vựng kiểm tra: 才能 (さいのう)\n• Âm Hán Việt: Tài - Năng\n• Chữ Hán chính xác ứng với cách đọc 「さいのう」 là 「才能」."
+    },
+    {
+      "id": "n3_k_s40_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "庭に白い花が<u>さいて</u>います。",
+      "targetWord": "さいて",
+      "options": [
+        "吹いて",
+        "咲いて",
+        "吹いて",
+        "咲いて"
+      ],
+      "answer": 2,
+      "hanViet": "Tiếu",
+      "explanation": "【正解】2 (咲いて)\n\n• Từ vựng kiểm tra: 咲いて (さいて)\n• Âm Hán Việt: Tiếu\n• Chữ Hán chính xác ứng với cách đọc 「さいて」 là 「咲いて」."
+    },
+    {
+      "id": "n3_k_s40_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "展望台から<u>しゅうい</u>の山々が見渡せました。",
+      "targetWord": "しゅうい",
+      "options": [
+        "周囲",
+        "集居",
+        "周居",
+        "集囲"
+      ],
+      "answer": 1,
+      "hanViet": "Chu - Vi",
+      "explanation": "【正解】1 (周囲)\n\n• Từ vựng kiểm tra: 周囲 (しゅうい)\n• Âm Hán Việt: Chu - Vi\n• Chữ Hán chính xác ứng với cách đọc 「しゅうい」 là 「周囲」."
+    },
+    {
+      "id": "n3_k_s40_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "お<u>さけ</u>に弱い人が多量に飲むのはとても危険です。",
+      "targetWord": "さけ",
+      "options": [
+        "酪",
+        "酔",
+        "O酊",
+        "酒"
+      ],
+      "answer": 4,
+      "hanViet": "Tửu",
+      "explanation": "【正解】4 (酒)\n\n• Từ vựng kiểm tra: 酒 (さけ)\n• Âm Hán Việt: Tửu\n• Chữ Hán chính xác ứng với cách đọc 「さけ」 là 「酒」."
+    },
+    {
+      "id": "n3_k_s40_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "研究はいよいよ問題の核心に<u>たっした</u>。",
+      "targetWord": "たっした",
+      "options": [
+        "達した",
+        "到した",
+        "徹した",
+        "接した"
+      ],
+      "answer": 1,
+      "hanViet": "Đạt",
+      "explanation": "【正解】1 (達した)\n\n• Từ vựng kiểm tra: 達した (たっした)\n• Âm Hán Việt: Đạt\n• Chữ Hán chính xác ứng với cách đọc 「たっした」 là 「達した」."
+    },
+    {
+      "id": "n3_k_s40_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 40",
+      "type": "writing",
+      "question": "きのう金魚を2<u>ひき</u>買った。",
+      "targetWord": "ひき",
+      "options": [
+        "匹",
+        "皿",
+        "羽",
+        "尾"
+      ],
+      "answer": 1,
+      "hanViet": "Thất",
+      "explanation": "【正解】1 (匹)\n\n• Từ vựng kiểm tra: 匹 (ひき)\n• Âm Hán Việt: Thất\n• Chữ Hán chính xác ứng với cách đọc 「ひき」 là 「匹」."
+    }
+  ]
+}

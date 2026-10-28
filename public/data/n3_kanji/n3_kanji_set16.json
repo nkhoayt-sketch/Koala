@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set16",
+  "set": "Set 16",
+  "title": "Kanji N3 • Set 16 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s16_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "今日は気温が<u>ひくい</u>。",
+      "targetWord": "ひくい",
+      "options": [
+        "冷い",
+        "低い",
+        "底い",
+        "令い"
+      ],
+      "answer": 2,
+      "hanViet": "Đê",
+      "explanation": "【正解】2 (低い)\n\n• Từ vựng kiểm tra: 低い (ひくい)\n• Âm Hán Việt: Đê\n• Chữ Hán chính xác ứng với cách đọc 「ひくい」 là 「低い」."
+    },
+    {
+      "id": "n3_k_s16_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "3時<u>いこう</u>なら空いています。",
+      "targetWord": "いこう",
+      "options": [
+        "以降",
+        "以向",
+        "移降",
+        "移向"
+      ],
+      "answer": 1,
+      "hanViet": "Dĩ - Giáng",
+      "explanation": "【正解】1 (以降)\n\n• Từ vựng kiểm tra: 以降 (いこう)\n• Âm Hán Việt: Dĩ - Giáng\n• Chữ Hán chính xác ứng với cách đọc 「いこう」 là 「以降」."
+    },
+    {
+      "id": "n3_k_s16_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "もう終電には間に合わないよ。今夜はうちに<u>とまって</u>いけば？",
+      "targetWord": "とまって",
+      "options": [
+        "止まって",
+        "留まって",
+        "停まって",
+        "泊まって"
+      ],
+      "answer": 4,
+      "hanViet": "Bạc",
+      "explanation": "【正解】4 (泊まって)\n\n• Từ vựng kiểm tra: 泊まって (とまって)\n• Âm Hán Việt: Bạc\n• Chữ Hán chính xác ứng với cách đọc 「とまって」 là 「泊まって」."
+    },
+    {
+      "id": "n3_k_s16_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "その<u>しま</u>にはだれも住んでいません。",
+      "targetWord": "しま",
+      "options": [
+        "寺",
+        "島",
+        "庭",
+        "村"
+      ],
+      "answer": 2,
+      "hanViet": "Đảo",
+      "explanation": "【正解】2 (島)\n\n• Từ vựng kiểm tra: 島 (しま)\n• Âm Hán Việt: Đảo\n• Chữ Hán chính xác ứng với cách đọc 「しま」 là 「島」."
+    },
+    {
+      "id": "n3_k_s16_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "彼は<u>ねっしん</u>に勉強しています。",
+      "targetWord": "ねっしん",
+      "options": [
+        "熱心",
+        "燃心",
+        "熱身",
+        "燃身"
+      ],
+      "answer": 1,
+      "hanViet": "Nhiệt - Tâm",
+      "explanation": "【正解】1 (熱心)\n\n• Từ vựng kiểm tra: 熱心 (ねっしん)\n• Âm Hán Việt: Nhiệt - Tâm\n• Chữ Hán chính xác ứng với cách đọc 「ねっしん」 là 「熱心」."
+    },
+    {
+      "id": "n3_k_s16_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "ボールが頭に<u>あたった</u>。",
+      "targetWord": "あたった",
+      "options": [
+        "過たった",
+        "打たった",
+        "当たった",
+        "何たった"
+      ],
+      "answer": 3,
+      "hanViet": "Đương",
+      "explanation": "【正解】3 (当たった)\n\n• Từ vựng kiểm tra: 当たった (あたった)\n• Âm Hán Việt: Đương\n• Chữ Hán chính xác ứng với cách đọc 「あたった」 là 「当たった」."
+    },
+    {
+      "id": "n3_k_s16_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "カーブの多い<u>さかみち</u>です。",
+      "targetWord": "さかみち",
+      "options": [
+        "岩道",
+        "板道",
+        "石道",
+        "坂道"
+      ],
+      "answer": 4,
+      "hanViet": "Phản - Đạo",
+      "explanation": "【正解】4 (坂道)\n\n• Từ vựng kiểm tra: 坂道 (さかみち)\n• Âm Hán Việt: Phản - Đạo\n• Chữ Hán chính xác ứng với cách đọc 「さかみち」 là 「坂道」."
+    },
+    {
+      "id": "n3_k_s16_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "今朝は<u>ずつう</u>がしました。",
+      "targetWord": "ずつう",
+      "options": [
+        "腹病",
+        "頭病",
+        "O腹痛",
+        "頭痛"
+      ],
+      "answer": 4,
+      "hanViet": "Đầu - Thống",
+      "explanation": "【正解】4 (頭痛)\n\n• Từ vựng kiểm tra: 頭痛 (ずつう)\n• Âm Hán Việt: Đầu - Thống\n• Chữ Hán chính xác ứng với cách đọc 「ずつう」 là 「頭痛」."
+    },
+    {
+      "id": "n3_k_s16_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "わたしは今の仕事に一応<u>まんぞく</u>しています。",
+      "targetWord": "まんぞく",
+      "options": [
+        "満続",
+        "万続",
+        "満足",
+        "万足"
+      ],
+      "answer": 3,
+      "hanViet": "Mãn - Túc",
+      "explanation": "【正解】3 (満足)\n\n• Từ vựng kiểm tra: 満足 (まんぞく)\n• Âm Hán Việt: Mãn - Túc\n• Chữ Hán chính xác ứng với cách đọc 「まんぞく」 là 「満足」."
+    },
+    {
+      "id": "n3_k_s16_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 16",
+      "type": "writing",
+      "question": "パンをオーブンで<u>やいて</u>食べた。",
+      "targetWord": "やいて",
+      "options": [
+        "爆いて",
+        "燃いて",
+        "煙いて",
+        "焼いて"
+      ],
+      "answer": 4,
+      "hanViet": "Thiêu",
+      "explanation": "【正解】4 (焼いて)\n\n• Từ vựng kiểm tra: 焼いて (やいて)\n• Âm Hán Việt: Thiêu\n• Chữ Hán chính xác ứng với cách đọc 「やいて」 là 「焼いて」."
+    }
+  ]
+}

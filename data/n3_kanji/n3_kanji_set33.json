@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set33",
+  "set": "Set 33",
+  "title": "Kanji N3 • Set 33 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s33_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "交差点でトラック同士が<u>正面衝突</u>した。",
+      "targetWord": "正面衝突",
+      "options": [
+        "せいもん",
+        "しょうもん",
+        "せいめん",
+        "しょうめん"
+      ],
+      "answer": 4,
+      "hanViet": "Chính - Diện - Xung - Đột",
+      "explanation": "【正解】4 (しょうめん)\n\n• Từ vựng kiểm tra: 正面衝突 [しょうめん]\n• Âm Hán Việt: Chính - Diện - Xung - Đột\n• Cách đọc chính xác của 「正面衝突」 trong câu là 「しょうめん」."
+    },
+    {
+      "id": "n3_k_s33_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "学校をやめたのはわたしにとって人生<u>最大</u>の誤りだった。",
+      "targetWord": "最大",
+      "options": [
+        "せいたい",
+        "せいだい",
+        "さいたい",
+        "さいだい"
+      ],
+      "answer": 4,
+      "hanViet": "Tối - Đại",
+      "explanation": "【正解】4 (さいだい)\n\n• Từ vựng kiểm tra: 最大 [さいだい]\n• Âm Hán Việt: Tối - Đại\n• Cách đọc chính xác của 「最大」 trong câu là 「さいだい」."
+    },
+    {
+      "id": "n3_k_s33_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "ベランダに出しておいたバラに<u>虫</u>がついてしまった。",
+      "targetWord": "虫",
+      "options": [
+        "とり",
+        "しも",
+        "むし",
+        "かぜ"
+      ],
+      "answer": 3,
+      "hanViet": "Trùng",
+      "explanation": "【正解】3 (むし)\n\n• Từ vựng kiểm tra: 虫 [むし]\n• Âm Hán Việt: Trùng\n• Cách đọc chính xác của 「虫」 trong câu là 「むし」."
+    },
+    {
+      "id": "n3_k_s33_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "幼いころは読書に<u>夢中</u>になっていました。",
+      "targetWord": "夢中",
+      "options": [
+        "むちゅう",
+        "むうちゅう",
+        "むっちゅう",
+        "うちゅう"
+      ],
+      "answer": 1,
+      "hanViet": "Mộng - Trung",
+      "explanation": "【正解】1 (むちゅう)\n\n• Từ vựng kiểm tra: 夢中 [むちゅう]\n• Âm Hán Việt: Mộng - Trung\n• Cách đọc chính xác của 「夢中」 trong câu là 「むちゅう」."
+    },
+    {
+      "id": "n3_k_s33_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "結果よりも<u>行動</u>することに意味がある。",
+      "targetWord": "行動",
+      "options": [
+        "ぎょうどう",
+        "ぎょうとう",
+        "こうどう",
+        "こうとう"
+      ],
+      "answer": 3,
+      "hanViet": "Hàng - Động",
+      "explanation": "【正解】3 (こうどう)\n\n• Từ vựng kiểm tra: 行動 [こうどう]\n• Âm Hán Việt: Hàng - Động\n• Cách đọc chính xác của 「行動」 trong câu là 「こうどう」."
+    },
+    {
+      "id": "n3_k_s33_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "いろいろな野菜を<u>細かく</u>刻んで入れるといい。",
+      "targetWord": "細かく",
+      "options": [
+        "みじかく",
+        "ちかく",
+        "こまかく",
+        "ふかく"
+      ],
+      "answer": 3,
+      "hanViet": "Tế",
+      "explanation": "【正解】3 (こまかく)\n\n• Từ vựng kiểm tra: 細かく [こまかく]\n• Âm Hán Việt: Tế\n• Cách đọc chính xác của 「細かく」 trong câu là 「こまかく」."
+    },
+    {
+      "id": "n3_k_s33_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "この夏、<u>限定</u>で最大7,000円相当がもらえます。",
+      "targetWord": "限定",
+      "options": [
+        "けってい",
+        "げってい",
+        "けんてい",
+        "げんてい"
+      ],
+      "answer": 4,
+      "hanViet": "Hạn - Định",
+      "explanation": "【正解】4 (げんてい)\n\n• Từ vựng kiểm tra: 限定 [げんてい]\n• Âm Hán Việt: Hạn - Định\n• Cách đọc chính xác của 「限定」 trong câu là 「げんてい」."
+    },
+    {
+      "id": "n3_k_s33_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "<u>隣の</u>店で夜中まで大きな声で歌っています。",
+      "targetWord": "隣の",
+      "options": [
+        "よじゅう",
+        "やじゅう",
+        "Oよなか",
+        "やなか"
+      ],
+      "answer": 3,
+      "hanViet": "Lân",
+      "explanation": "【正解】3 (Oよなか)\n\n• Từ vựng kiểm tra: 隣の [Oよなか]\n• Âm Hán Việt: Lân\n• Cách đọc chính xác của 「隣の」 trong câu là 「Oよなか」."
+    },
+    {
+      "id": "n3_k_s33_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "野菜の生育は天候に<u>左右</u>されやすいです。",
+      "targetWord": "左右",
+      "options": [
+        "さゆ",
+        "さゆう",
+        "さう",
+        "さよう"
+      ],
+      "answer": 2,
+      "hanViet": "Tả - Hữu",
+      "explanation": "【正解】2 (さゆう)\n\n• Từ vựng kiểm tra: 左右 [さゆう]\n• Âm Hán Việt: Tả - Hữu\n• Cách đọc chính xác của 「左右」 trong câu là 「さゆう」."
+    },
+    {
+      "id": "n3_k_s33_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 33",
+      "type": "reading",
+      "question": "息子はその日、学校で習ったことをさっそく<u>実験</u>してみたがった。",
+      "targetWord": "実験",
+      "options": [
+        "じつげん",
+        "じげん",
+        "じっけん",
+        "じけん"
+      ],
+      "answer": 3,
+      "hanViet": "Khách - Nghiệm",
+      "explanation": "【正解】3 (じっけん)\n\n• Từ vựng kiểm tra: 実験 [じっけん]\n• Âm Hán Việt: Khách - Nghiệm\n• Cách đọc chính xác của 「実験」 trong câu là 「じっけん」."
+    }
+  ]
+}

@@ -5,12 +5,18 @@ import { storage } from './storage.js';
 class App {
   constructor() {
     this.currentView = 'HOME'; // 'HOME' | 'TEST'
-    this.currentCourse = 'n1'; // 'n1' | 'n2' | 'n1_dokkai'
+    this.currentCourse = 'n1'; // 'n1' | 'n2' | 'n1_dokkai' | 'n1_kanji' | 'n3_kanji'
     this.daysIndex = [];
     this.n2Exams = [];
+    this.n3KanjiIndex = [];
+    this.n1KanjiIndex = [];
     this.currentDay = 1;
     this.currentN2Exam = null;
     this.currentDokkaiChapter = null;
+    this.currentN3Set = null;
+    this.currentN1KanjiChapter = null;
+    this.activeN3Filter = 'all';
+    this.activeN1KanjiFilter = 'all';
     this.activeN2Scope = 'vocab_grammar'; // 'vocab_grammar' | 'full'
     this.pendingN2ExamMeta = null;
 
@@ -142,10 +148,12 @@ class App {
     this.initSearch();
 
     try {
-      // Load both N1 and N2 indices in parallel (independent error handling)
-      const [n1Res, n2Res] = await Promise.allSettled([
+      // Load N1, N2, N3 Kanji, and N1 Kanji indices in parallel (independent error handling)
+      const [n1Res, n2Res, n3KanjiRes, n1KanjiRes] = await Promise.allSettled([
         fetch('data/days-index.json'),
-        fetch('data/n2-index.json')
+        fetch('data/n2-index.json'),
+        fetch('data/n3_kanji/n3_kanji_index.json'),
+        fetch('data/n1_kanji/n1_kanji_index.json')
       ]);
 
       // N1 data
@@ -169,9 +177,33 @@ class App {
         this.n2Exams = [];
       }
 
+      // N3 Kanji data
+      try {
+        if (n3KanjiRes.status === 'fulfilled' && n3KanjiRes.value.ok) {
+          const parsed = await n3KanjiRes.value.json();
+          this.n3KanjiIndex = Array.isArray(parsed) ? parsed : [];
+        }
+      } catch (e) {
+        console.warn('Không thể nạp dữ liệu N3 Kanji:', e);
+        this.n3KanjiIndex = [];
+      }
+
+      // N1 Kanji data
+      try {
+        if (n1KanjiRes.status === 'fulfilled' && n1KanjiRes.value.ok) {
+          const parsed = await n1KanjiRes.value.json();
+          this.n1KanjiIndex = Array.isArray(parsed) ? parsed : [];
+        }
+      } catch (e) {
+        console.warn('Không thể nạp dữ liệu N1 Kanji:', e);
+        this.n1KanjiIndex = [];
+      }
+
       // Ensure safe defaults
       if (!Array.isArray(this.daysIndex)) this.daysIndex = [];
       if (!Array.isArray(this.n2Exams)) this.n2Exams = [];
+      if (!Array.isArray(this.n3KanjiIndex)) this.n3KanjiIndex = [];
+      if (!Array.isArray(this.n1KanjiIndex)) this.n1KanjiIndex = [];
 
       this.renderN1List();
       this.renderN2List();
@@ -224,6 +256,10 @@ class App {
         }
       }
       this.openDokkaiHub(chapterId);
+    } else if (path.includes('/n1-kanji') || path.includes('/n1/kanji') || hash.includes('n1-kanji') || hash.includes('n1_kanji')) {
+      this.openN1KanjiHub();
+    } else if (path.includes('/n3-kanji') || path.includes('/n3/kanji') || hash.includes('n3-kanji') || hash.includes('n3_kanji') || hash.includes('n3-hub')) {
+      this.openN3KanjiHub();
     } else if (path.includes('/n1/20days') || path.includes('/n1-20days') || hash.includes('n1/20days') || hash.includes('n1-20days') || hash.includes('n1-hub')) {
       this.openN1Hub();
     } else if (path.includes('/n2/exams') || hash.includes('n2/exams') || hash.includes('n2-hub')) {
@@ -638,9 +674,9 @@ class App {
         this.dokkaiEngine.stopTimer();
       }
 
-      // Reset URL route back to root if coming from Dokkai
+      // Reset URL route back to root if coming from Dokkai, Kanji, or N1/N2 hubs
       const currentPath = (window.location.pathname || '').toLowerCase();
-      if (currentPath.includes('/dokkai') || (window.location.hash || '').includes('dokkai')) {
+      if (currentPath.includes('/dokkai') || currentPath.includes('/n1') || currentPath.includes('/n2') || currentPath.includes('/n3') || (window.location.hash || '').includes('dokkai') || (window.location.hash || '').includes('n1') || (window.location.hash || '').includes('n2') || (window.location.hash || '').includes('n3')) {
         try {
           history.pushState({ view: 'home' }, '', '/');
         } catch (e) {
@@ -746,6 +782,34 @@ class App {
     const dokkaiSidebarBadge = document.getElementById('n1-dokkai-sidebar-badge');
     if (dokkaiSidebarBadge) {
       dokkaiSidebarBadge.textContent = `${dokkaiTotal} bài`;
+    }
+
+    // Dynamic Kanji N1 Badge
+    const n1KanjiBadge = document.getElementById('home-n1-kanji-badge');
+    if (n1KanjiBadge && this.n1KanjiIndex.length > 0) {
+      let n1Done = 0;
+      this.n1KanjiIndex.forEach(item => {
+        const h = storage.getExamHistoryRecord(item.id);
+        if (h && (h.lastScore !== undefined || (h.overall && h.overall.totalQuestions > 0))) n1Done++;
+      });
+      if (n1Done > 0) {
+        n1KanjiBadge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1';
+        n1KanjiBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>Đã làm ${n1Done}/${this.n1KanjiIndex.length} Chapter</span>`;
+      }
+    }
+
+    // Dynamic Kanji N3 Badge
+    const n3KanjiBadge = document.getElementById('home-n3-kanji-badge');
+    if (n3KanjiBadge && this.n3KanjiIndex.length > 0) {
+      let n3Done = 0;
+      this.n3KanjiIndex.forEach(item => {
+        const h = storage.getExamHistoryRecord(item.id);
+        if (h && (h.lastScore !== undefined || (h.overall && h.overall.totalQuestions > 0))) n3Done++;
+      });
+      if (n3Done > 0) {
+        n3KanjiBadge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1';
+        n3KanjiBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>Đã làm ${n3Done}/${this.n3KanjiIndex.length} Set</span>`;
+      }
     }
 
     // 1. Render N1 Days Quicklist on Card 1
@@ -2064,6 +2128,666 @@ class App {
     }
   }
 
+  // ==========================================
+  // KANJI N3 DRILL (450 Câu / 45 Set)
+  // ==========================================
+
+  async openN3KanjiHub() {
+    this.currentCourse = 'n3_kanji';
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
+    this.currentN3Set = null;
+    this.currentN1KanjiChapter = null;
+
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (!currentPath.includes('/n3-kanji')) {
+      try {
+        history.pushState({ view: 'n3_kanji_hub' }, '', '/n3-kanji');
+      } catch (e) {
+        window.location.hash = 'n3-kanji';
+      }
+    }
+
+    if (this.quizEngine) {
+      this.quizEngine.pauseTimer();
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+
+    this.switchView('TEST', false);
+    this.hideSidebar();
+
+    // Update Header Info
+    if (this.headerLevelBadge) {
+      this.headerLevelBadge.textContent = 'JLPT N3';
+      this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200';
+    }
+    if (this.dayTitleEl) {
+      this.dayTitleEl.textContent = 'Kanji N3 Drill • 450 Câu Hán Tự';
+    }
+    if (this.dayDescEl) {
+      this.dayDescEl.textContent = '45 Set luyện tập thực chiến: 問題1 (Cách đọc Hán tự) & 問題2 (Chọn chữ Hán tương ứng)';
+    }
+    if (this.headerScopeBtn) {
+      this.headerScopeBtn.classList.add('hidden');
+    }
+    if (this.paletteActiveTitle) {
+      this.paletteActiveTitle.textContent = 'Kanji N3 Drill';
+    }
+    if (this.paletteActiveCount) {
+      this.paletteActiveCount.textContent = '45 Set';
+    }
+
+    if (this.testHeaderControls) {
+      this.testHeaderControls.classList.add('hidden');
+    }
+
+    this.renderN3KanjiHubView();
+    this.toggleMobileSidebar(false);
+  }
+
+  renderN3KanjiHubView() {
+    const totalSets = this.n3KanjiIndex.length || 45;
+    let completedCount = 0;
+    let totalScore = 0;
+    let totalQuestions = 0;
+
+    const setsData = this.n3KanjiIndex.length > 0 ? this.n3KanjiIndex : Array.from({ length: 45 }, (_, i) => ({
+      id: `n3_k_set${String(i + 1).padStart(2, '0')}`,
+      set: `Set ${String(i + 1).padStart(2, '0')}`,
+      setNumber: i + 1,
+      title: `Set ${String(i + 1).padStart(2, '0')} • ${i + 1 <= 30 ? '問題1　読み方クイズ' : '問題2　漢字クイズ'}`,
+      type: i + 1 <= 30 ? 'reading' : 'writing',
+      totalQuestions: 10
+    }));
+
+    setsData.forEach(item => {
+      const history = storage.getExamHistoryRecord(item.id);
+      if (history && (history.lastScore !== undefined || (history.overall && history.overall.totalQuestions > 0))) {
+        completedCount++;
+        totalScore += (history.lastScore || history.overall?.totalScore || 0);
+        totalQuestions += (history.totalQuestions || history.overall?.totalQuestions || 10);
+      }
+    });
+
+    const progressPct = totalSets > 0 ? Math.round((completedCount / totalSets) * 100) : 0;
+
+    this.quizContainerEl.innerHTML = `
+      <div class="n3-hub-view max-w-7xl mx-auto px-3 sm:px-6 py-6 space-y-6 animate-fade-in font-sans">
+        
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-br from-white via-emerald-50/40 to-slate-50 rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" id="btn-n3-hub-back-home" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200/90 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                  <span>Trang Chủ</span>
+                </button>
+                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                  🌱 JLPT N3 • Kanji Drill
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-teal-100 text-teal-800 border border-teal-200 flex items-center gap-1">
+                  <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+                  🟢 Trọn bộ 45 Set (450 Câu)
+                </span>
+              </div>
+
+              <div>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
+                  Kanji N3 Drill • Luyện 450 Câu Hán Tự Thực Chiến
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+                  Phân chia rõ ràng: <strong>Set 01 - 30</strong> (問題1: Chọn cách đọc 読み方) & <strong>Set 31 - 45</strong> (問題2: Chọn chữ Hán 正しい漢字). Tích hợp tra âm Hán Việt và xuất Anki.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Card -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 p-4 sm:p-5 shrink-0 shadow-xs space-y-3 min-w-[260px]">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-700 pb-2 border-b border-slate-100">
+                <span>Tiến độ hoàn thành</span>
+                <span class="font-mono text-emerald-700 font-extrabold">${completedCount}/${totalSets} set (${progressPct}%)</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden border border-slate-200/60">
+                <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full transition-all duration-500" style="width: ${progressPct}%"></div>
+              </div>
+              <div class="text-[11px] text-slate-500 font-medium">
+                ${totalQuestions > 0 ? `Tổng điểm tích lũy: <strong class="text-emerald-700">${totalScore}/${totalQuestions} câu</strong>` : 'Chưa có bài làm nào'}
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap items-center gap-2 mt-6 pt-5 border-t border-slate-200/60">
+            <span class="text-xs font-bold text-slate-500 mr-1">Bộ lọc:</span>
+            <button type="button" data-n3-filter="all" class="n3-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-2xs transition cursor-pointer">
+              Tất cả (${totalSets})
+            </button>
+            <button type="button" data-n3-filter="reading" class="n3-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer">
+              問題1: Cách đọc (30 Set)
+            </button>
+            <button type="button" data-n3-filter="writing" class="n3-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer">
+              問題2: Viết Hán tự (15 Set)
+            </button>
+            <button type="button" data-n3-filter="done" class="n3-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer">
+              Đã làm (${completedCount})
+            </button>
+            <button type="button" data-n3-filter="undone" class="n3-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer">
+              Chưa làm (${totalSets - completedCount})
+            </button>
+          </div>
+        </div>
+
+        <!-- 45 Sets Minimalist Compact Grid -->
+        <div id="n3-sets-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+          ${setsData.map(item => {
+            const history = storage.getExamHistoryRecord(item.id);
+            const isDone = !!history && (history.lastScore !== undefined || (history.overall && history.overall.totalQuestions > 0));
+            const score = history ? (history.lastScore ?? history.overall?.totalScore ?? 0) : 0;
+            const total = history ? (history.totalQuestions ?? history.overall?.totalQuestions ?? 10) : 10;
+            const isReading = item.type === 'reading' || item.setNumber <= 30;
+
+            return `
+              <div class="n3-set-card group ${
+                isDone 
+                  ? 'bg-emerald-50/40 border-emerald-300 hover:border-emerald-500' 
+                  : 'bg-white border-slate-200/90 hover:border-emerald-500'
+              } border rounded-2xl p-3 sm:p-3.5 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between cursor-pointer min-h-[110px] sm:min-h-[120px] select-none" 
+              data-set-id="${item.id}"
+              data-set-number="${item.setNumber}"
+              data-type="${isReading ? 'reading' : 'writing'}"
+              data-done="${isDone ? 'done' : 'undone'}">
+                
+                <div class="flex items-center justify-between">
+                  <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-full font-black text-xs sm:text-sm flex items-center justify-center ${
+                    isDone 
+                      ? 'bg-emerald-600 text-white shadow-2xs' 
+                      : 'bg-slate-100 text-slate-700 border border-slate-200/80 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 transition-colors'
+                  }">
+                    ${item.setNumber}
+                  </span>
+                  ${isDone ? `
+                    <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200/80">
+                      ✓ ${score}/${total}
+                    </span>
+                  ` : `
+                    <span class="px-2 py-0.5 rounded-md text-[10px] font-medium bg-slate-100 text-slate-500 border border-slate-200/70">
+                      Chưa làm
+                    </span>
+                  `}
+                </div>
+
+                <div class="pt-2">
+                  <div class="flex items-center gap-1.5 mb-1">
+                    <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase ${
+                      isReading 
+                        ? 'bg-blue-50 text-blue-700 border border-blue-200' 
+                        : 'bg-purple-50 text-purple-700 border border-purple-200'
+                    }">
+                      ${isReading ? '問題1: Đọc' : '問題2: Viết'}
+                    </span>
+                  </div>
+                  <h3 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-emerald-700 transition truncate leading-snug">
+                    Set ${String(item.setNumber).padStart(2, '0')} (10 câu)
+                  </h3>
+                </div>
+
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+      </div>
+    `;
+
+    // Bind back button
+    document.getElementById('btn-n3-hub-back-home')?.addEventListener('click', () => {
+      this.switchView('HOME');
+    });
+
+    // Bind filter buttons
+    const filterBtns = this.quizContainerEl.querySelectorAll('.n3-filter-btn');
+    const cards = this.quizContainerEl.querySelectorAll('.n3-set-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-n3-filter');
+        filterBtns.forEach(b => {
+          b.className = 'n3-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer';
+        });
+        btn.className = 'n3-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-2xs transition cursor-pointer';
+
+        cards.forEach(card => {
+          const cType = card.getAttribute('data-type');
+          const cDone = card.getAttribute('data-done');
+          let show = false;
+          if (filter === 'all') show = true;
+          else if (filter === 'reading' && cType === 'reading') show = true;
+          else if (filter === 'writing' && cType === 'writing') show = true;
+          else if (filter === 'done' && cDone === 'done') show = true;
+          else if (filter === 'undone' && cDone === 'undone') show = true;
+
+          card.classList.toggle('hidden', !show);
+        });
+      });
+    });
+
+    // Bind set card clicks
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const setNumber = parseInt(card.getAttribute('data-set-number'), 10);
+        this.loadN3KanjiSet(setNumber);
+      });
+    });
+  }
+
+  async loadN3KanjiSet(setNumber) {
+    this.currentCourse = 'n3_kanji';
+    this.currentN3Set = setNumber;
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
+    this.currentQuestionIndex = 0;
+    if (this.quizEngine) {
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    this.switchView('TEST', true);
+    this.showSidebar();
+
+    // Loading indicator
+    this.quizContainerEl.innerHTML = `
+      <div class="flex flex-col items-center justify-center py-20">
+        <div class="w-10 h-10 border-4 border-emerald-200 border-t-emerald-600 rounded-full animate-spin"></div>
+        <p class="mt-4 text-sm font-medium text-slate-600">Đang tải Kanji N3 Drill - Set ${setNumber}...</p>
+      </div>
+    `;
+
+    try {
+      const setPad = String(setNumber).padStart(2, '0');
+      let res = await fetch(`data/n3_kanji/n3_kanji_set${setPad}.json`);
+      if (!res.ok) {
+        res = await fetch(`/data/n3_kanji/n3_kanji_set${setPad}.json`);
+      }
+      if (!res.ok) {
+        res = await fetch(`public/data/n3_kanji/n3_kanji_set${setPad}.json`);
+      }
+      if (!res.ok) throw new Error(`Không thể tìm thấy dữ liệu Set ${setPad}`);
+      const setData = await res.json();
+
+      const isReading = setData.type === 'reading' || setNumber <= 30;
+
+      // Update Header Info
+      if (this.headerLevelBadge) {
+        this.headerLevelBadge.textContent = 'JLPT N3';
+        this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200';
+      }
+      if (this.dayTitleEl) {
+        this.dayTitleEl.textContent = `Kanji N3 • Set ${setPad} (${isReading ? '問題1: Cách đọc' : '問題2: Chọn chữ Hán'})`;
+      }
+      if (this.dayDescEl) {
+        this.dayDescEl.textContent = `Luyện tập 10 câu trắc nghiệm Hán tự • Phím tắt [1..4] • Xuất Anki 1-click`;
+      }
+      if (this.headerScopeBtn) {
+        this.headerScopeBtn.classList.add('hidden');
+      }
+      if (this.paletteActiveTitle) {
+        this.paletteActiveTitle.textContent = `Set ${setPad}`;
+      }
+      if (this.paletteActiveCount) {
+        this.paletteActiveCount.textContent = `10 câu`;
+      }
+
+      this.quizEngine.loadDay(setData, { mode: 'practice' });
+    } catch (err) {
+      console.error(`Lỗi tải Set ${setNumber}:`, err);
+      this.quizContainerEl.innerHTML = `
+        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200 max-w-lg mx-auto">
+          <p class="font-bold">Chưa thể tải dữ liệu cho Set này</p>
+          <p class="text-sm text-slate-600 mt-2">${err.message}</p>
+          <button type="button" class="mt-4 px-4 py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold cursor-pointer" onclick="window.app?.openN3KanjiHub()">Quay lại Sảnh Drill N3</button>
+        </div>
+      `;
+    }
+  }
+
+  // ==========================================
+  // KANJI N1 SHIN KANZEN DRILL (400 Câu / 10 Chapter)
+  // ==========================================
+
+  async openN1KanjiHub() {
+    this.currentCourse = 'n1_kanji';
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
+    this.currentN3Set = null;
+    this.currentN1KanjiChapter = null;
+
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (!currentPath.includes('/n1-kanji')) {
+      try {
+        history.pushState({ view: 'n1_kanji_hub' }, '', '/n1-kanji');
+      } catch (e) {
+        window.location.hash = 'n1-kanji';
+      }
+    }
+
+    if (this.quizEngine) {
+      this.quizEngine.pauseTimer();
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+
+    this.switchView('TEST', false);
+    this.hideSidebar();
+
+    // Update Header Info
+    if (this.headerLevelBadge) {
+      this.headerLevelBadge.textContent = 'JLPT N1';
+      this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-purple-100 text-purple-800 border border-purple-200';
+    }
+    if (this.dayTitleEl) {
+      this.dayTitleEl.textContent = 'Shin Kanzen Master Kanji N1 Drill';
+    }
+    if (this.dayDescEl) {
+      this.dayDescEl.textContent = '10 Chapter Drill bao quát 800 Hán tự N1 • Phân bổ 4 dạng bài chuẩn cấu trúc JLPT';
+    }
+    if (this.headerScopeBtn) {
+      this.headerScopeBtn.classList.add('hidden');
+    }
+    if (this.paletteActiveTitle) {
+      this.paletteActiveTitle.textContent = 'Kanji N1 Drill';
+    }
+    if (this.paletteActiveCount) {
+      this.paletteActiveCount.textContent = '10 Chapter';
+    }
+
+    if (this.testHeaderControls) {
+      this.testHeaderControls.classList.add('hidden');
+    }
+
+    this.renderN1KanjiHubView();
+    this.toggleMobileSidebar(false);
+  }
+
+  renderN1KanjiHubView() {
+    const totalChapters = this.n1KanjiIndex.length || 10;
+    let completedCount = 0;
+    let totalScore = 0;
+    let totalQuestions = 0;
+
+    const chaptersData = this.n1KanjiIndex.length > 0 ? this.n1KanjiIndex : Array.from({ length: 10 }, (_, i) => ({
+      id: `n1_skz_k_ch${String(i + 1).padStart(2, '0')}`,
+      chapter: `Chapter ${i + 1} ドリル`,
+      chapterNumber: i + 1,
+      title: `Chapter ${i + 1} • 漢字 ドリル`,
+      range: `漢字 ${(i * 80) + 1}～${(i + 1) * 80}`,
+      totalQuestions: 40
+    }));
+
+    chaptersData.forEach(item => {
+      const history = storage.getExamHistoryRecord(item.id);
+      if (history && (history.lastScore !== undefined || (history.overall && history.overall.totalQuestions > 0))) {
+        completedCount++;
+        totalScore += (history.lastScore || history.overall?.totalScore || 0);
+        totalQuestions += (history.totalQuestions || history.overall?.totalQuestions || 40);
+      }
+    });
+
+    const progressPct = totalChapters > 0 ? Math.round((completedCount / totalChapters) * 100) : 0;
+
+    this.quizContainerEl.innerHTML = `
+      <div class="n1-kanji-hub-view max-w-7xl mx-auto px-3 sm:px-6 py-6 space-y-6 animate-fade-in font-sans">
+        
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-br from-white via-purple-50/40 to-slate-50 rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" id="btn-n1-kanji-hub-back-home" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200/90 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                  <span>Trang Chủ</span>
+                </button>
+                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-purple-100 text-purple-800 border border-purple-200">
+                  🎯 JLPT N1 • Shin Kanzen Master
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800 border border-indigo-200 flex items-center gap-1">
+                  <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                  🟢 Trọn bộ 10 Chapter (400 Câu)
+                </span>
+              </div>
+
+              <div>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
+                  Shin Kanzen Master Kanji N1 Drill
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+                  Luyện tập 10 Chapter Drill bao quát 800 Hán tự N1. Mỗi Chapter gồm 40 câu trắc nghiệm chia thành 4 dạng bài chuẩn đề thi thật, kèm âm Hán Việt và giải thích bẫy chữ Hán.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Card -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 p-4 sm:p-5 shrink-0 shadow-xs space-y-3 min-w-[260px]">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-700 pb-2 border-b border-slate-100">
+                <span>Tiến độ hoàn thành</span>
+                <span class="font-mono text-purple-700 font-extrabold">${completedCount}/${totalChapters} chapter (${progressPct}%)</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden border border-slate-200/60">
+                <div class="h-full bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full transition-all duration-500" style="width: ${progressPct}%"></div>
+              </div>
+              <div class="text-[11px] text-slate-500 font-medium">
+                ${totalQuestions > 0 ? `Tổng điểm tích lũy: <strong class="text-purple-700">${totalScore}/${totalQuestions} câu</strong>` : 'Chưa có bài làm nào'}
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap items-center gap-2 mt-6 pt-5 border-t border-slate-200/60">
+            <span class="text-xs font-bold text-slate-500 mr-1">Bộ lọc:</span>
+            <button type="button" data-n1k-filter="all" class="n1k-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-purple-600 text-white shadow-2xs transition cursor-pointer">
+              Tất cả (${totalChapters})
+            </button>
+            <button type="button" data-n1k-filter="done" class="n1k-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer">
+              Đã làm (${completedCount})
+            </button>
+            <button type="button" data-n1k-filter="undone" class="n1k-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer">
+              Chưa làm (${totalChapters - completedCount})
+            </button>
+          </div>
+        </div>
+
+        <!-- 10 Chapters Grid -->
+        <div id="n1-kanji-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+          ${chaptersData.map(item => {
+            const history = storage.getExamHistoryRecord(item.id);
+            const isDone = !!history && (history.lastScore !== undefined || (history.overall && history.overall.totalQuestions > 0));
+            const score = history ? (history.lastScore ?? history.overall?.totalScore ?? 0) : 0;
+            const total = history ? (history.totalQuestions ?? history.overall?.totalQuestions ?? 40) : 40;
+
+            return `
+              <div class="n1k-card group ${
+                isDone 
+                  ? 'bg-purple-50/30 border-purple-300 hover:border-purple-500' 
+                  : 'bg-white border-slate-200/90 hover:border-purple-500'
+              } border rounded-3xl p-5 sm:p-6 shadow-2xs hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between cursor-pointer select-none space-y-4"
+              data-chapter-number="${item.chapterNumber}"
+              data-done="${isDone ? 'done' : 'undone'}">
+                
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <span class="w-12 h-12 rounded-2xl font-black text-sm sm:text-base flex items-center justify-center ${
+                      isDone 
+                        ? 'bg-purple-600 text-white shadow-md shadow-purple-200' 
+                        : 'bg-purple-50 text-purple-700 border border-purple-200 group-hover:bg-purple-600 group-hover:text-white group-hover:border-purple-600 transition-colors'
+                    }">
+                      Ch.${item.chapterNumber}
+                    </span>
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <span class="text-xs font-black text-purple-700 uppercase tracking-wide">Chapter ${item.chapterNumber}</span>
+                        <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200/60">${item.range || ''}</span>
+                      </div>
+                      <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-purple-700 transition mt-0.5">
+                        ${item.title || `Chapter ${item.chapterNumber} ドリル`}
+                      </h3>
+                    </div>
+                  </div>
+
+                  ${isDone ? `
+                    <span class="px-2.5 py-1 rounded-xl text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">
+                      ✓ ${score}/${total}
+                    </span>
+                  ` : `
+                    <span class="px-2.5 py-1 rounded-xl text-xs font-bold bg-slate-100 text-slate-500 border border-slate-200/70 shrink-0">
+                      Chưa làm
+                    </span>
+                  `}
+                </div>
+
+                <!-- 4 Sections Breakdown -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-100">
+                  <div class="p-2 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="text-[10px] font-bold text-slate-500">問題1</div>
+                    <div class="text-[11px] font-bold text-slate-700">Đọc câu (10)</div>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="text-[10px] font-bold text-slate-500">問題2</div>
+                    <div class="text-[11px] font-bold text-slate-700">Viết câu (10)</div>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="text-[10px] font-bold text-slate-500">問題3</div>
+                    <div class="text-[11px] font-bold text-slate-700">Đọc từ (10)</div>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="text-[10px] font-bold text-slate-500">問題4</div>
+                    <div class="text-[11px] font-bold text-slate-700">Viết từ (10)</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs font-bold text-purple-600 group-hover:text-purple-700 pt-1">
+                  <span>Làm 40 câu trắc nghiệm</span>
+                  <span class="transform group-hover:translate-x-1 transition-transform">Bắt đầu →</span>
+                </div>
+
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+      </div>
+    `;
+
+    // Bind back button
+    document.getElementById('btn-n1-kanji-hub-back-home')?.addEventListener('click', () => {
+      this.switchView('HOME');
+    });
+
+    // Bind filter buttons
+    const filterBtns = this.quizContainerEl.querySelectorAll('.n1k-filter-btn');
+    const cards = this.quizContainerEl.querySelectorAll('.n1k-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-n1k-filter');
+        filterBtns.forEach(b => {
+          b.className = 'n1k-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer';
+        });
+        btn.className = 'n1k-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-purple-600 text-white shadow-2xs transition cursor-pointer';
+
+        cards.forEach(card => {
+          const cDone = card.getAttribute('data-done');
+          let show = false;
+          if (filter === 'all') show = true;
+          else if (filter === 'done' && cDone === 'done') show = true;
+          else if (filter === 'undone' && cDone === 'undone') show = true;
+
+          card.classList.toggle('hidden', !show);
+        });
+      });
+    });
+
+    // Bind chapter card clicks
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const chapterNumber = parseInt(card.getAttribute('data-chapter-number'), 10);
+        this.loadN1KanjiChapter(chapterNumber);
+      });
+    });
+  }
+
+  async loadN1KanjiChapter(chapterNumber) {
+    this.currentCourse = 'n1_kanji';
+    this.currentN1KanjiChapter = chapterNumber;
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
+    this.currentQuestionIndex = 0;
+    if (this.quizEngine) {
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    this.switchView('TEST', true);
+    this.showSidebar();
+
+    // Loading indicator
+    this.quizContainerEl.innerHTML = `
+      <div class="flex flex-col items-center justify-center py-20">
+        <div class="w-10 h-10 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin"></div>
+        <p class="mt-4 text-sm font-medium text-slate-600">Đang tải Shin Kanzen Kanji N1 - Chapter ${chapterNumber}...</p>
+      </div>
+    `;
+
+    try {
+      const chPad = String(chapterNumber).padStart(2, '0');
+      let res = await fetch(`data/n1_kanji/shinkanzen_k_ch${chPad}.json`);
+      if (!res.ok) {
+        res = await fetch(`/data/n1_kanji/shinkanzen_k_ch${chPad}.json`);
+      }
+      if (!res.ok) {
+        res = await fetch(`public/data/n1_kanji/shinkanzen_k_ch${chPad}.json`);
+      }
+      if (!res.ok) throw new Error(`Không thể tìm thấy dữ liệu Chapter ${chPad}`);
+      const chapterData = await res.json();
+
+      const chapterMeta = this.n1KanjiIndex.find(c => c.chapterNumber === chapterNumber);
+
+      // Update Header Info
+      if (this.headerLevelBadge) {
+        this.headerLevelBadge.textContent = 'JLPT N1';
+        this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-purple-100 text-purple-800 border border-purple-200';
+      }
+      if (this.dayTitleEl) {
+        this.dayTitleEl.textContent = `Shin Kanzen N1 Kanji • Chapter ${chapterNumber} (${chapterMeta?.range || ''})`;
+      }
+      if (this.dayDescEl) {
+        this.dayDescEl.textContent = `Luyện tập 40 câu trắc nghiệm Hán tự N1 (問題1-4) • Phím tắt [1..4] • Xuất Anki 1-click`;
+      }
+      if (this.headerScopeBtn) {
+        this.headerScopeBtn.classList.add('hidden');
+      }
+      if (this.paletteActiveTitle) {
+        this.paletteActiveTitle.textContent = `Chapter ${chapterNumber}`;
+      }
+      if (this.paletteActiveCount) {
+        this.paletteActiveCount.textContent = `40 câu`;
+      }
+
+      this.quizEngine.loadDay(chapterData, { mode: 'practice' });
+    } catch (err) {
+      console.error(`Lỗi tải Chapter ${chapterNumber}:`, err);
+      this.quizContainerEl.innerHTML = `
+        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200 max-w-lg mx-auto">
+          <p class="font-bold">Chưa thể tải dữ liệu cho Chapter này</p>
+          <p class="text-sm text-slate-600 mt-2">${err.message}</p>
+          <button type="button" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-bold cursor-pointer" onclick="window.app?.openN1KanjiHub()">Quay lại Sảnh Drill N1</button>
+        </div>
+      `;
+    }
+  }
+
   onProgressUpdate({ answered, total, percent }) {
     if (this.progressBarFillEl) {
       this.progressBarFillEl.style.width = `${percent}%`;
@@ -2163,6 +2887,65 @@ class App {
     if (cardN2) {
       cardN2.addEventListener('click', () => {
         this.openN2Hub();
+      });
+    }
+
+    // Kanji N1 Drill Event
+    const cardN1Kanji = document.getElementById('card-n1-kanji');
+    if (cardN1Kanji) {
+      cardN1Kanji.addEventListener('click', () => {
+        this.openN1KanjiHub();
+      });
+    }
+
+    // Kanji N3 Drill Event
+    const cardN3Kanji = document.getElementById('card-n3-kanji');
+    if (cardN3Kanji) {
+      cardN3Kanji.addEventListener('click', () => {
+        this.openN3KanjiHub();
+      });
+    }
+
+    // Sidebar Kanji Buttons
+    const btnSidebarN1Kanji = document.getElementById('btn-sidebar-n1-kanji-hub');
+    if (btnSidebarN1Kanji) {
+      btnSidebarN1Kanji.addEventListener('click', () => {
+        this.openN1KanjiHub();
+      });
+    }
+
+    const btnSidebarN3Kanji = document.getElementById('btn-sidebar-n3-kanji-hub');
+    if (btnSidebarN3Kanji) {
+      btnSidebarN3Kanji.addEventListener('click', () => {
+        this.openN3KanjiHub();
+      });
+    }
+
+    // Level Filter Pills on Dashboard
+    const levelFilterContainer = document.getElementById('dashboard-level-filter');
+    if (levelFilterContainer) {
+      const filterBtns = levelFilterContainer.querySelectorAll('.level-filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const selectedLevel = btn.getAttribute('data-level');
+          
+          // Update active button styling
+          filterBtns.forEach(b => {
+            b.className = 'level-filter-btn px-3 py-1.5 rounded-xl transition text-slate-600 hover:text-slate-900 cursor-pointer';
+          });
+          btn.className = 'level-filter-btn px-3 py-1.5 rounded-xl transition text-slate-900 bg-white shadow-2xs font-bold cursor-pointer';
+
+          // Filter clusters
+          const clusters = document.querySelectorAll('.level-cluster-group');
+          clusters.forEach(cluster => {
+            const clusterLevel = cluster.getAttribute('data-cluster');
+            if (selectedLevel === 'all' || selectedLevel === clusterLevel) {
+              cluster.classList.remove('hidden');
+            } else {
+              cluster.classList.add('hidden');
+            }
+          });
+        });
       });
     }
 
@@ -2488,5 +3271,6 @@ class App {
 // Bootstrap app on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   const app = new App();
+  window.app = app;
   app.init();
 });

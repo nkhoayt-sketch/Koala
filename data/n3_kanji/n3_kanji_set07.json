@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set07",
+  "set": "Set 07",
+  "title": "Kanji N3 • Set 07 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s07_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "彼は<u>動作</u>がにぶい。",
+      "targetWord": "動作",
+      "options": [
+        "とうさ",
+        "どうさ",
+        "とうさく",
+        "どうさく"
+      ],
+      "answer": 2,
+      "hanViet": "Động - Tác",
+      "explanation": "【正解】2 (どうさ)\n\n• Từ vựng kiểm tra: 動作 [どうさ]\n• Âm Hán Việt: Động - Tác\n• Cách đọc chính xác của 「動作」 trong câu là 「どうさ」."
+    },
+    {
+      "id": "n3_k_s07_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "そのプレゼントはきれいな紙で<u>包ん</u>でありました。",
+      "targetWord": "包ん",
+      "options": [
+        "むすんで",
+        "あんで",
+        "つつんで",
+        "はこんで"
+      ],
+      "answer": 3,
+      "hanViet": "Bao",
+      "explanation": "【正解】3 (つつんで)\n\n• Từ vựng kiểm tra: 包ん [つつんで]\n• Âm Hán Việt: Bao\n• Cách đọc chính xác của 「包ん」 trong câu là 「つつんで」."
+    },
+    {
+      "id": "n3_k_s07_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "手紙はきのう<u>確かに</u>受け取りました。",
+      "targetWord": "確かに",
+      "options": [
+        "たしか",
+        "しずか",
+        "たじか",
+        "しすか"
+      ],
+      "answer": 1,
+      "hanViet": "Xác",
+      "explanation": "【正解】1 (たしか)\n\n• Từ vựng kiểm tra: 確かに [たしか]\n• Âm Hán Việt: Xác\n• Cách đọc chính xác của 「確かに」 trong câu là 「たしか」."
+    },
+    {
+      "id": "n3_k_s07_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "池田さんは<u>機械</u>に弱いらしい。",
+      "targetWord": "機械",
+      "options": [
+        "きかい",
+        "きけい",
+        "ぎかい",
+        "ぎけい"
+      ],
+      "answer": 1,
+      "hanViet": "Cơ - Giới",
+      "explanation": "【正解】1 (きかい)\n\n• Từ vựng kiểm tra: 機械 [きかい]\n• Âm Hán Việt: Cơ - Giới\n• Cách đọc chính xác của 「機械」 trong câu là 「きかい」."
+    },
+    {
+      "id": "n3_k_s07_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "あすから<u>禁煙</u>するつもりです。",
+      "targetWord": "禁煙",
+      "options": [
+        "きねん",
+        "きえん",
+        "きんねん",
+        "きんえん"
+      ],
+      "answer": 4,
+      "hanViet": "Cấm - Yên",
+      "explanation": "【正解】4 (きんえん)\n\n• Từ vựng kiểm tra: 禁煙 [きんえん]\n• Âm Hán Việt: Cấm - Yên\n• Cách đọc chính xác của 「禁煙」 trong câu là 「きんえん」."
+    },
+    {
+      "id": "n3_k_s07_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "わたしは山本先生の講義の<u>主要</u>な点をメモした。",
+      "targetWord": "主要",
+      "options": [
+        "しゅよ",
+        "じゅよ",
+        "しゅよう",
+        "じゅよう"
+      ],
+      "answer": 3,
+      "hanViet": "Chúa - Yếu",
+      "explanation": "【正解】3 (しゅよう)\n\n• Từ vựng kiểm tra: 主要 [しゅよう]\n• Âm Hán Việt: Chúa - Yếu\n• Cách đọc chính xác của 「主要」 trong câu là 「しゅよう」."
+    },
+    {
+      "id": "n3_k_s07_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "<u>過去</u>から学ぶことは多い。",
+      "targetWord": "過去",
+      "options": [
+        "かこう",
+        "かきよ",
+        "かこ",
+        "かきょう"
+      ],
+      "answer": 3,
+      "hanViet": "Quá - Khứ",
+      "explanation": "【正解】3 (かこ)\n\n• Từ vựng kiểm tra: 過去 [かこ]\n• Âm Hán Việt: Quá - Khứ\n• Cách đọc chính xác của 「過去」 trong câu là 「かこ」."
+    },
+    {
+      "id": "n3_k_s07_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "音楽は人類に<u>共通</u>のことばだ。",
+      "targetWord": "共通",
+      "options": [
+        "きょうつ",
+        "きょうつう",
+        "Oこうつ",
+        "こうつう"
+      ],
+      "answer": 2,
+      "hanViet": "Cộng - Thông",
+      "explanation": "【正解】2 (きょうつう)\n\n• Từ vựng kiểm tra: 共通 [きょうつう]\n• Âm Hán Việt: Cộng - Thông\n• Cách đọc chính xác của 「共通」 trong câu là 「きょうつう」."
+    },
+    {
+      "id": "n3_k_s07_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "<u>丸い</u>皿を買った。",
+      "targetWord": "丸い",
+      "options": [
+        "まるい",
+        "ひくい",
+        "かるい",
+        "ほそい"
+      ],
+      "answer": 1,
+      "hanViet": "Hoàn",
+      "explanation": "【正解】1 (まるい)\n\n• Từ vựng kiểm tra: 丸い [まるい]\n• Âm Hán Việt: Hoàn\n• Cách đọc chính xác của 「丸い」 trong câu là 「まるい」."
+    },
+    {
+      "id": "n3_k_s07_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 07",
+      "type": "reading",
+      "question": "駅はどちらの<u>方向</u>ですか。",
+      "targetWord": "方向",
+      "options": [
+        "ほうほう",
+        "ほうこう",
+        "ほうぼう",
+        "ほうごう"
+      ],
+      "answer": 2,
+      "hanViet": "Phương - Hướng",
+      "explanation": "【正解】2 (ほうこう)\n\n• Từ vựng kiểm tra: 方向 [ほうこう]\n• Âm Hán Việt: Phương - Hướng\n• Cách đọc chính xác của 「方向」 trong câu là 「ほうこう」."
+    }
+  ]
+}

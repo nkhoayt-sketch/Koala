@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set02",
+  "set": "Set 02",
+  "title": "Kanji N3 • Set 02 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s02_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "この店はケーキの<u>種類</u>が多い。",
+      "targetWord": "種類",
+      "options": [
+        "しゅれい",
+        "じゅれい",
+        "しゅるい",
+        "じゅるい"
+      ],
+      "answer": 3,
+      "hanViet": "Chủng - Loại",
+      "explanation": "【正解】3 (しゅるい)\n\n• Từ vựng kiểm tra: 種類 [しゅるい]\n• Âm Hán Việt: Chủng - Loại\n• Cách đọc chính xác của 「種類」 trong câu là 「しゅるい」."
+    },
+    {
+      "id": "n3_k_s02_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "わたしは自分の目を<u>疑っ</u>た。",
+      "targetWord": "疑っ",
+      "options": [
+        "ことわった",
+        "うたがった",
+        "きらった",
+        "おこった"
+      ],
+      "answer": 2,
+      "hanViet": "Nghi",
+      "explanation": "【正解】2 (うたがった)\n\n• Từ vựng kiểm tra: 疑っ [うたがった]\n• Âm Hán Việt: Nghi\n• Cách đọc chính xác của 「疑っ」 trong câu là 「うたがった」."
+    },
+    {
+      "id": "n3_k_s02_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "「結婚なんかしない」と言ったら母は<u>悲しそ</u>うだった。",
+      "targetWord": "悲しそ",
+      "options": [
+        "やさしそう",
+        "きびしそう",
+        "さびしそう",
+        "かなしそう"
+      ],
+      "answer": 4,
+      "hanViet": "Bi",
+      "explanation": "【正解】4 (かなしそう)\n\n• Từ vựng kiểm tra: 悲しそ [かなしそう]\n• Âm Hán Việt: Bi\n• Cách đọc chính xác của 「悲しそ」 trong câu là 「かなしそう」."
+    },
+    {
+      "id": "n3_k_s02_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "彼は市長を<u>助け</u>て市政を再建した。",
+      "targetWord": "助け",
+      "options": [
+        "うけて",
+        "とどけて",
+        "たすけて",
+        "かたづけて"
+      ],
+      "answer": 3,
+      "hanViet": "Trợ",
+      "explanation": "【正解】3 (たすけて)\n\n• Từ vựng kiểm tra: 助け [たすけて]\n• Âm Hán Việt: Trợ\n• Cách đọc chính xác của 「助け」 trong câu là 「たすけて」."
+    },
+    {
+      "id": "n3_k_s02_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "今は<u>遊ぶ</u>気分じゃない。",
+      "targetWord": "遊ぶ",
+      "options": [
+        "よぶ",
+        "あそぶ",
+        "まなぶ",
+        "さけぶ"
+      ],
+      "answer": 2,
+      "hanViet": "Du",
+      "explanation": "【正解】2 (あそぶ)\n\n• Từ vựng kiểm tra: 遊ぶ [あそぶ]\n• Âm Hán Việt: Du\n• Cách đọc chính xác của 「遊ぶ」 trong câu là 「あそぶ」."
+    },
+    {
+      "id": "n3_k_s02_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "山田さんはときどき<u>休日出勤</u>します。",
+      "targetWord": "休日出勤",
+      "options": [
+        "しゅくじつ",
+        "きゅうじつ",
+        "きゅうにち",
+        "しゅくにち"
+      ],
+      "answer": 2,
+      "hanViet": "Hưu - Nhật - Xuất - Cần",
+      "explanation": "【正解】2 (きゅうじつ)\n\n• Từ vựng kiểm tra: 休日出勤 [きゅうじつ]\n• Âm Hán Việt: Hưu - Nhật - Xuất - Cần\n• Cách đọc chính xác của 「休日出勤」 trong câu là 「きゅうじつ」."
+    },
+    {
+      "id": "n3_k_s02_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "母は店の売り上げを<u>計算</u>している。",
+      "targetWord": "計算",
+      "options": [
+        "けいかく",
+        "けいざん",
+        "けいさん",
+        "けいがく"
+      ],
+      "answer": 3,
+      "hanViet": "Kế - Toán",
+      "explanation": "【正解】3 (けいさん)\n\n• Từ vựng kiểm tra: 計算 [けいさん]\n• Âm Hán Việt: Kế - Toán\n• Cách đọc chính xác của 「計算」 trong câu là 「けいさん」."
+    },
+    {
+      "id": "n3_k_s02_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "このビールはまだ<u>冷え</u>ていないよ。",
+      "targetWord": "冷え",
+      "options": [
+        "ひえて",
+        "うえて",
+        "Oもえて",
+        "にえて"
+      ],
+      "answer": 1,
+      "hanViet": "Lãnh",
+      "explanation": "【正解】1 (ひえて)\n\n• Từ vựng kiểm tra: 冷え [ひえて]\n• Âm Hán Việt: Lãnh\n• Cách đọc chính xác của 「冷え」 trong câu là 「ひえて」."
+    },
+    {
+      "id": "n3_k_s02_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "彼はパイロットになるための<u>訓練</u>を受けた。",
+      "targetWord": "訓練",
+      "options": [
+        "ぐんれい",
+        "ぐんれん",
+        "くんれい",
+        "くんれん"
+      ],
+      "answer": 4,
+      "hanViet": "Huấn - Luyện",
+      "explanation": "【正解】4 (くんれん)\n\n• Từ vựng kiểm tra: 訓練 [くんれん]\n• Âm Hán Việt: Huấn - Luyện\n• Cách đọc chính xác của 「訓練」 trong câu là 「くんれん」."
+    },
+    {
+      "id": "n3_k_s02_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 02",
+      "type": "reading",
+      "question": "チケットの<u>申し込み</u>をインターネットで行った。",
+      "targetWord": "申し込み",
+      "options": [
+        "もしくみ",
+        "もしこみ",
+        "もうしくみ",
+        "もうしこみ"
+      ],
+      "answer": 4,
+      "hanViet": "Thân - Nhập",
+      "explanation": "【正解】4 (もうしこみ)\n\n• Từ vựng kiểm tra: 申し込み [もうしこみ]\n• Âm Hán Việt: Thân - Nhập\n• Cách đọc chính xác của 「申し込み」 trong câu là 「もうしこみ」."
+    }
+  ]
+}

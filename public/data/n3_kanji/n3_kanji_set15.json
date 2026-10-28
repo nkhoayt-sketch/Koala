@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set15",
+  "set": "Set 15",
+  "title": "Kanji N3 • Set 15 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s15_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "天気のいい日は布団を<u>干す</u>。",
+      "targetWord": "干す",
+      "options": [
+        "さす",
+        "おす",
+        "ほす",
+        "たす"
+      ],
+      "answer": 3,
+      "hanViet": "Can",
+      "explanation": "【正解】3 (ほす)\n\n• Từ vựng kiểm tra: 干す [ほす]\n• Âm Hán Việt: Can\n• Cách đọc chính xác của 「干す」 trong câu là 「ほす」."
+    },
+    {
+      "id": "n3_k_s15_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "プレゼントは赤い紙で<u>包ん</u>であった。",
+      "targetWord": "包ん",
+      "options": [
+        "つうづんで",
+        "つうつんで",
+        "つづんで",
+        "つつんで"
+      ],
+      "answer": 4,
+      "hanViet": "Bao",
+      "explanation": "【正解】4 (つつんで)\n\n• Từ vựng kiểm tra: 包ん [つつんで]\n• Âm Hán Việt: Bao\n• Cách đọc chính xác của 「包ん」 trong câu là 「つつんで」."
+    },
+    {
+      "id": "n3_k_s15_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "詳しい<u>事情</u>がわかればすぐご連絡します。",
+      "targetWord": "事情",
+      "options": [
+        "じじょう",
+        "じじょ",
+        "じこう",
+        "じこ"
+      ],
+      "answer": 1,
+      "hanViet": "Sự - Tình",
+      "explanation": "【正解】1 (じじょう)\n\n• Từ vựng kiểm tra: 事情 [じじょう]\n• Âm Hán Việt: Sự - Tình\n• Cách đọc chính xác của 「事情」 trong câu là 「じじょう」."
+    },
+    {
+      "id": "n3_k_s15_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "合格<u>通知</u>を受け取って彼は大喜びした。",
+      "targetWord": "通知",
+      "options": [
+        "とうち",
+        "とうじ",
+        "つうち",
+        "つうじ"
+      ],
+      "answer": 3,
+      "hanViet": "Thông - Tri",
+      "explanation": "【正解】3 (つうち)\n\n• Từ vựng kiểm tra: 通知 [つうち]\n• Âm Hán Việt: Thông - Tri\n• Cách đọc chính xác của 「通知」 trong câu là 「つうち」."
+    },
+    {
+      "id": "n3_k_s15_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "びんのふたが<u>固く</u>てなかなか開かない。",
+      "targetWord": "固く",
+      "options": [
+        "かたくて",
+        "ふるくて",
+        "こわくて",
+        "ふかくて"
+      ],
+      "answer": 1,
+      "hanViet": "Cố",
+      "explanation": "【正解】1 (かたくて)\n\n• Từ vựng kiểm tra: 固く [かたくて]\n• Âm Hán Việt: Cố\n• Cách đọc chính xác của 「固く」 trong câu là 「かたくて」."
+    },
+    {
+      "id": "n3_k_s15_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "時計が5分<u>遅れ</u>る。",
+      "targetWord": "遅れ",
+      "options": [
+        "よごれる",
+        "おくれる",
+        "こわれる",
+        "たおれる"
+      ],
+      "answer": 2,
+      "hanViet": "Trì",
+      "explanation": "【正解】2 (おくれる)\n\n• Từ vựng kiểm tra: 遅れ [おくれる]\n• Âm Hán Việt: Trì\n• Cách đọc chính xác của 「遅れ」 trong câu là 「おくれる」."
+    },
+    {
+      "id": "n3_k_s15_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "彼女は無理に<u>笑っ</u>てみせた。",
+      "targetWord": "笑っ",
+      "options": [
+        "おこって",
+        "わらって",
+        "こまって",
+        "うたがって"
+      ],
+      "answer": 2,
+      "hanViet": "Tiếu",
+      "explanation": "【正解】2 (わらって)\n\n• Từ vựng kiểm tra: 笑っ [わらって]\n• Âm Hán Việt: Tiếu\n• Cách đọc chính xác của 「笑っ」 trong câu là 「わらって」."
+    },
+    {
+      "id": "n3_k_s15_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "安いアパートを探すのに<u>苦労</u>した。",
+      "targetWord": "苦労",
+      "options": [
+        "ころ",
+        "ころう",
+        "Oくろ",
+        "くろう"
+      ],
+      "answer": 4,
+      "hanViet": "Khổ - Lao",
+      "explanation": "【正解】4 (くろう)\n\n• Từ vựng kiểm tra: 苦労 [くろう]\n• Âm Hán Việt: Khổ - Lao\n• Cách đọc chính xác của 「苦労」 trong câu là 「くろう」."
+    },
+    {
+      "id": "n3_k_s15_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "ガチャンと皿の<u>割れ</u>る音がしました。",
+      "targetWord": "割れ",
+      "options": [
+        "おれる",
+        "われる",
+        "かれる",
+        "たれる"
+      ],
+      "answer": 2,
+      "hanViet": "Cát",
+      "explanation": "【正解】2 (われる)\n\n• Từ vựng kiểm tra: 割れ [われる]\n• Âm Hán Việt: Cát\n• Cách đọc chính xác của 「割れ」 trong câu là 「われる」."
+    },
+    {
+      "id": "n3_k_s15_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 15",
+      "type": "reading",
+      "question": "<u>食器</u>をテーブルに並べました。",
+      "targetWord": "食器",
+      "options": [
+        "しょつわ",
+        "しょっき",
+        "しょくわ",
+        "しょくき"
+      ],
+      "answer": 2,
+      "hanViet": "Thực - Khí",
+      "explanation": "【正解】2 (しょっき)\n\n• Từ vựng kiểm tra: 食器 [しょっき]\n• Âm Hán Việt: Thực - Khí\n• Cách đọc chính xác của 「食器」 trong câu là 「しょっき」."
+    }
+  ]
+}

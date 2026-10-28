@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set01",
+  "set": "Set 01",
+  "title": "Kanji N3 • Set 01 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s01_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "その町の人口を<u>調査</u>します。",
+      "targetWord": "調査",
+      "options": [
+        "ちょうさ",
+        "ちょうさつ",
+        "ちょさ",
+        "ちょさつ"
+      ],
+      "answer": 1,
+      "hanViet": "Điều - Tra",
+      "explanation": "【正解】1 (ちょうさ)\n\n• Từ vựng kiểm tra: 調査 [ちょうさ]\n• Âm Hán Việt: Điều - Tra\n• Cách đọc chính xác của 「調査」 trong câu là 「ちょうさ」."
+    },
+    {
+      "id": "n3_k_s01_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "入り口でコートを<u>預け</u>た。",
+      "targetWord": "預け",
+      "options": [
+        "あすけた",
+        "とどけた",
+        "あずけた",
+        "ととけた"
+      ],
+      "answer": 3,
+      "hanViet": "Dự",
+      "explanation": "【正解】3 (あずけた)\n\n• Từ vựng kiểm tra: 預け [あずけた]\n• Âm Hán Việt: Dự\n• Cách đọc chính xác của 「預け」 trong câu là 「あずけた」."
+    },
+    {
+      "id": "n3_k_s01_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "わたしの家の<u>裏</u>は幼稚園です。",
+      "targetWord": "裏",
+      "options": [
+        "うら",
+        "よこ",
+        "かげ",
+        "そば"
+      ],
+      "answer": 1,
+      "hanViet": "Lý",
+      "explanation": "【正解】1 (うら)\n\n• Từ vựng kiểm tra: 裏 [うら]\n• Âm Hán Việt: Lý\n• Cách đọc chính xác của 「裏」 trong câu là 「うら」."
+    },
+    {
+      "id": "n3_k_s01_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "<u>若く</u>見られることはいいことばかりではない。",
+      "targetWord": "若く",
+      "options": [
+        "さむく",
+        "わかく",
+        "こわく",
+        "わるく"
+      ],
+      "answer": 2,
+      "hanViet": "Nhược",
+      "explanation": "【正解】2 (わかく)\n\n• Từ vựng kiểm tra: 若く [わかく]\n• Âm Hán Việt: Nhược\n• Cách đọc chính xác của 「若く」 trong câu là 「わかく」."
+    },
+    {
+      "id": "n3_k_s01_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "留学について両親に<u>相談</u>した。",
+      "targetWord": "相談",
+      "options": [
+        "しょうたん",
+        "しょうだん",
+        "そうたん",
+        "そうだん"
+      ],
+      "answer": 4,
+      "hanViet": "Tướng - Đàm",
+      "explanation": "【正解】4 (そうだん)\n\n• Từ vựng kiểm tra: 相談 [そうだん]\n• Âm Hán Việt: Tướng - Đàm\n• Cách đọc chính xác của 「相談」 trong câu là 「そうだん」."
+    },
+    {
+      "id": "n3_k_s01_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "そういう<u>命令</u>するような言い方はやめてほしい。",
+      "targetWord": "命令",
+      "options": [
+        "めれん",
+        "めいれん",
+        "めれい",
+        "めいれい"
+      ],
+      "answer": 4,
+      "hanViet": "Mệnh - Lệnh",
+      "explanation": "【正解】4 (めいれい)\n\n• Từ vựng kiểm tra: 命令 [めいれい]\n• Âm Hán Việt: Mệnh - Lệnh\n• Cách đọc chính xác của 「命令」 trong câu là 「めいれい」."
+    },
+    {
+      "id": "n3_k_s01_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "これはよく<u>燃え</u>ます。",
+      "targetWord": "燃え",
+      "options": [
+        "にえます",
+        "ひえます",
+        "きえます",
+        "もえます"
+      ],
+      "answer": 4,
+      "hanViet": "Nhiên",
+      "explanation": "【正解】4 (もえます)\n\n• Từ vựng kiểm tra: 燃え [もえます]\n• Âm Hán Việt: Nhiên\n• Cách đọc chính xác của 「燃え」 trong câu là 「もえます」."
+    },
+    {
+      "id": "n3_k_s01_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "重要な所に赤で<u>下線</u>を引いてください。",
+      "targetWord": "下線",
+      "options": [
+        "かぜん",
+        "かせん",
+        "Oげぜん",
+        "げせん"
+      ],
+      "answer": 2,
+      "hanViet": "Hạ - Tuyến",
+      "explanation": "【正解】2 (かせん)\n\n• Từ vựng kiểm tra: 下線 [かせん]\n• Âm Hán Việt: Hạ - Tuyến\n• Cách đọc chính xác của 「下線」 trong câu là 「かせん」."
+    },
+    {
+      "id": "n3_k_s01_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "会費は山下くんに<u>払っ</u>てください。",
+      "targetWord": "払っ",
+      "options": [
+        "ひろって",
+        "くばって",
+        "はらって",
+        "かざって"
+      ],
+      "answer": 3,
+      "hanViet": "Phất",
+      "explanation": "【正解】3 (はらって)\n\n• Từ vựng kiểm tra: 払っ [はらって]\n• Âm Hán Việt: Phất\n• Cách đọc chính xác của 「払っ」 trong câu là 「はらって」."
+    },
+    {
+      "id": "n3_k_s01_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 01",
+      "type": "reading",
+      "question": "これは<u>個人</u>の力でできるものではない。",
+      "targetWord": "個人",
+      "options": [
+        "こうじん",
+        "こじん",
+        "こにん",
+        "こうにん"
+      ],
+      "answer": 2,
+      "hanViet": "Cá - Nhân",
+      "explanation": "【正解】2 (こじん)\n\n• Từ vựng kiểm tra: 個人 [こじん]\n• Âm Hán Việt: Cá - Nhân\n• Cách đọc chính xác của 「個人」 trong câu là 「こじん」."
+    }
+  ]
+}

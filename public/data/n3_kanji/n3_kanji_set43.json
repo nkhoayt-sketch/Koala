@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set43",
+  "set": "Set 43",
+  "title": "Kanji N3 • Set 43 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s43_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "健康には人一倍気をつかっていた彼が入院とは、<u>ひにくな</u>ものだ。",
+      "targetWord": "ひにくな",
+      "options": [
+        "皮肉な",
+        "否肉な",
+        "非肉な",
+        "比肉な"
+      ],
+      "answer": 1,
+      "hanViet": "Bì - Nhục",
+      "explanation": "【正解】1 (皮肉な)\n\n• Từ vựng kiểm tra: 皮肉な (ひにくな)\n• Âm Hán Việt: Bì - Nhục\n• Chữ Hán chính xác ứng với cách đọc 「ひにくな」 là 「皮肉な」."
+    },
+    {
+      "id": "n3_k_s43_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "彼女はヨーロッパを<u>たんしん</u>旅行した。",
+      "targetWord": "たんしん",
+      "options": [
+        "単身",
+        "単体",
+        "担身",
+        "担体"
+      ],
+      "answer": 1,
+      "hanViet": "単 - Thân",
+      "explanation": "【正解】1 (単身)\n\n• Từ vựng kiểm tra: 単身 (たんしん)\n• Âm Hán Việt: 単 - Thân\n• Chữ Hán chính xác ứng với cách đọc 「たんしん」 là 「単身」."
+    },
+    {
+      "id": "n3_k_s43_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "この<u>ふきん</u>に病院がありますか。",
+      "targetWord": "ふきん",
+      "options": [
+        "府近",
+        "辺近",
+        "布近",
+        "付近"
+      ],
+      "answer": 4,
+      "hanViet": "Phó - Cận",
+      "explanation": "【正解】4 (付近)\n\n• Từ vựng kiểm tra: 付近 (ふきん)\n• Âm Hán Việt: Phó - Cận\n• Chữ Hán chính xác ứng với cách đọc 「ふきん」 là 「付近」."
+    },
+    {
+      "id": "n3_k_s43_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "この車は多少修理が必要だが<u>じょうたい</u>はよい。",
+      "targetWord": "じょうたい",
+      "options": [
+        "状態",
+        "常態",
+        "状帯",
+        "常帯"
+      ],
+      "answer": 1,
+      "hanViet": "Trạng - Thái",
+      "explanation": "【正解】1 (状態)\n\n• Từ vựng kiểm tra: 状態 (じょうたい)\n• Âm Hán Việt: Trạng - Thái\n• Chữ Hán chính xác ứng với cách đọc 「じょうたい」 là 「状態」."
+    },
+    {
+      "id": "n3_k_s43_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "わたしは犬と一緒に<u>こうえん</u>を散歩するのが好きです。",
+      "targetWord": "こうえん",
+      "options": [
+        "郊遠",
+        "郊園",
+        "公遠",
+        "公園"
+      ],
+      "answer": 4,
+      "hanViet": "Công - Viên",
+      "explanation": "【正解】4 (公園)\n\n• Từ vựng kiểm tra: 公園 (こうえん)\n• Âm Hán Việt: Công - Viên\n• Chữ Hán chính xác ứng với cách đọc 「こうえん」 là 「公園」."
+    },
+    {
+      "id": "n3_k_s43_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "その<u>どうろ</u>は気をつけて渡ってください。",
+      "targetWord": "どうろ",
+      "options": [
+        "導路",
+        "導渡",
+        "道路",
+        "道渡"
+      ],
+      "answer": 3,
+      "hanViet": "Đạo - Lộ",
+      "explanation": "【正解】3 (道路)\n\n• Từ vựng kiểm tra: 道路 (どうろ)\n• Âm Hán Việt: Đạo - Lộ\n• Chữ Hán chính xác ứng với cách đọc 「どうろ」 là 「道路」."
+    },
+    {
+      "id": "n3_k_s43_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "留学は<u>こうがくれき</u>になるほど活発化する傾向がある。",
+      "targetWord": "こうがくれき",
+      "options": [
+        "高学歴",
+        "高学暦",
+        "広学暦",
+        "広学歴"
+      ],
+      "answer": 1,
+      "hanViet": "Cao - Học - Lịch",
+      "explanation": "【正解】1 (高学歴)\n\n• Từ vựng kiểm tra: 高学歴 (こうがくれき)\n• Âm Hán Việt: Cao - Học - Lịch\n• Chữ Hán chính xác ứng với cách đọc 「こうがくれき」 là 「高学歴」."
+    },
+    {
+      "id": "n3_k_s43_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "<u>こうつう</u>機関が不通になった場合は休講とします。",
+      "targetWord": "こうつう",
+      "options": [
+        "向通",
+        "広通",
+        "O互通",
+        "交通"
+      ],
+      "answer": 4,
+      "hanViet": "Giao - Thông",
+      "explanation": "【正解】4 (交通)\n\n• Từ vựng kiểm tra: 交通 (こうつう)\n• Âm Hán Việt: Giao - Thông\n• Chữ Hán chính xác ứng với cách đọc 「こうつう」 là 「交通」."
+    },
+    {
+      "id": "n3_k_s43_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "<u>えんぴつをほそく削ります。</u>",
+      "targetWord": "こまく",
+      "options": [
+        "狭く",
+        "弱く",
+        "細く",
+        "鋭く"
+      ],
+      "answer": 3,
+      "hanViet": "Tế",
+      "explanation": "【正解】3 (細く)\n\n• Từ vựng kiểm tra: 細く (こまく)\n• Âm Hán Việt: Tế\n• Chữ Hán chính xác ứng với cách đọc 「こまく」 là 「細く」."
+    },
+    {
+      "id": "n3_k_s43_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 43",
+      "type": "writing",
+      "question": "山田さんの家族は<u>こむぎ</u>農家でした。",
+      "targetWord": "こむぎ",
+      "options": [
+        "黄麦",
+        "小麦",
+        "香麦",
+        "(sáchgốcintrống)"
+      ],
+      "answer": 2,
+      "hanViet": "Tiểu - Mạch",
+      "explanation": "【正解】2 (小麦)\n\n• Từ vựng kiểm tra: 小麦 (こむぎ)\n• Âm Hán Việt: Tiểu - Mạch\n• Chữ Hán chính xác ứng với cách đọc 「こむぎ」 là 「小麦」."
+    }
+  ]
+}

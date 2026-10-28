@@ -1,0 +1,92 @@
+[
+  {
+    "id": "n1_skz_k_ch01",
+    "chapter": "Chapter 1 ドリル",
+    "chapterNumber": 1,
+    "title": "Chapter 1 • 漢字 001～078 ドリル",
+    "range": "漢字 001～078",
+    "filename": "shinkanzen_k_ch01.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch02",
+    "chapter": "Chapter 2 ドリル",
+    "chapterNumber": 2,
+    "title": "Chapter 2 • 漢字 079～156 ドリル",
+    "range": "漢字 079～156",
+    "filename": "shinkanzen_k_ch02.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch03",
+    "chapter": "Chapter 3 ドリル",
+    "chapterNumber": 3,
+    "title": "Chapter 3 • 漢字 157～234 ドリル",
+    "range": "漢字 157～234",
+    "filename": "shinkanzen_k_ch03.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch04",
+    "chapter": "Chapter 4 ドリル",
+    "chapterNumber": 4,
+    "title": "Chapter 4 • 漢字 235～306 ドリル",
+    "range": "漢字 235～306",
+    "filename": "shinkanzen_k_ch04.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch05",
+    "chapter": "Chapter 5 ドリル",
+    "chapterNumber": 5,
+    "title": "Chapter 5 • 漢字 307～378 ドリル",
+    "range": "漢字 307～378",
+    "filename": "shinkanzen_k_ch05.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch06",
+    "chapter": "Chapter 6 ドリル",
+    "chapterNumber": 6,
+    "title": "Chapter 6 • 漢字 379～450 ドリル",
+    "range": "漢字 379～450",
+    "filename": "shinkanzen_k_ch06.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch07",
+    "chapter": "Chapter 7 ドリル",
+    "chapterNumber": 7,
+    "title": "Chapter 7 • 漢字 451～522 ドリル",
+    "range": "漢字 451～522",
+    "filename": "shinkanzen_k_ch07.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch08",
+    "chapter": "Chapter 8 ドリル",
+    "chapterNumber": 8,
+    "title": "Chapter 8 • 漢字 523～594 ドリル",
+    "range": "漢字 523～594",
+    "filename": "shinkanzen_k_ch08.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch09",
+    "chapter": "Chapter 9 ドリル",
+    "chapterNumber": 9,
+    "title": "Chapter 9 • 漢字 595～660 ドリル",
+    "range": "漢字 595～660",
+    "filename": "shinkanzen_k_ch09.json",
+    "totalQuestions": 40
+  },
+  {
+    "id": "n1_skz_k_ch10",
+    "chapter": "Chapter 10 ドリル",
+    "chapterNumber": 10,
+    "title": "Chapter 10 • 漢字 661～800 ドリル",
+    "range": "漢字 661～800",
+    "filename": "shinkanzen_k_ch10.json",
+    "totalQuestions": 40
+  }
+]

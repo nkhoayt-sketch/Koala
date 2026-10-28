@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set11",
+  "set": "Set 11",
+  "title": "Kanji N3 • Set 11 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s11_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "あしたの<u>朝食</u>は遅めでいいです。",
+      "targetWord": "朝食",
+      "options": [
+        "ちょうしょく",
+        "ちょうじき",
+        "あさしょく",
+        "あさじき"
+      ],
+      "answer": 1,
+      "hanViet": "Triều - Thực",
+      "explanation": "【正解】1 (ちょうしょく)\n\n• Từ vựng kiểm tra: 朝食 [ちょうしょく]\n• Âm Hán Việt: Triều - Thực\n• Cách đọc chính xác của 「朝食」 trong câu là 「ちょうしょく」."
+    },
+    {
+      "id": "n3_k_s11_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "彼はその老人にとっていい話し<u>相手</u>だ。",
+      "targetWord": "相手",
+      "options": [
+        "あいて",
+        "あいしゅ",
+        "そうて",
+        "そうしゅ"
+      ],
+      "answer": 1,
+      "hanViet": "Tướng - Thủ",
+      "explanation": "【正解】1 (あいて)\n\n• Từ vựng kiểm tra: 相手 [あいて]\n• Âm Hán Việt: Tướng - Thủ\n• Cách đọc chính xác của 「相手」 trong câu là 「あいて」."
+    },
+    {
+      "id": "n3_k_s11_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "もう<u>改札</u>は閉まりました。",
+      "targetWord": "改札",
+      "options": [
+        "かいさつ",
+        "かいじょう",
+        "けいさつ",
+        "けいじょう"
+      ],
+      "answer": 1,
+      "hanViet": "Cải - Trát",
+      "explanation": "【正解】1 (かいさつ)\n\n• Từ vựng kiểm tra: 改札 [かいさつ]\n• Âm Hán Việt: Cải - Trát\n• Cách đọc chính xác của 「改札」 trong câu là 「かいさつ」."
+    },
+    {
+      "id": "n3_k_s11_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "彼はサッカーの<u>選手</u>です。",
+      "targetWord": "選手",
+      "options": [
+        "せんて",
+        "せんしゅ",
+        "ぜんて",
+        "ぜんしゅ"
+      ],
+      "answer": 2,
+      "hanViet": "Tuyển - Thủ",
+      "explanation": "【正解】2 (せんしゅ)\n\n• Từ vựng kiểm tra: 選手 [せんしゅ]\n• Âm Hán Việt: Tuyển - Thủ\n• Cách đọc chính xác của 「選手」 trong câu là 「せんしゅ」."
+    },
+    {
+      "id": "n3_k_s11_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "10時の時報を<u>合図</u>にパレードが出発した。",
+      "targetWord": "合図",
+      "options": [
+        "ごうず",
+        "ごうと",
+        "あいず",
+        "あいと"
+      ],
+      "answer": 3,
+      "hanViet": "Hợp - Đồ",
+      "explanation": "【正解】3 (あいず)\n\n• Từ vựng kiểm tra: 合図 [あいず]\n• Âm Hán Việt: Hợp - Đồ\n• Cách đọc chính xác của 「合図」 trong câu là 「あいず」."
+    },
+    {
+      "id": "n3_k_s11_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "昼休みが<u>短す</u>ぎて何もできない。",
+      "targetWord": "短す",
+      "options": [
+        "きたなすぎて",
+        "あつすぎて",
+        "みじかすぎて",
+        "あさすぎて"
+      ],
+      "answer": 3,
+      "hanViet": "Đoản",
+      "explanation": "【正解】3 (みじかすぎて)\n\n• Từ vựng kiểm tra: 短す [みじかすぎて]\n• Âm Hán Việt: Đoản\n• Cách đọc chính xác của 「短す」 trong câu là 「みじかすぎて」."
+    },
+    {
+      "id": "n3_k_s11_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "皿の<u>表面</u>には少し傷がついていた。",
+      "targetWord": "表面",
+      "options": [
+        "ほめん",
+        "ほうめん",
+        "ひよめん",
+        "ひょうめん"
+      ],
+      "answer": 4,
+      "hanViet": "Biểu - Diện",
+      "explanation": "【正解】4 (ひょうめん)\n\n• Từ vựng kiểm tra: 表面 [ひょうめん]\n• Âm Hán Việt: Biểu - Diện\n• Cách đọc chính xác của 「表面」 trong câu là 「ひょうめん」."
+    },
+    {
+      "id": "n3_k_s11_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "その男には複雑な<u>過去</u>があった。",
+      "targetWord": "過去",
+      "options": [
+        "かきょう",
+        "かきよ",
+        "Oかこう",
+        "かこ"
+      ],
+      "answer": 4,
+      "hanViet": "Quá - Khứ",
+      "explanation": "【正解】4 (かこ)\n\n• Từ vựng kiểm tra: 過去 [かこ]\n• Âm Hán Việt: Quá - Khứ\n• Cách đọc chính xác của 「過去」 trong câu là 「かこ」."
+    },
+    {
+      "id": "n3_k_s11_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "子どもたちは<u>順番</u>に立って歌を歌った。",
+      "targetWord": "順番",
+      "options": [
+        "しゅんばん",
+        "しゅんじょ",
+        "じゅんばん",
+        "じゅんじょ"
+      ],
+      "answer": 3,
+      "hanViet": "Thuận - Phiên",
+      "explanation": "【正解】3 (じゅんばん)\n\n• Từ vựng kiểm tra: 順番 [じゅんばん]\n• Âm Hán Việt: Thuận - Phiên\n• Cách đọc chính xác của 「順番」 trong câu là 「じゅんばん」."
+    },
+    {
+      "id": "n3_k_s11_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 11",
+      "type": "reading",
+      "question": "このグラフは価格の変化を<u>表し</u>ている。",
+      "targetWord": "表し",
+      "options": [
+        "うごかして",
+        "あらわして",
+        "しめして",
+        "ふやして"
+      ],
+      "answer": 2,
+      "hanViet": "Biểu",
+      "explanation": "【正解】2 (あらわして)\n\n• Từ vựng kiểm tra: 表し [あらわして]\n• Âm Hán Việt: Biểu\n• Cách đọc chính xác của 「表し」 trong câu là 「あらわして」."
+    }
+  ]
+}

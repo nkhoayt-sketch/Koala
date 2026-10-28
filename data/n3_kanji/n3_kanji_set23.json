@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set23",
+  "set": "Set 23",
+  "title": "Kanji N3 • Set 23 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s23_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "ボールをこっちに<u>なげて</u>ください。",
+      "targetWord": "なげて",
+      "options": [
+        "投げて",
+        "役げて",
+        "捨げて",
+        "放げて"
+      ],
+      "answer": 1,
+      "hanViet": "Đầu",
+      "explanation": "【正解】1 (投げて)\n\n• Từ vựng kiểm tra: 投げて (なげて)\n• Âm Hán Việt: Đầu\n• Chữ Hán chính xác ứng với cách đọc 「なげて」 là 「投げて」."
+    },
+    {
+      "id": "n3_k_s23_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "この<u>ざっし</u>の4月号はありますか。",
+      "targetWord": "ざっし",
+      "options": [
+        "雑紙",
+        "雑誌",
+        "冊紙",
+        "冊誌"
+      ],
+      "answer": 2,
+      "hanViet": "Tạp - Chí",
+      "explanation": "【正解】2 (雑誌)\n\n• Từ vựng kiểm tra: 雑誌 (ざっし)\n• Âm Hán Việt: Tạp - Chí\n• Chữ Hán chính xác ứng với cách đọc 「ざっし」 là 「雑誌」."
+    },
+    {
+      "id": "n3_k_s23_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "この学校の先生はみな<u>わかい</u>。",
+      "targetWord": "わかい",
+      "options": [
+        "強い",
+        "細い",
+        "若い",
+        "苦い"
+      ],
+      "answer": 3,
+      "hanViet": "Nhược",
+      "explanation": "【正解】3 (若い)\n\n• Từ vựng kiểm tra: 若い (わかい)\n• Âm Hán Việt: Nhược\n• Chữ Hán chính xác ứng với cách đọc 「わかい」 là 「若い」."
+    },
+    {
+      "id": "n3_k_s23_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "電力会社のストのため、その地域一帯は<u>ていでん</u>になった。",
+      "targetWord": "ていでん",
+      "options": [
+        "止電",
+        "落電",
+        "停電",
+        "開電"
+      ],
+      "answer": 3,
+      "hanViet": "Đình - Điện",
+      "explanation": "【正解】3 (停電)\n\n• Từ vựng kiểm tra: 停電 (ていでん)\n• Âm Hán Việt: Đình - Điện\n• Chữ Hán chính xác ứng với cách đọc 「ていでん」 là 「停電」."
+    },
+    {
+      "id": "n3_k_s23_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "パソコンの仕事は目が<u>つかれる</u>。",
+      "targetWord": "つかれる",
+      "options": [
+        "疲れる",
+        "労れる",
+        "突れる",
+        "苦れる"
+      ],
+      "answer": 1,
+      "hanViet": "Bí",
+      "explanation": "【正解】1 (疲れる)\n\n• Từ vựng kiểm tra: 疲れる (つかれる)\n• Âm Hán Việt: Bí\n• Chữ Hán chính xác ứng với cách đọc 「つかれる」 là 「疲れる」."
+    },
+    {
+      "id": "n3_k_s23_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "その事件は<u>きろく</u>に残っている。",
+      "targetWord": "きろく",
+      "options": [
+        "紀緑",
+        "紀録",
+        "記緑",
+        "記録"
+      ],
+      "answer": 4,
+      "hanViet": "Ký - Lục",
+      "explanation": "【正解】4 (記録)\n\n• Từ vựng kiểm tra: 記録 (きろく)\n• Âm Hán Việt: Ký - Lục\n• Chữ Hán chính xác ứng với cách đọc 「きろく」 là 「記録」."
+    },
+    {
+      "id": "n3_k_s23_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "わたしは成功する<u>じしん</u>がある。",
+      "targetWord": "じしん",
+      "options": [
+        "自信",
+        "自身",
+        "目信",
+        "目身"
+      ],
+      "answer": 1,
+      "hanViet": "Tự - Tín",
+      "explanation": "【正解】1 (自信)\n\n• Từ vựng kiểm tra: 自信 (じしん)\n• Âm Hán Việt: Tự - Tín\n• Chữ Hán chính xác ứng với cách đọc 「じしん」 là 「自信」."
+    },
+    {
+      "id": "n3_k_s23_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "彼は大学で<u>ほうりつ</u>を学んでいる。",
+      "targetWord": "ほうりつ",
+      "options": [
+        "法律",
+        "法理",
+        "O放律",
+        "放理"
+      ],
+      "answer": 1,
+      "hanViet": "Pháp - Luật",
+      "explanation": "【正解】1 (法律)\n\n• Từ vựng kiểm tra: 法律 (ほうりつ)\n• Âm Hán Việt: Pháp - Luật\n• Chữ Hán chính xác ứng với cách đọc 「ほうりつ」 là 「法律」."
+    },
+    {
+      "id": "n3_k_s23_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "英語の<u>せいせき</u>は上がったり下がったりです。",
+      "targetWord": "せいせき",
+      "options": [
+        "成箱",
+        "成積",
+        "成適",
+        "成績"
+      ],
+      "answer": 4,
+      "hanViet": "Thành - Tích",
+      "explanation": "【正解】4 (成績)\n\n• Từ vựng kiểm tra: 成績 (せいせき)\n• Âm Hán Việt: Thành - Tích\n• Chữ Hán chính xác ứng với cách đọc 「せいせき」 là 「成績」."
+    },
+    {
+      "id": "n3_k_s23_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 23",
+      "type": "writing",
+      "question": "健康診断で<u>けつえき</u>検査をうけた。",
+      "targetWord": "けつえき",
+      "options": [
+        "皿液",
+        "皿圧",
+        "血液",
+        "血圧"
+      ],
+      "answer": 3,
+      "hanViet": "Huyết - Dịch",
+      "explanation": "【正解】3 (血液)\n\n• Từ vựng kiểm tra: 血液 (けつえき)\n• Âm Hán Việt: Huyết - Dịch\n• Chữ Hán chính xác ứng với cách đọc 「けつえき」 là 「血液」."
+    }
+  ]
+}

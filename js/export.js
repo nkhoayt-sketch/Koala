@@ -96,10 +96,13 @@ export function buildMistakesReport(dayTitle, questions = [], userAnswers = {}, 
     return null;
   }
 
+  const isN3 = (options && options.level === 'N3') ||
+    (typeof dayTitle === 'string' && /N3/i.test(dayTitle)) ||
+    (questions && questions.length > 0 && questions[0].id && String(questions[0].id).toLowerCase().includes('n3'));
   const isN2 = (options && options.level === 'N2') ||
     (typeof dayTitle === 'string' && /N2/i.test(dayTitle)) ||
     (questions && questions.length > 0 && questions[0].id && String(questions[0].id).toLowerCase().includes('n2'));
-  const targetDeck = (options && options.deckName) || (isN2 ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review');
+  const targetDeck = (options && options.deckName) || (isN3 ? 'Koala_JLPT::N3_Review' : (isN2 ? 'Koala_JLPT::N2_Review' : 'Koala_JLPT::N1_Review'));
 
   const dateStr = new Date().toLocaleDateString('vi-VN', {
     year: 'numeric',
@@ -136,6 +139,9 @@ export function buildMistakesReport(dayTitle, questions = [], userAnswers = {}, 
       report += `• Lựa chọn đã chọn : ❌ ${userChoiceText}\n`;
     }
     report += `• Đáp án chính xác : ✅ ${correctText}\n`;
+    if (q.hanViet) {
+      report += `• Âm Hán Việt     : 🇨🇳 ${q.hanViet}\n`;
+    }
     report += `• Giải thích chi tiết:\n${(q.explanation || '').trim()}\n`;
     report += `----------------------------------------------------\n\n`;
   });
@@ -300,6 +306,11 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAn
             ✅ Đáp án đúng: (${q.answer + 1}) ${q.options[q.answer] || ''}
           </div>
           ${userChoiceHtml}
+          ${q.hanViet ? `
+            <div style="font-size: 13px; font-weight: bold; color: #78350f; background: #fef3c7; border: 1px solid #fde68a; padding: 6px 10px; border-radius: 6px; margin-bottom: 10px;">
+              🇨🇳 Âm Hán Việt: ${q.hanViet}
+            </div>
+          ` : ''}
           <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 12px; white-space: pre-line; color: #1e293b;">
             ${q.explanation || ''}
           </div>
@@ -311,7 +322,7 @@ export async function sendMistakesToAnkiConnect(dayTitle, questions = [], userAn
 
       const noteTags = [
         'Koala_JLPT',
-        isN2 ? 'JLPT_N2' : 'JLPT_N1',
+        isN3 ? 'JLPT_N3' : (isN2 ? 'JLPT_N2' : 'JLPT_N1'),
         item.tag
       ];
       if (q.section) {

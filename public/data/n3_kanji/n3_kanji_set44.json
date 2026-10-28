@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set44",
+  "set": "Set 44",
+  "title": "Kanji N3 • Set 44 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s44_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "わたしのパソコンは<u>しだいに</u>動きが遅くなってきた。",
+      "targetWord": "しだいに",
+      "options": [
+        "次第に",
+        "次題に",
+        "次待に",
+        "次退に"
+      ],
+      "answer": 1,
+      "hanViet": "Thứ - Đệ",
+      "explanation": "【正解】1 (次第に)\n\n• Từ vựng kiểm tra: 次第に (しだいに)\n• Âm Hán Việt: Thứ - Đệ\n• Chữ Hán chính xác ứng với cách đọc 「しだいに」 là 「次第に」."
+    },
+    {
+      "id": "n3_k_s44_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "君の夢が<u>じつげん</u>されるかどうかは君の努力しだいだ。",
+      "targetWord": "じつげん",
+      "options": [
+        "実現",
+        "実元",
+        "実限",
+        "実言"
+      ],
+      "answer": 1,
+      "hanViet": "Khách - Hiện",
+      "explanation": "【正解】1 (実現)\n\n• Từ vựng kiểm tra: 実現 (じつげん)\n• Âm Hán Việt: Khách - Hiện\n• Chữ Hán chính xác ứng với cách đọc 「じつげん」 là 「実現」."
+    },
+    {
+      "id": "n3_k_s44_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "わたしは今日少し<u>い</u>の調子が悪いです。",
+      "targetWord": "い",
+      "options": [
+        "胃",
+        "骨",
+        "育",
+        "背"
+      ],
+      "answer": 1,
+      "hanViet": "Vị",
+      "explanation": "【正解】1 (胃)\n\n• Từ vựng kiểm tra: 胃 (い)\n• Âm Hán Việt: Vị\n• Chữ Hán chính xác ứng với cách đọc 「い」 là 「胃」."
+    },
+    {
+      "id": "n3_k_s44_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "このスマホの<u>きのう</u>について説明してください。",
+      "targetWord": "きのう",
+      "options": [
+        "帰脳",
+        "機脳",
+        "帰能",
+        "機能"
+      ],
+      "answer": 4,
+      "hanViet": "Cơ - Năng",
+      "explanation": "【正解】4 (機能)\n\n• Từ vựng kiểm tra: 機能 (きのう)\n• Âm Hán Việt: Cơ - Năng\n• Chữ Hán chính xác ứng với cách đọc 「きのう」 là 「機能」."
+    },
+    {
+      "id": "n3_k_s44_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "いすに過度の<u>じゅうりょう</u>がかかるとこわれます。",
+      "targetWord": "じゅうりょう",
+      "options": [
+        "重両",
+        "重領",
+        "重量",
+        "重料"
+      ],
+      "answer": 3,
+      "hanViet": "Trọng - Lượng",
+      "explanation": "【正解】3 (重量)\n\n• Từ vựng kiểm tra: 重量 (じゅうりょう)\n• Âm Hán Việt: Trọng - Lượng\n• Chữ Hán chính xác ứng với cách đọc 「じゅうりょう」 là 「重量」."
+    },
+    {
+      "id": "n3_k_s44_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "陸上部は避暑地で1週間の<u>がっしゅく</u>をした。",
+      "targetWord": "がっしゅく",
+      "options": [
+        "合屋",
+        "合宿",
+        "下屋",
+        "下宿"
+      ],
+      "answer": 2,
+      "hanViet": "Hợp - Túc",
+      "explanation": "【正解】2 (合宿)\n\n• Từ vựng kiểm tra: 合宿 (がっしゅく)\n• Âm Hán Việt: Hợp - Túc\n• Chữ Hán chính xác ứng với cách đọc 「がっしゅく」 là 「合宿」."
+    },
+    {
+      "id": "n3_k_s44_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "画面の指示にしたがって、データを<u>いどう</u>してください。",
+      "targetWord": "いどう",
+      "options": [
+        "異道",
+        "異動",
+        "移道",
+        "移動"
+      ],
+      "answer": 4,
+      "hanViet": "Di - Động",
+      "explanation": "【正解】4 (移動)\n\n• Từ vựng kiểm tra: 移動 (いどう)\n• Âm Hán Việt: Di - Động\n• Chữ Hán chính xác ứng với cách đọc 「いどう」 là 「移動」."
+    },
+    {
+      "id": "n3_k_s44_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "わたしは今日、旅行の<u>じょうしゃけん</u>を買いに行きました。",
+      "targetWord": "じょうしゃけん",
+      "options": [
+        "上車券",
+        "上者券",
+        "O乗車券",
+        "乗者券"
+      ],
+      "answer": 3,
+      "hanViet": "Thừa - Xa - Khoán",
+      "explanation": "【正解】3 (O乗車券)\n\n• Từ vựng kiểm tra: O乗車券 (じょうしゃけん)\n• Âm Hán Việt: Thừa - Xa - Khoán\n• Chữ Hán chính xác ứng với cách đọc 「じょうしゃけん」 là 「O乗車券」."
+    },
+    {
+      "id": "n3_k_s44_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "大使館の<u>いりぐち</u>はしまっていました。",
+      "targetWord": "いりぐち",
+      "options": [
+        "人り口",
+        "出り口",
+        "入り口",
+        "居り口"
+      ],
+      "answer": 3,
+      "hanViet": "Nhập - Khẩu",
+      "explanation": "【正解】3 (入り口)\n\n• Từ vựng kiểm tra: 入り口 (いりぐち)\n• Âm Hán Việt: Nhập - Khẩu\n• Chữ Hán chính xác ứng với cách đọc 「いりぐち」 là 「入り口」."
+    },
+    {
+      "id": "n3_k_s44_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 44",
+      "type": "writing",
+      "question": "少女は森の方角を<u>さした</u>。",
+      "targetWord": "さした",
+      "options": [
+        "差した",
+        "指した",
+        "刺した",
+        "削した"
+      ],
+      "answer": 2,
+      "hanViet": "Chỉ",
+      "explanation": "【正解】2 (指した)\n\n• Từ vựng kiểm tra: 指した (さした)\n• Âm Hán Việt: Chỉ\n• Chữ Hán chính xác ứng với cách đọc 「さした」 là 「指した」."
+    }
+  ]
+}

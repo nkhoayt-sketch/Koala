@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set22",
+  "set": "Set 22",
+  "title": "Kanji N3 • Set 22 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s22_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "若者の政治への<u>かんしん</u>が薄れてきている。",
+      "targetWord": "かんしん",
+      "options": [
+        "関心",
+        "歓心",
+        "感心",
+        "肝心"
+      ],
+      "answer": 1,
+      "hanViet": "Quan - Tâm",
+      "explanation": "【正解】1 (関心)\n\n• Từ vựng kiểm tra: 関心 (かんしん)\n• Âm Hán Việt: Quan - Tâm\n• Chữ Hán chính xác ứng với cách đọc 「かんしん」 là 「関心」."
+    },
+    {
+      "id": "n3_k_s22_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "となりの席に<u>うつって</u>話を聞く。",
+      "targetWord": "うつって",
+      "options": [
+        "動って",
+        "写って",
+        "映って",
+        "移って"
+      ],
+      "answer": 4,
+      "hanViet": "Di",
+      "explanation": "【正解】4 (移って)\n\n• Từ vựng kiểm tra: 移って (うつって)\n• Âm Hán Việt: Di\n• Chữ Hán chính xác ứng với cách đọc 「うつって」 là 「移って」."
+    },
+    {
+      "id": "n3_k_s22_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "字が<u>こまかくて</u>読めない。",
+      "targetWord": "こまかくて",
+      "options": [
+        "畑くて",
+        "畑かくて",
+        "細くて",
+        "細かくて"
+      ],
+      "answer": 4,
+      "hanViet": "Tế",
+      "explanation": "【正解】4 (細かくて)\n\n• Từ vựng kiểm tra: 細かくて (こまかくて)\n• Âm Hán Việt: Tế\n• Chữ Hán chính xác ứng với cách đọc 「こまかくて」 là 「細かくて」."
+    },
+    {
+      "id": "n3_k_s22_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "<u>にげる</u>犯人を追いかけた。",
+      "targetWord": "にげる",
+      "options": [
+        "送げる",
+        "逃げる",
+        "亡げる",
+        "忘げる"
+      ],
+      "answer": 2,
+      "hanViet": "Đào",
+      "explanation": "【正解】2 (逃げる)\n\n• Từ vựng kiểm tra: 逃げる (にげる)\n• Âm Hán Việt: Đào\n• Chữ Hán chính xác ứng với cách đọc 「にげる」 là 「逃げる」."
+    },
+    {
+      "id": "n3_k_s22_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "空の<u>ようき</u>はあとで回収に来ます。",
+      "targetWord": "ようき",
+      "options": [
+        "用具",
+        "用紙",
+        "容器",
+        "容機"
+      ],
+      "answer": 3,
+      "hanViet": "Dung - Khí",
+      "explanation": "【正解】3 (容器)\n\n• Từ vựng kiểm tra: 容器 (ようき)\n• Âm Hán Việt: Dung - Khí\n• Chữ Hán chính xác ứng với cách đọc 「ようき」 là 「容器」."
+    },
+    {
+      "id": "n3_k_s22_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "部下をきびしく<u>そだてる</u>。",
+      "targetWord": "そだてる",
+      "options": [
+        "息てる",
+        "健てる",
+        "育てる",
+        "建てる"
+      ],
+      "answer": 3,
+      "hanViet": "Dục",
+      "explanation": "【正解】3 (育てる)\n\n• Từ vựng kiểm tra: 育てる (そだてる)\n• Âm Hán Việt: Dục\n• Chữ Hán chính xác ứng với cách đọc 「そだてる」 là 「育てる」."
+    },
+    {
+      "id": "n3_k_s22_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "きょう発売の<u>しゅうかんし</u>を読んだ。",
+      "targetWord": "しゅうかんし",
+      "options": [
+        "週刊紙",
+        "週刊誌",
+        "日刊紙",
+        "日刊誌"
+      ],
+      "answer": 2,
+      "hanViet": "Chu - San - Chí",
+      "explanation": "【正解】2 (週刊誌)\n\n• Từ vựng kiểm tra: 週刊誌 (しゅうかんし)\n• Âm Hán Việt: Chu - San - Chí\n• Chữ Hán chính xác ứng với cách đọc 「しゅうかんし」 là 「週刊誌」."
+    },
+    {
+      "id": "n3_k_s22_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "わたしの自転車を<u>じゆう</u>に使っていただいてもけっこうです。",
+      "targetWord": "じゆう",
+      "options": [
+        "利用",
+        "使用",
+        "O事由",
+        "自由"
+      ],
+      "answer": 4,
+      "hanViet": "Tự - Do",
+      "explanation": "【正解】4 (自由)\n\n• Từ vựng kiểm tra: 自由 (じゆう)\n• Âm Hán Việt: Tự - Do\n• Chữ Hán chính xác ứng với cách đọc 「じゆう」 là 「自由」."
+    },
+    {
+      "id": "n3_k_s22_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "頭が<u>いたい</u>ので、薬を飲みました。",
+      "targetWord": "いたい",
+      "options": [
+        "病い",
+        "疲い",
+        "症い",
+        "痛い"
+      ],
+      "answer": 4,
+      "hanViet": "Thống",
+      "explanation": "【正解】4 (痛い)\n\n• Từ vựng kiểm tra: 痛い (いたい)\n• Âm Hán Việt: Thống\n• Chữ Hán chính xác ứng với cách đọc 「いたい」 là 「痛い」."
+    },
+    {
+      "id": "n3_k_s22_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 22",
+      "type": "writing",
+      "question": "学生時代は京都で<u>くらした</u>。",
+      "targetWord": "くらした",
+      "options": [
+        "暮らした",
+        "幕らした",
+        "募らした",
+        "墓らした"
+      ],
+      "answer": 1,
+      "hanViet": "Mộ",
+      "explanation": "【正解】1 (暮らした)\n\n• Từ vựng kiểm tra: 暮らした (くらした)\n• Âm Hán Việt: Mộ\n• Chữ Hán chính xác ứng với cách đọc 「くらした」 là 「暮らした」."
+    }
+  ]
+}

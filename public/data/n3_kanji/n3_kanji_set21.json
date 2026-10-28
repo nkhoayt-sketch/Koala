@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set21",
+  "set": "Set 21",
+  "title": "Kanji N3 • Set 21 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s21_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "<u>せいかい</u>に丸をつけてください。",
+      "targetWord": "せいかい",
+      "options": [
+        "成解",
+        "成確",
+        "正解",
+        "正確"
+      ],
+      "answer": 3,
+      "hanViet": "Chính - Giải",
+      "explanation": "【正解】3 (正解)\n\n• Từ vựng kiểm tra: 正解 (せいかい)\n• Âm Hán Việt: Chính - Giải\n• Chữ Hán chính xác ứng với cách đọc 「せいかい」 là 「正解」."
+    },
+    {
+      "id": "n3_k_s21_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "この場所に<u>ちゅうしゃ</u>してはいけません。",
+      "targetWord": "ちゅうしゃ",
+      "options": [
+        "駐車",
+        "駅車",
+        "停車",
+        "享車"
+      ],
+      "answer": 1,
+      "hanViet": "Trú - Xa",
+      "explanation": "【正解】1 (駐車)\n\n• Từ vựng kiểm tra: 駐車 (ちゅうしゃ)\n• Âm Hán Việt: Trú - Xa\n• Chữ Hán chính xác ứng với cách đọc 「ちゅうしゃ」 là 「駐車」."
+    },
+    {
+      "id": "n3_k_s21_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "彼は昨日風邪で学校を<u>けっせき</u>した。",
+      "targetWord": "けっせき",
+      "options": [
+        "欠度",
+        "欠席",
+        "決度",
+        "決席"
+      ],
+      "answer": 2,
+      "hanViet": "Khiếm - Tịch",
+      "explanation": "【正解】2 (欠席)\n\n• Từ vựng kiểm tra: 欠席 (けっせき)\n• Âm Hán Việt: Khiếm - Tịch\n• Chữ Hán chính xác ứng với cách đọc 「けっせき」 là 「欠席」."
+    },
+    {
+      "id": "n3_k_s21_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "赤ちゃんは1年で体重が3<u>ばい</u>になった。",
+      "targetWord": "ばい",
+      "options": [
+        "倍",
+        "部",
+        "加",
+        "足"
+      ],
+      "answer": 1,
+      "hanViet": "Bội",
+      "explanation": "【正解】1 (倍)\n\n• Từ vựng kiểm tra: 倍 (ばい)\n• Âm Hán Việt: Bội\n• Chữ Hán chính xác ứng với cách đọc 「ばい」 là 「倍」."
+    },
+    {
+      "id": "n3_k_s21_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "<u>お皿はかさねて置いてください。</u>",
+      "targetWord": "おもねて",
+      "options": [
+        "結ねて",
+        "連ねて",
+        "吊ねて",
+        "重ねて"
+      ],
+      "answer": 4,
+      "hanViet": "Trọng",
+      "explanation": "【正解】4 (重ねて)\n\n• Từ vựng kiểm tra: 重ねて (おもねて)\n• Âm Hán Việt: Trọng\n• Chữ Hán chính xác ứng với cách đọc 「おもねて」 là 「重ねて」."
+    },
+    {
+      "id": "n3_k_s21_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "主人は毎晩<u>きたく</u>が遅い。",
+      "targetWord": "きたく",
+      "options": [
+        "帰家",
+        "帰宅",
+        "帰屋",
+        "帰沢"
+      ],
+      "answer": 2,
+      "hanViet": "Quy - Trạch",
+      "explanation": "【正解】2 (帰宅)\n\n• Từ vựng kiểm tra: 帰宅 (きたく)\n• Âm Hán Việt: Quy - Trạch\n• Chữ Hán chính xác ứng với cách đọc 「きたく」 là 「帰宅」."
+    },
+    {
+      "id": "n3_k_s21_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "その犬は目の不自由な主人をいろいろな危険から<u>まもった</u>。",
+      "targetWord": "まもった",
+      "options": [
+        "迷った",
+        "移った",
+        "守った",
+        "保った"
+      ],
+      "answer": 3,
+      "hanViet": "Thủ",
+      "explanation": "【正解】3 (守った)\n\n• Từ vựng kiểm tra: 守った (まもった)\n• Âm Hán Việt: Thủ\n• Chữ Hán chính xác ứng với cách đọc 「まもった」 là 「守った」."
+    },
+    {
+      "id": "n3_k_s21_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "わたしは<u>げんざい</u>の仕事に満足している。",
+      "targetWord": "げんざい",
+      "options": [
+        "今存",
+        "今在",
+        "O現存",
+        "現在"
+      ],
+      "answer": 4,
+      "hanViet": "Hiện - Tại",
+      "explanation": "【正解】4 (現在)\n\n• Từ vựng kiểm tra: 現在 (げんざい)\n• Âm Hán Việt: Hiện - Tại\n• Chữ Hán chính xác ứng với cách đọc 「げんざい」 là 「現在」."
+    },
+    {
+      "id": "n3_k_s21_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "今年の夏は<u>きおん</u>が高かった。",
+      "targetWord": "きおん",
+      "options": [
+        "気混",
+        "気湯",
+        "気温",
+        "気湿"
+      ],
+      "answer": 3,
+      "hanViet": "Khí - Ôn",
+      "explanation": "【正解】3 (気温)\n\n• Từ vựng kiểm tra: 気温 (きおん)\n• Âm Hán Việt: Khí - Ôn\n• Chữ Hán chính xác ứng với cách đọc 「きおん」 là 「気温」."
+    },
+    {
+      "id": "n3_k_s21_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 21",
+      "type": "writing",
+      "question": "彼女は門のすぐ<u>うちがわ</u>に立っていた。",
+      "targetWord": "うちがわ",
+      "options": [
+        "内則",
+        "内側",
+        "家則",
+        "家側"
+      ],
+      "answer": 2,
+      "hanViet": "Nội - Trắc",
+      "explanation": "【正解】2 (内側)\n\n• Từ vựng kiểm tra: 内側 (うちがわ)\n• Âm Hán Việt: Nội - Trắc\n• Chữ Hán chính xác ứng với cách đọc 「うちがわ」 là 「内側」."
+    }
+  ]
+}

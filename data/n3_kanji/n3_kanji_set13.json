@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set13",
+  "set": "Set 13",
+  "title": "Kanji N3 • Set 13 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s13_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "わたしの専門は<u>経営学</u>です。",
+      "targetWord": "経営学",
+      "options": [
+        "げいざいがく",
+        "けいざいがく",
+        "げいえいがく",
+        "けいえいがく"
+      ],
+      "answer": 4,
+      "hanViet": "Kinh - Doanh - Học",
+      "explanation": "【正解】4 (けいえいがく)\n\n• Từ vựng kiểm tra: 経営学 [けいえいがく]\n• Âm Hán Việt: Kinh - Doanh - Học\n• Cách đọc chính xác của 「経営学」 trong câu là 「けいえいがく」."
+    },
+    {
+      "id": "n3_k_s13_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "患者は<u>呼吸</u>が荒かった。",
+      "targetWord": "呼吸",
+      "options": [
+        "ほきゅ",
+        "ほきゅう",
+        "こきゅ",
+        "こきゅう"
+      ],
+      "answer": 4,
+      "hanViet": "Hô - Hấp",
+      "explanation": "【正解】4 (こきゅう)\n\n• Từ vựng kiểm tra: 呼吸 [こきゅう]\n• Âm Hán Việt: Hô - Hấp\n• Cách đọc chính xác của 「呼吸」 trong câu là 「こきゅう」."
+    },
+    {
+      "id": "n3_k_s13_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "<u>検査</u>の結果彼は入院することになった。",
+      "targetWord": "検査",
+      "options": [
+        "けんさ",
+        "けんしゃ",
+        "かんさ",
+        "かんしゃ"
+      ],
+      "answer": 1,
+      "hanViet": "Kiểm - Tra",
+      "explanation": "【正解】1 (けんさ)\n\n• Từ vựng kiểm tra: 検査 [けんさ]\n• Âm Hán Việt: Kiểm - Tra\n• Cách đọc chính xác của 「検査」 trong câu là 「けんさ」."
+    },
+    {
+      "id": "n3_k_s13_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "赤ちゃんの<u>歯</u>がようやく生えてきた。",
+      "targetWord": "歯",
+      "options": [
+        "かえて",
+        "ふえて",
+        "はえて",
+        "きえて"
+      ],
+      "answer": 3,
+      "hanViet": "Xỉ",
+      "explanation": "【正解】3 (はえて)\n\n• Từ vựng kiểm tra: 歯 [はえて]\n• Âm Hán Việt: Xỉ\n• Cách đọc chính xác của 「歯」 trong câu là 「はえて」."
+    },
+    {
+      "id": "n3_k_s13_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "来月大阪に1週間<u>出張</u>します。",
+      "targetWord": "出張",
+      "options": [
+        "しゅっちよ",
+        "しゅっちょう",
+        "しゅつじよ",
+        "しゅつじょう"
+      ],
+      "answer": 2,
+      "hanViet": "Xuất - Trương",
+      "explanation": "【正解】2 (しゅっちょう)\n\n• Từ vựng kiểm tra: 出張 [しゅっちょう]\n• Âm Hán Việt: Xuất - Trương\n• Cách đọc chính xác của 「出張」 trong câu là 「しゅっちょう」."
+    },
+    {
+      "id": "n3_k_s13_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "この表は地球温暖化が進んでいることを<u>示し</u>ている。",
+      "targetWord": "示し",
+      "options": [
+        "のばして",
+        "しめして",
+        "こぼして",
+        "あらわして"
+      ],
+      "answer": 2,
+      "hanViet": "Thị",
+      "explanation": "【正解】2 (しめして)\n\n• Từ vựng kiểm tra: 示し [しめして]\n• Âm Hán Việt: Thị\n• Cách đọc chính xác của 「示し」 trong câu là 「しめして」."
+    },
+    {
+      "id": "n3_k_s13_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "このビルは6月<u>完成予定</u>です。",
+      "targetWord": "完成予定",
+      "options": [
+        "かんしょう",
+        "かんじょう",
+        "かんせい",
+        "かんぜい"
+      ],
+      "answer": 3,
+      "hanViet": "Hoàn - Thành - Tranh - Định",
+      "explanation": "【正解】3 (かんせい)\n\n• Từ vựng kiểm tra: 完成予定 [かんせい]\n• Âm Hán Việt: Hoàn - Thành - Tranh - Định\n• Cách đọc chính xác của 「完成予定」 trong câu là 「かんせい」."
+    },
+    {
+      "id": "n3_k_s13_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "彼は桜の木の枝を1本<u>折っ</u>た。",
+      "targetWord": "折っ",
+      "options": [
+        "おった",
+        "かった",
+        "Oとった",
+        "へった"
+      ],
+      "answer": 1,
+      "hanViet": "Chiết",
+      "explanation": "【正解】1 (おった)\n\n• Từ vựng kiểm tra: 折っ [おった]\n• Âm Hán Việt: Chiết\n• Cách đọc chính xác của 「折っ」 trong câu là 「おった」."
+    },
+    {
+      "id": "n3_k_s13_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "ご<u>協力</u>、ありがとうございます。",
+      "targetWord": "協力",
+      "options": [
+        "どりょく",
+        "どうりょく",
+        "きよりょく",
+        "きょうりょく"
+      ],
+      "answer": 4,
+      "hanViet": "Hiệp - Lực",
+      "explanation": "【正解】4 (きょうりょく)\n\n• Từ vựng kiểm tra: 協力 [きょうりょく]\n• Âm Hán Việt: Hiệp - Lực\n• Cách đọc chính xác của 「協力」 trong câu là 「きょうりょく」."
+    },
+    {
+      "id": "n3_k_s13_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 13",
+      "type": "reading",
+      "question": "彼は病院に着いたときにはまだ<u>息</u>があった。",
+      "targetWord": "息",
+      "options": [
+        "あわ",
+        "あせ",
+        "いわ",
+        "いき"
+      ],
+      "answer": 4,
+      "hanViet": "Tức",
+      "explanation": "【正解】4 (いき)\n\n• Từ vựng kiểm tra: 息 [いき]\n• Âm Hán Việt: Tức\n• Cách đọc chính xác của 「息」 trong câu là 「いき」."
+    }
+  ]
+}

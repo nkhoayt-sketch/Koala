@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set39",
+  "set": "Set 39",
+  "title": "Kanji N3 • Set 39 (問題2　書き方クイズ)",
+  "level": "N3",
+  "type": "writing",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s39_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "毎日の行動を<u>はんせい</u>して、欠点をあらためる。",
+      "targetWord": "はんせい",
+      "options": [
+        "反省",
+        "反成",
+        "半省",
+        "半成"
+      ],
+      "answer": 1,
+      "hanViet": "Phản - Tỉnh",
+      "explanation": "【正解】1 (反省)\n\n• Từ vựng kiểm tra: 反省 (はんせい)\n• Âm Hán Việt: Phản - Tỉnh\n• Chữ Hán chính xác ứng với cách đọc 「はんせい」 là 「反省」."
+    },
+    {
+      "id": "n3_k_s39_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "この薬には、虫の好まない<u>せいぶん</u>が含まれている。",
+      "targetWord": "せいぶん",
+      "options": [
+        "成分",
+        "清分",
+        "正分",
+        "性分"
+      ],
+      "answer": 1,
+      "hanViet": "Thành - Phân • phần • phận",
+      "explanation": "【正解】1 (成分)\n\n• Từ vựng kiểm tra: 成分 (せいぶん)\n• Âm Hán Việt: Thành - Phân • phần • phận\n• Chữ Hán chính xác ứng với cách đọc 「せいぶん」 là 「成分」."
+    },
+    {
+      "id": "n3_k_s39_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "頑張って<u>せつやく</u>しているのに、なぜか貯金額が増えない。",
+      "targetWord": "せつやく",
+      "options": [
+        "倹約",
+        "倹略",
+        "節約",
+        "節略"
+      ],
+      "answer": 3,
+      "hanViet": "Tiết - Ước",
+      "explanation": "【正解】3 (節約)\n\n• Từ vựng kiểm tra: 節約 (せつやく)\n• Âm Hán Việt: Tiết - Ước\n• Chữ Hán chính xác ứng với cách đọc 「せつやく」 là 「節約」."
+    },
+    {
+      "id": "n3_k_s39_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "息を深く吸うと<u>せなか</u>が痛いです。",
+      "targetWord": "せなか",
+      "options": [
+        "肯中",
+        "背中",
+        "脊中",
+        "排中"
+      ],
+      "answer": 2,
+      "hanViet": "Bối - Trung",
+      "explanation": "【正解】2 (背中)\n\n• Từ vựng kiểm tra: 背中 (せなか)\n• Âm Hán Việt: Bối - Trung\n• Chữ Hán chính xác ứng với cách đọc 「せなか」 là 「背中」."
+    },
+    {
+      "id": "n3_k_s39_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "<u>よけい</u>なものは入れないでください。",
+      "targetWord": "よけい",
+      "options": [
+        "余過",
+        "余計",
+        "予過",
+        "予計"
+      ],
+      "answer": 2,
+      "hanViet": "Dư - Kế",
+      "explanation": "【正解】2 (余計)\n\n• Từ vựng kiểm tra: 余計 (よけい)\n• Âm Hán Việt: Dư - Kế\n• Chữ Hán chính xác ứng với cách đọc 「よけい」 là 「余計」."
+    },
+    {
+      "id": "n3_k_s39_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "農家の人が、<u>はたけ</u>に野菜の種をまいている。",
+      "targetWord": "はたけ",
+      "options": [
+        "畑",
+        "細",
+        "田",
+        "旧"
+      ],
+      "answer": 1,
+      "hanViet": "Vườn",
+      "explanation": "【正解】1 (畑)\n\n• Từ vựng kiểm tra: 畑 (はたけ)\n• Âm Hán Việt: Vườn\n• Chữ Hán chính xác ứng với cách đọc 「はたけ」 là 「畑」."
+    },
+    {
+      "id": "n3_k_s39_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "雪山で道に迷ったが、何とか<u>たすかる</u>方法を探した。",
+      "targetWord": "たすかる",
+      "options": [
+        "助かる",
+        "守かる",
+        "支かる",
+        "協かる"
+      ],
+      "answer": 1,
+      "hanViet": "Trợ",
+      "explanation": "【正解】1 (助かる)\n\n• Từ vựng kiểm tra: 助かる (たすかる)\n• Âm Hán Việt: Trợ\n• Chữ Hán chính xác ứng với cách đọc 「たすかる」 là 「助かる」."
+    },
+    {
+      "id": "n3_k_s39_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "この<u>ひょうげん</u>は目上の人に対するものとしては適切ではない。",
+      "targetWord": "ひょうげん",
+      "options": [
+        "標現",
+        "標言",
+        "O表現",
+        "表言"
+      ],
+      "answer": 3,
+      "hanViet": "Biểu - Hiện",
+      "explanation": "【正解】3 (O表現)\n\n• Từ vựng kiểm tra: O表現 (ひょうげん)\n• Âm Hán Việt: Biểu - Hiện\n• Chữ Hán chính xác ứng với cách đọc 「ひょうげん」 là 「O表現」."
+    },
+    {
+      "id": "n3_k_s39_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "<u>ちゅうしゃじょう</u>が狭いので、公共交通機関をご利用ください。",
+      "targetWord": "ちゅうしゃじょう",
+      "options": [
+        "駐車場",
+        "駐車場",
+        "馳車場",
+        "騒車場"
+      ],
+      "answer": 2,
+      "hanViet": "Trú - Xa - Trường",
+      "explanation": "【正解】2 (駐車場)\n\n• Từ vựng kiểm tra: 駐車場 (ちゅうしゃじょう)\n• Âm Hán Việt: Trú - Xa - Trường\n• Chữ Hán chính xác ứng với cách đọc 「ちゅうしゃじょう」 là 「駐車場」."
+    },
+    {
+      "id": "n3_k_s39_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 39",
+      "type": "writing",
+      "question": "中村さんは英語を話すのがとても<u>にがて</u>です。",
+      "targetWord": "にがて",
+      "options": [
+        "左手",
+        "若手",
+        "右手",
+        "苦手"
+      ],
+      "answer": 4,
+      "hanViet": "Khổ - Thủ",
+      "explanation": "【正解】4 (苦手)\n\n• Từ vựng kiểm tra: 苦手 (にがて)\n• Âm Hán Việt: Khổ - Thủ\n• Chữ Hán chính xác ứng với cách đọc 「にがて」 là 「苦手」."
+    }
+  ]
+}

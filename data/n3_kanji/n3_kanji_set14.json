@@ -1,0 +1,190 @@
+{
+  "id": "n3_k_set14",
+  "set": "Set 14",
+  "title": "Kanji N3 • Set 14 (問題1　読み方クイズ)",
+  "level": "N3",
+  "type": "reading",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "n3_k_s14_q01",
+      "number": 1,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "領収書は項目別に<u>分類</u>してください。",
+      "targetWord": "分類",
+      "options": [
+        "ぶんるい",
+        "ぶんすう",
+        "ぶんりゅう",
+        "ぶんべつ"
+      ],
+      "answer": 1,
+      "hanViet": "Phân • phần • phận - Loại",
+      "explanation": "【正解】1 (ぶんるい)\n\n• Từ vựng kiểm tra: 分類 [ぶんるい]\n• Âm Hán Việt: Phân • phần • phận - Loại\n• Cách đọc chính xác của 「分類」 trong câu là 「ぶんるい」."
+    },
+    {
+      "id": "n3_k_s14_q02",
+      "number": 2,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "今日は頭が痛くて仕事に<u>集中</u>できなかった。",
+      "targetWord": "集中",
+      "options": [
+        "しゅじゅう",
+        "しゅちゅう",
+        "しゅうじゅう",
+        "しゅうちゅう"
+      ],
+      "answer": 4,
+      "hanViet": "Tập - Trung",
+      "explanation": "【正解】4 (しゅうちゅう)\n\n• Từ vựng kiểm tra: 集中 [しゅうちゅう]\n• Âm Hán Việt: Tập - Trung\n• Cách đọc chính xác của 「集中」 trong câu là 「しゅうちゅう」."
+    },
+    {
+      "id": "n3_k_s14_q03",
+      "number": 3,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "ハムを<u>厚く</u>切りました。",
+      "targetWord": "厚く",
+      "options": [
+        "あさく",
+        "うすく",
+        "あつく",
+        "かたく"
+      ],
+      "answer": 3,
+      "hanViet": "Hậu",
+      "explanation": "【正解】3 (あつく)\n\n• Từ vựng kiểm tra: 厚く [あつく]\n• Âm Hán Việt: Hậu\n• Cách đọc chính xác của 「厚く」 trong câu là 「あつく」."
+    },
+    {
+      "id": "n3_k_s14_q04",
+      "number": 4,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "<u>貯金</u>なら300万円あります。",
+      "targetWord": "貯金",
+      "options": [
+        "ちょきん",
+        "だいきん",
+        "げんきん",
+        "ぜいきん"
+      ],
+      "answer": 1,
+      "hanViet": "Trữ - Kim",
+      "explanation": "【正解】1 (ちょきん)\n\n• Từ vựng kiểm tra: 貯金 [ちょきん]\n• Âm Hán Việt: Trữ - Kim\n• Cách đọc chính xác của 「貯金」 trong câu là 「ちょきん」."
+    },
+    {
+      "id": "n3_k_s14_q05",
+      "number": 5,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "指示があるまで<u>席</u>を立たないこと。",
+      "targetWord": "席",
+      "options": [
+        "ふた",
+        "あな",
+        "かぎ",
+        "せき"
+      ],
+      "answer": 4,
+      "hanViet": "Tịch",
+      "explanation": "【正解】4 (せき)\n\n• Từ vựng kiểm tra: 席 [せき]\n• Âm Hán Việt: Tịch\n• Cách đọc chính xác của 「席」 trong câu là 「せき」."
+    },
+    {
+      "id": "n3_k_s14_q06",
+      "number": 6,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "本日の<u>外科</u>担当医師は山田先生です。",
+      "targetWord": "外科",
+      "options": [
+        "げか",
+        "けが",
+        "がいか",
+        "がいが"
+      ],
+      "answer": 1,
+      "hanViet": "Ngoại - Khoa",
+      "explanation": "【正解】1 (げか)\n\n• Từ vựng kiểm tra: 外科 [げか]\n• Âm Hán Việt: Ngoại - Khoa\n• Cách đọc chính xác của 「外科」 trong câu là 「げか」."
+    },
+    {
+      "id": "n3_k_s14_q07",
+      "number": 7,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "彼はその件に関してわたしに<u>情報</u>をくれた。",
+      "targetWord": "情報",
+      "options": [
+        "ぞうほう",
+        "ぞうほ",
+        "じょうほう",
+        "じょうほ"
+      ],
+      "answer": 3,
+      "hanViet": "Tình - Báo",
+      "explanation": "【正解】3 (じょうほう)\n\n• Từ vựng kiểm tra: 情報 [じょうほう]\n• Âm Hán Việt: Tình - Báo\n• Cách đọc chính xác của 「情報」 trong câu là 「じょうほう」."
+    },
+    {
+      "id": "n3_k_s14_q08",
+      "number": 8,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "写真コンテストに<u>応募</u>した。",
+      "targetWord": "応募",
+      "options": [
+        "おうぼ",
+        "おうぼう",
+        "Oおうも",
+        "おうもう"
+      ],
+      "answer": 1,
+      "hanViet": "応 - Mộ",
+      "explanation": "【正解】1 (おうぼ)\n\n• Từ vựng kiểm tra: 応募 [おうぼ]\n• Âm Hán Việt: 応 - Mộ\n• Cách đọc chính xác của 「応募」 trong câu là 「おうぼ」."
+    },
+    {
+      "id": "n3_k_s14_q09",
+      "number": 9,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "わたしの父は<u>失業</u>した。",
+      "targetWord": "失業",
+      "options": [
+        "しつこう",
+        "しつきょう",
+        "しつごう",
+        "しつぎょう"
+      ],
+      "answer": 4,
+      "hanViet": "Thất - Nghiệp",
+      "explanation": "【正解】4 (しつぎょう)\n\n• Từ vựng kiểm tra: 失業 [しつぎょう]\n• Âm Hán Việt: Thất - Nghiệp\n• Cách đọc chính xác của 「失業」 trong câu là 「しつぎょう」."
+    },
+    {
+      "id": "n3_k_s14_q10",
+      "number": 10,
+      "level": "N3",
+      "set": "Set 14",
+      "type": "reading",
+      "question": "この海岸は<u>岩</u>が少ない。",
+      "targetWord": "岩",
+      "options": [
+        "なみ",
+        "いわ",
+        "すな",
+        "かい"
+      ],
+      "answer": 2,
+      "hanViet": "Nham",
+      "explanation": "【正解】2 (いわ)\n\n• Từ vựng kiểm tra: 岩 [いわ]\n• Âm Hán Việt: Nham\n• Cách đọc chính xác của 「岩」 trong câu là 「いわ」."
+    }
+  ]
+}
