@@ -1,0 +1,235 @@
+{
+  "chapterId": "ch07",
+  "lesson": "第7課: 付随行動 (Hành động đi kèm)",
+  "theme": "事柄を説明する",
+  "group": "group1",
+  "title": "第7課: 付随行動",
+  "description": "Các mẫu ngữ pháp: ～がてら, ～かたがた, ～かたわら.",
+  "questions": [
+    {
+      "id": "skz_b_ch07_q01",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "～がてら",
+      "question": "散歩（　）がてら、近くのポストまで手紙を出しに行ってくるよ。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tiện thể đi dạo bộ thì tôi chạy ra hòm thư gần đây bỏ thư gửi luôn nhé.\n【Phân tích】N / V-ます (bỏ ます) ＋ がてら: Nhân tiện làm việc A thì kết hợp làm thêm việc B.",
+      "grammarRule": "N / V-ます (bỏ ます) ＋ がてら: Tiện thể làm việc chính thì làm luôn việc phụ (thường là việc đi lại, sinh hoạt thường nhật)."
+    },
+    {
+      "id": "skz_b_ch07_q02",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "～がてら",
+      "question": "買い物がてら、（　）。",
+      "options": [
+        "a. 近所のカフェでお茶を飲もう",
+        "b. 家の掃除をした",
+        "c. 宿題を終わらせた"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tiện thể đi mua sắm thì ghé vào quán cà phê gần nhà làm tách trà luôn đi.\n【Phân tích】Hành động di chuyển đi ra ngoài tiện thể ghé quán uống trà -> お茶を飲もう.",
+      "grammarRule": "Vế sau là hành vi di chuyển kết hợp cùng lộ trình."
+    },
+    {
+      "id": "skz_b_ch07_q03",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "～かたがた",
+      "question": "ご挨拶（　）かたがた、新居のお祝いにお伺いいたしました。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhân tiện đi chào hỏi thăm hỏi, tôi xin phép ghé qua chúc mừng tân gia nhà mới của anh chị.\n【Phân tích】N (lịch sự, trang trọng) ＋ かたがた: Tiện thể kết hợp hai mục đích trang trọng (chào hỏi, cảm ơn, tạ lỗi).",
+      "grammarRule": "N ＋ かたがた: Tiện thể (dùng trong bối cảnh giao tiếp xã hội lịch sự, trang trọng)."
+    },
+    {
+      "id": "skz_b_ch07_q04",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "～かたがた",
+      "question": "お礼かたがた、（　）。",
+      "options": [
+        "a. 近況をご報告申し上げます",
+        "b. 買い物をした",
+        "c. 遊びに行こう"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhân tiện gửi lời cảm ơn sâu sắc, tôi cũng xin phép được kính báo tình hình gần đây của bản thân.\n【Phân tích】Văn phong trang trọng: ご報告申し上げます.",
+      "grammarRule": "Vế sau sử dụng kính ngữ hoặc lối diễn đạt trang trọng."
+    },
+    {
+      "id": "skz_b_ch07_q05",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "～かたわら",
+      "question": "彼は会社に勤務する（　）かたわら、夜間大学で法律を学んでいる。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bên cạnh công việc chính là làm việc tại công ty, anh ấy còn theo học ngành luật tại trường đại học ban đêm.\n【Phân tích】V-る / Nの ＋ かたわら: Bên cạnh công việc chính thì đồng thời đảm nhiệm một công việc/hoạt động xã hội khác trong thời gian dài.",
+      "grammarRule": "V-る / Nの ＋ かたわら: Bên cạnh công việc/nghề nghiệp chính yếu, đồng thời làm thêm hoạt động khác (kéo dài trong thời gian dài)."
+    },
+    {
+      "id": "skz_b_ch07_q06",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "～かたわら",
+      "question": "母は家業を手伝うかたわら、（　）。",
+      "options": [
+        "a. ボランティア活動に励んでいる",
+        "b. ご飯を食べた",
+        "c. テレビを見た"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Mẹ tôi bên cạnh việc phụ giúp kinh doanh gia đình, còn tích cực tham gia các hoạt động tình nguyện xã hội.\n【Phân tích】Hoạt động xã hội có tính bền vững: ボランティア活動に励んでいる.",
+      "grammarRule": "Hai công việc được duy trì song song, mang tính chất nghề nghiệp hoặc hoạt động xã hội."
+    },
+    {
+      "id": "skz_b_ch07_q07",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "夕涼み（　）がてら、川辺のホタルを見に行きませんか。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tiện thể đi hóng mát buổi chiều tối, chúng mình cùng ra bờ sông ngắm đom đóm đi không?\n【Phân tích】Hành động sinh hoạt đời thường kết hợp đi lại -> 夕涼みがてら.",
+      "grammarRule": "N ＋ がてら: Tiện thể làm gì đó trong đời sống thường nhật."
+    },
+    {
+      "id": "skz_b_ch07_q08",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "出張（　）かたがた、恩師の墓参りをしてまいりました。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Nhân chuyến công tác, tôi đã kết hợp đi viếng mộ người thầy kính yêu của mình.\n【Phân tích】Chuyến đi có mục đích nghi lễ, trang trọng -> 出張かたがた.",
+      "grammarRule": "N ＋ かたがた: Tiện thể làm việc trang trọng."
+    },
+    {
+      "id": "skz_b_ch07_q09",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "彼女は小説を書く（　）かたわら、大学で文学の教鞭を執っている。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Bên cạnh công việc chính là sáng tác tiểu thuyết, cô ấy còn tham gia giảng dạy bộ môn văn học tại trường đại học.\n【Phân tích】Hai nghề nghiệp song hành dài hạn -> ～かたわら.",
+      "grammarRule": "V-る ＋ かたわら: Bên cạnh nghề chính, làm thêm việc phụ dài hạn."
+    },
+    {
+      "id": "skz_b_ch07_q10",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "花見（　）がてら、近くの神社へお参りに行こう。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tiện thể đi ngắm hoa anh đào, chúng mình cùng vào ngôi đền gần đó cầu nguyện luôn nhé.\n【Phân tích】Tiện thể trên đường đi ngắm hoa -> 花見がてら.",
+      "grammarRule": "N ＋ がてら: Tiện thể."
+    },
+    {
+      "id": "skz_b_ch07_q11",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "無事退院のご報告（　）かたがた、主治医の先生へのお礼の手紙を書いた。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Nhân tiện báo tin xuất viện an toàn, tôi đã viết lá thư cảm ơn gửi tới bác sĩ điều trị chính của mình.\n【Phân tích】Báo tin và cảm ơn trang trọng -> ご報告かたがた.",
+      "grammarRule": "N ＋ かたがた: Báo cáo, cảm ơn trang trọng."
+    },
+    {
+      "id": "skz_b_ch07_q12",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "彼は医師として働く（　）かたわら、週末は地域のアマチュア楽団で指揮棒を振っている。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Bên cạnh việc làm bác sĩ, vào cuối tuần anh ấy còn làm nhạc trưởng chỉ huy dàn nhạc nghiệp dư của địa phương.\n【Phân tích】Hai vai trò xã hội song song -> 働くかたわら.",
+      "grammarRule": "V-る ＋ かたわら: Đảm nhiệm hai vai trò song song."
+    },
+    {
+      "id": "skz_b_ch07_q13",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "ドライブ（　）がてら、評判の道の駅に立ち寄ってみた。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tiện chuyến lái xe ngắm cảnh, tôi đã ghé vào trạm dừng chân nổi tiếng ven đường xem sao.\n【Phân tích】Đi dạo lái xe tiện thể ghé thăm -> ドライブがてら.",
+      "grammarRule": "N ＋ がてら: Tiện thể trên đường di chuyển."
+    },
+    {
+      "id": "skz_b_ch07_q14",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "就職のご報告（　）かたがた、お世話になった先輩にお礼のお食事をごちそうした。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Nhân tiện báo tin đã tìm được việc làm, tôi đã mời người tiền bối từng hết lòng giúp đỡ mình một bữa cơm cảm ơn.\n【Phân tích】Báo tin mừng và cảm ơn tiền bối -> ご報告かたがた.",
+      "grammarRule": "N ＋ かたがた: Báo tin kết hợp cảm ơn."
+    },
+    {
+      "id": "skz_b_ch07_q15",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "農業を営む（　）かたわら、特産品を活かしたジャムの加工販売も手掛けている。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Bên cạnh việc làm nông nghiệp, anh ấy còn kiêm luôn việc chế biến và bán mứt tận dụng nông sản đặc sản địa phương.\n【Phân tích】Hai hoạt động kinh doanh bền vững song song -> 営むかたわら.",
+      "grammarRule": "V-る ＋ かたわら: Vừa làm nghề A vừa làm việc B."
+    },
+    {
+      "id": "skz_b_ch07_q16",
+      "lesson": "第7課: 付随行動",
+      "grammarPoint": "第7課 総合問題",
+      "question": "犬の散歩（　）がてら、コンビニで明日の朝食用のパンを買ってきた。",
+      "options": [
+        "a. がてら",
+        "b. かたがた",
+        "c. かたわら"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tiện thể dắt chó đi dạo, tôi đã ghé cửa hàng tiện lợi mua bánh mì cho bữa sáng mai.\n【Phân tích】Đi dạo tiện ghé mua bánh -> 散歩がてら.",
+      "grammarRule": "N ＋ がてら: Tiện thể làm việc vặt thường nhật."
+    }
+  ],
+  "id": "skz_b_ch07"
+}

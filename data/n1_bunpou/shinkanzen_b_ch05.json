@@ -1,0 +1,291 @@
+{
+  "chapterId": "ch05",
+  "lesson": "第5課: 関連・無関係 (Liên quan & Không liên quan)",
+  "theme": "事柄を説明する",
+  "group": "group1",
+  "title": "第5課: 関連・無関係",
+  "description": "Các mẫu ngữ pháp: ～いかんだ, ～いかんにかかわらず・～いかんによらず・～いかんを問わず, ～をものともせず(に), ～をよそに, ～ならいざしらず.",
+  "questions": [
+    {
+      "id": "skz_b_ch05_q01",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～いかんだ",
+      "question": "試験に合格できるかどうかは、これからのあなたの努力（　）いかんだ。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Việc có thi đỗ hay không phụ thuộc hoàn toàn vào nỗ lực từ nay về sau của bạn.\n【Phân tích】N ＋ いかんだ: Tùy thuộc vào N (mang tính quyết định).",
+      "grammarRule": "N ＋ いかんだ / いかんによって: Tùy thuộc vào N mà kết quả sẽ được định đoạt."
+    },
+    {
+      "id": "skz_b_ch05_q02",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～いかんだ",
+      "question": "手術が成功するかどうかは、担当医の腕（　）いかんにかかっている。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. を"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Ca phẫu thuật có thành công hay không phụ thuộc hoàn toàn vào tay nghề của bác sĩ phụ trách.\n【Phân tích】腕いかんにかかっている: Phụ thuộc vào tay nghề.",
+      "grammarRule": "N ＋ いかん: Tùy thuộc vào..."
+    },
+    {
+      "id": "skz_b_ch05_q03",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～いかんにかかわらず",
+      "question": "理由の（　）いかんにかかわらず、遅刻した場合は試験を受けられません。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bất kể lý do là gì đi chăng nữa, hễ đến muộn là sẽ không được tham dự kỳ thi.\n【Phân tích】N (の) いかんにかかわらず: Bất kể lý do ra sao.",
+      "grammarRule": "N (の) ＋ いかんにかかわらず / いかんによらず / いかんを問わず: Không màng tới, bất kể N thế nào."
+    },
+    {
+      "id": "skz_b_ch05_q04",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～いかんにかかわらず",
+      "question": "国籍のいかんによらず、（　）。",
+      "options": [
+        "a. 優秀な人材を広く採用する方針だ",
+        "b. 日本人だけを優遇する",
+        "c. ビザが必要だ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bất kể quốc tịch là gì, chủ trương của chúng tôi là tuyển dụng rộng rãi các nhân tài xuất chúng.\n【Phân tích】Không phân biệt quốc tịch -> Tuyển dụng rộng rãi (広く採用する).",
+      "grammarRule": "Vế sau mang tính bình đẳng, không phân biệt đối xử theo điều kiện ở vế trước."
+    },
+    {
+      "id": "skz_b_ch05_q05",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～をものともせず(に)",
+      "question": "彼は周囲の反対（　）をものともせずに、自分の信じる道を進んだ。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. で"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Mặc kệ sự phản đối kịch liệt từ mọi người xung quanh, anh ấy vẫn kiên định bước tiếp trên con đường mình tin tưởng.\n【Phân tích】N ＋ をものともせず(に): Vượt lên trên, bất chấp trở ngại nguy hiểm to lớn.",
+      "grammarRule": "N (trở ngại, bão táp, bệnh tật, phản đối) ＋ をものともせず(に): Bất chấp khó khăn hiểm nguy để dũng cảm tiến lên (khen ngợi)."
+    },
+    {
+      "id": "skz_b_ch05_q06",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～をものともせず(に)",
+      "question": "選手たちは激しい吹雪をものともせずに、（　）。",
+      "options": [
+        "a. 試合を中止した",
+        "b. 全力でプレーを続けた",
+        "c. ホテルに引き返した"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Các cầu thủ bất chấp trận bão tuyết dữ dội, vẫn dốc toàn lực thi đấu tiếp tục.\n【Phân tích】Vế sau là hành động kiên cường tiếp tục (全力でプレーを続けた).",
+      "grammarRule": "Vế sau luôn thể hiện sự dũng cảm, nỗ lực phi thường."
+    },
+    {
+      "id": "skz_b_ch05_q07",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～をよそに",
+      "question": "親の心配（　）をよそに、息子は毎晩遅くまで遊び歩いている。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. で"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Phớt lờ nỗi lo lắng thấp thỏm của cha mẹ, đứa con trai cứ đàn đúm chơi bời đến tận khuya mỗi đêm.\n【Phân tích】N ＋ をよそに: Phớt lờ, mặc kệ sự lo lắng/kỳ vọng của người khác (mang sắc thái phê phán).",
+      "grammarRule": "N (lo lắng, can ngăn, kỳ vọng) ＋ をよそに: Bỏ ngoài tai, phớt lờ điều đáng lẽ phải bận tâm (thường mang ý chê trách)."
+    },
+    {
+      "id": "skz_b_ch05_q08",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～をよそに",
+      "question": "住民の強い抗議の声をよそに、（　）。",
+      "options": [
+        "a. 工事は中止された",
+        "b. 開発工事が強行された",
+        "c. 説明会が開かれた"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Phớt lờ những tiếng la ó phản đối gay gắt của người dân, công trình xây dựng phát triển vẫn ngang nhiên bị ép thi công.\n【Phân tích】Hành động bất chấp tiếng phản đối để cưỡng chế làm -> 工事が強行された.",
+      "grammarRule": "Diễn tả hành vi phớt lờ dư luận hoặc sự ngăn cản."
+    },
+    {
+      "id": "skz_b_ch05_q09",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～ならいざしらず",
+      "question": "小学生（　）ならいざしらず、大学生にもなってそんな基本的な漢字が書けないとは信じられない。",
+      "options": [
+        "a. ",
+        "b. だ",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Học sinh tiểu học thì không nói làm gì, chứ đã lên đại học rồi mà không viết nổi chữ Hán cơ bản như thế thì thật không thể tin nổi.\n【Phân tích】Aならいざしらず B: A thì còn châm chước được, chứ B thì tuyệt đối không thể chấp nhận.",
+      "grammarRule": "N / 普通形 ＋ ならいざしらず: Nếu là trường hợp A thì còn tạm bỏ qua được, nhưng trường hợp này thì không thể chấp nhận nổi."
+    },
+    {
+      "id": "skz_b_ch05_q10",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "～ならいざしらず",
+      "question": "昔ならいざしらず、現代において（　）。",
+      "options": [
+        "a. 女性の社会進出は当たり前だ",
+        "b. インターネットがない時代だった",
+        "c. 身分制度が残っている"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Thời xưa thì còn tạm nói, chứ trong thời đại ngày nay thì việc phụ nữ tham gia phát triển xã hội là điều đương nhiên.\n【Phân tích】Thời nay thì khác hẳn thời xưa: 当たり前だ.",
+      "grammarRule": "So sánh giữa trường hợp đặc biệt chấp nhận được với thực tế không thể chấp nhận."
+    },
+    {
+      "id": "skz_b_ch05_q11",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "成果の（　）いかんによって、来期のボーナスの支給額が決まる。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tùy thuộc vào thành quả công việc mà số tiền thưởng của kỳ tới sẽ được định đoạt.\n【Phân tích】成果いかんによって: Tùy theo thành quả.",
+      "grammarRule": "N ＋ いかんによって: Tùy thuộc vào..."
+    },
+    {
+      "id": "skz_b_ch05_q12",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "天候のいかんを問わず、明日のチャリティーイベントは（　）。",
+      "options": [
+        "a. 雨なら中止です",
+        "b. 予定通り開催されます",
+        "c. 延期される可能性があります"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Bất kể thời tiết thế nào, sự kiện từ thiện ngày mai vẫn sẽ được tổ chức đúng như lịch trình.\n【Phân tích】いかんを問わず = không màng thời tiết ra sao -> vẫn diễn ra theo lịch.",
+      "grammarRule": "いかんを問わず: Không màng tới điều kiện vế trước."
+    },
+    {
+      "id": "skz_b_ch05_q13",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "高齢（　）をものともせず、彼女はエベレスト登頂に見事成功した。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. で"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bất chấp tuổi tác đã cao, bà ấy đã chinh phục thành công đỉnh Everest một cách ngoạn mục.\n【Phân tích】Tuổi cao là trở ngại khó khăn, bất chấp tuổi tác -> 高齢をものともせず.",
+      "grammarRule": "N ＋ をものともせず: Vượt qua rào cản bất lợi."
+    },
+    {
+      "id": "skz_b_ch05_q14",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "医師の忠告（　）をよそに、彼は退院後すぐに大酒を飲んだ。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. を"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bỏ ngoài tai lời khuyên can của bác sĩ, anh ta vừa xuất viện xong là lập tức nốc rượu đẫy đà.\n【Phân tích】Phớt lờ lời khuyên can tốt đẹp -> 忠告をよそに.",
+      "grammarRule": "N ＋ をよそに: Phớt lờ sự khuyên can, lo lắng."
+    },
+    {
+      "id": "skz_b_ch05_q15",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "初心者（　）ならいざしらず、ベテランの君がこんな凡ミスをするとは情けない。",
+      "options": [
+        "a. ",
+        "b. だ",
+        "c. な"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Người mới vào nghề thì còn thông cảm được, chứ người dày dạn kinh nghiệm như cậu mà lại mắc lỗi ngớ ngẩn thế này thì thật đáng thất vọng.\n【Phân tích】Người mới thì bỏ qua, chứ thâm niên thì không thể -> ならいざしらず.",
+      "grammarRule": "N ＋ ならいざしらず: Trường hợp A thì còn châm chước được."
+    },
+    {
+      "id": "skz_b_ch05_q16",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "本人のやる気（　）いかんで、語学の習得スピードは大きく変わる。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tùy thuộc vào tinh thần quyết tâm của chính bản thân mà tốc độ tiếp thu ngoại ngữ sẽ thay đổi đáng kể.\n【Phân tích】N ＋ いかんで: Tùy vào quyết tâm.",
+      "grammarRule": "N ＋ いかんで: Do yếu tố N quyết định."
+    },
+    {
+      "id": "skz_b_ch05_q17",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "年齢や性別の（　）にかかわらず、どなたでも自由に応募できます。",
+      "options": [
+        "a. いかん",
+        "b. ものともせず",
+        "c. よそに"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bất kể tuổi tác hay giới tính thế nào, bất kỳ ai cũng có thể tự do nộp đơn ứng tuyển.\n【Phân tích】Cụm từ tiêu chuẩn: 性別のいかんにかかわらず.",
+      "grammarRule": "N ＋ のいかんにかかわらず: Bất kể thế nào."
+    },
+    {
+      "id": "skz_b_ch05_q18",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "体のハンディキャップ（　）をものともせずに、世界的なパラリンピック選手として活躍している。",
+      "options": [
+        "a. をよそに",
+        "b. をものともせずに",
+        "c. ならいざしらず"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Bất chấp những khiếm khuyết khiếm thị của cơ thể, anh ấy vẫn hoạt động xuất sắc như một vận động viên Paralympic tầm cỡ thế giới.\n【Phân tích】Vượt lên trở ngại nghịch cảnh -> をものともせずに.",
+      "grammarRule": "N ＋ をものともせず: Vượt qua nghịch cảnh cơ thể/môi trường."
+    },
+    {
+      "id": "skz_b_ch05_q19",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "周りの迷惑（　）をよそに、電車の中で大声で通話している乗客がいる。",
+      "options": [
+        "a. をものともせず",
+        "b. をよそに",
+        "c. いかんによらず"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Phớt lờ sự phiền toái gây ra cho người xung quanh, có hành khách cứ lớn tiếng buôn điện thoại trên tàu điện.\n【Phân tích】Hành vi thiếu ý thức, mặc kệ người khác -> をよそに.",
+      "grammarRule": "N ＋ をよそに: Phớt lờ sự khó chịu/phiền hà của người khác."
+    },
+    {
+      "id": "skz_b_ch05_q20",
+      "lesson": "第5課: 関連・無関係",
+      "grammarPoint": "第5課 総合問題",
+      "question": "数千円（　）ならいざしらず、何百万円もの借金を肩代わりすることなど到底できない。",
+      "options": [
+        "a. ならいざしらず",
+        "b. をものともせず",
+        "c. いかんにかかわらず"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vài nghìn yên thì còn nói làm gì, chứ gánh hộ món nợ tới hàng triệu yên thì tuyệt đối không thể nào kham nổi.\n【Phân tích】Vài nghìn yên thì đỡ được, hàng triệu yên thì không -> ならいざしらず.",
+      "grammarRule": "N ＋ ならいざしらず: Trường hợp nhỏ thì còn được, trường hợp lớn thì không."
+    }
+  ],
+  "id": "skz_b_ch05"
+}

@@ -1,0 +1,291 @@
+{
+  "chapterId": "ch08",
+  "lesson": "第8課: 逆接 (Tương phản & Nhượng bộ)",
+  "theme": "主観を含めて説明する",
+  "group": "group2",
+  "title": "第8課: 逆接",
+  "description": "Các mẫu ngữ pháp: ～ところを, ～ものを, ～とはいえ, ～といえども, ～と思いきや.",
+  "questions": [
+    {
+      "id": "skz_b_ch08_q01",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～ところを",
+      "question": "お休みの（　）ところをお邪魔いたしまして、大変申し訳ありません。",
+      "options": [
+        "a. ",
+        "b. な",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Đúng vào lúc quý vị đang nghỉ ngơi mà tôi lại đến làm phiền thế này, thật vô cùng xin lỗi.\n【Phân tích】Nの / 普通形 ＋ ところを: お休みのところを (Trong lúc... thì làm phiền).",
+      "grammarRule": "Nの / 普 ＋ ところを: Đúng vào lúc/hoàn cảnh... thì lại (dùng khi xin lỗi, cảm ơn vì đã làm phiền người khác vào thời điểm nhạy cảm)."
+    },
+    {
+      "id": "skz_b_ch08_q02",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～ところを",
+      "question": "お忙しいところを、（　）。",
+      "options": [
+        "a. ご出席いただき誠にありがとうございます",
+        "b. ゆっくり休んでください",
+        "c. 遊びに行きましょう"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Đúng vào lúc quý vị trăm công nghìn việc bận rộn mà vẫn bớt chút thời gian quý báu đến tham dự, chúng tôi xin chân thành cảm ơn.\n【Phân tích】Lời cảm ơn lịch sự sâu sắc: ご出席いただき誠にありがとうございます.",
+      "grammarRule": "Vế sau luôn là câu cảm ơn hoặc xin lỗi trang trọng."
+    },
+    {
+      "id": "skz_b_ch08_q03",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～ものを",
+      "question": "事前に一言相談してくれれば力になれた（　）ものを、なぜ黙っていたんだ。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Giá mà cậu báo trước với tôi một tiếng thì tôi đã có thể giúp được rồi, vậy mà sao cậu lại cứ im ỉm thế hả?\n【Phân tích】Thể điều kiện ＋ ものを: Giá mà... vậy mà (tiếc nuối, trách móc sự việc đã rồi).",
+      "grammarRule": "普 ＋ ものを: Giá mà... thì đã tốt biết bao, vậy mà thực tế lại trái ngược (thể hiện sự tiếc nuối, trách móc)."
+    },
+    {
+      "id": "skz_b_ch08_q04",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～ものを",
+      "question": "安静にしていれば治るものを、（　）。",
+      "options": [
+        "a. 無理をして出歩くから悪化したのだ",
+        "b. すぐに完治した",
+        "c. 病院に行かなくてよかった"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Giá mà cứ nằm yên tịnh dưỡng thì bệnh đã khỏi rồi, đằng này lại cố đấm ăn xôi đi lại lung tung nên bệnh mới trở nặng như thế này đây.\n【Phân tích】Trách móc hành vi sai lầm dẫn tới hậu quả xấu: 無理をして出歩くから悪化したのだ.",
+      "grammarRule": "Vế sau thể hiện hậu quả xấu do hành động sai lầm gây ra."
+    },
+    {
+      "id": "skz_b_ch08_q05",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～とはいえ",
+      "question": "春になった（　）とはいえ、朝晩はまだまだ冷え込む。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tuy nói là mùa xuân đã về thật đấy, nhưng sáng sớm và ban đêm trời vẫn còn lạnh thấu xương.\n【Phân tích】N / 普通形 ＋ とはいえ: Dù nói là A nhưng thực tế vẫn còn B.",
+      "grammarRule": "N / 普 ＋ とはいえ: Tuy nói rằng... là sự thật, nhưng thực tế vế sau lại không hẳn hoàn toàn như kỳ vọng."
+    },
+    {
+      "id": "skz_b_ch08_q06",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～とはいえ",
+      "question": "プロのピアニストとはいえ、（　）。",
+      "options": [
+        "a. 緊張してミスをすることもある",
+        "b. 完璧に弾けるのは当然だ",
+        "c. 練習は一切必要ない"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù là nghệ sĩ dương cầm chuyên nghiệp đi chăng nữa thì đôi khi căng thẳng vẫn có thể đánh lỗi nốt như thường.\n【Phân tích】Dù là nghệ sĩ chuyên nghiệp nhưng thực tế vẫn mắc lỗi: ミスをすることもある.",
+      "grammarRule": "Vế sau đưa ra thực tế tương phản với danh hiệu/tính chất ở vế trước."
+    },
+    {
+      "id": "skz_b_ch08_q07",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～といえども",
+      "question": "いかに権力者（　）といえども、自然の猛威には抗えない。",
+      "options": [
+        "a. ",
+        "b. だ",
+        "c. な"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cho dù có là kẻ nắm trọn quyền lực tối cao trong tay đi chăng nữa thì trước sự cuồng nộ dữ dội của mẹ thiên nhiên cũng chẳng thể nào chống cự nổi.\n【Phân tích】N ＋ といえども: Cho dù là... đi chăng nữa (văn viết trang trọng, khẳng định chân lý).",
+      "grammarRule": "N / 普 ＋ といえども: Dù cho có là... (người tài giỏi, kẻ quyền uy, hoàn cảnh khó khăn) thì cũng không thể phủ nhận sự thật vế sau."
+    },
+    {
+      "id": "skz_b_ch08_q08",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～といえども",
+      "question": "親といえども、（　）。",
+      "options": [
+        "a. 子供の日記を勝手に読む権利はない",
+        "b. 何でも知っていて当然だ",
+        "c. 子供の人生をすべて決めるべきだ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù là cha mẹ sinh thành đi chăng nữa thì cũng không có quyền tự tiện đọc trộm nhật ký của con cái.\n【Phân tích】Quyền riêng tư không thể bị xâm phạm: 勝手に読む権利はない.",
+      "grammarRule": "Thể hiện giới hạn hoặc nguyên tắc đạo lý không thể vi phạm."
+    },
+    {
+      "id": "skz_b_ch08_q09",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～と思いきや",
+      "question": "締め切りに遅れる（　）と思いきや、驚いたことに期限前日に提出してきた。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. だ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cứ ngỡ mười mươi là cậu ta sẽ trễ hạn nộp bài, ai ngờ đâu điều đáng kinh ngạc là cậu ta đã nộp trước hạn hẳn một ngày.\n【Phân tích】普通形 ＋ と思いきや: Cứ đinh ninh là A, ai dè kết quả lại hoàn toàn đảo ngược ngoài dự kiến.",
+      "grammarRule": "普 ＋ と思いきや: Cứ ngỡ là... thế nhưng bất ngờ thay sự việc lại diễn ra hoàn toàn trái ngược."
+    },
+    {
+      "id": "skz_b_ch08_q10",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "～と思いきや",
+      "question": "雨が降るかと思いきや、（　）。",
+      "options": [
+        "a. 青空が広がって快晴になった",
+        "b. 傘を持って出かけた",
+        "c. 土砂降りになった"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cứ ngỡ là trời sắp đổ mưa đến nơi, ai dè trời lại bừng sáng mây tan và nắng đẹp chan hòa.\n【Phân tích】Kết quả đối lập với dự đoán mưa: 青空が広がって快晴になった.",
+      "grammarRule": "Vế sau là diễn biến bất ngờ, lật ngược phán đoán trước đó."
+    },
+    {
+      "id": "skz_b_ch08_q11",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "お食事中の（　）ところを大変失礼いたしました。",
+      "options": [
+        "a. ところを",
+        "b. ものを",
+        "c. とはいえ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Đúng lúc quý vị đang dùng bữa mà tôi lại làm phiền thế này, thật vô cùng thất lễ.\n【Phân tích】Nのところを失礼いたしました (Mẫu câu xin lỗi lễ phép).",
+      "grammarRule": "Nの ＋ ところを: Vào đúng thời điểm nhạy cảm của đối phương."
+    },
+    {
+      "id": "skz_b_ch08_q12",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "早く病院に行けば軽症で済んだ（　）ものを、放置したせいで入院する羽目になった。",
+      "options": [
+        "a. ところを",
+        "b. ものを",
+        "c. とはいえ"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Giá mà chịu đi viện khám sớm thì chỉ bị nhẹ là khỏi rồi, đằng này bỏ mặc nên mới ra nông nỗi phải nhập viện thế này.\n【Phân tích】Tiếc nuối và trách móc hành vi sai lầm -> ～ものを.",
+      "grammarRule": "普 ＋ ものを: Giá mà... thì đã tốt, đằng này..."
+    },
+    {
+      "id": "skz_b_ch08_q13",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "いくら親友（　）といえども、許せない嘘がある。",
+      "options": [
+        "a. とはいえ",
+        "b. といえども",
+        "c. と思いきや"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Dù có là bạn thân thiết chí cốt đến mức nào đi chăng nữa, vẫn có những lời nói dối không thể nào tha thứ được.\n【Phân tích】Đi với 'いくら...といえども' mang tính chất triết lý, nguyên tắc sâu sắc.",
+      "grammarRule": "いくら ＋ N ＋ といえども: Dù cho có là... đến đâu chăng nữa."
+    },
+    {
+      "id": "skz_b_ch08_q14",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "合格発表の掲示板を見て落ちた（　）と思いきや、よく見たら自分の番号があった。",
+      "options": [
+        "a. とはいえ",
+        "b. と思いきや",
+        "c. ところを"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Nhìn bảng thông báo trúng tuyển cứ ngỡ là mình trượt vỏ chuối rồi, ai ngờ nhìn kỹ lại thì thấy rõ mồn một số báo danh của mình ở đó.\n【Phân tích】Tưởng thế này ai dè kết quả lại trái ngược ngoài mong đợi -> ～と思いきや.",
+      "grammarRule": "普 ＋ と思いきや: Cứ ngỡ là... thế nhưng thực tế lại bất ngờ."
+    },
+    {
+      "id": "skz_b_ch08_q15",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "景気回復の兆しが見える（　）とはいえ、庶民の生活実感は依然として厳しい。",
+      "options": [
+        "a. とはいえ",
+        "b. ところを",
+        "c. ものを"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tuy nói là đã le lói những dấu hiệu hồi phục kinh tế thật đấy, nhưng cảm nhận thực tế về cuộc sống của người dân bình thường thì vẫn còn vô cùng chật vật.\n【Phân tích】Dù thừa nhận thực tế vế trước nhưng vế sau vẫn còn khó khăn -> ～とはいえ.",
+      "grammarRule": "普 ＋ とはいえ: Dù nói là... nhưng trên thực tế."
+    },
+    {
+      "id": "skz_b_ch08_q16",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "お足元の悪い（　）ところをお越しいただき、心より感謝申し上げます。",
+      "options": [
+        "a. ところを",
+        "b. ものを",
+        "c. とはいえ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Đúng vào ngày đường xá trơn trượt lầy lội mưa gió mà quý vị vẫn quá bộ đến đây, tôi xin thành tâm cảm tạ từ đáy lòng.\n【Phân tích】Mẫu câu cảm ơn nghi thức tiếp đón: お足元の悪いところを.",
+      "grammarRule": "Nの / 普 ＋ ところを: Đúng vào hoàn cảnh bất tiện của đối phương."
+    },
+    {
+      "id": "skz_b_ch08_q17",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "もっと勉強しておけば合格できた（　）ものを、遊んでばかりいた自分が憎い。",
+      "options": [
+        "a. ところを",
+        "b. ものを",
+        "c. といえども"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Giá mà chăm chỉ học hành thêm chút nữa thì đã đỗ rồi, đằng này chỉ mải mê chơi bời nên giờ tôi tự căm ghét chính bản thân mình.\n【Phân tích】Hối tiếc muộn màng -> ～ものを.",
+      "grammarRule": "普 ＋ ものを: Thể hiện sự nuối tiếc, ân hận."
+    },
+    {
+      "id": "skz_b_ch08_q18",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "法律の専門家（　）といえども、すべての判例を記憶しているわけではない。",
+      "options": [
+        "a. とはいえ",
+        "b. といえども",
+        "c. と思いきや"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Dù là chuyên gia đầu ngành trong lĩnh vực luật pháp đi chăng nữa thì cũng không phải là nhớ vanh vách tất cả mọi án lệ trong lịch sử.\n【Phân tích】N ＋ といえども: Dù cho có là chuyên gia lỗi lạc.",
+      "grammarRule": "N ＋ といえども: Dù có là bậc thầy/chuyên gia."
+    },
+    {
+      "id": "skz_b_ch08_q19",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "これで万事解決した（　）と思いきや、新たなトラブルが浮上した。",
+      "options": [
+        "a. と思いきや",
+        "b. とはいえ",
+        "c. ところを"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cứ tưởng thế là mọi chuyện đã êm xuôi giải quyết xong xuôi đâu vào đấy, ai dè rắc rối mới lại lập tức trồi lên.\n【Phân tích】Tưởng đã xong ai dè lại phát sinh biến cố mới -> ～と思いきや.",
+      "grammarRule": "普 ＋ と思いきや: Tưởng là... ngờ đâu..."
+    },
+    {
+      "id": "skz_b_ch08_q20",
+      "lesson": "第8課: 逆接",
+      "grammarPoint": "第8課 総合問題",
+      "question": "日本語能力試験N1に合格した（　）とはいえ、実践的な会話力はまだまだ不足している。",
+      "options": [
+        "a. とはいえ",
+        "b. ものを",
+        "c. ところを"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tuy nói là đã thi đỗ chứng chỉ JLPT N1 rồi đấy, nhưng năng lực giao tiếp ứng dụng thực tế thì vẫn còn thiếu sót rất nhiều.\n【Phân tích】Đỗ N1 là sự thật, nhưng giao tiếp thực tế vẫn chưa tương xứng -> ～とはいえ.",
+      "grammarRule": "普 ＋ とはいえ: Tuy nói là... nhưng thực tế vẫn còn hạn chế."
+    }
+  ],
+  "id": "skz_b_ch08"
+}

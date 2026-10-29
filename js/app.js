@@ -10,13 +10,17 @@ class App {
     this.n2Exams = [];
     this.n3KanjiIndex = [];
     this.n1KanjiIndex = [];
+    this.n1BunpouIndex = [];
+    this.n1BunpouMeta = null;
     this.currentDay = 1;
     this.currentN2Exam = null;
     this.currentDokkaiChapter = null;
     this.currentN3Set = null;
     this.currentN1KanjiChapter = null;
+    this.currentN1BunpouChapter = null;
     this.activeN3Filter = 'all';
     this.activeN1KanjiFilter = 'all';
+    this.activeN1BunpouFilter = 'all';
     this.activeN2Scope = 'vocab_grammar'; // 'vocab_grammar' | 'full'
     this.pendingN2ExamMeta = null;
 
@@ -148,12 +152,13 @@ class App {
     this.initSearch();
 
     try {
-      // Load N1, N2, N3 Kanji, and N1 Kanji indices in parallel (independent error handling)
-      const [n1Res, n2Res, n3KanjiRes, n1KanjiRes] = await Promise.allSettled([
+      // Load N1, N2, N3 Kanji, N1 Kanji, and N1 Bunpou indices in parallel (independent error handling)
+      const [n1Res, n2Res, n3KanjiRes, n1KanjiRes, n1BunpouRes] = await Promise.allSettled([
         fetch('data/days-index.json'),
         fetch('data/n2-index.json'),
         fetch('data/n3_kanji/n3_kanji_index.json'),
-        fetch('data/n1_kanji/n1_kanji_index.json')
+        fetch('data/n1_kanji/n1_kanji_index.json'),
+        fetch('data/n1_bunpou/n1_bunpou_index.json')
       ]);
 
       // N1 data
@@ -199,11 +204,24 @@ class App {
         this.n1KanjiIndex = [];
       }
 
+      // N1 Bunpou data
+      try {
+        if (n1BunpouRes.status === 'fulfilled' && n1BunpouRes.value.ok) {
+          const parsed = await n1BunpouRes.value.json();
+          this.n1BunpouMeta = parsed;
+          this.n1BunpouIndex = Array.isArray(parsed.chapters) ? parsed.chapters : (Array.isArray(parsed) ? parsed : []);
+        }
+      } catch (e) {
+        console.warn('Không thể nạp dữ liệu N1 Bunpou:', e);
+        this.n1BunpouIndex = [];
+      }
+
       // Ensure safe defaults
       if (!Array.isArray(this.daysIndex)) this.daysIndex = [];
       if (!Array.isArray(this.n2Exams)) this.n2Exams = [];
       if (!Array.isArray(this.n3KanjiIndex)) this.n3KanjiIndex = [];
       if (!Array.isArray(this.n1KanjiIndex)) this.n1KanjiIndex = [];
+      if (!Array.isArray(this.n1BunpouIndex)) this.n1BunpouIndex = [];
 
       this.renderN1List();
       this.renderN2List();
@@ -258,6 +276,8 @@ class App {
       this.openDokkaiHub(chapterId);
     } else if (path.includes('/n1-kanji') || path.includes('/n1/kanji') || hash.includes('n1-kanji') || hash.includes('n1_kanji')) {
       this.openN1KanjiHub();
+    } else if (path.includes('/n1-bunpou') || path.includes('/n1/bunpou') || hash.includes('n1-bunpou') || hash.includes('n1_bunpou') || hash.includes('bunpou')) {
+      this.openN1BunpouHub();
     } else if (path.includes('/n3-kanji') || path.includes('/n3/kanji') || hash.includes('n3-kanji') || hash.includes('n3_kanji') || hash.includes('n3-hub')) {
       this.openN3KanjiHub();
     } else if (path.includes('/n1/20days') || path.includes('/n1-20days') || hash.includes('n1/20days') || hash.includes('n1-20days') || hash.includes('n1-hub')) {
@@ -795,6 +815,21 @@ class App {
       if (n1Done > 0) {
         n1KanjiBadge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1';
         n1KanjiBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>Đã làm ${n1Done}/${this.n1KanjiIndex.length} Chapter</span>`;
+      }
+    }
+
+    // Dynamic Bunpou N1 Badge
+    const n1BunpouBadge = document.getElementById('home-n1-bunpou-badge');
+    if (n1BunpouBadge && this.n1BunpouIndex.length > 0) {
+      let bDone = 0;
+      this.n1BunpouIndex.forEach(item => {
+        const h = storage.getExamHistoryRecord(`skz_b_${item.id}`);
+        const sub = storage.getSubmission(`skz_b_${item.id}`);
+        if (h && (h.lastScore !== undefined || (h.overall && h.overall.totalQuestions > 0)) || sub) bDone++;
+      });
+      if (bDone > 0) {
+        n1BunpouBadge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1';
+        n1BunpouBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span><span>Đã làm ${bDone}/${this.n1BunpouIndex.length} Bài</span>`;
       }
     }
 
@@ -2788,6 +2823,358 @@ class App {
     }
   }
 
+  async openN1BunpouHub(activeTab = 'all') {
+    this.currentCourse = 'n1_bunpou';
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
+    this.currentN3Set = null;
+    this.currentN1KanjiChapter = null;
+    this.currentN1BunpouChapter = null;
+    this.activeN1BunpouFilter = activeTab;
+
+    const currentPath = (window.location.pathname || '').toLowerCase();
+    if (!currentPath.includes('/n1-bunpou')) {
+      try {
+        history.pushState({ view: 'n1_bunpou_hub' }, '', '/n1-bunpou');
+      } catch (e) {
+        window.location.hash = 'n1-bunpou';
+      }
+    }
+
+    if (this.quizEngine) {
+      this.quizEngine.pauseTimer();
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+
+    this.switchView('TEST', false);
+    this.hideSidebar();
+
+    // Update Header Info
+    if (this.headerLevelBadge) {
+      this.headerLevelBadge.textContent = 'JLPT N1 • 文法';
+      this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-teal-100 text-teal-800 border border-teal-200';
+    }
+    if (this.dayTitleEl) {
+      this.dayTitleEl.textContent = 'Shin Kanzen Master Bunpou N1';
+    }
+    if (this.dayDescEl) {
+      this.dayDescEl.textContent = '20 Bài & Tổng hợp chuyên sâu • Đầy đủ giải thích & Quy tắc kết hợp ngữ pháp';
+    }
+    if (this.headerScopeBtn) {
+      this.headerScopeBtn.classList.add('hidden');
+    }
+    if (this.paletteActiveTitle) {
+      this.paletteActiveTitle.textContent = 'Bunpou N1 Hub';
+    }
+    if (this.paletteActiveCount) {
+      this.paletteActiveCount.textContent = '20 Bài + Tổng hợp';
+    }
+
+    if (this.testHeaderControls) {
+      this.testHeaderControls.classList.add('hidden');
+    }
+
+    this.renderN1BunpouHubView(activeTab);
+    this.toggleMobileSidebar(false);
+  }
+
+  renderN1BunpouHubView(activeTab = 'all') {
+    const chaptersData = this.n1BunpouIndex || [];
+    const totalChapters = chaptersData.length || 21;
+    let completedCount = 0;
+    let totalScore = 0;
+    let totalQuestions = 0;
+
+    chaptersData.forEach(item => {
+      const storageKey = `skz_b_${item.id}`;
+      const history = storage.getExamHistoryRecord(storageKey);
+      const submission = storage.getSubmission(storageKey);
+      if (history || submission) {
+        completedCount++;
+        const s = submission?.scoreResult?.correct ?? (history?.lastScore || history?.overall?.totalScore || 0);
+        const t = submission?.scoreResult?.total ?? (history?.totalQuestions || history?.overall?.totalQuestions || item.questionCount);
+        totalScore += s;
+        totalQuestions += t;
+      }
+    });
+
+    const progressPct = totalChapters > 0 ? Math.round((completedCount / totalChapters) * 100) : 0;
+    const accuracyPct = totalQuestions > 0 ? Math.round((totalScore / totalQuestions) * 100) : 0;
+
+    const categories = [
+      { id: 'all', label: `Tất cả (${chaptersData.length} Bài)` },
+      { id: 'group1', label: 'Nhóm I: Sự việc (1~7)' },
+      { id: 'group2', label: 'Nhóm II: Chủ quan (8~16)' },
+      { id: 'group3', label: 'Nhóm III: Bày tỏ (17~20)' },
+      { id: 'review', label: 'Bài tổng hợp' }
+    ];
+
+    this.quizContainerEl.innerHTML = `
+      <div class="n1-bunpou-hub-view max-w-7xl mx-auto px-3 sm:px-6 py-6 space-y-6 animate-fade-in font-sans">
+        
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-br from-white via-teal-50/40 to-slate-50 rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="button" id="btn-n1-bunpou-hub-back-home" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200/90 shadow-2xs hover:shadow-xs transition active:scale-95 cursor-pointer" title="Quay lại Trang Chủ">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                  <span>Trang Chủ</span>
+                </button>
+                <span class="px-2.5 py-1 rounded-full text-xs font-extrabold bg-teal-100 text-teal-800 border border-teal-200">
+                  🎯 JLPT N1 • Shin Kanzen Master
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-cyan-100 text-cyan-800 border border-cyan-200 flex items-center gap-1">
+                  <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+                  🟢 Trọn bộ 20 Bài + Tổng hợp (452 Câu)
+                </span>
+              </div>
+
+              <div>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
+                  Shin Kanzen Master Bunpou N1 Hub
+                </h1>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+                  Luyện tập 20 Bài chuyên đề ngữ pháp và các đề tổng hợp theo giáo trình Shin Kanzen Master N1. Đầy đủ bản dịch, phân tích sắc thái ngữ cảnh và quy tắc kết hợp ngữ pháp.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Card -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 p-4 sm:p-5 shrink-0 shadow-xs space-y-3 min-w-[270px]">
+              <div class="flex items-center justify-between text-xs font-bold text-slate-700 pb-2 border-b border-slate-100">
+                <span>Tiến độ hoàn thành</span>
+                <span class="font-mono text-teal-700 font-extrabold">${completedCount}/${totalChapters} bài (${progressPct}%)</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden border border-slate-200/60">
+                <div class="h-full bg-gradient-to-r from-teal-600 to-cyan-600 rounded-full transition-all duration-500" style="width: ${progressPct}%"></div>
+              </div>
+              <div class="flex items-center justify-between text-[11px] text-slate-500 font-medium">
+                <span>Tích lũy: <strong class="text-teal-700">${totalScore}/${totalQuestions} câu</strong></span>
+                <span>Chính xác: <strong class="text-teal-700">${accuracyPct}%</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap items-center gap-2 mt-6 pt-5 border-t border-slate-200/60" id="n1b-category-tabs">
+            <span class="text-xs font-bold text-slate-500 mr-1">Chủ đề:</span>
+            ${categories.map(cat => {
+              const isActive = cat.id === activeTab;
+              const btnClass = isActive 
+                ? 'n1b-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-teal-600 text-white shadow-2xs transition cursor-pointer'
+                : 'n1b-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer';
+              return `<button type="button" data-group-filter="${cat.id}" class="${btnClass}">${cat.label}</button>`;
+            }).join('')}
+          </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5" id="n1b-cards-grid">
+          ${chaptersData.map(item => {
+            const storageKey = `skz_b_${item.id}`;
+            const history = storage.getExamHistoryRecord(storageKey);
+            const submission = storage.getSubmission(storageKey);
+            const isDone = !!(history || submission);
+            const score = submission?.scoreResult?.correct ?? (history?.lastScore || history?.overall?.totalScore || 0);
+            const total = submission?.scoreResult?.total ?? (history?.totalQuestions || history?.overall?.totalQuestions || item.questionCount);
+            const scorePct = total > 0 ? Math.round((score / total) * 100) : 0;
+            const isPassed = scorePct >= 60;
+
+            const isVisible = (activeTab === 'all') || (item.group === activeTab);
+
+            let statusBadge = '';
+            if (isDone) {
+              statusBadge = `
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold ${
+                  isPassed ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-rose-50 text-rose-700 border border-rose-200'
+                }">
+                  <span class="w-1.5 h-1.5 rounded-full ${isPassed ? 'bg-emerald-500' : 'bg-rose-500'}"></span>
+                  ${score}/${total} (${scorePct}%)
+                </span>
+              `;
+            } else {
+              statusBadge = `
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-slate-100 text-slate-500 border border-slate-200/60">
+                  Chưa làm
+                </span>
+              `;
+            }
+
+            const lessonTag = item.id === 'review' ? '総まとめ' : (item.lesson ? item.lesson.split(':')[0] : item.title);
+
+            return `
+              <div class="n1b-card rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs hover:shadow-md hover:border-teal-400 hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between cursor-pointer group ${isVisible ? '' : 'hidden'}"
+                   data-chapter-id="${item.id}"
+                   data-group="${item.group}"
+                   data-done="${isDone ? 'done' : 'undone'}">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-black bg-teal-50 text-teal-800 border border-teal-200/70">
+                      ${lessonTag}
+                    </span>
+                    ${statusBadge}
+                  </div>
+
+                  <div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-teal-600 transition leading-snug">
+                      ${item.title || item.lesson}
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed line-clamp-2 mt-1.5">
+                      ${item.description || 'Luyện tập ngữ pháp chuyên sâu'}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-3 mt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span class="text-xs text-slate-400 font-medium flex items-center gap-1">
+                    <span>📝</span>
+                    <span>${item.questionCount} câu</span>
+                  </span>
+                  <span class="text-xs font-bold text-teal-600 group-hover:text-teal-700 flex items-center gap-1">
+                    <span>${isDone ? 'Làm lại / Xem' : 'Luyện tập ngay'}</span>
+                    <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                  </span>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+
+    // Bind back button
+    document.getElementById('btn-n1-bunpou-hub-back-home')?.addEventListener('click', () => {
+      this.switchView('HOME');
+    });
+
+    // Bind category filter tabs
+    const filterBtns = this.quizContainerEl.querySelectorAll('#n1b-category-tabs .n1b-filter-btn');
+    const cards = this.quizContainerEl.querySelectorAll('.n1b-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-group-filter');
+        this.activeN1BunpouFilter = filter;
+        filterBtns.forEach(b => {
+          b.className = 'n1b-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 transition cursor-pointer';
+        });
+        btn.className = 'n1b-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-teal-600 text-white shadow-2xs transition cursor-pointer';
+
+        cards.forEach(card => {
+          const cardGroup = card.getAttribute('data-group');
+          let show = false;
+          if (filter === 'all') show = true;
+          else if (filter === cardGroup) show = true;
+
+          card.classList.toggle('hidden', !show);
+        });
+      });
+    });
+
+    // Bind chapter card clicks
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const chapterId = card.getAttribute('data-chapter-id');
+        this.loadBunpouChapter(chapterId);
+      });
+    });
+  }
+
+  async loadBunpouChapter(chapterId) {
+    this.currentCourse = 'n1_bunpou';
+    this.currentN1BunpouChapter = chapterId;
+    this.currentDay = null;
+    this.currentN2Exam = null;
+    this.currentDokkaiChapter = null;
+    this.currentN3Set = null;
+    this.currentN1KanjiChapter = null;
+    this.currentQuestionIndex = 0;
+    if (this.quizEngine) {
+      this.quizEngine.currentQuestionIndex = 0;
+    }
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    this.switchView('TEST', true);
+    this.showSidebar();
+
+    // Loading indicator
+    this.quizContainerEl.innerHTML = `
+      <div class="flex flex-col items-center justify-center py-20">
+        <div class="w-10 h-10 border-4 border-teal-200 border-t-teal-600 rounded-full animate-spin"></div>
+        <p class="mt-4 text-sm font-medium text-slate-600">Đang tải Shin Kanzen Bunpou N1 - ${chapterId === 'review' ? 'Bài tổng hợp' : 'Bài ' + chapterId.replace('ch', '')}...</p>
+      </div>
+    `;
+
+    try {
+      const fileName = chapterId === 'review' ? 'shinkanzen_b_review.json' : `shinkanzen_b_${chapterId}.json`;
+      let res = await fetch(`data/n1_bunpou/${fileName}`);
+      if (!res.ok) {
+        res = await fetch(`/data/n1_bunpou/${fileName}`);
+      }
+      if (!res.ok) {
+        res = await fetch(`public/data/n1_bunpou/${fileName}`);
+      }
+
+      if (!res.ok) {
+        throw new Error(`Không thể tìm thấy file dữ liệu: ${fileName}`);
+      }
+
+      const chapterData = await res.json();
+      chapterData.id = `skz_b_${chapterId}`;
+
+      const meta = (this.n1BunpouIndex || []).find(c => c.id === chapterId);
+
+      // Update Header Info
+      if (this.headerLevelBadge) {
+        this.headerLevelBadge.textContent = 'JLPT N1 • 文法';
+        this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-teal-100 text-teal-800 border border-teal-200 cursor-pointer hover:bg-teal-200 transition';
+        this.headerLevelBadge.title = 'Quay lại Sảnh Bunpou N1';
+        this.headerLevelBadge.onclick = () => this.openN1BunpouHub(this.activeN1BunpouFilter || 'all');
+      }
+      if (this.dayTitleEl) {
+        this.dayTitleEl.textContent = meta ? meta.lesson : (chapterData.lesson || `Shin Kanzen Bunpou N1 - ${chapterId}`);
+      }
+      if (this.dayDescEl) {
+        this.dayDescEl.textContent = meta ? meta.description : (chapterData.description || 'Luyện tập ngữ pháp chuyên sâu');
+      }
+      if (this.headerScopeBtn) {
+        this.headerScopeBtn.classList.add('hidden');
+      }
+      if (this.paletteActiveTitle) {
+        this.paletteActiveTitle.textContent = meta ? (meta.title || meta.lesson) : `Bunpou ${chapterId}`;
+      }
+      if (this.paletteActiveCount) {
+        this.paletteActiveCount.textContent = `${chapterData.questions.length} câu`;
+      }
+
+      if (this.testHeaderControls) {
+        this.testHeaderControls.classList.remove('hidden');
+      }
+
+      // Load quiz data
+      this.quizEngine.loadDay(chapterData, { mode: 'practice' });
+      this.updateModeUI(this.quizEngine.mode);
+
+      // Highlight active sidebar item if present
+      document.querySelectorAll('.nav-tree-item.is-active').forEach(el => el.classList.remove('is-active'));
+      const activeBtn = document.getElementById('btn-sidebar-n1-bunpou-hub');
+      if (activeBtn) activeBtn.classList.add('is-active');
+
+      this.toggleMobileSidebar(false);
+    } catch (err) {
+      console.error('Lỗi nạp bài Bunpou N1:', err);
+      this.quizContainerEl.innerHTML = `
+        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200">
+          <p class="font-bold">Không thể nạp bài tập Bunpou N1.</p>
+          <p class="text-sm text-slate-600 mt-2">${err.message}</p>
+          <button type="button" class="mt-4 px-4 py-2 bg-teal-600 text-white rounded-xl text-xs font-bold cursor-pointer" onclick="window.app?.openN1BunpouHub()">Quay lại Sảnh Bunpou N1</button>
+        </div>
+      `;
+    }
+  }
+
   onProgressUpdate({ answered, total, percent }) {
     if (this.progressBarFillEl) {
       this.progressBarFillEl.style.width = `${percent}%`;
@@ -2898,6 +3285,21 @@ class App {
       });
     }
 
+    // Bunpou N1 Event
+    const cardN1Bunpou = document.getElementById('card-n1-bunpou');
+    if (cardN1Bunpou) {
+      cardN1Bunpou.addEventListener('click', () => {
+        this.openN1BunpouHub();
+      });
+    }
+
+    const btnHeroBunpou = document.getElementById('btn-hero-bunpou');
+    if (btnHeroBunpou) {
+      btnHeroBunpou.addEventListener('click', () => {
+        this.openN1BunpouHub();
+      });
+    }
+
     // Kanji N3 Drill Event
     const cardN3Kanji = document.getElementById('card-n3-kanji');
     if (cardN3Kanji) {
@@ -2906,11 +3308,18 @@ class App {
       });
     }
 
-    // Sidebar Kanji Buttons
+    // Sidebar Kanji & Bunpou Buttons
     const btnSidebarN1Kanji = document.getElementById('btn-sidebar-n1-kanji-hub');
     if (btnSidebarN1Kanji) {
       btnSidebarN1Kanji.addEventListener('click', () => {
         this.openN1KanjiHub();
+      });
+    }
+
+    const btnSidebarN1Bunpou = document.getElementById('btn-sidebar-n1-bunpou-hub');
+    if (btnSidebarN1Bunpou) {
+      btnSidebarN1Bunpou.addEventListener('click', () => {
+        this.openN1BunpouHub();
       });
     }
 

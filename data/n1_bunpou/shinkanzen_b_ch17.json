@@ -1,0 +1,333 @@
+{
+  "chapterId": "ch17",
+  "lesson": "第17課: 評価・感想",
+  "theme": "主観を述べる",
+  "group": "group3",
+  "title": "第17課: 評価・感想",
+  "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第17課: 評価・感想).",
+  "questions": [
+    {
+      "id": "skz_b_ch17_q01",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 1",
+      "question": "1. これからは（ ）たりとも練習を怠けてはいけませんよ。",
+      "options": [
+        "a. 1日",
+        "b. 毎日",
+        "c. 1週間"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】～たりとも chỉ đi với đơn vị đếm nhỏ nhất: 1日たりとも (dù chỉ 1 ngày).",
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+    },
+    {
+      "id": "skz_b_ch17_q02",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 1",
+      "question": "2. わたしたちの税金なので、（ ）たりとも無駄にしてほしくない。",
+      "options": [
+        "a. 1万円",
+        "b. 1千円",
+        "c. 1円"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Đơn vị tiền tệ nhỏ nhất: 1円たりとも (dù chỉ 1 yên).",
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+    },
+    {
+      "id": "skz_b_ch17_q03",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 1",
+      "question": "3. リサイクルできるものは、かん1本たりとも（ ）。",
+      "options": [
+        "a. 捨ててしまった",
+        "b. 捨てられない",
+        "c. 大切にしたい"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Vế sau ～たりとも là câu phủ định: かん1本たりとも捨てられない (dù chỉ 1 lon cũng không thể vứt).",
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+    },
+    {
+      "id": "skz_b_ch17_q04",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 1",
+      "question": "4. あしたは13時の新幹線に乗ります。1分たりとも（ ）。",
+      "options": [
+        "a. 遅れないように",
+        "b. 遅れたらどうしよう",
+        "c. 遅れたら次の新幹線に乗りなさい"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Đuôi phủ định nhắc nhở: 1分たりとも遅れないように (để không trễ dù chỉ 1 phút).",
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+    },
+    {
+      "id": "skz_b_ch17_q05",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 2",
+      "question": "1. 熱が出て体が重くなり、（ ）すら大変だった。",
+      "options": [
+        "a. ジョギングをすること",
+        "b. 仕事をすること",
+        "c. 自分で起き上がること"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Hành động đơn giản nhất: Sốt nặng đến mức việc tự mình ngồi dậy (自分で起き上がることすら) cũng vô cùng vất vả.",
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+    },
+    {
+      "id": "skz_b_ch17_q06",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 2",
+      "question": "2. 将来の夢だけではなく、自分が好きなことすら（ ）。",
+      "options": [
+        "a. しっかり頑張ろう",
+        "b. 頑張れば十分だ",
+        "c. わからなくなった"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Ví dụ cực đoan: Không chỉ ước mơ tương lai mà ngay cả thứ mình thích (自分が好きなことすら) cũng không còn hiểu nổi nữa (わからなくなった).",
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+    },
+    {
+      "id": "skz_b_ch17_q07",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 2",
+      "question": "3. あまりの美しさに、（ ）忘れるほどだった。",
+      "options": [
+        "a. 息をするすら",
+        "b. 息をすることすら",
+        "c. 息をすることですら"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Cấu trúc đi với すら: Động từ dạng Danh từ hóa (の/こと) + すら -> 息をすることすら忘れるほど (đến mức quên cả thở).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q08",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 2",
+      "question": "4. あとは皿に盛り（ ）すれば、この料理は完成だ。",
+      "options": [
+        "a. さえ",
+        "b. すら",
+        "c. こそ"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Mẫu ～さえ…ば/すれば (chỉ cần làm bước tối thiểu này): 皿に盛りさえすれば (chỉ cần bày ra đĩa là xong). Mẫu すら không đi với cấu trúc điều kiện giả định 'さえ〜ば'.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q09",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 3",
+      "question": "1. このチームが決勝戦に勝ち進むとは、だれも（ ）だにしなかった。",
+      "options": [
+        "a. 予想",
+        "b. 思うの",
+        "c. 考えて"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Cụm thành ngữ đi với だにしない: 予想だにしなかった (hoàn toàn không hề dự đoán trước).",
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+    },
+    {
+      "id": "skz_b_ch17_q10",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 3",
+      "question": "2. テロとか襲撃などの言葉は（ ）だに恐ろしい。",
+      "options": [
+        "a. 経験する",
+        "b. 聞く",
+        "c. 死ぬ"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Động từ nhận thức/cảm giác + だに: 聞くだに恐ろしい (chỉ nghe thôi cũng đã thấy sợ hãi).",
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+    },
+    {
+      "id": "skz_b_ch17_q11",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 4",
+      "question": "1. 3回目の挑戦にして（ ）。",
+      "options": [
+        "a. やっと成功した",
+        "b. いつも成功だ",
+        "c. 今まで2回成功した"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Mốc thời gian/lần thử: 3回目の挑戦にしてやっと成功した (mãi đến lần thử thứ 3 mới thành công).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q12",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 4",
+      "question": "2. 60歳にして（ ）。",
+      "options": [
+        "a. 趣味の写真が楽しかった",
+        "b. 初めて海外旅行をした",
+        "c. 退職した"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Mốc tuổi tác đạt thành tựu: 60歳にして初めて海外旅行をした (mãi đến tuổi 60 mới lần đầu đi du lịch nước ngoài).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q13",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 4",
+      "question": "3. 水泳の田口選手のタイムはすごい。（ ）にして初めて出せるタイムだ。",
+      "options": [
+        "a. 選手",
+        "b. 初出場の選手",
+        "c. オリンピック選手"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Đẳng cấp/vị thế cao: オリンピック選手にして初めて出せるタイム (thời gian kỷ lục mà chỉ tầm cỡ vận động viên Olympic mới có thể đạt được).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q14",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 5",
+      "question": "1. 過去の失敗あっての( )だ。",
+      "options": [
+        "a. 反省",
+        "b. 成功",
+        "c. 連続"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Cốt lõi để có được thành quả: 過去の失敗あっての成功だ (thành công có được chính là nhờ có những thất bại trong quá khứ).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q15",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 5",
+      "question": "2. 病気が全快しました。( )あっての回復です。感謝しています。",
+      "options": [
+        "a. 健康",
+        "b. 命",
+        "c. 家族の協力"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Sự biết ơn yếu tố cốt lõi: 家族の協力あっての回復です (sự hồi phục này có được chính là nhờ vào sự hỗ trợ của gia đình).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q16",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 6",
+      "question": "1. この研究会では( )からある外国語の資料を、毎週読まなければならない。",
+      "options": [
+        "a. 1ページ",
+        "b. 10ページ",
+        "c. 150ページ"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Số lượng trang sách lớn: 150ページからある (tài liệu dày lên tới hơn 150 trang).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q17",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Luyện tập 6",
+      "question": "2. そのオーディションには( )人が応募した。",
+      "options": [
+        "a. 1万人からする",
+        "b. 1万人からいる",
+        "c. 1万人からの"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Nhấn mạnh số người: 1万人からの人 (lượng người lên tới hơn 1 vạn người).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q18",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Tổng hợp",
+      "question": "1. 宿題が終わるまでは、( )うちから出しませんよ。",
+      "options": [
+        "a. 1歩たりとも",
+        "b. 1歩すら",
+        "c. 1歩だに"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】1歩たりとも…ない (dù chỉ 1 bước cũng không cho ra khỏi nhà).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q19",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Tổng hợp",
+      "question": "2. ( )できる簡単な仕事を君はどうしてやろうとしないのか。",
+      "options": [
+        "a. 子供にして",
+        "b. 子供ですら",
+        "c. 子供だに"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Ví dụ cực đoan đơn giản: 子供ですらできる (ngay cả trẻ con cũng làm được).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q20",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Tổng hợp",
+      "question": "3. 僕は( )殺したくない。",
+      "options": [
+        "a. 虫1匹だに",
+        "b. 虫1匹たりとも",
+        "c. 虫1匹にして"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】虫1匹たりとも…ない (không muốn giết dù chỉ 1 con côn trùng).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q21",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Tổng hợp",
+      "question": "4. この竹細工はこの道50年の( )できる作品なのだ。",
+      "options": [
+        "a. 斉藤さんですら",
+        "b. 斉藤さんにして",
+        "c. 斉藤さんだに"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Tầm cỡ tay nghề cao: 50年の斉藤さんにしてできる (phải là nghệ nhân 50 năm như bác Saito mới làm ra được).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q22",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Tổng hợp",
+      "question": "5. ( )結婚生活ではないだろうか。",
+      "options": [
+        "a. 愛あっての",
+        "b. 愛にしての",
+        "c. 愛すらある"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Yếu tố cốt lõi: 愛あっての結婚生活 (cuộc sống hôn nhân chính nhờ có tình yêu).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch17_q23",
+      "lesson": "第17課: 評価・感想",
+      "grammarPoint": "Tổng hợp",
+      "question": "6. ( )毎日歩いて学校に通った。",
+      "options": [
+        "a. 4キロすらある道を",
+        "b. 4キロあっての道を",
+        "c. 4キロからある道を"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Khoảng cách lớn: 4キロからある道 (quãng đường dài lên tới hơn 4km).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    }
+  ],
+  "id": "skz_b_ch17"
+}

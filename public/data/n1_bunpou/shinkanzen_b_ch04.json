@@ -1,0 +1,263 @@
+{
+  "chapterId": "ch04",
+  "lesson": "第4課: 例示 (Đưa ra ví dụ)",
+  "theme": "事柄を説明する",
+  "group": "group1",
+  "title": "第4課: 例示",
+  "description": "Các mẫu ngữ pháp: ～なり・・・なり, ～であれ・・・であれ, ～といい・・・といい, ～といわず・・・といわず.",
+  "questions": [
+    {
+      "id": "skz_b_ch04_q01",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～なり・・・なり",
+      "question": "あの部屋はかなり寒いから、長い時間いるなら上着なり（　）なり持っていったほうがいい。",
+      "options": [
+        "a. 暖房をつける",
+        "b. ひざ掛け",
+        "c. 暖かい"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Căn phòng đó khá lạnh đấy, nếu ở lâu thì nên mang áo khoác hay khăn đắp đùi chẳng hạn đi theo.\n【Phân tích】Danh từ kết hợp đồng dạng: 上着 (áo khoác)なり ＋ ひざ掛け (khăn trùm đùi)なり.",
+      "grammarRule": "N1なり N2なり: N1 cũng được, N2 cũng được (đưa ra các phương án cùng nhóm để lựa chọn)."
+    },
+    {
+      "id": "skz_b_ch04_q02",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～なり・・・なり",
+      "question": "わからないことがあれば、先生に聞くなり（　）なりして、自分で調べなさい。",
+      "options": [
+        "a. 辞書を引く",
+        "b. 辞書を引いた",
+        "c. 辞書を引いて"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nếu có điều gì không hiểu, hãy hỏi thầy cô hoặc tra từ điển chẳng hạn, tự mình tìm hiểu đi.\n【Phân tích】Động từ đi với ～なり phải ở thể từ điển V-る: 先生に聞くなり 辞書を引くなり.",
+      "grammarRule": "V1-るなり V2-るなり: Làm việc 1 hay làm việc 2 chẳng hạn."
+    },
+    {
+      "id": "skz_b_ch04_q03",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～であれ・・・であれ",
+      "question": "理由が（　）であれ、無断で仕事を休むことは許されない。",
+      "options": [
+        "a. 何",
+        "b. どんな",
+        "c. どう"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù lý do là gì chăng nữa, việc tự tiện nghỉ làm mà không báo trước là không thể chấp nhận được.\n【Phân tích】Từ để hỏi 何 ＋ であれ: Cho dù là gì đi chăng nữa.",
+      "grammarRule": "Từ để hỏi ＋ であれ / N1であれ N2であれ: Dù là... hay là... thì kết quả vẫn không đổi."
+    },
+    {
+      "id": "skz_b_ch04_q04",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～であれ・・・であれ",
+      "question": "大人であれ（　）であれ、法を守る義務がある。",
+      "options": [
+        "a. 子供",
+        "b. 子供な",
+        "c. 子供の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù là người lớn hay trẻ con thì đều có nghĩa vụ phải tuân thủ pháp luật.\n【Phân tích】N1であれ N2であれ: 大人であれ 子供であれ.",
+      "grammarRule": "N1であれ N2であれ: Dù là đối tượng 1 hay đối tượng 2 thì đều chung một tính chất/nghĩa vụ."
+    },
+    {
+      "id": "skz_b_ch04_q05",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～といい・・・といい",
+      "question": "この靴はデザインといい（　）といい、申し分がない。",
+      "options": [
+        "a. 履き心地",
+        "b. 履きやすい",
+        "c. 履くこと"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Đôi giày này từ mẫu mã thiết kế cho đến cảm giác êm ái khi xỏ chân vào đều hoàn hảo không có chỗ nào để chê.\n【Phân tích】N1といい N2といい đưa ra hai tiêu chí đánh giá cùng loại: デザインといい 履き心地といい.",
+      "grammarRule": "N1といい N2といい: Xét về cả N1 lẫn N2 thì đều... (thường đi với lời khen ngợi hoặc chê bai toàn diện)."
+    },
+    {
+      "id": "skz_b_ch04_q06",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～といい・・・といい",
+      "question": "あのレストランは味といいサービスといい、（　）。",
+      "options": [
+        "a. 一度行ってみたい",
+        "b. 最高水準だ",
+        "c. 改善すべき点が多いかもしれない"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Nhà hàng đó cả về hương vị lẫn cung cách phục vụ đều đạt tiêu chuẩn đỉnh cao nhất.\n【Phân tích】Vế sau của ～といい・・・といい là lời đánh giá tổng thể rõ ràng (最高水準だ).",
+      "grammarRule": "Vế sau là nhận xét, đánh giá toàn diện."
+    },
+    {
+      "id": "skz_b_ch04_q07",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～といわず・・・といわず",
+      "question": "部屋の中は机の上といわず床（　）といわず、書類が散乱している。",
+      "options": [
+        "a. に",
+        "b. の上",
+        "c. で"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Trong phòng từ trên mặt bàn cho đến dưới mặt sàn, chỗ nào cũng thấy giấy tờ bừa bộn khắp nơi.\n【Phân tích】N1といわず N2といわず: 机の上といわず 床の上といわず (toàn bộ khắp nơi không phân biệt).",
+      "grammarRule": "N1といわず N2といわず: Bất kể là N1 hay N2 (toàn bộ mọi nơi/mọi lúc đều trong tình trạng đó, không còn ranh giới)."
+    },
+    {
+      "id": "skz_b_ch04_q08",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "～といわず・・・といわず",
+      "question": "彼は昼といわず夜といわず、（　）。",
+      "options": [
+        "a. よく寝ている",
+        "b. ゲームに没頭している",
+        "c. 散歩に出かける"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Anh ta bất kể ngày hay đêm, suốt ngày chìm đắm cắm đầu vào chơi game.\n【Phân tích】Diễn tả tình trạng liên tục không kể ngày đêm: ゲームに没頭している.",
+      "grammarRule": "Chỉ trạng thái diễn ra liên miên không phân biệt thời gian/không gian."
+    },
+    {
+      "id": "skz_b_ch04_q09",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "電話（　）なりメール（　）なりで、事前に連絡してください。",
+      "options": [
+        "a. と / と",
+        "b. なり / なり",
+        "c. であれ / であれ"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Hãy liên lạc trước bằng điện thoại hoặc email chẳng hạn.\n【Phân tích】Gợi ý phương tiện lựa chọn nhẹ nhàng: 電話なりメールなり.",
+      "grammarRule": "N1なり N2なり: N1 hoặc N2 chẳng hạn (đưa ra giải pháp lựa chọn)."
+    },
+    {
+      "id": "skz_b_ch04_q10",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "晴天（　）であれ雨天（　）であれ、マラソン大会は予定通り実施されます。",
+      "options": [
+        "a. なり / なり",
+        "b. といい / といい",
+        "c. であれ / であれ"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Dù trời nắng hay trời mưa, giải chạy marathon vẫn sẽ được tổ chức đúng như kế hoạch.\n【Phân tích】Bất kể điều kiện thời tiết nào thì sự việc vẫn tiến hành -> であれ・・・であれ.",
+      "grammarRule": "N1であれ N2であれ: Dù là N1 hay N2 thì kết quả vẫn giữ nguyên."
+    },
+    {
+      "id": "skz_b_ch04_q11",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "彼の話し方（　）といい態度（　）といい、本当に礼儀正しい青年だ。",
+      "options": [
+        "a. といい / といい",
+        "b. といわず / といわず",
+        "c. なり / なり"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Từ cách ăn nói cho đến tác phong thái độ, cậu ấy thực sự là một chàng thanh niên vô cùng lễ phép.\n【Phân tích】Đánh giá khen ngợi đa góc độ -> といい・・・といい.",
+      "grammarRule": "N1といい N2といい: Xét cả N1 lẫn N2."
+    },
+    {
+      "id": "skz_b_ch04_q12",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "手（　）といわず足（　）といわず、泥だらけになって遊んだ。",
+      "options": [
+        "a. といい / といい",
+        "b. といわず / といわず",
+        "c. であれ / であれ"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Từ bàn tay cho đến bàn chân, chỗ nào cũng lấm lem bùn đất khi chơi đùa.\n【Phân tích】Phủ kín toàn bộ khắp cơ thể không phân biệt chỗ nào -> といわず・・・といわず.",
+      "grammarRule": "N1といわず N2といわず: Cả N1 lẫn N2 toàn bộ đều bị bao phủ/tràn ngập."
+    },
+    {
+      "id": "skz_b_ch04_q13",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "お茶（　）なりコーヒー（　）なり、お好きなものをどうぞ。",
+      "options": [
+        "a. といい / といい",
+        "b. なり / なり",
+        "c. といわず / といわず"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Trà hay cà phê chẳng hạn, xin mời dùng thứ bạn thích.\n【Phân tích】Mời mọc lựa chọn nhẹ nhàng -> なり・・・なり.",
+      "grammarRule": "N1なり N2なり: Gợi ý các phương án lựa chọn."
+    },
+    {
+      "id": "skz_b_ch04_q14",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "金持ち（　）であれ貧乏人（　）であれ、人の命の重さは同じだ。",
+      "options": [
+        "a. であれ / であれ",
+        "b. なり / なり",
+        "c. といい / といい"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù là người giàu hay người nghèo, giá trị tính mạng con người đều nặng tựa như nhau.\n【Phân tích】Dù thuộc thành phần nào thì chân lý vẫn không đổi -> であれ・・・であれ.",
+      "grammarRule": "N1であれ N2であれ: Dù là A hay B thì cũng như nhau."
+    },
+    {
+      "id": "skz_b_ch04_q15",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "この小説はストーリー展開（　）といい登場人物の描写（　）といい、読者を飽きさせない。",
+      "options": [
+        "a. といわず / といわず",
+        "b. といい / といい",
+        "c. なり / なり"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Cuốn tiểu thuyết này từ diễn biến cốt truyện cho đến việc khắc họa nhân vật đều khiến độc giả không hề thấy nhàm chán.\n【Phân tích】Đánh giá tác phẩm trên nhiều phương diện -> といい・・・といい.",
+      "grammarRule": "N1といい N2といい: Xét cả N1 lẫn N2 đều xuất sắc."
+    },
+    {
+      "id": "skz_b_ch04_q16",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "平日（　）といわず週末（　）といわず、あのテーマパークは観光客で溢れている。",
+      "options": [
+        "a. といわず / といわず",
+        "b. なり / なり",
+        "c. であれ / であれ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bất kể ngày thường hay cuối tuần, công viên giải trí đó lúc nào cũng nườm nượp khách du lịch.\n【Phân tích】Tràn ngập khắp mọi lúc -> といわず・・・といわず.",
+      "grammarRule": "N1といわず N2といわず: Cả thời gian N1 lẫn N2 đều tràn ngập."
+    },
+    {
+      "id": "skz_b_ch04_q17",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "休みの日は散歩をする（　）本を読む（　）して、のんびり過ごしている。",
+      "options": [
+        "a. といい / といい",
+        "b. なり / なり",
+        "c. といわず / といわず"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Vào ngày nghỉ, tôi thường đi dạo hoặc đọc sách chẳng hạn, thong thả tận hưởng thời gian.\n【Phân tích】V-るなり V-るなり: Đi dạo hay đọc sách chẳng hạn.",
+      "grammarRule": "V1-るなり V2-るなり: Làm hành động 1 hay hành động 2."
+    },
+    {
+      "id": "skz_b_ch04_q18",
+      "lesson": "第4課: 例示",
+      "grammarPoint": "第4課 総合問題",
+      "question": "相手が誰（　）であれ、礼儀を失った態度を取ってはならない。",
+      "options": [
+        "a. に",
+        "b. であれ",
+        "c. なら"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Dù đối phương là bất kỳ ai đi chăng nữa, bạn cũng không được có thái độ mất lịch sự.\n【Phân tích】Từ để hỏi (誰) ＋ であれ: Dù là bất kỳ ai.",
+      "grammarRule": "Từ để hỏi ＋ であれ: Bất kể là ai/gì."
+    }
+  ],
+  "id": "skz_b_ch04"
+}

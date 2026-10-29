@@ -1,0 +1,319 @@
+{
+  "chapterId": "ch14",
+  "lesson": "第14課: 話題・評価の基準",
+  "theme": "主観を含めて説明する",
+  "group": "group2",
+  "title": "第14課: 話題・評価の基準",
+  "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第14課: 話題・評価の基準).",
+  "questions": [
+    {
+      "id": "skz_b_ch14_q01",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "1. あそこの料理（ ）。",
+      "options": [
+        "a. はとてもおいしい",
+        "b. といったら最高だ",
+        "c. ときたら、まずくて食べられたものじゃない"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (c). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q02",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "2. （ ）ときたら、毎日遊んでばかりで勉強しない。",
+      "options": [
+        "a. うちの息子",
+        "b. 子供たち",
+        "c. 隣の奥さん"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "N ＋ ときたら: Nhắc đến... là chỉ phàn nàn chê bai."
+    },
+    {
+      "id": "skz_b_ch14_q03",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "3. （ ）ときたら、休日は家で寝てばかりいる。",
+      "options": [
+        "a. わたし",
+        "b. うちの夫",
+        "c. 兄の家族"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "N ＋ ときたら: Nhắc đến... là chỉ phàn nàn chê bai."
+    },
+    {
+      "id": "skz_b_ch14_q04",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "4. 最近のテレビ番組（ ）。",
+      "options": [
+        "a. ときたら、くだらないものばかりだ",
+        "b. といったら、とても面白い",
+        "c. ときたら、ためになる番組が多い"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q05",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "1. （ ）ともなると、寒さも本格的になってくる。",
+      "options": [
+        "a. 冬",
+        "b. 10月",
+        "c. 12月"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (c). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "N ＋ ともなると: Một khi đã đạt tới mức độ đó."
+    },
+    {
+      "id": "skz_b_ch14_q06",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "2. 子供も（ ）ともなれば、親の言うことなど聞かなくなる。",
+      "options": [
+        "a. 中学生",
+        "b. 赤ん坊",
+        "c. 小学生"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "N ＋ ともなると: Một khi đã đạt tới mức độ đó."
+    },
+    {
+      "id": "skz_b_ch14_q07",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "3. （ ）ともなると、一日のスケジュールは分刻みだ。",
+      "options": [
+        "a. 一般の社員",
+        "b. 大企業の社長",
+        "c. アルバイト"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "N ＋ ともなると: Một khi đã đạt tới mức độ đó."
+    },
+    {
+      "id": "skz_b_ch14_q08",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "4. 週末（ ）、この道路は行楽客の車で大渋滞する。",
+      "options": [
+        "a. になると",
+        "b. ともなれば",
+        "c. といえば"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q09",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "1. （ ）ともあろう者が、そのような不正に手を染めるとは情けない。",
+      "options": [
+        "a. 国会議員",
+        "b. 一般市民",
+        "c. 新入社員"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q10",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "2. 一流の（ ）ともあろう人が、こんな初歩的なミスをするなんて。",
+      "options": [
+        "a. 学者",
+        "b. 学生",
+        "c. 子供"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q11",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "3. 大学の（ ）ともあろう者が、カンニングをするとは許せない。",
+      "options": [
+        "a. 先生",
+        "b. 職員",
+        "c. 教授"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (c). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q12",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "1. （ ）たるもの、常に冷静沈着でなければならない。",
+      "options": [
+        "a. 医者",
+        "b. 患者",
+        "c. 指導者"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (c). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q13",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "2. 教育者たるもの、（ ）。",
+      "options": [
+        "a. 常に学生の模範となるべきだ",
+        "b. 休みの日くらい遊びたい",
+        "c. 給料が高くなければならない"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q14",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "3. 一国の（ ）たる者は、国民全体の幸福を第一に考えるべきだ。",
+      "options": [
+        "a. 青年",
+        "b. 首相",
+        "c. 国民"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q15",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "1. 私（ ）一生懸命考えた提案です。",
+      "options": [
+        "a. なりに",
+        "b. なりの",
+        "c. ならでは"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q16",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "2. 収入が少なければ少ない（ ）、工夫して暮らすことができる。",
+      "options": [
+        "a. なりの",
+        "b. なりに",
+        "c. ままに"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q17",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "3. 子供には子供（ ）悩みがあるものだ。",
+      "options": [
+        "a. なりに",
+        "b. なりの",
+        "c. なの"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q18",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "1. （ ）たる者、どんなときでも礼儀正しく振る舞うべきだ。",
+      "options": [
+        "a. 紳士",
+        "b. 子供",
+        "c. 犯人"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (a). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q19",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "2. 最近の若い人（ ）、挨拶もろくにできない。",
+      "options": [
+        "a. ともあろう",
+        "b. ときたら",
+        "c. たるもの"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q20",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "3. 専門家（ ）人が、そんなデマに惑わされるとは信じられない。",
+      "options": [
+        "a. ともなると",
+        "b. たる",
+        "c. ともあろう"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (c). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch14_q21",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "4. （ ）ともなると、周りの見る目も違ってくる。",
+      "options": [
+        "a. 平社員",
+        "b. プロの選手",
+        "c. 失敗したとき"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (b). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "N ＋ ともなると: Một khi đã đạt tới mức độ đó."
+    },
+    {
+      "id": "skz_b_ch14_q22",
+      "lesson": "第14課: 話題・評価の基準",
+      "grammarPoint": "Shin Kanzen Master N1",
+      "question": "5. 経験が浅いなら浅い（ ）、やり方があるはずだ。",
+      "options": [
+        "a. ときたら",
+        "b. たるもの",
+        "c. なりに"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch & Phân tích】Đáp án đúng là (c). Câu hỏi thuộc bài 第14課: 話題・評価の基準.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    }
+  ],
+  "id": "skz_b_ch14"
+}

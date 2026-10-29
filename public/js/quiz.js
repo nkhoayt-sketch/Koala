@@ -13,6 +13,27 @@ export function formatBlankSpacing(text) {
   return text.replace(emptyBracketPattern, blankHtml);
 }
 
+/**
+ * Universal answer matching for numbers (0, 1, 2) and string keys ('a', 'b', 'c', 'd')
+ */
+export function checkAnswerMatch(userChoice, correctAnswer) {
+  if (userChoice === undefined || userChoice === null || correctAnswer === undefined || correctAnswer === null) {
+    return false;
+  }
+  if (userChoice === correctAnswer) return true;
+  const letters = ['a', 'b', 'c', 'd'];
+  if (typeof correctAnswer === 'string' && typeof userChoice === 'number') {
+    return letters[userChoice] === correctAnswer.toLowerCase();
+  }
+  if (typeof correctAnswer === 'number' && typeof userChoice === 'string') {
+    return letters.indexOf(userChoice.toLowerCase()) === correctAnswer;
+  }
+  if (typeof correctAnswer === 'string' && typeof userChoice === 'string') {
+    return userChoice.toLowerCase().trim() === correctAnswer.toLowerCase().trim();
+  }
+  return false;
+}
+
 function buildSentenceSlotsHtml(starPosition) {
   let slots = '';
   for (let i = 1; i <= 4; i++) {
@@ -443,7 +464,7 @@ export class QuizEngine {
 
         let reviewCorrect = 0;
         this.dayData.questions.forEach(q => {
-          if (this.userAnswers[q.id] === q.answer) reviewCorrect++;
+          if (checkAnswerMatch(this.userAnswers[q.id], q.answer)) reviewCorrect++;
         });
         const qTotal = this.dayData.questions.length;
         const qPercent = qTotal > 0 ? Math.round((reviewCorrect / qTotal) * 100) : 0;
@@ -829,7 +850,7 @@ export class QuizEngine {
   renderQuestionCard(q, hidePassageInCard = false) {
     const userChoice = this.userAnswers[q.id];
     const isAnswered = userChoice !== undefined;
-    const isCorrect = isAnswered && userChoice === q.answer;
+    const isCorrect = isAnswered && checkAnswerMatch(userChoice, q.answer);
     const isFlagged = !!this.userFlags[q.id];
     const canShowScript = (this.mode === 'practice' || this.isSubmitted) && !!q.script;
 
@@ -960,8 +981,8 @@ export class QuizEngine {
         <!-- Options List: 100% Vertical Stack (Mỗi đáp án 1 hàng dọc độc lập) -->
         <div class="options-container flex flex-col space-y-2.5 w-full mb-4">
           ${q.options.map((optText, optIdx) => {
-            const isSelected = userChoice === optIdx;
-            const isThisCorrect = q.answer === optIdx;
+            const isSelected = userChoice === optIdx || checkAnswerMatch(userChoice, ['a','b','c','d'][optIdx]);
+            const isThisCorrect = checkAnswerMatch(optIdx, q.answer);
 
             let optionStyle = 'border-slate-200 hover:border-indigo-300 hover:bg-slate-50/80 text-slate-700';
             let indicatorStyle = 'border-slate-300 text-slate-500 bg-white';
@@ -1072,7 +1093,7 @@ export class QuizEngine {
               </div>
             </div>
           </div>
-        ` : (this.isSubmitted && q.explanation ? `
+        ` : (this.isSubmitted && (q.explanation || q.grammarRule) ? `
           <div class="mt-4 pt-4 border-t border-slate-100">
             <div class="rounded-xl bg-amber-50/80 border border-amber-200/80 p-4 text-slate-800 text-sm">
               <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -1081,6 +1102,11 @@ export class QuizEngine {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                   <span>Giải thích chi tiết</span>
+                  ${q.grammarPoint ? `
+                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-black bg-indigo-100 text-indigo-900 border border-indigo-200 shadow-2xs">
+                      🎯 Mẫu: ${q.grammarPoint}
+                    </span>
+                  ` : ''}
                   ${q.hanViet ? `
                     <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-black bg-amber-200/80 text-amber-950 border border-amber-300 shadow-2xs">
                       🇨🇳 Hán Việt: ${q.hanViet}
@@ -1097,9 +1123,23 @@ export class QuizEngine {
                 </button>
               </div>
 
-              <div class="font-jp text-slate-800 whitespace-pre-line leading-relaxed pl-6">
-                ${q.explanation}
-              </div>
+              ${q.explanation ? `
+                <div class="font-jp text-slate-800 whitespace-pre-line leading-relaxed pl-6">
+                  ${q.explanation}
+                </div>
+              ` : ''}
+
+              ${q.grammarRule ? `
+                <div class="mt-3 pt-2.5 border-t border-amber-200/70 text-xs text-amber-950 leading-relaxed pl-6">
+                  <div class="font-bold flex items-center gap-1.5 mb-1.5 text-amber-900">
+                    <span>📐</span>
+                    <span>Quy tắc kết hợp & Điều kiện ngữ pháp:</span>
+                  </div>
+                  <div class="bg-white/95 p-3 rounded-xl border border-amber-200/90 font-mono text-xs text-slate-800 shadow-2xs">
+                    ${q.grammarRule}
+                  </div>
+                </div>
+              ` : ''}
             </div>
           </div>
         ` : '')}
@@ -1299,7 +1339,7 @@ export class QuizEngine {
       const isAnswered = this.userAnswers[q.id] !== undefined;
       const isFlagged = !!this.userFlags[q.id];
       const isCurrent = idx === this.currentQuestionIndex;
-      const isCorrect = isAnswered && this.userAnswers[q.id] === q.answer;
+      const isCorrect = isAnswered && checkAnswerMatch(this.userAnswers[q.id], q.answer);
 
       const btnClasses = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent, isCorrect);
       const btnContent = this.getPaletteBtnContent(q.number, isFlagged);
@@ -1349,7 +1389,7 @@ export class QuizEngine {
       const isAnswered = this.userAnswers[q.id] !== undefined;
       const isFlagged = !!this.userFlags[q.id];
       const isCurrent = idx === this.currentQuestionIndex;
-      const isCorrect = isAnswered && this.userAnswers[q.id] === q.answer;
+      const isCorrect = isAnswered && checkAnswerMatch(this.userAnswers[q.id], q.answer);
 
       btn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent, isCorrect);
     });
@@ -1365,7 +1405,7 @@ export class QuizEngine {
     const idx = parseInt(paletteBtn.getAttribute('data-palette-index'), 10);
     const isCurrent = idx === this.currentQuestionIndex;
     const q = this.dayData?.questions?.find(item => item.id === questionId);
-    const isCorrect = isAnswered && q && this.userAnswers[questionId] === q.answer;
+    const isCorrect = isAnswered && q && checkAnswerMatch(this.userAnswers[questionId], q.answer);
 
     paletteBtn.className = this.getPaletteBtnClasses(isAnswered, isFlagged, isCurrent, isCorrect);
     paletteBtn.innerHTML = this.getPaletteBtnContent(qNum, isFlagged);
@@ -1410,7 +1450,7 @@ export class QuizEngine {
       // REVIEW MODE: Stats show Đúng / Sai / Khó
       let correctCount = 0;
       this.dayData.questions.forEach(q => {
-        if (this.userAnswers[q.id] !== undefined && this.userAnswers[q.id] === q.answer) {
+        if (this.userAnswers[q.id] !== undefined && checkAnswerMatch(this.userAnswers[q.id], q.answer)) {
           correctCount++;
         }
       });
@@ -1986,7 +2026,7 @@ export class QuizEngine {
 
     let correct = 0;
     this.dayData.questions.forEach(q => {
-      if (this.userAnswers[q.id] === q.answer) {
+      if (checkAnswerMatch(this.userAnswers[q.id], q.answer)) {
         correct++;
       }
     });
@@ -2030,7 +2070,7 @@ export class QuizEngine {
         sectionScores[targetSec].total++;
         if (this.userAnswers[q.id] !== undefined) {
           sectionScores[targetSec].userAnswers[q.id] = this.userAnswers[q.id];
-          if (this.userAnswers[q.id] === q.answer) {
+          if (checkAnswerMatch(this.userAnswers[q.id], q.answer)) {
             sectionScores[targetSec].score++;
           }
         }

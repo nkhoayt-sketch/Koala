@@ -1,0 +1,305 @@
+{
+  "chapterId": "ch18",
+  "lesson": "第18課: 心情・強制的思い",
+  "theme": "主観を述べる",
+  "group": "group3",
+  "title": "第18課: 心情・強制的思い",
+  "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第18課: 心情・強制的思い).",
+  "questions": [
+    {
+      "id": "skz_b_ch18_q01",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 1",
+      "question": "1. このニュースは特に重要ではないから、( )までもない。",
+      "options": [
+        "a. みんなが知っている",
+        "b. 急いでみんなに知らせる",
+        "c. すぐに忘れる"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】V-ru + までもない (không cần thiết phải làm): Vì tin tức không quan trọng nên không cần phải vội vã thông báo cho mọi người (急いでみんなに知らせるまでもない).",
+      "grammarRule": "V-る ＋ までもない: Không cần thiết phải làm."
+    },
+    {
+      "id": "skz_b_ch18_q02",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 1",
+      "question": "2. 今さら( )までもなく、日本は少子高齢化が進んでいる。",
+      "options": [
+        "a. 説明する",
+        "b. 説明しない",
+        "c. 説明が必要な"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Cụm thành ngữ: 今さら説明するまでもなく (đến lúc này thì khỏi cần phải giải thích thêm thì ai cũng biết Nhật Bản đang già hóa dân số).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q03",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 1",
+      "question": "3. サッカー好きの彼が試合のあったその日、どこで何をしていたか、( )までもない。",
+      "options": [
+        "a. 見つける",
+        "b. わかる",
+        "c. 聞く"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Điều quá hiển nhiên: Đứa mê bóng đá như nó thì vào ngày có trận đấu, nó ở đâu làm gì thì khỏi cần hỏi cũng biết (聞くまでもない).",
+      "grammarRule": "V-る ＋ までもない: Không cần thiết phải làm."
+    },
+    {
+      "id": "skz_b_ch18_q04",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 2",
+      "question": "1. もしT大学の入学試験に失敗したら、( )までだ。",
+      "options": [
+        "a. 親にしかられる",
+        "b. 来年また挑戦する",
+        "c. 親に経済的負担がかかる"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Thể hiện quyết tâm đối phó (V-ru + までだ): Nếu thi trượt đại học T thì cùng lắm năm sau thi lại thôi (来年また挑戦するまでだ).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q05",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 2",
+      "question": "2. 考えても答えがわからなければ、( )までのことだ。",
+      "options": [
+        "a. 解答欄を空白にしておく",
+        "b. 解答欄には何も書かない",
+        "c. 解答欄を埋める"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Giải pháp bất đắc dĩ: Nghĩ mãi không ra thì cùng lắm để trống ô đáp án thôi (解答欄を空白にしておくまでのことだ).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q06",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 2",
+      "question": "3. （ ）までのことです。どうぞお気になさらないでください。",
+      "options": [
+        "a. 少し手伝った",
+        "b. 少し手伝おう",
+        "c. 少し手伝う"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Hành động đã làm trong quá khứ chỉ mang nghĩa đơn thuần: V-ta + までのことだ -> Tôi chỉ đơn thuần giúp chút việc vặt thôi, xin đừng bận tâm (少し手伝ったまでのことです).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q07",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 2",
+      "question": "4. （ ）までです。特別に深く考えたわけではありません。",
+      "options": [
+        "a. 自分の意見を言おう",
+        "b. 自分の意見を言った",
+        "c. 自分の意見を言う"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】V-ta + までです: Tôi chỉ đơn thuần nói ra ý kiến của mình thôi chứ không có suy nghĩ gì sâu xa đâu (自分の意見を言ったまでです).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q08",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 3",
+      "question": "1. どんなに高級な車を買っても、（ ）ばそれまでだ。",
+      "options": [
+        "a. 事故を起こして壊してしまえ",
+        "b. 事故を起こして壊したなら",
+        "c. 事故を起こして壊したところで"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Thể giả định ば: Xe xịn đến đâu mà gây tai nạn hỏng hóc thì coi như xong (事故を起こして壊してしまえばそれまでだ).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q09",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 3",
+      "question": "2. （ ）ばそれまでだが、もう少し何とかならなかったのだろうか。",
+      "options": [
+        "a. 仕方がないと言ってしまえ",
+        "b. 仕方がないと言ったなら",
+        "c. 仕方がないと言ってしまったら"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Cụm đi với thể ば: 仕方がないと言ってしまえばそれまでだが (Nếu buông câu 'hết cách rồi' thì coi như xong chuyện, nhưng liệu còn cách nào khác không?).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q10",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 3",
+      "question": "3. （ ）ばそれまでだが、わたしは納得がいかない。",
+      "options": [
+        "a. 規則だと言われれ",
+        "b. 規則だと言われたなら",
+        "c. 規則だと言われたら"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Thể bị động giả định: 規則だと言われればそれまでだが (Nếu bị bảo là quy tắc thì cũng chịu, nhưng tôi không phục).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q11",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 4",
+      "question": "1. この程度のことで（ ）には当たらない。",
+      "options": [
+        "a. 喜ぶ",
+        "b. 落ち込む",
+        "c. 驚く"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Không đáng để làm quá cảm xúc: Chuyện cỏn con cỡ này chẳng có gì đáng để ngạc nhiên cả (驚くには当たらない).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q12",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 4",
+      "question": "2. （ ）には当たらない。だれでも知っていることだ。",
+      "options": [
+        "a. 感心する",
+        "b. 自慢する",
+        "c. 感謝する"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Điều ai cũng biết thì không đáng để khoe khoang/tự hào: 自慢するには当たらない.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q13",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 4",
+      "question": "3. （ ）には当たらない。これくらいのサービスはホテルなら当然だ。",
+      "options": [
+        "a. 感謝する",
+        "b. 称賛する",
+        "c. 喜ぶ"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Khách sạn phục vụ thế là đương nhiên, không đáng để ca ngợi tán dương thái quá (称賛するには当たらない).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q14",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 5",
+      "question": "1. 命を救うために自らの危険を顧みない。これが（ ）でなくてなんだろう。",
+      "options": [
+        "a. 愛",
+        "b. 勇気",
+        "c. 正義"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Xả thân cứu người: Không phải là lòng dũng cảm thì là cái gì (これが勇気でなくてなんだろう).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q15",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 5",
+      "question": "2. （ ）でなくてなんだろう。こんなに素晴らしい景色は見たことがない。",
+      "options": [
+        "a. 絶景",
+        "b. 奇跡",
+        "c. 感動"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Khẳng định tột độ về phong cảnh đẹp chưa từng thấy: Đích thị là tuyệt cảnh (絶景でなくてなんだろう).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q16",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Luyện tập 5",
+      "question": "3. こんな偶然があるだろうか。（ ）。",
+      "options": [
+        "a. 運命のいたずらでなくてなんだろう",
+        "b. 運命の出会いでなくてなんだろう",
+        "c. 運命的再会でなくてなんだろう"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Sự trùng hợp ngẫu nhiên khi gặp lại: Đây đích thị là cuộc tái ngộ định mệnh (運命的再会でなくてなんだろう).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q17",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Tổng hợp",
+      "question": "1. （ ）までもない。常識だ。",
+      "options": [
+        "a. 言う",
+        "b. 言った",
+        "c. 言おう"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Đã là thường thức thì khỏi cần phải nói (言うまでもない。常識だ).",
+      "grammarRule": "V-る ＋ までもない: Không cần thiết phải làm."
+    },
+    {
+      "id": "skz_b_ch18_q18",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Tổng hợp",
+      "question": "2. だれもやらないなら、わたしが（ ）までだ。",
+      "options": [
+        "a. やった",
+        "b. やる",
+        "c. やろう"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Quyết tâm làm (V-ru + までだ): Không ai làm thì cùng lắm tôi làm (わたしがやるまでだ).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q19",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Tổng hợp",
+      "question": "3. せっかくの計画も実行（ ）ばそれまでだ。",
+      "options": [
+        "a. されなけれ",
+        "b. されなかったら",
+        "c. されないなら"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Kế hoạch mà không được thực hiện thì coi như bằng thừa: 実行されなければそれまでだ.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q20",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Tổng hợp",
+      "question": "4. （ ）には当たらない。当然の結果だ。",
+      "options": [
+        "a. 喜ぶ",
+        "b. 悲観する",
+        "c. 驚く"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Kết quả hiển nhiên thì không đáng để ngạc nhiên: 驚くには当たらない.",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch18_q21",
+      "lesson": "第18課: 心情・強制的思い",
+      "grammarPoint": "Tổng hợp",
+      "question": "5. これこそ（ ）でなくてなんだろう。",
+      "options": [
+        "a. 奇跡",
+        "b. 偶然",
+        "c. 幸運"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Khẳng định tuyệt đối: Đích thị là phép màu/kỳ tích (奇跡でなくてなんだろう).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    }
+  ],
+  "id": "skz_b_ch18"
+}

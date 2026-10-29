@@ -1,0 +1,375 @@
+{
+  "chapterId": "ch19",
+  "lesson": "第19課: 強調",
+  "theme": "主観を述べる",
+  "group": "group3",
+  "title": "第19課: 強調",
+  "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第19課: 強調).",
+  "questions": [
+    {
+      "id": "skz_b_ch19_q01",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 1",
+      "question": "1. これは（ ）に足るデータだと思う。",
+      "options": [
+        "a. 調査人数",
+        "b. 正確",
+        "c. 信頼"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Danh từ + に足る: 信頼に足るデータ (dữ liệu đáng tin cậy).",
+      "grammarRule": "V-る / N ＋ に足る: Đáng để làm gì."
+    },
+    {
+      "id": "skz_b_ch19_q02",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 1",
+      "question": "2. これはわたしにとって天職で、人生を（ ）に足る仕事だと思っている。",
+      "options": [
+        "a. かける",
+        "b. かけられる",
+        "c. かけている"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】V-ru + に足る: 人生をかけるに足る仕事 (công việc xứng đáng để cống hiến/đánh cược cả đời).",
+      "grammarRule": "V-る / N ＋ に足る: Đáng để làm gì."
+    },
+    {
+      "id": "skz_b_ch19_q03",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 1",
+      "question": "3. これはその説の正当性を断定するに（ ）。",
+      "options": [
+        "a. 足りていない証拠だと言える",
+        "b. 足らない証拠だと言える",
+        "c. 足る証拠だとは言えない"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Phủ định đuôi câu: 断定するに足る証拠だとは言えない (chưa thể nói là bằng chứng đủ sức để khẳng định).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q04",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 2",
+      "question": "1. 学者の（ ）に堪える説得力のある論文を書きたい。",
+      "options": [
+        "a. 問題",
+        "b. 批判",
+        "c. 意見"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】Danh từ đánh giá học thuật: 学者の批判に堪える (đủ vững chắc để chịu được/đáp ứng được sự phản biện của các học giả).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q05",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 2",
+      "question": "2. 電車の中で化粧をする姿は全く（ ）に堪えない。",
+      "options": [
+        "a. 見る",
+        "b. 見える",
+        "c. 見られる"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】V-ru + に堪えない: 全く見るに堪えない (hoàn toàn không nỡ/không thể nhìn nổi cảnh trang điểm trên tàu).",
+      "grammarRule": "N ＋ に堪えない: Không kìm nén nổi cảm xúc."
+    },
+    {
+      "id": "skz_b_ch19_q06",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 2",
+      "question": "3. これは聞くに堪えない（ ）話だ。",
+      "options": [
+        "a. 面白い",
+        "b. ひどい",
+        "c. 易しい"
+      ],
+      "answer": "b",
+      "explanation": "【Giải thích】聞くに堪えないひどい話 (câu chuyện tồi tệ đến mức không thể nghe lọt tai).",
+      "grammarRule": "N ＋ に堪えない: Không kìm nén nổi cảm xúc."
+    },
+    {
+      "id": "skz_b_ch19_q07",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 3",
+      "question": "1. ジェットコースターに乗ったときの林さんの顔といったら（ ）。本当に不安そうな顔だった。",
+      "options": [
+        "a. なかった",
+        "b. あった",
+        "c. 緊張していた"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Mẫu cảm thán quá khứ: 顔といったらなかった (gương mặt tái mét kinh hãi không lời nào tả xiết).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q08",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 3",
+      "question": "2. 駅には乗り換えの案内がどこにもなかった。（ ）といったらなかった。",
+      "options": [
+        "a. 困ってしまった",
+        "b. わからない",
+        "c. 不親切"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Tính từ đuôi na: 不親切といったらなかった (bất tiện/thiếu chu đáo đến mức không tả nổi).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q09",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 3",
+      "question": "3. あの日、薄暗い山道で迷ってしまった。（ ）といったらなかった。",
+      "options": [
+        "a. 心細い",
+        "b. 心配した",
+        "c. 不安だった"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Tính từ đuôi -i đi trực tiếp: 心細いといったらなかった (cảm giác bất an/cô độc không lời nào tả xiết).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q10",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 3",
+      "question": "4. 山口さんの運転の怖さといったらない。（ ）。",
+      "options": [
+        "a. 心配するほどではない",
+        "b. とても心配だ",
+        "c. 二度と乗りたくない"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Sợ hãi tột cùng: Lái xe đáng sợ đến mức không lời nào tả nổi, tôi thề không bao giờ ngồi lên xe lần 2 (二度と乗りたくない).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q11",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 4",
+      "question": "1. こんな簡単な漢字も読めないなんて、実に（ ）かぎりだ。",
+      "options": [
+        "a. 忘れている",
+        "b. できない",
+        "c. 情けない"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Tính từ cảm xúc: 情けないかぎりだ (vô cùng đáng tiếc/thảm hại khi không đọc nổi chữ Kanji đơn giản).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q12",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 4",
+      "question": "2. 小さい子が動物と触れ合っている姿は、なんとも（ ）かぎりだ。",
+      "options": [
+        "a. ほほえみ",
+        "b. ほほえむ",
+        "c. ほほえましい"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Tính từ cảm xúc đuôi -i: ほほえましいかぎりだ (vô cùng đáng yêu/ấm lòng).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q13",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 4",
+      "question": "3. こんなミスをして全く（ ）かぎりです。",
+      "options": [
+        "a. 恥の",
+        "b. 恥じる",
+        "c. 恥ずかしい"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Tính từ đuôi -i đi trực tiếp: 恥ずかしいかぎりです (vô cùng xấu hổ).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q14",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 4",
+      "question": "4. 夫婦おそろいで海外旅行ですか。（ ）かぎりです。",
+      "options": [
+        "a. うらやましい",
+        "b. 仲がいい",
+        "c. わたしも行きたい"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Tính từ cảm xúc: うらやましいかぎりです (vô cùng ghen tị/ngưỡng mộ).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q15",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 5",
+      "question": "1. 彼は（ ）極まりない生活をしている。",
+      "options": [
+        "a. 研究",
+        "b. ストレス",
+        "c. 不健康"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Tính từ đuôi na bỏ な: 不健康極まりない生活 (lối sống cực kỳ không lành mạnh).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q16",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 5",
+      "question": "2. 右利きであるわたしにとって、けがで右手が使えないのは（ ）極まりない。",
+      "options": [
+        "a. 不便",
+        "b. 不便な",
+        "c. 不便だ"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Tính từ đuôi na bỏ な: 不便極まりない (vô cùng bất tiện).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q17",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 5",
+      "question": "3. こんな吹雪の中での登山など、（ ）極まる。",
+      "options": [
+        "a. 危険",
+        "b. 苦しみ",
+        "c. 難しい"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Tính từ đuôi na bỏ な + 極まる: 危険極まる (hết sức/cực kỳ nguy hiểm).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q18",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 5",
+      "question": "4. 彼は自分が悪いのにあのような態度をとる。全く（ ）極まりない。",
+      "options": [
+        "a. 嫌",
+        "b. ばか",
+        "c. 不愉快"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Tính từ đuôi na bỏ な: 不愉快極まりない (cực kỳ khó chịu).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q19",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 6",
+      "question": "1. あのまじめな山本さんが（ ）驚いた。",
+      "options": [
+        "a. うそをつくとは",
+        "b. うそをつくのは",
+        "c. うそをつくことは"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Kinh ngạc trước sự thật khó tin: うそをつくとは驚いた (thật bất ngờ khi anh Yamamoto nghiêm túc thế mà lại nói dối).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q20",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 6",
+      "question": "2. 彼は動物が好きだとは聞いていたが、それにしても（ ）とは……。",
+      "options": [
+        "a. 猫を飼っている",
+        "b. 犬と猫を飼っている",
+        "c. 猫を12匹も飼っている"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Mức độ ngoài sức tưởng tượng: Nuôi tới tận 12 con mèo cơ á (猫を12匹も飼っているとは……).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q21",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Luyện tập 6",
+      "question": "3. よりによって楽しみにしていた旅行の日に（ ）とは……。",
+      "options": [
+        "a. 大雨だ",
+        "b. 素晴らしい天気だ",
+        "c. 雨が降らない"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Cảm thán sự cố éo le: Đúng vào ngày đi du lịch mong chờ thì lại mưa to cơ chứ (大雨だとは……).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q22",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Tổng hợp",
+      "question": "1. 今日のわたしのスピーチは満足（ ）ものではなかった。",
+      "options": [
+        "a. に足る",
+        "b. に堪える",
+        "c. といったら"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】満足に足るもの (thứ xứng đáng để cảm thấy hài lòng).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q23",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Tổng hợp",
+      "question": "2. 佐藤さんのセンスの良さ（ ）……。本当に感心します。",
+      "options": [
+        "a. というと",
+        "b. とは",
+        "c. といったら"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Gu thẩm mỹ tinh tế không lời nào tả xiết: センスの良さといったら……。",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q24",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Tổng hợp",
+      "question": "3. わたしの好きな作家が大きな賞をもらった。長年のファンとして（ ）。",
+      "options": [
+        "a. 喜ばしいかぎりだ",
+        "b. 喜ばしいとは",
+        "c. 喜ばしさ極まりない"
+      ],
+      "answer": "a",
+      "explanation": "【Giải thích】Tính từ cảm xúc + かぎりだ: 長年のファンとして喜ばしいかぎりだ (với tư cách fan lâu năm cảm thấy vô cùng vui sướng).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q25",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Tổng hợp",
+      "question": "4. クラス全員が授業中（ ）あまりにもひどい。",
+      "options": [
+        "a. 居眠りするといったら",
+        "b. 居眠りすることは",
+        "c. 居眠りするとは"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Kinh ngạc/bất bình trước sự việc: Cả lớp đều ngủ gật trong giờ học thì thật là quá tệ hại (居眠りするとは).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    },
+    {
+      "id": "skz_b_ch19_q26",
+      "lesson": "第19課: 強調",
+      "grammarPoint": "Tổng hợp",
+      "question": "5. 漫画の中にも、芸術作品として（ ）ものは多い。",
+      "options": [
+        "a. 鑑賞のかぎりの",
+        "b. 鑑賞極まる",
+        "c. 鑑賞に堪える"
+      ],
+      "answer": "c",
+      "explanation": "【Giải thích】Thưởng thức nghệ thuật: 芸術作品として鑑賞に堪えるもの (những tác phẩm đủ giá trị để thưởng thức như một tác phẩm nghệ thuật).",
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+    }
+  ],
+  "id": "skz_b_ch19"
+}

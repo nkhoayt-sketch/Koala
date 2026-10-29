@@ -1,0 +1,291 @@
+{
+  "chapterId": "ch12",
+  "lesson": "第12課: 原因・理由 (Nguyên nhân & Lý do)",
+  "theme": "主観を含めて説明する",
+  "group": "group2",
+  "title": "第12課: 原因・理由",
+  "description": "Các mẫu ngữ pháp: ～ばこそ, ～とあって, ～ではあるまいし, ～手前, ～ゆえ(に).",
+  "questions": [
+    {
+      "id": "skz_b_ch12_q01",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～ばこそ",
+      "question": "あなたのためを思え（　）ばこそ、こうして厳しい忠告をしているのです。",
+      "options": [
+        "a. ",
+        "b. な",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Chính vì muốn tốt cho tương lai của cậu tôi mới buông những lời khuyên răn nghiêm khắc đến thế này đấy.\n【Phân tích】Thể điều kiện ＋ こそ: 思えばこそ (Chính vì... nên mới...).",
+      "grammarRule": "Thể điều kiện (ば / たら) ＋ こそ: Chính vì lý do đặc biệt ấy nên mới (nhấn mạnh duy nhất lý do từ tâm huyết)."
+    },
+    {
+      "id": "skz_b_ch12_q02",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～ばこそ",
+      "question": "健康であれ（　）ばこそ、好きな仕事に打ち込むことができる。",
+      "options": [
+        "a. ",
+        "b. な",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Chính vì có sức khỏe dồi dào nên ta mới có thể thỏa sức đắm mình vào công việc mình yêu thích.\n【Phân tích】健康であればこそ (Chính vì có sức khỏe).",
+      "grammarRule": "N / な形 ＋ であればこそ: Chính vì có điều kiện nền tảng đó."
+    },
+    {
+      "id": "skz_b_ch12_q03",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～とあって",
+      "question": "人気アイドルグループの解散コンサート（　）とあって、会場周辺は数万人のファンでごった返した。",
+      "options": [
+        "a. ",
+        "b. だ",
+        "c. な"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì là buổi hòa nhạc chia tay giải tán của nhóm nhạc thần tượng đình đám, nên quanh khu vực biểu diễn đã chật ních hỗn loạn bởi hàng vạn người hâm mộ đổ về.\n【Phân tích】N / 普通形 ＋ とあって: Vì rơi vào tình huống đặc biệt ấy nên đương nhiên kéo theo kết quả bất thường ở vế sau.",
+      "grammarRule": "N / 普 ＋ とあって: Vì trong hoàn cảnh/sự kiện đặc biệt đó nên (dẫn tới diễn biến tất yếu xảy ra)."
+    },
+    {
+      "id": "skz_b_ch12_q04",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～とあって",
+      "question": "ゴールデンウィーク初日の好天とあって、（　）。",
+      "options": [
+        "a. 行楽地はどこも大混雑している",
+        "b. 家でゆっくり休む人が多い",
+        "c. 誰も外出しなかった"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì trúng vào ngày đầu tiên của kỳ nghỉ Tuần Lễ Vàng mà thời tiết lại đẹp như tranh, nên khắp các khu du lịch nghỉ dưỡng đâu đâu cũng đông nghẹt người chen chúc.\n【Phân tích】Thời tiết đẹp dịp lễ -> Du lịch đông đúc tất yếu: 行楽地はどこも大混雑している.",
+      "grammarRule": "Sự kiện đặc biệt dẫn đến trạng thái đông đúc, tấp nập hoặc kết quả hiển nhiên."
+    },
+    {
+      "id": "skz_b_ch12_q05",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～ではあるまいし",
+      "question": "子供（　）ではあるまいし、それくらいのこと一人で判断しなさい。",
+      "options": [
+        "a. ",
+        "b. な",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Có còn phải là con nít lên ba nữa đâu mà chuyện cỏn con thế cũng không tự mình quyết định lấy được, hãy tự phán đoán đi!\n【Phân tích】N ＋ ではあるまいし: Đâu phải là... (mắng mỏ, khuyên bảo đối phương không nên có thái độ không xứng hợp).",
+      "grammarRule": "N / 普 ＋ ではあるまいし: Đâu có phải là... (dùng để khuyên răn, quở trách người khác vì cách hành xử quá ấu trĩ/không phù hợp)."
+    },
+    {
+      "id": "skz_b_ch12_q06",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～ではあるまいし",
+      "question": "明日死ぬわけではあるまいし、（　）。",
+      "options": [
+        "a. そんなに悲観的な顔をするなよ",
+        "b. 遺言を書いておこう",
+        "c. 財産を処分しよう"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Có phải ngày mai là tận thế chết ngay được đâu mà cậu lại làm bộ mặt ủ dột bi quan thảm hại đến mức thế hả!\n【Phân tích】Khuyên răn không nên bi quan: そんなに悲観的な顔をするなよ.",
+      "grammarRule": "Vế sau là lời khuyên răn, yêu cầu, động viên hoặc trách móc."
+    },
+    {
+      "id": "skz_b_ch12_q07",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～手前",
+      "question": "絶対に合格すると豪語した（　）手前、不合格だったとは恥ずかしくて口が裂けても言えない。",
+      "options": [
+        "a. ",
+        "b. な",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì trót mạnh miệng huênh hoang tuyên bố chắc nịch là sẽ thi đỗ rồi, nên giờ mà bảo thi trượt thì xấu hổ nhục nhã chết mất, cạy miệng cũng chẳng dám hé lời.\n【Phân tích】V-た / Nの ＋ 手前: Vì thể diện trước mặt người khác / Vì đã lỡ... nên tâm lý buộc phải kiềm chế hoặc hành xử giữ sĩ diện.",
+      "grammarRule": "V-た / Nの ＋ 手前: Vì thể diện/sĩ diện trước mặt ai đó hoặc trước lời đã nói ra, buộc bản thân phải hành xử tương xứng."
+    },
+    {
+      "id": "skz_b_ch12_q08",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～手前",
+      "question": "生徒たちの手前、（　）。",
+      "options": [
+        "a. 教師が弱音を吐くわけにはいかない",
+        "b. 授業をサボって遊びに行こう",
+        "c. 嘘をついても構わない"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì đứng trước mặt các em học sinh thân yêu, nên người làm thầy giáo như tôi tuyệt đối không thể thốt ra những lời bi lụy nản lòng thoái chí được.\n【Phân tích】Giữ thể diện của người thầy giáo: 弱音を吐くわけにはいかない.",
+      "grammarRule": "Buộc phải kìm nén hoặc hành xử đúng chuẩn mực để giữ thể diện trước đối tượng vế trước."
+    },
+    {
+      "id": "skz_b_ch12_q09",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～ゆえ(に)",
+      "question": "若さの（　）ゆえに、向こう見ずな過ちを犯してしまうこともある。",
+      "options": [
+        "a. ",
+        "b. な",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Chính bởi cái sự bồng bột của tuổi trẻ ngông cuồng, đôi khi người ta lại phạm phải những sai lầm dại dột không lường trước hậu quả.\n【Phân tích】N (の) / 普通形 ＋ ゆえ(に): Do/Bởi vì (văn viết cổ kính, trang trọng chỉ nguyên nhân cốt lõi).",
+      "grammarRule": "N(の) / 普 ＋ ゆえ(に): Do/Bởi vì lý do căn bản đó (văn viết trang trọng, cổ phong)."
+    },
+    {
+      "id": "skz_b_ch12_q10",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "～ゆえ(に)",
+      "question": "悪天候ゆえ、（　）。",
+      "options": [
+        "a. 本日の屋外イベントはすべて中止といたします",
+        "b. 予定通り開催します",
+        "c. 傘を持たずに出かけよう"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Do thời tiết diễn biến quá xấu, toàn bộ các hoạt động sự kiện ngoài trời ngày hôm nay xin phép được hủy bỏ.\n【Phân tích】Thông báo trang trọng: 中止といたします.",
+      "grammarRule": "Dùng trong các thông báo chính thức giải thích nguyên nhân khách quan."
+    },
+    {
+      "id": "skz_b_ch12_q11",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "子供への愛情があれ（　）ばこそ、時には心を鬼にして厳しく叱るのだ。",
+      "options": [
+        "a. ばこそ",
+        "b. とあって",
+        "c. 手前"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Chính vì tình yêu thương bao la dành cho con cái nên đôi khi cha mẹ mới phải bấm bụng đóng vai ác để nghiêm khắc răn đe.\n【Phân tích】Chính vì yêu thương con -> 愛情があればこそ.",
+      "grammarRule": "条件形 ＋ こそ: Chính vì lý do đó."
+    },
+    {
+      "id": "skz_b_ch12_q12",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "入場無料（　）とあって、開門前から長蛇の列ができていた。",
+      "options": [
+        "a. とあって",
+        "b. ばこそ",
+        "c. ではあるまいし"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì là sự kiện miễn phí vé vào cửa, nên ngay từ trước giờ mở cổng người ta đã xếp hàng dài như rắn lượn.\n【Phân tích】Sự kiện miễn phí dẫn tới dòng người xếp hàng đông đúc -> 入場無料とあって.",
+      "grammarRule": "N ＋ とあって: Vì điều kiện đặc biệt."
+    },
+    {
+      "id": "skz_b_ch12_q13",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "初心者のアルバイト（　）ではあるまいし、ベテラン社員がそんな初歩的確認を怠るな。",
+      "options": [
+        "a. ではあるまいし",
+        "b. 手前",
+        "c. ゆえに"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Có phải nhân viên làm thêm chân ướt chân ráo mới vào nghề đâu mà một nhân viên kỳ cựu lại đi xao nhãng việc kiểm tra cơ bản thế hả!\n【Phân tích】Quở trách người có kinh nghiệm: アルバイトではあるまいし.",
+      "grammarRule": "N ＋ ではあるまいし: Đâu phải là..."
+    },
+    {
+      "id": "skz_b_ch12_q14",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "みんなの前であれほど豪語してしまった（　）手前、今さら引き返すわけにはいかない。",
+      "options": [
+        "a. 手前",
+        "b. ゆえに",
+        "c. とあって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì trót lớn tiếng huênh hoang trước mặt bàn dân thiên hạ rồi, giờ đây tôi đâu thể nào muối mặt mà rút lui được nữa.\n【Phân tích】Vì sĩ diện trước mặt đám đông -> 豪語してしまった手前.",
+      "grammarRule": "V-た ＋ 手前: Vì thể diện danh dự."
+    },
+    {
+      "id": "skz_b_ch12_q15",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "不慣れな（　）ゆえに、皆様に多大なるご迷惑をおかけしましたことを深くお詫び申し上げます。",
+      "options": [
+        "a. ゆえに",
+        "b. とあって",
+        "c. ばこそ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Chính bởi sự non nớt bỡ ngỡ chưa quen việc, tôi xin chân thành tạ lỗi sâu sắc vì đã gây ra muôn vàn phiền toái cho toàn thể quý vị.\n【Phân tích】Lý do trang trọng trong thư từ tạ lỗi: 不慣れなゆえに.",
+      "grammarRule": "な形 ＋ ゆえに: Do nguyên nhân..."
+    },
+    {
+      "id": "skz_b_ch12_q16",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "信頼していれ（　）ばこそ、社運を賭けた極秘プロジェクトを君に託したのだ。",
+      "options": [
+        "a. ばこそ",
+        "b. 手前",
+        "c. ではあるまいし"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Chính vì tôi đặt trọn niềm tin nơi cậu nên mới giao phó trọng trách dự án tối mật mang tính sống còn của công ty cho cậu đấy.\n【Phân tích】Chính vì tin tưởng tuyệt đối -> 信頼していればこそ.",
+      "grammarRule": "V-条件形 ＋ こそ: Chính vì lý do đó."
+    },
+    {
+      "id": "skz_b_ch12_q17",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "世界的大スターの緊急来日（　）とあって、空港ロビーは報道陣とファンで騒然となった。",
+      "options": [
+        "a. とあって",
+        "b. ばこそ",
+        "c. ゆえに"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì là sự kiện siêu sao tầm cỡ thế giới đột xuất đến Nhật Bản, nên sảnh sân bay đã trở nên náo loạn với rừng phóng viên và người hâm mộ vây quanh.\n【Phân tích】Sự kiện bất ngờ gây xôn xao dư luận -> 来日とあって.",
+      "grammarRule": "N ＋ とあって: Do sự kiện đặc biệt."
+    },
+    {
+      "id": "skz_b_ch12_q18",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "他人の物（　）ではあるまいし、自分のパソコンくらい自分で管理しなさい。",
+      "options": [
+        "a. ではあるまいし",
+        "b. 手前",
+        "c. とあって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Có phải đồ mượn của người ngoài đâu mà đến cái máy tính xách tay của chính mình cũng không tự bảo quản lấy được, tự quản lý đi chứ!\n【Phân tích】Đâu phải của người ta -> 他人の物ではあるまいし.",
+      "grammarRule": "N ＋ ではあるまいし: Đâu phải là của ai."
+    },
+    {
+      "id": "skz_b_ch12_q19",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "恩師の前（　）の手前、無様な姿を見せるわけにはいかない。",
+      "options": [
+        "a. の手前",
+        "b. ゆえに",
+        "c. とあって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vì đứng trước mặt người thầy khả kính, tôi tuyệt đối không thể để lộ bộ dạng khó coi kém cỏi được.\n【Phân tích】Trước mặt ân sư -> 恩師の前の手前.",
+      "grammarRule": "N ＋ の手前: Trước mặt người đáng tôn kính."
+    },
+    {
+      "id": "skz_b_ch12_q20",
+      "lesson": "第12課: 原因・理由",
+      "grammarPoint": "第12課 総合問題",
+      "question": "貧しさ（　）ゆえに教育を受けられなかった過去を乗り越え、立派な実業家となった。",
+      "options": [
+        "a. ゆえに",
+        "b. ばこそ",
+        "c. ではあるまいし"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Vượt qua quá khứ cay đắng không được đến trường ăn học chỉ vì cái nghèo đeo bám, anh ấy đã vươn lên trở thành một doanh nhân thành đạt vẻ vang.\n【Phân tích】Nguyên nhân sâu xa gốc rễ của số phận -> 貧しさゆえに.",
+      "grammarRule": "N ＋ ゆえに: Bởi vì số phận/nguyên nhân gốc rễ."
+    }
+  ],
+  "id": "skz_b_ch12"
+}

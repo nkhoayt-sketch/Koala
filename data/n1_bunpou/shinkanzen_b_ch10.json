@@ -1,0 +1,277 @@
+{
+  "chapterId": "ch10",
+  "lesson": "第10課: 逆接条件 (Điều kiện nghịch & Nhượng bộ)",
+  "theme": "主観を含めて説明する",
+  "group": "group2",
+  "title": "第10課: 逆接条件",
+  "description": "Các mẫu ngữ pháp: ～(よ)うと～まいと・～(よ)うが～まいが, ～であれ・～であろうと, ～たところで, ～ば～で・～なら～で・～たら～たで, ～(よ)うと(も)・～(よ)うが.",
+  "questions": [
+    {
+      "id": "skz_b_ch10_q01",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～(よ)うと～まいと",
+      "question": "他人が何と（　）言おうと、わたしは自分の信念を貫き通すつもりだ。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. で"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Người ngoài dù có gièm pha nói ngả nói nghiêng thế nào đi chăng nữa, tôi vẫn nhất quyết giữ vững niềm tin sắt đá của mình đến cùng.\n【Phân tích】Từ để hỏi ＋ V-(よ)うと: Dù cho có làm gì đi nữa thì vế sau vẫn bất biến.",
+      "grammarRule": "V-(よ)うと / V-(よ)うが: Dù có... đi chăng nữa thì lập trường vẫn không hề suy chuyển."
+    },
+    {
+      "id": "skz_b_ch10_q02",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～(よ)うと～まいと",
+      "question": "雨が降ろうと（　）まいと、明日の試合は決行される。",
+      "options": [
+        "a. 降ら",
+        "b. 降り",
+        "c. 降る"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù trời có mưa hay không mưa, trận đấu ngày mai vẫn sẽ diễn ra theo quyết định.\n【Phân tích】V1-(よ)うと V2-まいと: Nhóm 1 dùng V-るまい hoặc V-あ・まい (降るまい / 降るまいと / 降らまいと). Ở đây kết hợp 降ら ＋ まいと.",
+      "grammarRule": "V-(よ)うと V-まいと: Dù có làm hay không làm thì kết quả vẫn thế."
+    },
+    {
+      "id": "skz_b_ch10_q03",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～であれ・～であろうと",
+      "question": "たとえ国王（　）であろうと、法を犯せば裁かれなければならない。",
+      "options": [
+        "a. ",
+        "b. だ",
+        "c. な"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cho dù có là quốc vương chăng nữa, hễ phạm pháp là đều phải bị pháp luật trừng trị nghiêm minh.\n【Phân tích】N ＋ であろうと: Cho dù là danh phận cao sang nào.",
+      "grammarRule": "N / Từ để hỏi ＋ であれ / であろうと: Cho dù là N đi nữa."
+    },
+    {
+      "id": "skz_b_ch10_q04",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～たところで",
+      "question": "今さら悔やん（　）たところで、失われた時間を取り戻すことはできない。",
+      "options": [
+        "a. だ",
+        "b. で",
+        "c. "
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Giờ này có ôm đầu hối hận đứt ruột đi chăng nữa thì cũng chẳng thể nào lấy lại được quãng thời gian đã trôi qua.\n【Phân tích】悔やんだ ＋ ところで: Dù có làm... đi chăng nữa thì kết quả vẫn là công cốc, vô ích.",
+      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng vô ích / chẳng đem lại tác dụng gì (kết quả vô vọng)."
+    },
+    {
+      "id": "skz_b_ch10_q05",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～たところで",
+      "question": "いくら頼み込んだところで、（　）。",
+      "options": [
+        "a. あの頑固な店主が首を縦に振るはずがない",
+        "b. すぐに承諾してくれるだろう",
+        "c. 喜んで協力してくれる"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù có van nài van xin tới cỡ nào đi chăng nữa, tên chủ quán bướng bỉnh đó tuyệt đối không đời nào chịu gật đầu đâu.\n【Phân tích】Vế sau luôn là nhận định phủ định tính vô ích: 首を縦に振るはずがない.",
+      "grammarRule": "Vế sau luôn mang nghĩa vô ích, không có hy vọng đạt được mục đích."
+    },
+    {
+      "id": "skz_b_ch10_q06",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～ば～で・～なら～で",
+      "question": "家は広ければ広いで掃除が大変だし、狭ければ（　）で窮屈だ。",
+      "options": [
+        "a. 狭い",
+        "b. 狭く",
+        "c. 狭かっ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhà mà rộng thì rộng thật đấy nhưng dọn dẹp mệt bở hơi tai, còn nếu hẹp thì hẹp thật đấy nhưng lại bí bách tù túng.\n【Phân tích】A-ければ A-いで: 狭ければ 狭いで (hẹp thì lại có cái khổ của hẹp).",
+      "grammarRule": "A-ければ A-いで / V-たら V-たで: Nếu đạt được thì cũng nảy sinh phiền toái kiểu đó, mà không đạt được thì cũng có cái khổ tương ứng."
+    },
+    {
+      "id": "skz_b_ch10_q07",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～(よ)うと(も)・～(よ)うが",
+      "question": "どんなに困難が立ちはだか（　）ろうとも、一歩も引く気はない。",
+      "options": [
+        "a. ",
+        "b. お",
+        "c. こ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù cho có bao nhiêu chông gai hiểm trở chắn ngang trước mắt đi chăng nữa, tôi cũng không bao giờ có ý định lùi bước dù chỉ nửa bước.\n【Phân tích】立ちはだかる -> 立ちはだかろうとも (chia thể ý chí ＋ とも).",
+      "grammarRule": "V-(よ)うとも / V-(よ)うが: Dù cho... đến mức nào đi chăng nữa."
+    },
+    {
+      "id": "skz_b_ch10_q08",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "～(よ)うと(も)・～(よ)うが",
+      "question": "たとえ世界中が敵に回ろうが、（　）。",
+      "options": [
+        "a. わたしは君の味方であり続ける",
+        "b. すぐに降伏しよう",
+        "c. 逃げ出すつもりだ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù cho cả thế giới này có quay lưng biến thành kẻ thù đi chăng nữa, tôi vẫn sẽ mãi mãi đứng về phía bạn.\n【Phân tích】Lập trường trước sau như một kiên định: わたしは君の味方であり続ける.",
+      "grammarRule": "Lập trường kiên định tuyệt đối bất chấp mọi giả định cực đoan."
+    },
+    {
+      "id": "skz_b_ch10_q09",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "参加（　）しようとしまいと、会費は全員同額徴収されます。",
+      "options": [
+        "a. しようとしまいと",
+        "b. したところで",
+        "c. したらしたで"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù có tham gia hay không tham gia, hội phí vẫn sẽ được thu đồng đều như nhau từ tất cả mọi người.\n【Phân tích】Làm hay không làm thì kết quả vẫn áp dụng chung -> しようとしまいと.",
+      "grammarRule": "V-(よ)うと V-まいと: Dù làm hay không."
+    },
+    {
+      "id": "skz_b_ch10_q09",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "どんな名医（　）であろうと、すべての病気を治せるわけではない。",
+      "options": [
+        "a. であろうと",
+        "b. たところで",
+        "c. ようが"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù có là danh y tài ba lỗi lạc cỡ nào chăng nữa thì cũng chẳng thể nào chữa bách bệnh cho tất cả mọi người được.\n【Phân tích】Bất kể là danh y nào -> 名医であろうと.",
+      "grammarRule": "Từ để hỏi ＋ N ＋ であろうと: Bất kể là danh phận nào."
+    },
+    {
+      "id": "skz_b_ch10_q10",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "今さら弁解し（　）たところで、誰もお前の言葉を信じないよ。",
+      "options": [
+        "a. たところで",
+        "b. ようと",
+        "c. であれ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tới nước này rồi mày có phân bua thanh minh cách mấy đi chăng nữa thì cũng chẳng có ma nào tin lời mày đâu.\n【Phân tích】Dù có giải thích cũng hoàn toàn vô ích -> 弁解したところで.",
+      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng hoàn toàn vô ích."
+    },
+    {
+      "id": "skz_b_ch10_q11",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "給料は安ければ安いで生活が苦しいし、高ければ（　）で税金が高くて大変だ。",
+      "options": [
+        "a. 高いで",
+        "b. 高いなら",
+        "c. 高いと"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Lương mà thấp thì thấp thật nhưng sống chật vật, mà lương cao thì cao thật nhưng thuế má lại đội lên ngút trời mệt mỏi.\n【Phân tích】Cấu trúc: 高ければ高いで.",
+      "grammarRule": "A-ければ A-いで: Đằng nào cũng có nỗi khổ riêng."
+    },
+    {
+      "id": "skz_b_ch10_q12",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "周りからどんなに非難され（　）ようが、わたしは自分の正しいと思う道を歩む。",
+      "options": [
+        "a. ようが",
+        "b. たところで",
+        "c. であれ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù cho có bị mọi người xung quanh chỉ trích gièm pha tới mức nào đi chăng nữa, tôi vẫn sẽ sải bước trên con đường mà mình cho là đúng đắn.\n【Phân tích】Bị chỉ trích thế nào cũng không nản -> 非難されようが.",
+      "grammarRule": "V-(よ)うが: Cho dù có bị..."
+    },
+    {
+      "id": "skz_b_ch10_q13",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "君が行こ（　）うと行くまいと、わたしの決意は変わらない。",
+      "options": [
+        "a. うと",
+        "b. うが",
+        "c. とも"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù cậu có đi hay không đi thì quyết tâm của tôi vẫn không hề lay chuyển.\n【Phân tích】行こうと行くまいと (Cặp đối sánh ようと...まいと).",
+      "grammarRule": "V-(よ)うと V-まいと."
+    },
+    {
+      "id": "skz_b_ch10_q14",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "いくら急いだ（　）ところで、次の電車までは30分もあるのだから無駄だよ。",
+      "options": [
+        "a. ところで",
+        "b. ようと",
+        "c. であれ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù cậu có cuống cuồng chạy thục mạng đi chăng nữa thì cũng phải chờ tới 30 phút nữa mới có chuyến tàu tiếp theo, thành ra vội cũng công cốc thôi.\n【Phân tích】Vội vã cũng vô ích -> 急いだところで...無駄だ.",
+      "grammarRule": "V-た ＋ ところで...無駄だ: Làm cũng vô ích."
+    },
+    {
+      "id": "skz_b_ch10_q15",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "独身なら独身で自由だが寂しいし、結婚し（　）たら結婚したで責任が重くて大変だ。",
+      "options": [
+        "a. たら",
+        "b. れば",
+        "c. なら"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Độc thân thì độc thân thật đấy nhưng tự do mà đôi khi cô đơn, còn kết hôn thì kết hôn thật đấy nhưng trách nhiệm gia đình đè nặng áp lực.\n【Phân tích】結婚したら結婚したで (Mô hình たら...たで).",
+      "grammarRule": "V-たら V-たで: Nếu rơi vào tình huống đó thì lại có cái khó của nó."
+    },
+    {
+      "id": "skz_b_ch10_q16",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "たとえ100回失敗し（　）ようとも、決して夢をあきらめはしない。",
+      "options": [
+        "a. ようとも",
+        "b. たところで",
+        "c. であれ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù cho có thất bại cay đắng tới 100 lần đi chăng nữa, tôi cũng tuyệt đối không bao giờ từ bỏ ước mơ của đời mình.\n【Phân tích】Cho dù thất bại 100 lần -> 失敗しようとも.",
+      "grammarRule": "V-(よ)うとも: Dù cho có..."
+    },
+    {
+      "id": "skz_b_ch10_q17",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "結果がどう（　）であれ、全力を尽くしたのだから悔いはない。",
+      "options": [
+        "a. であれ",
+        "b. たところで",
+        "c. ようが"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù kết quả ngã ngũ ra sao đi chăng nữa, chúng ta đã dốc cạn toàn lực rồi nên chẳng còn gì phải nuối tiếc cả.\n【Phân tích】どうであれ (Dù kết quả thế nào).",
+      "grammarRule": "どう ＋ であれ: Dù như thế nào đi nữa."
+    },
+    {
+      "id": "skz_b_ch10_q18",
+      "lesson": "第10課: 逆接条件",
+      "grammarPoint": "第10課 総合問題",
+      "question": "いくら大金を積まれ（　）たところで、人の心を金で買うことなどできはしない。",
+      "options": [
+        "a. たところで",
+        "b. ようと",
+        "c. であれ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Dù người ta có chất cả núi tiền trước mặt đi chăng nữa, việc dùng tiền để mua chuộc trái tim một con người là điều không bao giờ làm nổi.\n【Phân tích】Có chất nhiều tiền cũng vô ích -> 積まれたところで.",
+      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng không thể."
+    }
+  ],
+  "id": "skz_b_ch10"
+}

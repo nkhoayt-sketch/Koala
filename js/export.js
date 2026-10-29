@@ -19,7 +19,7 @@ export function stripHtml(html) {
  * Deduplicated by question ID.
  * Returns items, totalCount, wrongCount, flaggedCount.
  */
-export function collectQuestionsForAnki(questions = [], userAnswers = {}, userFlags = {}) {
+export function collectQuestionsForAnki(questions = [], userAnswers = {}, userFlags = {}, extraOptions = {}) {
   const seenIds = new Set();
   const collected = [];
   let wrongCount = 0;
@@ -30,13 +30,18 @@ export function collectQuestionsForAnki(questions = [], userAnswers = {}, userFl
     const userChoice = userAnswers ? userAnswers[q.id] : undefined;
     const isAnswered = userChoice !== undefined && userChoice !== null;
     
-    // Safely evaluate correctness for both 0-based index and 1-based index answers
+    // Safely evaluate correctness for 0-based index, 1-based index, and string answers ('a', 'b', 'c')
     let isCorrect = false;
     if (isAnswered) {
       if (userChoice === q.answer) {
         isCorrect = true;
       } else if (typeof q.answer === 'number' && (userChoice + 1) === q.answer) {
         isCorrect = true;
+      } else if (typeof q.answer === 'string' && typeof userChoice === 'number') {
+        const letters = ['a', 'b', 'c', 'd'];
+        if (letters[userChoice] === q.answer.toLowerCase()) isCorrect = true;
+      } else if (typeof q.answer === 'string' && typeof userChoice === 'string') {
+        if (userChoice.toLowerCase().trim() === q.answer.toLowerCase().trim()) isCorrect = true;
       }
     }
     const isWrong = !isAnswered || !isCorrect;
@@ -46,17 +51,18 @@ export function collectQuestionsForAnki(questions = [], userAnswers = {}, userFl
       if (!seenIds.has(qid)) {
         seenIds.add(qid);
 
+        const isBunpou = extraOptions.isBunpou || (typeof q.id === 'string' && q.id.startsWith('skz_b_'));
         let classification = 'wrong';
-        let tag = 'JLPT_Wrong';
+        let tag = isBunpou ? 'JLPT_N1_Bunpou_Wrong' : 'JLPT_Wrong';
         let label = 'Câu làm sai';
 
         if (isFlagged && isWrong) {
           classification = 'flagged_wrong';
-          tag = 'JLPT_Flagged_Wrong';
+          tag = isBunpou ? 'JLPT_N1_Bunpou_Wrong' : 'JLPT_Flagged_Wrong';
           label = 'Vừa đánh dấu khó vừa làm sai';
         } else if (isFlagged && isCorrect) {
           classification = 'flagged_correct';
-          tag = 'JLPT_Flagged_Correct';
+          tag = isBunpou ? 'JLPT_N1_Bunpou_Flagged' : 'JLPT_Flagged_Correct';
           label = 'Đánh dấu khó (làm đúng)';
         }
 

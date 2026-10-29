@@ -1,0 +1,263 @@
+{
+  "chapterId": "ch06",
+  "lesson": "第6課: 様子 (Dáng vẻ, trạng thái)",
+  "theme": "事柄を説明する",
+  "group": "group1",
+  "title": "第6課: 様子",
+  "description": "Các mẫu ngữ pháp: ～んばかりだ, ～とばかり(に), ～ともなく・～ともなしに, ～ながらに(して), ～きらいがある.",
+  "questions": [
+    {
+      "id": "skz_b_ch06_q01",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～んばかりだ",
+      "question": "彼女は今にも泣き出さ（　）んばかりの表情で立ち尽くしていた。",
+      "options": [
+        "a. ",
+        "b. し",
+        "c. せ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cô ấy đứng chết lặng với nét mặt ngỡ như chực khóc òa ra ngay đến nơi.\n【Phân tích】V-ない (bỏ ない) ＋ んばかり: 泣き出さない -> 泣き出さんばかり.",
+      "grammarRule": "V-ない (bỏ ない) ＋ んばかりだ (riêng する -> せんばかり): Cứ như thể sắp sửa... đến nơi rồi."
+    },
+    {
+      "id": "skz_b_ch06_q02",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～んばかりだ",
+      "question": "割れ（　）んばかりの拍手が会場全体に鳴り響いた。",
+      "options": [
+        "a. ん",
+        "b. ",
+        "c. る"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Tiếng vỗ tay vang dội như muốn làm nổ tung cả khán phòng.\n【Phân tích】割れない -> 割れんばかりの拍手 (tiếng vỗ tay tưởng chừng vỡ tung).",
+      "grammarRule": "V-ない (bỏ ない) ＋ んばかりのN: N như muốn... đến nơi."
+    },
+    {
+      "id": "skz_b_ch06_q03",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～とばかり(に)",
+      "question": "彼は「早く帰れ」（　）とばかりに、時計をチラチラ見ている。",
+      "options": [
+        "a. ",
+        "b. だ",
+        "c. な"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Anh ta cứ liếc nhìn đồng hồ liên tục như thể muốn ra hiệu bằng lời 'Về nhanh đi cho rảnh'.\n【Phân tích】Câu văn / từ ngữ ＋ とばかりに: Như thể muốn nói rằng...",
+      "grammarRule": "Câu trích dẫn / Dáng vẻ ＋ とばかり(に): Ra điệu như muốn nói rằng... (hành động không nói thành lời nhưng thái độ lộ rõ)."
+    },
+    {
+      "id": "skz_b_ch06_q04",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～とばかり(に)",
+      "question": "チャンスが到来したとばかりに、（　）。",
+      "options": [
+        "a. 彼は慎重に行動した",
+        "b. 一気に攻勢に出た",
+        "c. あきらめて帰った"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Như thể thấy thời cơ ngàn năm có một đã tới, anh ấy lập tức mở đợt tổng tấn công ồ ạt.\n【Phân tích】Chớp thời cơ ra đòn quyết định: 一気に攻勢に出た.",
+      "grammarRule": "Hành vi chớp lấy dáng vẻ/thời điểm tức thì."
+    },
+    {
+      "id": "skz_b_ch06_q05",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～ともなく・～ともなしに",
+      "question": "ラジオを聴く（　）ともなしに聴いていたら、懐かしい曲が流れてきた。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. こと"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tôi đang để radio phát vu vơ không chủ đích thì bỗng nhiên một bài hát xưa cũ ùa về bên tai.\n【Phân tích】V-る ＋ ともなく / ともなしに: Làm hành động một cách vô thức, không chú định.",
+      "grammarRule": "V-る ＋ ともなく / ともなしに: Làm việc gì đó vu vơ, vô định, không hề có chủ đích trước."
+    },
+    {
+      "id": "skz_b_ch06_q06",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～ともなく・～ともなしに",
+      "question": "窓の外を見るともなくぼんやり眺めていたら、（　）。",
+      "options": [
+        "a. 鳥が巣を作っているのに気づいた",
+        "b. 一生懸命鳥を探した",
+        "c. 宿題を始めた"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Đang lúc lơ đãng nhìn vu vơ ra ngoài cửa sổ, tôi bỗng phát hiện ra một chú chim đang cặm cụi làm tổ.\n【Phân tích】Bắt gặp ngẫu nhiên khi đang vô định ngắm nhìn: 鳥が巣を作っているのに気づいた.",
+      "grammarRule": "Thường đi kèm các động từ giác quan (nhìn, nghe, nghĩ) diễn tả sự tình cờ nhận ra."
+    },
+    {
+      "id": "skz_b_ch06_q07",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～ながらに(して)",
+      "question": "彼女は生まれ（　）ながらにして、並外れた音楽の才能を持っていた。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Ngay từ khi mới sinh ra đời, cô ấy đã sở hữu tài năng âm nhạc phi phàm xuất chúng.\n【Phân tích】Cụm từ cố định: 生まれながらにして (bẩm sinh từ lúc chào đời).",
+      "grammarRule": "N / V-ます (bỏ ます) ＋ ながらに(して): Giữ nguyên trong trạng thái vốn có từ đầu (thường đi với 生まれ, 涙, 昔)."
+    },
+    {
+      "id": "skz_b_ch06_q08",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～ながらに(して)",
+      "question": "インターネットのおかげで、家に（　）ながらにして世界中の情報が手に入る。",
+      "options": [
+        "a. いて",
+        "b. いる",
+        "c. い"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Nhờ có Internet, chỉ cần ngồi yên tại nhà mà ta vẫn có thể nắm trọn mọi thông tin trên toàn thế giới trong tay.\n【Phân tích】居る -> 居ながらにして (ở yên một chỗ tại nhà).",
+      "grammarRule": "V-ます (bỏ ます) ＋ ながらに: Ở nguyên trong tình trạng đó."
+    },
+    {
+      "id": "skz_b_ch06_q09",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～きらいがある",
+      "question": "彼は物事を少し大げさに言う（　）きらいがある。",
+      "options": [
+        "a. ",
+        "b. な",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Anh ấy có tật hay nói quá, phóng đại mọi chuyện lên một chút.\n【Phân tích】V-る ＋ きらいがある: Có thói/có tật hay làm điều không tốt.",
+      "grammarRule": "V-る / Nの ＋ きらいがある: Có khuynh hướng, tật xấu tiêu cực lặp đi lặp lại."
+    },
+    {
+      "id": "skz_b_ch06_q10",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "～きらいがある",
+      "question": "最近の若者は、失敗を恐れて新しい挑戦を避ける（　）。",
+      "options": [
+        "a. きらいがある",
+        "b. んばかりだ",
+        "c. ながらにして"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Giới trẻ ngày nay có khuynh hướng sợ thất bại nên hay né tránh những thử thách mới.\n【Phân tích】Nhận xét khuynh hướng tiêu cực -> きらいがある.",
+      "grammarRule": "Phê phán một xu hướng, nếp nghĩ tiêu cực."
+    },
+    {
+      "id": "skz_b_ch06_q11",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "怒り（　）んばかりの剣幕で、彼は部屋を飛び出していった。",
+      "options": [
+        "a. せ",
+        "b. ",
+        "c. し"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Với khí thế đằng đằng như muốn nổ tung cơn thịnh nộ, anh ta lao vút ra khỏi phòng.\n【Phân tích】怒る -> 怒らんばかり (bỏ ない thêm んばかり).",
+      "grammarRule": "V-ない (bỏ ない) ＋ んばかり: Như sắp bùng nổ."
+    },
+    {
+      "id": "skz_b_ch06_q12",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "「任せておけ」（　）とばかりに、彼は胸をドンと叩いた。",
+      "options": [
+        "a. とばかりに",
+        "b. んばかりに",
+        "c. ながらに"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Như muốn nói ra điệu 'Cứ để đấy cho tôi', anh ấy vỗ ngực cái bộp đầy tự tin.\n【Phân tích】Hành động ra vẻ 'cứ giao cho tôi' -> とばかりに.",
+      "grammarRule": "Câu thoại ngầm ＋ とばかりに: Ra dáng, ra điệu."
+    },
+    {
+      "id": "skz_b_ch06_q13",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "どこから（　）ともなく、美しい笛の音が聞こえてきた。",
+      "options": [
+        "a. ともなく",
+        "b. ながらに",
+        "c. んばかりに"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Không biết tự nơi nào văng vẳng đưa lại, một tiếng sáo du dương êm ái vọng tới.\n【Phân tích】どこからともなく: Chẳng biết từ đâu đưa lại (vô định).",
+      "grammarRule": "Từ nghi vấn ＋ ともなく: Không rõ là từ đâu/bao giờ."
+    },
+    {
+      "id": "skz_b_ch06_q14",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "祖母は昔の思い出を、涙（　）ながらに語ってくれた。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bà vừa rưng rưng nước mắt nghẹn ngào vừa kể lại cho tôi nghe những kỷ niệm xưa cũ.\n【Phân tích】涙ながらに: Trong làn nước mắt nghẹn ngào (cụm từ cố định).",
+      "grammarRule": "涙ながらに: Trong dòng nước mắt."
+    },
+    {
+      "id": "skz_b_ch06_q15",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "彼女は自分に都合の悪い話を（　）きらいがある。",
+      "options": [
+        "a. 聞き流す",
+        "b. 聞き流した",
+        "c. 聞き流して"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cô ấy có cái tật hay bỏ ngoài tai những câu chuyện bất lợi cho bản thân mình.\n【Phân tích】V-る ＋ きらいがある: 聞き流すきらいがある.",
+      "grammarRule": "V-る ＋ きらいがある: Có thói quen xấu."
+    },
+    {
+      "id": "skz_b_ch06_q16",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "土下座（　）せんばかりに頭を下げて謝罪した。",
+      "options": [
+        "a. ",
+        "b. し",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Anh ấy cúi rạp đầu xin lỗi như thể muốn quỳ mọp xuống đất đến nơi.\n【Phân tích】Động từ する -> せんばかりに (quy tắc biến đổi đặc biệt của する).",
+      "grammarRule": "する -> せんばかりだ: Cứ như muốn làm đến nơi."
+    },
+    {
+      "id": "skz_b_ch06_q17",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "「私には関係ない」（　）とばかりの態度で知らん顔をしている。",
+      "options": [
+        "a. とばかりの",
+        "b. んばかりの",
+        "c. ながらの"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Anh ta làm bộ mặt ngơ ngác phớt lờ với thái độ như muốn bảo 'Chuyện đó chẳng liên quan gì tới tôi cả'.\n【Phân tích】Thái độ tỏ vẻ -> とばかりの態度.",
+      "grammarRule": "Câu văn ＋ とばかりのN: N như muốn nói rằng..."
+    },
+    {
+      "id": "skz_b_ch06_q18",
+      "lesson": "第6課: 様子",
+      "grammarPoint": "第6課 総合問題",
+      "question": "この村には、昔（　）ながらの素朴な生活習慣が今も息づいている。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Ngôi làng này cho đến tận bây giờ vẫn còn lưu giữ nguyên vẹn nếp sống mộc mạc từ thuở ngàn xưa.\n【Phân tích】昔ながらの: Vốn có giữ nguyên từ xa xưa.",
+      "grammarRule": "昔ながらのN: Giữ nguyên từ ngày xưa."
+    }
+  ],
+  "id": "skz_b_ch06"
+}

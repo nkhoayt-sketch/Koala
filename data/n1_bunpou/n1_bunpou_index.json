@@ -1,0 +1,244 @@
+{
+  "totalChapters": 20,
+  "totalExercises": 21,
+  "totalQuestions": 452,
+  "categories": [
+    {
+      "id": "all",
+      "label": "Tất cả (20 Bài)",
+      "group": null
+    },
+    {
+      "id": "group1",
+      "label": "Nhóm I: Sự việc (1~7)",
+      "group": "group1"
+    },
+    {
+      "id": "group2",
+      "label": "Nhóm II: Chủ quan (8~16)",
+      "group": "group2"
+    },
+    {
+      "id": "group3",
+      "label": "Nhóm III: Bày tỏ (17~20)",
+      "group": "group3"
+    },
+    {
+      "id": "review",
+      "label": "Bài tổng hợp",
+      "group": "review"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "file": "shinkanzen_b_ch01.json",
+      "lesson": "第1課: 時間関係 (Quan hệ thời gian)",
+      "title": "第1課: 時間関係",
+      "theme": "事柄を説明する",
+      "group": "group1",
+      "questionCount": 24,
+      "description": "Các mẫu ngữ pháp diễn tả hành động xảy ra gần như tức thì, liên tiếp hoặc kể từ một thời điểm: ～が早いか, ～や・～や否や, ～なり, ～そばから, ～てからというもの, ～にあって."
+    },
+    {
+      "id": "ch02",
+      "file": "shinkanzen_b_ch02.json",
+      "lesson": "第2課: 範囲の始まり・限度 (Khởi đầu phạm vi & Giới hạn)",
+      "title": "第2課: 範囲の始まり・限度",
+      "theme": "事柄を説明する",
+      "group": "group1",
+      "questionCount": 24,
+      "description": "Các mẫu ngữ pháp diễn tả điểm bắt đầu mở màn, giới hạn tối đa hoặc đánh giá mức độ: ～を皮切りに(して), ～に至るまで, ～を限りに, ～をもって, ～といったところだ."
+    },
+    {
+      "id": "ch03",
+      "file": "shinkanzen_b_ch03.json",
+      "lesson": "第3課: 限定・非限定・付加 (Giới hạn, không giới hạn & Bổ sung)",
+      "title": "第3課: 限定・非限定・付加",
+      "theme": "事柄を説明する",
+      "group": "group1",
+      "questionCount": 20,
+      "description": "Các mẫu ngữ pháp: ～をおいて, ～ならでは, ～にとどまらず, ～はおろか, ～もさることながら."
+    },
+    {
+      "id": "ch04",
+      "file": "shinkanzen_b_ch04.json",
+      "lesson": "第4課: 例示 (Đưa ra ví dụ)",
+      "title": "第4課: 例示",
+      "theme": "事柄を説明する",
+      "group": "group1",
+      "questionCount": 18,
+      "description": "Các mẫu ngữ pháp: ～なり・・・なり, ～であれ・・・であれ, ～といい・・・といい, ～といわず・・・といわず."
+    },
+    {
+      "id": "ch05",
+      "file": "shinkanzen_b_ch05.json",
+      "lesson": "第5課: 関連・無関係 (Liên quan & Không liên quan)",
+      "title": "第5課: 関連・無関係",
+      "theme": "事柄を説明する",
+      "group": "group1",
+      "questionCount": 20,
+      "description": "Các mẫu ngữ pháp: ～いかんだ, ～いかんにかかわらず・～いかんによらず・～いかんを問わず, ～をものともせず(に), ～をよそに, ～ならいざしらず."
+    },
+    {
+      "id": "ch06",
+      "file": "shinkanzen_b_ch06.json",
+      "lesson": "第6課: 様子 (Dáng vẻ, trạng thái)",
+      "title": "第6課: 様子",
+      "theme": "事柄を説明する",
+      "group": "group1",
+      "questionCount": 18,
+      "description": "Các mẫu ngữ pháp: ～んばかりだ, ～とばかり(に), ～ともなく・～ともなしに, ～ながらに(して), ～きらいがある."
+    },
+    {
+      "id": "ch07",
+      "file": "shinkanzen_b_ch07.json",
+      "lesson": "第7課: 付随行動 (Hành động đi kèm)",
+      "title": "第7課: 付随行動",
+      "theme": "事柄を説明する",
+      "group": "group1",
+      "questionCount": 16,
+      "description": "Các mẫu ngữ pháp: ～がてら, ～かたがた, ～かたわら."
+    },
+    {
+      "id": "ch08",
+      "file": "shinkanzen_b_ch08.json",
+      "lesson": "第8課: 逆接 (Tương phản & Nhượng bộ)",
+      "title": "第8課: 逆接",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 20,
+      "description": "Các mẫu ngữ pháp: ～ところを, ～ものを, ～とはいえ, ～といえども, ～と思いきや."
+    },
+    {
+      "id": "ch09",
+      "file": "shinkanzen_b_ch09.json",
+      "lesson": "第9課: 条件 (Điều kiện)",
+      "title": "第9課: 条件",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 20,
+      "description": "Các mẫu ngữ pháp: ～とあれば, ～たら最後・～たが最後, ～ようでは, ～なしに(は)・～なしでは・～なくして(は), ～くらいなら."
+    },
+    {
+      "id": "ch10",
+      "file": "shinkanzen_b_ch10.json",
+      "lesson": "第10課: 逆接条件 (Điều kiện nghịch & Nhượng bộ)",
+      "title": "第10課: 逆接条件",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 19,
+      "description": "Các mẫu ngữ pháp: ～(よ)うと～まいと・～(よ)うが～まいが, ～であれ・～であろうと, ～たところで, ～ば～で・～なら～で・～たら～たで, ～(よ)うと(も)・～(よ)うが."
+    },
+    {
+      "id": "ch11",
+      "file": "shinkanzen_b_ch11.json",
+      "lesson": "第11課: 目的・手段 (Mục đích & Phương tiện)",
+      "title": "第11課: 目的・手段",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 16,
+      "description": "Các mẫu ngữ pháp: ～べく, ～んがため(に), ～をもって."
+    },
+    {
+      "id": "ch12",
+      "file": "shinkanzen_b_ch12.json",
+      "lesson": "第12課: 原因・理由 (Nguyên nhân & Lý do)",
+      "title": "第12課: 原因・理由",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 20,
+      "description": "Các mẫu ngữ pháp: ～ばこそ, ～とあって, ～ではあるまいし, ～手前, ～ゆえ(に)."
+    },
+    {
+      "id": "ch13",
+      "file": "shinkanzen_b_ch13.json",
+      "lesson": "第13課: 可能・不可能・禁止 (Khả năng, bất khả năng & Cấm đoán)",
+      "title": "第13課: 可能・不可能・禁止",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 22,
+      "description": "Các mẫu ngữ pháp: ～にかたくない, ～(よ)うにも～ない, ～に～ない, ～て(は)いられない, ～べくもない, ～べからず・～べからざる, ～まじき."
+    },
+    {
+      "id": "ch14",
+      "file": "shinkanzen_b_ch14.json",
+      "lesson": "第14課: 話題・評価の基準",
+      "title": "第14課: 話題・評価の基準",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 22,
+      "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第14課: 話題・評価の基準)."
+    },
+    {
+      "id": "ch15",
+      "file": "shinkanzen_b_ch15.json",
+      "lesson": "第15課: 比較対照",
+      "title": "第15課: 比較対照",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 15,
+      "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第15課: 比較対照)."
+    },
+    {
+      "id": "ch16",
+      "file": "shinkanzen_b_ch16.json",
+      "lesson": "第16課: 結末・最終の状態",
+      "title": "第16課: 結末・最終の状態",
+      "theme": "主観を含めて説明する",
+      "group": "group2",
+      "questionCount": 16,
+      "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第16課: 結末・最終の状態)."
+    },
+    {
+      "id": "ch17",
+      "file": "shinkanzen_b_ch17.json",
+      "lesson": "第17課: 評価・感想",
+      "title": "第17課: 評価・感想",
+      "theme": "主観を述べる",
+      "group": "group3",
+      "questionCount": 23,
+      "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第17課: 評価・感想)."
+    },
+    {
+      "id": "ch18",
+      "file": "shinkanzen_b_ch18.json",
+      "lesson": "第18課: 心情・強制的思い",
+      "title": "第18課: 心情・強制的思い",
+      "theme": "主観を述べる",
+      "group": "group3",
+      "questionCount": 21,
+      "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第18課: 心情・強制的思い)."
+    },
+    {
+      "id": "ch19",
+      "file": "shinkanzen_b_ch19.json",
+      "lesson": "第19課: 強調",
+      "title": "第19課: 強調",
+      "theme": "主観を述べる",
+      "group": "group3",
+      "questionCount": 26,
+      "description": "Bài tập ngữ pháp chuẩn sách giáo trình Shin Kanzen Master Bunpou N1 (第19課: 強調)."
+    },
+    {
+      "id": "ch20",
+      "file": "shinkanzen_b_ch20.json",
+      "lesson": "第20課: 主張・断定 (Khẳng định & Chủ trương)",
+      "title": "第20課: 主張・断定",
+      "theme": "主観を述べる",
+      "group": "group3",
+      "questionCount": 22,
+      "description": "Các mẫu ngữ pháp khẳng định dứt khoát hoặc bắt buộc về tâm lý, đạo đức: ～にほかならない, ～にすぎない, ～ずにはおかない, ～ざるを得ない, ～ないではすまない, ～を禁じ得ない, ～を余儀なくされる."
+    },
+    {
+      "id": "review",
+      "file": "shinkanzen_b_review.json",
+      "lesson": "文法総まとめ問題 (Bài tổng hợp ngữ pháp toàn diện)",
+      "title": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "theme": "Bài tổng hợp",
+      "group": "review",
+      "questionCount": 50,
+      "description": "Bộ câu hỏi tổng hợp kiến thức ngữ pháp từ các bài ôn tập định kỳ của giáo trình Shin Kanzen Master Bunpou N1."
+    }
+  ]
+}

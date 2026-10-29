@@ -1,0 +1,235 @@
+{
+  "chapterId": "ch11",
+  "lesson": "第11課: 目的・手段 (Mục đích & Phương tiện)",
+  "theme": "主観を含めて説明する",
+  "group": "group2",
+  "title": "第11課: 目的・手段",
+  "description": "Các mẫu ngữ pháp: ～べく, ～んがため(に), ～をもって.",
+  "questions": [
+    {
+      "id": "skz_b_ch11_q01",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "～べく",
+      "question": "彼は医師になる（　）べく、日夜猛勉強に励んでいる。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Anh ấy đang ngày đêm miệt mài dùi mài kinh sử nhằm mục đích thi đỗ trở thành bác sĩ.\n【Phân tích】V-る ＋ べく (riêng する có thể là すべく hoặc するべく): Để nhằm mục đích lớn lao.",
+      "grammarRule": "V-る ＋ べく (する -> すべく / するべく): Để nhằm mục đích... (văn viết trang trọng, vế sau cùng chủ ngữ)."
+    },
+    {
+      "id": "skz_b_ch11_q02",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "～べく",
+      "question": "真相を究明すべく、（　）。",
+      "options": [
+        "a. 徹底的な現地調査が開始された",
+        "b. 調査をやめた",
+        "c. 真相は闇に葬られた"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhằm mục đích làm sáng tỏ chân tướng sự việc, cuộc điều tra hiện trường triệt để đã chính thức được khởi động.\n【Phân tích】Hành động hướng tới việc làm sáng tỏ sự thật: 現地調査が開始された.",
+      "grammarRule": "Vế sau là hành động cụ thể để đạt được mục đích ở vế trước."
+    },
+    {
+      "id": "skz_b_ch11_q03",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "～んがため(に)",
+      "question": "己の野望を果たさ（　）んがために、彼は手段を選ばなかった。",
+      "options": [
+        "a. ",
+        "b. し",
+        "c. せ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cốt để thực hiện cho bằng được dã tâm vị kỷ của bản thân, hắn ta đã bất chấp mọi thủ đoạn tàn độc không từ một thứ gì.\n【Phân tích】V-ない (bỏ ない) ＋ んがため(に) (riêng する -> せんがため): Cốt để nhằm đạt mục đích to lớn, quan trọng của đời người.",
+      "grammarRule": "V-ない (bỏ ない) ＋ んがため(に) (する -> せんがため): Với mong muốn tột bậc cốt để đạt được mục tiêu lớn lao."
+    },
+    {
+      "id": "skz_b_ch11_q04",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "～んがため(に)",
+      "question": "祖国の独立を勝ち取らんがために、（　）。",
+      "options": [
+        "a. 多くの若者たちが命を捧げた",
+        "b. 武器を捨てて降伏した",
+        "c. 逃亡を図った"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cốt để giành lại nền độc lập tự do cho tổ quốc, biết bao người con trẻ tuổi đã dâng hiến cả mạng sống của mình.\n【Phân tích】Hy sinh vì lý tưởng cao cả của dân tộc: 多くの若者たちが命を捧げた.",
+      "grammarRule": "Mục đích thiêng liêng, có tính chất trọng đại đối với cá nhân hoặc tập thể."
+    },
+    {
+      "id": "skz_b_ch11_q05",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "～をもって",
+      "question": "誠意（　）をもって対応すれば、相手にもきっと気持ちが伝わるはずだ。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. で"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nếu dùng lòng chân thành trọn vẹn để đối đãi ứng xử, thì chắc chắn tấm lòng của bạn sẽ chạm tới được trái tim đối phương.\n【Phân tích】N ＋ をもって: Bằng phương tiện, bằng thái độ/biện pháp (诚意をもって: bằng tất cả sự chân thành).",
+      "grammarRule": "N (phương tiện, thái độ, tư cách) ＋ をもって: Bằng phương tiện/thái độ đó (văn phong trang trọng)."
+    },
+    {
+      "id": "skz_b_ch11_q06",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "～をもって",
+      "question": "最新のハイテク技術をもって、（　）。",
+      "options": [
+        "a. この難工事を無事成功させることができた",
+        "b. 工事を中断せざるを得なかった",
+        "c. 失敗に終わってしまった"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bằng việc áp dụng công nghệ kỹ thuật cao tối tân nhất, chúng tôi đã có thể hoàn thành xuất sắc công trình thi công hiểm trở này một cách an toàn.\n【Phân tích】Dùng công nghệ cao để hoàn thành: 無事成功させることができた.",
+      "grammarRule": "Chỉ phương tiện đặc biệt giúp hoàn thành được việc lớn."
+    },
+    {
+      "id": "skz_b_ch11_q07",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "優勝杯を勝ち取る（　）べく、チーム一丸となって厳しい猛練習に耐えてきた。",
+      "options": [
+        "a. べく",
+        "b. んがため",
+        "c. をもって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhằm đoạt được cúp vô địch danh giá, toàn đội bóng đã đồng lòng đoàn kết vượt qua những đợt huấn luyện gian khổ khắc nghiệt.\n【Phân tích】V-る ＋ べく: Nhằm mục đích vô địch.",
+      "grammarRule": "V-る ＋ べく: Để nhằm mục đích."
+    },
+    {
+      "id": "skz_b_ch11_q08",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "自らの潔白を証明（　）せんがため、彼は証拠の提出に奔走した。",
+      "options": [
+        "a. せんがため",
+        "b. べく",
+        "c. をもって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cốt để chứng minh sự trong sạch của bản thân, anh ta đã bôn ba khắp nơi gom góp bằng chứng xác thực.\n【Phân tích】証明する -> 証明せんがため (dạng đặc biệt của する).",
+      "grammarRule": "する -> せんがため: Cốt để làm gì."
+    },
+    {
+      "id": "skz_b_ch11_q09",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "不屈の精神（　）をもって幾多の試練を乗り越えてきた。",
+      "options": [
+        "a. をもって",
+        "b. べく",
+        "c. んがために"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bằng tinh thần kiên cường bất khuất không lùi bước, ông ấy đã vượt qua muôn vàn phong ba bão táp thử thách của cuộc đời.\n【Phân tích】N (tinh thần) ＋ をもって: Bằng tinh thần.",
+      "grammarRule": "N ＋ をもって: Bằng phương tiện/tinh thần."
+    },
+    {
+      "id": "skz_b_ch11_q10",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "環境破壊を食い止める（　）べく、世界各国が連携協定を結んだ。",
+      "options": [
+        "a. べく",
+        "b. んがため",
+        "c. をもって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhằm ngăn chặn sự tàn phá hủy hoại môi trường, các quốc gia trên toàn thế giới đã cùng nhau ký kết hiệp ước hợp tác liên kết.\n【Phân tích】V-る ＋ べく: Nhằm ngăn chặn hủy hoại môi trường.",
+      "grammarRule": "V-る ＋ べく: Với mục đích."
+    },
+    {
+      "id": "skz_b_ch11_q11",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "生き残ら（　）んがために、動物たちは過酷な環境に適応進化してきた。",
+      "options": [
+        "a. んがために",
+        "b. べく",
+        "c. をもって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cốt để duy trì sự sinh tồn sống sót, muôn loài động vật đã thích nghi và tiến hóa qua môi trường khắc nghiệt khốc liệt.\n【Phân tích】生き残らない -> 生き残らんがために (Động từ nhóm 1 chia thể phủ định bỏ ない).",
+      "grammarRule": "V-ない (bỏ ない) ＋ んがため: Cốt để sinh tồn."
+    },
+    {
+      "id": "skz_b_ch11_q12",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "書面（　）をもちまして、契約締結のご挨拶にかえさせていただきます。",
+      "options": [
+        "a. をもちまして",
+        "b. べく",
+        "c. んがため"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bằng văn bản này, tôi xin phép được thay cho lời chào mừng việc ký kết hợp đồng chính thức.\n【Phân tích】N ＋ をもちまして (Văn phong thương mại nghi thức).",
+      "grammarRule": "N ＋ をもちまして: Bằng phương tiện (lịch sự)."
+    },
+    {
+      "id": "skz_b_ch11_q13",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "新しい事業を成功（　）させるべく、優秀なスペシャリストを集めた。",
+      "options": [
+        "a. させるべく",
+        "b. させるんがため",
+        "c. させるをもって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhằm giúp dự án kinh doanh mới thành công vang dội, chúng tôi đã quy tụ những chuyên gia xuất sắc hàng đầu.\n【Phân tích】V-る (させる) ＋ べく.",
+      "grammarRule": "V-る ＋ べく: Nhằm làm cho..."
+    },
+    {
+      "id": "skz_b_ch11_q14",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "民衆を救わ（　）んがために、彼は自らの命を顧みず戦火に飛び込んだ。",
+      "options": [
+        "a. んがために",
+        "b. べく",
+        "c. をもって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Cốt để giải cứu muôn dân lầm than, chàng đã không tiếc thân mình lao thẳng vào biển lửa đạn bom.\n【Phân tích】救わない -> 救わんがために.",
+      "grammarRule": "V-ない (bỏ ない) ＋ んがため."
+    },
+    {
+      "id": "skz_b_ch11_q15",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "身を（　）もって危険から子供を守った母の愛に打たれた。",
+      "options": [
+        "a. もって",
+        "b. べく",
+        "c. んがため"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tôi vô cùng xúc động trước tình mẫu tử thiêng liêng của người mẹ đã lấy chính tấm thân mình để che chắn chở che cho con khỏi hiểm nguy.\n【Phân tích】身をもって (Lấy chính thân mình để làm).",
+      "grammarRule": "身をもって: Bằng chính bản thân/xương máu mình."
+    },
+    {
+      "id": "skz_b_ch11_q16",
+      "lesson": "第11課: 目的・手段",
+      "grammarPoint": "第11課 総合問題",
+      "question": "将来の不安を解消す（　）べく、今から資産形成を始める人が増えている。",
+      "options": [
+        "a. べく",
+        "b. んがため",
+        "c. をもって"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Nhằm giải tỏa những bất an lo lắng về tương lai sau này, ngày càng có nhiều người bắt đầu tích lũy đầu tư tài sản ngay từ bây giờ.\n【Phân tích】解消する -> 解消すべく.",
+      "grammarRule": "V-る (する -> すべく) ＋ べく: Nhằm giải tỏa."
+    }
+  ],
+  "id": "skz_b_ch11"
+}

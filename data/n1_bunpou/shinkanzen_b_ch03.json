@@ -1,0 +1,291 @@
+{
+  "chapterId": "ch03",
+  "lesson": "第3課: 限定・非限定・付加 (Giới hạn, không giới hạn & Bổ sung)",
+  "theme": "事柄を説明する",
+  "group": "group1",
+  "title": "第3課: 限定・非限定・付加",
+  "description": "Các mẫu ngữ pháp: ～をおいて, ～ならでは, ～にとどまらず, ～はおろか, ～もさることながら.",
+  "questions": [
+    {
+      "id": "skz_b_ch03_q01",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～をおいて",
+      "question": "これほど多種多様な機能を持ったものは、わが社の（　）をおいてほかにありません。",
+      "options": [
+        "a. この製品",
+        "b. 製品の開発",
+        "c. 技術力"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Sản phẩm sở hữu nhiều chức năng đa dạng đến mức này thì ngoài sản phẩm này của công ty chúng tôi ra, không thể có sản phẩm nào khác.\n【Phân tích】～をおいてほかにない (ngoại trừ X ra thì không có ai/cái gì khác), vế trước là đối tượng độc nhất.",
+      "grammarRule": "N ＋ をおいて (ほかに...ない): Ngoại trừ N ra thì không có gì/ai khác sánh bằng."
+    },
+    {
+      "id": "skz_b_ch03_q02",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～をおいて",
+      "question": "この大役を任せられる人は、あなた（　）をおいてほかにいません。",
+      "options": [
+        "a. の能力",
+        "b. を",
+        "c. のほかに"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Người có thể giao phó trọng trách lớn lao này thì ngoại trừ bạn ra không có ai khác.\n【Phân tích】'あなたをおいてほかにいない'. Cấu trúc trực tiếp đi với danh từ chỉ đối tượng duy nhất.",
+      "grammarRule": "N ＋ をおいて: Nhấn mạnh sự đánh giá cao nhất dành cho đối tượng duy nhất."
+    },
+    {
+      "id": "skz_b_ch03_q03",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～ならでは",
+      "question": "こんな素晴らしい料理は、一流のシェフ（　）ならでは作れない。",
+      "options": [
+        "a. だけ",
+        "b. だから",
+        "c. "
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Món ăn tuyệt hảo đến nhường này thì chỉ có thể là đầu bếp bậc nhất mới làm nổi.\n【Phân tích】N ＋ ならでは (đặc sắc chỉ có ở N). Ở đây 'シェフならでは' kết hợp trực tiếp.",
+      "grammarRule": "N ＋ ならでは (のN) / ならでは...ない: Chỉ có ở N mới có được giá trị/nét đặc sắc tuyệt vời ấy."
+    },
+    {
+      "id": "skz_b_ch03_q04",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～ならでは",
+      "question": "地元の人たち（　）ならではの温かいもてなしを受けた。",
+      "options": [
+        "a. ",
+        "b. に",
+        "c. の"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Chúng tôi đã nhận được sự đón tiếp nồng hậu đậm chất ấm áp chỉ có ở người dân địa phương.\n【Phân tích】N ＋ ならではの ＋ N: Nならではの温かいもてなし.",
+      "grammarRule": "N ＋ ならではの ＋ N: Nét đặc trưng tuyệt vời chỉ có ở..."
+    },
+    {
+      "id": "skz_b_ch03_q05",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～にとどまらず",
+      "question": "このアニメは日本国内（　）にとどまらず、世界中で大ヒットしている。",
+      "options": [
+        "a. ",
+        "b. の",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bộ anime này không chỉ dừng lại trong phạm vi nội địa Nhật Bản mà còn tạo nên cơn sốt vang dội trên toàn thế giới.\n【Phân tích】N ＋ にとどまらず: Không chỉ giới hạn trong phạm vi N mà còn lan rộng ra phạm vi lớn hơn.",
+      "grammarRule": "N / V-る ＋ にとどまらず: Không chỉ dừng lại ở phạm vi đó mà còn lan rộng ra."
+    },
+    {
+      "id": "skz_b_ch03_q06",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～にとどまらず",
+      "question": "火山噴火の影響は周辺地域にとどまらず、（　）。",
+      "options": [
+        "a. すぐに収まるだろう",
+        "b. 被害は軽微だった",
+        "c. 国全体に及んでいる"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Ảnh hưởng của vụ phun trào núi lửa không chỉ dừng lại ở khu vực xung quanh mà còn lan rộng ra toàn bộ đất nước.\n【Phân tích】Vế sau mở rộng quy mô nghiêm trọng hơn: 国全体に及んでいる.",
+      "grammarRule": "Vế sau là phạm vi rộng lớn hơn, nghiêm trọng hơn vế trước."
+    },
+    {
+      "id": "skz_b_ch03_q07",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～はおろか",
+      "question": "彼は自分の名前（　）はおろか、住所さえ言えない状態だ。",
+      "options": [
+        "a. ",
+        "b. を",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Anh ấy đang trong tình trạng ngay cả tên của bản thân còn chưa nói được, huống chi là địa chỉ nhà.\n【Phân tích】AはおろかBも/さえ: B (điều hiển nhiên đơn giản) còn chưa được, huống chi A (điều phức tạp hơn).",
+      "grammarRule": "N ＋ はおろか: Ngay cả... cũng không được, huống chi là... (thường đi với さえ, すら, も ở vế sau mang ý tiêu cực)."
+    },
+    {
+      "id": "skz_b_ch03_q08",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～はおろか",
+      "question": "怪我をして、走ることはおろか（　）さえできない。",
+      "options": [
+        "a. 歩くこと",
+        "b. 泳ぐこと",
+        "c. 立ち上がること"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bị thương nặng đến mức việc chạy nhảy đã đành một lẽ, ngay cả việc đi bộ bình thường còn chẳng thể làm được.\n【Phân tích】'Đi bộ' (歩くこと) là mức độ cơ bản hơn 'chạy' (走ること). Việc cơ bản còn không làm nổi.",
+      "grammarRule": "Vế sau luôn là sự việc có mức độ đơn giản hơn, dễ thực hiện hơn vế trước."
+    },
+    {
+      "id": "skz_b_ch03_q09",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～もさることながら",
+      "question": "このホテルは料理の美味しさ（　）もさることながら、窓からの景色の素晴らしさにも圧倒される。",
+      "options": [
+        "a. ",
+        "b. を",
+        "c. に"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Khách sạn này món ăn ngon thì đã đành rồi, nhưng cảnh sắc nhìn từ cửa sổ cũng khiến người ta phải choáng ngợp.\n【Phân tích】N ＋ もさることながら: A thì đương nhiên rồi, nhưng B còn đáng chú ý hơn nữa.",
+      "grammarRule": "N ＋ もさることながら: A đã đành / A là đương nhiên rồi, nhưng B còn hơn thế nữa."
+    },
+    {
+      "id": "skz_b_ch03_q10",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "～もさることながら",
+      "question": "若者の就職難は本人の能力もさることながら、（　）。",
+      "options": [
+        "a. 景気の悪化も大きな要因だ",
+        "b. 本人の努力不足だ",
+        "c. 学歴がすべてだ"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Tình trạng khó xin việc của giới trẻ thì năng lực bản thân đã đành một nhẽ, nhưng suy thoái kinh tế cũng là một nguyên nhân cực kỳ lớn.\n【Phân tích】Nhấn mạnh thêm nguyên nhân ngoại cảnh vế sau: 景気の悪化も大きな要因だ.",
+      "grammarRule": "Vế sau đưa ra một yếu tố khác đáng chú ý hoặc có sức nặng hơn."
+    },
+    {
+      "id": "skz_b_ch03_q11",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "彼女のバイオリン演奏の美しさは、プロ（　）ならではの深い味わいがある。",
+      "options": [
+        "a. をおいて",
+        "b. ならでは",
+        "c. にとどまらず"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Vẻ đẹp tiếng đàn vĩ cầm của cô ấy mang một dư vị sâu sắc chỉ có ở người nghệ sĩ chuyên nghiệp đích thực.\n【Phân tích】Đặc sắc độc đáo chỉ có ở nghệ sĩ chuyên nghiệp -> プロならではの.",
+      "grammarRule": "N ＋ ならではの: Nét đặc sắc chỉ có ở..."
+    },
+    {
+      "id": "skz_b_ch03_q12",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "次のリーダーは、情熱と行動力を持つ彼（　）をおいて適任者はいない。",
+      "options": [
+        "a. ならでは",
+        "b. をおいて",
+        "c. はおろか"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Người lãnh đạo tiếp theo thì ngoại trừ anh ấy - người tràn đầy nhiệt huyết và hành động ra, chẳng còn ai thích hợp hơn.\n【Phân tích】彼をおいて適任者はいない (Ngoài anh ấy ra không ai xứng đáng).",
+      "grammarRule": "N ＋ をおいて (ほかに...ない): Ngoại trừ N ra thì không có ai khác."
+    },
+    {
+      "id": "skz_b_ch03_q13",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "不況の波は中小企業（　）にとどまらず、大企業にも大きな打撃を与えている。",
+      "options": [
+        "a. にとどまらず",
+        "b. はおろか",
+        "c. もさることながら"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Làn sóng suy thoái không chỉ dừng lại ở doanh nghiệp vừa và nhỏ mà còn giáng đòn nặng nề lên cả các tập đoàn lớn.\n【Phân tích】Không chỉ dừng lại ở phạm vi hẹp mà lan sang cả diện rộng -> ～にとどまらず.",
+      "grammarRule": "N ＋ にとどまらず: Không chỉ dừng lại ở..."
+    },
+    {
+      "id": "skz_b_ch03_q14",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "入院中は固い食べ物（　）はおろか、水さえ満足に飲めなかった。",
+      "options": [
+        "a. をおいて",
+        "b. はおろか",
+        "c. ならでは"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Trong thời gian nằm viện, thức ăn cứng thì đã đành không ăn nổi, ngay cả ngụm nước cũng chẳng thể uống trọn vẹn.\n【Phân tích】AはおろかBさえ: Thức ăn cứng đã đành, ngay cả nước cũng không uống được.",
+      "grammarRule": "N ＋ はおろか...さえ: Huống chi là... ngay cả cái cơ bản cũng không xong."
+    },
+    {
+      "id": "skz_b_ch03_q15",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "新製品の性能（　）もさることながら、その洗練されたデザインにも注目が集まっている。",
+      "options": [
+        "a. もさることながら",
+        "b. をおいて",
+        "c. にとどまらず"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Hiệu năng của sản phẩm mới thì tuyệt vời là điều đương nhiên rồi, nhưng thiết kế tinh tế của nó cũng đang thu hút sự chú ý rất lớn.\n【Phân tích】Tính năng tốt là dĩ nhiên, kiểu dáng còn ấn tượng hơn -> ～もさることながら.",
+      "grammarRule": "N ＋ もさることながら: A đã đành, B cũng rất đáng kể."
+    },
+    {
+      "id": "skz_b_ch03_q16",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "京都（　）ならではの歴史を感じる街並みに感動した。",
+      "options": [
+        "a. をおいて",
+        "b. ならでは",
+        "c. はおろか"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Tôi vô cùng xúc động trước dãy phố cổ kính mang đậm dấu ấn lịch sử chỉ có ở Kyoto.\n【Phân tích】Đặc trưng riêng biệt chỉ Kyoto mới có -> 京都ならではの.",
+      "grammarRule": "N ＋ ならでは: Chỉ có ở N."
+    },
+    {
+      "id": "skz_b_ch03_q17",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "この難問を解決できるのは、鈴木博士（　）をおいてほかには考えられない。",
+      "options": [
+        "a. をおいて",
+        "b. にとどまらず",
+        "c. もさることながら"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Người có thể giải quyết bài toán hóc búa này thì ngoài tiến sĩ Suzuki ra không thể nghĩ ra ai khác.\n【Phân tích】Đối tượng duy nhất -> ～をおいてほかに...ない.",
+      "grammarRule": "N ＋ をおいて (ほかに...ない)."
+    },
+    {
+      "id": "skz_b_ch03_q18",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "彼女は英語（　）はおろか、フランス語やロシア語まで流暢に話す。",
+      "options": [
+        "a. をおいて",
+        "b. はおろか",
+        "c. にとどまらず"
+      ],
+      "answer": "c",
+      "explanation": "【Dịch】Cô ấy không chỉ dừng lại ở tiếng Anh mà ngay cả tiếng Pháp hay tiếng Nga cũng nói lưu loát.\n【Phân tích】Không chỉ tiếng Anh mà còn tiếng Pháp, tiếng Nga (ý bổ sung tích cực) -> にとどまらず. Chú ý: 'はおろか' mang sắc thái tiêu cực phủ định.",
+      "grammarRule": "N ＋ にとどまらず: Không chỉ... mà còn nhiều hơn thế."
+    },
+    {
+      "id": "skz_b_ch03_q19",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "この映画は若者（　）にとどまらず、幅広い年代の人々に支持されている。",
+      "options": [
+        "a. にとどまらず",
+        "b. はおろか",
+        "c. をおいて"
+      ],
+      "answer": "a",
+      "explanation": "【Dịch】Bộ phim này không chỉ thu hút giới trẻ mà còn được đông đảo khán giả ở nhiều độ tuổi đón nhận nồng nhiệt.\n【Phân tích】Mở rộng phạm vi người xem -> ～にとどまらず.",
+      "grammarRule": "N ＋ にとどまらず: Mở rộng ra phạm vi lớn hơn."
+    },
+    {
+      "id": "skz_b_ch03_q20",
+      "lesson": "第3課: 限定・非限定・付加",
+      "grammarPoint": "第3課 総合問題",
+      "question": "彼の誠実な人柄（　）もさることながら、その鋭いビジネスセンスにも一目置いている。",
+      "options": [
+        "a. をおいて",
+        "b. もさることながら",
+        "c. ならでは"
+      ],
+      "answer": "b",
+      "explanation": "【Dịch】Nhân cách chân thành của anh ấy đã là điều đáng nể rồi, nhưng nhạy cảm kinh doanh sắc bén của anh ấy cũng khiến người ta phải ngả mũ thán phục.\n【Phân tích】A đã đành, B còn đáng nể hơn -> ～もさることながら.",
+      "grammarRule": "N ＋ もさることながら: A đã đành, B còn hơn thế."
+    }
+  ],
+  "id": "skz_b_ch03"
+}
