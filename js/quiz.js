@@ -59,9 +59,10 @@ function buildSentenceSlotsHtml(starPosition) {
 function formatQuestionContent(questionText, section) {
   if (!questionText) return '';
 
-  let formatted = questionText;
+  let formatted = typeof questionText === 'string' ? questionText : String(questionText);
 
-  const isArrangement = (section && (section.includes('問題6') || section.includes('問題8') || section.includes('文の組み立て'))) || formatted.includes('★');
+  const secStr = typeof section === 'string' ? section : '';
+  const isArrangement = (secStr && (secStr.includes('問題6') || secStr.includes('問題8') || secStr.includes('文の組み立て'))) || formatted.includes('★');
   if (isArrangement) {
     const slotToken = '[＿_]{1,10}';
     const starToken = '[＿_]*★[＿_]*';
@@ -117,8 +118,8 @@ export function formatScriptText(script) {
     if (speakerMatch) {
       const speaker = speakerMatch[1];
       const speech = speakerMatch[2];
-      const isFemale = speaker.includes('女');
-      const isMale = speaker.includes('男');
+      const isFemale = Boolean(speaker?.includes?.('女'));
+      const isMale = Boolean(speaker?.includes?.('男'));
       const badgeColor = isFemale 
         ? 'bg-rose-100 text-rose-800 border-rose-200' 
         : isMale 
@@ -371,9 +372,9 @@ export class QuizEngine {
     }
     if (isN2Exam) {
       questions = questions.filter(q => {
-        const isVocab = q.sectionGroup === 'vocab_grammar' || (!q.sectionGroup && !q.section.includes('読解') && !q.section.includes('聴解'));
-        const isReading = q.sectionGroup === 'reading' || q.section.includes('読解');
-        const isListening = q.sectionGroup === 'listening' || q.section.includes('聴解');
+        const isVocab = q.sectionGroup === 'vocab_grammar' || (!q.sectionGroup && !q.section?.includes?.('読解') && !q.section?.includes?.('聴解'));
+        const isReading = q.sectionGroup === 'reading' || Boolean(q.section?.includes?.('読解'));
+        const isListening = q.sectionGroup === 'listening' || Boolean(q.section?.includes?.('聴解'));
 
         if (scopes.vocab_grammar && isVocab) return true;
         if (scopes.reading && isReading) return true;
@@ -383,14 +384,28 @@ export class QuizEngine {
     }
 
     // Safely normalize 1-based answers (1-4) from Kanji drill modules to 0-based for engine matching
-    questions = questions.map(q => {
+    // and normalize question structure (section, number, options)
+    questions = questions.map((q, idx) => {
       let ans = q.answer;
-      if (q.level === 'N3' || q.id?.startsWith('n3_k_') || q.id?.startsWith('n1_skz_k_') || (typeof ans === 'number' && ans >= 1 && ans <= 4 && (q.set || q.chapter))) {
+      if (q.level === 'N3' || q.id?.startsWith?.('n3_k_') || q.id?.startsWith?.('n1_skz_k_') || (typeof ans === 'number' && ans >= 1 && ans <= 4 && (q.set || q.chapter))) {
         ans = ans - 1;
       }
+
+      let secName = q.section;
+      if (!secName) {
+        if (q.type === 'reading') secName = '問題1: 漢字の読み方';
+        else if (q.type === 'writing') secName = '問題2: 漢字の書き方';
+        else if (q.lesson) secName = q.lesson;
+        else if (rawDayData && rawDayData.title) secName = rawDayData.title;
+        else secName = 'Luyện tập';
+      }
+
       return {
         ...q,
-        answer: ans
+        number: q.number || (idx + 1),
+        section: secName,
+        answer: ans,
+        options: Array.isArray(q.options) ? q.options : []
       };
     });
 
@@ -542,11 +557,12 @@ export class QuizEngine {
     const sections = [];
     const sectionMap = new Map();
     questions.forEach(q => {
-      if (!sectionMap.has(q.section)) {
-        sectionMap.set(q.section, []);
-        sections.push(q.section);
+      const secKey = (q && q.section) ? q.section : (this.dayData?.title || 'Luyện tập');
+      if (!sectionMap.has(secKey)) {
+        sectionMap.set(secKey, []);
+        sections.push(secKey);
       }
-      sectionMap.get(q.section).push(q);
+      sectionMap.get(secKey).push(q);
     });
 
     let html = `
@@ -562,9 +578,9 @@ export class QuizEngine {
     const listeningSections = [];
 
     sections.forEach(sectionName => {
-      const sectionQuestions = sectionMap.get(sectionName);
+      const sectionQuestions = sectionMap.get(sectionName) || [];
       const firstQ = sectionQuestions[0];
-      const isListening = firstQ?.sectionGroup === 'listening' || sectionName.includes('聴解');
+      const isListening = firstQ?.sectionGroup === 'listening' || Boolean(sectionName?.includes?.('聴解'));
       if (isListening) {
         listeningSections.push(sectionName);
       } else {
@@ -702,17 +718,18 @@ export class QuizEngine {
   renderSectionBlock(sectionName, sectionQuestions) {
     if (!sectionQuestions || sectionQuestions.length === 0) return '';
     const firstQ = sectionQuestions[0];
+    const displayTitle = sectionName || this.dayData?.title || 'Luyện tập';
 
     let html = `
-      <div class="section-group space-y-5" data-section="${sectionName}">
+      <div class="section-group space-y-5" data-section="${displayTitle}">
         <!-- Section Header -->
         <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white rounded-2xl p-5 shadow-sm border border-slate-800">
           <div class="flex flex-wrap items-center justify-between gap-3">
             <div class="flex items-center gap-3">
               <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
-                ${this.dayData.level ? 'JLPT ' + this.dayData.level : 'JLPT N1'}
+                ${this.dayData?.level ? 'JLPT ' + this.dayData.level : 'JLPT N1'}
               </span>
-              <h3 class="text-lg font-bold tracking-tight text-white">${sectionName}</h3>
+              <h3 class="text-lg font-bold tracking-tight text-white">${displayTitle}</h3>
             </div>
             <span class="text-xs font-medium text-slate-400 bg-slate-800/80 px-2.5 py-1 rounded-lg">
               ${sectionQuestions.length} câu hỏi
@@ -758,7 +775,7 @@ export class QuizEngine {
         const qEnd = block.questions[block.questions.length - 1]?.number || '';
         const rangeLabel = block.questions.length > 1 ? `Câu ${qStart} 〜 ${qEnd}` : `Câu ${qStart}`;
         const isSplit = this.dokkaiLayout !== 'stacked';
-        const isGrammarPassage = block.questions[0]?.sectionGroup === 'vocab_grammar' || (block.questions[0]?.section && block.questions[0].section.includes('問題9'));
+        const isGrammarPassage = block.questions[0]?.sectionGroup === 'vocab_grammar' || Boolean(block.questions[0]?.section?.includes?.('問題9'));
         const passageBadgeLabel = isGrammarPassage ? `Đoạn văn điền từ (${rangeLabel})` : `Đoạn văn đọc hiểu (${rangeLabel})`;
 
         const toolbarHeader = `
@@ -848,11 +865,12 @@ export class QuizEngine {
    * @param {Boolean} hidePassageInCard If true (in Split View), do not duplicate the passage inside the card
    */
   renderQuestionCard(q, hidePassageInCard = false) {
-    const userChoice = this.userAnswers[q.id];
+    if (!q) return '';
+    const userChoice = this.userAnswers ? this.userAnswers[q.id] : undefined;
     const isAnswered = userChoice !== undefined;
     const isCorrect = isAnswered && checkAnswerMatch(userChoice, q.answer);
-    const isFlagged = !!this.userFlags[q.id];
-    const canShowScript = (this.mode === 'practice' || this.isSubmitted) && !!q.script;
+    const isFlagged = Boolean(this.userFlags && this.userFlags[q.id]);
+    const canShowScript = (this.mode === 'practice' || this.isSubmitted) && Boolean(q.script);
 
     // Card border / highlight based on post-submit state
     let cardStatusClass = 'border-slate-200/80 bg-white';
@@ -860,7 +878,8 @@ export class QuizEngine {
       cardStatusClass = isCorrect ? 'card-correct border-emerald-300 bg-white' : 'card-wrong border-rose-300 bg-white';
     }
 
-    const formattedQuestion = formatQuestionContent(q.question, q.section);
+    const formattedQuestion = formatQuestionContent(q.question || '', q.section || '');
+    const options = Array.isArray(q.options) ? q.options : [];
 
     return `
       <div class="question-card rounded-2xl border ${cardStatusClass} p-5 sm:p-6 shadow-sm transition-card relative" 
@@ -980,7 +999,7 @@ export class QuizEngine {
 
         <!-- Options List: 100% Vertical Stack (Mỗi đáp án 1 hàng dọc độc lập) -->
         <div class="options-container flex flex-col space-y-2.5 w-full mb-4">
-          ${q.options.map((optText, optIdx) => {
+          ${options.map((optText, optIdx) => {
             const isSelected = userChoice === optIdx || checkAnswerMatch(userChoice, ['a','b','c','d'][optIdx]);
             const isThisCorrect = checkAnswerMatch(optIdx, q.answer);
 
@@ -2059,9 +2078,9 @@ export class QuizEngine {
       };
 
       this.dayData.questions.forEach(q => {
-        const isVocab = q.sectionGroup === 'vocab_grammar' || (!q.sectionGroup && !q.section?.includes('読解') && !q.section?.includes('聴解'));
-        const isReading = q.sectionGroup === 'reading' || q.section?.includes('読解');
-        const isListening = q.sectionGroup === 'listening' || q.section?.includes('聴解');
+        const isVocab = q.sectionGroup === 'vocab_grammar' || (!q.sectionGroup && !q.section?.includes?.('読解') && !q.section?.includes?.('聴解'));
+        const isReading = q.sectionGroup === 'reading' || Boolean(q.section?.includes?.('読解'));
+        const isListening = q.sectionGroup === 'listening' || Boolean(q.section?.includes?.('聴解'));
 
         let targetSec = 'goi_bunpou';
         if (isReading) targetSec = 'dokkai';

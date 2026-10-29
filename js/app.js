@@ -2452,18 +2452,28 @@ class App {
       if (!res.ok) throw new Error(`Không thể tìm thấy dữ liệu Set ${setPad}`);
       const setData = await res.json();
 
+      if (!setData || !Array.isArray(setData.questions) || setData.questions.length === 0) {
+        throw new Error(`Dữ liệu của Set ${setPad} trống hoặc không đúng định dạng.`);
+      }
+
+      if (!setData.id) setData.id = `n3_k_set${setPad}`;
+      if (!setData.level) setData.level = 'N3';
+
       const isReading = setData.type === 'reading' || setNumber <= 30;
+      const questionCount = setData.questions.length;
 
       // Update Header Info
       if (this.headerLevelBadge) {
         this.headerLevelBadge.textContent = 'JLPT N3';
-        this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200';
+        this.headerLevelBadge.className = 'px-2 py-0.5 rounded-md text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 cursor-pointer hover:bg-emerald-200 transition';
+        this.headerLevelBadge.title = 'Quay lại Sảnh Drill N3';
+        this.headerLevelBadge.onclick = () => this.openN3KanjiHub();
       }
       if (this.dayTitleEl) {
         this.dayTitleEl.textContent = `Kanji N3 • Set ${setPad} (${isReading ? '問題1: Cách đọc' : '問題2: Chọn chữ Hán'})`;
       }
       if (this.dayDescEl) {
-        this.dayDescEl.textContent = `Luyện tập 10 câu trắc nghiệm Hán tự • Phím tắt [1..4] • Xuất Anki 1-click`;
+        this.dayDescEl.textContent = `Luyện tập ${questionCount} câu trắc nghiệm Hán tự • Phím tắt [1..4] • Xuất Anki 1-click`;
       }
       if (this.headerScopeBtn) {
         this.headerScopeBtn.classList.add('hidden');
@@ -2472,17 +2482,18 @@ class App {
         this.paletteActiveTitle.textContent = `Set ${setPad}`;
       }
       if (this.paletteActiveCount) {
-        this.paletteActiveCount.textContent = `10 câu`;
+        this.paletteActiveCount.textContent = `${questionCount} câu`;
       }
 
       this.quizEngine.loadDay(setData, { mode: 'practice' });
     } catch (err) {
-      console.error(`Lỗi tải Set ${setNumber}:`, err);
+      console.error(`[N3 Drill Error] Lỗi tải Set ${setNumber}:`, err);
       this.quizContainerEl.innerHTML = `
-        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200 max-w-lg mx-auto">
-          <p class="font-bold">Chưa thể tải dữ liệu cho Set này</p>
-          <p class="text-sm text-slate-600 mt-2">${err.message}</p>
-          <button type="button" class="mt-4 px-4 py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold cursor-pointer" onclick="window.app?.openN3KanjiHub()">Quay lại Sảnh Drill N3</button>
+        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200 max-w-lg mx-auto space-y-3">
+          <div class="w-12 h-12 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center mx-auto text-xl">⚠️</div>
+          <p class="font-bold text-base text-rose-800">Chưa thể tải dữ liệu cho Set ${String(setNumber).padStart(2, '0')}</p>
+          <p class="text-xs text-slate-600 leading-relaxed">${err.message || 'Đã xảy ra lỗi không xác định khi tải câu hỏi.'}</p>
+          <button type="button" class="mt-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition shadow-xs cursor-pointer" onclick="window.app?.openN3KanjiHub()">Quay lại Sảnh Drill N3</button>
         </div>
       `;
     }
