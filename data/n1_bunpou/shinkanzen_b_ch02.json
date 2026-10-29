@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Buổi diễn thuyết của nhà du hành vũ trụ đó bắt đầu mở màn từ Hokkaido, sau đó được tổ chức tại 10 địa điểm tiếp theo.\n【Phân tích】～を皮切りに bắt đầu từ một địa điểm/hành động cụ thể rồi lan rộng ra các điểm khác. '北海道' là địa điểm khởi đầu cụ thể.",
-      "grammarRule": "N ＋ を皮切りに(して) / を皮切りとして: Khởi đầu bằng... sau đó hàng loạt hành động tương tự liên tiếp diễn ra trên quy mô lớn."
+      "grammarRule": "N ＋ を皮切りに(して) / を皮切りとして: Khởi đầu bằng... sau đó hàng loạt hành động tương tự liên tiếp diễn ra trên quy mô lớn.",
+      "number": 1,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Kể từ giải thưởng khu vực năm ngoái mở đầu, vận động viên này liên tiếp gặt hái thành tích tốt tại nhiều giải đấu khác.\n【Phân tích】Vế sau phải thể hiện chuỗi thành tích/hành động nở rộ tiếp nối (いくつもの大会で好成績を残している).",
-      "grammarRule": "Vế sau luôn diễn tả các sự việc cùng loại liên tiếp phát triển bùng nổ theo chiều hướng tích cực."
+      "grammarRule": "Vế sau luôn diễn tả các sự việc cùng loại liên tiếp phát triển bùng nổ theo chiều hướng tích cực.",
+      "number": 2,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Mở màn bằng phát biểu của anh Yamada, mọi người đã lần lượt đua nhau đưa ra ý kiến.\n【Phân tích】Vế sau diễn tả chuỗi hành động của nhiều người tiếp nối nhau (次々に意見を言った).",
-      "grammarRule": "Đi kèm với các hành động diễn ra liên tiếp, nối đuôi nhau."
+      "grammarRule": "Đi kèm với các hành động diễn ra liên tiếp, nối đuôi nhau.",
+      "number": 3,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Lấy triển lãm cá nhân 10 năm trước làm bước khởi đầu, anh Nakagawa đã liên tục mở triển lãm ở rất nhiều nơi.\n【Phân tích】Cấu trúc biểu thị chuỗi hoạt động mở rộng liên tiếp (いろいろなところで).",
-      "grammarRule": "Diễn tả chuỗi sự kiện được nhân rộng ra nhiều lần sau mốc khởi đầu."
+      "grammarRule": "Diễn tả chuỗi sự kiện được nhân rộng ra nhiều lần sau mốc khởi đầu.",
+      "number": 4,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Với thầy Kobayashi, không chỉ định hướng nghề nghiệp sau tốt nghiệp mà ngay cả chuyện tình cảm tôi cũng tâm sự hết với thầy.\n【Phân tích】～に至るまで nhấn mạnh phạm vi mở rộng tới mức bất ngờ, việc thầm kín cá nhân (恋愛の悩み).",
-      "grammarRule": "N ＋ に至るまで: Đến tận... (nhấn mạnh phạm vi mở rộng tới cả những chi tiết vụn vặt, bất ngờ ngoài dự kiến)."
+      "grammarRule": "N ＋ に至るまで: Đến tận... (nhấn mạnh phạm vi mở rộng tới cả những chi tiết vụn vặt, bất ngờ ngoài dự kiến).",
+      "number": 5,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì sắp sang nước ngoài sinh sống, tôi đã bán sạch mọi thứ ở tiệm đồ cũ từ cái giường lớn cho đến tận cái thìa nhỏ nhất.\n【Phân tích】Mô hình 'AからBに至るまで' với A là vật lớn/chính và B là tiểu tiết nhỏ nhặt nhất.",
-      "grammarRule": "Aから Bに至るまで: Từ cái to lớn cho đến tận cái tỉ mỉ, nhỏ bé nhất."
+      "grammarRule": "Aから Bに至るまで: Từ cái to lớn cho đến tận cái tỉ mỉ, nhỏ bé nhất.",
+      "number": 6,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Yumi không chỉ ghi thời tiết mà nghe nói đến tận nhiệt độ sáng, trưa, tối trong ngày cô ấy cũng ghi chép cẩn thận vào nhật ký.\n【Phân tích】'Nhiệt độ sáng trưa tối' là chi tiết cực kỳ tỉ mỉ, nhấn mạnh phạm vi sâu sát.",
-      "grammarRule": "Nhấn mạnh mức độ chi tiết đến tận cùng sự việc."
+      "grammarRule": "Nhấn mạnh mức độ chi tiết đến tận cùng sự việc.",
+      "number": 7,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cửa hàng này nghe nói sẽ đóng cửa hết tháng này là chấm dứt.\n【Phân tích】～を限りに kết hợp trực tiếp với danh từ chỉ thời gian mốc (今月 / 今日 / 今回).",
-      "grammarRule": "N (thời gian) ＋ を限りに: Hết... là chấm dứt (thông báo kết thúc dứt khoát một hoạt động duy trì từ trước)."
+      "grammarRule": "N (thời gian) ＋ を限りに: Hết... là chấm dứt (thông báo kết thúc dứt khoát một hoạt động duy trì từ trước).",
+      "number": 8,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Tôi kể từ hết ngày hôm nay sẽ chính thức nghỉ việc ở công ty này.\n【Phân tích】Vế sau diễn tả hành động chấm dứt tình trạng hiện tại (この会社を辞めます).",
-      "grammarRule": "Diễn tả tuyên bố dứt khoát dừng một việc đã làm bấy lâu."
+      "grammarRule": "Diễn tả tuyên bố dứt khoát dừng một việc đã làm bấy lâu.",
+      "number": 9,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Trường cấp ba đó hết năm nay sẽ dừng không tuyển sinh học sinh nữa.\n【Phân tích】Dừng tuyển sinh (生徒を募集しない) là hành động kết thúc dứt điểm.",
-      "grammarRule": "Chỉ thời điểm chấm dứt hiệu lực hoặc hoạt động."
+      "grammarRule": "Chỉ thời điểm chấm dứt hiệu lực hoặc hoạt động.",
+      "number": 10,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Kể từ thời điểm này, tôi xin phép được kết thúc buổi diễn thuyết ngày hôm nay.\n【Phân tích】Cụm từ cố định trong thông báo trang trọng: 以上をもちまして (Xin kết thúc tại đây).",
-      "grammarRule": "N ＋ をもって / をもちまして: Tại mốc thời điểm này / Bằng cách này (văn phong nghi lễ, thông báo chính thức)."
+      "grammarRule": "N ＋ をもって / をもちまして: Tại mốc thời điểm này / Bằng cách này (văn phong nghi lễ, thông báo chính thức).",
+      "number": 11,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Kể từ ngày cuối cùng của tháng 3, chúng tôi xin phép ngừng cung cấp dịch vụ này.\n【Phân tích】Chỉ thời điểm dứt khoát kết thúc một chế độ/dịch vụ.",
-      "grammarRule": "Thường dùng trong các thông báo chính thức của cơ quan, doanh nghiệp về hạn chót."
+      "grammarRule": "Thường dùng trong các thông báo chính thức của cơ quan, doanh nghiệp về hạn chót.",
+      "number": 12,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Tại thời điểm này tôi xin phép bế mạc cuộc họp hội đồng quản trị hôm nay.\n【Phân tích】'これをもって...閉会いたします' là mẫu câu bế mạc hội nghị kinh điển.",
-      "grammarRule": "Dùng trong các nghi lễ trang trọng để tuyên bố kết thúc hoặc chuyển tiếp."
+      "grammarRule": "Dùng trong các nghi lễ trang trọng để tuyên bố kết thúc hoặc chuyển tiếp.",
+      "number": 13,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Hết nhiệm kỳ này tôi xin chính thức rút lui khỏi chức vụ này.\n【Phân tích】'この職を引退します' thể hiện mốc dừng lại chức vụ.",
-      "grammarRule": "Chỉ mốc thời gian chuyển giao hoặc chấm dứt nhiệm kỳ."
+      "grammarRule": "Chỉ mốc thời gian chuyển giao hoặc chấm dứt nhiệm kỳ.",
+      "number": 14,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Thời gian ngủ của tôi áng chừng cũng chỉ tầm cỡ 5 tiếng là cùng.\n【Phân tích】～といったところだ đi với con số cụ thể thể hiện ước lượng vừa phải hoặc hơi khiêm tốn (5時間).",
-      "grammarRule": "N / V-る ＋ といったところだ: Đại khái cũng chỉ tầm cỡ... / Cao nhất cũng khoảng đó (ước lượng mức độ tối đa không quá cao)."
+      "grammarRule": "N / V-る ＋ といったところだ: Đại khái cũng chỉ tầm cỡ... / Cao nhất cũng khoảng đó (ước lượng mức độ tối đa không quá cao).",
+      "number": 15,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Vận động hằng ngày của tôi cũng chỉ cỡ chạy quanh xóm một chút, nên có thể duy trì nhẹ nhàng mà không quá sức.\n【Phân tích】'といったところ' mang hàm ý mức độ nhẹ nhàng, vừa phải, nên kết quả là '무리なく続けられる'.",
-      "grammarRule": "Hàm ý mức độ khiêm tốn, vừa phải, không có gì to tát."
+      "grammarRule": "Hàm ý mức độ khiêm tốn, vừa phải, không có gì to tát.",
+      "number": 16,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Điểm trung bình bài kiểm tra lớp này mỗi lần cùng lắm cũng chỉ cỡ chừng 67 hay 68 điểm là căng.\n【Phân tích】'せいぜい' (cùng lắm là, tối đa là) đi kèm rất tự nhiên với といったところだ.",
-      "grammarRule": "Thường đi kèm với phó từ せいぜい để nhấn mạnh mức trần khiêm tốn."
+      "grammarRule": "Thường đi kèm với phó từ せいぜい để nhấn mạnh mức trần khiêm tốn.",
+      "number": 17,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Giải bóng chày trung học toàn quốc bắt đầu mở màn từ trận đấu số 1 hôm kia, các trận đấu nảy lửa đang diễn ra liên tiếp từng ngày.\n【Phân tích】Trận mở màn dẫn tới chuỗi các trận liên tiếp -> ～を皮切りに.",
-      "grammarRule": "N ＋ を皮切りに: Khởi đầu bằng... sau đó chuỗi sự việc tiếp nối bùng nổ."
+      "grammarRule": "N ＋ を皮切りに: Khởi đầu bằng... sau đó chuỗi sự việc tiếp nối bùng nổ.",
+      "number": 18,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tôi đã quyết định hết ngày hôm nay là tuyệt đối không lái xe ô tô nữa.\n【Phân tích】Quyết định dứt khoát kết thúc một việc làm thường ngày -> 今日を限りに.",
-      "grammarRule": "N (thời gian) ＋ を限りに: Hết... là chấm dứt dứt khoát."
+      "grammarRule": "N (thời gian) ＋ を限りに: Hết... là chấm dứt dứt khoát.",
+      "number": 19,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q20",
@@ -284,7 +341,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Kể từ đúng thời điểm này, chúng tôi xin phép dừng việc bán vé.\n【Phân tích】Thông báo thời điểm kết thúc trang trọng, lịch sự -> ただ今をもって.",
-      "grammarRule": "N ＋ をもって: Tại thời điểm này (văn phong thông báo chính thức)."
+      "grammarRule": "N ＋ をもって: Tại thời điểm này (văn phong thông báo chính thức).",
+      "number": 20,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q21",
@@ -298,7 +358,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Từ món ăn kèm bình dân thường ngày cho đến tận nguyên liệu cao cấp của tiệm ăn sang trọng, quán này cái gì cũng có.\n【Phân tích】Từ A đến tận B -> AからBに至るまで.",
-      "grammarRule": "Aから Bに至るまで: Từ A đến tận B (phạm vi mở rộng tối đa)."
+      "grammarRule": "Aから Bに至るまで: Từ A đến tận B (phạm vi mở rộng tối đa).",
+      "number": 21,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q22",
@@ -312,7 +375,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Việc phụ giúp của cậu con trai 3 tuổi của tôi đại khái cũng chỉ cỡ bỏ quần áo vào giỏ hay cầm tờ báo, chứ chẳng giúp được gì nhiều.\n【Phân tích】Ước lượng mức độ nhỏ nhặt, không đáng kể -> といったところで.",
-      "grammarRule": "N ＋ といったところで: Đại khái cũng chỉ tầm cỡ..."
+      "grammarRule": "N ＋ といったところで: Đại khái cũng chỉ tầm cỡ...",
+      "number": 22,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q23",
@@ -326,7 +392,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Hạn chót tiếp nhận đơn xin nhập học sẽ kết thúc vào ngày 20 tháng này.\n【Phân tích】Hạn chót chính thức trong hành chính -> ～をもって.",
-      "grammarRule": "N (ngày tháng) ＋ をもって: Hạn chót chính thức."
+      "grammarRule": "N (ngày tháng) ＋ をもって: Hạn chót chính thức.",
+      "number": 23,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch02_q24",
@@ -340,8 +409,13 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Anh ấy đã đi nhờ xe du lịch khắp nước Nhật từ Hokkaido cho đến tận Okinawa.\n【Phân tích】Đi cùng '～に至るまで' là từ chỉ xuất phát điểm '～から'.",
-      "grammarRule": "N1から N2に至るまで: Từ N1 đến tận N2."
+      "grammarRule": "N1から N2に至るまで: Từ N1 đến tận N2.",
+      "number": 24,
+      "section": "第2課: 範囲の始まり・限度",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch02"
+  "id": "skz_b_ch02",
+  "level": "N1",
+  "totalQuestions": 24
 }

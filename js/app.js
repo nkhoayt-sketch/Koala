@@ -3133,9 +3133,22 @@ class App {
       }
 
       const chapterData = await res.json();
-      chapterData.id = `skz_b_${chapterId}`;
 
+      if (!chapterData || !Array.isArray(chapterData.questions) || chapterData.questions.length === 0) {
+        console.error("Dữ liệu câu hỏi bài tập rỗng hoặc sai cấu trúc:", chapterData);
+        throw new Error(`Dữ liệu câu hỏi của Bài ${chapterId} trống hoặc không đúng định dạng.`);
+      }
+
+      chapterData.id = `skz_b_${chapterId}`;
+      chapterData.level = 'N1';
+
+      const totalQ = chapterData.questions.length;
       const meta = (this.n1BunpouIndex || []).find(c => c.id === chapterId);
+
+      // Reset progress bar & count immediately so it never shows stale data from another mode
+      if (this.progressBarFillEl) this.progressBarFillEl.style.width = '0%';
+      if (this.progressTextEl) this.progressTextEl.textContent = `0/${totalQ} câu (0%)`;
+      if (this.paletteActiveCount) this.paletteActiveCount.textContent = `${totalQ} câu`;
 
       // Update Header Info
       if (this.headerLevelBadge) {
@@ -3156,9 +3169,6 @@ class App {
       if (this.paletteActiveTitle) {
         this.paletteActiveTitle.textContent = meta ? (meta.title || meta.lesson) : `Bunpou ${chapterId}`;
       }
-      if (this.paletteActiveCount) {
-        this.paletteActiveCount.textContent = `${chapterData.questions.length} câu`;
-      }
 
       if (this.testHeaderControls) {
         this.testHeaderControls.classList.remove('hidden');
@@ -3175,12 +3185,13 @@ class App {
 
       this.toggleMobileSidebar(false);
     } catch (err) {
-      console.error('Lỗi nạp bài Bunpou N1:', err);
+      console.error('[Bunpou N1 Error] Lỗi nạp bài Bunpou N1:', err);
       this.quizContainerEl.innerHTML = `
-        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200">
-          <p class="font-bold">Không thể nạp bài tập Bunpou N1.</p>
-          <p class="text-sm text-slate-600 mt-2">${err.message}</p>
-          <button type="button" class="mt-4 px-4 py-2 bg-teal-600 text-white rounded-xl text-xs font-bold cursor-pointer" onclick="window.app?.openN1BunpouHub()">Quay lại Sảnh Bunpou N1</button>
+        <div class="p-8 text-center text-rose-600 bg-rose-50 rounded-2xl border border-rose-200 max-w-lg mx-auto space-y-3">
+          <div class="w-12 h-12 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center mx-auto text-xl">⚠️</div>
+          <p class="font-bold text-base text-rose-800">Không thể nạp bài tập Bunpou N1</p>
+          <p class="text-xs text-slate-600 leading-relaxed">${err.message || 'Đã xảy ra lỗi không xác định khi tải câu hỏi.'}</p>
+          <button type="button" class="mt-2 px-5 py-2.5 bg-teal-600 hover:bg-teal-700 text-white rounded-xl text-xs font-bold transition shadow-xs cursor-pointer" onclick="window.app?.openN1BunpouHub()">Quay lại Sảnh Bunpou N1</button>
         </div>
       `;
     }

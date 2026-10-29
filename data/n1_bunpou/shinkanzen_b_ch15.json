@@ -18,7 +18,10 @@
       ],
       "answer": "b",
       "explanation": "Tính từ đuôi na (頑固) khi kết hợp với ～にひきかえ dùng dạng: 頑固な ＋ の ＋ にひきかえ (頑固なのにひきかえ).",
-      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản."
+      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản.",
+      "number": 1,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "b",
       "explanation": "～にひきかえ so sánh tương phản tốt - xấu: Trái ngược với hồi còn ở trong nước toàn chơi bời thì sang Nhật lại học hành chăm chỉ (まじめに勉強している).",
-      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản."
+      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản.",
+      "number": 2,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "c",
       "explanation": "So sánh tương phản giữa 2 đối tượng mang tính đánh giá phẩm chất: Mẹ điềm đạm (穏やか) trái ngược với bố dễ xúc động/nóng nảy (感情的).",
-      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản."
+      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản.",
+      "number": 3,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "～にひきかえ không dùng để so sánh các dự đoán, suy đoán ở tương lai (b và c dùng だろう, かもしれない nên sai). Phải là so sánh sự thật/thực tế đánh giá chủ quan: 去年・今年の収入の減少はひどいものだ.",
-      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản."
+      "grammarRule": "N ＋ の / 普 ＋ にひきかえ: So sánh đối chiếu hai sự việc tương phản.",
+      "number": 4,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "Vế sau ～にもまして cùng chiều mức độ cao hơn: Hơn cả việc điểm số bị tụt dốc, thái độ sinh hoạt của con bé mới là điều đáng lo hơn cả (生活態度が心配だ).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 5,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "b",
       "explanation": "Cụm 何にもまして mang nghĩa 'hơn bất cứ thứ gì'. Vế sau không đi với câu phủ định (a và c phủ định nên sai) -> Chọn b (楽しみらしい).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 6,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "So sánh mức độ vượt trội giữa hiện tại với thông thường/quá khứ: Hơn cả mọi năm thì năm nay công việc nhiều hơn hẳn (いつもの年・今年).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 7,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "c",
       "explanation": "Dạng quán dụng ngữ: とは言わないまでも (Dù không thể nói là... nhưng ít nhất cũng...).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 8,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "b",
       "explanation": "Vế trước là mức lý tưởng/cực đoan cao nhất: Dù không thể trở thành ca sĩ nổi tiếng (人気歌手にはなれないまでも) thì tôi vẫn muốn làm công việc liên quan đến ca hát.",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 9,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "Dù không vào được công ty hàng đầu thì ít nhất cũng muốn được vào làm ở doanh nghiệp vừa (せめて中企業には就職したい).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 10,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "b",
       "explanation": "Vế sau là mức độ chấp nhận được dưới mức lý tưởng (Best 4): Dù không vào được top 4 thì ít nhất mong đội lọt vào top 8 (ベスト8には入ってほしい).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 11,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "c",
       "explanation": "Cụm いつにもまして (Hơn bao giờ hết / Hơn mọi khi): Chắc do có đợt giảm giá nên cửa hàng đông khách hơn hẳn ngày thường.",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 12,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "Tương phản tốt - xấu giữa 2 đối tượng: Trái ngược với bà nói năng điềm đạm, từ tốn thì mẹ lại nói quá nhanh và khó hiểu.",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 13,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "c",
       "explanation": "Mẫu ～ないまでも: Mọi người dù không nói thẳng ra miệng (口には出さないまでも) nhưng có lẽ chẳng ai vừa lòng với thái độ của anh Matsumoto.",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 14,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch15_q15",
@@ -214,8 +256,13 @@
       ],
       "answer": "b",
       "explanation": "Bẫy ngữ pháp: Ở đây diễn tả 'Thay mặt cho chủ tịch' -> Dùng に代わって (Hôm nay thay mặt chủ tịch, phó chủ tịch là tôi xin phát biểu lời chào mừng).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 15,
+      "section": "第15課: 比較対照",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch15"
+  "id": "skz_b_ch15",
+  "level": "N1",
+  "totalQuestions": 15
 }

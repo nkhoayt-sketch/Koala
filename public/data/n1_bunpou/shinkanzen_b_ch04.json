@@ -18,7 +18,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Căn phòng đó khá lạnh đấy, nếu ở lâu thì nên mang áo khoác hay khăn đắp đùi chẳng hạn đi theo.\n【Phân tích】Danh từ kết hợp đồng dạng: 上着 (áo khoác)なり ＋ ひざ掛け (khăn trùm đùi)なり.",
-      "grammarRule": "N1なり N2なり: N1 cũng được, N2 cũng được (đưa ra các phương án cùng nhóm để lựa chọn)."
+      "grammarRule": "N1なり N2なり: N1 cũng được, N2 cũng được (đưa ra các phương án cùng nhóm để lựa chọn).",
+      "number": 1,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu có điều gì không hiểu, hãy hỏi thầy cô hoặc tra từ điển chẳng hạn, tự mình tìm hiểu đi.\n【Phân tích】Động từ đi với ～なり phải ở thể từ điển V-る: 先生に聞くなり 辞書を引くなり.",
-      "grammarRule": "V1-るなり V2-るなり: Làm việc 1 hay làm việc 2 chẳng hạn."
+      "grammarRule": "V1-るなり V2-るなり: Làm việc 1 hay làm việc 2 chẳng hạn.",
+      "number": 2,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù lý do là gì chăng nữa, việc tự tiện nghỉ làm mà không báo trước là không thể chấp nhận được.\n【Phân tích】Từ để hỏi 何 ＋ であれ: Cho dù là gì đi chăng nữa.",
-      "grammarRule": "Từ để hỏi ＋ であれ / N1であれ N2であれ: Dù là... hay là... thì kết quả vẫn không đổi."
+      "grammarRule": "Từ để hỏi ＋ であれ / N1であれ N2であれ: Dù là... hay là... thì kết quả vẫn không đổi.",
+      "number": 3,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù là người lớn hay trẻ con thì đều có nghĩa vụ phải tuân thủ pháp luật.\n【Phân tích】N1であれ N2であれ: 大人であれ 子供であれ.",
-      "grammarRule": "N1であれ N2であれ: Dù là đối tượng 1 hay đối tượng 2 thì đều chung một tính chất/nghĩa vụ."
+      "grammarRule": "N1であれ N2であれ: Dù là đối tượng 1 hay đối tượng 2 thì đều chung một tính chất/nghĩa vụ.",
+      "number": 4,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Đôi giày này từ mẫu mã thiết kế cho đến cảm giác êm ái khi xỏ chân vào đều hoàn hảo không có chỗ nào để chê.\n【Phân tích】N1といい N2といい đưa ra hai tiêu chí đánh giá cùng loại: デザインといい 履き心地といい.",
-      "grammarRule": "N1といい N2といい: Xét về cả N1 lẫn N2 thì đều... (thường đi với lời khen ngợi hoặc chê bai toàn diện)."
+      "grammarRule": "N1といい N2といい: Xét về cả N1 lẫn N2 thì đều... (thường đi với lời khen ngợi hoặc chê bai toàn diện).",
+      "number": 5,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Nhà hàng đó cả về hương vị lẫn cung cách phục vụ đều đạt tiêu chuẩn đỉnh cao nhất.\n【Phân tích】Vế sau của ～といい・・・といい là lời đánh giá tổng thể rõ ràng (最高水準だ).",
-      "grammarRule": "Vế sau là nhận xét, đánh giá toàn diện."
+      "grammarRule": "Vế sau là nhận xét, đánh giá toàn diện.",
+      "number": 6,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Trong phòng từ trên mặt bàn cho đến dưới mặt sàn, chỗ nào cũng thấy giấy tờ bừa bộn khắp nơi.\n【Phân tích】N1といわず N2といわず: 机の上といわず 床の上といわず (toàn bộ khắp nơi không phân biệt).",
-      "grammarRule": "N1といわず N2といわず: Bất kể là N1 hay N2 (toàn bộ mọi nơi/mọi lúc đều trong tình trạng đó, không còn ranh giới)."
+      "grammarRule": "N1といわず N2といわず: Bất kể là N1 hay N2 (toàn bộ mọi nơi/mọi lúc đều trong tình trạng đó, không còn ranh giới).",
+      "number": 7,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Anh ta bất kể ngày hay đêm, suốt ngày chìm đắm cắm đầu vào chơi game.\n【Phân tích】Diễn tả tình trạng liên tục không kể ngày đêm: ゲームに没頭している.",
-      "grammarRule": "Chỉ trạng thái diễn ra liên miên không phân biệt thời gian/không gian."
+      "grammarRule": "Chỉ trạng thái diễn ra liên miên không phân biệt thời gian/không gian.",
+      "number": 8,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Hãy liên lạc trước bằng điện thoại hoặc email chẳng hạn.\n【Phân tích】Gợi ý phương tiện lựa chọn nhẹ nhàng: 電話なりメールなり.",
-      "grammarRule": "N1なり N2なり: N1 hoặc N2 chẳng hạn (đưa ra giải pháp lựa chọn)."
+      "grammarRule": "N1なり N2なり: N1 hoặc N2 chẳng hạn (đưa ra giải pháp lựa chọn).",
+      "number": 9,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Dù trời nắng hay trời mưa, giải chạy marathon vẫn sẽ được tổ chức đúng như kế hoạch.\n【Phân tích】Bất kể điều kiện thời tiết nào thì sự việc vẫn tiến hành -> であれ・・・であれ.",
-      "grammarRule": "N1であれ N2であれ: Dù là N1 hay N2 thì kết quả vẫn giữ nguyên."
+      "grammarRule": "N1であれ N2であれ: Dù là N1 hay N2 thì kết quả vẫn giữ nguyên.",
+      "number": 10,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Từ cách ăn nói cho đến tác phong thái độ, cậu ấy thực sự là một chàng thanh niên vô cùng lễ phép.\n【Phân tích】Đánh giá khen ngợi đa góc độ -> といい・・・といい.",
-      "grammarRule": "N1といい N2といい: Xét cả N1 lẫn N2."
+      "grammarRule": "N1といい N2といい: Xét cả N1 lẫn N2.",
+      "number": 11,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Từ bàn tay cho đến bàn chân, chỗ nào cũng lấm lem bùn đất khi chơi đùa.\n【Phân tích】Phủ kín toàn bộ khắp cơ thể không phân biệt chỗ nào -> といわず・・・といわず.",
-      "grammarRule": "N1といわず N2といわず: Cả N1 lẫn N2 toàn bộ đều bị bao phủ/tràn ngập."
+      "grammarRule": "N1といわず N2といわず: Cả N1 lẫn N2 toàn bộ đều bị bao phủ/tràn ngập.",
+      "number": 12,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Trà hay cà phê chẳng hạn, xin mời dùng thứ bạn thích.\n【Phân tích】Mời mọc lựa chọn nhẹ nhàng -> なり・・・なり.",
-      "grammarRule": "N1なり N2なり: Gợi ý các phương án lựa chọn."
+      "grammarRule": "N1なり N2なり: Gợi ý các phương án lựa chọn.",
+      "number": 13,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù là người giàu hay người nghèo, giá trị tính mạng con người đều nặng tựa như nhau.\n【Phân tích】Dù thuộc thành phần nào thì chân lý vẫn không đổi -> であれ・・・であれ.",
-      "grammarRule": "N1であれ N2であれ: Dù là A hay B thì cũng như nhau."
+      "grammarRule": "N1であれ N2であれ: Dù là A hay B thì cũng như nhau.",
+      "number": 14,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Cuốn tiểu thuyết này từ diễn biến cốt truyện cho đến việc khắc họa nhân vật đều khiến độc giả không hề thấy nhàm chán.\n【Phân tích】Đánh giá tác phẩm trên nhiều phương diện -> といい・・・といい.",
-      "grammarRule": "N1といい N2といい: Xét cả N1 lẫn N2 đều xuất sắc."
+      "grammarRule": "N1といい N2といい: Xét cả N1 lẫn N2 đều xuất sắc.",
+      "number": 15,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bất kể ngày thường hay cuối tuần, công viên giải trí đó lúc nào cũng nườm nượp khách du lịch.\n【Phân tích】Tràn ngập khắp mọi lúc -> といわず・・・といわず.",
-      "grammarRule": "N1といわず N2といわず: Cả thời gian N1 lẫn N2 đều tràn ngập."
+      "grammarRule": "N1といわず N2といわず: Cả thời gian N1 lẫn N2 đều tràn ngập.",
+      "number": 16,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Vào ngày nghỉ, tôi thường đi dạo hoặc đọc sách chẳng hạn, thong thả tận hưởng thời gian.\n【Phân tích】V-るなり V-るなり: Đi dạo hay đọc sách chẳng hạn.",
-      "grammarRule": "V1-るなり V2-るなり: Làm hành động 1 hay hành động 2."
+      "grammarRule": "V1-るなり V2-るなり: Làm hành động 1 hay hành động 2.",
+      "number": 17,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch04_q18",
@@ -256,8 +307,13 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Dù đối phương là bất kỳ ai đi chăng nữa, bạn cũng không được có thái độ mất lịch sự.\n【Phân tích】Từ để hỏi (誰) ＋ であれ: Dù là bất kỳ ai.",
-      "grammarRule": "Từ để hỏi ＋ であれ: Bất kể là ai/gì."
+      "grammarRule": "Từ để hỏi ＋ であれ: Bất kể là ai/gì.",
+      "number": 18,
+      "section": "第4課: 例示",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch04"
+  "id": "skz_b_ch04",
+  "level": "N1",
+  "totalQuestions": 18
 }

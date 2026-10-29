@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nỗi đau buồn xé ruột của anh ấy khi đột ngột mất đi những người thân yêu trong gia đình, không khó để ta có thể cảm thông thấu hiểu.\n【Phân tích】V-る / N ＋ にかたくない: Dễ dàng hình dung/cảm thông (thường đi với 想像, 察する, 理解).",
-      "grammarRule": "V-る (察する / 想像する) / N ＋ にかたくない: Không khó để tưởng tượng/cảm nhận."
+      "grammarRule": "V-る (察する / 想像する) / N ＋ にかたくない: Không khó để tưởng tượng/cảm nhận.",
+      "number": 1,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Mức độ thiệt hại nặng nề mà vụ bê bối lần này giáng xuống công ty là điều chẳng hề khó để mường tượng ra.\n【Phân tích】想像にかたくない: Hoàn toàn không khó để tưởng tượng.",
-      "grammarRule": "想像にかたくない: Dễ dàng hình dung mức độ nghiêm trọng."
+      "grammarRule": "想像にかたくない: Dễ dàng hình dung mức độ nghiêm trọng.",
+      "number": 2,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tuyết rơi trắng trời khiến các tuyến tàu điện tê liệt hoàn toàn, có muốn về nhà cũng chẳng tài nào về nổi.\n【Phân tích】V-(よ)うにも V-（可能形）ない: Dù có muốn làm... cũng bất lực không thể làm được do hoàn cảnh khách quan.",
-      "grammarRule": "V-(よ)うにも V-れない: Dù rất muốn làm nhưng lực bất tòng tâm không thể làm được."
+      "grammarRule": "V-(よ)うにも V-れない: Dù rất muốn làm nhưng lực bất tòng tâm không thể làm được.",
+      "number": 3,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Răng đau nhức buốt óc, chiếc bánh gạo giòn cứng kia dù có thèm ăn cũng chẳng thể nào cắn nổi.\n【Phân tích】Muốn ăn cũng không thể ăn nổi do đau răng: 食べようにも食べられない.",
-      "grammarRule": "Bất khả thi do cản trở thể chất hoặc hoàn cảnh."
+      "grammarRule": "Bất khả thi do cản trở thể chất hoặc hoàn cảnh.",
+      "number": 4,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Mất đi người bạn tri kỷ vì tai nạn thảm khốc, nỗi đau đớn tột cùng đến mức muốn khóc mà nước mắt cũng không thể nào ứa ra nổi.\n【Phân tích】V-る ＋ に ＋ V-れない: Muốn làm hành vi cảm xúc đó mà nghẹn lại không làm nổi (泣くに泣けない, 捨てるに捨てられない).",
-      "grammarRule": "V-る ＋ に ＋ V-れない: Rơi vào thế tiến thoái lưỡng nan, muốn làm mà không thể làm được."
+      "grammarRule": "V-る ＋ に ＋ V-れない: Rơi vào thế tiến thoái lưỡng nan, muốn làm mà không thể làm được.",
+      "number": 5,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Những lá thư xưa cũ đong đầy biết bao kỷ niệm thân thương, muốn vứt bỏ đi mà chẳng nỡ lòng nào vứt nổi.\n【Phân tích】Khó xử trong tình cảm: 捨てるに捨てられない.",
-      "grammarRule": "Vướng bận tình cảm nên không thể dứt khoát làm được."
+      "grammarRule": "Vướng bận tình cảm nên không thể dứt khoát làm được.",
+      "number": 6,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chỉ còn vỏn vẹn 3 ngày nữa là đến kỳ thi rồi, không thể nào cứ thong dong ngồi xem ti vi thế này mãi được.\n【Phân tích】V-て ＋ (は)いられない: Tình thế cấp bách khẩn trương, không thể tiếp tục duy trì trạng thái nhởn nhơ được nữa.",
-      "grammarRule": "V-て(は)いられない: Tình thế thôi thúc không cho phép tiếp tục kéo dài trạng thái đó nữa."
+      "grammarRule": "V-て(は)いられない: Tình thế thôi thúc không cho phép tiếp tục kéo dài trạng thái đó nữa.",
+      "number": 7,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Không thể cứ ngồi ôm mặt khóc lóc mãi thế này được. Chúng ta phải gạt nước mắt ngẩng cao đầu bước tiếp về phía trước.\n【Phân tích】Thôi thúc hành động: 泣いてばかりはいられない.",
-      "grammarRule": "Thôi thúc bản thân không được đắm chìm trong cảm xúc tiêu cực."
+      "grammarRule": "Thôi thúc bản thân không được đắm chìm trong cảm xúc tiêu cực.",
+      "number": 8,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Trong bối cảnh kinh tế kiệt quệ khắc nghiệt thời bấy giờ, người dân nghèo khổ ngay cả chuyện mơ tưởng đến một chuyến du lịch nước ngoài cũng là điều tuyệt đối không bao giờ dám nghĩ tới.\n【Phân tích】V-る ＋ べくもない: Hoàn toàn không có khả năng, làm sao mà có thể... nổi.",
-      "grammarRule": "V-る ＋ べくもない (する -> すべくもない): Hoàn toàn không thể nào... (văn viết trang trọng chỉ sự bất khả thi tuyệt đối)."
+      "grammarRule": "V-る ＋ べくもない (する -> すべくもない): Hoàn toàn không thể nào... (văn viết trang trọng chỉ sự bất khả thi tuyệt đối).",
+      "number": 9,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Một kẻ ngoại đạo nghiệp dư như tôi thì làm sao mà hiểu thấu nổi tinh hoa đỉnh cao trong kỹ nghệ siêu phàm của một bậc thầy chuyên nghiệp.\n【Phân tích】Hoàn toàn không có cửa để biết tới: 知るべくもない.",
-      "grammarRule": "Nhấn mạnh khoảng cách quá lớn khiến việc thấu hiểu trở nên bất khả thi."
+      "grammarRule": "Nhấn mạnh khoảng cách quá lớn khiến việc thấu hiểu trở nên bất khả thi.",
+      "number": 10,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】【Biển báo】Cấm dẫm chân lên bãi cỏ!\n【Phân tích】V-る ＋ べからず: Tuyệt đối không được làm (mệnh lệnh cấm chỉ tuyệt đối trên biển báo văn bản cổ).",
-      "grammarRule": "V-る ＋ べからず (する -> すべからず): Cấm tuyệt đối (dùng trong bảng cấm chỉ, thông tri quy định)."
+      "grammarRule": "V-る ＋ べからず (する -> すべからず): Cấm tuyệt đối (dùng trong bảng cấm chỉ, thông tri quy định).",
+      "number": 11,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Trong công tác quản lý an toàn, anh ấy là một nhân vật quan trọng rường cột không thể nào thiếu vắng được.\n【Phân tích】欠くべからざる ＋ N (không thể thiếu được).",
-      "grammarRule": "V-る ＋ べからざる ＋ N: N không thể nào... được (nhấn mạnh tính không thể thiếu hoặc không thể dung thứ)."
+      "grammarRule": "V-る ＋ べからざる ＋ N: N không thể nào... được (nhấn mạnh tính không thể thiếu hoặc không thể dung thứ).",
+      "number": 12,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Việc nhận hối lộ đút lót là một hành vi bất chính đê hèn không thể nào chấp nhận được ở tư cách một công chức nhà nước.\n【Phân tích】Nにあるまじき ＋ N: Hành vi/lời nói không được phép dung thứ ở cương vị, chức trách N.",
-      "grammarRule": "V-る ＋ まじき ＋ N (する -> すまじき): Hành vi không thể chấp nhận được về mặt đạo đức/nghề nghiệp."
+      "grammarRule": "V-る ＋ まじき ＋ N (する -> すまじき): Hành vi không thể chấp nhận được về mặt đạo đức/nghề nghiệp.",
+      "number": 13,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dùng vũ lực hành hung đánh đập học sinh là hành động tội lỗi không bao giờ có thể dung thứ đối với thiên chức của một người thầy giáo.\n【Phân tích】Hành vi cấm kỵ về mặt đạo đức: 許すまじき行為.",
-      "grammarRule": "Lên án mạnh mẽ hành vi đi ngược lại đạo đức nghề nghiệp."
+      "grammarRule": "Lên án mạnh mẽ hành vi đi ngược lại đạo đức nghề nghiệp.",
+      "number": 14,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhìn nụ cười rạng rỡ đầy hãnh diện khi bao năm nỗ lực đơm hoa kết trái, niềm vui sướng ngập tràn của anh ấy thật chẳng khó để ta cảm nhận.\n【Phân tích】Dễ dàng mường tượng ra niềm vui: 想像にかたくない.",
-      "grammarRule": "想像にかたくない: Không khó để tưởng tượng."
+      "grammarRule": "想像にかたくない: Không khó để tưởng tượng.",
+      "number": 15,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Hộ chiếu bị trộm khoắng mất rồi, giờ muốn xuất cảnh về nước cũng lực bất tòng tâm không thể nào đi nổi.\n【Phân tích】Muốn xuất cảnh mà không thể: 出国しようにもできない.",
-      "grammarRule": "V-(よ)うにも V-れない: Lực bất tòng tâm."
+      "grammarRule": "V-(よ)うにも V-れない: Lực bất tòng tâm.",
+      "number": 16,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Vì nỗi kinh hoàng vượt quá giới hạn, tôi có muốn thét lên một tiếng mà cổ họng cũng nghẹn đắng chẳng thể thốt ra lời.\n【Phân tích】声が出なかった (Không ra nổi tiếng).",
-      "grammarRule": "V-(よ)うにも...ない."
+      "grammarRule": "V-(よ)うにも...ない.",
+      "number": 17,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Hạn chót đang kề cận ngay sáng mai rồi, lúc dầu sôi lửa bỏng này không thể nào ngủ nghê được.\n【Phân tích】Không thể ngủ được lúc này -> 寝てはいられない.",
-      "grammarRule": "V-てはいられない: Tình thế cấp bách không thể làm vậy."
+      "grammarRule": "V-てはいられない: Tình thế cấp bách không thể làm vậy.",
+      "number": 18,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Môi trường địa cầu trong tương lai xa sẽ biến đổi ra sao, với trình độ khoa học hiện tại thì hoàn toàn không có khả năng dự đoán chuẩn xác được.\n【Phân tích】Hoàn toàn ngoài tầm dự đoán -> 予測するべくもない.",
-      "grammarRule": "V-る ＋ べくもない: Hoàn toàn bất khả năng."
+      "grammarRule": "V-る ＋ べくもない: Hoàn toàn bất khả năng.",
+      "number": 19,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q20",
@@ -284,7 +341,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】【Bảng thông báo】Cấm tuyệt đối xả rác tại đây!\n【Phân tích】Bảng cấm chỉ công cộng -> 捨てるべからず.",
-      "grammarRule": "V-る ＋ べからず: Cấm tuyệt đối."
+      "grammarRule": "V-る ＋ べからず: Cấm tuyệt đối.",
+      "number": 20,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q21",
@@ -298,7 +358,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Lén đem thông tin tối mật của khách hàng tuồn cho doanh nghiệp đối thủ là hành vi phản bội đê tiện không bao giờ được phép xảy ra ở một chuyên gia.\n【Phân tích】Hành vi cấm kỵ vi phạm đạo đức nghiêm trọng -> あるまじき背信行為.",
-      "grammarRule": "NにあるまじきN: Điều không thể tha thứ ở tư cách N."
+      "grammarRule": "NにあるまじきN: Điều không thể tha thứ ở tư cách N.",
+      "number": 21,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch13_q22",
@@ -312,8 +375,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nỗi uất nghẹn cay đắng trong lòng của người bị hại, ta hoàn toàn không khó để thấu suốt.\n【Phân tích】察するにかたくない (Không khó để thấu hiểu).",
-      "grammarRule": "察するにかたくない: Rất dễ thấu cảm."
+      "grammarRule": "察するにかたくない: Rất dễ thấu cảm.",
+      "number": 22,
+      "section": "第13課: 可能・不可能・禁止",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch13"
+  "id": "skz_b_ch13",
+  "level": "N1",
+  "totalQuestions": 22
 }

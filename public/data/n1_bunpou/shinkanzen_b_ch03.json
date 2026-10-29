@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Sản phẩm sở hữu nhiều chức năng đa dạng đến mức này thì ngoài sản phẩm này của công ty chúng tôi ra, không thể có sản phẩm nào khác.\n【Phân tích】～をおいてほかにない (ngoại trừ X ra thì không có ai/cái gì khác), vế trước là đối tượng độc nhất.",
-      "grammarRule": "N ＋ をおいて (ほかに...ない): Ngoại trừ N ra thì không có gì/ai khác sánh bằng."
+      "grammarRule": "N ＋ をおいて (ほかに...ない): Ngoại trừ N ra thì không có gì/ai khác sánh bằng.",
+      "number": 1,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Người có thể giao phó trọng trách lớn lao này thì ngoại trừ bạn ra không có ai khác.\n【Phân tích】'あなたをおいてほかにいない'. Cấu trúc trực tiếp đi với danh từ chỉ đối tượng duy nhất.",
-      "grammarRule": "N ＋ をおいて: Nhấn mạnh sự đánh giá cao nhất dành cho đối tượng duy nhất."
+      "grammarRule": "N ＋ をおいて: Nhấn mạnh sự đánh giá cao nhất dành cho đối tượng duy nhất.",
+      "number": 2,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Món ăn tuyệt hảo đến nhường này thì chỉ có thể là đầu bếp bậc nhất mới làm nổi.\n【Phân tích】N ＋ ならでは (đặc sắc chỉ có ở N). Ở đây 'シェフならでは' kết hợp trực tiếp.",
-      "grammarRule": "N ＋ ならでは (のN) / ならでは...ない: Chỉ có ở N mới có được giá trị/nét đặc sắc tuyệt vời ấy."
+      "grammarRule": "N ＋ ならでは (のN) / ならでは...ない: Chỉ có ở N mới có được giá trị/nét đặc sắc tuyệt vời ấy.",
+      "number": 3,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chúng tôi đã nhận được sự đón tiếp nồng hậu đậm chất ấm áp chỉ có ở người dân địa phương.\n【Phân tích】N ＋ ならではの ＋ N: Nならではの温かいもてなし.",
-      "grammarRule": "N ＋ ならではの ＋ N: Nét đặc trưng tuyệt vời chỉ có ở..."
+      "grammarRule": "N ＋ ならではの ＋ N: Nét đặc trưng tuyệt vời chỉ có ở...",
+      "number": 4,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bộ anime này không chỉ dừng lại trong phạm vi nội địa Nhật Bản mà còn tạo nên cơn sốt vang dội trên toàn thế giới.\n【Phân tích】N ＋ にとどまらず: Không chỉ giới hạn trong phạm vi N mà còn lan rộng ra phạm vi lớn hơn.",
-      "grammarRule": "N / V-る ＋ にとどまらず: Không chỉ dừng lại ở phạm vi đó mà còn lan rộng ra."
+      "grammarRule": "N / V-る ＋ にとどまらず: Không chỉ dừng lại ở phạm vi đó mà còn lan rộng ra.",
+      "number": 5,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Ảnh hưởng của vụ phun trào núi lửa không chỉ dừng lại ở khu vực xung quanh mà còn lan rộng ra toàn bộ đất nước.\n【Phân tích】Vế sau mở rộng quy mô nghiêm trọng hơn: 国全体に及んでいる.",
-      "grammarRule": "Vế sau là phạm vi rộng lớn hơn, nghiêm trọng hơn vế trước."
+      "grammarRule": "Vế sau là phạm vi rộng lớn hơn, nghiêm trọng hơn vế trước.",
+      "number": 6,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Anh ấy đang trong tình trạng ngay cả tên của bản thân còn chưa nói được, huống chi là địa chỉ nhà.\n【Phân tích】AはおろかBも/さえ: B (điều hiển nhiên đơn giản) còn chưa được, huống chi A (điều phức tạp hơn).",
-      "grammarRule": "N ＋ はおろか: Ngay cả... cũng không được, huống chi là... (thường đi với さえ, すら, も ở vế sau mang ý tiêu cực)."
+      "grammarRule": "N ＋ はおろか: Ngay cả... cũng không được, huống chi là... (thường đi với さえ, すら, も ở vế sau mang ý tiêu cực).",
+      "number": 7,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bị thương nặng đến mức việc chạy nhảy đã đành một lẽ, ngay cả việc đi bộ bình thường còn chẳng thể làm được.\n【Phân tích】'Đi bộ' (歩くこと) là mức độ cơ bản hơn 'chạy' (走ること). Việc cơ bản còn không làm nổi.",
-      "grammarRule": "Vế sau luôn là sự việc có mức độ đơn giản hơn, dễ thực hiện hơn vế trước."
+      "grammarRule": "Vế sau luôn là sự việc có mức độ đơn giản hơn, dễ thực hiện hơn vế trước.",
+      "number": 8,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Khách sạn này món ăn ngon thì đã đành rồi, nhưng cảnh sắc nhìn từ cửa sổ cũng khiến người ta phải choáng ngợp.\n【Phân tích】N ＋ もさることながら: A thì đương nhiên rồi, nhưng B còn đáng chú ý hơn nữa.",
-      "grammarRule": "N ＋ もさることながら: A đã đành / A là đương nhiên rồi, nhưng B còn hơn thế nữa."
+      "grammarRule": "N ＋ もさることながら: A đã đành / A là đương nhiên rồi, nhưng B còn hơn thế nữa.",
+      "number": 9,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tình trạng khó xin việc của giới trẻ thì năng lực bản thân đã đành một nhẽ, nhưng suy thoái kinh tế cũng là một nguyên nhân cực kỳ lớn.\n【Phân tích】Nhấn mạnh thêm nguyên nhân ngoại cảnh vế sau: 景気の悪化も大きな要因だ.",
-      "grammarRule": "Vế sau đưa ra một yếu tố khác đáng chú ý hoặc có sức nặng hơn."
+      "grammarRule": "Vế sau đưa ra một yếu tố khác đáng chú ý hoặc có sức nặng hơn.",
+      "number": 10,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Vẻ đẹp tiếng đàn vĩ cầm của cô ấy mang một dư vị sâu sắc chỉ có ở người nghệ sĩ chuyên nghiệp đích thực.\n【Phân tích】Đặc sắc độc đáo chỉ có ở nghệ sĩ chuyên nghiệp -> プロならではの.",
-      "grammarRule": "N ＋ ならではの: Nét đặc sắc chỉ có ở..."
+      "grammarRule": "N ＋ ならではの: Nét đặc sắc chỉ có ở...",
+      "number": 11,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Người lãnh đạo tiếp theo thì ngoại trừ anh ấy - người tràn đầy nhiệt huyết và hành động ra, chẳng còn ai thích hợp hơn.\n【Phân tích】彼をおいて適任者はいない (Ngoài anh ấy ra không ai xứng đáng).",
-      "grammarRule": "N ＋ をおいて (ほかに...ない): Ngoại trừ N ra thì không có ai khác."
+      "grammarRule": "N ＋ をおいて (ほかに...ない): Ngoại trừ N ra thì không có ai khác.",
+      "number": 12,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Làn sóng suy thoái không chỉ dừng lại ở doanh nghiệp vừa và nhỏ mà còn giáng đòn nặng nề lên cả các tập đoàn lớn.\n【Phân tích】Không chỉ dừng lại ở phạm vi hẹp mà lan sang cả diện rộng -> ～にとどまらず.",
-      "grammarRule": "N ＋ にとどまらず: Không chỉ dừng lại ở..."
+      "grammarRule": "N ＋ にとどまらず: Không chỉ dừng lại ở...",
+      "number": 13,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Trong thời gian nằm viện, thức ăn cứng thì đã đành không ăn nổi, ngay cả ngụm nước cũng chẳng thể uống trọn vẹn.\n【Phân tích】AはおろかBさえ: Thức ăn cứng đã đành, ngay cả nước cũng không uống được.",
-      "grammarRule": "N ＋ はおろか...さえ: Huống chi là... ngay cả cái cơ bản cũng không xong."
+      "grammarRule": "N ＋ はおろか...さえ: Huống chi là... ngay cả cái cơ bản cũng không xong.",
+      "number": 14,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Hiệu năng của sản phẩm mới thì tuyệt vời là điều đương nhiên rồi, nhưng thiết kế tinh tế của nó cũng đang thu hút sự chú ý rất lớn.\n【Phân tích】Tính năng tốt là dĩ nhiên, kiểu dáng còn ấn tượng hơn -> ～もさることながら.",
-      "grammarRule": "N ＋ もさることながら: A đã đành, B cũng rất đáng kể."
+      "grammarRule": "N ＋ もさることながら: A đã đành, B cũng rất đáng kể.",
+      "number": 15,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Tôi vô cùng xúc động trước dãy phố cổ kính mang đậm dấu ấn lịch sử chỉ có ở Kyoto.\n【Phân tích】Đặc trưng riêng biệt chỉ Kyoto mới có -> 京都ならではの.",
-      "grammarRule": "N ＋ ならでは: Chỉ có ở N."
+      "grammarRule": "N ＋ ならでは: Chỉ có ở N.",
+      "number": 16,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Người có thể giải quyết bài toán hóc búa này thì ngoài tiến sĩ Suzuki ra không thể nghĩ ra ai khác.\n【Phân tích】Đối tượng duy nhất -> ～をおいてほかに...ない.",
-      "grammarRule": "N ＋ をおいて (ほかに...ない)."
+      "grammarRule": "N ＋ をおいて (ほかに...ない).",
+      "number": 17,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Cô ấy không chỉ dừng lại ở tiếng Anh mà ngay cả tiếng Pháp hay tiếng Nga cũng nói lưu loát.\n【Phân tích】Không chỉ tiếng Anh mà còn tiếng Pháp, tiếng Nga (ý bổ sung tích cực) -> にとどまらず. Chú ý: 'はおろか' mang sắc thái tiêu cực phủ định.",
-      "grammarRule": "N ＋ にとどまらず: Không chỉ... mà còn nhiều hơn thế."
+      "grammarRule": "N ＋ にとどまらず: Không chỉ... mà còn nhiều hơn thế.",
+      "number": 18,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bộ phim này không chỉ thu hút giới trẻ mà còn được đông đảo khán giả ở nhiều độ tuổi đón nhận nồng nhiệt.\n【Phân tích】Mở rộng phạm vi người xem -> ～にとどまらず.",
-      "grammarRule": "N ＋ にとどまらず: Mở rộng ra phạm vi lớn hơn."
+      "grammarRule": "N ＋ にとどまらず: Mở rộng ra phạm vi lớn hơn.",
+      "number": 19,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch03_q20",
@@ -284,8 +341,13 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Nhân cách chân thành của anh ấy đã là điều đáng nể rồi, nhưng nhạy cảm kinh doanh sắc bén của anh ấy cũng khiến người ta phải ngả mũ thán phục.\n【Phân tích】A đã đành, B còn đáng nể hơn -> ～もさることながら.",
-      "grammarRule": "N ＋ もさることながら: A đã đành, B còn hơn thế."
+      "grammarRule": "N ＋ もさることながら: A đã đành, B còn hơn thế.",
+      "number": 20,
+      "section": "第3課: 限定・非限定・付加",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch03"
+  "id": "skz_b_ch03",
+  "level": "N1",
+  "totalQuestions": 20
 }

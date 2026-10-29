@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Anh ấy đang ngày đêm miệt mài dùi mài kinh sử nhằm mục đích thi đỗ trở thành bác sĩ.\n【Phân tích】V-る ＋ べく (riêng する có thể là すべく hoặc するべく): Để nhằm mục đích lớn lao.",
-      "grammarRule": "V-る ＋ べく (する -> すべく / するべく): Để nhằm mục đích... (văn viết trang trọng, vế sau cùng chủ ngữ)."
+      "grammarRule": "V-る ＋ べく (する -> すべく / するべく): Để nhằm mục đích... (văn viết trang trọng, vế sau cùng chủ ngữ).",
+      "number": 1,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhằm mục đích làm sáng tỏ chân tướng sự việc, cuộc điều tra hiện trường triệt để đã chính thức được khởi động.\n【Phân tích】Hành động hướng tới việc làm sáng tỏ sự thật: 現地調査が開始された.",
-      "grammarRule": "Vế sau là hành động cụ thể để đạt được mục đích ở vế trước."
+      "grammarRule": "Vế sau là hành động cụ thể để đạt được mục đích ở vế trước.",
+      "number": 2,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cốt để thực hiện cho bằng được dã tâm vị kỷ của bản thân, hắn ta đã bất chấp mọi thủ đoạn tàn độc không từ một thứ gì.\n【Phân tích】V-ない (bỏ ない) ＋ んがため(に) (riêng する -> せんがため): Cốt để nhằm đạt mục đích to lớn, quan trọng của đời người.",
-      "grammarRule": "V-ない (bỏ ない) ＋ んがため(に) (する -> せんがため): Với mong muốn tột bậc cốt để đạt được mục tiêu lớn lao."
+      "grammarRule": "V-ない (bỏ ない) ＋ んがため(に) (する -> せんがため): Với mong muốn tột bậc cốt để đạt được mục tiêu lớn lao.",
+      "number": 3,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cốt để giành lại nền độc lập tự do cho tổ quốc, biết bao người con trẻ tuổi đã dâng hiến cả mạng sống của mình.\n【Phân tích】Hy sinh vì lý tưởng cao cả của dân tộc: 多くの若者たちが命を捧げた.",
-      "grammarRule": "Mục đích thiêng liêng, có tính chất trọng đại đối với cá nhân hoặc tập thể."
+      "grammarRule": "Mục đích thiêng liêng, có tính chất trọng đại đối với cá nhân hoặc tập thể.",
+      "number": 4,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu dùng lòng chân thành trọn vẹn để đối đãi ứng xử, thì chắc chắn tấm lòng của bạn sẽ chạm tới được trái tim đối phương.\n【Phân tích】N ＋ をもって: Bằng phương tiện, bằng thái độ/biện pháp (诚意をもって: bằng tất cả sự chân thành).",
-      "grammarRule": "N (phương tiện, thái độ, tư cách) ＋ をもって: Bằng phương tiện/thái độ đó (văn phong trang trọng)."
+      "grammarRule": "N (phương tiện, thái độ, tư cách) ＋ をもって: Bằng phương tiện/thái độ đó (văn phong trang trọng).",
+      "number": 5,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bằng việc áp dụng công nghệ kỹ thuật cao tối tân nhất, chúng tôi đã có thể hoàn thành xuất sắc công trình thi công hiểm trở này một cách an toàn.\n【Phân tích】Dùng công nghệ cao để hoàn thành: 無事成功させることができた.",
-      "grammarRule": "Chỉ phương tiện đặc biệt giúp hoàn thành được việc lớn."
+      "grammarRule": "Chỉ phương tiện đặc biệt giúp hoàn thành được việc lớn.",
+      "number": 6,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhằm đoạt được cúp vô địch danh giá, toàn đội bóng đã đồng lòng đoàn kết vượt qua những đợt huấn luyện gian khổ khắc nghiệt.\n【Phân tích】V-る ＋ べく: Nhằm mục đích vô địch.",
-      "grammarRule": "V-る ＋ べく: Để nhằm mục đích."
+      "grammarRule": "V-る ＋ べく: Để nhằm mục đích.",
+      "number": 7,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cốt để chứng minh sự trong sạch của bản thân, anh ta đã bôn ba khắp nơi gom góp bằng chứng xác thực.\n【Phân tích】証明する -> 証明せんがため (dạng đặc biệt của する).",
-      "grammarRule": "する -> せんがため: Cốt để làm gì."
+      "grammarRule": "する -> せんがため: Cốt để làm gì.",
+      "number": 8,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bằng tinh thần kiên cường bất khuất không lùi bước, ông ấy đã vượt qua muôn vàn phong ba bão táp thử thách của cuộc đời.\n【Phân tích】N (tinh thần) ＋ をもって: Bằng tinh thần.",
-      "grammarRule": "N ＋ をもって: Bằng phương tiện/tinh thần."
+      "grammarRule": "N ＋ をもって: Bằng phương tiện/tinh thần.",
+      "number": 9,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhằm ngăn chặn sự tàn phá hủy hoại môi trường, các quốc gia trên toàn thế giới đã cùng nhau ký kết hiệp ước hợp tác liên kết.\n【Phân tích】V-る ＋ べく: Nhằm ngăn chặn hủy hoại môi trường.",
-      "grammarRule": "V-る ＋ べく: Với mục đích."
+      "grammarRule": "V-る ＋ べく: Với mục đích.",
+      "number": 10,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cốt để duy trì sự sinh tồn sống sót, muôn loài động vật đã thích nghi và tiến hóa qua môi trường khắc nghiệt khốc liệt.\n【Phân tích】生き残らない -> 生き残らんがために (Động từ nhóm 1 chia thể phủ định bỏ ない).",
-      "grammarRule": "V-ない (bỏ ない) ＋ んがため: Cốt để sinh tồn."
+      "grammarRule": "V-ない (bỏ ない) ＋ んがため: Cốt để sinh tồn.",
+      "number": 11,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bằng văn bản này, tôi xin phép được thay cho lời chào mừng việc ký kết hợp đồng chính thức.\n【Phân tích】N ＋ をもちまして (Văn phong thương mại nghi thức).",
-      "grammarRule": "N ＋ をもちまして: Bằng phương tiện (lịch sự)."
+      "grammarRule": "N ＋ をもちまして: Bằng phương tiện (lịch sự).",
+      "number": 12,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhằm giúp dự án kinh doanh mới thành công vang dội, chúng tôi đã quy tụ những chuyên gia xuất sắc hàng đầu.\n【Phân tích】V-る (させる) ＋ べく.",
-      "grammarRule": "V-る ＋ べく: Nhằm làm cho..."
+      "grammarRule": "V-る ＋ べく: Nhằm làm cho...",
+      "number": 13,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cốt để giải cứu muôn dân lầm than, chàng đã không tiếc thân mình lao thẳng vào biển lửa đạn bom.\n【Phân tích】救わない -> 救わんがために.",
-      "grammarRule": "V-ない (bỏ ない) ＋ んがため."
+      "grammarRule": "V-ない (bỏ ない) ＋ んがため.",
+      "number": 14,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tôi vô cùng xúc động trước tình mẫu tử thiêng liêng của người mẹ đã lấy chính tấm thân mình để che chắn chở che cho con khỏi hiểm nguy.\n【Phân tích】身をもって (Lấy chính thân mình để làm).",
-      "grammarRule": "身をもって: Bằng chính bản thân/xương máu mình."
+      "grammarRule": "身をもって: Bằng chính bản thân/xương máu mình.",
+      "number": 15,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch11_q16",
@@ -228,8 +273,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhằm giải tỏa những bất an lo lắng về tương lai sau này, ngày càng có nhiều người bắt đầu tích lũy đầu tư tài sản ngay từ bây giờ.\n【Phân tích】解消する -> 解消すべく.",
-      "grammarRule": "V-る (する -> すべく) ＋ べく: Nhằm giải tỏa."
+      "grammarRule": "V-る (する -> すべく) ＋ べく: Nhằm giải tỏa.",
+      "number": 16,
+      "section": "第11課: 目的・手段",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch11"
+  "id": "skz_b_ch11",
+  "level": "N1",
+  "totalQuestions": 16
 }

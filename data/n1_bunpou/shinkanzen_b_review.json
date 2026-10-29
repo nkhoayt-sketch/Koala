@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chuông vừa reo một cái là học sinh đã ùa chạy vút ra khỏi lớp học.\n【Phân tích】V-る ＋ が早いか: Vừa mới... thì ngay lập tức.",
-      "grammarRule": "V-る ＋ が早いか."
+      "grammarRule": "V-る ＋ が早いか.",
+      "number": 1,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vừa mới bước chân vào phòng một cái, cô ấy liền đổ gục ngay xuống giường.\n【Phân tích】V-る ＋ や否や: Vừa mới bước vào.",
-      "grammarRule": "V-る ＋ や否や."
+      "grammarRule": "V-る ＋ や否や.",
+      "number": 2,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vừa đọc xong bức thư, anh ta liền biến sắc mặt rồi bật dậy ngay.\n【Phân tích】V-る ＋ なり: Ngay khi làm V thì phản ứng tức thì.",
-      "grammarRule": "V-る ＋ なり."
+      "grammarRule": "V-る ＋ なり.",
+      "number": 3,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cứ vừa học thuộc xong là lại quên từ vựng ngay nên cần phải ôn đi ôn lại nhiều lần.\n【Phân tích】覚えるそばから (Vừa nhớ xong lại quên).",
-      "grammarRule": "V-る ＋ そばから."
+      "grammarRule": "V-る ＋ そばから.",
+      "number": 4,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Kể từ sau khi kết hôn đến nay, nếp sống hằng ngày của tôi đã trở nên vô cùng điều độ.\n【Phân tích】Thay đổi trạng thái kéo dài liên tục -> てからというもの.",
-      "grammarRule": "V-て ＋ からというもの."
+      "grammarRule": "V-て ＋ からというもの.",
+      "number": 5,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Ngay trong cơn bão khủng hoảng suy thoái kinh tế, công ty chúng tôi vẫn tiếp tục tăng trưởng kết quả kinh doanh.\n【Phân tích】Ở trong hoàn cảnh ngặt nghèo -> Nにあって.",
-      "grammarRule": "N ＋ にあって."
+      "grammarRule": "N ＋ にあって.",
+      "number": 6,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Mở màn bằng buổi biểu diễn tại Tokyo, chuyến lưu diễn toàn quốc đã chính thức khởi động.\n【Phân tích】Mở màn khởi đầu chuỗi sự kiện -> を皮切りに.",
-      "grammarRule": "N ＋ を皮切りに."
+      "grammarRule": "N ＋ を皮切りに.",
+      "number": 7,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Từ trang phục cho đến tận từng món phụ kiện mang theo, tất cả đều được dát toàn hàng hiệu xa xỉ bậc nhất.\n【Phân tích】Từ A đến tận B -> に至るまで.",
-      "grammarRule": "N ＋ に至るまで."
+      "grammarRule": "N ＋ に至るまで.",
+      "number": 8,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Hết đêm nay là thời điểm phát sóng tập cuối cùng của chương trình này kết thúc.\n【Phân tích】Mốc chấm dứt hoạt động -> を限りに.",
-      "grammarRule": "N (thời gian) ＋ を限りに."
+      "grammarRule": "N (thời gian) ＋ を限りに.",
+      "number": 9,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nữ diễn viên có thể đảm nhận vai diễn này thì ngoài cô ấy ra không có ai khác.\n【Phân tích】Ngoài cô ấy ra không ai khác -> 彼女をおいてほかにいない.",
-      "grammarRule": "N ＋ をおいて (ほかに...ない)."
+      "grammarRule": "N ＋ をおいて (ほかに...ない).",
+      "number": 10,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Hơi ấm của sự thủ công tỉ mỉ là nét hấp dẫn đặc sắc chỉ có ở bàn tay người nghệ nhân.\n【Phân tích】Nét độc đáo chỉ có ở nghệ nhân -> 職人ならでは.",
-      "grammarRule": "N ＋ ならでは."
+      "grammarRule": "N ＋ ならでは.",
+      "number": 11,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Trào lưu không chỉ dừng lại ở giới trẻ mà còn lan tỏa sâu rộng sang cả tầng lớp cao niên.\n【Phân tích】Lan rộng phạm vi -> にとどまらず.",
-      "grammarRule": "N ＋ にとどまらず."
+      "grammarRule": "N ＋ にとどまらず.",
+      "number": 12,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cổ họng đau buốt, cơm đã đành không nuốt nổi, ngay cả ngụm nước cũng chẳng thể nuốt trôi.\n【Phân tích】Cơm đã đành, ngay cả nước cũng không -> はおろか.",
-      "grammarRule": "N ＋ はおろか."
+      "grammarRule": "N ＋ はおろか.",
+      "number": 13,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Văn phong trau chuốt tuyệt đẹp thì đã đành rồi, nhưng khả năng nhìn nhận sâu sắc trong tác phẩm cũng khiến tôi cảm phục khôn xiết.\n【Phân tích】A đã đành, B còn đáng phục hơn -> もさることながら.",
-      "grammarRule": "N ＋ もさることながら."
+      "grammarRule": "N ＋ もさることながら.",
+      "number": 14,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Từ nào không hiểu thì tra từ điển hay hỏi thầy cô chẳng hạn, tự giác làm đi.\n【Phân tích】Lựa chọn phương án -> なり・・・なり.",
-      "grammarRule": "V-るなり V-るなり."
+      "grammarRule": "V-るなり V-るなり.",
+      "number": 15,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bất kể lý do là gì chăng nữa, việc biện minh dung túng cho bạo lực là điều tuyệt đối không thể tha thứ.\n【Phân tích】何であれ (Dù là gì đi nữa).",
-      "grammarRule": "何 ＋ であれ."
+      "grammarRule": "何 ＋ であれ.",
+      "number": 16,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cả về màu men lẫn hình dáng, tác phẩm gốm này thực sự được hoàn thiện một cách xuất sắc tuyệt trần.\n【Phân tích】Khen ngợi toàn diện màu sắc và hình dáng -> といい・・・といい.",
-      "grammarRule": "N1といい N2といい."
+      "grammarRule": "N1といい N2といい.",
+      "number": 17,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Xuân về, từ trên núi cho đến dưới cánh đồng, khắp nơi ngập tràn sắc hoa rực rỡ đua nở.\n【Phân tích】Khắp mọi nơi từ núi đến đồng -> といわず・・・といわず.",
-      "grammarRule": "N1といわず N2といわず."
+      "grammarRule": "N1といわず N2といわず.",
+      "number": 18,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Thành bại của dự án phụ thuộc hoàn toàn vào tinh thần làm việc nhóm từ nay về sau.\n【Phân tích】Phụ thuộc vào yếu tố quyết định -> いかん.",
-      "grammarRule": "N ＋ いかん."
+      "grammarRule": "N ＋ いかん.",
+      "number": 19,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q20",
@@ -284,7 +341,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bất chấp gió bão dữ dội, con tàu vẫn kiên cường vượt qua muôn trùng sóng dữ rẽ nước tiến lên.\n【Phân tích】Vượt qua giông bão hiểm trở -> をものともせずに.",
-      "grammarRule": "N ＋ をものともせず."
+      "grammarRule": "N ＋ をものともせず.",
+      "number": 20,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q21",
@@ -298,7 +358,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Phớt lờ nỗi lo lắng thấp thỏm của mọi người xung quanh, bản thân cậu ta vẫn thản nhiên phây phây như không có chuyện gì.\n【Phân tích】Bỏ ngoài tai sự lo lắng -> をよそに.",
-      "grammarRule": "N ＋ をよそに."
+      "grammarRule": "N ＋ をよそに.",
+      "number": 21,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q22",
@@ -312,7 +375,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Hắn ta hùng hổ lao tới với khí thế như muốn nhảy bổ vào đấm người ta đến nơi.\n【Phân tích】Như chực làm việc bạo lực -> んばかり.",
-      "grammarRule": "V-ない (bỏ ない) ＋ んばかり."
+      "grammarRule": "V-ない (bỏ ない) ＋ んばかり.",
+      "number": 22,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q23",
@@ -326,7 +392,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Như thể muốn hô to 'Đợi mãi mới thấy', anh ấy lập tức lao vào chén món ăn khoái khẩu của mình.\n【Phân tích】Ra dáng, chớp lấy thời cơ -> とばかりに.",
-      "grammarRule": "Câu văn ＋ とばかりに."
+      "grammarRule": "Câu văn ＋ とばかりに.",
+      "number": 23,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q24",
@@ -340,7 +409,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Anh ấy có tật hay tự ý độc đoán quyết định mọi chuyện một mình mà không hỏi ý ai.\n【Phân tích】Tật xấu lặp lại -> きらいがある.",
-      "grammarRule": "V-る ＋ きらいがある."
+      "grammarRule": "V-る ＋ きらいがある.",
+      "number": 24,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q25",
@@ -354,7 +426,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tiện chuyến đi ngắm lá đỏ mùa thu, tôi đã ghé vào suối nước nóng ngâm mình thư thái.\n【Phân tích】Đi ngắm cảnh tiện thể tắm suối nước nóng -> 紅葉狩りがてら.",
-      "grammarRule": "N ＋ がてら."
+      "grammarRule": "N ＋ がてら.",
+      "number": 25,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q26",
@@ -368,7 +443,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bên cạnh việc làm nông nghiệp, cha tôi còn hết lòng cống hiến cho việc bảo tồn nghệ thuật truyền thống của địa phương.\n【Phân tích】Hai công việc bền vững song hành -> かたわら.",
-      "grammarRule": "V-る ＋ かたわら."
+      "grammarRule": "V-る ＋ かたわら.",
+      "number": 26,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q27",
@@ -382,7 +460,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Đúng vào lúc quý vị đang bận rộn xử lý công việc rối ren mà tôi lại làm phiền thế này, thật vô cùng tạ lỗi.\n【Phân tích】Lời xin lỗi trang trọng: お取り込み中のところを.",
-      "grammarRule": "Nの ＋ ところを."
+      "grammarRule": "Nの ＋ ところを.",
+      "number": 27,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q28",
@@ -396,7 +477,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Giá mà nói thật từ đầu thì tôi đã tha thứ rồi, đằng này lại giở trò nói dối nên tôi mới nổi trận lôi đình thế này đây!\n【Phân tích】Tiếc nuối trách móc sự việc đã rồi -> ～ものを.",
-      "grammarRule": "普 ＋ ものを."
+      "grammarRule": "普 ＋ ものを.",
+      "number": 28,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q29",
@@ -410,7 +494,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù là người thân ruột thịt trong nhà đi chăng nữa thì cũng phải biết giữ gìn lễ nghĩa đúng mực.\n【Phân tích】Dù là ruột thịt -> 肉親といえども.",
-      "grammarRule": "N ＋ といえども."
+      "grammarRule": "N ＋ といえども.",
+      "number": 29,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q30",
@@ -424,7 +511,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cứ ngỡ bài toán hóc búa này sẽ ngốn nhiều thời gian lắm, ai ngờ cậu ấy đã giải quyết xong gọn lỏn chỉ trong 10 phút.\n【Phân tích】Cứ ngỡ thế này ai ngờ kết quả ngược lại -> ～と思いきや.",
-      "grammarRule": "普 ＋ と思いきや."
+      "grammarRule": "普 ＋ と思いきや.",
+      "number": 30,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q31",
@@ -438,7 +528,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu sự việc đã liên quan tới vận mệnh sống còn của cả quốc gia thì toàn thể quốc dân bắt buộc phải đồng lòng đứng lên chiến đấu.\n【Phân tích】Nếu là vì hoàn cảnh tối cao đó -> ～とあれば.",
-      "grammarRule": "普 ＋ とあれば."
+      "grammarRule": "普 ＋ とあれば.",
+      "number": 31,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q32",
@@ -452,7 +545,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Một khi đã bị gã nhà phê bình cay độc độc miệng đó nhắm tới thì coi như toi đời, thể nào cũng bị chỉ trích vùi dập đến tận cùng.\n【Phân tích】Hậu quả xấu tất yếu ập đến -> ～たら最後.",
-      "grammarRule": "V-たら最後."
+      "grammarRule": "V-たら最後.",
+      "number": 32,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q33",
@@ -466,7 +562,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Mới có chút lời chỉ trích thế này mà đã suy sụp ủ dột thì chẳng thể nào làm nổi một chính khách trên chính trường được.\n【Phân tích】Nếu cứ kém cỏi thế này -> ～ようでは.",
-      "grammarRule": "V-る ＋ ようでは."
+      "grammarRule": "V-る ＋ ようでは.",
+      "number": 33,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q34",
@@ -480,7 +579,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu không có được mối quan hệ tin cậy lẫn nhau thì bất kỳ cuộc đàm phán kinh doanh nào cũng không thể thành công được.\n【Phân tích】Thiếu đi sự tin tưởng thì không thể thành -> なくしては.",
-      "grammarRule": "N ＋ なくしては...ない."
+      "grammarRule": "N ＋ なくしては...ない.",
+      "number": 34,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q35",
@@ -494,7 +596,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu phải vứt bỏ lòng tự trọng để hạ mình cúi đầu trước kẻ đê tiện như hắn, thì thà chết đói còn thanh thản hơn.\n【Phân tích】Thà chết còn hơn làm việc nhục nhã -> ～くらいなら...ほうがましだ.",
-      "grammarRule": "V-る ＋ くらいなら...ほうがましだ."
+      "grammarRule": "V-る ＋ くらいなら...ほうがましだ.",
+      "number": 35,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q36",
@@ -508,7 +613,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù có tìm đủ trăm phương nghìn kế để bao biện đi chăng nữa thì uy tín đã đánh mất cũng chẳng thể nào lấy lại được.\n【Phân tích】Dù có bao biện cũng vô ích -> 言い訳をしたところで.",
-      "grammarRule": "V-た ＋ ところで...ない."
+      "grammarRule": "V-た ＋ ところで...ない.",
+      "number": 36,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q37",
@@ -522,7 +630,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính vì yêu thương sâu đậm nên đôi khi người ta mới buộc phải ngậm ngùi chọn con đường chia tay giải thoát cho nhau.\n【Phân tích】Chính vì yêu thương -> 愛していればこそ.",
-      "grammarRule": "条件形 ＋ こそ."
+      "grammarRule": "条件形 ＋ こそ.",
+      "number": 37,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q38",
@@ -536,7 +647,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Có phải nhân viên mới tò te vào công ty nữa đâu mà rắc rối nhỏ nhặt cỡ đó cũng không tự mình giải quyết lấy được, tự xử lý đi!\n【Phân tích】Đâu phải lính mới -> 新入社員ではあるまいし.",
-      "grammarRule": "N ＋ ではあるまいし."
+      "grammarRule": "N ＋ ではあるまいし.",
+      "number": 38,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q39",
@@ -550,7 +664,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì đứng trước mặt các đàn em khóa dưới, nên tôi tuyệt đối không thể để lộ bộ dạng thảm hại đáng thương được.\n【Phân tích】Giữ thể diện trước hậu bối: 情けない姿は見せられない.",
-      "grammarRule": "N ＋ の手前."
+      "grammarRule": "N ＋ の手前.",
+      "number": 39,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q40",
@@ -564,7 +681,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính bởi cơn bão suy thoái kinh tế nghiệt ngã, biết bao nhiêu doanh nghiệp đã bị dồn vào bước đường phá sản vỡ nợ.\n【Phân tích】Nguyên nhân sâu xa -> 不景気ゆえに.",
-      "grammarRule": "N ＋ ゆえに."
+      "grammarRule": "N ＋ ゆえに.",
+      "number": 40,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q41",
@@ -578,7 +698,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nỗi lầm than khốn khổ tột cùng của người dân nơi vùng thiên tai lũ lụt, thật chẳng khó để chúng ta có thể thấu cảm.\n【Phân tích】Không khó để cảm nhận -> 察するにかたくない.",
-      "grammarRule": "察するにかたくない."
+      "grammarRule": "察するにかたくない.",
+      "number": 41,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q42",
@@ -592,7 +715,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bão đổ bộ làm mất điện toàn bộ, có muốn kiểm tra đồ trong tủ lạnh cũng tối om như hũ nút không thể nhìn thấy gì.\n【Phân tích】Muốn kiểm tra mà bất lực -> 確認しようにもできない.",
-      "grammarRule": "V-(よ)うにも V-れない."
+      "grammarRule": "V-(よ)うにも V-れない.",
+      "number": 42,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q43",
@@ -606,7 +732,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chúng ta không thể cứ mãi ôm khư khư bóng ma của những thất bại trong quá khứ thế này được.\n【Phân tích】Không thể duy trì sự tiêu cực mãi -> 引きずってはいられない.",
-      "grammarRule": "V-てはいられない."
+      "grammarRule": "V-てはいられない.",
+      "number": 43,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q44",
@@ -620,7 +749,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tầm nhìn xa trông rộng phi thường của bậc tiền bối sáng lập vĩ đại kia, kẻ tầm thường phàm phu như tôi làm sao mà hiểu thấu nổi.\n【Phân tích】Hoàn toàn ngoài tầm hiểu biết -> 知るべくもない.",
-      "grammarRule": "V-る ＋ べくもない."
+      "grammarRule": "V-る ＋ べくもない.",
+      "number": 44,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q45",
@@ -634,7 +766,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Lén lút cấu kết móc ngoặc với băng đảng xã hội đen là hành vi tham nhũng ô uế không thể nào tha thứ ở tư cách một chiến sĩ cảnh sát.\n【Phân tích】Tội lỗi cấm kỵ của cảnh sát -> あるまじき汚職.",
-      "grammarRule": "あるまじき ＋ N."
+      "grammarRule": "あるまじき ＋ N.",
+      "number": 45,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q46",
@@ -648,7 +783,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Công ty chúng ta gặt hái được thành công vang dội trên trường quốc tế chính là nhờ toàn thể nhân viên đã luôn giữ trọn ngọn lửa nhiệt huyết, không gì khác ngoài điều ấy.\n【Phân tích】Khẳng định nguyên nhân cốt lõi -> からにほかならない.",
-      "grammarRule": "から ＋ にほかならない."
+      "grammarRule": "から ＋ にほかならない.",
+      "number": 46,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q47",
@@ -662,7 +800,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Những gì anh ta đang giảo biện chẳng qua cũng chỉ là sự trốn tránh thoái thác trách nhiệm mà thôi.\n【Phân tích】Chẳng qua chỉ là -> にすぎない.",
-      "grammarRule": "N ＋ にすぎない."
+      "grammarRule": "N ＋ にすぎない.",
+      "number": 47,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q48",
@@ -676,7 +817,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Kỳ tích mang tầm vóc lịch sử này nhất định sẽ khiến cho hàng triệu con người trên toàn thế giới phải vỡ òa trong niềm vui sướng hân hoan.\n【Phân tích】Nhất định sẽ khiến cho vui sướng -> 歓喜させずにはおかない.",
-      "grammarRule": "V-ずにはおかない."
+      "grammarRule": "V-ずにはおかない.",
+      "number": 48,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q49",
@@ -690,7 +834,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Một khi nguồn ngân sách đã cạn kiệt đến đồng xu cuối cùng, chúng ta đành phải ngậm ngùi đóng băng dự án phát triển này lại thôi.\n【Phân tích】Đành phải đóng băng -> 凍結せざるを得ない.",
-      "grammarRule": "V-ざるを得ない."
+      "grammarRule": "V-ざるを得ない.",
+      "number": 49,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_rev_q50",
@@ -704,8 +851,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Đọc tập hồi ký của người nạn nhân bị hàm oan chịu cảnh tù đày ngục tối suốt bao năm trời ròng rã, tôi không tài nào kìm nén nổi cơn phẫn nộ sôi sục trước sự lộng quyền bạo ngược của bộ máy quyền lực.\n【Phân tích】Không kìm nổi cơn phẫn nộ -> 憤りを禁じ得なかった.",
-      "grammarRule": "N (cảm xúc) ＋ を禁じ得ない."
+      "grammarRule": "N (cảm xúc) ＋ を禁じ得ない.",
+      "number": 50,
+      "section": "Bài tập Tổng hợp: 1~4課, 1~8課, 1~12課, 1~16課, 1~20課",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_review"
+  "id": "skz_b_review",
+  "level": "N1",
+  "totalQuestions": 50
 }

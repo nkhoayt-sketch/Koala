@@ -62,7 +62,7 @@ function formatQuestionContent(questionText, section) {
   let formatted = typeof questionText === 'string' ? questionText : String(questionText);
 
   const secStr = typeof section === 'string' ? section : '';
-  const isArrangement = (secStr && (secStr.includes('問題6') || secStr.includes('問題8') || secStr.includes('文の組み立て'))) || formatted.includes('★');
+  const isArrangement = (secStr && (secStr.includes('問題6') || secStr.includes('問題8') || secStr.includes('文の組み立て'))) || Boolean(formatted?.includes?.('★'));
   if (isArrangement) {
     const slotToken = '[＿_]{1,10}';
     const starToken = '[＿_]*★[＿_]*';

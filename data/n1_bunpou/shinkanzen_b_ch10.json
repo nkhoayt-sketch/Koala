@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Người ngoài dù có gièm pha nói ngả nói nghiêng thế nào đi chăng nữa, tôi vẫn nhất quyết giữ vững niềm tin sắt đá của mình đến cùng.\n【Phân tích】Từ để hỏi ＋ V-(よ)うと: Dù cho có làm gì đi nữa thì vế sau vẫn bất biến.",
-      "grammarRule": "V-(よ)うと / V-(よ)うが: Dù có... đi chăng nữa thì lập trường vẫn không hề suy chuyển."
+      "grammarRule": "V-(よ)うと / V-(よ)うが: Dù có... đi chăng nữa thì lập trường vẫn không hề suy chuyển.",
+      "number": 1,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù trời có mưa hay không mưa, trận đấu ngày mai vẫn sẽ diễn ra theo quyết định.\n【Phân tích】V1-(よ)うと V2-まいと: Nhóm 1 dùng V-るまい hoặc V-あ・まい (降るまい / 降るまいと / 降らまいと). Ở đây kết hợp 降ら ＋ まいと.",
-      "grammarRule": "V-(よ)うと V-まいと: Dù có làm hay không làm thì kết quả vẫn thế."
+      "grammarRule": "V-(よ)うと V-まいと: Dù có làm hay không làm thì kết quả vẫn thế.",
+      "number": 2,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cho dù có là quốc vương chăng nữa, hễ phạm pháp là đều phải bị pháp luật trừng trị nghiêm minh.\n【Phân tích】N ＋ であろうと: Cho dù là danh phận cao sang nào.",
-      "grammarRule": "N / Từ để hỏi ＋ であれ / であろうと: Cho dù là N đi nữa."
+      "grammarRule": "N / Từ để hỏi ＋ であれ / であろうと: Cho dù là N đi nữa.",
+      "number": 3,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Giờ này có ôm đầu hối hận đứt ruột đi chăng nữa thì cũng chẳng thể nào lấy lại được quãng thời gian đã trôi qua.\n【Phân tích】悔やんだ ＋ ところで: Dù có làm... đi chăng nữa thì kết quả vẫn là công cốc, vô ích.",
-      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng vô ích / chẳng đem lại tác dụng gì (kết quả vô vọng)."
+      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng vô ích / chẳng đem lại tác dụng gì (kết quả vô vọng).",
+      "number": 4,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù có van nài van xin tới cỡ nào đi chăng nữa, tên chủ quán bướng bỉnh đó tuyệt đối không đời nào chịu gật đầu đâu.\n【Phân tích】Vế sau luôn là nhận định phủ định tính vô ích: 首を縦に振るはずがない.",
-      "grammarRule": "Vế sau luôn mang nghĩa vô ích, không có hy vọng đạt được mục đích."
+      "grammarRule": "Vế sau luôn mang nghĩa vô ích, không có hy vọng đạt được mục đích.",
+      "number": 5,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhà mà rộng thì rộng thật đấy nhưng dọn dẹp mệt bở hơi tai, còn nếu hẹp thì hẹp thật đấy nhưng lại bí bách tù túng.\n【Phân tích】A-ければ A-いで: 狭ければ 狭いで (hẹp thì lại có cái khổ của hẹp).",
-      "grammarRule": "A-ければ A-いで / V-たら V-たで: Nếu đạt được thì cũng nảy sinh phiền toái kiểu đó, mà không đạt được thì cũng có cái khổ tương ứng."
+      "grammarRule": "A-ければ A-いで / V-たら V-たで: Nếu đạt được thì cũng nảy sinh phiền toái kiểu đó, mà không đạt được thì cũng có cái khổ tương ứng.",
+      "number": 6,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù cho có bao nhiêu chông gai hiểm trở chắn ngang trước mắt đi chăng nữa, tôi cũng không bao giờ có ý định lùi bước dù chỉ nửa bước.\n【Phân tích】立ちはだかる -> 立ちはだかろうとも (chia thể ý chí ＋ とも).",
-      "grammarRule": "V-(よ)うとも / V-(よ)うが: Dù cho... đến mức nào đi chăng nữa."
+      "grammarRule": "V-(よ)うとも / V-(よ)うが: Dù cho... đến mức nào đi chăng nữa.",
+      "number": 7,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù cho cả thế giới này có quay lưng biến thành kẻ thù đi chăng nữa, tôi vẫn sẽ mãi mãi đứng về phía bạn.\n【Phân tích】Lập trường trước sau như một kiên định: わたしは君の味方であり続ける.",
-      "grammarRule": "Lập trường kiên định tuyệt đối bất chấp mọi giả định cực đoan."
+      "grammarRule": "Lập trường kiên định tuyệt đối bất chấp mọi giả định cực đoan.",
+      "number": 8,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù có tham gia hay không tham gia, hội phí vẫn sẽ được thu đồng đều như nhau từ tất cả mọi người.\n【Phân tích】Làm hay không làm thì kết quả vẫn áp dụng chung -> しようとしまいと.",
-      "grammarRule": "V-(よ)うと V-まいと: Dù làm hay không."
+      "grammarRule": "V-(よ)うと V-まいと: Dù làm hay không.",
+      "number": 9,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q09",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù có là danh y tài ba lỗi lạc cỡ nào chăng nữa thì cũng chẳng thể nào chữa bách bệnh cho tất cả mọi người được.\n【Phân tích】Bất kể là danh y nào -> 名医であろうと.",
-      "grammarRule": "Từ để hỏi ＋ N ＋ であろうと: Bất kể là danh phận nào."
+      "grammarRule": "Từ để hỏi ＋ N ＋ であろうと: Bất kể là danh phận nào.",
+      "number": 10,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q10",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tới nước này rồi mày có phân bua thanh minh cách mấy đi chăng nữa thì cũng chẳng có ma nào tin lời mày đâu.\n【Phân tích】Dù có giải thích cũng hoàn toàn vô ích -> 弁解したところで.",
-      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng hoàn toàn vô ích."
+      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng hoàn toàn vô ích.",
+      "number": 11,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q11",
@@ -172,7 +205,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Lương mà thấp thì thấp thật nhưng sống chật vật, mà lương cao thì cao thật nhưng thuế má lại đội lên ngút trời mệt mỏi.\n【Phân tích】Cấu trúc: 高ければ高いで.",
-      "grammarRule": "A-ければ A-いで: Đằng nào cũng có nỗi khổ riêng."
+      "grammarRule": "A-ければ A-いで: Đằng nào cũng có nỗi khổ riêng.",
+      "number": 12,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q12",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù cho có bị mọi người xung quanh chỉ trích gièm pha tới mức nào đi chăng nữa, tôi vẫn sẽ sải bước trên con đường mà mình cho là đúng đắn.\n【Phân tích】Bị chỉ trích thế nào cũng không nản -> 非難されようが.",
-      "grammarRule": "V-(よ)うが: Cho dù có bị..."
+      "grammarRule": "V-(よ)うが: Cho dù có bị...",
+      "number": 13,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q13",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù cậu có đi hay không đi thì quyết tâm của tôi vẫn không hề lay chuyển.\n【Phân tích】行こうと行くまいと (Cặp đối sánh ようと...まいと).",
-      "grammarRule": "V-(よ)うと V-まいと."
+      "grammarRule": "V-(よ)うと V-まいと.",
+      "number": 14,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q14",
@@ -214,7 +256,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù cậu có cuống cuồng chạy thục mạng đi chăng nữa thì cũng phải chờ tới 30 phút nữa mới có chuyến tàu tiếp theo, thành ra vội cũng công cốc thôi.\n【Phân tích】Vội vã cũng vô ích -> 急いだところで...無駄だ.",
-      "grammarRule": "V-た ＋ ところで...無駄だ: Làm cũng vô ích."
+      "grammarRule": "V-た ＋ ところで...無駄だ: Làm cũng vô ích.",
+      "number": 15,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q15",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Độc thân thì độc thân thật đấy nhưng tự do mà đôi khi cô đơn, còn kết hôn thì kết hôn thật đấy nhưng trách nhiệm gia đình đè nặng áp lực.\n【Phân tích】結婚したら結婚したで (Mô hình たら...たで).",
-      "grammarRule": "V-たら V-たで: Nếu rơi vào tình huống đó thì lại có cái khó của nó."
+      "grammarRule": "V-たら V-たで: Nếu rơi vào tình huống đó thì lại có cái khó của nó.",
+      "number": 16,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q16",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù cho có thất bại cay đắng tới 100 lần đi chăng nữa, tôi cũng tuyệt đối không bao giờ từ bỏ ước mơ của đời mình.\n【Phân tích】Cho dù thất bại 100 lần -> 失敗しようとも.",
-      "grammarRule": "V-(よ)うとも: Dù cho có..."
+      "grammarRule": "V-(よ)うとも: Dù cho có...",
+      "number": 17,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q17",
@@ -256,7 +307,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù kết quả ngã ngũ ra sao đi chăng nữa, chúng ta đã dốc cạn toàn lực rồi nên chẳng còn gì phải nuối tiếc cả.\n【Phân tích】どうであれ (Dù kết quả thế nào).",
-      "grammarRule": "どう ＋ であれ: Dù như thế nào đi nữa."
+      "grammarRule": "どう ＋ であれ: Dù như thế nào đi nữa.",
+      "number": 18,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch10_q18",
@@ -270,8 +324,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Dù người ta có chất cả núi tiền trước mặt đi chăng nữa, việc dùng tiền để mua chuộc trái tim một con người là điều không bao giờ làm nổi.\n【Phân tích】Có chất nhiều tiền cũng vô ích -> 積まれたところで.",
-      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng không thể."
+      "grammarRule": "V-た ＋ ところで: Dù có làm... thì cũng không thể.",
+      "number": 19,
+      "section": "第10課: 逆接条件",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch10"
+  "id": "skz_b_ch10",
+  "level": "N1",
+  "totalQuestions": 19
 }

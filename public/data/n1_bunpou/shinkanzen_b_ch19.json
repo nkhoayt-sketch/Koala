@@ -18,7 +18,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Danh từ + に足る: 信頼に足るデータ (dữ liệu đáng tin cậy).",
-      "grammarRule": "V-る / N ＋ に足る: Đáng để làm gì."
+      "grammarRule": "V-る / N ＋ に足る: Đáng để làm gì.",
+      "number": 1,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】V-ru + に足る: 人生をかけるに足る仕事 (công việc xứng đáng để cống hiến/đánh cược cả đời).",
-      "grammarRule": "V-る / N ＋ に足る: Đáng để làm gì."
+      "grammarRule": "V-る / N ＋ に足る: Đáng để làm gì.",
+      "number": 2,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Phủ định đuôi câu: 断定するに足る証拠だとは言えない (chưa thể nói là bằng chứng đủ sức để khẳng định).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 3,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Danh từ đánh giá học thuật: 学者の批判に堪える (đủ vững chắc để chịu được/đáp ứng được sự phản biện của các học giả).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 4,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】V-ru + に堪えない: 全く見るに堪えない (hoàn toàn không nỡ/không thể nhìn nổi cảnh trang điểm trên tàu).",
-      "grammarRule": "N ＋ に堪えない: Không kìm nén nổi cảm xúc."
+      "grammarRule": "N ＋ に堪えない: Không kìm nén nổi cảm xúc.",
+      "number": 5,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】聞くに堪えないひどい話 (câu chuyện tồi tệ đến mức không thể nghe lọt tai).",
-      "grammarRule": "N ＋ に堪えない: Không kìm nén nổi cảm xúc."
+      "grammarRule": "N ＋ に堪えない: Không kìm nén nổi cảm xúc.",
+      "number": 6,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Mẫu cảm thán quá khứ: 顔といったらなかった (gương mặt tái mét kinh hãi không lời nào tả xiết).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 7,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Tính từ đuôi na: 不親切といったらなかった (bất tiện/thiếu chu đáo đến mức không tả nổi).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 8,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Tính từ đuôi -i đi trực tiếp: 心細いといったらなかった (cảm giác bất an/cô độc không lời nào tả xiết).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 9,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Sợ hãi tột cùng: Lái xe đáng sợ đến mức không lời nào tả nổi, tôi thề không bao giờ ngồi lên xe lần 2 (二度と乗りたくない).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 10,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Tính từ cảm xúc: 情けないかぎりだ (vô cùng đáng tiếc/thảm hại khi không đọc nổi chữ Kanji đơn giản).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 11,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Tính từ cảm xúc đuôi -i: ほほえましいかぎりだ (vô cùng đáng yêu/ấm lòng).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 12,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Tính từ đuôi -i đi trực tiếp: 恥ずかしいかぎりです (vô cùng xấu hổ).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 13,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Tính từ cảm xúc: うらやましいかぎりです (vô cùng ghen tị/ngưỡng mộ).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 14,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Tính từ đuôi na bỏ な: 不健康極まりない生活 (lối sống cực kỳ không lành mạnh).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 15,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Tính từ đuôi na bỏ な: 不便極まりない (vô cùng bất tiện).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 16,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Tính từ đuôi na bỏ な + 極まる: 危険極まる (hết sức/cực kỳ nguy hiểm).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 17,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Tính từ đuôi na bỏ な: 不愉快極まりない (cực kỳ khó chịu).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 18,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Kinh ngạc trước sự thật khó tin: うそをつくとは驚いた (thật bất ngờ khi anh Yamamoto nghiêm túc thế mà lại nói dối).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 19,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q20",
@@ -284,7 +341,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Mức độ ngoài sức tưởng tượng: Nuôi tới tận 12 con mèo cơ á (猫を12匹も飼っているとは……).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 20,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q21",
@@ -298,7 +358,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Cảm thán sự cố éo le: Đúng vào ngày đi du lịch mong chờ thì lại mưa to cơ chứ (大雨だとは……).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 21,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q22",
@@ -312,7 +375,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】満足に足るもの (thứ xứng đáng để cảm thấy hài lòng).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 22,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q23",
@@ -326,7 +392,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Gu thẩm mỹ tinh tế không lời nào tả xiết: センスの良さといったら……。",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 23,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q24",
@@ -340,7 +409,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Tính từ cảm xúc + かぎりだ: 長年のファンとして喜ばしいかぎりだ (với tư cách fan lâu năm cảm thấy vô cùng vui sướng).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 24,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q25",
@@ -354,7 +426,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Kinh ngạc/bất bình trước sự việc: Cả lớp đều ngủ gật trong giờ học thì thật là quá tệ hại (居眠りするとは).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 25,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch19_q26",
@@ -368,8 +443,13 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Thưởng thức nghệ thuật: 芸術作品として鑑賞に堪えるもの (những tác phẩm đủ giá trị để thưởng thức như một tác phẩm nghệ thuật).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 26,
+      "section": "第19課: 強調",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch19"
+  "id": "skz_b_ch19",
+  "level": "N1",
+  "totalQuestions": 26
 }

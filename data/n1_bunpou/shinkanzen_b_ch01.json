@@ -18,7 +18,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Những đứa trẻ đang vẽ bậy vừa thoáng thấy mặt tôi một cái là bỏ chạy thục mạng ngay lập tức.\n【Phân tích】Cấu trúc ～が早いか đi với V-る (hoặc V-た). Trong các đáp án chỉ có '見る' (b) là thể từ điển phù hợp.",
-      "grammarRule": "V-る / V-た ＋ が早いか: Vừa mới... thì ngay lập tức hành động kế tiếp xảy ra. Vế sau là sự việc thực tế, không dùng ý chí, mệnh lệnh."
+      "grammarRule": "V-る / V-た ＋ が早いか: Vừa mới... thì ngay lập tức hành động kế tiếp xảy ra. Vế sau là sự việc thực tế, không dùng ý chí, mệnh lệnh.",
+      "number": 1,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Mỹ phẩm mới vừa mở bán một cái là phụ nữ trẻ lập tức đổ xô chen chúc mua.\n【Phân tích】Vế sau của ～が早いか không đi với mong muốn (たい/てほしい) hay mệnh lệnh (てください), mà chỉ sự thật khách quan diễn ra.",
-      "grammarRule": "Vế sau của ～が早いか không đi với câu mệnh lệnh, rủ rê hay nguyện vọng."
+      "grammarRule": "Vế sau của ～が早いか không đi với câu mệnh lệnh, rủ rê hay nguyện vọng.",
+      "number": 2,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Tàu Shinkansen vừa mới lăn bánh chạy một cái là anh ấy đã bắt đầu khui bia uống ngay.\n【Phân tích】(a) mang tính rủ rê (〜よう), (b) chỉ trạng thái tĩnh, chỉ (c) miêu tả hành động xảy ra ngay tức thì sau khi tàu chạy.",
-      "grammarRule": "Vế sau biểu thị hành động diễn ra nối tiếp ngay sau vế trước."
+      "grammarRule": "Vế sau biểu thị hành động diễn ra nối tiếp ngay sau vế trước.",
+      "number": 3,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Vừa mới bắt tay vào học hội họa bài bản, khả năng phác họa (dessin) của anh ấy đã tiến bộ trông thấy.\n【Phân tích】Cấu trúc ～や / ～や否や kết hợp với động từ thể từ điển (V-る).",
-      "grammarRule": "V-る ＋ や / や否や: Vừa mới... thì ngay lập tức (phản ứng/biến đổi xảy ra chớp nhoáng)."
+      "grammarRule": "V-る ＋ や / や否や: Vừa mới... thì ngay lập tức (phản ứng/biến đổi xảy ra chớp nhoáng).",
+      "number": 4,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Còi báo động vừa ré lên một cái là xe cứu hỏa lập tức xuất phát.\n【Phân tích】Vế sau không dùng mệnh lệnh (c) hay rủ rê (a), chỉ dùng sự kiện khách quan đã diễn ra.",
-      "grammarRule": "Vế sau không thể hiện ý chí, mệnh lệnh, rủ rê của người nói."
+      "grammarRule": "Vế sau không thể hiện ý chí, mệnh lệnh, rủ rê của người nói.",
+      "number": 5,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Taro vừa xem xong một tập anime là đã phóng ngay ra tiệm thuê đĩa để mượn bộ khác.\n【Phân tích】Vế sau diễn tả hành vi tức thì nối tiếp sau hành động kết thúc tập phim.",
-      "grammarRule": "Diễn tả hành vi nối tiếp tức thì của chủ thể."
+      "grammarRule": "Diễn tả hành vi nối tiếp tức thì của chủ thể.",
+      "number": 6,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Anh Yamakawa vừa ngồi vào bàn ăn một cái là bắt đầu ăn lấy ăn để với tốc độ khủng khiếp.\n【Phân tích】Chủ ngữ của cấu trúc ～なり bắt buộc phải là ngôi thứ ba (山川さん), không dùng cho ngôi thứ nhất (わたし/わたしたち).",
-      "grammarRule": "V-る ＋ なり: Chủ ngữ thường là ngôi thứ ba, vế trước và vế sau cùng một chủ thể thực hiện."
+      "grammarRule": "V-る ＋ なり: Chủ ngữ thường là ngôi thứ ba, vế trước và vế sau cùng một chủ thể thực hiện.",
+      "number": 7,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vừa thoáng thấy con vật ấy một cái, mọi người liền tháo chạy khỏi nơi đó.\n【Phân tích】～なり kết hợp trực tiếp với động từ thể từ điển V-る (見るなり).",
-      "grammarRule": "V-る ＋ なり: Vừa mới làm... thì liền làm hành động tiếp theo."
+      "grammarRule": "V-る ＋ なり: Vừa mới làm... thì liền làm hành động tiếp theo.",
+      "number": 8,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Yukiko vừa đến ga một cái là chạy thốc ngay vào phòng trực ga.\n【Phân tích】～なり thường dùng cho những hành vi bất ngờ, đột ngột, khác thường chứ không dùng cho các việc tuần tự bình thường như mua vé hay xem giờ.",
-      "grammarRule": "Vế sau mang tính chất bất ngờ hoặc phản ứng cảm xúc bột phát của chủ thể."
+      "grammarRule": "Vế sau mang tính chất bất ngờ hoặc phản ứng cảm xúc bột phát của chủ thể.",
+      "number": 9,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bánh mì tiệm đó rất được khen, vừa nướng xong mẻ nào là bán hết veo ngay mẻ đó.\n【Phân tích】～そばから đi với phó từ nhấn mạnh tính dồn dập, liên tục 'どんどん'.",
-      "grammarRule": "V-る / V-た ＋ そばから: Vừa mới làm... thì ngay lập tức hành động đối nghịch/lặp lại diễn ra dồn dập."
+      "grammarRule": "V-る / V-た ＋ そばから: Vừa mới làm... thì ngay lập tức hành động đối nghịch/lặp lại diễn ra dồn dập.",
+      "number": 10,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Tôi cứ vừa nghe xong tên người ta là quên bẵng đi mất ngay.\n【Phân tích】'Nghe tên' (聞いた) đi với そばから diễn tả sự lặp đi lặp lại một kết quả đáng tiếc.",
-      "grammarRule": "Thường dùng với ý nghĩa phàn nàn, tiếc nuối khi một kết quả xấu liên tục lặp lại."
+      "grammarRule": "Thường dùng với ý nghĩa phàn nàn, tiếc nuối khi một kết quả xấu liên tục lặp lại.",
+      "number": 11,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Cứ vừa mua quần áo xong là lại thèm mua cái mới ngay.\n【Phân tích】Hành động mua sắm (服を買った) diễn ra thường xuyên nhiều lần, phù hợp tính chất tuần hoàn của そばから.",
-      "grammarRule": "Hành vi được đề cập mang tính lặp đi lặp lại nhiều lần trong đời sống."
+      "grammarRule": "Hành vi được đề cập mang tính lặp đi lặp lại nhiều lần trong đời sống.",
+      "number": 12,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Kể từ ngày bỏ thuốc lá đến nay, thể trạng sức khỏe của tôi rất tốt.\n【Phân tích】～てからというもの chỉ một mốc biến cố quan trọng dẫn đến trạng thái kéo dài liên tục tới hiện tại. Bỏ thuốc lá là bước ngoặt dài hạn.",
-      "grammarRule": "V-て ＋ からというもの: Kể từ sau khi một sự kiện xảy ra, trạng thái đó kéo dài liên tục mãi về sau."
+      "grammarRule": "V-て ＋ からというもの: Kể từ sau khi một sự kiện xảy ra, trạng thái đó kéo dài liên tục mãi về sau.",
+      "number": 13,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Kể từ khi nghe lời thầy dặn, tôi liên tục suy nghĩ trăn trở nhiều điều về cuộc đời.\n【Phân tích】Vế sau phải là trạng thái tiếp diễn kéo dài (〜考えている), không phải hành động kết thúc dứt điểm.",
-      "grammarRule": "Vế sau luôn là trạng thái kéo dài tiếp diễn (thường ở dạng V-ている)."
+      "grammarRule": "Vế sau luôn là trạng thái kéo dài tiếp diễn (thường ở dạng V-ている).",
+      "number": 14,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Kể từ ngày nghỉ việc ở công ty, hầu như ngày nào tôi cũng đi câu cá thư giãn.\n【Phân tích】'毎日のように釣りをしている' là nếp sinh hoạt trạng thái kéo dài liên tục.",
-      "grammarRule": "Vế sau diễn tả thói quen hoặc trạng thái duy trì đều đặn sau mốc sự kiện."
+      "grammarRule": "Vế sau diễn tả thói quen hoặc trạng thái duy trì đều đặn sau mốc sự kiện.",
+      "number": 15,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Ông Kimura, ở vào cương vị là một nhà lãnh đạo quốc gia, đang ngày ngày hoàn thành lịch trình vô cùng bận rộn.\n【Phân tích】～にあって đi với danh từ chỉ tình huống, vị thế, hoàn cảnh đặc biệt (一国の指導者という立場).",
-      "grammarRule": "N ＋ にあって: Ở trong hoàn cảnh, tình huống, cương vị đặc biệt đó."
+      "grammarRule": "N ＋ にあって: Ở trong hoàn cảnh, tình huống, cương vị đặc biệt đó.",
+      "number": 16,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Mẹ dù đang nằm trên giường bệnh (hoàn cảnh ngặt nghèo) vẫn luôn lo lắng cho các con.\n【Phân tích】'病床' (giường bệnh) là hoàn cảnh khó khăn đặc biệt, rất tiêu biểu cho cấu trúc ～にあって.",
-      "grammarRule": "Thường dùng trong văn viết, thể hiện sự việc xảy ra trong hoàn cảnh đặc thù."
+      "grammarRule": "Thường dùng trong văn viết, thể hiện sự việc xảy ra trong hoàn cảnh đặc thù.",
+      "number": 17,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Ngay cả khi đang ở trong tình huống khẩn cấp như thế này, anh ấy vẫn vô cùng điềm tĩnh.\n【Phân tích】～にあっても nhấn mạnh sự việc vế sau vẫn diễn ra dù trong hoàn cảnh ngặt nghèo.",
-      "grammarRule": "N ＋ にあっても: Dù trong hoàn cảnh đặc biệt như vậy nhưng..."
+      "grammarRule": "N ＋ にあっても: Dù trong hoàn cảnh đặc biệt như vậy nhưng...",
+      "number": 18,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vừa bị lộ hành vi gian lận một cái là anh ta lập tức từ chức ngay.\n【Phân tích】Hành động từ chức diễn ra chớp nhoáng nối tiếp sau sự việc bại lộ -> ～が早いか.",
-      "grammarRule": "V-る ＋ が早いか: Vừa mới... thì ngay lập tức."
+      "grammarRule": "V-る ＋ が早いか: Vừa mới... thì ngay lập tức.",
+      "number": 19,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q20",
@@ -284,7 +341,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Bố vừa thoáng nhìn thấy mặt tôi một cái là bật cười toe toét.\n【Phân tích】Vừa làm V xong là hành động kế tiếp bột phát ngay -> V-る ＋ なり.",
-      "grammarRule": "V-る ＋ なり: Ngay sau khi... thì hành vi tiếp theo diễn ra."
+      "grammarRule": "V-る ＋ なり: Ngay sau khi... thì hành vi tiếp theo diễn ra.",
+      "number": 20,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q21",
@@ -298,7 +358,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Cứ vừa dọn dẹp xong là tụi trẻ lại bày bừa ra khắp phòng.\n【Phân tích】Sự việc lặp đi lặp lại mang tính chất bực bội, bất lực -> そばから.",
-      "grammarRule": "V-る ＋ そばから: Vừa mới làm xong thì lại bị lặp lại như cũ."
+      "grammarRule": "V-る ＋ そばから: Vừa mới làm xong thì lại bị lặp lại như cũ.",
+      "number": 21,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q22",
@@ -312,7 +375,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Kể từ sau lần xem World Cup bóng đá đến nay, tôi hoàn toàn mê mẩn môn thể thao này.\n【Phân tích】Đam mê kéo dài liên tục tới hiện tại -> ～てからというもの.",
-      "grammarRule": "V-て ＋ からというもの: Kể từ khi... thì trạng thái kéo dài liên tục."
+      "grammarRule": "V-て ＋ からというもの: Kể từ khi... thì trạng thái kéo dài liên tục.",
+      "number": 22,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q23",
@@ -326,7 +392,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vừa mới bắt đầu giờ tiếp nhận vào cửa thì các nhân viên phụ trách đã bận rộn đột ngột.\n【Phân tích】Biến đổi tình thế diễn ra tức thì ngay khi mở cửa -> ～や否や.",
-      "grammarRule": "V-る ＋ や否や: Vừa mới... thì ngay lập tức."
+      "grammarRule": "V-る ＋ や否や: Vừa mới... thì ngay lập tức.",
+      "number": 23,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch01_q24",
@@ -340,8 +409,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vừa nhận được tin đứa trẻ mất tích đã được tìm thấy, gia đình liền òa khóc nức nở.\n【Phân tích】Phản ứng cảm xúc òa khóc xảy ra ngay lúc tin vừa đến -> V-る ＋ や.",
-      "grammarRule": "V-る ＋ や: Vừa mới... là tức thì phản ứng."
+      "grammarRule": "V-る ＋ や: Vừa mới... là tức thì phản ứng.",
+      "number": 24,
+      "section": "第1課: 時間関係",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch01"
+  "id": "skz_b_ch01",
+  "level": "N1",
+  "totalQuestions": 24
 }

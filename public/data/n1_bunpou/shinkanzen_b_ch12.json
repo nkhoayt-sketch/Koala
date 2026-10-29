@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính vì muốn tốt cho tương lai của cậu tôi mới buông những lời khuyên răn nghiêm khắc đến thế này đấy.\n【Phân tích】Thể điều kiện ＋ こそ: 思えばこそ (Chính vì... nên mới...).",
-      "grammarRule": "Thể điều kiện (ば / たら) ＋ こそ: Chính vì lý do đặc biệt ấy nên mới (nhấn mạnh duy nhất lý do từ tâm huyết)."
+      "grammarRule": "Thể điều kiện (ば / たら) ＋ こそ: Chính vì lý do đặc biệt ấy nên mới (nhấn mạnh duy nhất lý do từ tâm huyết).",
+      "number": 1,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính vì có sức khỏe dồi dào nên ta mới có thể thỏa sức đắm mình vào công việc mình yêu thích.\n【Phân tích】健康であればこそ (Chính vì có sức khỏe).",
-      "grammarRule": "N / な形 ＋ であればこそ: Chính vì có điều kiện nền tảng đó."
+      "grammarRule": "N / な形 ＋ であればこそ: Chính vì có điều kiện nền tảng đó.",
+      "number": 2,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì là buổi hòa nhạc chia tay giải tán của nhóm nhạc thần tượng đình đám, nên quanh khu vực biểu diễn đã chật ních hỗn loạn bởi hàng vạn người hâm mộ đổ về.\n【Phân tích】N / 普通形 ＋ とあって: Vì rơi vào tình huống đặc biệt ấy nên đương nhiên kéo theo kết quả bất thường ở vế sau.",
-      "grammarRule": "N / 普 ＋ とあって: Vì trong hoàn cảnh/sự kiện đặc biệt đó nên (dẫn tới diễn biến tất yếu xảy ra)."
+      "grammarRule": "N / 普 ＋ とあって: Vì trong hoàn cảnh/sự kiện đặc biệt đó nên (dẫn tới diễn biến tất yếu xảy ra).",
+      "number": 3,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì trúng vào ngày đầu tiên của kỳ nghỉ Tuần Lễ Vàng mà thời tiết lại đẹp như tranh, nên khắp các khu du lịch nghỉ dưỡng đâu đâu cũng đông nghẹt người chen chúc.\n【Phân tích】Thời tiết đẹp dịp lễ -> Du lịch đông đúc tất yếu: 行楽地はどこも大混雑している.",
-      "grammarRule": "Sự kiện đặc biệt dẫn đến trạng thái đông đúc, tấp nập hoặc kết quả hiển nhiên."
+      "grammarRule": "Sự kiện đặc biệt dẫn đến trạng thái đông đúc, tấp nập hoặc kết quả hiển nhiên.",
+      "number": 4,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Có còn phải là con nít lên ba nữa đâu mà chuyện cỏn con thế cũng không tự mình quyết định lấy được, hãy tự phán đoán đi!\n【Phân tích】N ＋ ではあるまいし: Đâu phải là... (mắng mỏ, khuyên bảo đối phương không nên có thái độ không xứng hợp).",
-      "grammarRule": "N / 普 ＋ ではあるまいし: Đâu có phải là... (dùng để khuyên răn, quở trách người khác vì cách hành xử quá ấu trĩ/không phù hợp)."
+      "grammarRule": "N / 普 ＋ ではあるまいし: Đâu có phải là... (dùng để khuyên răn, quở trách người khác vì cách hành xử quá ấu trĩ/không phù hợp).",
+      "number": 5,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Có phải ngày mai là tận thế chết ngay được đâu mà cậu lại làm bộ mặt ủ dột bi quan thảm hại đến mức thế hả!\n【Phân tích】Khuyên răn không nên bi quan: そんなに悲観的な顔をするなよ.",
-      "grammarRule": "Vế sau là lời khuyên răn, yêu cầu, động viên hoặc trách móc."
+      "grammarRule": "Vế sau là lời khuyên răn, yêu cầu, động viên hoặc trách móc.",
+      "number": 6,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì trót mạnh miệng huênh hoang tuyên bố chắc nịch là sẽ thi đỗ rồi, nên giờ mà bảo thi trượt thì xấu hổ nhục nhã chết mất, cạy miệng cũng chẳng dám hé lời.\n【Phân tích】V-た / Nの ＋ 手前: Vì thể diện trước mặt người khác / Vì đã lỡ... nên tâm lý buộc phải kiềm chế hoặc hành xử giữ sĩ diện.",
-      "grammarRule": "V-た / Nの ＋ 手前: Vì thể diện/sĩ diện trước mặt ai đó hoặc trước lời đã nói ra, buộc bản thân phải hành xử tương xứng."
+      "grammarRule": "V-た / Nの ＋ 手前: Vì thể diện/sĩ diện trước mặt ai đó hoặc trước lời đã nói ra, buộc bản thân phải hành xử tương xứng.",
+      "number": 7,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì đứng trước mặt các em học sinh thân yêu, nên người làm thầy giáo như tôi tuyệt đối không thể thốt ra những lời bi lụy nản lòng thoái chí được.\n【Phân tích】Giữ thể diện của người thầy giáo: 弱音を吐くわけにはいかない.",
-      "grammarRule": "Buộc phải kìm nén hoặc hành xử đúng chuẩn mực để giữ thể diện trước đối tượng vế trước."
+      "grammarRule": "Buộc phải kìm nén hoặc hành xử đúng chuẩn mực để giữ thể diện trước đối tượng vế trước.",
+      "number": 8,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính bởi cái sự bồng bột của tuổi trẻ ngông cuồng, đôi khi người ta lại phạm phải những sai lầm dại dột không lường trước hậu quả.\n【Phân tích】N (の) / 普通形 ＋ ゆえ(に): Do/Bởi vì (văn viết cổ kính, trang trọng chỉ nguyên nhân cốt lõi).",
-      "grammarRule": "N(の) / 普 ＋ ゆえ(に): Do/Bởi vì lý do căn bản đó (văn viết trang trọng, cổ phong)."
+      "grammarRule": "N(の) / 普 ＋ ゆえ(に): Do/Bởi vì lý do căn bản đó (văn viết trang trọng, cổ phong).",
+      "number": 9,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Do thời tiết diễn biến quá xấu, toàn bộ các hoạt động sự kiện ngoài trời ngày hôm nay xin phép được hủy bỏ.\n【Phân tích】Thông báo trang trọng: 中止といたします.",
-      "grammarRule": "Dùng trong các thông báo chính thức giải thích nguyên nhân khách quan."
+      "grammarRule": "Dùng trong các thông báo chính thức giải thích nguyên nhân khách quan.",
+      "number": 10,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính vì tình yêu thương bao la dành cho con cái nên đôi khi cha mẹ mới phải bấm bụng đóng vai ác để nghiêm khắc răn đe.\n【Phân tích】Chính vì yêu thương con -> 愛情があればこそ.",
-      "grammarRule": "条件形 ＋ こそ: Chính vì lý do đó."
+      "grammarRule": "条件形 ＋ こそ: Chính vì lý do đó.",
+      "number": 11,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì là sự kiện miễn phí vé vào cửa, nên ngay từ trước giờ mở cổng người ta đã xếp hàng dài như rắn lượn.\n【Phân tích】Sự kiện miễn phí dẫn tới dòng người xếp hàng đông đúc -> 入場無料とあって.",
-      "grammarRule": "N ＋ とあって: Vì điều kiện đặc biệt."
+      "grammarRule": "N ＋ とあって: Vì điều kiện đặc biệt.",
+      "number": 12,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Có phải nhân viên làm thêm chân ướt chân ráo mới vào nghề đâu mà một nhân viên kỳ cựu lại đi xao nhãng việc kiểm tra cơ bản thế hả!\n【Phân tích】Quở trách người có kinh nghiệm: アルバイトではあるまいし.",
-      "grammarRule": "N ＋ ではあるまいし: Đâu phải là..."
+      "grammarRule": "N ＋ ではあるまいし: Đâu phải là...",
+      "number": 13,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì trót lớn tiếng huênh hoang trước mặt bàn dân thiên hạ rồi, giờ đây tôi đâu thể nào muối mặt mà rút lui được nữa.\n【Phân tích】Vì sĩ diện trước mặt đám đông -> 豪語してしまった手前.",
-      "grammarRule": "V-た ＋ 手前: Vì thể diện danh dự."
+      "grammarRule": "V-た ＋ 手前: Vì thể diện danh dự.",
+      "number": 14,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính bởi sự non nớt bỡ ngỡ chưa quen việc, tôi xin chân thành tạ lỗi sâu sắc vì đã gây ra muôn vàn phiền toái cho toàn thể quý vị.\n【Phân tích】Lý do trang trọng trong thư từ tạ lỗi: 不慣れなゆえに.",
-      "grammarRule": "な形 ＋ ゆえに: Do nguyên nhân..."
+      "grammarRule": "な形 ＋ ゆえに: Do nguyên nhân...",
+      "number": 15,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Chính vì tôi đặt trọn niềm tin nơi cậu nên mới giao phó trọng trách dự án tối mật mang tính sống còn của công ty cho cậu đấy.\n【Phân tích】Chính vì tin tưởng tuyệt đối -> 信頼していればこそ.",
-      "grammarRule": "V-条件形 ＋ こそ: Chính vì lý do đó."
+      "grammarRule": "V-条件形 ＋ こそ: Chính vì lý do đó.",
+      "number": 16,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì là sự kiện siêu sao tầm cỡ thế giới đột xuất đến Nhật Bản, nên sảnh sân bay đã trở nên náo loạn với rừng phóng viên và người hâm mộ vây quanh.\n【Phân tích】Sự kiện bất ngờ gây xôn xao dư luận -> 来日とあって.",
-      "grammarRule": "N ＋ とあって: Do sự kiện đặc biệt."
+      "grammarRule": "N ＋ とあって: Do sự kiện đặc biệt.",
+      "number": 17,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Có phải đồ mượn của người ngoài đâu mà đến cái máy tính xách tay của chính mình cũng không tự bảo quản lấy được, tự quản lý đi chứ!\n【Phân tích】Đâu phải của người ta -> 他人の物ではあるまいし.",
-      "grammarRule": "N ＋ ではあるまいし: Đâu phải là của ai."
+      "grammarRule": "N ＋ ではあるまいし: Đâu phải là của ai.",
+      "number": 18,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vì đứng trước mặt người thầy khả kính, tôi tuyệt đối không thể để lộ bộ dạng khó coi kém cỏi được.\n【Phân tích】Trước mặt ân sư -> 恩師の前の手前.",
-      "grammarRule": "N ＋ の手前: Trước mặt người đáng tôn kính."
+      "grammarRule": "N ＋ の手前: Trước mặt người đáng tôn kính.",
+      "number": 19,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch12_q20",
@@ -284,8 +341,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Vượt qua quá khứ cay đắng không được đến trường ăn học chỉ vì cái nghèo đeo bám, anh ấy đã vươn lên trở thành một doanh nhân thành đạt vẻ vang.\n【Phân tích】Nguyên nhân sâu xa gốc rễ của số phận -> 貧しさゆえに.",
-      "grammarRule": "N ＋ ゆえに: Bởi vì số phận/nguyên nhân gốc rễ."
+      "grammarRule": "N ＋ ゆえに: Bởi vì số phận/nguyên nhân gốc rễ.",
+      "number": 20,
+      "section": "第12課: 原因・理由",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch12"
+  "id": "skz_b_ch12",
+  "level": "N1",
+  "totalQuestions": 20
 }

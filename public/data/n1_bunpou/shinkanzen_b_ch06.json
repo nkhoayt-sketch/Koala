@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cô ấy đứng chết lặng với nét mặt ngỡ như chực khóc òa ra ngay đến nơi.\n【Phân tích】V-ない (bỏ ない) ＋ んばかり: 泣き出さない -> 泣き出さんばかり.",
-      "grammarRule": "V-ない (bỏ ない) ＋ んばかりだ (riêng する -> せんばかり): Cứ như thể sắp sửa... đến nơi rồi."
+      "grammarRule": "V-ない (bỏ ない) ＋ んばかりだ (riêng する -> せんばかり): Cứ như thể sắp sửa... đến nơi rồi.",
+      "number": 1,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Tiếng vỗ tay vang dội như muốn làm nổ tung cả khán phòng.\n【Phân tích】割れない -> 割れんばかりの拍手 (tiếng vỗ tay tưởng chừng vỡ tung).",
-      "grammarRule": "V-ない (bỏ ない) ＋ んばかりのN: N như muốn... đến nơi."
+      "grammarRule": "V-ない (bỏ ない) ＋ んばかりのN: N như muốn... đến nơi.",
+      "number": 2,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Anh ta cứ liếc nhìn đồng hồ liên tục như thể muốn ra hiệu bằng lời 'Về nhanh đi cho rảnh'.\n【Phân tích】Câu văn / từ ngữ ＋ とばかりに: Như thể muốn nói rằng...",
-      "grammarRule": "Câu trích dẫn / Dáng vẻ ＋ とばかり(に): Ra điệu như muốn nói rằng... (hành động không nói thành lời nhưng thái độ lộ rõ)."
+      "grammarRule": "Câu trích dẫn / Dáng vẻ ＋ とばかり(に): Ra điệu như muốn nói rằng... (hành động không nói thành lời nhưng thái độ lộ rõ).",
+      "number": 3,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Như thể thấy thời cơ ngàn năm có một đã tới, anh ấy lập tức mở đợt tổng tấn công ồ ạt.\n【Phân tích】Chớp thời cơ ra đòn quyết định: 一気に攻勢に出た.",
-      "grammarRule": "Hành vi chớp lấy dáng vẻ/thời điểm tức thì."
+      "grammarRule": "Hành vi chớp lấy dáng vẻ/thời điểm tức thì.",
+      "number": 4,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tôi đang để radio phát vu vơ không chủ đích thì bỗng nhiên một bài hát xưa cũ ùa về bên tai.\n【Phân tích】V-る ＋ ともなく / ともなしに: Làm hành động một cách vô thức, không chú định.",
-      "grammarRule": "V-る ＋ ともなく / ともなしに: Làm việc gì đó vu vơ, vô định, không hề có chủ đích trước."
+      "grammarRule": "V-る ＋ ともなく / ともなしに: Làm việc gì đó vu vơ, vô định, không hề có chủ đích trước.",
+      "number": 5,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Đang lúc lơ đãng nhìn vu vơ ra ngoài cửa sổ, tôi bỗng phát hiện ra một chú chim đang cặm cụi làm tổ.\n【Phân tích】Bắt gặp ngẫu nhiên khi đang vô định ngắm nhìn: 鳥が巣を作っているのに気づいた.",
-      "grammarRule": "Thường đi kèm các động từ giác quan (nhìn, nghe, nghĩ) diễn tả sự tình cờ nhận ra."
+      "grammarRule": "Thường đi kèm các động từ giác quan (nhìn, nghe, nghĩ) diễn tả sự tình cờ nhận ra.",
+      "number": 6,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Ngay từ khi mới sinh ra đời, cô ấy đã sở hữu tài năng âm nhạc phi phàm xuất chúng.\n【Phân tích】Cụm từ cố định: 生まれながらにして (bẩm sinh từ lúc chào đời).",
-      "grammarRule": "N / V-ます (bỏ ます) ＋ ながらに(して): Giữ nguyên trong trạng thái vốn có từ đầu (thường đi với 生まれ, 涙, 昔)."
+      "grammarRule": "N / V-ます (bỏ ます) ＋ ながらに(して): Giữ nguyên trong trạng thái vốn có từ đầu (thường đi với 生まれ, 涙, 昔).",
+      "number": 7,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Nhờ có Internet, chỉ cần ngồi yên tại nhà mà ta vẫn có thể nắm trọn mọi thông tin trên toàn thế giới trong tay.\n【Phân tích】居る -> 居ながらにして (ở yên một chỗ tại nhà).",
-      "grammarRule": "V-ます (bỏ ます) ＋ ながらに: Ở nguyên trong tình trạng đó."
+      "grammarRule": "V-ます (bỏ ます) ＋ ながらに: Ở nguyên trong tình trạng đó.",
+      "number": 8,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Anh ấy có tật hay nói quá, phóng đại mọi chuyện lên một chút.\n【Phân tích】V-る ＋ きらいがある: Có thói/có tật hay làm điều không tốt.",
-      "grammarRule": "V-る / Nの ＋ きらいがある: Có khuynh hướng, tật xấu tiêu cực lặp đi lặp lại."
+      "grammarRule": "V-る / Nの ＋ きらいがある: Có khuynh hướng, tật xấu tiêu cực lặp đi lặp lại.",
+      "number": 9,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Giới trẻ ngày nay có khuynh hướng sợ thất bại nên hay né tránh những thử thách mới.\n【Phân tích】Nhận xét khuynh hướng tiêu cực -> きらいがある.",
-      "grammarRule": "Phê phán một xu hướng, nếp nghĩ tiêu cực."
+      "grammarRule": "Phê phán một xu hướng, nếp nghĩ tiêu cực.",
+      "number": 10,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Với khí thế đằng đằng như muốn nổ tung cơn thịnh nộ, anh ta lao vút ra khỏi phòng.\n【Phân tích】怒る -> 怒らんばかり (bỏ ない thêm んばかり).",
-      "grammarRule": "V-ない (bỏ ない) ＋ んばかり: Như sắp bùng nổ."
+      "grammarRule": "V-ない (bỏ ない) ＋ んばかり: Như sắp bùng nổ.",
+      "number": 11,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Như muốn nói ra điệu 'Cứ để đấy cho tôi', anh ấy vỗ ngực cái bộp đầy tự tin.\n【Phân tích】Hành động ra vẻ 'cứ giao cho tôi' -> とばかりに.",
-      "grammarRule": "Câu thoại ngầm ＋ とばかりに: Ra dáng, ra điệu."
+      "grammarRule": "Câu thoại ngầm ＋ とばかりに: Ra dáng, ra điệu.",
+      "number": 12,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Không biết tự nơi nào văng vẳng đưa lại, một tiếng sáo du dương êm ái vọng tới.\n【Phân tích】どこからともなく: Chẳng biết từ đâu đưa lại (vô định).",
-      "grammarRule": "Từ nghi vấn ＋ ともなく: Không rõ là từ đâu/bao giờ."
+      "grammarRule": "Từ nghi vấn ＋ ともなく: Không rõ là từ đâu/bao giờ.",
+      "number": 13,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bà vừa rưng rưng nước mắt nghẹn ngào vừa kể lại cho tôi nghe những kỷ niệm xưa cũ.\n【Phân tích】涙ながらに: Trong làn nước mắt nghẹn ngào (cụm từ cố định).",
-      "grammarRule": "涙ながらに: Trong dòng nước mắt."
+      "grammarRule": "涙ながらに: Trong dòng nước mắt.",
+      "number": 14,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Cô ấy có cái tật hay bỏ ngoài tai những câu chuyện bất lợi cho bản thân mình.\n【Phân tích】V-る ＋ きらいがある: 聞き流すきらいがある.",
-      "grammarRule": "V-る ＋ きらいがある: Có thói quen xấu."
+      "grammarRule": "V-る ＋ きらいがある: Có thói quen xấu.",
+      "number": 15,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Anh ấy cúi rạp đầu xin lỗi như thể muốn quỳ mọp xuống đất đến nơi.\n【Phân tích】Động từ する -> せんばかりに (quy tắc biến đổi đặc biệt của する).",
-      "grammarRule": "する -> せんばかりだ: Cứ như muốn làm đến nơi."
+      "grammarRule": "する -> せんばかりだ: Cứ như muốn làm đến nơi.",
+      "number": 16,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Anh ta làm bộ mặt ngơ ngác phớt lờ với thái độ như muốn bảo 'Chuyện đó chẳng liên quan gì tới tôi cả'.\n【Phân tích】Thái độ tỏ vẻ -> とばかりの態度.",
-      "grammarRule": "Câu văn ＋ とばかりのN: N như muốn nói rằng..."
+      "grammarRule": "Câu văn ＋ とばかりのN: N như muốn nói rằng...",
+      "number": 17,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch06_q18",
@@ -256,8 +307,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Ngôi làng này cho đến tận bây giờ vẫn còn lưu giữ nguyên vẹn nếp sống mộc mạc từ thuở ngàn xưa.\n【Phân tích】昔ながらの: Vốn có giữ nguyên từ xa xưa.",
-      "grammarRule": "昔ながらのN: Giữ nguyên từ ngày xưa."
+      "grammarRule": "昔ながらのN: Giữ nguyên từ ngày xưa.",
+      "number": 18,
+      "section": "第6課: 様子",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch06"
+  "id": "skz_b_ch06",
+  "level": "N1",
+  "totalQuestions": 18
 }

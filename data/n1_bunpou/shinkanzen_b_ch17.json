@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】～たりとも chỉ đi với đơn vị đếm nhỏ nhất: 1日たりとも (dù chỉ 1 ngày).",
-      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không.",
+      "number": 1,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Đơn vị tiền tệ nhỏ nhất: 1円たりとも (dù chỉ 1 yên).",
-      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không.",
+      "number": 2,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Vế sau ～たりとも là câu phủ định: かん1本たりとも捨てられない (dù chỉ 1 lon cũng không thể vứt).",
-      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không.",
+      "number": 3,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Đuôi phủ định nhắc nhở: 1分たりとも遅れないように (để không trễ dù chỉ 1 phút).",
-      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không."
+      "grammarRule": "1 ＋ Đơn vị đếm ＋ たりとも...ない: Dù chỉ một... cũng không.",
+      "number": 4,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Hành động đơn giản nhất: Sốt nặng đến mức việc tự mình ngồi dậy (自分で起き上がることすら) cũng vô cùng vất vả.",
-      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí.",
+      "number": 5,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Ví dụ cực đoan: Không chỉ ước mơ tương lai mà ngay cả thứ mình thích (自分が好きなことすら) cũng không còn hiểu nổi nữa (わからなくなった).",
-      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí.",
+      "number": 6,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Cấu trúc đi với すら: Động từ dạng Danh từ hóa (の/こと) + すら -> 息をすることすら忘れるほど (đến mức quên cả thở).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 7,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Mẫu ～さえ…ば/すれば (chỉ cần làm bước tối thiểu này): 皿に盛りさえすれば (chỉ cần bày ra đĩa là xong). Mẫu すら không đi với cấu trúc điều kiện giả định 'さえ〜ば'.",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 8,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Cụm thành ngữ đi với だにしない: 予想だにしなかった (hoàn toàn không hề dự đoán trước).",
-      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí.",
+      "number": 9,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Động từ nhận thức/cảm giác + だに: 聞くだに恐ろしい (chỉ nghe thôi cũng đã thấy sợ hãi).",
-      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí."
+      "grammarRule": "N ＋ すら / だに: Ngay cả, thậm chí.",
+      "number": 10,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Mốc thời gian/lần thử: 3回目の挑戦にしてやっと成功した (mãi đến lần thử thứ 3 mới thành công).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 11,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Mốc tuổi tác đạt thành tựu: 60歳にして初めて海外旅行をした (mãi đến tuổi 60 mới lần đầu đi du lịch nước ngoài).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 12,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Đẳng cấp/vị thế cao: オリンピック選手にして初めて出せるタイム (thời gian kỷ lục mà chỉ tầm cỡ vận động viên Olympic mới có thể đạt được).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 13,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Cốt lõi để có được thành quả: 過去の失敗あっての成功だ (thành công có được chính là nhờ có những thất bại trong quá khứ).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 14,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Sự biết ơn yếu tố cốt lõi: 家族の協力あっての回復です (sự hồi phục này có được chính là nhờ vào sự hỗ trợ của gia đình).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 15,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Số lượng trang sách lớn: 150ページからある (tài liệu dày lên tới hơn 150 trang).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 16,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Nhấn mạnh số người: 1万人からの人 (lượng người lên tới hơn 1 vạn người).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 17,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】1歩たりとも…ない (dù chỉ 1 bước cũng không cho ra khỏi nhà).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 18,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Ví dụ cực đoan đơn giản: 子供ですらできる (ngay cả trẻ con cũng làm được).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 19,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q20",
@@ -284,7 +341,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】虫1匹たりとも…ない (không muốn giết dù chỉ 1 con côn trùng).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 20,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q21",
@@ -298,7 +358,10 @@
       ],
       "answer": "b",
       "explanation": "【Giải thích】Tầm cỡ tay nghề cao: 50年の斉藤さんにしてできる (phải là nghệ nhân 50 năm như bác Saito mới làm ra được).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 21,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q22",
@@ -312,7 +375,10 @@
       ],
       "answer": "a",
       "explanation": "【Giải thích】Yếu tố cốt lõi: 愛あっての結婚生活 (cuộc sống hôn nhân chính nhờ có tình yêu).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 22,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch17_q23",
@@ -326,8 +392,13 @@
       ],
       "answer": "c",
       "explanation": "【Giải thích】Khoảng cách lớn: 4キロからある道 (quãng đường dài lên tới hơn 4km).",
-      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1."
+      "grammarRule": "Quy tắc ngữ pháp Shin Kanzen Master N1.",
+      "number": 23,
+      "section": "第17課: 評価・感想",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch17"
+  "id": "skz_b_ch17",
+  "level": "N1",
+  "totalQuestions": 23
 }

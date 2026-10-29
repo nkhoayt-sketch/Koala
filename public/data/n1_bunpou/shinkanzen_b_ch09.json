@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu là vì những đứa con dấu yêu, thì bất kể gian lao vất vả nhường nào tôi cũng chẳng hề nề hà.\n【Phân tích】N / 普通形 ＋ とあれば: Nếu quả thực rơi vào điều kiện/hoàn cảnh đặc biệt đó thì sẵn sàng làm bất cứ điều gì.",
-      "grammarRule": "N / 普 ＋ とあれば: Nếu rơi vào tình huống đặc biệt ấy thì (sẵn sàng làm việc phi thường hoặc chấp nhận mọi thứ)."
+      "grammarRule": "N / 普 ＋ とあれば: Nếu rơi vào tình huống đặc biệt ấy thì (sẵn sàng làm việc phi thường hoặc chấp nhận mọi thứ).",
+      "number": 1,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu là để bảo vệ an toàn cho toàn thể quốc dân, thì chính phủ phải áp dụng mọi biện pháp có thể.\n【Phân tích】Vế sau thể hiện quyết tâm hoặc hành động kiên quyết: あらゆる手段を講じるべきだ.",
-      "grammarRule": "Vế sau là quyết tâm mạnh mẽ hoặc nghĩa vụ bắt buộc phải làm."
+      "grammarRule": "Vế sau là quyết tâm mạnh mẽ hoặc nghĩa vụ bắt buộc phải làm.",
+      "number": 2,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Một khi bí mật mà bị anh ta biết được thì coi như xong đời, chỉ sang ngày hôm sau là toàn bộ người trong công ty sẽ biết sạch sành sanh.\n【Phân tích】V-たら最後 / V-たが最後: Một khi đã lỡ... thì kết cục tồi tệ không thể cứu vãn sẽ ập đến.",
-      "grammarRule": "V-た ＋ ら最後 / が最後: Một khi đã... thì coi như xong/hết cách cứu vãn (kết quả xấu tất yếu xảy ra)."
+      "grammarRule": "V-た ＋ ら最後 / が最後: Một khi đã... thì coi như xong/hết cách cứu vãn (kết quả xấu tất yếu xảy ra).",
+      "number": 3,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Một khi đã dính phải con virus độc hại đó thì coi như toi đời, toàn bộ dữ liệu trên máy tính sẽ bị phá hủy sạch trơn.\n【Phân tích】Hậu quả tai hại khôn lường không thể đảo ngược: 全データが破壊されてしまう.",
-      "grammarRule": "Vế sau miêu tả hậu quả tồi tệ không thể đảo ngược."
+      "grammarRule": "Vế sau miêu tả hậu quả tồi tệ không thể đảo ngược.",
+      "number": 4,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu mà còn mắc phải những lỗi sơ đẳng như thế này thì việc thi đỗ trong kỳ thi chính thức e rằng khó mà trông mong nổi.\n【Phân tích】V-る / V-ない ＋ ようでは: Nếu tình trạng xấu cứ tiếp diễn thế này thì tương lai sẽ thất bại/không ra trò trống gì.",
-      "grammarRule": "V-る / V-ない ＋ ようでは: Nếu cứ trong tình trạng không tốt như thế này thì (kết quả mong đợi sẽ khó mà thành hiện thực)."
+      "grammarRule": "V-る / V-ない ＋ ようでは: Nếu cứ trong tình trạng không tốt như thế này thì (kết quả mong đợi sẽ khó mà thành hiện thực).",
+      "number": 5,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu chỉ biết làm đúng những gì người ta chỉ bảo rập khuôn như thế thì chưa thể gọi là một người trưởng thành thực thụ trong xã hội được.\n【Phân tích】Đánh giá tiêu cực nếu duy trì thói quen xấu: 一人前の社会人とは言えない.",
-      "grammarRule": "Phê phán thực trạng và cảnh báo kết cục kém cỏi."
+      "grammarRule": "Phê phán thực trạng và cảnh báo kết cục kém cỏi.",
+      "number": 6,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu không có được sự thấu hiểu và chung tay góp sức của toàn thể quốc dân thì cuộc cải cách gian nan này tuyệt đối không thể nào hoàn thành được.\n【Phân tích】N ＋ なくしては...できない: Nếu thiếu đi yếu tố N thì không thể nào đạt được kết quả.",
-      "grammarRule": "N ＋ なしに(は) / なくして(は) ＋ Phủ định: Nếu không có N (điều kiện tiên quyết) thì không thể nào... diễn ra được."
+      "grammarRule": "N ＋ なしに(は) / なくして(は) ＋ Phủ định: Nếu không có N (điều kiện tiên quyết) thì không thể nào... diễn ra được.",
+      "number": 7,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu không có sự nỗ lực bền bỉ tích lũy từng ngày thì việc gặt hái thành công vang dội là điều không tưởng.\n【Phân tích】Bắt buộc phải đi với câu phủ định: 不可能だ (hoặc できない).",
-      "grammarRule": "Vế sau bắt buộc phải là vế câu phủ định khẳng định tính bất khả thi."
+      "grammarRule": "Vế sau bắt buộc phải là vế câu phủ định khẳng định tính bất khả thi.",
+      "number": 8,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu phải chịu đựng nỗi nhục nhã để làm việc dưới trướng một tên sếp bạo ngược lộng quyền như thế, thì thà bỏ việc ra lập nghiệp riêng còn dễ thở hơn nhiều.\n【Phân tích】V-る ＋ くらいなら: Nếu phải làm hành động tồi tệ A thì thà chọn phương án B còn hơn.",
-      "grammarRule": "V-る ＋ くらいなら...ほうがましだ / ほうがいい: Nếu phải rơi vào hoàn cảnh tồi tệ ấy thì thà chọn giải pháp khác còn hơn."
+      "grammarRule": "V-る ＋ くらいなら...ほうがましだ / ほうがいい: Nếu phải rơi vào hoàn cảnh tồi tệ ấy thì thà chọn giải pháp khác còn hơn.",
+      "number": 9,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu phải phản bội bạn bè để một mình bản thân thoát thân, thì thà cùng nhau chịu chung hình phạt còn thanh thản hơn nhiều.\n【Phân tích】Thà chọn việc vế sau còn hơn làm việc hèn hạ vế trước: 一緒に罰を受けたほうがずっといい.",
-      "grammarRule": "Thể hiện lập trường kiên định thà chọn phương án đau đớn chứ không làm điều hèn hạ."
+      "grammarRule": "Thể hiện lập trường kiên định thà chọn phương án đau đớn chứ không làm điều hèn hạ.",
+      "number": 10,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu là để được đi hẹn hò với người con gái tôi thầm thương trộm nhớ bấy lâu, thì dù phải đợi chờ bao nhiêu tiếng đồng hồ đi nữa tôi cũng cam lòng.\n【Phân tích】Nếu rơi vào điều kiện mơ ước thì sẵn lòng làm mọi thứ -> ～とあれば.",
-      "grammarRule": "普 ＋ とあれば: Nếu là vì điều kiện quý giá đó."
+      "grammarRule": "普 ＋ とあれば: Nếu là vì điều kiện quý giá đó.",
+      "number": 11,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Trưởng phòng của tôi một khi đã dính vào chén rượu thì coi như xong, bài ca cằn nhằn than thở và lên lớp giáo huấn sẽ kéo dài bất tận không thể nào ngắt nổi.\n【Phân tích】Một khi đã lỡ uống là hậu quả xấu kéo dài -> ～たが最後.",
-      "grammarRule": "V-た ＋ が最後: Một khi đã... thì không dứt ra nổi."
+      "grammarRule": "V-た ＋ が最後: Một khi đã... thì không dứt ra nổi.",
+      "number": 12,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Mới có chút nắng nóng thế này mà đã than vãn chào thua thì việc thi công ngoài trời giữa đỉnh điểm mùa hè e rằng hoàn toàn vô vọng.\n【Phân tích】Nếu cứ kém cỏi thế này thì tương lai sẽ thất bại -> ～ようでは.",
-      "grammarRule": "V-る ＋ ようでは: Nếu tình trạng tiêu cực này diễn ra thì tương lai không ổn."
+      "grammarRule": "V-る ＋ ようでは: Nếu tình trạng tiêu cực này diễn ra thì tương lai không ổn.",
+      "number": 13,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu không có được sự ủng hộ giúp đỡ nồng ấm của tất cả quý vị, thì thành công của ngày hôm nay tuyệt đối không thể nào có được.\n【Phân tích】Không có N thì không thể có kết quả -> Nなくしては...ない.",
-      "grammarRule": "N ＋ なくしては...あり得ない: Nếu thiếu N thì không thể có."
+      "grammarRule": "N ＋ なくしては...あり得ない: Nếu thiếu N thì không thể có.",
+      "number": 14,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Nếu phải hạ mình cúi đầu van nài một đối tác bất chính bội tín như thế, thì thà dẹp bỏ kế hoạch này về trang giấy trắng còn hơn.\n【Phân tích】Thà hủy kế hoạch còn hơn đi van xin kẻ xấu -> ～くらいなら...ほうがましだ.",
-      "grammarRule": "V-る ＋ くらいなら...ほうがましだ: Thà... còn hơn."
+      "grammarRule": "V-る ＋ くらいなら...ほうがましだ: Thà... còn hơn.",
+      "number": 15,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q16",
@@ -228,7 +273,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu là yêu cầu cấp thiết từ phía khách hàng thì dù có là nửa đêm khuya khoắt đi chăng nữa tôi cũng sẽ tức tốc lao tới ngay.\n【Phân tích】Vì yêu cầu của khách nên sẵn sàng làm mọi thứ -> ～とあれば.",
-      "grammarRule": "N ＋ とあれば: Nếu là vì..."
+      "grammarRule": "N ＋ とあれば: Nếu là vì...",
+      "number": 16,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q17",
@@ -242,7 +290,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Ở trên ngọn núi hiểm trở đó mà một khi đã bị lạc đường thì coi như hết đường lui, việc tự lực xuống núi là điều cực kỳ khó khăn.\n【Phân tích】Lạc đường là hậu quả nguy hiểm khôn lường -> ～たら最後.",
-      "grammarRule": "V-たら最後: Một khi đã lỡ... thì nguy khốn khôn lường."
+      "grammarRule": "V-たら最後: Một khi đã lỡ... thì nguy khốn khôn lường.",
+      "number": 17,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q18",
@@ -256,7 +307,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu mà cứ thản nhiên xem giờ giấc hẹn ước như trò đùa thế thì chẳng ai có thể tin tưởng cậu với tư cách là một đối tác kinh doanh được.\n【Phân tích】Nếu cứ vô trách nhiệm thế này -> ～ようでは.",
-      "grammarRule": "V-る ＋ ようでは: Nếu cứ như thế thì không được."
+      "grammarRule": "V-る ＋ ようでは: Nếu cứ như thế thì không được.",
+      "number": 18,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q19",
@@ -270,7 +324,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu không có quy trình quản lý chất lượng khắt khe triệt để thì việc duy trì uy tín của một thương hiệu toàn cầu là điều không thể làm nổi.\n【Phân tích】Thiếu đi quản lý chất lượng thì không duy trì được uy tín -> ～なしには...できない.",
-      "grammarRule": "N ＋ なしには...できない: Không có N thì không thể."
+      "grammarRule": "N ＋ なしには...できない: Không có N thì không thể.",
+      "number": 19,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch09_q20",
@@ -284,8 +341,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nếu phải buông tay từ bỏ ước mơ để rồi sống một cuộc đời ngập tràn ân hận, thì dù có thất bại bao nhiêu lần đi nữa tôi vẫn muốn tiếp tục kiên cường chiến đấu.\n【Phân tích】Thà chấp nhận thất bại còn hơn sống hối hận -> ～くらいなら...たい.",
-      "grammarRule": "V-る ＋ くらいなら: Thà... còn hơn sống trong hối hận."
+      "grammarRule": "V-る ＋ くらいなら: Thà... còn hơn sống trong hối hận.",
+      "number": 20,
+      "section": "第9課: 条件",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch09"
+  "id": "skz_b_ch09",
+  "level": "N1",
+  "totalQuestions": 20
 }

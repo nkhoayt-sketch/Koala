@@ -18,7 +18,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tiện thể đi dạo bộ thì tôi chạy ra hòm thư gần đây bỏ thư gửi luôn nhé.\n【Phân tích】N / V-ます (bỏ ます) ＋ がてら: Nhân tiện làm việc A thì kết hợp làm thêm việc B.",
-      "grammarRule": "N / V-ます (bỏ ます) ＋ がてら: Tiện thể làm việc chính thì làm luôn việc phụ (thường là việc đi lại, sinh hoạt thường nhật)."
+      "grammarRule": "N / V-ます (bỏ ます) ＋ がてら: Tiện thể làm việc chính thì làm luôn việc phụ (thường là việc đi lại, sinh hoạt thường nhật).",
+      "number": 1,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q02",
@@ -32,7 +35,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tiện thể đi mua sắm thì ghé vào quán cà phê gần nhà làm tách trà luôn đi.\n【Phân tích】Hành động di chuyển đi ra ngoài tiện thể ghé quán uống trà -> お茶を飲もう.",
-      "grammarRule": "Vế sau là hành vi di chuyển kết hợp cùng lộ trình."
+      "grammarRule": "Vế sau là hành vi di chuyển kết hợp cùng lộ trình.",
+      "number": 2,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q03",
@@ -46,7 +52,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhân tiện đi chào hỏi thăm hỏi, tôi xin phép ghé qua chúc mừng tân gia nhà mới của anh chị.\n【Phân tích】N (lịch sự, trang trọng) ＋ かたがた: Tiện thể kết hợp hai mục đích trang trọng (chào hỏi, cảm ơn, tạ lỗi).",
-      "grammarRule": "N ＋ かたがた: Tiện thể (dùng trong bối cảnh giao tiếp xã hội lịch sự, trang trọng)."
+      "grammarRule": "N ＋ かたがた: Tiện thể (dùng trong bối cảnh giao tiếp xã hội lịch sự, trang trọng).",
+      "number": 3,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q04",
@@ -60,7 +69,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Nhân tiện gửi lời cảm ơn sâu sắc, tôi cũng xin phép được kính báo tình hình gần đây của bản thân.\n【Phân tích】Văn phong trang trọng: ご報告申し上げます.",
-      "grammarRule": "Vế sau sử dụng kính ngữ hoặc lối diễn đạt trang trọng."
+      "grammarRule": "Vế sau sử dụng kính ngữ hoặc lối diễn đạt trang trọng.",
+      "number": 4,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q05",
@@ -74,7 +86,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Bên cạnh công việc chính là làm việc tại công ty, anh ấy còn theo học ngành luật tại trường đại học ban đêm.\n【Phân tích】V-る / Nの ＋ かたわら: Bên cạnh công việc chính thì đồng thời đảm nhiệm một công việc/hoạt động xã hội khác trong thời gian dài.",
-      "grammarRule": "V-る / Nの ＋ かたわら: Bên cạnh công việc/nghề nghiệp chính yếu, đồng thời làm thêm hoạt động khác (kéo dài trong thời gian dài)."
+      "grammarRule": "V-る / Nの ＋ かたわら: Bên cạnh công việc/nghề nghiệp chính yếu, đồng thời làm thêm hoạt động khác (kéo dài trong thời gian dài).",
+      "number": 5,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q06",
@@ -88,7 +103,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Mẹ tôi bên cạnh việc phụ giúp kinh doanh gia đình, còn tích cực tham gia các hoạt động tình nguyện xã hội.\n【Phân tích】Hoạt động xã hội có tính bền vững: ボランティア活動に励んでいる.",
-      "grammarRule": "Hai công việc được duy trì song song, mang tính chất nghề nghiệp hoặc hoạt động xã hội."
+      "grammarRule": "Hai công việc được duy trì song song, mang tính chất nghề nghiệp hoặc hoạt động xã hội.",
+      "number": 6,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q07",
@@ -102,7 +120,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tiện thể đi hóng mát buổi chiều tối, chúng mình cùng ra bờ sông ngắm đom đóm đi không?\n【Phân tích】Hành động sinh hoạt đời thường kết hợp đi lại -> 夕涼みがてら.",
-      "grammarRule": "N ＋ がてら: Tiện thể làm gì đó trong đời sống thường nhật."
+      "grammarRule": "N ＋ がてら: Tiện thể làm gì đó trong đời sống thường nhật.",
+      "number": 7,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q08",
@@ -116,7 +137,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Nhân chuyến công tác, tôi đã kết hợp đi viếng mộ người thầy kính yêu của mình.\n【Phân tích】Chuyến đi có mục đích nghi lễ, trang trọng -> 出張かたがた.",
-      "grammarRule": "N ＋ かたがた: Tiện thể làm việc trang trọng."
+      "grammarRule": "N ＋ かたがた: Tiện thể làm việc trang trọng.",
+      "number": 8,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q09",
@@ -130,7 +154,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Bên cạnh công việc chính là sáng tác tiểu thuyết, cô ấy còn tham gia giảng dạy bộ môn văn học tại trường đại học.\n【Phân tích】Hai nghề nghiệp song hành dài hạn -> ～かたわら.",
-      "grammarRule": "V-る ＋ かたわら: Bên cạnh nghề chính, làm thêm việc phụ dài hạn."
+      "grammarRule": "V-る ＋ かたわら: Bên cạnh nghề chính, làm thêm việc phụ dài hạn.",
+      "number": 9,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q10",
@@ -144,7 +171,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tiện thể đi ngắm hoa anh đào, chúng mình cùng vào ngôi đền gần đó cầu nguyện luôn nhé.\n【Phân tích】Tiện thể trên đường đi ngắm hoa -> 花見がてら.",
-      "grammarRule": "N ＋ がてら: Tiện thể."
+      "grammarRule": "N ＋ がてら: Tiện thể.",
+      "number": 10,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q11",
@@ -158,7 +188,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Nhân tiện báo tin xuất viện an toàn, tôi đã viết lá thư cảm ơn gửi tới bác sĩ điều trị chính của mình.\n【Phân tích】Báo tin và cảm ơn trang trọng -> ご報告かたがた.",
-      "grammarRule": "N ＋ かたがた: Báo cáo, cảm ơn trang trọng."
+      "grammarRule": "N ＋ かたがた: Báo cáo, cảm ơn trang trọng.",
+      "number": 11,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q12",
@@ -172,7 +205,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Bên cạnh việc làm bác sĩ, vào cuối tuần anh ấy còn làm nhạc trưởng chỉ huy dàn nhạc nghiệp dư của địa phương.\n【Phân tích】Hai vai trò xã hội song song -> 働くかたわら.",
-      "grammarRule": "V-る ＋ かたわら: Đảm nhiệm hai vai trò song song."
+      "grammarRule": "V-る ＋ かたわら: Đảm nhiệm hai vai trò song song.",
+      "number": 12,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q13",
@@ -186,7 +222,10 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tiện chuyến lái xe ngắm cảnh, tôi đã ghé vào trạm dừng chân nổi tiếng ven đường xem sao.\n【Phân tích】Đi dạo lái xe tiện thể ghé thăm -> ドライブがてら.",
-      "grammarRule": "N ＋ がてら: Tiện thể trên đường di chuyển."
+      "grammarRule": "N ＋ がてら: Tiện thể trên đường di chuyển.",
+      "number": 13,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q14",
@@ -200,7 +239,10 @@
       ],
       "answer": "b",
       "explanation": "【Dịch】Nhân tiện báo tin đã tìm được việc làm, tôi đã mời người tiền bối từng hết lòng giúp đỡ mình một bữa cơm cảm ơn.\n【Phân tích】Báo tin mừng và cảm ơn tiền bối -> ご報告かたがた.",
-      "grammarRule": "N ＋ かたがた: Báo tin kết hợp cảm ơn."
+      "grammarRule": "N ＋ かたがた: Báo tin kết hợp cảm ơn.",
+      "number": 14,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q15",
@@ -214,7 +256,10 @@
       ],
       "answer": "c",
       "explanation": "【Dịch】Bên cạnh việc làm nông nghiệp, anh ấy còn kiêm luôn việc chế biến và bán mứt tận dụng nông sản đặc sản địa phương.\n【Phân tích】Hai hoạt động kinh doanh bền vững song song -> 営むかたわら.",
-      "grammarRule": "V-る ＋ かたわら: Vừa làm nghề A vừa làm việc B."
+      "grammarRule": "V-る ＋ かたわら: Vừa làm nghề A vừa làm việc B.",
+      "number": 15,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     },
     {
       "id": "skz_b_ch07_q16",
@@ -228,8 +273,13 @@
       ],
       "answer": "a",
       "explanation": "【Dịch】Tiện thể dắt chó đi dạo, tôi đã ghé cửa hàng tiện lợi mua bánh mì cho bữa sáng mai.\n【Phân tích】Đi dạo tiện ghé mua bánh -> 散歩がてら.",
-      "grammarRule": "N ＋ がてら: Tiện thể làm việc vặt thường nhật."
+      "grammarRule": "N ＋ がてら: Tiện thể làm việc vặt thường nhật.",
+      "number": 16,
+      "section": "第7課: 付随行動",
+      "sectionGroup": "vocab_grammar"
     }
   ],
-  "id": "skz_b_ch07"
+  "id": "skz_b_ch07",
+  "level": "N1",
+  "totalQuestions": 16
 }
